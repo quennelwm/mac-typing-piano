@@ -1,0 +1,227 @@
+Building for debugging...
+[0/16] /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.6/tests-swiftpm/arm64-apple-macosx/debug/TypingPianoProbePackageTests.derived/runner.swift
+[1/16] Write sources
+[9/16] Write TypingPianoProbe-entitlement.plist
+[10/16] Write swift-version--58304C5D6DBC2206.txt
+[12/29] Compiling PianoCore Geometry.swift
+[13/29] Compiling PianoCore FloatingNotes.swift
+[14/29] Compiling PianoCore Mapping.swift
+[15/29] Emitting module PianoCore
+[16/29] Compiling PianoCore DockOwnership.swift
+[17/29] Compiling PianoCore Core.swift
+[18/29] Compiling PianoCore AppPreferences.swift
+[19/29] Compiling PianoCore Coordinator.swift
+[20/29] Compiling PianoCore DockFade.swift
+[21/30] Compiling PianoCore Policies.swift
+[22/39] Compiling PianoAudio AuditionSession.swift
+[23/39] Emitting module PianoAudio
+[24/39] Compiling PianoAudio SamplerAudio.swift
+[25/39] Compiling PianoAudio RuntimeDiagnostics.swift
+[26/60] Compiling PianoMac AdaptiveOverlay.swift
+[27/60] Compiling PianoMac ContinuousTrialStart.swift
+[28/61] Compiling PianoMac SDKKeys.swift
+[29/61] Emitting module PianoMac
+[30/61] Compiling PianoAudioTests TrialGainTests.swift
+[31/61] Compiling PianoCoreTests GeometryAndDockTests.swift
+[32/62] Compiling PianoCoreTests ReducerTests.swift
+[33/62] Emitting module PianoCoreTests
+[34/62] Compiling PianoCoreTests MappingTests.swift
+[35/62] Compiling PianoCoreTests PreferencesMigrationTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift:11:43: error: type 'AppPreferences' has no member 'loadMigrating'
+ 9 |         var legacy = AppPreferences(); legacy.setVolume(0.84); legacy.showKeyLabels = false; try legacy.save(to: old)
+10 |         let original = try Data(contentsOf: old)
+11 |         let migrated = try AppPreferences.loadMigrating(to: new, legacyURL: old)
+   |                                           `- error: type 'AppPreferences' has no member 'loadMigrating'
+12 |         XCTAssertEqual(migrated.volume, 0.84); XCTAssertFalse(migrated.showKeyLabels)
+13 |         XCTAssertEqual(try Data(contentsOf: old), original)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift:15:43: error: type 'AppPreferences' has no member 'loadMigrating'
+13 |         XCTAssertEqual(try Data(contentsOf: old), original)
+14 |         legacy.setVolume(0.1); try legacy.save(to: old)
+15 |         XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.84)
+   |                                           `- error: type 'AppPreferences' has no member 'loadMigrating'
+16 |     }
+17 |     func testExistingPreferencesWinEvenIfLegacyIsInvalid() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift:23:43: error: type 'AppPreferences' has no member 'loadMigrating'
+21 |         var saved = AppPreferences(); saved.setVolume(0.25); try saved.save(to: new)
+22 |         try Data("invalid".utf8).write(to: old)
+23 |         XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.25)
+   |                                           `- error: type 'AppPreferences' has no member 'loadMigrating'
+24 |     }
+25 |     func testMissingLegacyCreatesDefaultsAndDoesNotImportLater() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift:29:43: error: type 'AppPreferences' has no member 'loadMigrating'
+27 |         defer { try? FileManager.default.removeItem(at: root) }
+28 |         let old = root.appendingPathComponent("old.json"), new = root.appendingPathComponent("new.json")
+29 |         XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.5)
+   |                                           `- error: type 'AppPreferences' has no member 'loadMigrating'
+30 |         var legacy = AppPreferences(); legacy.setVolume(0.9); try legacy.save(to: old)
+31 |         XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.5)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift:31:43: error: type 'AppPreferences' has no member 'loadMigrating'
+29 |         XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.5)
+30 |         var legacy = AppPreferences(); legacy.setVolume(0.9); try legacy.save(to: old)
+31 |         XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.5)
+   |                                           `- error: type 'AppPreferences' has no member 'loadMigrating'
+32 |     }
+33 |     func testInvalidExistingDataIsNotSilentlyReplaced() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift:39:49: error: type 'AppPreferences' has no member 'loadMigrating'
+37 |         let new = root.appendingPathComponent("new.json"), old = root.appendingPathComponent("old.json")
+38 |         let invalid = Data("invalid".utf8); try invalid.write(to: new); try AppPreferences().save(to: old)
+39 |         XCTAssertThrowsError(try AppPreferences.loadMigrating(to: new, legacyURL: old))
+   |                                                 `- error: type 'AppPreferences' has no member 'loadMigrating'
+40 |         XCTAssertEqual(try Data(contentsOf: new), invalid)
+41 |     }
+[36/62] Compiling PianoCoreTests FloatingNoteTests.swift
+[39/62] Compiling PianoCoreTests DockFadeTests.swift
+[40/62] Compiling PianoCoreTests StartupFlowTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:8:25: error: cannot find 'StartupFlow' in scope
+ 6 |     func testExplicitAuthorizationSurvivesRelaunchAndContinuesOnlyOnce() throws {
+ 7 |         let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+ 8 |         let first = try StartupFlow(intentURL: url)
+   |                         `- error: cannot find 'StartupFlow' in scope
+ 9 |         XCTAssertEqual(try first.handle(.primary, permission: false, secureInput: false), .requestAuthorization)
+10 |         let relaunched = try StartupFlow(intentURL: url)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:9:92: error: type 'Equatable' has no member 'requestAuthorization'
+ 7 |         let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+ 8 |         let first = try StartupFlow(intentURL: url)
+ 9 |         XCTAssertEqual(try first.handle(.primary, permission: false, secureInput: false), .requestAuthorization)
+   |                                                                                            `- error: type 'Equatable' has no member 'requestAuthorization'
+10 |         let relaunched = try StartupFlow(intentURL: url)
+11 |         XCTAssertTrue(relaunched.pendingAuthorization)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:10:30: error: cannot find 'StartupFlow' in scope
+ 8 |         let first = try StartupFlow(intentURL: url)
+ 9 |         XCTAssertEqual(try first.handle(.primary, permission: false, secureInput: false), .requestAuthorization)
+10 |         let relaunched = try StartupFlow(intentURL: url)
+   |                              `- error: cannot find 'StartupFlow' in scope
+11 |         XCTAssertTrue(relaunched.pendingAuthorization)
+12 |         XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .start)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:12:101: error: type 'Equatable' has no member 'start'
+10 |         let relaunched = try StartupFlow(intentURL: url)
+11 |         XCTAssertTrue(relaunched.pendingAuthorization)
+12 |         XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .start)
+   |                                                                                                     `- error: type 'Equatable' has no member 'start'
+13 |         XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .none)
+14 |         XCTAssertFalse(try StartupFlow(intentURL: url).pendingAuthorization)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:13:101: error: type 'Equatable' has no member 'none'
+11 |         XCTAssertTrue(relaunched.pendingAuthorization)
+12 |         XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .start)
+13 |         XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .none)
+   |                                                                                                     `- error: type 'Equatable' has no member 'none'
+14 |         XCTAssertFalse(try StartupFlow(intentURL: url).pendingAuthorization)
+15 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:14:28: error: cannot find 'StartupFlow' in scope
+12 |         XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .start)
+13 |         XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .none)
+14 |         XCTAssertFalse(try StartupFlow(intentURL: url).pendingAuthorization)
+   |                            `- error: cannot find 'StartupFlow' in scope
+15 |     }
+16 |     func testPlainLaunchActivationAndPauseNeverStartOrRequestPermission() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:18:24: error: cannot find 'StartupFlow' in scope
+16 |     func testPlainLaunchActivationAndPauseNeverStartOrRequestPermission() throws {
+17 |         let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+18 |         let flow = try StartupFlow(intentURL: url)
+   |                        `- error: cannot find 'StartupFlow' in scope
+19 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+20 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:19:95: error: type 'Equatable' has no member 'none'
+17 |         let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+18 |         let flow = try StartupFlow(intentURL: url)
+19 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+   |                                                                                               `- error: type 'Equatable' has no member 'none'
+20 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+21 |         _ = try flow.handle(.cancel, permission: true, secureInput: false)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:22:95: error: type 'Equatable' has no member 'none'
+20 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+21 |         _ = try flow.handle(.cancel, permission: true, secureInput: false)
+22 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+   |                                                                                               `- error: type 'Equatable' has no member 'none'
+23 |         XCTAssertFalse(try StartupFlow(intentURL: url).pendingAuthorization)
+24 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:23:28: error: cannot find 'StartupFlow' in scope
+21 |         _ = try flow.handle(.cancel, permission: true, secureInput: false)
+22 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+23 |         XCTAssertFalse(try StartupFlow(intentURL: url).pendingAuthorization)
+   |                            `- error: cannot find 'StartupFlow' in scope
+24 |     }
+25 |     func testReturnWithoutPermissionConsumesIntentAndDoesNotRequestAgain() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:27:24: error: cannot find 'StartupFlow' in scope
+25 |     func testReturnWithoutPermissionConsumesIntentAndDoesNotRequestAgain() throws {
+26 |         let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+27 |         let flow = try StartupFlow(intentURL: url)
+   |                        `- error: cannot find 'StartupFlow' in scope
+28 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+29 |         XCTAssertEqual(try flow.handle(.becameActive, permission: false, secureInput: false), .permissionMissing)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:29:96: error: type 'Equatable' has no member 'permissionMissing'
+27 |         let flow = try StartupFlow(intentURL: url)
+28 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+29 |         XCTAssertEqual(try flow.handle(.becameActive, permission: false, secureInput: false), .permissionMissing)
+   |                                                                                                `- error: type 'Equatable' has no member 'permissionMissing'
+30 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+31 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:30:95: error: type 'Equatable' has no member 'none'
+28 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+29 |         XCTAssertEqual(try flow.handle(.becameActive, permission: false, secureInput: false), .permissionMissing)
+30 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+   |                                                                                               `- error: type 'Equatable' has no member 'none'
+31 |     }
+32 |     func testSecureInputConsumesPendingIntentAndRequiresNewClick() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:34:24: error: cannot find 'StartupFlow' in scope
+32 |     func testSecureInputConsumesPendingIntentAndRequiresNewClick() throws {
+33 |         let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+34 |         let flow = try StartupFlow(intentURL: url)
+   |                        `- error: cannot find 'StartupFlow' in scope
+35 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+36 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: true), .secureInput)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:36:94: error: type 'Equatable' has no member 'secureInput'
+34 |         let flow = try StartupFlow(intentURL: url)
+35 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+36 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: true), .secureInput)
+   |                                                                                              `- error: type 'Equatable' has no member 'secureInput'
+37 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+38 |         XCTAssertEqual(try flow.handle(.primary, permission: true, secureInput: false), .start)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:37:95: error: type 'Equatable' has no member 'none'
+35 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+36 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: true), .secureInput)
+37 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+   |                                                                                               `- error: type 'Equatable' has no member 'none'
+38 |         XCTAssertEqual(try flow.handle(.primary, permission: true, secureInput: false), .start)
+39 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:38:90: error: type 'Equatable' has no member 'start'
+36 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: true), .secureInput)
+37 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+38 |         XCTAssertEqual(try flow.handle(.primary, permission: true, secureInput: false), .start)
+   |                                                                                          `- error: type 'Equatable' has no member 'start'
+39 |     }
+40 |     func testFailedPersistencePreventsAuthorizationRequest() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:44:24: error: cannot find 'StartupFlow' in scope
+42 |         try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
+43 |         let obstruction = root.appendingPathComponent("file"); try Data().write(to: obstruction)
+44 |         let flow = try StartupFlow(intentURL: obstruction.appendingPathComponent("intent.json"))
+   |                        `- error: cannot find 'StartupFlow' in scope
+45 |         XCTAssertThrowsError(try flow.handle(.primary, permission: false, secureInput: false))
+46 |         XCTAssertFalse(flow.pendingAuthorization)
+[41/62] Compiling PianoAudioTests RuntimeDiagnosticsTests.swift
+[42/62] Compiling PianoMac Module.swift
+[43/62] Compiling PianoMac NativeDockStorage.swift
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

@@ -1,0 +1,15 @@
+{
+  "freshCandidateTests": 3,
+  "freshFailures": 0,
+  "kawaiChecks": 191,
+  "steinwayChecks": 193,
+  "freshSnapshotFiles": 36,
+  "defaultSkipped": 3,
+  "frozenDirectoryRejected": true,
+  "staleSnapshotRejectedBeforeWrites": true,
+  "protectedFilesUnchanged": 142,
+  "productionSourcesAndScriptsUnchanged": true,
+  "frozen026AppAndZipUnchanged": true,
+  "binarySHA256": "a933d990c14b907f764a8bbb7530481968e4ccb74b780bcbccf8085a6fc07286",
+  "onlyChangedCodeFile": "Code/Tests/PianoAudioTests/CandidateBankTests.swift"
+}

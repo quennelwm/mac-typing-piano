@@ -4,12 +4,17 @@ import PianoAudio
 
 /// Native daily menu, with bounded input/audio/system experiments in a separate submenu.
 public final class ProbeMenu: NSObject, NSMenuDelegate {
-    public static let statusItemWidth: CGFloat = 20
+    public static let statusItemWidth: CGFloat = 16
     public let menu = NSMenu()
     public let slider: NSSlider
     public let percentage = NSTextField(labelWithString: "50%")
     public let icon: NSImage
     public var onVolume: ((Double) -> Void)?
+    public var onStartup: (() -> Void)?
+    public var onDownload: (() -> Void)?
+    public var onMuteAlerts: (() -> Void)?
+    public var onSoundSettings: (() -> Void)?
+    public var onWillOpen: (() -> Void)?
     public var onOpen: (() -> Void)?
     public var onPause: (() -> Void)?
     public var onSound: (() -> Void)?
@@ -24,8 +29,11 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     public var onAbout: (() -> Void)?
     private var statusItem: NSStatusItem?
     public var actualStatusButtonWidth: CGFloat? { statusItem?.button?.bounds.width }
+    private let session = NSMenuItem(title: "已暂停：尚未开始", action: nil, keyEquivalent: "")
     private let pause = NSMenuItem(title: "暂停全部", action: nil, keyEquivalent: "")
     private let sound = NSMenuItem(title: "声音", action: nil, keyEquivalent: "")
+    private let alertMute = NSMenuItem(title: "静音系统提示音", action: nil, keyEquivalent: "")
+    private let alertStatus = NSMenuItem(title: "提示音：默认保持系统现状", action: nil, keyEquivalent: "")
     private let labels = NSMenuItem(title: "显示按键标签", action: nil, keyEquivalent: "")
     private let overlay = NSMenuItem(title: "显示钢琴", action: nil, keyEquivalent: "")
     private let dock = NSMenuItem(title: "自动隐藏 Dock", action: nil, keyEquivalent: "")
@@ -33,11 +41,14 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     private let mode = NSMenuItem(title: "Dock：模拟模式，不改系统", action: nil, keyEquivalent: "")
     public init(volume: Double, sources: [AudioSource] = [], installStatusItem: Bool = true) {
         slider = NSSlider(value: volume, minValue: 0, maxValue: 1, target: nil, action: nil)
-        icon = NSImage(size: NSSize(width: 18, height: 18), flipped: false) { rect in
+        icon = NSImage(size: NSSize(width: Self.statusItemWidth, height: Self.statusItemWidth), flipped: false) { rect in
             guard let ctx = NSGraphicsContext.current?.cgContext else { return false }
             let line = CTLineCreateWithAttributedString(NSAttributedString(string: "♪", attributes: [.font: NSFont.systemFont(ofSize: 18, weight: .medium), .foregroundColor: NSColor.black]))
             let ink = CTLineGetBoundsWithOptions(line, .useGlyphPathBounds)
-            let scale = min(15 / ink.width, 15 / ink.height)
+            guard ink.width.isFinite, ink.height.isFinite, ink.width > 0, ink.height > 0 else { return false }
+            // Keep the 18pt glyph; fit its actual ink with a one-point antialiasing margin.
+            let content = rect.insetBy(dx: 1, dy: 1)
+            let scale = min(1, min(content.width / ink.width, content.height / ink.height))
             ctx.saveGState(); ctx.translateBy(x: rect.midX, y: rect.midY); ctx.scaleBy(x: scale, y: scale)
             ctx.textMatrix = .identity; ctx.textPosition = CGPoint(x: -ink.midX, y: -ink.midY)
             CTLineDraw(line, ctx); ctx.restoreGState(); return true
@@ -45,6 +56,8 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         icon.isTemplate = true
         super.init()
         menu.delegate = self; menu.autoenablesItems = false
+        session.isEnabled = false; menu.addItem(session)
+        add("打开启动窗口…", #selector(openStartup), to: menu)
         wire(pause, #selector(pauseAll), menu); menu.addItem(.separator())
         wire(sound, #selector(toggleSound), menu)
         let volumeItem = NSMenuItem(), volumeView = NSView(frame: NSRect(x: 0, y: 0, width: 250, height: 42))
@@ -56,12 +69,19 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         percentage.frame = NSRect(x: 199, y: 12, width: 42, height: 18); percentage.alignment = .right
         volumeView.addSubview(label); volumeView.addSubview(slider); volumeView.addSubview(percentage)
         volumeItem.view = volumeView; menu.addItem(volumeItem)
+        menu.addItem(.separator())
+        wire(alertMute, #selector(muteAlerts), menu)
+        alertMute.state = .mixed
+        alertStatus.isEnabled = false; menu.addItem(alertStatus)
+        add("系统声音设置…", #selector(openSoundSettings), to: menu)
+        menu.addItem(.separator())
         wire(overlay, #selector(toggleOverlay), menu); wire(labels, #selector(toggleLabels), menu)
         menu.addItem(.separator()); wire(dock, #selector(toggleDock), menu)
         add("系统Dock设置…", #selector(openDockSettings), to: menu)
         let automaticWidth = NSMenuItem(title: "钢琴宽度：自动适应屏幕", action: nil, keyEquivalent: "")
         automaticWidth.isEnabled = false; menu.addItem(automaticWidth)
         menu.addItem(.separator()); add("帮助 / 关于", #selector(about), to: menu)
+        add("下载新版…", #selector(download), to: menu)
         let test = submenu("测试", in: menu)
         add("打开测试控制台…", #selector(openControl), to: test)
         add("全局观察60秒…", #selector(startGlobal), to: test)
@@ -91,14 +111,25 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         let item = NSMenuItem(title: title, action: nil, keyEquivalent: ""), submenu = NSMenu(title: title)
         submenu.autoenablesItems = false; item.submenu = submenu; parent.addItem(item); return submenu
     }
+    public func menuWillOpen(_ menu: NSMenu) { onWillOpen?() }
+    public func updateAlertVolume(muted: Bool?, detail: String) {
+        alertMute.state = muted.map { $0 ? .on : .off } ?? .mixed
+        alertStatus.title = "提示音：" + String(detail.prefix(30)) + (detail.count > 30 ? "…" : "")
+        alertStatus.toolTip = detail; alertMute.toolTip = detail
+    }
     public func setVolume(_ value: Double) { slider.doubleValue = min(1, max(0, value)); percentage.stringValue = "\(Int((slider.doubleValue * 100).rounded()))%" }
-    public func update(soundEnabled: Bool, showLabels: Bool, showOverlay: Bool, paused: Bool = false, dockDesired: Bool = true, dockKnown: Bool = true, systemDock: Bool = false, sourceID: String = "synthetic") {
+    public func update(soundEnabled: Bool, showLabels: Bool, showOverlay: Bool, paused: Bool = false, dockDesired: Bool = true, dockKnown: Bool = true, systemDock: Bool = false, sourceID: String = "synthetic", sessionStatus: String? = nil) {
+        session.title = sessionStatus ?? (paused ? "已暂停" : "运行中")
         sound.state = soundEnabled ? .on : .off; labels.state = showLabels ? .on : .off; overlay.state = showOverlay ? .on : .off
         pause.title = paused ? "开始打字钢琴" : "暂停打字钢琴"; dock.state = dockKnown ? (dockDesired ? .on : .off) : .mixed
         mode.title = systemDock ? "Dock：系统原生自动隐藏" : "Dock：模拟模式，不改系统"
         for item in sourceItems { item.state = item.representedObject as? String == sourceID ? .on : .off }
     }
     @objc private func sliderChanged() { setVolume(slider.doubleValue); onVolume?(slider.doubleValue) }
+    @objc private func openStartup() { onStartup?() }
+    @objc private func muteAlerts() { onMuteAlerts?() }
+    @objc private func openSoundSettings() { onSoundSettings?() }
+    @objc private func download() { onDownload?() }
     @objc private func openControl() { onOpen?() }
     @objc private func pauseAll() { onPause?() }
     @objc private func toggleSound() { onSound?() }

@@ -1,0 +1,23 @@
+[0/1] Planning build
+Building for debugging...
+[0/9] Write sources
+[3/9] Write swift-version--58304C5D6DBC2206.txt
+[5/13] Emitting module PianoCoreTests
+[6/13] Compiling PianoCoreTests StartupFlowTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:77:61: error: extra argument 'persist' in call
+ 75 |         let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+ 76 |         var failClear = false
+ 77 |         let flow = try StartupFlow(intentURL: url, persist: { pending in
+    |                                                             `- error: extra argument 'persist' in call
+ 78 |             if !pending && failClear { throw CocoaError(.fileWriteNoPermission) }
+ 79 |             try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:87:95: error: type 'Equatable' has no member 'none'
+ 85 |         XCTAssertFalse(flow.pendingAuthorization)
+ 86 |         failClear = false
+ 87 |         XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
+    |                                                                                               `- error: type 'Equatable' has no member 'none'
+ 88 |         let relaunched = try StartupFlow(intentURL: url)
+ 89 |         XCTAssertTrue(relaunched.pendingAuthorization) // Durable stale flag is visible, but never auto-replayed.
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

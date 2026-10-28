@@ -37,7 +37,10 @@ final class LocalTrialStartTests: XCTestCase {
         XCTAssertTrue(audio.enabled); XCTAssertTrue(engine.prepared)
         input.stop(); audio.disable()
         engine.fail = true
-        XCTAssertThrowsError(try ContinuousTrialStart.run(global: false, input: input, audio: audio))
+        XCTAssertThrowsError(try ContinuousTrialStart.run(global: false, input: input, audio: audio)) { error in
+            guard case ContinuousTrialStart.Failure.audio = error else { return XCTFail("Audio failure must not ask for input permission") }
+            XCTAssertTrue(error.localizedDescription.contains("声音启动失败"))
+        }
         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(audio.enabled); XCTAssertFalse(engine.prepared)
     }
 }

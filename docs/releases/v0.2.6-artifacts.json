@@ -1,0 +1,26 @@
+{
+  "signatureVerification": "PASS",
+  "signatureKind": "Apple Development, no Developer ID or notarization",
+  "designatedRequirementSHA256": "593160c3be665fc9c487ccfb706cc9dac40fec1a5ec8bf1d91282bee86b09971",
+  "binarySHA256": "32873ed7c86a92fec6c599bf8b606dc467977859fdc7733a81e76db6aae645dc",
+  "version": "0.2.6",
+  "build": "9",
+  "archive": "Mac-Typing-Piano-0.2.6-arm64.zip",
+  "archiveSHA256": "d103175a0c64d14d24ae34c9f797bcd978b92bf192ec37b62563825a54215123",
+  "archiveBytes": 15347717,
+  "appFileCount": 42,
+  "architecture": "arm64",
+  "targetMacOS": "14",
+  "testedMacOS": "27.2 (26B123)",
+  "releaseType": "prerelease",
+  "fullCandidateGUIAndPhysicalAudioAcceptance": "NOT RUN; old 0.2.4 physical audio confirmed by user",
+  "componentChecks": "actual 16pt menu slot and real alert volume mute/restore verified",
+  "unitRegression": "89 PASS",
+  "fullSuiteRegression": {
+    "selected": 111,
+    "passed": 108,
+    "skippedExplicitOfflineReplay": 3,
+    "failures": 0
+  },
+  "offlineReplaySeparate": "3 executed and passed on fresh snapshot by CODE"
+}

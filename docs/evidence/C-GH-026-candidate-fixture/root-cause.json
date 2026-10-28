@@ -1,0 +1,41 @@
+{
+  "mismatches": [
+    {
+      "path": "Code/Scripts/verify_candidate_banks.py",
+      "byteSize": 11825,
+      "sha256": "1b15233784269cd906a69c21c02dcbc8135c2a55e921dfa74810ab6b5ce3e3ca",
+      "currentSHA256": "4650a311016821d2f82121f04a339364950efb5fa38f248864852a43e30b571f",
+      "currentByteSize": 11901
+    },
+    {
+      "path": "Code/Sources/PianoAudio/SamplerAudio.swift",
+      "byteSize": 9002,
+      "sha256": "bba741de30420d01cc79cfbb6af185db65bef7f28cf29cb3179767a5ceb49f79",
+      "currentSHA256": "11131742a6e8a41db3fcee5584958488a25feed68bf64f9efc83330c0c5222c4",
+      "currentByteSize": 11881
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/CandidateBankTests.swift",
+      "byteSize": 23211,
+      "sha256": "51915922da35d755fe7d914f15f3d323bb098f50408fceb609e1bbb479aae261",
+      "currentSHA256": "3d130611fca0932528de6f0de1f030a1c04a3b0235760924644c19287bd3ee25",
+      "currentByteSize": 23331
+    }
+  ],
+  "reversingOutputDirectorySupport": {
+    "scriptSHA256": "1b15233784269cd906a69c21c02dcbc8135c2a55e921dfa74810ab6b5ce3e3ca",
+    "testSHA256": "51915922da35d755fe7d914f15f3d323bb098f50408fceb609e1bbb479aae261"
+  },
+  "pre026Matches": {
+    "trial-0.2.5": {
+      "Code/Scripts/verify_candidate_banks.py": true,
+      "Code/Sources/PianoAudio/SamplerAudio.swift": true,
+      "Code/Tests/PianoAudioTests/CandidateBankTests.swift": true
+    },
+    "trial-0.2.6": {
+      "Code/Scripts/verify_candidate_banks.py": true,
+      "Code/Sources/PianoAudio/SamplerAudio.swift": true,
+      "Code/Tests/PianoAudioTests/CandidateBankTests.swift": true
+    }
+  }
+}

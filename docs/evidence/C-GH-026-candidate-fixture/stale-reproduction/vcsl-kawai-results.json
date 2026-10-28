@@ -1,0 +1,16 @@
+{
+  "candidateID" : "vcsl-kawai",
+  "checkCount" : 0,
+  "executionError" : "invalidInput(\"Input changed: Code\/Scripts\/verify_candidate_banks.py\")",
+  "failures" : [
+    "Execution error: invalidInput(\"Input changed: Code\/Scripts\/verify_candidate_banks.py\")"
+  ],
+  "hardwareOutput" : false,
+  "inputState" : "candidate",
+  "renderChannels" : 1,
+  "renderSampleRate" : 48000,
+  "status" : "failed",
+  "task" : "C-001B",
+  "thresholdAmplitude" : 1.0000000116860974e-07,
+  "timestampUTC" : "2026-10-28T17:26:50Z"
+}

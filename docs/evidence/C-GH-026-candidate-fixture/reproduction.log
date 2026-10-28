@@ -1,0 +1,99 @@
+Building for debugging...
+[0/16] /Users/wuming/Library/Caches/typing-piano-verification/c-gh026-fixture/arm64-apple-macosx/debug/TypingPianoProbePackageTests.derived/runner.swift
+[0/16] Write sources
+[9/16] Write TypingPianoProbe-entitlement.plist
+[10/16] Write swift-version--58304C5D6DBC2206.txt
+[12/30] Emitting module PianoCore
+[13/31] Compiling PianoCore AppPreferences.swift
+[14/31] Compiling PianoCore Coordinator.swift
+[15/31] Compiling PianoCore Policies.swift
+[16/31] Compiling PianoCore DockOwnership.swift
+[17/31] Compiling PianoCore Core.swift
+[18/31] Compiling PianoCore DockFade.swift
+[19/31] Compiling PianoCore FloatingNotes.swift
+[20/31] Compiling PianoCore Geometry.swift
+[21/31] Compiling PianoCore StartupFlow.swift
+[22/31] Compiling PianoCore Mapping.swift
+[23/40] Emitting module PianoAudio
+[24/40] Compiling PianoAudio RuntimeDiagnostics.swift
+[25/40] Compiling PianoAudio AuditionSession.swift
+[26/40] Compiling PianoAudio SamplerAudio.swift
+[27/62] Compiling PianoMac InputNormalizer.swift
+[28/62] Compiling PianoMac Module.swift
+[29/63] Emitting module PianoAudioTests
+[30/63] Compiling PianoMac QuietIvoryProvenance.swift
+[31/63] Compiling PianoMac SDKKeys.swift
+[32/63] Compiling PianoAudioTests TrialGainTests.swift
+[33/63] Compiling PianoCoreTests FloatingNoteTests.swift
+[34/63] Compiling PianoMac AdaptiveOverlay.swift
+[35/63] Compiling PianoMac AlertVolume.swift
+[36/63] Compiling PianoCoreTests PreferencesMigrationTests.swift
+[37/63] Compiling PianoCoreTests MappingTests.swift
+[38/63] Compiling PianoCoreTests ReducerTests.swift
+[39/63] Compiling PianoCoreTests GeometryAndDockTests.swift
+[40/63] Compiling PianoCoreTests DockFadeTests.swift
+[41/63] Emitting module PianoCoreTests
+[42/64] Compiling PianoAudioTests RuntimeDiagnosticsTests.swift
+[43/64] Compiling PianoAudioTests AudioSelectionTests.swift
+[44/64] Compiling PianoAudioTests TrialBankTests.swift
+[45/64] Compiling PianoAudioTests SamplerAudioTests.swift
+[46/64] Compiling PianoAudioTests CandidateBankTests.swift
+[47/64] Compiling PianoCoreTests StartupFlowTests.swift
+[50/64] Emitting module PianoMac
+[51/64] Compiling PianoMac SingleInstance.swift
+[52/64] Compiling PianoMac DockWindowVisibility.swift
+[53/64] Compiling PianoMac InputMonitor.swift
+[54/64] Compiling PianoMac NativeDockStorage.swift
+[55/64] Compiling PianoMac PianoView.swift
+[56/64] Compiling PianoMac ProbeController.swift
+[57/64] Compiling PianoMac ProbeMenu.swift
+[58/64] Compiling PianoMac ContinuousTrialStart.swift
+[59/64] Compiling PianoMac DockAdapter.swift
+[60/80] Compiling PianoMacTests MenuIntegrationTests.swift
+[61/80] Compiling PianoMacTests ModuleTests.swift
+[62/80] Compiling PianoMacTests StartupEntryTests.swift
+[63/81] Compiling PianoMacTests NativeDockStorageTests.swift
+[64/81] Compiling PianoMacTests SingleInstanceTests.swift
+[65/81] Compiling PianoMacTests IntegrationTests.swift
+[66/81] Compiling PianoMacTests LocalTrialStartTests.swift
+[67/81] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[68/81] Compiling PianoMacTests AlertVolumeTests.swift
+[69/81] Compiling PianoMacTests DockWindowVisibilityTests.swift
+[70/81] Compiling PianoMacTests InputNormalizerTests.swift
+[71/81] Compiling PianoMacTests ControllerIntegrationTests.swift
+[72/81] Compiling PianoMacTests DockAdapterTests.swift
+[73/81] Emitting module PianoMacTests
+[74/81] Compiling PianoMacTests TrialSessionTests.swift
+[75/81] Emitting module PianoProbe
+[76/81] Compiling PianoProbe main.swift
+[76/81] Write Objects.LinkFileList
+[77/83] Linking TypingPianoProbe
+[78/83] Applying TypingPianoProbe
+[80/83] Emitting module TypingPianoProbePackageTests
+[81/83] Compiling TypingPianoProbePackageTests runner.swift
+[81/83] Write Objects.LinkFileList
+[82/83] Linking TypingPianoProbePackageTests
+Build complete! (23.25s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 01:26:50.276.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 01:26:50.279.
+Test Suite 'CandidateBankTests' started at 2026-10-29 01:26:50.279.
+Test Case '-[PianoAudioTests.CandidateBankTests test00PitchEstimatorAgainstKnownSyntheticFrequencies]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/CandidateBankTests.swift:52: error: -[PianoAudioTests.CandidateBankTests test00PitchEstimatorAgainstKnownSyntheticFrequencies] : failed: caught error: "invalidInput("Input changed: Code/Scripts/verify_candidate_banks.py")"
+Test Case '-[PianoAudioTests.CandidateBankTests test00PitchEstimatorAgainstKnownSyntheticFrequencies]' failed (0.152 seconds).
+Test Case '-[PianoAudioTests.CandidateBankTests testKawaiCandidateOffline]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/CandidateBankTests.swift:370: error: -[PianoAudioTests.CandidateBankTests testKawaiCandidateOffline] : XCTAssertTrue failed - Execution error: invalidInput("Input changed: Code/Scripts/verify_candidate_banks.py")
+Test Case '-[PianoAudioTests.CandidateBankTests testKawaiCandidateOffline]' failed (0.003 seconds).
+Test Case '-[PianoAudioTests.CandidateBankTests testSteinwayCandidateOffline]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/CandidateBankTests.swift:370: error: -[PianoAudioTests.CandidateBankTests testSteinwayCandidateOffline] : XCTAssertTrue failed - Execution error: invalidInput("Input changed: Code/Scripts/verify_candidate_banks.py")
+Test Case '-[PianoAudioTests.CandidateBankTests testSteinwayCandidateOffline]' failed (0.002 seconds).
+Test Suite 'CandidateBankTests' failed at 2026-10-29 01:26:50.437.
+	 Executed 3 tests, with 3 failures (1 unexpected) in 0.158 (0.158) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 01:26:50.437.
+	 Executed 3 tests, with 3 failures (1 unexpected) in 0.158 (0.158) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 01:26:50.437.
+	 Executed 3 tests, with 3 failures (1 unexpected) in 0.158 (0.161) seconds
+CANDIDATE_AUDIO_RESULT id=vcsl-kawai status=failed checks=0 failures=1
+CANDIDATE_AUDIO_RESULT id=vcsl-steinway-b status=failed checks=0 failures=1
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

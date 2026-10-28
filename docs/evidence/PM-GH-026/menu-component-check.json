@@ -1,0 +1,36 @@
+{
+  "actualStatusButtonWidthPt" : 16,
+  "audioStarted" : false,
+  "iconCanvasPt" : [
+    16,
+    16
+  ],
+  "inputStarted" : false,
+  "kind" : "production ProbeMenu component in temporary process; not full candidate App GUI acceptance",
+  "passed" : true,
+  "renders" : [
+    {
+      "file" : "menu-icon@1x.png",
+      "inkBoundsPixelsAlphaOver8" : [
+        3,
+        0,
+        12,
+        14
+      ],
+      "maximumOuterEdgeAlpha" : 21,
+      "scale" : 1
+    },
+    {
+      "file" : "menu-icon@2x.png",
+      "inkBoundsPixelsAlphaOver8" : [
+        6,
+        1,
+        25,
+        30
+      ],
+      "maximumOuterEdgeAlpha" : 0,
+      "scale" : 2
+    }
+  ],
+  "systemDockWritten" : false
+}

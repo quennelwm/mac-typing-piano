@@ -1,0 +1,380 @@
+{
+  "status": "passed",
+  "task": "C-001B",
+  "inputState": "candidate",
+  "jsonSchema": "Draft2020-12, existing jsonschema package",
+  "trials": [
+    {
+      "id": "vcsl-kawai",
+      "bankPath": "Design/Audio/probes/A-001B/vcsl-kawai/trial.sf2",
+      "sha256": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1",
+      "byteSize": 2668204,
+      "manifestFilesVerified": [
+        "instrument-parameters.json",
+        "licenses/VCSL-CC0.txt",
+        "licenses/VCSL-README.md",
+        "processing_recipe.md",
+        "qa_audio.md",
+        "source_records.json",
+        "trial.sf2"
+      ],
+      "coverageCount": 10,
+      "coverageMIDI": [
+        33,
+        34,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ],
+      "uncoveredMIDI": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "selectors": {
+        "program": 0,
+        "bankMSB": 121,
+        "bankLSB": 0
+      },
+      "state": "candidate",
+      "schemaValid": true,
+      "selectorsAgree": true
+    },
+    {
+      "id": "vcsl-steinway-b",
+      "bankPath": "Design/Audio/probes/A-001B/vcsl-steinway-b/trial.sf2",
+      "sha256": "8261dac642441fcf78a5946e96f898119ebd609227590c8638f148dea5b7f359",
+      "byteSize": 2649954,
+      "manifestFilesVerified": [
+        "instrument-parameters.json",
+        "licenses/VCSL-CC0.txt",
+        "licenses/VCSL-README.md",
+        "processing_recipe.md",
+        "qa_audio.md",
+        "source_records.json",
+        "trial.sf2"
+      ],
+      "coverageCount": 11,
+      "coverageMIDI": [
+        33,
+        34,
+        35,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ],
+      "uncoveredMIDI": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "selectors": {
+        "program": 0,
+        "bankMSB": 121,
+        "bankLSB": 0
+      },
+      "state": "candidate",
+      "schemaValid": true,
+      "selectorsAgree": true
+    }
+  ],
+  "inputFiles": [
+    {
+      "path": "Code/Scripts/verify_candidate_banks.py",
+      "byteSize": 11901,
+      "sha256": "4650a311016821d2f82121f04a339364950efb5fa38f248864852a43e30b571f"
+    },
+    {
+      "path": "Code/Sources/PianoAudio/SamplerAudio.swift",
+      "byteSize": 11881,
+      "sha256": "11131742a6e8a41db3fcee5584958488a25feed68bf64f9efc83330c0c5222c4"
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/CandidateBankTests.swift",
+      "byteSize": 24334,
+      "sha256": "2dd9daba3bd4a8e14f81add70db301ce96808406b03fa065a5f51d961a0b4287"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/README.md",
+      "byteSize": 1767,
+      "sha256": "e64b63f9c5111e06e381bb37515c4d30f2d42546887d09eeedbeb96bbe1dc669"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/processing_recipe.md",
+      "byteSize": 4847,
+      "sha256": "71a2a7887c7d4fde260ef7b5ca25fec7c31d9fee95871d8401bbb41fe3afcdbb"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/scripts/build_sf2_trials.py",
+      "byteSize": 14043,
+      "sha256": "a57bf3c3096755f349e2b2ae92c769a65a8d4b63984bf0e4af2efe666d53871d"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/scripts/test_sf2_contract.py",
+      "byteSize": 7966,
+      "sha256": "765f2257e14ab924c9fbc93c73c04672da1316f233ced3f82a88663f01cc5a84"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/scripts/verify_delivery.py",
+      "byteSize": 8241,
+      "sha256": "678693cf32e41efe5e024bb8c86603c161bacd7a7eb084387f4d1331208bcb1c"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/trial-index.json",
+      "byteSize": 5064,
+      "sha256": "478a14ac3d6f5022cdcabfd68796245b6a98ed62887a90b1b0e658de2c527880"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-kawai/audio.manifest.json",
+      "byteSize": 2865,
+      "sha256": "aff704d6a963e2129c8c39bbf693e993a24ff24b475485560286ce624faeb5aa"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-kawai/instrument-parameters.json",
+      "byteSize": 4902,
+      "sha256": "9ccd56741f2a32eacc46b88c020eff90760f204d98cfae642a632d68730ec207"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-kawai/licenses/VCSL-CC0.txt",
+      "byteSize": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-kawai/licenses/VCSL-README.md",
+      "byteSize": 4365,
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-kawai/processing_recipe.md",
+      "byteSize": 4847,
+      "sha256": "71a2a7887c7d4fde260ef7b5ca25fec7c31d9fee95871d8401bbb41fe3afcdbb"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-kawai/qa_audio.md",
+      "byteSize": 1562,
+      "sha256": "9d5bccf955e8009f78a84d245eea5776577aff4bc156a62f0e42ace6236ca3cb"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-kawai/source_records.json",
+      "byteSize": 7832,
+      "sha256": "039ef32e92b5e8ef5d0b8904099b4f33b3e812595f37f3e86af029ef7c17d01b"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-kawai/trial.sf2",
+      "byteSize": 2668204,
+      "sha256": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-steinway-b/audio.manifest.json",
+      "byteSize": 2878,
+      "sha256": "550ecdba04bc9b95096a4068ba7909d1e1be070b9412a7a1b1d4a15f32c29674"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-steinway-b/instrument-parameters.json",
+      "byteSize": 4915,
+      "sha256": "f74079190433121ba699b26e6ced011b053b7362c003b21cadcf2fd22965b770"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-steinway-b/licenses/VCSL-CC0.txt",
+      "byteSize": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-steinway-b/licenses/VCSL-README.md",
+      "byteSize": 4365,
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-steinway-b/processing_recipe.md",
+      "byteSize": 4847,
+      "sha256": "71a2a7887c7d4fde260ef7b5ca25fec7c31d9fee95871d8401bbb41fe3afcdbb"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-steinway-b/qa_audio.md",
+      "byteSize": 1567,
+      "sha256": "f3653c6b1055bd509fb5ed99f81bfab007084783f5e48721c6d97e3f979dedce"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-steinway-b/source_records.json",
+      "byteSize": 5414,
+      "sha256": "2edd5a4d220ed648e358fd1bf2c380b7355399e99ec0ee6ec0887264101204a6"
+    },
+    {
+      "path": "Design/Audio/probes/A-001B/vcsl-steinway-b/trial.sf2",
+      "byteSize": 2649954,
+      "sha256": "8261dac642441fcf78a5946e96f898119ebd609227590c8638f148dea5b7f359"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/samples/piano_m033_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "f482eb1e3fc98c54d41c722ca6c366ded4f490a7c942190126fde1600f4575fe"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/samples/piano_m042_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "409860aa43b2dc11258b8815c769c12c884aa26aac31f31ff561090e5223af25"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/samples/piano_m060_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "a93f5f0cf7ab76dcaddab1d4833a0e1e31e1564bdd8051f65711de01c5fcd9a1"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/samples/piano_m096_v064_rr01.wav",
+      "byteSize": 1088168,
+      "sha256": "91eebfb4b04031d9dbe024d587a4672fb0d1605da7ad2c9d7895e5097ffcf578"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/samples/piano_m034_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "464b50a60ea702e40898a7fa181f3dfc5558bca77066698b7c39ea5b1eb33eff"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/samples/piano_m042_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "5c7c7d8bdd62379830f04f5fd26a269530159a7f7d2adf1bdbf9704c86c0c663"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/samples/piano_m060_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "5ce865efc31dac8597a9129212336b0f9620fdbb6e51d32c0bc70e7f198c6c32"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/samples/piano_m096_v064_rr01.wav",
+      "byteSize": 1033406,
+      "sha256": "e9edf14f696e2c7d5141e13de09ec010635e37ccf64ff5c5f6dc134790470254"
+    },
+    {
+      "path": "contracts/audio.manifest.schema.json",
+      "byteSize": 4093,
+      "sha256": "0e7f684d5c40f1cd6f998e1bf4396eeea00a4552059063bfd4032817dc38f947"
+    },
+    {
+      "path": "docs/handoffs/A-001B.md",
+      "byteSize": 7229,
+      "sha256": "fb3a9ac5ff0882f58f363ddba2add2f1500d02327e570be2916f84ba3dde395a"
+    },
+    {
+      "path": "docs/tasks/C-001B.md",
+      "byteSize": 2136,
+      "sha256": "923cbc6f8cef4517746e43f07b1871e088caf11217f40afa3b665d99fed19058"
+    }
+  ],
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "python": "3.12.2 (v3.12.2:6abddd9f6a, Feb  6 2024, 17:02:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "headAtPreflight": "NOT_QUERIED_no_Git_operations",
+  "command": "python3 Code/Scripts/verify_candidate_banks.py preflight",
+  "candidateWrites": false,
+  "audioAssetDownloads": false
+}

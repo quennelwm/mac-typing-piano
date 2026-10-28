@@ -1,0 +1,24 @@
+--- TrialBankTests.swift (before)
++++ TrialBankTests.swift (after)
+@@ -111,8 +111,11 @@
+         let stereoChord = try stereo.render(seconds: 1)
+         XCTAssertEqual(stereoChord.count, 96_000)
+         record("stereo-64-note-max-v127", stereoChord, gain: stereo.gain, velocity: 127)
+-        let output = root.appendingPathComponent("docs/evidence/C-002T/audio-calibration")
+-        try FileManager.default.createDirectory(at: output, withIntermediateDirectories: true)
++        // Regression runs must not replace frozen C-002T acceptance evidence.
++        let output = FileManager.default.temporaryDirectory
++            .appendingPathComponent("typing-piano-calibration-\(UUID().uuidString)", isDirectory: true)
++        try FileManager.default.createDirectory(at: output, withIntermediateDirectories: false)
++        addTeardownBlock { try FileManager.default.removeItem(at: output) }
+         let wav = output.appendingPathComponent("steinway-trial-float32.wav")
+         try floatWAV(clips).write(to: wav)
+         let report: [String: Any] = ["task": "C-002T", "date": ISO8601DateFormatter().string(from: Date()), "environment": ProcessInfo.processInfo.operatingSystemVersionString, "hardwareOutput": false, "realInput": false,
+@@ -121,6 +124,6 @@
+             "measurements": rows, "representativeWAV": ["file": wav.lastPathComponent, "sha256": try sha(wav), "segments": segments], "muteShutdownAndReenableSilent": true,
+             "limits": "Deterministic sequences only; no hardware listening, acoustic latency, exhaustive arbitrary-polyphony or device-change acceptance."]
+         try JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]).write(to: output.appendingPathComponent("calibration.json"))
+-        print("TRIAL_CALIBRATION rows=\(rows.count) largest_peak=\(rows.compactMap { $0["peak"] as? Float }.max() ?? 0)")
++        print("TRIAL_CALIBRATION rows=\(rows.count) largest_peak=\(rows.compactMap { $0["peak"] as? Float }.max() ?? 0) temporary_output=\(output.path)")
+     }
+ }

@@ -188,8 +188,34 @@ do {
         shell.onVolume = { callback = $0 }
         shell.slider.doubleValue = 0.75
         _ = shell.slider.sendAction(shell.slider.action, to: shell.slider.target)
+        var iconRenders: [[String: Any]] = []
+        for scale in [1, 2] {
+            let size = Int(shell.icon.size.width) * scale
+            guard let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: size, pixelsHigh: size,
+                bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
+                colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0),
+                let context = NSGraphicsContext(bitmapImageRep: bitmap) else { throw ProbeError.invalid("图标离屏上下文创建失败") }
+            NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = context
+            context.cgContext.scaleBy(x: CGFloat(scale), y: CGFloat(scale))
+            shell.icon.draw(in: NSRect(origin: .zero, size: shell.icon.size))
+            context.flushGraphics(); NSGraphicsContext.restoreGraphicsState()
+            var edgeAlpha = 0.0, maximumAlpha = 0.0
+            for y in 0..<size { for x in 0..<size {
+                let alpha = Double(bitmap.colorAt(x: x, y: y)?.alphaComponent ?? 0)
+                maximumAlpha = max(maximumAlpha, alpha)
+                if x == 0 || y == 0 || x == size - 1 || y == size - 1 { edgeAlpha = max(edgeAlpha, alpha) }
+            } }
+            iconRenders.append(["scale": scale, "pixels": size, "outerEdgeMaxAlpha": edgeAlpha, "maximumAlpha": maximumAlpha])
+            if let index = arguments.firstIndex(of: "--menu-icon-output"), arguments.count > index + 1 {
+                let directory = URL(fileURLWithPath: arguments[index + 1], isDirectory: true)
+                try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+                guard let png = bitmap.representation(using: .png, properties: [:]) else { throw ProbeError.invalid("图标PNG编码失败") }
+                try png.write(to: directory.appendingPathComponent("menu-icon-\(scale)x.png"))
+            }
+        }
         let passed = callback == 0.75 && shell.percentage.stringValue == "75%" && shell.icon.isTemplate && shell.slider.isContinuous
         emit(["kind": "programmatic native menu control smoke; actual menu tracking/drag not tested", "passed": passed,
+            "iconRenders": iconRenders, "iconCanvasWidthPt": shell.icon.size.width,
             "callbackVolume": callback, "percentage": shell.percentage.stringValue, "templateIcon": shell.icon.isTemplate,
             "requestedStatusItemWidthPt": ProbeMenu.statusItemWidth,
             "statusBarThicknessPt": NSStatusBar.system.thickness,
@@ -200,10 +226,13 @@ do {
         guard let instanceLease = try PianoSingleInstance.acquireForGUI() else { exit(0) }
         let app = NSApplication.shared
         app.setActivationPolicy(.accessory)
-        let preferenceRoot = Bundle.main.bundleURL.pathExtension == "app" ? Bundle.main.bundleURL.deletingLastPathComponent() : sourceRoot.appendingPathComponent("Code/build")
+        let legacyRoot = Bundle.main.bundleURL.pathExtension == "app" ? Bundle.main.bundleURL.deletingLastPathComponent() : sourceRoot.appendingPathComponent("Code/build")
+        let preferenceRoot = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Application Support/local.typingpiano.trial")
+        let preferenceURL = preferenceRoot.appendingPathComponent("probe-preferences.json")
+        _ = try AppPreferences.loadMigrating(to: preferenceURL, legacyURL: legacyRoot.appendingPathComponent("probe-preferences.json"))
         let sources = try AudioSource.available(root: bundled ? resources : sourceRoot, bundled: bundled)
-        let dock = DockAdapter(storage: NativeDockStorage(), tickets: FileDockTicketStore(url: preferenceRoot.appendingPathComponent("dock-recovery.json")))
-        let delegate = try ProbeController(mapping: mapping, sources: sources, preferencesURL: preferenceRoot.appendingPathComponent("probe-preferences.json"), dockAdapter: dock)
+        let dock = DockAdapter(storage: NativeDockStorage(), tickets: FileDockTicketStore(url: legacyRoot.appendingPathComponent("dock-recovery.json")))
+        let delegate = try ProbeController(mapping: mapping, sources: sources, preferencesURL: preferenceURL, dockAdapter: dock)
         app.delegate = delegate
         withExtendedLifetime((delegate, instanceLease)) { app.run() }
     }

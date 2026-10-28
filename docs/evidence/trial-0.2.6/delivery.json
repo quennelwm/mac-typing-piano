@@ -1,0 +1,67 @@
+{
+  "task": "C-GH-026 + CR-005",
+  "version": "0.2.6",
+  "build": "9",
+  "bundleID": "local.typingpiano.trial",
+  "appPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.6/打字钢琴试用.app",
+  "zipPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.6/打字钢琴试用.zip",
+  "binarySHA256": "a933d990c14b907f764a8bbb7530481968e4ccb74b780bcbccf8085a6fc07286",
+  "zipSHA256": "5cd4234250c85e5d1dc9dfc33265d11e30b82768fae526d444f437f35f44e8b8",
+  "architecture": "arm64",
+  "signing": "ad-hoc only; final Apple Development copy owned by PM",
+  "tests": {
+    "executed": 89,
+    "failures": 0,
+    "log": "tests.log"
+  },
+  "strictSignatureVerified": true,
+  "zipIntegrityPassed": true,
+  "menuSmokePassed": true,
+  "iconRenders": [
+    {
+      "maximumAlpha": 1,
+      "outerEdgeMaxAlpha": 0.08235294117647059,
+      "pixels": 16,
+      "scale": 1
+    },
+    {
+      "maximumAlpha": 1,
+      "outerEdgeMaxAlpha": 0,
+      "pixels": 32,
+      "scale": 2
+    }
+  ],
+  "protectedInstall": {
+    "version": "0.2.4",
+    "build": "7",
+    "files": 42,
+    "unchanged": true,
+    "binarySHA256": "6edd694ea26998ffb0015c1301b4042ed5a22c4fa594611eee102dcb41222202"
+  },
+  "guiStarted": false,
+  "inputMonitoringStarted": false,
+  "hardwareAudioStarted": false,
+  "realDockWritten": false,
+  "realAlertVolumeReadOrWritten": false,
+  "gitOperations": false,
+  "changedCodeFiles": [
+    "Code/Assets/source_inventory.md",
+    "Code/IMPLEMENTATION.md",
+    "Code/README.md",
+    "Code/Scripts/build.sh",
+    "Code/Sources/PianoCore/AppPreferences.swift",
+    "Code/Sources/PianoCore/StartupFlow.swift",
+    "Code/Sources/PianoMac/AlertVolume.swift",
+    "Code/Sources/PianoMac/ContinuousTrialStart.swift",
+    "Code/Sources/PianoMac/InputMonitor.swift",
+    "Code/Sources/PianoMac/ProbeController.swift",
+    "Code/Sources/PianoMac/ProbeMenu.swift",
+    "Code/Sources/PianoMac/SingleInstance.swift",
+    "Code/Sources/PianoProbe/main.swift",
+    "Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift",
+    "Code/Tests/PianoCoreTests/StartupFlowTests.swift",
+    "Code/Tests/PianoMacTests/AlertVolumeTests.swift",
+    "Code/Tests/PianoMacTests/LocalTrialStartTests.swift",
+    "Code/Tests/PianoMacTests/StartupEntryTests.swift"
+  ]
+}

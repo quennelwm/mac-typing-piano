@@ -15,6 +15,14 @@ public struct AppPreferences: Codable {
         value.setVolume(value.volume)
         return value
     }
+    /// Existing destination wins; a successful first load also saves defaults to finish migration.
+    /// The only legacy candidate is supplied by the current app, and is never edited/deleted.
+    public static func loadMigrating(to url: URL, legacyURL: URL) throws -> Self {
+        if FileManager.default.fileExists(atPath: url.path) { return try load(from: url) }
+        let value = try load(from: legacyURL)
+        try value.save(to: url)
+        return value
+    }
     public func save(to url: URL) throws {
         try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
         try JSONEncoder().encode(self).write(to: url, options: .atomic)

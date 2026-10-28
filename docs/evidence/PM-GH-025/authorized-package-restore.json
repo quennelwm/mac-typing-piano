@@ -1,0 +1,12 @@
+{
+  "cause": "Input-monitoring authorization pinned to original 0.2.4 CDHash; active 0.2.5 uses different signature",
+  "authorizedCDHash": "3f1d41bf04e557b9b73ebe1f6799fb1e394e3d22",
+  "restoredBinarySHA256": "6edd694ea26998ffb0015c1301b4042ed5a22c4fa594611eee102dcb41222202",
+  "priorCandidateExited": true,
+  "preferencesUnchanged": true,
+  "previousInstallPreserved": "retired-compact-1793190160.app",
+  "inputPermissionChanged": false,
+  "source": "candidate-0.2.4",
+  "restoredGUIStartedContinuousSession": true,
+  "userConfirmedPhysicalKeySound": true
+}

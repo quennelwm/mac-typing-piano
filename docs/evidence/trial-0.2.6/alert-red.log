@@ -1,0 +1,303 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[3/6] Emitting module PianoMacTests
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:5:26: error: cannot find type 'AlertVolumeStorage' in scope
+  3 | 
+  4 | final class AlertVolumeTests: XCTestCase {
+  5 |     final class Storage: AlertVolumeStorage {
+    |                          `- error: cannot find type 'AlertVolumeStorage' in scope
+  6 |         var value = 65
+  7 |         var reads = 0
+[4/6] Compiling PianoMacTests AlertVolumeTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:5:26: error: cannot find type 'AlertVolumeStorage' in scope
+  3 | 
+  4 | final class AlertVolumeTests: XCTestCase {
+  5 |     final class Storage: AlertVolumeStorage {
+    |                          `- error: cannot find type 'AlertVolumeStorage' in scope
+  6 |         var value = 65
+  7 |         var reads = 0
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:10:70: error: cannot find 'ProbeError' in scope
+  8 |         var writes: [Int] = []
+  9 |         var readFails = false, writeFails = false, ignoresWrites = false, failAfterWrite = false
+ 10 |         func read() throws -> Int { reads += 1; if readFails { throw ProbeError.invalid("read failed") }; return value }
+    |                                                                      `- error: cannot find 'ProbeError' in scope
+ 11 |         func write(_ value: Int) throws {
+ 12 |             writes.append(value)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:13:35: error: cannot find 'ProbeError' in scope
+ 11 |         func write(_ value: Int) throws {
+ 12 |             writes.append(value)
+ 13 |             if writeFails { throw ProbeError.invalid("write denied") }
+    |                                   `- error: cannot find 'ProbeError' in scope
+ 14 |             if !ignoresWrites { self.value = value }
+ 15 |             if failAfterWrite { throw ProbeError.invalid("write reply failed") }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:15:39: error: cannot find 'ProbeError' in scope
+ 13 |             if writeFails { throw ProbeError.invalid("write denied") }
+ 14 |             if !ignoresWrites { self.value = value }
+ 15 |             if failAfterWrite { throw ProbeError.invalid("write reply failed") }
+    |                                       `- error: cannot find 'ProbeError' in scope
+ 16 |         }
+ 17 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:19:44: error: cannot find 'AlertVolumeAdapter' in scope
+ 17 |     }
+ 18 |     func testDefaultAndCancellationDoNotReadOrWriteSystem() {
+ 19 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+    |                                            `- error: cannot find 'AlertVolumeAdapter' in scope
+ 20 |         let tested = AlertVolumeAdapter(storage: storage)
+ 21 |         XCTAssertEqual(tested.mute(confirmed: false), .cancelled)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:20:22: error: cannot find 'AlertVolumeAdapter' in scope
+ 18 |     func testDefaultAndCancellationDoNotReadOrWriteSystem() {
+ 19 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+ 20 |         let tested = AlertVolumeAdapter(storage: storage)
+    |                      `- error: cannot find 'AlertVolumeAdapter' in scope
+ 21 |         XCTAssertEqual(tested.mute(confirmed: false), .cancelled)
+ 22 |         XCTAssertEqual(tested.restore(), .noChange)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:21:56: error: type 'Equatable' has no member 'cancelled'
+ 19 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+ 20 |         let tested = AlertVolumeAdapter(storage: storage)
+ 21 |         XCTAssertEqual(tested.mute(confirmed: false), .cancelled)
+    |                                                        `- error: type 'Equatable' has no member 'cancelled'
+ 22 |         XCTAssertEqual(tested.restore(), .noChange)
+ 23 |         XCTAssertNil(adapter.observed)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:22:43: error: type 'Equatable' has no member 'noChange'
+ 20 |         let tested = AlertVolumeAdapter(storage: storage)
+ 21 |         XCTAssertEqual(tested.mute(confirmed: false), .cancelled)
+ 22 |         XCTAssertEqual(tested.restore(), .noChange)
+    |                                           `- error: type 'Equatable' has no member 'noChange'
+ 23 |         XCTAssertNil(adapter.observed)
+ 24 |         XCTAssertEqual(storage.reads, 0); XCTAssertEqual(storage.writes, [])
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:27:44: error: cannot find 'AlertVolumeAdapter' in scope
+ 25 |     }
+ 26 |     func testMuteAndCloseOrExitRestoreOnlyOriginalOwnedValue() {
+ 27 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+    |                                            `- error: cannot find 'AlertVolumeAdapter' in scope
+ 28 |         _ = adapter // Separate storage instances never share ownership.
+ 29 |         let tested = AlertVolumeAdapter(storage: storage)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:29:22: error: cannot find 'AlertVolumeAdapter' in scope
+ 27 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+ 28 |         _ = adapter // Separate storage instances never share ownership.
+ 29 |         let tested = AlertVolumeAdapter(storage: storage)
+    |                      `- error: cannot find 'AlertVolumeAdapter' in scope
+ 30 |         XCTAssertEqual(tested.mute(confirmed: true), .muted)
+ 31 |         XCTAssertEqual(tested.originalVolume, 65); XCTAssertEqual(tested.mutedState, true)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:30:55: error: type 'Equatable' has no member 'muted'
+ 28 |         _ = adapter // Separate storage instances never share ownership.
+ 29 |         let tested = AlertVolumeAdapter(storage: storage)
+ 30 |         XCTAssertEqual(tested.mute(confirmed: true), .muted)
+    |                                                       `- error: type 'Equatable' has no member 'muted'
+ 31 |         XCTAssertEqual(tested.originalVolume, 65); XCTAssertEqual(tested.mutedState, true)
+ 32 |         XCTAssertEqual(tested.restore(), .restored)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:32:43: error: type 'Equatable' has no member 'restored'
+ 30 |         XCTAssertEqual(tested.mute(confirmed: true), .muted)
+ 31 |         XCTAssertEqual(tested.originalVolume, 65); XCTAssertEqual(tested.mutedState, true)
+ 32 |         XCTAssertEqual(tested.restore(), .restored)
+    |                                           `- error: type 'Equatable' has no member 'restored'
+ 33 |         XCTAssertEqual(storage.value, 65); XCTAssertEqual(storage.writes, [0, 65])
+ 34 |         XCTAssertEqual(tested.restore(), .noChange)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:34:43: error: type 'Equatable' has no member 'noChange'
+ 32 |         XCTAssertEqual(tested.restore(), .restored)
+ 33 |         XCTAssertEqual(storage.value, 65); XCTAssertEqual(storage.writes, [0, 65])
+ 34 |         XCTAssertEqual(tested.restore(), .noChange)
+    |                                           `- error: type 'Equatable' has no member 'noChange'
+ 35 |         XCTAssertEqual(storage.writes, [0, 65])
+ 36 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:39:23: error: cannot find 'AlertVolumeAdapter' in scope
+ 37 |     func testAlreadyZeroHasNoInventedRestoreValue() {
+ 38 |         let storage = Storage(); storage.value = 0
+ 39 |         let adapter = AlertVolumeAdapter(storage: storage)
+    |                       `- error: cannot find 'AlertVolumeAdapter' in scope
+ 40 |         XCTAssertEqual(adapter.mute(confirmed: true), .alreadySilent)
+ 41 |         XCTAssertEqual(adapter.mutedState, true); XCTAssertNil(adapter.originalVolume)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:40:56: error: type 'Equatable' has no member 'alreadySilent'
+ 38 |         let storage = Storage(); storage.value = 0
+ 39 |         let adapter = AlertVolumeAdapter(storage: storage)
+ 40 |         XCTAssertEqual(adapter.mute(confirmed: true), .alreadySilent)
+    |                                                        `- error: type 'Equatable' has no member 'alreadySilent'
+ 41 |         XCTAssertEqual(adapter.mutedState, true); XCTAssertNil(adapter.originalVolume)
+ 42 |         XCTAssertEqual(adapter.restore(), .noChange)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:42:44: error: type 'Equatable' has no member 'noChange'
+ 40 |         XCTAssertEqual(adapter.mute(confirmed: true), .alreadySilent)
+ 41 |         XCTAssertEqual(adapter.mutedState, true); XCTAssertNil(adapter.originalVolume)
+ 42 |         XCTAssertEqual(adapter.restore(), .noChange)
+    |                                            `- error: type 'Equatable' has no member 'noChange'
+ 43 |         XCTAssertEqual(storage.value, 0); XCTAssertTrue(storage.writes.isEmpty)
+ 44 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:46:44: error: cannot find 'AlertVolumeAdapter' in scope
+ 44 |     }
+ 45 |     func testExternalChangeDropsOwnershipAndIsNeverOverwrittenOnExit() {
+ 46 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+    |                                            `- error: cannot find 'AlertVolumeAdapter' in scope
+ 47 |         _ = adapter
+ 48 |         let tested = AlertVolumeAdapter(storage: storage)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:48:22: error: cannot find 'AlertVolumeAdapter' in scope
+ 46 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+ 47 |         _ = adapter
+ 48 |         let tested = AlertVolumeAdapter(storage: storage)
+    |                      `- error: cannot find 'AlertVolumeAdapter' in scope
+ 49 |         _ = tested.mute(confirmed: true)
+ 50 |         storage.value = 27
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:51:43: error: type 'Equatable' has no member 'externalChange'
+ 49 |         _ = tested.mute(confirmed: true)
+ 50 |         storage.value = 27
+ 51 |         XCTAssertEqual(tested.refresh(), .externalChange)
+    |                                           `- error: type 'Equatable' has no member 'externalChange'
+ 52 |         XCTAssertNil(tested.originalVolume)
+ 53 |         XCTAssertEqual(tested.restore(), .noChange)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:53:43: error: type 'Equatable' has no member 'noChange'
+ 51 |         XCTAssertEqual(tested.refresh(), .externalChange)
+ 52 |         XCTAssertNil(tested.originalVolume)
+ 53 |         XCTAssertEqual(tested.restore(), .noChange)
+    |                                           `- error: type 'Equatable' has no member 'noChange'
+ 54 |         XCTAssertEqual(storage.value, 27); XCTAssertEqual(storage.writes, [0])
+ 55 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:57:44: error: cannot find 'AlertVolumeAdapter' in scope
+ 55 |     }
+ 56 |     func testFailedOrIgnoredWritesDoNotReportSuccess() {
+ 57 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+    |                                            `- error: cannot find 'AlertVolumeAdapter' in scope
+ 58 |         _ = adapter
+ 59 |         let tested = AlertVolumeAdapter(storage: storage)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:59:22: error: cannot find 'AlertVolumeAdapter' in scope
+ 57 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+ 58 |         _ = adapter
+ 59 |         let tested = AlertVolumeAdapter(storage: storage)
+    |                      `- error: cannot find 'AlertVolumeAdapter' in scope
+ 60 |         storage.writeFails = true
+ 61 |         XCTAssertEqual(tested.mute(confirmed: true), .failed); XCTAssertNil(tested.mutedState)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:61:55: error: type 'Equatable' has no member 'failed'
+ 59 |         let tested = AlertVolumeAdapter(storage: storage)
+ 60 |         storage.writeFails = true
+ 61 |         XCTAssertEqual(tested.mute(confirmed: true), .failed); XCTAssertNil(tested.mutedState)
+    |                                                       `- error: type 'Equatable' has no member 'failed'
+ 62 |         storage.writeFails = false; storage.ignoresWrites = true
+ 63 |         XCTAssertEqual(tested.mute(confirmed: true), .failed)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:63:55: error: type 'Equatable' has no member 'failed'
+ 61 |         XCTAssertEqual(tested.mute(confirmed: true), .failed); XCTAssertNil(tested.mutedState)
+ 62 |         storage.writeFails = false; storage.ignoresWrites = true
+ 63 |         XCTAssertEqual(tested.mute(confirmed: true), .failed)
+    |                                                       `- error: type 'Equatable' has no member 'failed'
+ 64 |         XCTAssertEqual(storage.value, 65); XCTAssertNil(tested.originalVolume)
+ 65 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:67:43: error: cannot find 'AlertVolumeAdapter' in scope
+ 65 |     }
+ 66 |     func testWriteErrorAfterActualChangeRetainsRestorableOwnership() {
+ 67 |         let storage = Storage(), tested = AlertVolumeAdapter(storage: Storage())
+    |                                           `- error: cannot find 'AlertVolumeAdapter' in scope
+ 68 |         _ = tested
+ 69 |         let adapter = AlertVolumeAdapter(storage: storage)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:69:23: error: cannot find 'AlertVolumeAdapter' in scope
+ 67 |         let storage = Storage(), tested = AlertVolumeAdapter(storage: Storage())
+ 68 |         _ = tested
+ 69 |         let adapter = AlertVolumeAdapter(storage: storage)
+    |                       `- error: cannot find 'AlertVolumeAdapter' in scope
+ 70 |         storage.failAfterWrite = true
+ 71 |         XCTAssertEqual(adapter.mute(confirmed: true), .failed)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:71:56: error: type 'Equatable' has no member 'failed'
+ 69 |         let adapter = AlertVolumeAdapter(storage: storage)
+ 70 |         storage.failAfterWrite = true
+ 71 |         XCTAssertEqual(adapter.mute(confirmed: true), .failed)
+    |                                                        `- error: type 'Equatable' has no member 'failed'
+ 72 |         XCTAssertNil(adapter.mutedState); XCTAssertEqual(adapter.originalVolume, 65)
+ 73 |         storage.failAfterWrite = false
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:74:44: error: type 'Equatable' has no member 'restored'
+ 72 |         XCTAssertNil(adapter.mutedState); XCTAssertEqual(adapter.originalVolume, 65)
+ 73 |         storage.failAfterWrite = false
+ 74 |         XCTAssertEqual(adapter.restore(), .restored); XCTAssertEqual(storage.value, 65)
+    |                                            `- error: type 'Equatable' has no member 'restored'
+ 75 |     }
+ 76 |     func testReadFailurePreventsWritesAndFailedRestoreCanBeRetried() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:77:44: error: cannot find 'AlertVolumeAdapter' in scope
+ 75 |     }
+ 76 |     func testReadFailurePreventsWritesAndFailedRestoreCanBeRetried() {
+ 77 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+    |                                            `- error: cannot find 'AlertVolumeAdapter' in scope
+ 78 |         _ = adapter
+ 79 |         let tested = AlertVolumeAdapter(storage: storage)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:79:22: error: cannot find 'AlertVolumeAdapter' in scope
+ 77 |         let storage = Storage(), adapter = AlertVolumeAdapter(storage: Storage())
+ 78 |         _ = adapter
+ 79 |         let tested = AlertVolumeAdapter(storage: storage)
+    |                      `- error: cannot find 'AlertVolumeAdapter' in scope
+ 80 |         storage.readFails = true
+ 81 |         XCTAssertEqual(tested.mute(confirmed: true), .failed); XCTAssertTrue(storage.writes.isEmpty)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:81:55: error: type 'Equatable' has no member 'failed'
+ 79 |         let tested = AlertVolumeAdapter(storage: storage)
+ 80 |         storage.readFails = true
+ 81 |         XCTAssertEqual(tested.mute(confirmed: true), .failed); XCTAssertTrue(storage.writes.isEmpty)
+    |                                                       `- error: type 'Equatable' has no member 'failed'
+ 82 |         storage.readFails = false; _ = tested.mute(confirmed: true)
+ 83 |         storage.writeFails = true
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:84:43: error: type 'Equatable' has no member 'failed'
+ 82 |         storage.readFails = false; _ = tested.mute(confirmed: true)
+ 83 |         storage.writeFails = true
+ 84 |         XCTAssertEqual(tested.restore(), .failed); XCTAssertEqual(tested.originalVolume, 65)
+    |                                           `- error: type 'Equatable' has no member 'failed'
+ 85 |         storage.writeFails = false
+ 86 |         XCTAssertEqual(tested.restore(), .restored)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:86:43: error: type 'Equatable' has no member 'restored'
+ 84 |         XCTAssertEqual(tested.restore(), .failed); XCTAssertEqual(tested.originalVolume, 65)
+ 85 |         storage.writeFails = false
+ 86 |         XCTAssertEqual(tested.restore(), .restored)
+    |                                           `- error: type 'Equatable' has no member 'restored'
+ 87 |     }
+ 88 |     func testStandardAdditionsBackendOnlyUsesAlertParameterAndRejectsInvalidReadback() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:91:23: error: cannot find 'StandardAdditionsAlertVolumeStorage' in scope
+ 89 |         var commands: [String] = []
+ 90 |         var answer = "65"
+ 91 |         let backend = StandardAdditionsAlertVolumeStorage { command in commands.append(command); return answer }
+    |                       `- error: cannot find 'StandardAdditionsAlertVolumeStorage' in scope
+ 92 |         XCTAssertEqual(try backend.read(), 65)
+ 93 |         try backend.write(0)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:101:22: error: cannot find 'StandardAdditionsAlertVolumeStorage' in scope
+ 99 |         XCTAssertThrowsError(try backend.write(-1)); XCTAssertThrowsError(try backend.write(101))
+100 |         XCTAssertEqual(commands.count, count)
+101 |         let denied = StandardAdditionsAlertVolumeStorage { _ in throw ProbeError.invalid("-1743") }
+    |                      `- error: cannot find 'StandardAdditionsAlertVolumeStorage' in scope
+102 |         XCTAssertThrowsError(try denied.read())
+103 |         XCTAssertThrowsError(try denied.write(0))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:101:71: error: cannot find 'ProbeError' in scope
+ 99 |         XCTAssertThrowsError(try backend.write(-1)); XCTAssertThrowsError(try backend.write(101))
+100 |         XCTAssertEqual(commands.count, count)
+101 |         let denied = StandardAdditionsAlertVolumeStorage { _ in throw ProbeError.invalid("-1743") }
+    |                                                                       `- error: cannot find 'ProbeError' in scope
+102 |         XCTAssertThrowsError(try denied.read())
+103 |         XCTAssertThrowsError(try denied.write(0))
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

@@ -42,6 +42,7 @@ public final class PianoInstanceLease {
 }
 
 public enum PianoSingleInstance {
+    public static let reopenNotification = Notification.Name("local.typingpiano.trial.showStartup")
     /// Only normal GUI startup calls this. Diagnostics/offline CLI do not create an icon.
     /// A nil lease means the new process must exit before constructing its controller.
     public static func acquireForGUI() throws -> PianoInstanceLease? {
@@ -64,6 +65,7 @@ public enum PianoSingleInstance {
         if lease == nil || existing != nil {
             if let existing, let app = running.first(where: { $0.processIdentifier == existing.pid }) {
                 _ = app.activate(options: [.activateAllWindows])
+                DistributedNotificationCenter.default().postNotificationName(reopenNotification, object: String(existing.pid), userInfo: nil, deliverImmediately: true)
             }
             fputs("打字钢琴已运行；本次启动退出，不创建第二个菜单栏图标。\n", stderr)
             return nil

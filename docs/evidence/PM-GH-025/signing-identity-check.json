@@ -1,0 +1,13 @@
+{
+  "signingClass": "Apple Development",
+  "differentBuildsChecked": [
+    "0.2.4",
+    "0.2.5"
+  ],
+  "strictSignatureVerified": true,
+  "identicalDesignatedRequirements": true,
+  "designatedRequirementSHA256": "593160c3be665fc9c487ccfb706cc9dac40fec1a5ec8bf1d91282bee86b09971",
+  "realTCCUpgradeTested": false,
+  "developerIDOrNotarization": false,
+  "installedAuthorizedAppChanged": false
+}

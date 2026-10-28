@@ -1,0 +1,31 @@
+{
+  "task": "C-GH-025",
+  "version": "0.2.5",
+  "build": "8",
+  "bundleID": "local.typingpiano.trial",
+  "appPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.5/打字钢琴试用.app",
+  "zipPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.5/打字钢琴试用.zip",
+  "binarySHA256": "5a5a2e384d1b10240f19cc5d3edd1ec404e0004cb80040fc78233c7990440fa0",
+  "zipSHA256": "0b3033c1ee2d384c21dc163133c04f11acb7ec0eb9f91563bfebb17b010a2437",
+  "architecture": "arm64",
+  "tests": {
+    "executed": 64,
+    "failures": 0,
+    "log": "tests.log"
+  },
+  "strictSignatureVerified": true,
+  "menuSmokePassed": true,
+  "requestedStatusItemWidthPt": 16,
+  "protectedInstalledApp": {
+    "version": "0.2.4",
+    "build": "7",
+    "fileCount": 42,
+    "unchanged": true,
+    "binarySHA256": "81fb97253ca4cac9c9f59e42689d9e067743732dfae11f62bd8f598f1955c394"
+  },
+  "guiStarted": false,
+  "realDockWritten": false,
+  "inputMonitoringStarted": false,
+  "hardwareAudioStarted": false,
+  "gitOperations": false
+}

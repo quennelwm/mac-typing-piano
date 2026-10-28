@@ -1,0 +1,25 @@
+[0/1] Planning build
+Building for debugging...
+[0/8] Write sources
+[4/8] Write swift-version--58304C5D6DBC2206.txt
+[6/10] Emitting module PianoCore
+[7/10] Compiling PianoCore StartupFlow.swift
+[8/16] Emitting module PianoCoreTests
+[9/16] Compiling PianoCoreTests StartupFlowTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:55:20: error: cannot find 'AuthorizationReturnGate' in scope
+53 |         let flow = try StartupFlow(intentURL: url)
+54 |         _ = try flow.handle(.primary, permission: false, secureInput: false)
+55 |         var gate = AuthorizationReturnGate(); gate.beginRequest()
+   |                    `- error: cannot find 'AuthorizationReturnGate' in scope
+56 |         XCTAssertFalse(gate.canContinue(permission: false))
+57 |         XCTAssertTrue(flow.pendingAuthorization)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift:64:20: error: cannot find 'AuthorizationReturnGate' in scope
+62 |     }
+63 |     func testImmediatePermissionSuccessAndRelaunchDoNotRequireSettingsVisit() {
+64 |         var gate = AuthorizationReturnGate(); gate.beginRequest()
+   |                    `- error: cannot find 'AuthorizationReturnGate' in scope
+65 |         XCTAssertTrue(gate.canContinue(permission: true))
+66 |         gate.reset()
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

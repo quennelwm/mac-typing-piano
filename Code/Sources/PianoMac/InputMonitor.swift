@@ -43,7 +43,7 @@ public final class InputMonitor: InputMonitoring {
         guard !Self.secureInput else { throw ProbeError.invalid("安全输入已启用；探针保持停止") }
         if global {
             guard Self.hasExistingPermission else {
-                throw ProbeError.invalid("尚无输入监控授权。探针不会弹授权或改设置；请自行在系统设置中授权后重开测试，或用本窗口测试。")
+                throw ProbeError.invalid("输入监控未授权或已失效；请从启动窗口点击“授权并开始”，或用本窗口试弹。")
             }
             let mask = [CGEventType.keyDown, .keyUp, .flagsChanged].reduce(CGEventMask(0)) { $0 | (1 << $1.rawValue) }
             guard let newTap = CGEvent.tapCreate(tap: .cgSessionEventTap, place: .headInsertEventTap,

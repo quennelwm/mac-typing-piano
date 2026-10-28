@@ -1,0 +1,116 @@
+--- Code/Sources/PianoMac/ProbeMenu.swift (task start)
++++ Code/Sources/PianoMac/ProbeMenu.swift (0.2.5)
+@@ -37,7 +37,10 @@
+             guard let ctx = NSGraphicsContext.current?.cgContext else { return false }
+             let line = CTLineCreateWithAttributedString(NSAttributedString(string: "♪", attributes: [.font: NSFont.systemFont(ofSize: 18, weight: .medium), .foregroundColor: NSColor.black]))
+             let ink = CTLineGetBoundsWithOptions(line, .useGlyphPathBounds)
+-            let scale = min(15 / ink.width, 15 / ink.height)
++            guard ink.width.isFinite, ink.height.isFinite, ink.width > 0, ink.height > 0 else { return false }
++            // Keep the 18pt glyph; fit its actual ink with a half-point antialiasing margin.
++            let content = rect.insetBy(dx: 0.5, dy: 0.5)
++            let scale = min(1, min(content.width / ink.width, content.height / ink.height))
+             ctx.saveGState(); ctx.translateBy(x: rect.midX, y: rect.midY); ctx.scaleBy(x: scale, y: scale)
+             ctx.textMatrix = .identity; ctx.textPosition = CGPoint(x: -ink.midX, y: -ink.midY)
+             CTLineDraw(line, ctx); ctx.restoreGState(); return true
+--- Code/Sources/PianoMac/ProbeController.swift (task start)
++++ Code/Sources/PianoMac/ProbeController.swift (0.2.5)
+@@ -86,7 +86,7 @@
+     }
+     private func buildStartupWindow() {
+         startupWindow = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 480, height: 490), styleMask: [.titled, .closable], backing: .buffered, defer: false)
+-        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.4"
++        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.5"
+         startupWindow.title = "打字钢琴试用 · \(version)"; startupWindow.center(); startupWindow.isReleasedWhenClosed = false
+         let title = NSTextField(labelWithString: "让打字伴随琴声")
+         title.font = .systemFont(ofSize: 20, weight: .semibold)
+--- Code/Scripts/build.sh (task start)
++++ Code/Scripts/build.sh (0.2.5)
+@@ -2,7 +2,7 @@
+ set -euo pipefail
+ code_root="$(cd "$(dirname "$0")/.." && pwd)"
+ project_root="$(cd "$code_root/.." && pwd)"
+-build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4}"
++build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5}"
+ mkdir -p "$build_root"
+ build_root="$(cd "$build_root" && pwd)"
+ if [ "$build_root" = "$HOME/Library/Caches/local.typingpiano.trial" ]; then
+@@ -93,8 +93,8 @@
+ <key>CFBundleExecutable</key><string>TypingPianoProbe</string>
+ <key>CFBundleIdentifier</key><string>local.typingpiano.trial</string>
+ <key>CFBundleName</key><string>打字钢琴试用</string>
+-<key>CFBundleVersion</key><string>7</string>
+-<key>CFBundleShortVersionString</key><string>0.2.4</string>
++<key>CFBundleVersion</key><string>8</string>
++<key>CFBundleShortVersionString</key><string>0.2.5</string>
+ <key>TypingPianoSingleInstanceProtocol</key><integer>1</integer>
+ <key>CFBundlePackageType</key><string>APPL</string>
+ <key>LSMinimumSystemVersion</key><string>14.0</string>
+--- Code/README.md (task start)
++++ Code/README.md (0.2.5)
+@@ -1,6 +1,6 @@
+-# 打字钢琴试用 0.2.4
++# 打字钢琴试用 0.2.5
+ 
+-当前版本为 **0.2.4 / build7**，Bundle ID 为 `local.typingpiano.trial`。默认使用全64音Steinway B试用音库，原生Quiet Ivory琴键、独立灰标签和700ms上升♪。Fn保留，顶部整排（包括Esc）排除。对外下载入口见[仓库根说明](../README.md)。
++当前版本为 **0.2.5 / build8**，Bundle ID 为 `local.typingpiano.trial`。默认使用全64音Steinway B试用音库，原生Quiet Ivory琴键、独立灰标签和700ms上升♪。Fn保留，顶部整排（包括Esc）排除。对外下载入口见[仓库根说明](../README.md)。
+ 
+ 现成冻结包是 **Apple Silicon（arm64）** 构建，不是Universal包。源码以macOS14为编译目标，但实际仅在本机macOS27.2 arm64、Swift6.4验证；macOS14、其他系统版本和Intel源码构建均未完成兼容验收。包使用本地ad-hoc签名，未做Developer ID签名或公证，下载后的系统安全提示处理见根说明。
+ 
+@@ -31,7 +31,7 @@
+ 
+ Dock显隐依据已配对验证的Dock专属layer20窗口及 `onScreenOnly` 成员关系，不用鼠标靠边热区代替。实际出现时260ms淡出；隐藏稳定120ms后360ms淡入，减少动态为80ms。短暂未知保持当前状态，连续未知2秒后恢复可见并保留未知诊断。隐藏只影响视觉，输入和声音继续；恢复当前按压状态，不补播旧音符。
+ 
+-本机已现场验证：实际20pt菜单按钮、1512pt屏幕上的1496×104浮层、原生Dock开关及淡变、本窗口试听、重新授权后的普通全局输入和琴声。真实Fn/Caps/双侧修饰的完整矩阵、中文/快捷键、声学延迟、设备切换、全屏/多屏组合和长时稳定性仍未全部验收。
++当前菜单请求16pt槽宽、16×16pt模板画布，使用18pt的♪字形按实际墨迹边界缩放居中。本版真实菜单显示与点击尚待验收。此前0.2.4在本机已现场验证：实际20pt菜单按钮、1512pt屏幕上的1496×104浮层、原生Dock开关及淡变、本窗口试听、重新授权后的普通全局输入和琴声。真实Fn/Caps/双侧修饰的完整矩阵、中文/快捷键、声学延迟、设备切换、全屏/多屏组合和长时稳定性仍未全部验收。
+ 
+ `probe-preferences.json`（音量/标签）和 `dock-recovery.json`（有待恢复改动时）目前放在App同级；Caches构建目录可能被系统清理。升级应先正常退出，**只替换完整App，保留同级偏好**，再核对授权。不要在运行中覆盖App或为继续使用旧授权而重签现成包。
+ 
+@@ -43,7 +43,7 @@
+ 
+ ```sh
+ mkdir -p "$HOME/Library/Caches/typing-piano-builds"
+-export TYPING_PIANO_BUILD_ROOT="$(mktemp -d "$HOME/Library/Caches/typing-piano-builds/candidate-0.2.4.XXXXXX")"
++export TYPING_PIANO_BUILD_ROOT="$(mktemp -d "$HOME/Library/Caches/typing-piano-builds/candidate-0.2.5.XXXXXX")"
+ bash Code/Scripts/build.sh
+ codesign --verify --strict "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app"
+ "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe" --self-check
+@@ -52,7 +52,7 @@
+ 
+ 输出为该目录下的 `打字钢琴试用.app` 和同名ZIP；脚本验证冻结资源哈希，进行本地ad-hoc签名并检查签名。上述自检不启键盘监听或硬件声音，菜单smoke不安装真实状态项。需要试用时再手动打开App；开始前留意其系统Dock默认开启行为。
+ 
+-未指定环境变量时，现有脚本默认输出到 `$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4`。该默认目录重复构建会被更新，所以推荐上面的唯一目录命令。脚本明确拒绝输出到 `$HOME/Library/Caches/local.typingpiano.trial` 根目录，这是已有授权安装的保护规则，不是建议绕过的构建错误。已使用/授权的候选目录也不应再拿来构建。
++未指定环境变量时，现有脚本默认输出到 `$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5`。该默认目录重复构建会被更新，所以推荐上面的唯一目录命令。脚本明确拒绝输出到 `$HOME/Library/Caches/local.typingpiano.trial` 根目录，这是已有授权安装的保护规则，不是建议绕过的构建错误。已使用/授权的候选目录也不应再拿来构建。
+ 
+ 可选的无窗口回归组（先完成上述构建环境变量设置）：
+ 
+@@ -62,6 +62,6 @@
+   --filter 'PianoCoreTests|NativeDockStorageTests|DockWindowVisibilityTests|AdaptiveOverlayTests|DockAdapterTests|SingleInstanceTests|RuntimeDiagnosticsTests|LocalTrialStartTests|AudioSelectionTests|MenuIntegrationTests|PianoMacTests.IntegrationTests'
+ ```
+ 
+-本版本同组64项测试通过；系统Dock setter使用mock，不操作真实Dock。无过滤的完整测试还包括窗口联调和会写音频证据的测试，不作为上述构建步骤的默认动作。`--build-system native` 在已验证工具链上会产生弃用提示，当前脚本仍使用它；其他工具链需自行验证，不能据编译目标宣称兼容。
++本版本同组64项测试通过（0失败），验证记录见 [0.2.5交接](../docs/evidence/trial-0.2.5/HANDOFF.md)；系统Dock setter使用mock，不操作真实Dock。无过滤的完整测试还包括窗口联调和会写音频证据的测试，不作为上述构建步骤的默认动作。`--build-system native` 在已验证工具链上会产生弃用提示，当前脚本仍使用它；其他工具链需自行验证，不能据编译目标宣称兼容。
+ 
+ 完整音库、参数、许可与来源记录打入 `AudioTrial`，原始/中间WAV不打入App；`runtime-bundle-inventory.json`列出实际打包文件。资源与源码改变后应重新验证，不只汇总旧报告。当前实现与验收索引见 [IMPLEMENTATION.md](IMPLEMENTATION.md)。
+--- Code/IMPLEMENTATION.md (task start)
++++ Code/IMPLEMENTATION.md (0.2.5)
+@@ -1,15 +1,17 @@
+-# 当前实现：0.2.4 / build7
++# 当前实现：0.2.5 / build8
+ 
+ 以下为2026-10-28当前状态；后半部分保留各阶段当时的范围和结论，不能将历史“模拟Dock”“固定宽度”“不申请权限”等描述当作当前行为。使用与相对源码构建命令见 [README.md](README.md)。
+ 
+ - 入口为持续全局会话及无需全局权限的本窗口试弹；启动默认停止输入/声音，只有点击授权入口才请求输入监控。测试子菜单保留60秒模式。
+-- 默认全64音Steinway试用音库、App独立音量/标签保存、20pt菜单栏单♪及同Bundle重复启动保护。
++- 默认全64音Steinway试用音库、App独立音量/标签保存、16pt槽宽与16×16pt画布的菜单栏单♪（18pt字形按墨迹适配）及同Bundle重复启动保护。
+ - 钢琴按目标screen.frame.width−16自动布局，左右8pt，104pt高度；真实Dock窗口显隐驱动淡变，隐藏不停止声音/输入，不补播旧音符。连续unknown2秒后保守恢复可见。
+ - 生产GUI和恢复路径使用能力检测的NativeDockStorage，只调用HIServices两个autohide私有SPI；写后核对原生状态与偏好，失败引导系统设置。测试注入mock；defaults-only不再作为生产控制后端。原值/外部修改/恢复票据保护保留，用户启动前已开启的true不会被恢复成更早的false。
+-- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.4子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好仍在App同级，构建不覆盖用户偏好。
++- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.5子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好仍在App同级，构建不覆盖用户偏好。
+ - 现成包为arm64、ad-hoc签名，未公证；macOS14只是编译目标。本机macOS27.2 arm64/Swift6.4验证不覆盖其他Mac/系统或Intel。
+ 
+ ## 当前证据与剩余边界
++
++0.2.5仅收紧菜单槽宽和图标画布、补全字形边界适配，并更新版本信息；本轮构建、回归与签名结果见 [0.2.5代码交接](../docs/evidence/trial-0.2.5/HANDOFF.md)。当前已授权0.2.4安装保持不动。下面现场记录属于0.2.4，不能作为0.2.5真实16pt菜单/授权/声音的验收结果。
+ 
+ [0.2.4代码交接](../docs/evidence/trial-0.2.4/HANDOFF.md)记录64项无窗口测试、构建/签名与私有SPI边界；[原生Dock决策材料](../docs/evidence/trial-0.2.4/NATIVE-DOCK-DECISION.md)区分SDK导出、主对话真实调用和代码侧mock验证。三种新宽度的36张离屏图在 [0.2.3证据](../docs/evidence/trial-0.2.3/native-snapshots/)，对应渲染/布局源码在0.2.4未变。
+ 

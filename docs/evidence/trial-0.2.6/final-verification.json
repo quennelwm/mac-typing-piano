@@ -1,0 +1,11 @@
+{
+  "tests": 89,
+  "failures": 0,
+  "sourceFilesMatchingBuildSnapshot": 68,
+  "protectedInstalledFilesUnchanged": 42,
+  "docShellBlocksSyntaxChecked": 2,
+  "localLinksChecked": 27,
+  "candidateBinaryAndZipMatchDelivery": true,
+  "guiAcceptance": "pending",
+  "alertVolumeNativeExecution": "not performed"
+}

@@ -10,6 +10,15 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     private let preferencesURL: URL
     private var preferences: AppPreferences
     private var statusMenu: ProbeMenu?
+    private let startupFlow: StartupFlow
+    private let startupWindowPresenter: (() -> Void)?
+    private var startupPrimary: NSButton?
+    private var startupCancel: NSButton?
+    private var authorizationRequestInFlight = false
+    private var authorizationReturnGate = AuthorizationReturnGate()
+    private let alertVolume: AlertVolumeAdapter
+    private var skipAlertRestoreOnExit = false
+    private var sessionStatus = "已暂停：尚未开始"
     private let input: InputMonitoring
     private let installStatusItem: Bool
     private var reducer = KeyStateReducer()
@@ -44,13 +53,16 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     private var diagnosticsTimer: Timer?
     private let diagnosticsLabel = NSTextField(wrappingLabelWithString: "运行诊断：尚未开始。")
 
-    public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL, input: InputMonitoring? = nil, audioEngine: AuditionEngine = SamplerAudio(), installStatusItem: Bool = true, dockAdapter: DockAdapter? = nil) throws {
+    public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL, input: InputMonitoring? = nil, audioEngine: AuditionEngine = SamplerAudio(), installStatusItem: Bool = true, dockAdapter: DockAdapter? = nil, startupWindowPresenter: (() -> Void)? = nil, alertVolume: AlertVolumeAdapter? = nil) throws {
         guard let first = sources.first else { throw ProbeError.invalid("没有可用试听音源") }
         self.mapping = mapping; self.sources = sources; self.preferencesURL = preferencesURL
         audio = AuditionSession(engine: audioEngine, source: first)
         self.installStatusItem = installStatusItem
         if let dockAdapter { self.dock = dockAdapter; self.systemDock = true }
         preferences = try AppPreferences.load(from: preferencesURL)
+        startupFlow = try StartupFlow(intentURL: preferencesURL.deletingLastPathComponent().appendingPathComponent("authorization-start.json"))
+        self.startupWindowPresenter = startupWindowPresenter
+        self.alertVolume = alertVolume ?? AlertVolumeAdapter(storage: StandardAdditionsAlertVolumeStorage())
         coordinator = NoteCoordinator(mapping: mapping)
         self.input = try input ?? InputMonitor(mapping: mapping)
         super.init()
@@ -66,6 +78,11 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         buildStartupWindow()
         installSafetyHooks()
         let menu = ProbeMenu(volume: preferences.volume, sources: sources, installStatusItem: installStatusItem)
+        menu.onStartup = { [weak self] in self?.showStartupWindow() }
+        menu.onDownload = { [weak self] in self?.downloadNewVersion() }
+        menu.onMuteAlerts = { [weak self] in self?.toggleAlertMute() }
+        menu.onSoundSettings = { [weak self] in self?.openSoundSettings() }
+        menu.onWillOpen = { [weak self] in self?.alertVolume.refresh(); self?.refreshAlertMenu() }
         menu.onOpen = { [weak self] in self?.showControlWindow() }
         menu.onPause = { [weak self] in self?.togglePause() }
         menu.onSound = { [weak self] in self?.toggleSound() }
@@ -82,29 +99,54 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         statusMenu = menu
         dockResult(dock.request(true, confirmedDisable: true)) // GUI injects native storage; tests retain simulation.
         refresh()
-        if installStatusItem { showStartupWindow() }
+        if installStatusItem {
+            showStartupWindow()
+            if NSApp.isActive { handleStartup(.becameActive) }
+        }
     }
     private func buildStartupWindow() {
         startupWindow = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 480, height: 490), styleMask: [.titled, .closable], backing: .buffered, defer: false)
-        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.4"
+        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.6"
+        startupWindow.delegate = self
         startupWindow.title = "打字钢琴试用 · \(version)"; startupWindow.center(); startupWindow.isReleasedWhenClosed = false
         let title = NSTextField(labelWithString: "让打字伴随琴声")
         title.font = .systemFont(ofSize: 20, weight: .semibold)
         let start = button("开始打字钢琴", #selector(startTrial))
-        start.bezelStyle = .rounded
-        let hint = NSTextField(wrappingLabelWithString: "首次默认停止。仅观察键盘，不保存输入；音量只影响本 App。系统 Dock 自动隐藏默认开启，退出时保护原设置。")
+        start.bezelStyle = .rounded; startupPrimary = start
+        let hint = NSTextField(wrappingLabelWithString: "首次默认停止。点击授权并开始后，请在系统设置亲自允许；返回时继续本次开始操作。若系统要求退出，请重新打开同一路径App并点击主按钮继续。仅观察键盘，不保存输入。")
         hint.textColor = .secondaryLabelColor; hint.font = .systemFont(ofSize: 11)
         let local = button("本窗口试弹（无需权限）", #selector(startLocalTrial))
         local.bezelStyle = .rounded
-        let authorize = button("授权输入监控", #selector(authorizeInput))
-        let retry = button("重新检查并开始", #selector(startTrial))
-        let stack = NSStackView(views: [title, startupMessage, authorize, start, retry, local, button("退出后重新打开", #selector(quitApp)), hint])
+        let cancel = button("取消本次开始", #selector(cancelStartup)); startupCancel = cancel
+        let stack = NSStackView(views: [title, startupMessage, start, cancel, local, button("退出App", #selector(quitApp)), hint])
         stack.orientation = .vertical; stack.alignment = .leading; stack.spacing = 14; stack.translatesAutoresizingMaskIntoConstraints = false
         startupWindow.contentView!.addSubview(stack)
         NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: startupWindow.contentView!.leadingAnchor, constant: 24), stack.trailingAnchor.constraint(equalTo: startupWindow.contentView!.trailingAnchor, constant: -24), stack.topAnchor.constraint(equalTo: startupWindow.contentView!.topAnchor, constant: 20)])
     }
     private func showStartupWindow() {
-        startupWindow.makeKeyAndOrderFront(nil); NSApp.activate(ignoringOtherApps: true)
+        if let startupWindowPresenter { startupWindowPresenter(); return }
+        updateStartupControls()
+        if startupFlow.pendingAuthorization {
+            startupMessage.stringValue = "存在尚未完成的授权开始请求。本次请求返回App可续接；若已退出重开，请点击主按钮继续，或取消本次开始。"
+        } else { startupMessage.stringValue = sessionStatus }
+        startupWindow?.makeKeyAndOrderFront(nil); NSApp.activate(ignoringOtherApps: true)
+    }
+    public func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        showStartupWindow()
+        return false
+    }
+    func handleDuplicateLaunch() { showStartupWindow() }
+    private func updateStartupControls() {
+        startupPrimary?.title = InputMonitor.hasExistingPermission ? "开始打字钢琴" : "授权并开始"
+        startupPrimary?.isEnabled = input.mode != .global && !authorizationRequestInFlight
+        startupCancel?.isHidden = !startupFlow.pendingAuthorization
+    }
+    private func downloadNewVersion() {
+        let url = URL(string: "https://github.com/quennelwm/mac-typing-piano/releases")!
+        if !NSWorkspace.shared.open(url) {
+            showStartupWindow()
+            startupMessage.stringValue = "无法打开浏览器，请手动访问 github.com/quennelwm/mac-typing-piano/releases 下载新版。"
+        }
     }
     func showControlWindow(activate: Bool = true) {
         if activate { window.makeKeyAndOrderFront(nil); NSApp.activate(ignoringOtherApps: true) }
@@ -178,23 +220,70 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         do {
             try input.start(global: global, duration: .test60Seconds)
             receivedCount = 0
+            sessionStatus = global ? "运行中：全局60秒测试" : "运行中：本窗口60秒测试"
             status.stringValue = global ? "只观察监听器已建立；60秒内自动停止，实际捕获待实按。" : "本窗口60秒测试已开启。事件原样传递；不保存文本或逐键历史。"
         } catch { pause(error.localizedDescription); showControlWindow() }
         refresh()
     }
-    @objc private func authorizeInput() {
-        // Explicit user click only. Never request permission during launch or testing.
-        _ = CGRequestListenEventAccess()
-        let settings = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent")!
-        let opened = NSWorkspace.shared.open(settings)
-        startupMessage.stringValue = opened
-            ? "请在输入监控中允许本 App，然后点击“重新检查并开始”。若系统要求退出，或授权后仍失败，请点击“退出后重新打开”并重新打开同一路径 App。"
-            : "无法自动打开设置。请手动前往系统设置 → 隐私与安全性 → 输入监控允许本 App，再重新检查；若仍失败，退出并重新打开同一路径 App。"
-        startupWindow.setContentSize(NSSize(width: 480, height: 490))
+    @objc private func cancelStartup() {
+        pause("已取消本次开始；可随时重新点击主按钮。")
+        startupMessage.stringValue = sessionStatus
+        updateStartupControls()
+    }
+    private func handleStartup(_ event: StartupFlow.Event) {
+        guard !authorizationRequestInFlight else { return }
+        if event == .becameActive && !authorizationReturnGate.canContinue(permission: InputMonitor.hasExistingPermission) { return }
+        do {
+            let action = try startupFlow.handle(event, permission: InputMonitor.hasExistingPermission, secureInput: InputMonitor.secureInput)
+            switch action {
+            case .none: break
+            case .start: startContinuousTrial(global: true)
+            case .requestAuthorization:
+                sessionStatus = "已暂停：等待本次输入监控授权"
+                startupMessage.stringValue = "请在系统设置中允许打字钢琴，返回App后将继续本次开始操作。若系统要求退出，请重新打开同一路径App并点击主按钮继续。可取消本次开始。"
+                authorizationReturnGate.beginRequest()
+                authorizationRequestInFlight = true
+                updateStartupControls()
+                _ = CGRequestListenEventAccess() // Only this explicit primary-button path can request.
+                if InputMonitor.hasExistingPermission && NSApp.isActive {
+                    authorizationRequestInFlight = false
+                    authorizationReturnGate.reset()
+                    handleStartup(.becameActive)
+                    return
+                }
+                let opened = NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent")!)
+                if NSWorkspace.shared.frontmostApplication?.bundleIdentifier == "com.apple.systempreferences" { authorizationReturnGate.observedSettings() }
+                authorizationRequestInFlight = false
+                if !opened {
+                    _ = try startupFlow.handle(.cancel, permission: false, secureInput: false)
+                    startupMessage.stringValue = "未能打开系统设置，本次开始已取消。请手动前往隐私与安全性 → 输入监控允许本App，再点击开始。"
+                    sessionStatus = "已暂停：未能打开输入监控设置"
+                } else if NSApp.isActive && authorizationReturnGate.canContinue(permission: InputMonitor.hasExistingPermission) {
+                    // A nested Settings activation/return may have occurred while the request was in flight.
+                    handleStartup(.becameActive)
+                    return
+                }
+            case .permissionMissing:
+                startupMessage.stringValue = "尚未获得输入监控授权，本次开始已取消。可再次点击授权并开始；若系统要求重启或旧条目失效，请按安装说明处理后重开同一路径App。"
+                sessionStatus = "已暂停：尚未获得输入监控授权"
+            case .secureInput:
+                startupMessage.stringValue = "安全输入正在阻断键盘监听，本次开始已取消。离开密码框或安全输入环境后，请主动点击开始。"
+                sessionStatus = "已暂停：安全输入阻断"
+            }
+        } catch {
+            startupMessage.stringValue = "无法保存本次开始状态，已保持停止：\(error.localizedDescription)"
+            sessionStatus = "已暂停：开始状态保存失败"
+        }
+        updateStartupControls(); refresh()
     }
     @objc private func quitApp() { NSApp.terminate(nil) }
     @objc func startLocalTrial() { startContinuousTrial(global: false) }
-    @objc func startTrial() { startContinuousTrial(global: true) }
+    @objc func startTrial() {
+        guard input.mode != .global else { showStartupWindow(); return }
+        pause("准备开始")
+        showStartupWindow()
+        handleStartup(.primary)
+    }
     private func startContinuousTrial(global: Bool) {
         pause("准备开始")
         sessionDuration = .continuous; lastGlobal = global
@@ -203,6 +292,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
             _ = coordinator.setSoundEnabled(true); coordinator.resume()
             soundButton.title = "关闭声音并清尾音"
             receivedCount = 0
+            sessionStatus = global ? "运行中：持续全局打字" : "运行中：本窗口试弹"
             if global { toggleOverlay() }
             startupWindow.orderOut(nil)
             if !global { showControlWindow(); window.makeFirstResponder(preview) }
@@ -215,9 +305,6 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         } catch {
             pause(error.localizedDescription)
             startupMessage.stringValue = "无法开始：\(error.localizedDescription)"
-            if global {
-                startupMessage.stringValue += "\n点击“授权输入监控”，在系统设置中允许本 App，再“重新检查并开始”；若系统要求退出或仍失败，请退出后重新打开同一路径 App。"
-            }
             startupWindow.setContentSize(NSSize(width: 480, height: 490))
             if installStatusItem { showStartupWindow() }
         }
@@ -229,6 +316,9 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         result["inputMode"] = String(describing: input.mode)
         result["globalInputPermission"] = InputMonitor.hasExistingPermission
         result["secureInput"] = InputMonitor.secureInput
+        result["alertVolumeObserved"] = alertVolume.observed.map { $0 as Any } ?? NSNull()
+        result["alertVolumeOriginalThisSession"] = alertVolume.originalVolume.map { $0 as Any } ?? NSNull()
+        result["alertVolumeOutcome"] = alertVolume.outcome.rawValue
         result["capturedAt"] = ISO8601DateFormatter().string(from: Date())
         result["requestedStatusItemWidthPt"] = ProbeMenu.statusItemWidth
         result["actualStatusItemButtonWidthPt"] = statusMenu?.actualStatusButtonWidth.map { $0 as Any } ?? NSNull()
@@ -284,7 +374,8 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     }
     private func refresh() {
         statusMenu?.update(soundEnabled: coordinator.soundEnabled, showLabels: labels, showOverlay: showOverlay,
-            paused: coordinator.paused, dockDesired: dock.observed ?? dock.desired, dockKnown: dock.observed != nil, systemDock: systemDock, sourceID: audio.source.id)
+            paused: coordinator.paused, dockDesired: dock.observed ?? dock.desired, dockKnown: dock.observed != nil, systemDock: systemDock, sourceID: audio.source.id, sessionStatus: sessionStatus + (!coordinator.paused && !coordinator.soundEnabled ? "（声音关闭）" : ""))
+        updateStartupControls()
         preview?.setSceneVisible(window?.isVisible == true && !coordinator.paused)
         let keys = Set(coordinator.active.values.map { $0.key.midiNote })
         preview?.activeMIDI = keys
@@ -298,7 +389,13 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         updatePanelOpacity()
     }
     @objc func stopAll() { pause("已暂停：监听、声音、尾音、延迟释放和浮层已清理。") }
-    private func pause(_ reason: String) {
+    private func pause(_ reason: String, preserveAuthorization: Bool = false) {
+        if !preserveAuthorization {
+            authorizationReturnGate.reset()
+            do { _ = try startupFlow.handle(.cancel, permission: false, secureInput: false) }
+            catch { startupMessage.stringValue = "取消待授权开始状态保存失败：\(error.localizedDescription)" }
+        }
+        sessionStatus = "已暂停：\(reason)"
         diagnosticsTimer?.invalidate(); diagnosticsTimer = nil
         input.stop(); reducer.reset()
         for item in pending.values { item.cancel() }; pending.removeAll()
@@ -399,7 +496,8 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         return alert.runModal()
     }
     private func showAbout() {
-        _ = alert("打字钢琴", "默认停止输入与声音。点击开始打字钢琴后持续运行，可从菜单暂停或退出；测试菜单仍保留60秒模式。全局测试仅在已有输入监控授权时启动；仅在点击授权时申请输入监控，不修改输入。Fn、Caps Lock、双侧修饰、中文输入和系统Dock仍需实按验收。Dock调用系统原生自动隐藏设置，钢琴宽度自动适应屏幕。默认使用全64音试用钢琴；测试子菜单中的局部候选缺音不替补。", buttons: ["知道了"])
+        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.6"
+        _ = alert("打字钢琴 · \(version)", "默认停止输入与声音。点击开始打字钢琴后持续运行，可从菜单暂停或退出；测试菜单仍保留60秒模式。全局测试仅在已有输入监控授权时启动；仅在点击授权并开始时申请输入监控，不修改输入。Fn、Caps Lock、双侧修饰、中文输入和系统Dock仍需实按验收。Dock调用系统原生自动隐藏设置，钢琴宽度自动适应屏幕。默认使用全64音试用钢琴；测试子菜单中的局部候选缺音不替补。", buttons: ["知道了"])
     }
     private func dockResult(_ outcome: DockAdapter.Outcome) {
         let observed = dock.observed.map { $0 ? "开启" : "关闭" } ?? "未知"
@@ -414,6 +512,34 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
             guard response == .alertSecondButtonReturn else { return }
         }
         dockResult(dock.request(desired, confirmedDisable: true))
+    }
+    private func refreshAlertMenu() {
+        statusMenu?.updateAlertVolume(muted: alertVolume.mutedState, detail: alertVolume.detail)
+    }
+    private func toggleAlertMute() {
+        if alertVolume.hasOwnedChange {
+            _ = alertVolume.restore()
+        } else {
+            let result = alertVolume.refresh()
+            guard result != .failed else { reportAlertVolumeFailure(); return }
+            if alertVolume.observed == 0 {
+                _ = alert("系统提示音原已静音", "本App没有可恢复的原音量，不会猜测50%或100%。如需开启，请使用菜单中的系统声音设置。", buttons: ["知道了"])
+                refreshAlertMenu(); return
+            }
+            let confirmed = alert("静音系统提示音？", "这会将macOS系统提示音音量设为0，影响所有遵守该音量的系统警告，不仅是没有输入框时的提示音。钢琴与媒体音量不变。关闭或正常退出仅恢复本次仍由App拥有的改动；异常退出请在系统声音设置恢复。", buttons: ["取消", "静音提示音"]) == .alertSecondButtonReturn
+            _ = alertVolume.mute(confirmed: confirmed)
+        }
+        if alertVolume.outcome == .failed { reportAlertVolumeFailure() }
+        refreshAlertMenu()
+    }
+    private func reportAlertVolumeFailure() {
+        refreshAlertMenu()
+        _ = alert("系统提示音操作未完成", alertVolume.detail + "\n未报告成功。可使用“系统声音设置…”检查；不会追加权限或修改媒体音量。", buttons: ["知道了"])
+    }
+    private func openSoundSettings() {
+        if !NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.Sound-Settings.extension")!) {
+            _ = alert("系统声音设置", "请手动打开系统设置 → 声音 → 提示音音量。", buttons: ["知道了"])
+        }
     }
     private func openDockSettings() {
         let url = URL(string: "x-apple.systempreferences:com.apple.Desktop-Settings.extension")!
@@ -435,6 +561,19 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         else { _ = alert("Dock恢复结果", "\(outcome.rawValue)。偏好读回不等于视觉生效。\(adapter.detail)", buttons: ["知道了"]) }
     }
     private func installSafetyHooks() {
+        notifications.append(NSWorkspace.shared.notificationCenter.addObserver(forName: NSWorkspace.didActivateApplicationNotification, object: nil, queue: .main) { [weak self] notification in
+            guard let app = notification.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication,
+                  app.bundleIdentifier == "com.apple.systempreferences" else { return }
+            self?.authorizationReturnGate.observedSettings()
+        })
+        notifications.append(NotificationCenter.default.addObserver(forName: NSApplication.didBecomeActiveNotification, object: nil, queue: .main) { [weak self] _ in
+            guard let self, self.startupWindow != nil, !self.authorizationRequestInFlight else { return }
+            self.handleStartup(.becameActive)
+        })
+        notifications.append(DistributedNotificationCenter.default().addObserver(forName: PianoSingleInstance.reopenNotification,
+            object: String(ProcessInfo.processInfo.processIdentifier), queue: .main) { [weak self] _ in
+            self?.handleDuplicateLaunch() // Reveal only; notification never starts input or requests permission.
+        })
         let access = NSWorkspace.shared.notificationCenter
         notifications.append(access.addObserver(forName: NSWorkspace.accessibilityDisplayOptionsDidChangeNotification, object: nil, queue: .main) { [weak self] _ in
             let reduced = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
@@ -470,10 +609,22 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         (coordinator.active.count, overlayView?.floatingCount ?? 0, preview?.floatingCount ?? 0, coordinator.soundEnabled)
     }
     public func windowWillClose(_ notification: Notification) {
+        if let closing = notification.object as? NSWindow, closing === startupWindow {
+            if startupFlow.pendingAuthorization { cancelStartup() }
+            return
+        }
         if input.mode == .local || sessionDuration == .test60Seconds { pause("测试控制台已关闭；测试停止") }
     }
+    public func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
+        let result = alertVolume.restore()
+        guard result == .failed else { return .terminateNow }
+        let response = alert("提示音恢复未完成", alertVolume.detail + "\n取消退出可重试或打开系统声音设置；仍然退出可能保留当前提示音设置。", buttons: ["取消退出", "仍然退出"])
+        skipAlertRestoreOnExit = response == .alertSecondButtonReturn
+        return skipAlertRestoreOnExit ? .terminateNow : .terminateCancel
+    }
     public func applicationWillTerminate(_ notification: Notification) {
-        pause("退出"); audio.disable(); window?.orderOut(nil); startupWindow?.orderOut(nil)
+        if !skipAlertRestoreOnExit { _ = alertVolume.restore() }
+        pause("退出", preserveAuthorization: true); audio.disable(); window?.orderOut(nil); startupWindow?.orderOut(nil)
         _ = dock.restoreOnExit() // Failure leaves an atomic recovery ticket; no retry loop.
     }
 }

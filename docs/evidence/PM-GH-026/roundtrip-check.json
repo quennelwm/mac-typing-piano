@@ -1,0 +1,7 @@
+{
+  "roundtripAll42AppFilesIdentical": true,
+  "productionSourceHashesMatchFrozenCandidate": true,
+  "roundtripSignature": "PASS",
+  "selfCheck": "PASS",
+  "menuSmoke": "PASS"
+}

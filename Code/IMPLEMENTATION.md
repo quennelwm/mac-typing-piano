@@ -1,4 +1,35 @@
-# C-001 实施记录
+# 当前实现：0.2.6 / build9
+
+以下为2026-10-28当前状态；后半部分保留各阶段当时的范围和结论，不能将历史“模拟Dock”“固定宽度”“不申请权限”等描述当作当前行为。使用与相对源码构建命令见 [README.md](README.md)。
+
+- 启动卡单一主按钮“授权并开始”/“开始打字钢琴”；同进程显式授权请求返回后续接一次，嵌套权限弹窗激活不会提前消费。清理失败立即关闭内存续接；重开后的持久意图仅作提醒，须点击主按钮继续。暂停/取消不会因普通激活开始。
+- 菜单可重新打开启动窗口，Finder重开与重复实例通知只负责显示入口；有运行/暂停原因及仅打开GitHub Releases的“下载新版…”。本窗口试弹不需要全局权限，测试子菜单仍保留60秒模式。
+- 可选“静音系统提示音”仅在用户确认后通过当前进程Standard Additions设置alert volume；原值内存保存，仅核对本会话拥有的0值后恢复，外部不同值不覆盖，初始0不创造恢复值。失败明确显示，异常退出不保证恢复，新进程不接管旧修改；真实效果和权限边界仍待验。
+- 默认全64音Steinway试用音库、App独立音量/标签保存、16pt槽宽与16×16pt画布的菜单栏单♪（18pt字形按墨迹适配）及同Bundle重复启动保护。
+- 钢琴按目标screen.frame.width−16自动布局，左右8pt，104pt高度；真实Dock窗口显隐驱动淡变，隐藏不停止声音/输入，不补播旧音符。连续unknown2秒后保守恢复可见。
+- 生产GUI和恢复路径使用能力检测的NativeDockStorage，只调用HIServices两个autohide私有SPI；写后核对原生状态与偏好，失败引导系统设置。测试注入mock；defaults-only不再作为生产控制后端。原值/外部修改/恢复票据保护保留，用户启动前已开启的true不会被恢复成更早的false。
+- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.6子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好迁至用户Application Support，当前App旁旧偏好只读迁移一次；已有目标优先。Dock恢复票据位置不变。构建不写用户偏好。
+- 现成包为arm64、ad-hoc签名，未公证；macOS14只是编译目标。本机macOS27.2 arm64/Swift6.4验证不覆盖其他Mac/系统或Intel。
+
+## 当前证据与剩余边界
+
+0.2.6构建/回归/签名与边界见 [0.2.6代码交接](../docs/evidence/trial-0.2.6/HANDOFF.md)。0.2.5曾收紧16pt槽宽和画布；本版内缩增至1pt并提供1x/2x离屏图。当前已授权0.2.4保持不动。下面现场记录属于0.2.4，不能作为0.2.6的授权续接、实际菜单、系统提示音或GUI声音验收结果。
+
+[0.2.4代码交接](../docs/evidence/trial-0.2.4/HANDOFF.md)记录64项无窗口测试、构建/签名与私有SPI边界；[原生Dock决策材料](../docs/evidence/trial-0.2.4/NATIVE-DOCK-DECISION.md)区分SDK导出、主对话真实调用和代码侧mock验证。三种新宽度的36张离屏图在 [0.2.3证据](../docs/evidence/trial-0.2.3/native-snapshots/)，对应渲染/布局源码在0.2.4未变。
+
+交付后主对话完成了本机现场续验：
+
+- [运行诊断](../docs/evidence/PM-004-dock-adaptive/gui-runtime-024.json)记录实际按钮宽20pt、本窗口试听及有效音频输出。
+- [真实淡变](../docs/evidence/PM-004-dock-adaptive/live-fade-summary.json)记录1496×104浮层和Dock出现/隐藏过程中的中间透明度，最终系统自动隐藏为true。
+- [GUI重新授权](../docs/evidence/PM-004-dock-adaptive/gui-global-authorized-024.json)与[实按结果](../docs/evidence/PM-004-dock-adaptive/gui-physical-key-confirmed-024.json)分别记录全局监听授权和10事件/5次受理、峰值非零；后者导出时60秒测试刚结束，不能把其stopped字段写成捕获时仍在持续监听。主对话另已恢复日常持续会话，用户确认听见琴声。
+
+旧TCC条目即使开启也可能仍绑定旧CDHash；本机仅off/on未解决，移除失效条目、重新添加最终固定包并由用户允许后通过。CLI preflight不等价于GUI授权。本次重新打包/签名的授权连续性不能推及其他Mac。
+
+完整物理键矩阵、中文/快捷键、其他设备/多屏/全屏组合、延迟与长时稳定性仍需继续验证；私有SPI未来兼容性无保证。对外下载和发布状态由仓库根说明维护。
+
+---
+
+## 历史实施记录
 
 范围：仅 M0 三探针；基线 e0c6512，任务定义 6c25ab0。原生 SwiftPM + AppKit，macOS14 是编译目标候选，不是兼容认证；当前只在 macOS27.2 arm64 验证。
 

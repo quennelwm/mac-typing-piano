@@ -1,0 +1,28 @@
+{
+  "audioOutputStarted" : false,
+  "callbackVolume" : 0.75,
+  "iconCanvasWidthPt" : 16,
+  "iconRenders" : [
+    {
+      "maximumAlpha" : 1,
+      "outerEdgeMaxAlpha" : 0.082352941176470587,
+      "pixels" : 16,
+      "scale" : 1
+    },
+    {
+      "maximumAlpha" : 1,
+      "outerEdgeMaxAlpha" : 0,
+      "pixels" : 32,
+      "scale" : 2
+    }
+  ],
+  "kind" : "programmatic native menu control smoke; actual menu tracking\/drag not tested",
+  "menuItems" : 18,
+  "nativeContinuousSlider" : true,
+  "passed" : true,
+  "percentage" : "75%",
+  "requestedStatusItemWidthPt" : 16,
+  "statusBarThicknessPt" : 22,
+  "systemVolumeChanged" : false,
+  "templateIcon" : true
+}

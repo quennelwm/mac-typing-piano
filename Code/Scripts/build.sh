@@ -2,7 +2,7 @@
 set -euo pipefail
 code_root="$(cd "$(dirname "$0")/.." && pwd)"
 project_root="$(cd "$code_root/.." && pwd)"
-build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4}"
+build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6}"
 mkdir -p "$build_root"
 build_root="$(cd "$build_root" && pwd)"
 if [ "$build_root" = "$HOME/Library/Caches/local.typingpiano.trial" ]; then
@@ -93,8 +93,8 @@ cat > "$app_path/Contents/Info.plist" <<'PLIST'
 <key>CFBundleExecutable</key><string>TypingPianoProbe</string>
 <key>CFBundleIdentifier</key><string>local.typingpiano.trial</string>
 <key>CFBundleName</key><string>打字钢琴试用</string>
-<key>CFBundleVersion</key><string>7</string>
-<key>CFBundleShortVersionString</key><string>0.2.4</string>
+<key>CFBundleVersion</key><string>9</string>
+<key>CFBundleShortVersionString</key><string>0.2.6</string>
 <key>TypingPianoSingleInstanceProtocol</key><integer>1</integer>
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>LSMinimumSystemVersion</key><string>14.0</string>
@@ -104,16 +104,18 @@ PLIST
 # Only our reproducible generated bundle. Desktop file-provider FinderInfo can prevent ad-hoc signing.
 # A file provider can add FinderInfo to a newly created signature directory.
 # Retry only the generated-bundle signature, bounded; never change system preferences.
+# Optional identity is supplied by the caller; never embed identity/certificate details in logs.
+sign_identity="${TYPING_PIANO_SIGN_IDENTITY:--}"
 probe_signed=false
 for attempt in 1 2 3; do
     xattr -cr "$app_path"
-    if codesign --force --sign - "$app_path" && codesign --verify --strict "$app_path"; then
+    if codesign --force --sign "$sign_identity" "$app_path" >/dev/null 2>&1 && codesign --verify --strict "$app_path" >/dev/null 2>&1; then
         probe_signed=true
         break
     fi
 done
 if [ "$probe_signed" != true ]; then
-    printf '%s\n' 'Local generated-bundle signing failed after 3 attempts.' >&2
+    printf '%s\n' 'Generated-bundle signing failed after 3 attempts. Check the selected signing identity and keychain access locally; identity details are omitted.' >&2
     exit 1
 fi
 # Metadata-free local archive preserves signed bytes if the host later adds FinderInfo.

@@ -1,0 +1,21 @@
+{
+  "task": "C-GH-026 trial calibration isolation",
+  "environment": {
+    "macOS": "27.2 (26B123)",
+    "Swift": "6.4",
+    "architecture": "arm64"
+  },
+  "selected": 6,
+  "executedPassed": 3,
+  "skipped": 3,
+  "failures": 0,
+  "calibrationRows": 90,
+  "largestPeak": 0.69976664,
+  "temporaryOutput": "/var/folders/sf/7zxgyq91385b2_l3jfnygrt40000gn/T/typing-piano-calibration-01DBF1C8-7976-4571-AF38-749C50B3538B",
+  "temporaryOutputRemoved": true,
+  "protectedFilesUnchanged": 3829,
+  "historicalEvidenceUnchanged": true,
+  "productionAndFrozenCandidateUnchanged": true,
+  "modifiedTest": "Code/Tests/PianoAudioTests/TrialBankTests.swift",
+  "testSHA256": "5b9455bc4f0669add001e4acb30e77f669d6b6018721554b9c215ca9b9f7a4d1"
+}

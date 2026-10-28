@@ -1,0 +1,10 @@
+{
+  "status": "PASS for source/docs; raw evidence retained verbatim",
+  "excludedRawEvidence": [
+    "docs/evidence/C-GH-026-candidate-fixture/test-change.diff",
+    "docs/evidence/trial-0.2.5/changes.diff",
+    "docs/evidence/trial-0.2.6/alert-red.log",
+    "docs/evidence/trial-0.2.6/changes.diff"
+  ],
+  "reason": "unified diff context blank lines and compiler source excerpts contain spaces; frozen evidence is not rewritten"
+}

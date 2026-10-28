@@ -1,0 +1,20 @@
+[
+  "Code/Assets/source_inventory.md",
+  "Code/IMPLEMENTATION.md",
+  "Code/README.md",
+  "Code/Scripts/build.sh",
+  "Code/Sources/PianoCore/AppPreferences.swift",
+  "Code/Sources/PianoCore/StartupFlow.swift",
+  "Code/Sources/PianoMac/AlertVolume.swift",
+  "Code/Sources/PianoMac/ContinuousTrialStart.swift",
+  "Code/Sources/PianoMac/InputMonitor.swift",
+  "Code/Sources/PianoMac/ProbeController.swift",
+  "Code/Sources/PianoMac/ProbeMenu.swift",
+  "Code/Sources/PianoMac/SingleInstance.swift",
+  "Code/Sources/PianoProbe/main.swift",
+  "Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift",
+  "Code/Tests/PianoCoreTests/StartupFlowTests.swift",
+  "Code/Tests/PianoMacTests/AlertVolumeTests.swift",
+  "Code/Tests/PianoMacTests/LocalTrialStartTests.swift",
+  "Code/Tests/PianoMacTests/StartupEntryTests.swift"
+]

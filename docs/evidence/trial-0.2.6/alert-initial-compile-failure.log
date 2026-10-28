@@ -1,0 +1,55 @@
+[0/1] Planning build
+Building for debugging...
+[0/8] Write sources
+[2/8] Write swift-version--58304C5D6DBC2206.txt
+[4/10] Emitting module PianoMac
+[5/10] Compiling PianoMac AlertVolume.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/AlertVolume.swift:17:19: error: cannot find 'ProbeError' in scope
+ 15 |         let result = try execute("return alert volume of (get volume settings)")
+ 16 |         guard let value = Int(result.trimmingCharacters(in: .whitespacesAndNewlines)), (0...100).contains(value) else {
+ 17 |             throw ProbeError.invalid("系统提示音音量读回无效；未修改设置。")
+    |                   `- error: cannot find 'ProbeError' in scope
+ 18 |         }
+ 19 |         return value
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/AlertVolume.swift:22:55: error: cannot find 'ProbeError' in scope
+ 20 |     }
+ 21 |     public func write(_ volume: Int) throws {
+ 22 |         guard (0...100).contains(volume) else { throw ProbeError.invalid("提示音音量必须在0到100之间") }
+    |                                                       `- error: cannot find 'ProbeError' in scope
+ 23 |         _ = try execute("set volume alert volume \(volume)")
+ 24 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/AlertVolume.swift:27:71: error: cannot find 'ProbeError' in scope
+ 25 |     public static func executeInProcess(_ source: String) throws -> String {
+ 26 |         precondition(Thread.isMainThread)
+ 27 |         guard let script = NSAppleScript(source: source) else { throw ProbeError.invalid("系统提示音脚本不可用") }
+    |                                                                       `- error: cannot find 'ProbeError' in scope
+ 28 |         var error: NSDictionary?
+ 29 |         let result = script.executeAndReturnError(&error)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/AlertVolume.swift:33:23: error: cannot find 'ProbeError' in scope
+ 31 |             let code = (error["NSAppleScriptErrorNumber"] as? NSNumber)?.intValue ?? 0
+ 32 |             if code == -1743 {
+ 33 |                 throw ProbeError.invalid("系统拒绝提示音操作（-1743）。本App不会追加自动化权限；请使用系统声音设置。")
+    |                       `- error: cannot find 'ProbeError' in scope
+ 34 |             }
+ 35 |             throw ProbeError.invalid("系统提示音操作失败（\(code)）；请使用系统声音设置。")
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/AlertVolume.swift:35:19: error: cannot find 'ProbeError' in scope
+ 33 |                 throw ProbeError.invalid("系统拒绝提示音操作（-1743）。本App不会追加自动化权限；请使用系统声音设置。")
+ 34 |             }
+ 35 |             throw ProbeError.invalid("系统提示音操作失败（\(code)）；请使用系统声音设置。")
+    |                   `- error: cannot find 'ProbeError' in scope
+ 36 |         }
+ 37 |         return result.stringValue ?? ""
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/AlertVolume.swift:59:54: error: cannot find 'ProbeError' in scope
+ 57 |     private func read() throws -> Int {
+ 58 |         let value = try storage.read()
+ 59 |         guard (0...100).contains(value) else { throw ProbeError.invalid("系统提示音音量读回无效") }
+    |                                                      `- error: cannot find 'ProbeError' in scope
+ 60 |         return value
+ 61 |     }
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

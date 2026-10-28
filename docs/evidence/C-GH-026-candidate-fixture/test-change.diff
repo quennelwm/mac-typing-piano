@@ -1,0 +1,27 @@
+--- CandidateBankTests.swift (before)
++++ CandidateBankTests.swift (after)
+@@ -12,7 +12,23 @@
+         URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent()
+             .deletingLastPathComponent().deletingLastPathComponent()
+     }
+-    private var output: URL { ProcessInfo.processInfo.environment["TYPING_PIANO_EVIDENCE_DIR"].map { URL(fileURLWithPath: $0, isDirectory: true) } ?? root.appendingPathComponent("docs/evidence/C-001B") }
++    private var evidenceOutput: URL?
++    private var output: URL { evidenceOutput! } // Assigned only after the explicit-run guard succeeds.
++    override func setUpWithError() throws {
++        try super.setUpWithError()
++        guard let path = ProcessInfo.processInfo.environment["TYPING_PIANO_EVIDENCE_DIR"],
++              !path.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
++            throw XCTSkip("Offline evidence replay is opt-in: set TYPING_PIANO_EVIDENCE_DIR to a new directory and run verify_candidate_banks.py preflight first. Frozen C-001B evidence is not a live fixture.")
++        }
++        let requested = URL(fileURLWithPath: path, isDirectory: true).standardizedFileURL.resolvingSymlinksInPath()
++        let frozen = root.appendingPathComponent("docs/evidence/C-001B").resolvingSymlinksInPath()
++        guard requested.path != frozen.path, !requested.path.hasPrefix(frozen.path + "/") else {
++            throw EvidenceError.invalidInput("Refusing to write frozen C-001B evidence; use a new directory")
++        }
++        evidenceOutput = requested
++        // Reject stale/missing input before even failure reports can be written.
++        _ = try verifyInputSnapshot()
++    }
+     private var input: URL { root.appendingPathComponent("Design/Audio/probes/A-001B") }
+     private enum EvidenceError: Error { case invalidInput(String) }
+ 

@@ -1,0 +1,65 @@
+{
+  "events" : [
+    {
+      "action" : "baseline",
+      "date" : "2026-10-28T17:19:08Z",
+      "detail" : "系统提示音量69%；本App未改动",
+      "outcome" : "noChange",
+      "volumes" : {
+        "alert" : 69,
+        "input" : 30,
+        "output" : 75,
+        "outputMuted" : false
+      }
+    },
+    {
+      "action" : "restore",
+      "date" : "2026-10-28T17:19:44Z",
+      "detail" : "系统提示音量69%；本App未改动",
+      "outcome" : "noChange",
+      "volumes" : {
+        "alert" : 69,
+        "input" : 30,
+        "output" : 75,
+        "outputMuted" : false
+      }
+    },
+    {
+      "action" : "baseline",
+      "date" : "2026-10-28T17:26:42Z",
+      "detail" : "系统提示音量69%；本App未改动",
+      "outcome" : "noChange",
+      "volumes" : {
+        "alert" : 69,
+        "input" : 30,
+        "output" : 75,
+        "outputMuted" : false
+      }
+    },
+    {
+      "action" : "mute",
+      "date" : "2026-10-28T17:27:04Z",
+      "detail" : "本App已静音；本次原提示音量69%",
+      "outcome" : "muted",
+      "volumes" : {
+        "alert" : 0,
+        "input" : 30,
+        "output" : 75,
+        "outputMuted" : false
+      }
+    },
+    {
+      "action" : "restore",
+      "date" : "2026-10-28T17:27:49Z",
+      "detail" : "已恢复本次原提示音量69%",
+      "outcome" : "restored",
+      "volumes" : {
+        "alert" : 69,
+        "input" : 30,
+        "output" : 75,
+        "outputMuted" : false
+      }
+    }
+  ],
+  "scope" : "production AlertVolumeAdapter and ProbeMenu component; not full candidate GUI\/TCC or acoustic acceptance"
+}

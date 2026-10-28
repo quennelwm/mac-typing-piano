@@ -1,0 +1,1233 @@
+--- Code/Assets/source_inventory.md (task start)
++++ Code/Assets/source_inventory.md (0.2.6)
+@@ -0,0 +1,14 @@
++# Original synthetic probe provenance
++
++- Role/task: internal code helper, C-001; separate from A-001 sound design.
++- Source: `../Scripts/generate_placeholder.py`, original mathematical synthesis, no external audio and no network downloads.
++- Authoring date: 2026-10-28.
++- Declaration: `PLACEHOLDER-LICENSE.txt`, CC0-1.0 for the generated probe bank.
++- Build: `python3 Code/Scripts/generate_placeholder.py` from repository root; Python standard library only.
++- Output: genuine RIFF `sfbk` / SF2 2.1, six mono 16-bit 22,050 Hz sample zones covering MIDI 33–96.
++- Processing: 440 Hz A4 equal temperament; sine fundamental plus 0.22 second harmonic and 0.08 third harmonic; 3 ms attack, exponential natural decay, final 20 ms fade; peak scale 0.35; no recorded material and no sample looping.
++- Roots/zones and actual bank SHA-256/byte size are emitted into `placeholder.manifest.json`. The generator contains no timestamps/randomness; reproducibility is checked by running it twice on the recorded environment.
++- SF2 volume-envelope release is encoded as rounded timecents for 450 ms. Actual Apple sampler output is assessed separately by offline tests.
++- Bank preset 0, bank 0; Apple sampler loading uses program 0, melodic MSB 121 and LSB 0.
++- Sound is an intentionally simple synthetic engine fixture. It is not a claim of piano realism, final sound design, loudness safety, 64 physical/internal voices, or hardware acceptance. No listening has occurred.
++- No formal `Resources/Audio` registration and no modification to the frozen audio manifest contract.
+--- Code/IMPLEMENTATION.md (task start)
++++ Code/IMPLEMENTATION.md (0.2.6)
+@@ -1,17 +1,19 @@
+-# 当前实现：0.2.5 / build8
++# 当前实现：0.2.6 / build9
+ 
+ 以下为2026-10-28当前状态；后半部分保留各阶段当时的范围和结论，不能将历史“模拟Dock”“固定宽度”“不申请权限”等描述当作当前行为。使用与相对源码构建命令见 [README.md](README.md)。
+ 
+-- 入口为持续全局会话及无需全局权限的本窗口试弹；启动默认停止输入/声音，只有点击授权入口才请求输入监控。测试子菜单保留60秒模式。
++- 启动卡单一主按钮“授权并开始”/“开始打字钢琴”；同进程显式授权请求返回后续接一次，嵌套权限弹窗激活不会提前消费。清理失败立即关闭内存续接；重开后的持久意图仅作提醒，须点击主按钮继续。暂停/取消不会因普通激活开始。
++- 菜单可重新打开启动窗口，Finder重开与重复实例通知只负责显示入口；有运行/暂停原因及仅打开GitHub Releases的“下载新版…”。本窗口试弹不需要全局权限，测试子菜单仍保留60秒模式。
++- 可选“静音系统提示音”仅在用户确认后通过当前进程Standard Additions设置alert volume；原值内存保存，仅核对本会话拥有的0值后恢复，外部不同值不覆盖，初始0不创造恢复值。失败明确显示，异常退出不保证恢复，新进程不接管旧修改；真实效果和权限边界仍待验。
+ - 默认全64音Steinway试用音库、App独立音量/标签保存、16pt槽宽与16×16pt画布的菜单栏单♪（18pt字形按墨迹适配）及同Bundle重复启动保护。
+ - 钢琴按目标screen.frame.width−16自动布局，左右8pt，104pt高度；真实Dock窗口显隐驱动淡变，隐藏不停止声音/输入，不补播旧音符。连续unknown2秒后保守恢复可见。
+ - 生产GUI和恢复路径使用能力检测的NativeDockStorage，只调用HIServices两个autohide私有SPI；写后核对原生状态与偏好，失败引导系统设置。测试注入mock；defaults-only不再作为生产控制后端。原值/外部修改/恢复票据保护保留，用户启动前已开启的true不会被恢复成更早的false。
+-- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.5子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好仍在App同级，构建不覆盖用户偏好。
++- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.6子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好迁至用户Application Support，当前App旁旧偏好只读迁移一次；已有目标优先。Dock恢复票据位置不变。构建不写用户偏好。
+ - 现成包为arm64、ad-hoc签名，未公证；macOS14只是编译目标。本机macOS27.2 arm64/Swift6.4验证不覆盖其他Mac/系统或Intel。
+ 
+ ## 当前证据与剩余边界
+ 
+-0.2.5仅收紧菜单槽宽和图标画布、补全字形边界适配，并更新版本信息；本轮构建、回归与签名结果见 [0.2.5代码交接](../docs/evidence/trial-0.2.5/HANDOFF.md)。当前已授权0.2.4安装保持不动。下面现场记录属于0.2.4，不能作为0.2.5真实16pt菜单/授权/声音的验收结果。
++0.2.6构建/回归/签名与边界见 [0.2.6代码交接](../docs/evidence/trial-0.2.6/HANDOFF.md)。0.2.5曾收紧16pt槽宽和画布；本版内缩增至1pt并提供1x/2x离屏图。当前已授权0.2.4保持不动。下面现场记录属于0.2.4，不能作为0.2.6的授权续接、实际菜单、系统提示音或GUI声音验收结果。
+ 
+ [0.2.4代码交接](../docs/evidence/trial-0.2.4/HANDOFF.md)记录64项无窗口测试、构建/签名与私有SPI边界；[原生Dock决策材料](../docs/evidence/trial-0.2.4/NATIVE-DOCK-DECISION.md)区分SDK导出、主对话真实调用和代码侧mock验证。三种新宽度的36张离屏图在 [0.2.3证据](../docs/evidence/trial-0.2.3/native-snapshots/)，对应渲染/布局源码在0.2.4未变。
+ 
+--- Code/README.md (task start)
++++ Code/README.md (0.2.6)
+@@ -1,15 +1,16 @@
+-# 打字钢琴试用 0.2.5
++# 打字钢琴试用 0.2.6
+ 
+-当前版本为 **0.2.5 / build8**，Bundle ID 为 `local.typingpiano.trial`。默认使用全64音Steinway B试用音库，原生Quiet Ivory琴键、独立灰标签和700ms上升♪。Fn保留，顶部整排（包括Esc）排除。对外下载入口见[仓库根说明](../README.md)。
++当前版本为 **0.2.6 / build9**，Bundle ID 为 `local.typingpiano.trial`。默认使用全64音Steinway B试用音库，原生Quiet Ivory琴键、独立灰标签和700ms上升♪。Fn保留，顶部整排（包括Esc）排除。对外下载入口见[仓库根说明](../README.md)。
+ 
+ 现成冻结包是 **Apple Silicon（arm64）** 构建，不是Universal包。源码以macOS14为编译目标，但实际仅在本机macOS27.2 arm64、Swift6.4验证；macOS14、其他系统版本和Intel源码构建均未完成兼容验收。包使用本地ad-hoc签名，未做Developer ID签名或公证，下载后的系统安全提示处理见根说明。
+ 
+ ## 用户开始
+ 
+-1. 先选择固定、可写的目录放置App，再打开并授权。当前偏好与恢复票据写在App同级目录；不要来回移动已授权的App，也不要同时运行多个旧试用包。
+-2. 启动卡默认停止键盘监听和声音。点击“授权输入监控”，在系统设置中亲自允许当前App，再点“重新检查并开始”；系统要求重启时，退出并重开同一路径。
+-3. 点击“开始打字钢琴”启动持续全局会话，随后可回其他App打字。尚未授权时，可用“本窗口试弹（无需权限）”打字或点击琴键试听；本地模式失焦或关闭窗口会停止。
+-4. ♪菜单提供暂停、声音、App音量、画面、标签和退出。关闭控制台不会结束持续全局会话；测试子菜单的60秒模式会自动停止。不要把60秒测试误当日常持续模式。
++1. 先将App放到固定目录，再打开并授权。偏好写入用户Application Support；Dock恢复票据仍在App同级，安装目录需允许当前用户写入。不要来回移动已授权的App或同时运行旧副本。
++2. 启动卡主按钮会显示“授权并开始”或“开始打字钢琴”。首次未授权时，点击后在系统设置亲自允许；同一进程从设置返回、预检通过时会继续这一次持续会话，不必再点第二个开始按钮。
++3. 如果系统要求退出重开，会保留待办提示，但**重开后必须主动点击主按钮继续**。持久化取消/消费可能失败，旧标记绝不作为跨进程自动启动许可。普通重开、激活或已暂停状态不会自行开始；取消本次开始、关闭待授权启动卡或暂停都会撤销本进程续接。
++4. 尚未授权时，可用“本窗口试弹（无需权限）”；失焦或关闭本地测试窗口会停止。安全输入或音频失败分别提示原因，失败后不会循环弹权限或自动重试。
++5. ♪菜单显示运行/暂停原因，提供“打开启动窗口…”、暂停、声音、App音量、画面和标签；“下载新版…”仅打开GitHub Releases，由用户下载并正常退出后替换App。退出按钮只退出。测试子菜单的60秒模式会自动停止，持续全局会话关闭控制台仍可运行。
+ 
+ **升级后的旧授权可能失效。** ad-hoc重建或重签会改变代码身份；相同Bundle ID、同一路径、系统条目仍显示开启，都不能保证新包已获授权。本机从旧签名升级时，单纯关闭再打开开关未刷新旧记录：需先退出App，在“隐私与安全性 → 输入监控”移除失效的旧条目，再添加最终路径的新App，由用户允许并重开。只处理本App的条目，不重置整个权限数据库。CLI的preflight结果不代替GUI建立全局监听及实按验证。
+ 
+@@ -31,9 +32,19 @@
+ 
+ Dock显隐依据已配对验证的Dock专属layer20窗口及 `onScreenOnly` 成员关系，不用鼠标靠边热区代替。实际出现时260ms淡出；隐藏稳定120ms后360ms淡入，减少动态为80ms。短暂未知保持当前状态，连续未知2秒后恢复可见并保留未知诊断。隐藏只影响视觉，输入和声音继续；恢复当前按压状态，不补播旧音符。
+ 
+-当前菜单请求16pt槽宽、16×16pt模板画布，使用18pt的♪字形按实际墨迹边界缩放居中。本版真实菜单显示与点击尚待验收。此前0.2.4在本机已现场验证：实际20pt菜单按钮、1512pt屏幕上的1496×104浮层、原生Dock开关及淡变、本窗口试听、重新授权后的普通全局输入和琴声。真实Fn/Caps/双侧修饰的完整矩阵、中文/快捷键、声学延迟、设备切换、全屏/多屏组合和长时稳定性仍未全部验收。
++当前菜单请求16pt槽宽、16×16pt模板画布，使用18pt的♪字形按实际墨迹边界缩放居中，内缩1pt。本版真实菜单显示与点击尚待验收。此前0.2.4在本机已现场验证：实际20pt菜单按钮、1512pt屏幕上的1496×104浮层、原生Dock开关及淡变、本窗口试听、重新授权后的普通全局输入和琴声。真实Fn/Caps/双侧修饰的完整矩阵、中文/快捷键、声学延迟、设备切换、全屏/多屏组合和长时稳定性仍未全部验收。
+ 
+-`probe-preferences.json`（音量/标签）和 `dock-recovery.json`（有待恢复改动时）目前放在App同级；Caches构建目录可能被系统清理。升级应先正常退出，**只替换完整App，保留同级偏好**，再核对授权。不要在运行中覆盖App或为继续使用旧授权而重签现成包。
++`probe-preferences.json`（音量/标签）现在位于 `~/Library/Application Support/local.typingpiano.trial/`。已有目标文件优先；目标不存在时，只读取当前App旁的旧偏好一次，缺失则写入默认值，旧文件不修改。迁移后不再读取其他旧副本偏好。损坏文件会报错，不静默覆盖。`authorization-start.json`只保存一次授权待办状态，不记录输入，也不是开机启动开关。`dock-recovery.json`仍在当前App旁，不迁移、不接管其他副本票据。
++
++升级应先正常退出，只替换完整App，保留用户偏好和待处理恢复票据，再核对授权。首次迁移请从最终安装路径打开，以读取该App旁正确的旧偏好；不要先运行另一个空候选目录导致默认值优先保存。Caches目录可能被系统清理。
++
++## 可选静音系统提示音
++
++“静音系统提示音”默认保持系统现状。用户开启并确认后，仅将macOS提示音音量设为0；它会影响所有遵守该音量的系统警告，不仅是无输入框的提示音。钢琴、媒体音量、系统总静音和键盘事件不变。系统原已静音时不产生恢复值，也不会猜测50%或100%。
++
++后端在当前进程通过NSAppleScript执行公开Standard Additions的 `get volume settings` / `set volume alert volume`，不调用System Events，不用defaults读回代替设置生效。关闭/正常退出先核对当前值，仅恢复本会话仍拥有的原提示音量；外部不同值不覆盖。写入或核对失败显示未知/失败，正常退出恢复失败允许取消退出重试。菜单保留“系统声音设置…”入口。
++
++原值仅保存在当前会话内存，**崩溃/强制退出不保证恢复**；下次启动不接管旧变化，需在系统声音设置手动调整。同值外部写入以及跨进程读写之间的竞态无法由该接口识别。额外Automation权限提示、真实系统音量/听感与其他系统版本尚待主对话验证；若系统拒绝，明确失败，不增加权限或切换私有接口。[Apple接口说明](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_cmds.html)。
+ 
+ ## 开发复现
+ 
+@@ -43,25 +54,25 @@
+ 
+ ```sh
+ mkdir -p "$HOME/Library/Caches/typing-piano-builds"
+-export TYPING_PIANO_BUILD_ROOT="$(mktemp -d "$HOME/Library/Caches/typing-piano-builds/candidate-0.2.5.XXXXXX")"
++export TYPING_PIANO_BUILD_ROOT="$(mktemp -d "$HOME/Library/Caches/typing-piano-builds/candidate-0.2.6.XXXXXX")"
+ bash Code/Scripts/build.sh
+ codesign --verify --strict "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app"
+ "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe" --self-check
+ "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe" --menu-smoke
+ ```
+ 
+-输出为该目录下的 `打字钢琴试用.app` 和同名ZIP；脚本验证冻结资源哈希，进行本地ad-hoc签名并检查签名。上述自检不启键盘监听或硬件声音，菜单smoke不安装真实状态项。需要试用时再手动打开App；开始前留意其系统Dock默认开启行为。
++输出为该目录下的 `打字钢琴试用.app` 和同名ZIP；脚本验证冻结资源哈希，进行本地ad-hoc签名并检查签名。可通过 `TYPING_PIANO_SIGN_IDENTITY` 由调用方指定签名身份（缺省为 `-`）；脚本不硬编码证书，也不输出签名身份或证书错误详情。不要将身份或私钥写入仓库；本轮CODE只使用ad-hoc，最终稳定开发签名由主对话在独立副本验证。上述自检不启键盘监听或硬件声音，菜单smoke不安装真实状态项。需要试用时再手动打开App；开始前留意其系统Dock默认开启行为。
+ 
+-未指定环境变量时，现有脚本默认输出到 `$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5`。该默认目录重复构建会被更新，所以推荐上面的唯一目录命令。脚本明确拒绝输出到 `$HOME/Library/Caches/local.typingpiano.trial` 根目录，这是已有授权安装的保护规则，不是建议绕过的构建错误。已使用/授权的候选目录也不应再拿来构建。
++未指定环境变量时，现有脚本默认输出到 `$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6`。该默认目录重复构建会被更新，所以推荐上面的唯一目录命令。脚本明确拒绝输出到 `$HOME/Library/Caches/local.typingpiano.trial` 根目录，这是已有授权安装的保护规则，不是建议绕过的构建错误。已使用/授权的候选目录也不应再拿来构建。
+ 
+ 可选的无窗口回归组（先完成上述构建环境变量设置）：
+ 
+ ```sh
+ swift test --build-system native --package-path Code \
+   --scratch-path "$TYPING_PIANO_BUILD_ROOT/tests-swiftpm" \
+-  --filter 'PianoCoreTests|NativeDockStorageTests|DockWindowVisibilityTests|AdaptiveOverlayTests|DockAdapterTests|SingleInstanceTests|RuntimeDiagnosticsTests|LocalTrialStartTests|AudioSelectionTests|MenuIntegrationTests|PianoMacTests.IntegrationTests'
++  --filter 'PianoCoreTests|NativeDockStorageTests|DockWindowVisibilityTests|AdaptiveOverlayTests|DockAdapterTests|SingleInstanceTests|RuntimeDiagnosticsTests|LocalTrialStartTests|AudioSelectionTests|MenuIntegrationTests|PianoMacTests.IntegrationTests|StartupEntryTests|AlertVolumeTests'
+ ```
+ 
+-本版本同组64项测试通过（0失败），验证记录见 [0.2.5交接](../docs/evidence/trial-0.2.5/HANDOFF.md)；系统Dock setter使用mock，不操作真实Dock。无过滤的完整测试还包括窗口联调和会写音频证据的测试，不作为上述构建步骤的默认动作。`--build-system native` 在已验证工具链上会产生弃用提示，当前脚本仍使用它；其他工具链需自行验证，不能据编译目标宣称兼容。
++本版本上述回归组89项测试通过（0失败），验证记录见 [0.2.6交接](../docs/evidence/trial-0.2.6/HANDOFF.md)；系统Dock和提示音后端使用mock，不操作真实系统设置。无过滤的完整测试还包括窗口联调和会写音频证据的测试，不作为上述构建步骤的默认动作。`--build-system native` 在已验证工具链上会产生弃用提示，当前脚本仍使用它；其他工具链需自行验证，不能据编译目标宣称兼容。
+ 
+ 完整音库、参数、许可与来源记录打入 `AudioTrial`，原始/中间WAV不打入App；`runtime-bundle-inventory.json`列出实际打包文件。资源与源码改变后应重新验证，不只汇总旧报告。当前实现与验收索引见 [IMPLEMENTATION.md](IMPLEMENTATION.md)。
+--- Code/Scripts/build.sh (task start)
++++ Code/Scripts/build.sh (0.2.6)
+@@ -2,7 +2,7 @@
+ set -euo pipefail
+ code_root="$(cd "$(dirname "$0")/.." && pwd)"
+ project_root="$(cd "$code_root/.." && pwd)"
+-build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5}"
++build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6}"
+ mkdir -p "$build_root"
+ build_root="$(cd "$build_root" && pwd)"
+ if [ "$build_root" = "$HOME/Library/Caches/local.typingpiano.trial" ]; then
+@@ -93,8 +93,8 @@
+ <key>CFBundleExecutable</key><string>TypingPianoProbe</string>
+ <key>CFBundleIdentifier</key><string>local.typingpiano.trial</string>
+ <key>CFBundleName</key><string>打字钢琴试用</string>
+-<key>CFBundleVersion</key><string>8</string>
+-<key>CFBundleShortVersionString</key><string>0.2.5</string>
++<key>CFBundleVersion</key><string>9</string>
++<key>CFBundleShortVersionString</key><string>0.2.6</string>
+ <key>TypingPianoSingleInstanceProtocol</key><integer>1</integer>
+ <key>CFBundlePackageType</key><string>APPL</string>
+ <key>LSMinimumSystemVersion</key><string>14.0</string>
+@@ -104,16 +104,18 @@
+ # Only our reproducible generated bundle. Desktop file-provider FinderInfo can prevent ad-hoc signing.
+ # A file provider can add FinderInfo to a newly created signature directory.
+ # Retry only the generated-bundle signature, bounded; never change system preferences.
++# Optional identity is supplied by the caller; never embed identity/certificate details in logs.
++sign_identity="${TYPING_PIANO_SIGN_IDENTITY:--}"
+ probe_signed=false
+ for attempt in 1 2 3; do
+     xattr -cr "$app_path"
+-    if codesign --force --sign - "$app_path" && codesign --verify --strict "$app_path"; then
++    if codesign --force --sign "$sign_identity" "$app_path" >/dev/null 2>&1 && codesign --verify --strict "$app_path" >/dev/null 2>&1; then
+         probe_signed=true
+         break
+     fi
+ done
+ if [ "$probe_signed" != true ]; then
+-    printf '%s\n' 'Local generated-bundle signing failed after 3 attempts.' >&2
++    printf '%s\n' 'Generated-bundle signing failed after 3 attempts. Check the selected signing identity and keychain access locally; identity details are omitted.' >&2
+     exit 1
+ fi
+ # Metadata-free local archive preserves signed bytes if the host later adds FinderInfo.
+--- Code/Sources/PianoCore/AppPreferences.swift (task start)
++++ Code/Sources/PianoCore/AppPreferences.swift (0.2.6)
+@@ -15,6 +15,14 @@
+         value.setVolume(value.volume)
+         return value
+     }
++    /// Existing destination wins; a successful first load also saves defaults to finish migration.
++    /// The only legacy candidate is supplied by the current app, and is never edited/deleted.
++    public static func loadMigrating(to url: URL, legacyURL: URL) throws -> Self {
++        if FileManager.default.fileExists(atPath: url.path) { return try load(from: url) }
++        let value = try load(from: legacyURL)
++        try value.save(to: url)
++        return value
++    }
+     public func save(to url: URL) throws {
+         try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+         try JSONEncoder().encode(self).write(to: url, options: .atomic)
+--- Code/Sources/PianoCore/StartupFlow.swift (task start)
++++ Code/Sources/PianoCore/StartupFlow.swift (0.2.6)
+@@ -0,0 +1,57 @@
++import Foundation
++
++/// A user-requested authorization continuation, not an auto-start preference.
++/// Durable intent survives relaunch as a reminder only; a fresh process requires a click.
++public final class StartupFlow {
++    public enum Event { case primary, becameActive, cancel }
++    public enum Action: Equatable { case none, start, requestAuthorization, permissionMissing, secureInput }
++    private struct Intent: Codable { var pendingAuthorization: Bool }
++    private let persist: (Bool) throws -> Void
++    private var needsPersistenceClear: Bool
++    private var automaticContinuationArmed = false
++    public private(set) var pendingAuthorization: Bool
++
++    public init(intentURL: URL, persist: ((Bool) throws -> Void)? = nil) throws {
++        pendingAuthorization = FileManager.default.fileExists(atPath: intentURL.path)
++            ? try JSONDecoder().decode(Intent.self, from: Data(contentsOf: intentURL)).pendingAuthorization : false
++        needsPersistenceClear = pendingAuthorization
++        self.persist = persist ?? { pending in
++            try FileManager.default.createDirectory(at: intentURL.deletingLastPathComponent(), withIntermediateDirectories: true)
++            try JSONEncoder().encode(Intent(pendingAuthorization: pending)).write(to: intentURL, options: .atomic)
++        }
++    }
++    public func handle(_ event: Event, permission: Bool, secureInput: Bool) throws -> Action {
++        if event == .cancel { try clear(); return .none }
++        if event == .becameActive && (!pendingAuthorization || !automaticContinuationArmed) { return .none }
++        if secureInput { try clear(); return .secureInput }
++        if event == .primary && !permission {
++            // Disable continuation before storage access; an error must fail closed in memory.
++            pendingAuthorization = false; automaticContinuationArmed = false; needsPersistenceClear = true
++            try persist(true)
++            pendingAuthorization = true; automaticContinuationArmed = true
++            return .requestAuthorization
++        }
++        try clear()
++        return permission ? .start : .permissionMissing
++    }
++    private func clear() throws {
++        // Never re-arm on later activation, even if clearing the durable flag fails.
++        pendingAuthorization = false; automaticContinuationArmed = false
++        if needsPersistenceClear {
++            try persist(false)
++            needsPersistenceClear = false
++        }
++    }
++}
++
++/// A nested permission sheet can activate the app before Settings has actually opened.
++/// An already-granted preflight can proceed immediately; otherwise wait for a Settings visit.
++public struct AuthorizationReturnGate {
++    private var awaitingSettingsVisit = false
++    private var settingsObserved = false
++    public init() {}
++    public mutating func beginRequest() { awaitingSettingsVisit = true; settingsObserved = false }
++    public mutating func observedSettings() { if awaitingSettingsVisit { settingsObserved = true } }
++    public func canContinue(permission: Bool) -> Bool { !awaitingSettingsVisit || settingsObserved || permission }
++    public mutating func reset() { awaitingSettingsVisit = false; settingsObserved = false }
++}
+--- Code/Sources/PianoMac/AlertVolume.swift (task start)
++++ Code/Sources/PianoMac/AlertVolume.swift (0.2.6)
+@@ -0,0 +1,124 @@
++import Foundation
++import PianoCore
++
++public protocol AlertVolumeStorage: AnyObject {
++    func read() throws -> Int
++    func write(_ volume: Int) throws
++}
++
++/// Fixed Standard Additions commands in this process. No target application, shell,
++/// System Events, defaults writes, media-volume parameter or automation entitlement.
++public final class StandardAdditionsAlertVolumeStorage: AlertVolumeStorage {
++    public typealias Executor = (String) throws -> String
++    private let execute: Executor
++    public init(execute: @escaping Executor = StandardAdditionsAlertVolumeStorage.executeInProcess) { self.execute = execute }
++    public func read() throws -> Int {
++        let result = try execute("return alert volume of (get volume settings)")
++        guard let value = Int(result.trimmingCharacters(in: .whitespacesAndNewlines)), (0...100).contains(value) else {
++            throw ProbeError.invalid("系统提示音音量读回无效；未修改设置。")
++        }
++        return value
++    }
++    public func write(_ volume: Int) throws {
++        guard (0...100).contains(volume) else { throw ProbeError.invalid("提示音音量必须在0到100之间") }
++        _ = try execute("set volume alert volume \(volume)")
++    }
++    public static func executeInProcess(_ source: String) throws -> String {
++        precondition(Thread.isMainThread)
++        guard let script = NSAppleScript(source: source) else { throw ProbeError.invalid("系统提示音脚本不可用") }
++        var error: NSDictionary?
++        let result = script.executeAndReturnError(&error)
++        if let error {
++            let code = (error["NSAppleScriptErrorNumber"] as? NSNumber)?.intValue ?? 0
++            if code == -1743 {
++                throw ProbeError.invalid("系统拒绝提示音操作（-1743）。本App不会追加自动化权限；请使用系统声音设置。")
++            }
++            throw ProbeError.invalid("系统提示音操作失败（\(code)）；请使用系统声音设置。")
++        }
++        return result.stringValue ?? ""
++    }
++}
++
++/// Owns only this process's verified change. Original volume is kept in memory:
++/// crashes cannot promise restoration, and a new process never claims an old change.
++public final class AlertVolumeAdapter {
++    public enum Outcome: String { case noChange, cancelled, muted, alreadySilent, restored, externalChange, failed }
++    private let storage: AlertVolumeStorage
++    public private(set) var observed: Int?
++    public private(set) var originalVolume: Int?
++    private var lastVerified: Int?
++    public private(set) var outcome: Outcome = .noChange
++    public private(set) var detail = "尚未读取；默认保持系统现状"
++    public var hasOwnedChange: Bool { originalVolume != nil }
++    public var mutedState: Bool? {
++        guard outcome != .failed, !(originalVolume != nil && lastVerified == nil) else { return nil }
++        return observed.map { $0 == 0 }
++    }
++    public init(storage: AlertVolumeStorage) { self.storage = storage }
++    private func read() throws -> Int {
++        let value = try storage.read()
++        guard (0...100).contains(value) else { throw ProbeError.invalid("系统提示音音量读回无效") }
++        return value
++    }
++    private func finish(_ result: Outcome, _ message: String) -> Outcome {
++        outcome = result; detail = message; return result
++    }
++    private func releaseOwnership() { originalVolume = nil; lastVerified = nil }
++    @discardableResult public func refresh() -> Outcome {
++        do {
++            let value = try read(); observed = value
++            if originalVolume != nil && value != 0 {
++                releaseOwnership()
++                return finish(.externalChange, "检测到外部修改为\(value)%；已放弃恢复，不覆盖系统现状")
++            }
++            if let originalVolume {
++                return finish(lastVerified == 0 ? .noChange : .failed,
++                    lastVerified == 0 ? "本App已静音；本次原提示音量\(originalVolume)%" : "写后状态未完整核验；原提示音量\(originalVolume)%，请检查系统声音设置")
++            }
++            return finish(.noChange, value == 0 ? "系统原已静音；本会话未改动，不猜测恢复音量" : "系统提示音量\(value)%；本App未改动")
++        } catch { observed = nil; return finish(.failed, error.localizedDescription) }
++    }
++    @discardableResult public func mute(confirmed: Bool) -> Outcome {
++        guard confirmed else { return finish(.cancelled, "已取消；未修改系统提示音") }
++        let current = refresh()
++        guard current != .failed && current != .externalChange else { return current }
++        guard let value = observed else { return finish(.failed, "提示音量未知；保持不动") }
++        if value == 0 { return finish(.alreadySilent, originalVolume == nil ? "系统原已静音；不保存虚构的恢复值" : detail) }
++        originalVolume = value; lastVerified = nil
++        var writeError: String?
++        do { try storage.write(0) } catch { writeError = error.localizedDescription }
++        do {
++            observed = try read()
++            if observed == 0 {
++                lastVerified = 0
++                if let writeError { return finish(.failed, "\(writeError)；读回为0，已保留本次原值\(value)%供关闭时恢复") }
++                return finish(.muted, "本App已静音；本次原提示音量\(value)%")
++            }
++            releaseOwnership()
++            return finish(.failed, writeError ?? "系统未确认静音；未报告成功，保持实际读回状态")
++        } catch { observed = nil; return finish(.failed, "写后核对失败；原提示音量\(value)%，请检查系统声音设置") }
++    }
++    @discardableResult public func restore() -> Outcome {
++        guard let original = originalVolume else {
++            return finish(.noChange, observed == 0 ? "系统原已静音；本App没有可恢复原值，请使用系统声音设置" : detail)
++        }
++        do {
++            observed = try read()
++            guard observed == 0 else {
++                releaseOwnership(); return finish(.externalChange, "检测到外部修改；未恢复或覆盖系统现状")
++            }
++            guard lastVerified == 0 else {
++                return finish(.failed, "未确认本App写入成功，不能自动恢复；原提示音量\(original)%，请在系统声音设置检查")
++            }
++            var writeError: String?
++            do { try storage.write(original) } catch { writeError = error.localizedDescription }
++            observed = try read()
++            if observed == original {
++                releaseOwnership()
++                return finish(writeError == nil ? .restored : .failed, writeError ?? "已恢复本次原提示音量\(original)%")
++            }
++            if observed != 0 { releaseOwnership() }
++            return finish(.failed, writeError ?? "恢复后读回不符；请检查系统声音设置")
++        } catch { observed = nil; return finish(.failed, "提示音恢复未完成：\(error.localizedDescription)") }
++    }
++}
+--- Code/Sources/PianoMac/ContinuousTrialStart.swift (task start)
++++ Code/Sources/PianoMac/ContinuousTrialStart.swift (0.2.6)
+@@ -1,12 +1,22 @@
++import Foundation
+ import PianoAudio
+ 
+ /// Explicit user action only. Local input does not depend on global permission.
+ /// The caller owns UI/coordinator state; failures always clean both services.
+ enum ContinuousTrialStart {
++    enum Failure: LocalizedError {
++        case input(Error), audio(Error)
++        var errorDescription: String? {
++            switch self {
++            case .input(let error): return "输入监听未能开始：\(error.localizedDescription)"
++            case .audio(let error): return "声音启动失败：\(error.localizedDescription)；请检查音频设备或重新点击开始。"
++            }
++        }
++    }
+     static func run(global: Bool, input: InputMonitoring, audio: AuditionSession) throws {
+         do {
+-            try input.start(global: global, duration: .continuous)
+-            try audio.enable()
++            do { try input.start(global: global, duration: .continuous) } catch { throw Failure.input(error) }
++            do { try audio.enable() } catch { throw Failure.audio(error) }
+         } catch {
+             input.stop(); audio.disable()
+             throw error
+--- Code/Sources/PianoMac/InputMonitor.swift (task start)
++++ Code/Sources/PianoMac/InputMonitor.swift (0.2.6)
+@@ -43,7 +43,7 @@
+         guard !Self.secureInput else { throw ProbeError.invalid("安全输入已启用；探针保持停止") }
+         if global {
+             guard Self.hasExistingPermission else {
+-                throw ProbeError.invalid("尚无输入监控授权。探针不会弹授权或改设置；请自行在系统设置中授权后重开测试，或用本窗口测试。")
++                throw ProbeError.invalid("输入监控未授权或已失效；请从启动窗口点击“授权并开始”，或用本窗口试弹。")
+             }
+             let mask = [CGEventType.keyDown, .keyUp, .flagsChanged].reduce(CGEventMask(0)) { $0 | (1 << $1.rawValue) }
+             guard let newTap = CGEvent.tapCreate(tap: .cgSessionEventTap, place: .headInsertEventTap,
+--- Code/Sources/PianoMac/ProbeController.swift (task start)
++++ Code/Sources/PianoMac/ProbeController.swift (0.2.6)
+@@ -10,6 +10,15 @@
+     private let preferencesURL: URL
+     private var preferences: AppPreferences
+     private var statusMenu: ProbeMenu?
++    private let startupFlow: StartupFlow
++    private let startupWindowPresenter: (() -> Void)?
++    private var startupPrimary: NSButton?
++    private var startupCancel: NSButton?
++    private var authorizationRequestInFlight = false
++    private var authorizationReturnGate = AuthorizationReturnGate()
++    private let alertVolume: AlertVolumeAdapter
++    private var skipAlertRestoreOnExit = false
++    private var sessionStatus = "已暂停：尚未开始"
+     private let input: InputMonitoring
+     private let installStatusItem: Bool
+     private var reducer = KeyStateReducer()
+@@ -44,13 +53,16 @@
+     private var diagnosticsTimer: Timer?
+     private let diagnosticsLabel = NSTextField(wrappingLabelWithString: "运行诊断：尚未开始。")
+ 
+-    public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL, input: InputMonitoring? = nil, audioEngine: AuditionEngine = SamplerAudio(), installStatusItem: Bool = true, dockAdapter: DockAdapter? = nil) throws {
++    public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL, input: InputMonitoring? = nil, audioEngine: AuditionEngine = SamplerAudio(), installStatusItem: Bool = true, dockAdapter: DockAdapter? = nil, startupWindowPresenter: (() -> Void)? = nil, alertVolume: AlertVolumeAdapter? = nil) throws {
+         guard let first = sources.first else { throw ProbeError.invalid("没有可用试听音源") }
+         self.mapping = mapping; self.sources = sources; self.preferencesURL = preferencesURL
+         audio = AuditionSession(engine: audioEngine, source: first)
+         self.installStatusItem = installStatusItem
+         if let dockAdapter { self.dock = dockAdapter; self.systemDock = true }
+         preferences = try AppPreferences.load(from: preferencesURL)
++        startupFlow = try StartupFlow(intentURL: preferencesURL.deletingLastPathComponent().appendingPathComponent("authorization-start.json"))
++        self.startupWindowPresenter = startupWindowPresenter
++        self.alertVolume = alertVolume ?? AlertVolumeAdapter(storage: StandardAdditionsAlertVolumeStorage())
+         coordinator = NoteCoordinator(mapping: mapping)
+         self.input = try input ?? InputMonitor(mapping: mapping)
+         super.init()
+@@ -66,6 +78,11 @@
+         buildStartupWindow()
+         installSafetyHooks()
+         let menu = ProbeMenu(volume: preferences.volume, sources: sources, installStatusItem: installStatusItem)
++        menu.onStartup = { [weak self] in self?.showStartupWindow() }
++        menu.onDownload = { [weak self] in self?.downloadNewVersion() }
++        menu.onMuteAlerts = { [weak self] in self?.toggleAlertMute() }
++        menu.onSoundSettings = { [weak self] in self?.openSoundSettings() }
++        menu.onWillOpen = { [weak self] in self?.alertVolume.refresh(); self?.refreshAlertMenu() }
+         menu.onOpen = { [weak self] in self?.showControlWindow() }
+         menu.onPause = { [weak self] in self?.togglePause() }
+         menu.onSound = { [weak self] in self?.toggleSound() }
+@@ -82,29 +99,54 @@
+         statusMenu = menu
+         dockResult(dock.request(true, confirmedDisable: true)) // GUI injects native storage; tests retain simulation.
+         refresh()
+-        if installStatusItem { showStartupWindow() }
++        if installStatusItem {
++            showStartupWindow()
++            if NSApp.isActive { handleStartup(.becameActive) }
++        }
+     }
+     private func buildStartupWindow() {
+         startupWindow = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 480, height: 490), styleMask: [.titled, .closable], backing: .buffered, defer: false)
+-        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.5"
++        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.6"
++        startupWindow.delegate = self
+         startupWindow.title = "打字钢琴试用 · \(version)"; startupWindow.center(); startupWindow.isReleasedWhenClosed = false
+         let title = NSTextField(labelWithString: "让打字伴随琴声")
+         title.font = .systemFont(ofSize: 20, weight: .semibold)
+         let start = button("开始打字钢琴", #selector(startTrial))
+-        start.bezelStyle = .rounded
+-        let hint = NSTextField(wrappingLabelWithString: "首次默认停止。仅观察键盘，不保存输入；音量只影响本 App。系统 Dock 自动隐藏默认开启，退出时保护原设置。")
++        start.bezelStyle = .rounded; startupPrimary = start
++        let hint = NSTextField(wrappingLabelWithString: "首次默认停止。点击授权并开始后，请在系统设置亲自允许；返回时继续本次开始操作。若系统要求退出，请重新打开同一路径App并点击主按钮继续。仅观察键盘，不保存输入。")
+         hint.textColor = .secondaryLabelColor; hint.font = .systemFont(ofSize: 11)
+         let local = button("本窗口试弹（无需权限）", #selector(startLocalTrial))
+         local.bezelStyle = .rounded
+-        let authorize = button("授权输入监控", #selector(authorizeInput))
+-        let retry = button("重新检查并开始", #selector(startTrial))
+-        let stack = NSStackView(views: [title, startupMessage, authorize, start, retry, local, button("退出后重新打开", #selector(quitApp)), hint])
++        let cancel = button("取消本次开始", #selector(cancelStartup)); startupCancel = cancel
++        let stack = NSStackView(views: [title, startupMessage, start, cancel, local, button("退出App", #selector(quitApp)), hint])
+         stack.orientation = .vertical; stack.alignment = .leading; stack.spacing = 14; stack.translatesAutoresizingMaskIntoConstraints = false
+         startupWindow.contentView!.addSubview(stack)
+         NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: startupWindow.contentView!.leadingAnchor, constant: 24), stack.trailingAnchor.constraint(equalTo: startupWindow.contentView!.trailingAnchor, constant: -24), stack.topAnchor.constraint(equalTo: startupWindow.contentView!.topAnchor, constant: 20)])
+     }
+     private func showStartupWindow() {
+-        startupWindow.makeKeyAndOrderFront(nil); NSApp.activate(ignoringOtherApps: true)
++        if let startupWindowPresenter { startupWindowPresenter(); return }
++        updateStartupControls()
++        if startupFlow.pendingAuthorization {
++            startupMessage.stringValue = "存在尚未完成的授权开始请求。本次请求返回App可续接；若已退出重开，请点击主按钮继续，或取消本次开始。"
++        } else { startupMessage.stringValue = sessionStatus }
++        startupWindow?.makeKeyAndOrderFront(nil); NSApp.activate(ignoringOtherApps: true)
++    }
++    public func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
++        showStartupWindow()
++        return false
++    }
++    func handleDuplicateLaunch() { showStartupWindow() }
++    private func updateStartupControls() {
++        startupPrimary?.title = InputMonitor.hasExistingPermission ? "开始打字钢琴" : "授权并开始"
++        startupPrimary?.isEnabled = input.mode != .global && !authorizationRequestInFlight
++        startupCancel?.isHidden = !startupFlow.pendingAuthorization
++    }
++    private func downloadNewVersion() {
++        let url = URL(string: "https://github.com/quennelwm/mac-typing-piano/releases")!
++        if !NSWorkspace.shared.open(url) {
++            showStartupWindow()
++            startupMessage.stringValue = "无法打开浏览器，请手动访问 github.com/quennelwm/mac-typing-piano/releases 下载新版。"
++        }
+     }
+     func showControlWindow(activate: Bool = true) {
+         if activate { window.makeKeyAndOrderFront(nil); NSApp.activate(ignoringOtherApps: true) }
+@@ -178,23 +220,70 @@
+         do {
+             try input.start(global: global, duration: .test60Seconds)
+             receivedCount = 0
++            sessionStatus = global ? "运行中：全局60秒测试" : "运行中：本窗口60秒测试"
+             status.stringValue = global ? "只观察监听器已建立；60秒内自动停止，实际捕获待实按。" : "本窗口60秒测试已开启。事件原样传递；不保存文本或逐键历史。"
+         } catch { pause(error.localizedDescription); showControlWindow() }
+         refresh()
+     }
+-    @objc private func authorizeInput() {
+-        // Explicit user click only. Never request permission during launch or testing.
+-        _ = CGRequestListenEventAccess()
+-        let settings = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent")!
+-        let opened = NSWorkspace.shared.open(settings)
+-        startupMessage.stringValue = opened
+-            ? "请在输入监控中允许本 App，然后点击“重新检查并开始”。若系统要求退出，或授权后仍失败，请点击“退出后重新打开”并重新打开同一路径 App。"
+-            : "无法自动打开设置。请手动前往系统设置 → 隐私与安全性 → 输入监控允许本 App，再重新检查；若仍失败，退出并重新打开同一路径 App。"
+-        startupWindow.setContentSize(NSSize(width: 480, height: 490))
++    @objc private func cancelStartup() {
++        pause("已取消本次开始；可随时重新点击主按钮。")
++        startupMessage.stringValue = sessionStatus
++        updateStartupControls()
++    }
++    private func handleStartup(_ event: StartupFlow.Event) {
++        guard !authorizationRequestInFlight else { return }
++        if event == .becameActive && !authorizationReturnGate.canContinue(permission: InputMonitor.hasExistingPermission) { return }
++        do {
++            let action = try startupFlow.handle(event, permission: InputMonitor.hasExistingPermission, secureInput: InputMonitor.secureInput)
++            switch action {
++            case .none: break
++            case .start: startContinuousTrial(global: true)
++            case .requestAuthorization:
++                sessionStatus = "已暂停：等待本次输入监控授权"
++                startupMessage.stringValue = "请在系统设置中允许打字钢琴，返回App后将继续本次开始操作。若系统要求退出，请重新打开同一路径App并点击主按钮继续。可取消本次开始。"
++                authorizationReturnGate.beginRequest()
++                authorizationRequestInFlight = true
++                updateStartupControls()
++                _ = CGRequestListenEventAccess() // Only this explicit primary-button path can request.
++                if InputMonitor.hasExistingPermission && NSApp.isActive {
++                    authorizationRequestInFlight = false
++                    authorizationReturnGate.reset()
++                    handleStartup(.becameActive)
++                    return
++                }
++                let opened = NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent")!)
++                if NSWorkspace.shared.frontmostApplication?.bundleIdentifier == "com.apple.systempreferences" { authorizationReturnGate.observedSettings() }
++                authorizationRequestInFlight = false
++                if !opened {
++                    _ = try startupFlow.handle(.cancel, permission: false, secureInput: false)
++                    startupMessage.stringValue = "未能打开系统设置，本次开始已取消。请手动前往隐私与安全性 → 输入监控允许本App，再点击开始。"
++                    sessionStatus = "已暂停：未能打开输入监控设置"
++                } else if NSApp.isActive && authorizationReturnGate.canContinue(permission: InputMonitor.hasExistingPermission) {
++                    // A nested Settings activation/return may have occurred while the request was in flight.
++                    handleStartup(.becameActive)
++                    return
++                }
++            case .permissionMissing:
++                startupMessage.stringValue = "尚未获得输入监控授权，本次开始已取消。可再次点击授权并开始；若系统要求重启或旧条目失效，请按安装说明处理后重开同一路径App。"
++                sessionStatus = "已暂停：尚未获得输入监控授权"
++            case .secureInput:
++                startupMessage.stringValue = "安全输入正在阻断键盘监听，本次开始已取消。离开密码框或安全输入环境后，请主动点击开始。"
++                sessionStatus = "已暂停：安全输入阻断"
++            }
++        } catch {
++            startupMessage.stringValue = "无法保存本次开始状态，已保持停止：\(error.localizedDescription)"
++            sessionStatus = "已暂停：开始状态保存失败"
++        }
++        updateStartupControls(); refresh()
+     }
+     @objc private func quitApp() { NSApp.terminate(nil) }
+     @objc func startLocalTrial() { startContinuousTrial(global: false) }
+-    @objc func startTrial() { startContinuousTrial(global: true) }
++    @objc func startTrial() {
++        guard input.mode != .global else { showStartupWindow(); return }
++        pause("准备开始")
++        showStartupWindow()
++        handleStartup(.primary)
++    }
+     private func startContinuousTrial(global: Bool) {
+         pause("准备开始")
+         sessionDuration = .continuous; lastGlobal = global
+@@ -203,6 +292,7 @@
+             _ = coordinator.setSoundEnabled(true); coordinator.resume()
+             soundButton.title = "关闭声音并清尾音"
+             receivedCount = 0
++            sessionStatus = global ? "运行中：持续全局打字" : "运行中：本窗口试弹"
+             if global { toggleOverlay() }
+             startupWindow.orderOut(nil)
+             if !global { showControlWindow(); window.makeFirstResponder(preview) }
+@@ -215,9 +305,6 @@
+         } catch {
+             pause(error.localizedDescription)
+             startupMessage.stringValue = "无法开始：\(error.localizedDescription)"
+-            if global {
+-                startupMessage.stringValue += "\n点击“授权输入监控”，在系统设置中允许本 App，再“重新检查并开始”；若系统要求退出或仍失败，请退出后重新打开同一路径 App。"
+-            }
+             startupWindow.setContentSize(NSSize(width: 480, height: 490))
+             if installStatusItem { showStartupWindow() }
+         }
+@@ -229,6 +316,9 @@
+         result["inputMode"] = String(describing: input.mode)
+         result["globalInputPermission"] = InputMonitor.hasExistingPermission
+         result["secureInput"] = InputMonitor.secureInput
++        result["alertVolumeObserved"] = alertVolume.observed.map { $0 as Any } ?? NSNull()
++        result["alertVolumeOriginalThisSession"] = alertVolume.originalVolume.map { $0 as Any } ?? NSNull()
++        result["alertVolumeOutcome"] = alertVolume.outcome.rawValue
+         result["capturedAt"] = ISO8601DateFormatter().string(from: Date())
+         result["requestedStatusItemWidthPt"] = ProbeMenu.statusItemWidth
+         result["actualStatusItemButtonWidthPt"] = statusMenu?.actualStatusButtonWidth.map { $0 as Any } ?? NSNull()
+@@ -284,7 +374,8 @@
+     }
+     private func refresh() {
+         statusMenu?.update(soundEnabled: coordinator.soundEnabled, showLabels: labels, showOverlay: showOverlay,
+-            paused: coordinator.paused, dockDesired: dock.observed ?? dock.desired, dockKnown: dock.observed != nil, systemDock: systemDock, sourceID: audio.source.id)
++            paused: coordinator.paused, dockDesired: dock.observed ?? dock.desired, dockKnown: dock.observed != nil, systemDock: systemDock, sourceID: audio.source.id, sessionStatus: sessionStatus + (!coordinator.paused && !coordinator.soundEnabled ? "（声音关闭）" : ""))
++        updateStartupControls()
+         preview?.setSceneVisible(window?.isVisible == true && !coordinator.paused)
+         let keys = Set(coordinator.active.values.map { $0.key.midiNote })
+         preview?.activeMIDI = keys
+@@ -298,7 +389,13 @@
+         updatePanelOpacity()
+     }
+     @objc func stopAll() { pause("已暂停：监听、声音、尾音、延迟释放和浮层已清理。") }
+-    private func pause(_ reason: String) {
++    private func pause(_ reason: String, preserveAuthorization: Bool = false) {
++        if !preserveAuthorization {
++            authorizationReturnGate.reset()
++            do { _ = try startupFlow.handle(.cancel, permission: false, secureInput: false) }
++            catch { startupMessage.stringValue = "取消待授权开始状态保存失败：\(error.localizedDescription)" }
++        }
++        sessionStatus = "已暂停：\(reason)"
+         diagnosticsTimer?.invalidate(); diagnosticsTimer = nil
+         input.stop(); reducer.reset()
+         for item in pending.values { item.cancel() }; pending.removeAll()
+@@ -399,7 +496,8 @@
+         return alert.runModal()
+     }
+     private func showAbout() {
+-        _ = alert("打字钢琴", "默认停止输入与声音。点击开始打字钢琴后持续运行，可从菜单暂停或退出；测试菜单仍保留60秒模式。全局测试仅在已有输入监控授权时启动；仅在点击授权时申请输入监控，不修改输入。Fn、Caps Lock、双侧修饰、中文输入和系统Dock仍需实按验收。Dock调用系统原生自动隐藏设置，钢琴宽度自动适应屏幕。默认使用全64音试用钢琴；测试子菜单中的局部候选缺音不替补。", buttons: ["知道了"])
++        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.6"
++        _ = alert("打字钢琴 · \(version)", "默认停止输入与声音。点击开始打字钢琴后持续运行，可从菜单暂停或退出；测试菜单仍保留60秒模式。全局测试仅在已有输入监控授权时启动；仅在点击授权并开始时申请输入监控，不修改输入。Fn、Caps Lock、双侧修饰、中文输入和系统Dock仍需实按验收。Dock调用系统原生自动隐藏设置，钢琴宽度自动适应屏幕。默认使用全64音试用钢琴；测试子菜单中的局部候选缺音不替补。", buttons: ["知道了"])
+     }
+     private func dockResult(_ outcome: DockAdapter.Outcome) {
+         let observed = dock.observed.map { $0 ? "开启" : "关闭" } ?? "未知"
+@@ -415,6 +513,34 @@
+         }
+         dockResult(dock.request(desired, confirmedDisable: true))
+     }
++    private func refreshAlertMenu() {
++        statusMenu?.updateAlertVolume(muted: alertVolume.mutedState, detail: alertVolume.detail)
++    }
++    private func toggleAlertMute() {
++        if alertVolume.hasOwnedChange {
++            _ = alertVolume.restore()
++        } else {
++            let result = alertVolume.refresh()
++            guard result != .failed else { reportAlertVolumeFailure(); return }
++            if alertVolume.observed == 0 {
++                _ = alert("系统提示音原已静音", "本App没有可恢复的原音量，不会猜测50%或100%。如需开启，请使用菜单中的系统声音设置。", buttons: ["知道了"])
++                refreshAlertMenu(); return
++            }
++            let confirmed = alert("静音系统提示音？", "这会将macOS系统提示音音量设为0，影响所有遵守该音量的系统警告，不仅是没有输入框时的提示音。钢琴与媒体音量不变。关闭或正常退出仅恢复本次仍由App拥有的改动；异常退出请在系统声音设置恢复。", buttons: ["取消", "静音提示音"]) == .alertSecondButtonReturn
++            _ = alertVolume.mute(confirmed: confirmed)
++        }
++        if alertVolume.outcome == .failed { reportAlertVolumeFailure() }
++        refreshAlertMenu()
++    }
++    private func reportAlertVolumeFailure() {
++        refreshAlertMenu()
++        _ = alert("系统提示音操作未完成", alertVolume.detail + "\n未报告成功。可使用“系统声音设置…”检查；不会追加权限或修改媒体音量。", buttons: ["知道了"])
++    }
++    private func openSoundSettings() {
++        if !NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.Sound-Settings.extension")!) {
++            _ = alert("系统声音设置", "请手动打开系统设置 → 声音 → 提示音音量。", buttons: ["知道了"])
++        }
++    }
+     private func openDockSettings() {
+         let url = URL(string: "x-apple.systempreferences:com.apple.Desktop-Settings.extension")!
+         if !NSWorkspace.shared.open(url) {
+@@ -435,6 +561,19 @@
+         else { _ = alert("Dock恢复结果", "\(outcome.rawValue)。偏好读回不等于视觉生效。\(adapter.detail)", buttons: ["知道了"]) }
+     }
+     private func installSafetyHooks() {
++        notifications.append(NSWorkspace.shared.notificationCenter.addObserver(forName: NSWorkspace.didActivateApplicationNotification, object: nil, queue: .main) { [weak self] notification in
++            guard let app = notification.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication,
++                  app.bundleIdentifier == "com.apple.systempreferences" else { return }
++            self?.authorizationReturnGate.observedSettings()
++        })
++        notifications.append(NotificationCenter.default.addObserver(forName: NSApplication.didBecomeActiveNotification, object: nil, queue: .main) { [weak self] _ in
++            guard let self, self.startupWindow != nil, !self.authorizationRequestInFlight else { return }
++            self.handleStartup(.becameActive)
++        })
++        notifications.append(DistributedNotificationCenter.default().addObserver(forName: PianoSingleInstance.reopenNotification,
++            object: String(ProcessInfo.processInfo.processIdentifier), queue: .main) { [weak self] _ in
++            self?.handleDuplicateLaunch() // Reveal only; notification never starts input or requests permission.
++        })
+         let access = NSWorkspace.shared.notificationCenter
+         notifications.append(access.addObserver(forName: NSWorkspace.accessibilityDisplayOptionsDidChangeNotification, object: nil, queue: .main) { [weak self] _ in
+             let reduced = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
+@@ -470,10 +609,22 @@
+         (coordinator.active.count, overlayView?.floatingCount ?? 0, preview?.floatingCount ?? 0, coordinator.soundEnabled)
+     }
+     public func windowWillClose(_ notification: Notification) {
++        if let closing = notification.object as? NSWindow, closing === startupWindow {
++            if startupFlow.pendingAuthorization { cancelStartup() }
++            return
++        }
+         if input.mode == .local || sessionDuration == .test60Seconds { pause("测试控制台已关闭；测试停止") }
+     }
++    public func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
++        let result = alertVolume.restore()
++        guard result == .failed else { return .terminateNow }
++        let response = alert("提示音恢复未完成", alertVolume.detail + "\n取消退出可重试或打开系统声音设置；仍然退出可能保留当前提示音设置。", buttons: ["取消退出", "仍然退出"])
++        skipAlertRestoreOnExit = response == .alertSecondButtonReturn
++        return skipAlertRestoreOnExit ? .terminateNow : .terminateCancel
++    }
+     public func applicationWillTerminate(_ notification: Notification) {
+-        pause("退出"); audio.disable(); window?.orderOut(nil); startupWindow?.orderOut(nil)
++        if !skipAlertRestoreOnExit { _ = alertVolume.restore() }
++        pause("退出", preserveAuthorization: true); audio.disable(); window?.orderOut(nil); startupWindow?.orderOut(nil)
+         _ = dock.restoreOnExit() // Failure leaves an atomic recovery ticket; no retry loop.
+     }
+ }
+--- Code/Sources/PianoMac/ProbeMenu.swift (task start)
++++ Code/Sources/PianoMac/ProbeMenu.swift (0.2.6)
+@@ -10,6 +10,11 @@
+     public let percentage = NSTextField(labelWithString: "50%")
+     public let icon: NSImage
+     public var onVolume: ((Double) -> Void)?
++    public var onStartup: (() -> Void)?
++    public var onDownload: (() -> Void)?
++    public var onMuteAlerts: (() -> Void)?
++    public var onSoundSettings: (() -> Void)?
++    public var onWillOpen: (() -> Void)?
+     public var onOpen: (() -> Void)?
+     public var onPause: (() -> Void)?
+     public var onSound: (() -> Void)?
+@@ -24,8 +29,11 @@
+     public var onAbout: (() -> Void)?
+     private var statusItem: NSStatusItem?
+     public var actualStatusButtonWidth: CGFloat? { statusItem?.button?.bounds.width }
++    private let session = NSMenuItem(title: "已暂停：尚未开始", action: nil, keyEquivalent: "")
+     private let pause = NSMenuItem(title: "暂停全部", action: nil, keyEquivalent: "")
+     private let sound = NSMenuItem(title: "声音", action: nil, keyEquivalent: "")
++    private let alertMute = NSMenuItem(title: "静音系统提示音", action: nil, keyEquivalent: "")
++    private let alertStatus = NSMenuItem(title: "提示音：默认保持系统现状", action: nil, keyEquivalent: "")
+     private let labels = NSMenuItem(title: "显示按键标签", action: nil, keyEquivalent: "")
+     private let overlay = NSMenuItem(title: "显示钢琴", action: nil, keyEquivalent: "")
+     private let dock = NSMenuItem(title: "自动隐藏 Dock", action: nil, keyEquivalent: "")
+@@ -38,8 +46,8 @@
+             let line = CTLineCreateWithAttributedString(NSAttributedString(string: "♪", attributes: [.font: NSFont.systemFont(ofSize: 18, weight: .medium), .foregroundColor: NSColor.black]))
+             let ink = CTLineGetBoundsWithOptions(line, .useGlyphPathBounds)
+             guard ink.width.isFinite, ink.height.isFinite, ink.width > 0, ink.height > 0 else { return false }
+-            // Keep the 18pt glyph; fit its actual ink with a half-point antialiasing margin.
+-            let content = rect.insetBy(dx: 0.5, dy: 0.5)
++            // Keep the 18pt glyph; fit its actual ink with a one-point antialiasing margin.
++            let content = rect.insetBy(dx: 1, dy: 1)
+             let scale = min(1, min(content.width / ink.width, content.height / ink.height))
+             ctx.saveGState(); ctx.translateBy(x: rect.midX, y: rect.midY); ctx.scaleBy(x: scale, y: scale)
+             ctx.textMatrix = .identity; ctx.textPosition = CGPoint(x: -ink.midX, y: -ink.midY)
+@@ -48,6 +56,8 @@
+         icon.isTemplate = true
+         super.init()
+         menu.delegate = self; menu.autoenablesItems = false
++        session.isEnabled = false; menu.addItem(session)
++        add("打开启动窗口…", #selector(openStartup), to: menu)
+         wire(pause, #selector(pauseAll), menu); menu.addItem(.separator())
+         wire(sound, #selector(toggleSound), menu)
+         let volumeItem = NSMenuItem(), volumeView = NSView(frame: NSRect(x: 0, y: 0, width: 250, height: 42))
+@@ -59,12 +69,19 @@
+         percentage.frame = NSRect(x: 199, y: 12, width: 42, height: 18); percentage.alignment = .right
+         volumeView.addSubview(label); volumeView.addSubview(slider); volumeView.addSubview(percentage)
+         volumeItem.view = volumeView; menu.addItem(volumeItem)
++        menu.addItem(.separator())
++        wire(alertMute, #selector(muteAlerts), menu)
++        alertMute.state = .mixed
++        alertStatus.isEnabled = false; menu.addItem(alertStatus)
++        add("系统声音设置…", #selector(openSoundSettings), to: menu)
++        menu.addItem(.separator())
+         wire(overlay, #selector(toggleOverlay), menu); wire(labels, #selector(toggleLabels), menu)
+         menu.addItem(.separator()); wire(dock, #selector(toggleDock), menu)
+         add("系统Dock设置…", #selector(openDockSettings), to: menu)
+         let automaticWidth = NSMenuItem(title: "钢琴宽度：自动适应屏幕", action: nil, keyEquivalent: "")
+         automaticWidth.isEnabled = false; menu.addItem(automaticWidth)
+         menu.addItem(.separator()); add("帮助 / 关于", #selector(about), to: menu)
++        add("下载新版…", #selector(download), to: menu)
+         let test = submenu("测试", in: menu)
+         add("打开测试控制台…", #selector(openControl), to: test)
+         add("全局观察60秒…", #selector(startGlobal), to: test)
+@@ -94,14 +111,25 @@
+         let item = NSMenuItem(title: title, action: nil, keyEquivalent: ""), submenu = NSMenu(title: title)
+         submenu.autoenablesItems = false; item.submenu = submenu; parent.addItem(item); return submenu
+     }
++    public func menuWillOpen(_ menu: NSMenu) { onWillOpen?() }
++    public func updateAlertVolume(muted: Bool?, detail: String) {
++        alertMute.state = muted.map { $0 ? .on : .off } ?? .mixed
++        alertStatus.title = "提示音：" + String(detail.prefix(30)) + (detail.count > 30 ? "…" : "")
++        alertStatus.toolTip = detail; alertMute.toolTip = detail
++    }
+     public func setVolume(_ value: Double) { slider.doubleValue = min(1, max(0, value)); percentage.stringValue = "\(Int((slider.doubleValue * 100).rounded()))%" }
+-    public func update(soundEnabled: Bool, showLabels: Bool, showOverlay: Bool, paused: Bool = false, dockDesired: Bool = true, dockKnown: Bool = true, systemDock: Bool = false, sourceID: String = "synthetic") {
++    public func update(soundEnabled: Bool, showLabels: Bool, showOverlay: Bool, paused: Bool = false, dockDesired: Bool = true, dockKnown: Bool = true, systemDock: Bool = false, sourceID: String = "synthetic", sessionStatus: String? = nil) {
++        session.title = sessionStatus ?? (paused ? "已暂停" : "运行中")
+         sound.state = soundEnabled ? .on : .off; labels.state = showLabels ? .on : .off; overlay.state = showOverlay ? .on : .off
+         pause.title = paused ? "开始打字钢琴" : "暂停打字钢琴"; dock.state = dockKnown ? (dockDesired ? .on : .off) : .mixed
+         mode.title = systemDock ? "Dock：系统原生自动隐藏" : "Dock：模拟模式，不改系统"
+         for item in sourceItems { item.state = item.representedObject as? String == sourceID ? .on : .off }
+     }
+     @objc private func sliderChanged() { setVolume(slider.doubleValue); onVolume?(slider.doubleValue) }
++    @objc private func openStartup() { onStartup?() }
++    @objc private func muteAlerts() { onMuteAlerts?() }
++    @objc private func openSoundSettings() { onSoundSettings?() }
++    @objc private func download() { onDownload?() }
+     @objc private func openControl() { onOpen?() }
+     @objc private func pauseAll() { onPause?() }
+     @objc private func toggleSound() { onSound?() }
+--- Code/Sources/PianoMac/SingleInstance.swift (task start)
++++ Code/Sources/PianoMac/SingleInstance.swift (0.2.6)
+@@ -42,6 +42,7 @@
+ }
+ 
+ public enum PianoSingleInstance {
++    public static let reopenNotification = Notification.Name("local.typingpiano.trial.showStartup")
+     /// Only normal GUI startup calls this. Diagnostics/offline CLI do not create an icon.
+     /// A nil lease means the new process must exit before constructing its controller.
+     public static func acquireForGUI() throws -> PianoInstanceLease? {
+@@ -64,6 +65,7 @@
+         if lease == nil || existing != nil {
+             if let existing, let app = running.first(where: { $0.processIdentifier == existing.pid }) {
+                 _ = app.activate(options: [.activateAllWindows])
++                DistributedNotificationCenter.default().postNotificationName(reopenNotification, object: String(existing.pid), userInfo: nil, deliverImmediately: true)
+             }
+             fputs("打字钢琴已运行；本次启动退出，不创建第二个菜单栏图标。\n", stderr)
+             return nil
+--- Code/Sources/PianoProbe/main.swift (task start)
++++ Code/Sources/PianoProbe/main.swift (0.2.6)
+@@ -188,8 +188,34 @@
+         shell.onVolume = { callback = $0 }
+         shell.slider.doubleValue = 0.75
+         _ = shell.slider.sendAction(shell.slider.action, to: shell.slider.target)
++        var iconRenders: [[String: Any]] = []
++        for scale in [1, 2] {
++            let size = Int(shell.icon.size.width) * scale
++            guard let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: size, pixelsHigh: size,
++                bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false,
++                colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0),
++                let context = NSGraphicsContext(bitmapImageRep: bitmap) else { throw ProbeError.invalid("图标离屏上下文创建失败") }
++            NSGraphicsContext.saveGraphicsState(); NSGraphicsContext.current = context
++            context.cgContext.scaleBy(x: CGFloat(scale), y: CGFloat(scale))
++            shell.icon.draw(in: NSRect(origin: .zero, size: shell.icon.size))
++            context.flushGraphics(); NSGraphicsContext.restoreGraphicsState()
++            var edgeAlpha = 0.0, maximumAlpha = 0.0
++            for y in 0..<size { for x in 0..<size {
++                let alpha = Double(bitmap.colorAt(x: x, y: y)?.alphaComponent ?? 0)
++                maximumAlpha = max(maximumAlpha, alpha)
++                if x == 0 || y == 0 || x == size - 1 || y == size - 1 { edgeAlpha = max(edgeAlpha, alpha) }
++            } }
++            iconRenders.append(["scale": scale, "pixels": size, "outerEdgeMaxAlpha": edgeAlpha, "maximumAlpha": maximumAlpha])
++            if let index = arguments.firstIndex(of: "--menu-icon-output"), arguments.count > index + 1 {
++                let directory = URL(fileURLWithPath: arguments[index + 1], isDirectory: true)
++                try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
++                guard let png = bitmap.representation(using: .png, properties: [:]) else { throw ProbeError.invalid("图标PNG编码失败") }
++                try png.write(to: directory.appendingPathComponent("menu-icon-\(scale)x.png"))
++            }
++        }
+         let passed = callback == 0.75 && shell.percentage.stringValue == "75%" && shell.icon.isTemplate && shell.slider.isContinuous
+         emit(["kind": "programmatic native menu control smoke; actual menu tracking/drag not tested", "passed": passed,
++            "iconRenders": iconRenders, "iconCanvasWidthPt": shell.icon.size.width,
+             "callbackVolume": callback, "percentage": shell.percentage.stringValue, "templateIcon": shell.icon.isTemplate,
+             "requestedStatusItemWidthPt": ProbeMenu.statusItemWidth,
+             "statusBarThicknessPt": NSStatusBar.system.thickness,
+@@ -200,10 +226,13 @@
+         guard let instanceLease = try PianoSingleInstance.acquireForGUI() else { exit(0) }
+         let app = NSApplication.shared
+         app.setActivationPolicy(.accessory)
+-        let preferenceRoot = Bundle.main.bundleURL.pathExtension == "app" ? Bundle.main.bundleURL.deletingLastPathComponent() : sourceRoot.appendingPathComponent("Code/build")
++        let legacyRoot = Bundle.main.bundleURL.pathExtension == "app" ? Bundle.main.bundleURL.deletingLastPathComponent() : sourceRoot.appendingPathComponent("Code/build")
++        let preferenceRoot = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent("Library/Application Support/local.typingpiano.trial")
++        let preferenceURL = preferenceRoot.appendingPathComponent("probe-preferences.json")
++        _ = try AppPreferences.loadMigrating(to: preferenceURL, legacyURL: legacyRoot.appendingPathComponent("probe-preferences.json"))
+         let sources = try AudioSource.available(root: bundled ? resources : sourceRoot, bundled: bundled)
+-        let dock = DockAdapter(storage: NativeDockStorage(), tickets: FileDockTicketStore(url: preferenceRoot.appendingPathComponent("dock-recovery.json")))
+-        let delegate = try ProbeController(mapping: mapping, sources: sources, preferencesURL: preferenceRoot.appendingPathComponent("probe-preferences.json"), dockAdapter: dock)
++        let dock = DockAdapter(storage: NativeDockStorage(), tickets: FileDockTicketStore(url: legacyRoot.appendingPathComponent("dock-recovery.json")))
++        let delegate = try ProbeController(mapping: mapping, sources: sources, preferencesURL: preferenceURL, dockAdapter: dock)
+         app.delegate = delegate
+         withExtendedLifetime((delegate, instanceLease)) { app.run() }
+     }
+--- Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift (task start)
++++ Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift (0.2.6)
+@@ -0,0 +1,42 @@
++import XCTest
++@testable import PianoCore
++
++final class PreferencesMigrationTests: XCTestCase {
++    func testLegacyIsCopiedOnceAndOriginalRemainsUntouched() throws {
++        let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: root) }
++        let old = root.appendingPathComponent("old.json"), new = root.appendingPathComponent("support/preferences.json")
++        var legacy = AppPreferences(); legacy.setVolume(0.84); legacy.showKeyLabels = false; try legacy.save(to: old)
++        let original = try Data(contentsOf: old)
++        let migrated = try AppPreferences.loadMigrating(to: new, legacyURL: old)
++        XCTAssertEqual(migrated.volume, 0.84); XCTAssertFalse(migrated.showKeyLabels)
++        XCTAssertEqual(try Data(contentsOf: old), original)
++        legacy.setVolume(0.1); try legacy.save(to: old)
++        XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.84)
++    }
++    func testExistingPreferencesWinEvenIfLegacyIsInvalid() throws {
++        let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: root) }
++        let old = root.appendingPathComponent("old.json"), new = root.appendingPathComponent("new.json")
++        var saved = AppPreferences(); saved.setVolume(0.25); try saved.save(to: new)
++        try Data("invalid".utf8).write(to: old)
++        XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.25)
++    }
++    func testMissingLegacyCreatesDefaultsAndDoesNotImportLater() throws {
++        let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: root) }
++        let old = root.appendingPathComponent("old.json"), new = root.appendingPathComponent("new.json")
++        XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.5)
++        var legacy = AppPreferences(); legacy.setVolume(0.9); try legacy.save(to: old)
++        XCTAssertEqual(try AppPreferences.loadMigrating(to: new, legacyURL: old).volume, 0.5)
++    }
++    func testInvalidExistingDataIsNotSilentlyReplaced() throws {
++        let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: root) }
++        try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
++        let new = root.appendingPathComponent("new.json"), old = root.appendingPathComponent("old.json")
++        let invalid = Data("invalid".utf8); try invalid.write(to: new); try AppPreferences().save(to: old)
++        XCTAssertThrowsError(try AppPreferences.loadMigrating(to: new, legacyURL: old))
++        XCTAssertEqual(try Data(contentsOf: new), invalid)
++    }
++}
+--- Code/Tests/PianoCoreTests/StartupFlowTests.swift (task start)
++++ Code/Tests/PianoCoreTests/StartupFlowTests.swift (0.2.6)
+@@ -0,0 +1,103 @@
++import XCTest
++@testable import PianoCore
++
++final class StartupFlowTests: XCTestCase {
++    func temporaryURL() -> URL { FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString).appendingPathComponent("intent.json") }
++    func testExplicitAuthorizationSurvivesRelaunchButRequiresNewClick() throws {
++        let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
++        let first = try StartupFlow(intentURL: url)
++        XCTAssertEqual(try first.handle(.primary, permission: false, secureInput: false), .requestAuthorization)
++        let relaunched = try StartupFlow(intentURL: url)
++        XCTAssertTrue(relaunched.pendingAuthorization)
++        XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .none)
++        XCTAssertEqual(try relaunched.handle(.primary, permission: true, secureInput: false), .start)
++        XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .none)
++        XCTAssertFalse(try StartupFlow(intentURL: url).pendingAuthorization)
++    }
++    func testPlainLaunchActivationAndPauseNeverStartOrRequestPermission() throws {
++        let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
++        let flow = try StartupFlow(intentURL: url)
++        XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
++        _ = try flow.handle(.primary, permission: false, secureInput: false)
++        _ = try flow.handle(.cancel, permission: true, secureInput: false)
++        XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
++        XCTAssertFalse(try StartupFlow(intentURL: url).pendingAuthorization)
++    }
++    func testReturnWithoutPermissionConsumesIntentAndDoesNotRequestAgain() throws {
++        let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
++        let flow = try StartupFlow(intentURL: url)
++        _ = try flow.handle(.primary, permission: false, secureInput: false)
++        XCTAssertEqual(try flow.handle(.becameActive, permission: false, secureInput: false), .permissionMissing)
++        XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
++    }
++    func testSecureInputConsumesPendingIntentAndRequiresNewClick() throws {
++        let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
++        let flow = try StartupFlow(intentURL: url)
++        _ = try flow.handle(.primary, permission: false, secureInput: false)
++        XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: true), .secureInput)
++        XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
++        XCTAssertEqual(try flow.handle(.primary, permission: true, secureInput: false), .start)
++    }
++    func testFailedPersistencePreventsAuthorizationRequest() throws {
++        let root = temporaryURL().deletingLastPathComponent(); defer { try? FileManager.default.removeItem(at: root) }
++        try FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
++        let obstruction = root.appendingPathComponent("file"); try Data().write(to: obstruction)
++        let flow = try StartupFlow(intentURL: obstruction.appendingPathComponent("intent.json"))
++        XCTAssertThrowsError(try flow.handle(.primary, permission: false, secureInput: false))
++        XCTAssertFalse(flow.pendingAuthorization)
++    }
++}
++
++extension StartupFlowTests {
++    func testIntermediateActivationDoesNotConsumePendingIntentBeforeSettingsVisit() throws {
++        let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
++        let flow = try StartupFlow(intentURL: url)
++        _ = try flow.handle(.primary, permission: false, secureInput: false)
++        var gate = AuthorizationReturnGate(); gate.beginRequest()
++        XCTAssertFalse(gate.canContinue(permission: false))
++        XCTAssertTrue(flow.pendingAuthorization)
++        gate.observedSettings()
++        XCTAssertTrue(gate.canContinue(permission: false))
++        XCTAssertEqual(try flow.handle(.becameActive, permission: false, secureInput: false), .permissionMissing)
++        XCTAssertFalse(flow.pendingAuthorization)
++    }
++    func testImmediatePermissionSuccessAndRelaunchDoNotRequireSettingsVisit() {
++        var gate = AuthorizationReturnGate(); gate.beginRequest()
++        XCTAssertTrue(gate.canContinue(permission: true))
++        gate.reset()
++        XCTAssertTrue(gate.canContinue(permission: true))
++    }
++}
++
++
++extension StartupFlowTests {
++    private func checkCleanupFailure(event: StartupFlow.Event, secureInput: Bool) throws {
++        let url = temporaryURL(); defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
++        var failClear = false
++        let flow = try StartupFlow(intentURL: url, persist: { pending in
++            if !pending && failClear { throw CocoaError(.fileWriteNoPermission) }
++            try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
++            try Data("{\"pendingAuthorization\":\(pending)}".utf8).write(to: url, options: .atomic)
++        })
++        _ = try flow.handle(.primary, permission: false, secureInput: false)
++        failClear = true
++        XCTAssertThrowsError(try flow.handle(event, permission: true, secureInput: secureInput))
++        XCTAssertFalse(flow.pendingAuthorization)
++        failClear = false
++        XCTAssertEqual(try flow.handle(.becameActive, permission: true, secureInput: false), .none)
++        let relaunched = try StartupFlow(intentURL: url)
++        XCTAssertTrue(relaunched.pendingAuthorization) // Durable stale flag is visible, but never auto-replayed.
++        XCTAssertEqual(try relaunched.handle(.becameActive, permission: true, secureInput: false), .none)
++        XCTAssertEqual(try relaunched.handle(.primary, permission: true, secureInput: false), .start)
++        XCTAssertFalse(try StartupFlow(intentURL: url).pendingAuthorization)
++    }
++    func testConsumeCleanupFailureCannotRestartOnActivationOrRelaunch() throws {
++        try checkCleanupFailure(event: .becameActive, secureInput: false)
++    }
++    func testSecureInputCleanupFailureCannotRestartOnActivationOrRelaunch() throws {
++        try checkCleanupFailure(event: .becameActive, secureInput: true)
++    }
++    func testCancelCleanupFailureCannotRestartOnActivationOrRelaunch() throws {
++        try checkCleanupFailure(event: .cancel, secureInput: false)
++    }
++}
+--- Code/Tests/PianoMacTests/AlertVolumeTests.swift (task start)
++++ Code/Tests/PianoMacTests/AlertVolumeTests.swift (0.2.6)
+@@ -0,0 +1,115 @@
++import XCTest
++import PianoCore
++@testable import PianoMac
++
++final class AlertVolumeTests: XCTestCase {
++    final class Storage: AlertVolumeStorage {
++        var value = 65
++        var reads = 0
++        var writes: [Int] = []
++        var readFails = false, writeFails = false, ignoresWrites = false, failAfterWrite = false, readFailsAfterWrite = false
++        func read() throws -> Int { reads += 1; if readFails { throw ProbeError.invalid("read failed") }; return value }
++        func write(_ value: Int) throws {
++            writes.append(value)
++            if writeFails { throw ProbeError.invalid("write denied") }
++            if !ignoresWrites { self.value = value }
++            if readFailsAfterWrite { readFails = true }
++            if failAfterWrite { throw ProbeError.invalid("write reply failed") }
++        }
++    }
++    func testDefaultAndCancellationDoNotReadOrWriteSystem() {
++        let storage = Storage()
++        let tested = AlertVolumeAdapter(storage: storage)
++        XCTAssertEqual(tested.mute(confirmed: false), .cancelled)
++        XCTAssertEqual(tested.restore(), .noChange)
++        XCTAssertNil(tested.observed)
++        XCTAssertEqual(storage.reads, 0); XCTAssertEqual(storage.writes, [])
++    }
++    func testMuteAndCloseOrExitRestoreOnlyOriginalOwnedValue() {
++        let storage = Storage()
++        let tested = AlertVolumeAdapter(storage: storage)
++        XCTAssertEqual(tested.mute(confirmed: true), .muted)
++        XCTAssertEqual(tested.originalVolume, 65); XCTAssertEqual(tested.mutedState, true)
++        XCTAssertEqual(tested.restore(), .restored)
++        XCTAssertEqual(storage.value, 65); XCTAssertEqual(storage.writes, [0, 65])
++        XCTAssertEqual(tested.restore(), .noChange)
++        XCTAssertEqual(storage.writes, [0, 65])
++    }
++    func testAlreadyZeroHasNoInventedRestoreValue() {
++        let storage = Storage(); storage.value = 0
++        let adapter = AlertVolumeAdapter(storage: storage)
++        XCTAssertEqual(adapter.mute(confirmed: true), .alreadySilent)
++        XCTAssertEqual(adapter.mutedState, true); XCTAssertNil(adapter.originalVolume)
++        XCTAssertEqual(adapter.restore(), .noChange)
++        XCTAssertEqual(storage.value, 0); XCTAssertTrue(storage.writes.isEmpty)
++    }
++    func testExternalChangeDropsOwnershipAndIsNeverOverwrittenOnExit() {
++        let storage = Storage()
++        let tested = AlertVolumeAdapter(storage: storage)
++        _ = tested.mute(confirmed: true)
++        storage.value = 27
++        XCTAssertEqual(tested.refresh(), .externalChange)
++        XCTAssertNil(tested.originalVolume)
++        XCTAssertEqual(tested.restore(), .noChange)
++        XCTAssertEqual(storage.value, 27); XCTAssertEqual(storage.writes, [0])
++    }
++    func testFailedOrIgnoredWritesDoNotReportSuccess() {
++        let storage = Storage()
++        let tested = AlertVolumeAdapter(storage: storage)
++        storage.writeFails = true
++        XCTAssertEqual(tested.mute(confirmed: true), .failed); XCTAssertNil(tested.mutedState)
++        storage.writeFails = false; storage.ignoresWrites = true
++        XCTAssertEqual(tested.mute(confirmed: true), .failed)
++        XCTAssertEqual(storage.value, 65); XCTAssertNil(tested.originalVolume)
++    }
++    func testWriteErrorAfterActualChangeRetainsRestorableOwnership() {
++        let storage = Storage()
++        let adapter = AlertVolumeAdapter(storage: storage)
++        storage.failAfterWrite = true
++        XCTAssertEqual(adapter.mute(confirmed: true), .failed)
++        XCTAssertNil(adapter.mutedState); XCTAssertEqual(adapter.originalVolume, 65)
++        storage.failAfterWrite = false
++        XCTAssertEqual(adapter.restore(), .restored); XCTAssertEqual(storage.value, 65)
++    }
++    func testReadFailurePreventsWritesAndFailedRestoreCanBeRetried() {
++        let storage = Storage()
++        let tested = AlertVolumeAdapter(storage: storage)
++        storage.readFails = true
++        XCTAssertEqual(tested.mute(confirmed: true), .failed); XCTAssertTrue(storage.writes.isEmpty)
++        storage.readFails = false; _ = tested.mute(confirmed: true)
++        storage.writeFails = true
++        XCTAssertEqual(tested.restore(), .failed); XCTAssertEqual(tested.originalVolume, 65)
++        storage.writeFails = false
++        XCTAssertEqual(tested.restore(), .restored)
++    }
++    func testUnverifiedWriteRequiresManualRecoveryAndDoesNotInventOwnership() {
++        let storage = Storage()
++        let tested = AlertVolumeAdapter(storage: storage)
++        storage.readFailsAfterWrite = true
++        XCTAssertEqual(tested.mute(confirmed: true), .failed)
++        XCTAssertEqual(tested.originalVolume, 65); XCTAssertNil(tested.mutedState)
++        storage.readFails = false
++        XCTAssertEqual(tested.restore(), .failed)
++        XCTAssertEqual(storage.writes, [0])
++        storage.value = 30
++        XCTAssertEqual(tested.restore(), .externalChange)
++        XCTAssertEqual(storage.writes, [0]); XCTAssertNil(tested.originalVolume)
++    }
++    func testStandardAdditionsBackendOnlyUsesAlertParameterAndRejectsInvalidReadback() throws {
++        var commands: [String] = []
++        var answer = "65"
++        let backend = StandardAdditionsAlertVolumeStorage { command in commands.append(command); return answer }
++        XCTAssertEqual(try backend.read(), 65)
++        try backend.write(0)
++        XCTAssertEqual(commands, ["return alert volume of (get volume settings)", "set volume alert volume 0"])
++        for invalid in ["", "missing value", "101", "-1", "true"] {
++            answer = invalid; XCTAssertThrowsError(try backend.read())
++        }
++        let count = commands.count
++        XCTAssertThrowsError(try backend.write(-1)); XCTAssertThrowsError(try backend.write(101))
++        XCTAssertEqual(commands.count, count)
++        let denied = StandardAdditionsAlertVolumeStorage { _ in throw ProbeError.invalid("-1743") }
++        XCTAssertThrowsError(try denied.read())
++        XCTAssertThrowsError(try denied.write(0))
++    }
++}
+--- Code/Tests/PianoMacTests/LocalTrialStartTests.swift (task start)
++++ Code/Tests/PianoMacTests/LocalTrialStartTests.swift (0.2.6)
+@@ -37,7 +37,10 @@
+         XCTAssertTrue(audio.enabled); XCTAssertTrue(engine.prepared)
+         input.stop(); audio.disable()
+         engine.fail = true
+-        XCTAssertThrowsError(try ContinuousTrialStart.run(global: false, input: input, audio: audio))
++        XCTAssertThrowsError(try ContinuousTrialStart.run(global: false, input: input, audio: audio)) { error in
++            guard case ContinuousTrialStart.Failure.audio = error else { return XCTFail("Audio failure must not ask for input permission") }
++            XCTAssertTrue(error.localizedDescription.contains("声音启动失败"))
++        }
+         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(audio.enabled); XCTAssertFalse(engine.prepared)
+     }
+ }
+--- Code/Tests/PianoMacTests/StartupEntryTests.swift (task start)
++++ Code/Tests/PianoMacTests/StartupEntryTests.swift (0.2.6)
+@@ -0,0 +1,42 @@
++import XCTest
++import AppKit
++import PianoCore
++import PianoAudio
++@testable import PianoMac
++
++final class StartupEntryTests: XCTestCase {
++    func testReopenAndDuplicateLaunchRevealEntryWithoutStartingInput() throws {
++        _ = NSApplication.shared
++        let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
++        let folder = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: folder) }
++        let input = LocalTrialStartTests.Input(), engine = LocalTrialStartTests.Engine()
++        var reveals = 0
++        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")),
++            sources: [AudioSource(id: "test", title: "test", url: URL(fileURLWithPath: "/unused.sf2"), coveredMIDI: [60])],
++            preferencesURL: folder.appendingPathComponent("preferences.json"), input: input, audioEngine: engine,
++            installStatusItem: false, startupWindowPresenter: { reveals += 1 })
++        XCTAssertFalse(controller.applicationShouldHandleReopen(NSApp, hasVisibleWindows: false))
++        controller.handleDuplicateLaunch()
++        XCTAssertEqual(reveals, 2)
++        XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
++    }
++    func testMenuEntryDownloadAndPausedReasonUseNativeActions() throws {
++        _ = NSApplication.shared
++        let menu = ProbeMenu(volume: 0.5, installStatusItem: false)
++        var opens = 0, downloads = 0, muteClicks = 0, settingsClicks = 0
++        menu.onStartup = { opens += 1 }; menu.onDownload = { downloads += 1 }
++        menu.onMuteAlerts = { muteClicks += 1 }; menu.onSoundSettings = { settingsClicks += 1 }
++        for title in ["打开启动窗口…", "下载新版…", "静音系统提示音", "系统声音设置…"] {
++            let item = try XCTUnwrap(menu.menu.items.first { $0.title == title })
++            XCTAssertTrue(NSApp.sendAction(try XCTUnwrap(item.action), to: item.target, from: item))
++        }
++        menu.update(soundEnabled: false, showLabels: true, showOverlay: false, paused: true, sessionStatus: "已暂停：安全输入阻断")
++        XCTAssertEqual(menu.menu.items.first?.title, "已暂停：安全输入阻断")
++        XCTAssertFalse(try XCTUnwrap(menu.menu.items.first).isEnabled)
++        XCTAssertEqual(opens, 1); XCTAssertEqual(downloads, 1)
++        XCTAssertEqual(muteClicks, 1); XCTAssertEqual(settingsClicks, 1)
++        menu.updateAlertVolume(muted: nil, detail: "读取失败，未确认静音")
++        XCTAssertEqual(menu.menu.items.first { $0.title == "静音系统提示音" }?.state, .mixed)
++    }
++}

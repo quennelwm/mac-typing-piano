@@ -1,0 +1,18 @@
+{
+  "path": "/System/Library/ScriptingAdditions/StandardAdditions.osax/Contents/Resources/StandardAdditions.sdef",
+  "sha256": "15a0834b69a876e45d02e458eacefda6311215fa648297fa6fb7b30345ae8e58",
+  "lines": [
+    [
+      570,
+      578
+    ],
+    [
+      592,
+      598
+    ]
+  ],
+  "readOnly": true,
+  "nativeGetterExecuted": false,
+  "nativeSetterExecuted": false,
+  "NSAppleScriptExecutionTested": false
+}
