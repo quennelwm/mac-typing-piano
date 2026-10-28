@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-28",
+  "reviewer": "main conversation",
+  "checks": "schema, candidate state, root-contained paths, all manifest hashes/sizes, audition WAV header",
+  "packs": [
+    {
+      "pack": "vcsl-kawai",
+      "manifest": "pass",
+      "fileHashCount": 21,
+      "coverageMIDI": [
+        33,
+        42,
+        60,
+        96
+      ],
+      "audition": {
+        "channels": 2,
+        "sampleRate": 48000,
+        "sampleBytes": 3,
+        "seconds": 28.0
+      },
+      "licenseRecords": 1
+    },
+    {
+      "pack": "vcsl-steinway-b",
+      "manifest": "pass",
+      "fileHashCount": 17,
+      "coverageMIDI": [
+        34,
+        42,
+        60,
+        96
+      ],
+      "audition": {
+        "channels": 2,
+        "sampleRate": 48000,
+        "sampleBytes": 3,
+        "seconds": 28.0
+      },
+      "licenseRecords": 1
+    }
+  ],
+  "listeningTested": false,
+  "samplerLoadingTested": false,
+  "fullRangeTested": false
+}

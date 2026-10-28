@@ -1,0 +1,1664 @@
+{
+  "task": "A-001",
+  "status": "PASS",
+  "checkCount": 412,
+  "failureCount": 0,
+  "checks": [
+    {
+      "check": "download preflight below 80 MiB",
+      "passed": true
+    },
+    {
+      "check": "download accounting exact",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/Legacy.txt",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/Legacy.txt",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/Legacy.txt",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-kawai/originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-kawai/originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-kawai/originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-steinway-b/originals/NORMALIZED.txt",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-steinway-b/originals/NORMALIZED.txt",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-steinway-b/originals/NORMALIZED.txt",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-steinway-b/originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-steinway-b/originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-steinway-b/originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-steinway-b/originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-steinway-b/originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-steinway-b/originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original SHA256 vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original Git blob vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "original length vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai schema",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai not ready",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai partial coverage",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path audition.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file audition.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash audition.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size audition.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path originals/Legacy.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file originals/Legacy.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash originals/Legacy.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size originals/Legacy.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path qa_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file qa_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash qa_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size qa_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path samples/piano_m033_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file samples/piano_m033_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash samples/piano_m033_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size samples/piano_m033_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path samples/piano_m042_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file samples/piano_m042_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash samples/piano_m042_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size samples/piano_m042_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path samples/piano_m060_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file samples/piano_m060_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash samples/piano_m060_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size samples/piano_m060_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path samples/piano_m096_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file samples/piano_m096_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash samples/piano_m096_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size samples/piano_m096_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai path stress-preview.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file stress-preview.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai hash stress-preview.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai size stress-preview.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai qaReportPath",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai processingRecipePath",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai license matches original",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai estimated pitch MIDI33",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai estimated pitch MIDI42",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai estimated pitch MIDI60",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai estimated pitch MIDI96",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai four prepared samples",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m033_v064_rr01.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m033_v064_rr01.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m033_v064_rr01.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m033_v064_rr01.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m033_v064_rr01.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m033_v064_rr01.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m042_v064_rr01.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m042_v064_rr01.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m042_v064_rr01.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m042_v064_rr01.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m042_v064_rr01.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m042_v064_rr01.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m060_v064_rr01.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m060_v064_rr01.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m060_v064_rr01.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m060_v064_rr01.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m060_v064_rr01.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m060_v064_rr01.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m096_v064_rr01.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m096_v064_rr01.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m096_v064_rr01.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m096_v064_rr01.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m096_v064_rr01.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/samples/piano_m096_v064_rr01.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/audition.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/audition.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/audition.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/audition.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/audition.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai audition 28 sec",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai independently measured preview peak",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/audition.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/stress-preview.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/stress-preview.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/stress-preview.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/stress-preview.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/stress-preview.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai/stress-preview.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b schema",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b not ready",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b partial coverage",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path audition.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file audition.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash audition.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size audition.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path originals/NORMALIZED.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file originals/NORMALIZED.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash originals/NORMALIZED.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size originals/NORMALIZED.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path qa_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file qa_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash qa_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size qa_metrics.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path samples/piano_m034_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file samples/piano_m034_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash samples/piano_m034_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size samples/piano_m034_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path samples/piano_m042_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file samples/piano_m042_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash samples/piano_m042_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size samples/piano_m042_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path samples/piano_m060_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file samples/piano_m060_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash samples/piano_m060_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size samples/piano_m060_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path samples/piano_m096_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file samples/piano_m096_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash samples/piano_m096_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size samples/piano_m096_v064_rr01.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b path stress-preview.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file stress-preview.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b hash stress-preview.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b size stress-preview.wav",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b qaReportPath",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b processingRecipePath",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b license matches original",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b estimated pitch MIDI34",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b estimated pitch MIDI42",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b estimated pitch MIDI60",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b estimated pitch MIDI96",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b four prepared samples",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m034_v064_rr01.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m034_v064_rr01.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m034_v064_rr01.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m034_v064_rr01.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m034_v064_rr01.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m034_v064_rr01.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m042_v064_rr01.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m042_v064_rr01.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m042_v064_rr01.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m042_v064_rr01.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m042_v064_rr01.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m042_v064_rr01.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m060_v064_rr01.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m060_v064_rr01.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m060_v064_rr01.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m060_v064_rr01.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m060_v064_rr01.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m060_v064_rr01.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m096_v064_rr01.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m096_v064_rr01.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m096_v064_rr01.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m096_v064_rr01.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m096_v064_rr01.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/samples/piano_m096_v064_rr01.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/audition.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/audition.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/audition.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/audition.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/audition.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b audition 28 sec",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b independently measured preview peak",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/audition.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/stress-preview.wav PCM format",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/stress-preview.wav complete PCM",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/stress-preview.wav not clipped",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/stress-preview.wav nonempty signal",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/stress-preview.wav zero final frame",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b/stress-preview.wav afinfo recognized",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 0",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 2.5",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 5",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 7",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 8",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 10",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 16",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 16",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 16",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 16",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 18.0",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 18.1",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 18.2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 18.3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 18.4",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 18.5",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 18.6",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 18.7",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 20",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 20.1",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 20.45",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 20.8",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.0",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.1",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.4",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.5",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.6",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.7",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.8",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 23.9",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 24.0",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 24.1",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 24.2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 24.3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 24.4",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "synthetic mapping 24.5",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b transpose within 3",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai mathematical proposal covers each target once",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai proposal not approved",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b mathematical proposal covers each target once",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b proposal not approved",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Static/numeric/file decoding checks only",
+    "No subjective listening",
+    "No SF2/DLS load",
+    "No full 64-note audio",
+    "No real sampler polyphony or latency"
+  ]
+}

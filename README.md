@@ -1,6 +1,6 @@
 # Mac 打字钢琴｜四对话开发包 v1.0
 
-当前工作规格：v1.0＋[CR-001 菜单与开关调整](docs/changes/CR-001-menu-options.md)＋[CR-002 上升小音符](docs/changes/CR-002-floating-note.md)。原始DOCX保留为导入快照；开发以已更新Markdown、任务卡与ADR为准。
+当前工作规格：v1.0＋[CR-001 菜单与开关调整](docs/changes/CR-001-menu-options.md)＋[CR-002 上升小音符](docs/changes/CR-002-floating-note.md)＋[CR-003 音量滑块与♪图标](docs/changes/CR-003-menu-volume-icon.md)。原始DOCX保留为导入快照；开发以已更新Markdown、任务卡与ADR为准。
 
 这是给吴铭与四个独立开发对话使用的规划和交接包，不是已完成的软件。
 
@@ -32,4 +32,4 @@
 
 ## 证据边界
 
-已做的是文档与JSON契约/映射的静态核对，未做Mac实机输入/Dock/音频测试。映射是联调初稿，不是已经试听批准的最终映射。音效与UI清单是模板/设计参数，不包含实际采样或正式贴图。不要将template改成ready而不真正产出并验证文件。
+当前在M0：文档/映射静态核对已通过，已有代码探针、两个钢琴音源小样和UI预览，阶段评审见 [PM-002](docs/reviews/PM-002.md)。已有本机离线音频/程序化窗口证据，但真实键盘输入、Dock行为、声学延迟与正式App尚未验收。映射仍是联调初稿，contracts清单仍是模板/设计参数；实际候选位于Design，不得在未完成对应验证时标为ready。

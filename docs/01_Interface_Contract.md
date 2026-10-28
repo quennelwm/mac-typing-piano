@@ -80,3 +80,7 @@ InputService: startObservation()/stopObservation()；KeyStateReducer: consume(ev
 渲染层从统一NoteEvent.down按pressID生成一次浮动音符，保留独立instanceID、midiNote、单调开始时间及可视代次。release不再次生成、不截断实例；系统重复过滤沿用输入层。隐藏/暂停/安全重置清理全部实例，恢复不补播。标签关闭/声音关闭均不等同于隐藏浮层，小音符独立于音频尾音/residualGlow。
 
 themeVersion classic-draft.0.2在既有motion对象增加可选floatingNote配置，未改变schemaVersion或键映射。参数默认700ms、最大1000ms、12pt、上移24pt、上方48pt透明留白；旧主题缺字段按CR-002默认。留白不能缩放琴键本体或扩大鼠标拦截范围。具体配置和验收见 `changes/CR-002-floating-note.md`。
+
+## 11. CR-003 菜单音量与图标
+
+菜单栏图标为单色♪模板图像，按系统主题自适应。菜单内水平滑块展示0—100%并保存，对应本App总线增益，不写系统音量/输出设备。0%仅使声音静音；声音开关保持独立，关闭时改滑块不会自动开声。增益上限和声部余量由实际音源/引擎验证，不以百分比宣称防削波通过。图标/滑块属于应用外壳，不改64键映射、音效manifest或theme schema。首版不增加触控板专属输入事件，普通指针预览事件沿用现有路径。
