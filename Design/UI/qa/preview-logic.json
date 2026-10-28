@@ -1,0 +1,74 @@
+{
+  "status": "pass",
+  "cases": [
+    {
+      "name": "64 derived keys and labels default on",
+      "status": "pass"
+    },
+    {
+      "name": "20ms physical release retains visual only until 45ms",
+      "status": "pass"
+    },
+    {
+      "name": "repeated held down emits one note; restrike emits second; old release does not win",
+      "status": "pass"
+    },
+    {
+      "name": "labels and sound switches leave notes and press state unchanged",
+      "status": "pass"
+    },
+    {
+      "name": "Dock hide clears effects; hidden events are not replayed; multiple hide reasons respected",
+      "status": "pass"
+    },
+    {
+      "name": "reduced motion uses same note origin and 200ms lifetime",
+      "status": "pass"
+    },
+    {
+      "name": "menu click expands/collapses",
+      "status": "pass"
+    },
+    {
+      "name": "Dock warning cancel keeps value; confirmation changes demonstration preference only",
+      "status": "pass"
+    },
+    {
+      "name": "volume slider spans 0–100 and keeps sound/visual/menu states independent",
+      "status": "pass"
+    },
+    {
+      "name": "pause clears effects and suppresses new simulated downs",
+      "status": "pass"
+    },
+    {
+      "name": "canceling hide demonstration does not leave a stale hidden reason",
+      "status": "pass"
+    },
+    {
+      "name": "mouse preview routes through same strike and release path",
+      "status": "pass"
+    },
+    {
+      "name": "900/1000/1100 geometry switches preserve visibility preference and held state",
+      "status": "pass"
+    }
+  ],
+  "scope": "Actual preview event handlers exercised in Node VM with DOM stubs and a controlled clock. Not browser interaction, rendering, accessibility or product integration.",
+  "finalSnapshot": {
+    "volumePercent": 100,
+    "width": 1000,
+    "labelsOn": true,
+    "dockAutoHide": true,
+    "pianoOn": true,
+    "paused": false,
+    "reduced": false,
+    "hiddenReasons": [],
+    "pressed": [],
+    "visualDown": [],
+    "pendingDemoTimers": 0,
+    "floatingNotes": 0,
+    "floatingFramePending": false
+  },
+  "remainingTimers": 0
+}

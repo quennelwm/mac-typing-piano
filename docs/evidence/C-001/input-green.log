@@ -1,0 +1,33 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[1/7] Write swift-version--58304C5D6DBC2206.txt
+[3/10] Compiling PianoMac InputMonitor.swift
+[4/10] Compiling PianoMac InputNormalizer.swift
+[5/10] Emitting module PianoMac
+[5/10] Write Objects.LinkFileList
+[7/12] Compiling PianoMacTests InputNormalizerTests.swift
+[8/12] Emitting module PianoMacTests
+[8/12] Write Objects.LinkFileList
+[9/12] Linking TypingPianoProbe
+[10/12] Applying TypingPianoProbe
+[11/12] Linking TypingPianoProbePackageTests
+Build complete! (2.61s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 13:56:43.598.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 13:56:43.599.
+Test Suite 'InputNormalizerTests' started at 2026-10-28 13:56:43.599.
+Test Case '-[PianoMacTests.InputNormalizerTests testFiltersAutoRepeatAndUnexpectedKinds]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testFiltersAutoRepeatAndUnexpectedKinds]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate]' passed (0.001 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testSDKResolvesAll64UniqueCodesExcludesTopRow]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testSDKResolvesAll64UniqueCodesExcludesTopRow]' passed (0.001 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag]' passed (0.001 seconds).
+Test Suite 'InputNormalizerTests' passed at 2026-10-28 13:56:43.604.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 13:56:43.604.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 13:56:43.604.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds

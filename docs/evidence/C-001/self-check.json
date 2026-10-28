@@ -1,0 +1,12 @@
+{
+  "audioOutputStarted" : false,
+  "dockSettingWritten" : false,
+  "existingInputPermissionForThisProcess" : true,
+  "keyCount" : 64,
+  "listenerStarted" : false,
+  "mappingSHA256" : "147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b",
+  "mappingVersion" : "ansi64-draft.0.1",
+  "permissionRequested" : false,
+  "realKeysTested" : false,
+  "secureInputEnabled" : false
+}

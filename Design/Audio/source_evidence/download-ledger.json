@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-28",
+  "retrievedAt": "2026-10-28T05:54:47.039885+00:00",
+  "sourceCommit": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+  "budgetBytes": 83886080,
+  "sampleAndNoteBytes": 42424357,
+  "files": [
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Legacy.txt",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Legacy.txt",
+      "localPath": "vcsl-kawai/originals/Legacy.txt",
+      "expectedBytes": 7,
+      "actualBytes": 7,
+      "gitBlobSHA1": "2fd3d7b72939ca6a35b85d69979f11d06ab649e5",
+      "sha256": "a31d65dc36c05748b8f7b3983fcbc00ba9214b4899e8b7e3f9d675cb27beeae3"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Sustains/GPiano_sus_A1_v2_rr1_Player.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Sustains/GPiano_sus_A1_v2_rr1_Player.wav",
+      "localPath": "vcsl-kawai/originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "expectedBytes": 5217440,
+      "actualBytes": 5217440,
+      "gitBlobSHA1": "181e4f8a45afa47dbddc10a3de6fe5728f88f3f7",
+      "sha256": "3fb2818cbf799cebcd91798f949cacb01e287e12a33158c6520bf381c73f4689"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Sustains/GPiano_sus_C4_v2_rr1_Player.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Sustains/GPiano_sus_C4_v2_rr1_Player.wav",
+      "localPath": "vcsl-kawai/originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "expectedBytes": 2613976,
+      "actualBytes": 2613976,
+      "gitBlobSHA1": "09dfd90293a537066bd825dac73f823bf46d0aa9",
+      "sha256": "69845de40a38ed6501746520f9f385ae56200a4372faed48178e64a32a75e58c"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Sustains/GPiano_sus_C7_v2_rr1_Player.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Sustains/GPiano_sus_C7_v2_rr1_Player.wav",
+      "localPath": "vcsl-kawai/originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "expectedBytes": 428708,
+      "actualBytes": 428708,
+      "gitBlobSHA1": "7dc6aefcd8b4341338a905b82854a34ef861cb07",
+      "sha256": "a5c4ada1e35cc5c7af28b2ef4b379ed4d1b8d31912fa75c71f70edd85f4b69a2"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Sustains/GPiano_sus_A0_v2_rr1_Player.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Sustains/GPiano_sus_A0_v2_rr1_Player.wav",
+      "localPath": "vcsl-kawai/originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "expectedBytes": 5116608,
+      "actualBytes": 5116608,
+      "gitBlobSHA1": "5d02b897b30810747cc9505bf00957f80df914ef",
+      "sha256": "ed2267bd3ae6a319e2143f5c09cbbe72f57c095d431e586f8d780223255de761"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Sustains/GPiano_sus_C3_v2_rr1_Player.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Sustains/GPiano_sus_C3_v2_rr1_Player.wav",
+      "localPath": "vcsl-kawai/originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "expectedBytes": 4283328,
+      "actualBytes": 4283328,
+      "gitBlobSHA1": "2449d26c97873705e234ad85b94e0c651018d4a5",
+      "sha256": "fce33012fe900309abafd1a4d6d254d142b0cbf33834c7a72c2fd1ada4e746e1"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Sustains/GPiano_sus_C6_v2_rr1_Player.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Sustains/GPiano_sus_C6_v2_rr1_Player.wav",
+      "localPath": "vcsl-kawai/originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "expectedBytes": 666520,
+      "actualBytes": 666520,
+      "gitBlobSHA1": "38e2ea4d854e7ccb211981e664337d9ed551e95e",
+      "sha256": "25464db09fe4a25cac979c507fef3efd507cc43369761f9e27488330e6e2a264"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Sustains/GPiano_sus_C1_v2_rr1_Player.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Sustains/GPiano_sus_C1_v2_rr1_Player.wav",
+      "localPath": "vcsl-kawai/originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "expectedBytes": 5268340,
+      "actualBytes": 5268340,
+      "gitBlobSHA1": "0378679e31a709f2192862fe6f0c05d9e5e93586",
+      "sha256": "91ab158f01071f29375bb7593304dbb54e240f0db07374fe1fc630ca1b573b82"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Kawai/Sustains/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Kawai/Sustains/GPiano_sus_F%231_v2_rr1_Player.wav",
+      "localPath": "vcsl-kawai/originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "expectedBytes": 4547640,
+      "actualBytes": 4547640,
+      "gitBlobSHA1": "20ee51644ca058d030d738933feffcaa898a7e9a",
+      "sha256": "c26ac28fca64b6aaa3e2733673e9217ca378652999e2621cabbb1bcb53254500"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NORMALIZED.txt",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NORMALIZED.txt",
+      "localPath": "vcsl-steinway-b/originals/NORMALIZED.txt",
+      "expectedBytes": 190,
+      "actualBytes": 190,
+      "gitBlobSHA1": "b6790a98134a31d538eaa943797698e320c976b5",
+      "sha256": "7ae47ef3ae3496c79d32a6814de23c1ed051cf8f8996c67c88cde9a4a0943289"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NoSus/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_A%231_vl2_rr1.wav",
+      "localPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "expectedBytes": 6738508,
+      "actualBytes": 6738508,
+      "gitBlobSHA1": "2b7dc07f9cf419c59989cbab5e42101a7be7856b",
+      "sha256": "0f91c0d350c12f574f284c23a92a44348216218c49430c4698c7d505955fdb4f"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NoSus/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "localPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "expectedBytes": 2260822,
+      "actualBytes": 2260822,
+      "gitBlobSHA1": "5f80e0d82e670ab294d58ac9373b4156f2b6d611",
+      "sha256": "9c2020587943a86dec7a8b7178cdac1c254c4f3dfc016bb27acdef1af292827f"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NoSus/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "localPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "expectedBytes": 949450,
+      "actualBytes": 949450,
+      "gitBlobSHA1": "5a29bd68c1d245478f05fbcb4c18626cc672c4fe",
+      "sha256": "23d50d834b7e6780899d5e2a62c4c2ba425ac129ef80a3b3bc066038ba2ee755"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NoSus/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_F%232_vl2_rr1.wav",
+      "localPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "expectedBytes": 4332820,
+      "actualBytes": 4332820,
+      "gitBlobSHA1": "3002bfd9d03cdd80242e8d28db7de6f1534cd376",
+      "sha256": "3b4c07adb641f09d9fa2630c61c65e17ac7e6fa383661892464957138d03f7b8"
+    }
+  ]
+}

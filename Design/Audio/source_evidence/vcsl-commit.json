@@ -1,0 +1,30 @@
+{
+  "sha": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+  "commit": {
+    "author": {
+      "name": "Sam Gossner",
+      "email": "samulis@live.com",
+      "date": "2026-01-14T20:39:38Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-01-14T20:39:38Z"
+    },
+    "message": "Create LICENSE\n\nAdded formal license as per request by user in issue #33",
+    "tree": {
+      "sha": "aee077dea292930ede43d557a4c5e9edb2a6ceaf",
+      "url": "https://api.github.com/repos/sgossner/VCSL/git/trees/aee077dea292930ede43d557a4c5e9edb2a6ceaf"
+    },
+    "url": "https://api.github.com/repos/sgossner/VCSL/git/commits/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpZ/8KCRC1aQ7uu5UhlAAAm9oQAFPVHTM25LyHiJjsWCIFaqaC\nKITY/ixBNyv9huq11/2jiMWu+vk1Huz5g0cR+CzLrTg5WPLtrEeA8HXonVkrf663\nRnLQlIW5G6EwoGI3LFgtDv8nHsdlZO96Yv+5ty5jEBqiULZcWFHLLxQwddxwPfGy\nvOvxI+0lHBascWzCwI+A8+h8aRs9OzNUBV4lD5q7n0YVlhc0Z1uSKX3MoviOhQS8\n79mzznJEge7Ow0gQKJV/y0uI//mzXk6vzZWzVcXp7a3v+JsdKv6zChMhM13hrZr4\n2sc95qQxLDw8LHcSNwVutc+JDVDHW2ym2XgKgbU50x1j8lZAOFN8ScmluVMbEdxy\nHy2BrjQdL9rnajceF+MMn5Y8NQ1mlRjBHlIG/KrVA7+wGSPqLj3DTqWAK6dcDodH\nW2Ov1JVE4Rmkm+dQe+l+boFnSEao1HfOCXX0yZuKISFjCPdV9QWMHMxq6sZmeIkT\ngbcE37CMgX+e0KpjCi0mQkDdyWAJUhc9pl069fWq/OjlfVzamgiG+54iIhhfj4xG\n9duJ+sgF0onoLtjJbRshbkgEX2YdDPgio60Qs2V3B8uZDVbaK72/fmfRbUJfnlci\nd/R8pQBmIBGl5WHcaNEhsGlkUrcGbdjPtQ9oAz9oYFLge5+JjsTg+oFmzkixMovl\nKgCDe8vEovoVEAgbIvbE\n=Bnk1\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree aee077dea292930ede43d557a4c5e9edb2a6ceaf\nparent 5cd8d27ddfc8ebb5a82e95104797b13323ecf99c\nauthor Sam Gossner <samulis@live.com> 1768423178 -0500\ncommitter GitHub <noreply@github.com> 1768423178 -0500\n\nCreate LICENSE\n\nAdded formal license as per request by user in issue #33",
+      "verified_at": "2026-01-14T20:39:39Z"
+    }
+  },
+  "html_url": "https://github.com/sgossner/VCSL/commit/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e"
+}

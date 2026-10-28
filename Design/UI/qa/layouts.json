@@ -1,0 +1,7058 @@
+{
+  "layouts" : [
+    {
+      "heightPt" : 56,
+      "keys" : [
+        {
+          "accessibleName" : "左方括号",
+          "color" : "white",
+          "displayLabel" : "[",
+          "labelParts" : {
+            "main" : "[",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.393758604864615,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                12.802782541484504,
+                38.908673703533729,
+                1.9733822854520424,
+                9.0913262964662689
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".CJKSymbolsFallbackSC-Medium"
+              ],
+              "text" : "[",
+              "x" : 11.8252699210164
+            }
+          ],
+          "midiNote" : 33,
+          "physicalKeyID" : "bracketLeft",
+          "rectPt" : [
+            2.3500000000000001,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Fn／地球键",
+          "color" : "black",
+          "displayLabel" : "fn",
+          "labelParts" : {
+            "main" : "fn",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                21.323770556010697,
+                23.935302734375,
+                8.5103536248207092,
+                7.064697265625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "fn",
+              "x" : 21.073282274760697
+            }
+          ],
+          "midiNote" : 34,
+          "physicalKeyID" : "fn",
+          "rectPt" : [
+            18.623157894736842,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "右方括号",
+          "color" : "white",
+          "displayLabel" : "]",
+          "labelParts" : {
+            "main" : "]",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.393758604864615,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                36.381729909905552,
+                38.908673703533729,
+                1.9733822854520424,
+                9.0913262964662689
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".CJKSymbolsFallbackSC-Medium"
+              ],
+              "text" : "]",
+              "x" : 36.019178280717853
+            }
+          ],
+          "midiNote" : 35,
+          "physicalKeyID" : "bracketRight",
+          "rectPt" : [
+            25.928947368421053,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "反斜杠",
+          "color" : "white",
+          "displayLabel" : "\\",
+          "labelParts" : {
+            "main" : "\\",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.232421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                59.37021998355263,
+                38.849609375,
+                3.154296875,
+                9.150390625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "\\",
+              "x" : 59.37021998355263
+            }
+          ],
+          "midiNote" : 36,
+          "physicalKeyID" : "backslash",
+          "rectPt" : [
+            49.507894736842104,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Control",
+          "color" : "black",
+          "displayLabel" : "⌃",
+          "labelParts" : {
+            "main" : "⌃",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 34.01513671875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                69.44802374588815,
+                27.21484375,
+                6.57763671875,
+                3.78515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌃",
+              "x" : 68.52028937088815
+            }
+          ],
+          "midiNote" : 37,
+          "physicalKeyID" : "controlLeft",
+          "rectPt" : [
+            65.781052631578945,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "分号",
+          "color" : "white",
+          "displayLabel" : ";",
+          "labelParts" : {
+            "main" : ";",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.1689453125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                83.666940789473671,
+                41.125,
+                1.71875,
+                6.875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ";",
+              "x" : 83.090768914473671
+            }
+          ],
+          "midiNote" : 38,
+          "physicalKeyID" : "semicolon",
+          "rectPt" : [
+            73.086842105263145,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Option",
+          "color" : "black",
+          "displayLabel" : "⌥L",
+          "labelParts" : {
+            "main" : "⌥",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.013916015625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                91.970061934621711,
+                24.334228515625,
+                7.491455078125,
+                6.665771484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌥",
+              "x" : 91.042327559621711
+            },
+            {
+              "baselineY" : 23.734228515624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                99.308785978618431,
+                19.154394531249999,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 98.737496916118431
+            }
+          ],
+          "midiNote" : 39,
+          "physicalKeyID" : "optionLeft",
+          "rectPt" : [
+            89.359999999999999,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Z",
+          "color" : "white",
+          "displayLabel" : "Z",
+          "labelParts" : {
+            "main" : "Z",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                105.45633737664473,
+                40.9541015625,
+                5.2978515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Z",
+              "x" : 104.77274362664473
+            }
+          ],
+          "midiNote" : 40,
+          "physicalKeyID" : "keyZ",
+          "rectPt" : [
+            96.6657894736842,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "X",
+          "color" : "white",
+          "displayLabel" : "X",
+          "labelParts" : {
+            "main" : "X",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                128.63001130756578,
+                40.9541015625,
+                6.1083984375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "X",
+              "x" : 128.20032380756578
+            }
+          ],
+          "midiNote" : 41,
+          "physicalKeyID" : "keyX",
+          "rectPt" : [
+            120.24473684210525,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Command",
+          "color" : "black",
+          "displayLabel" : "⌘L",
+          "labelParts" : {
+            "main" : "⌘",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.893310546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                139.40395764802631,
+                24.074462890625,
+                6.939453125,
+                6.925537109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌘",
+              "x" : 138.47622327302631
+            },
+            {
+              "baselineY" : 23.474462890624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                146.46668071546051,
+                18.894628906249999,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 145.89539165296051
+            }
+          ],
+          "midiNote" : 42,
+          "physicalKeyID" : "commandLeft",
+          "rectPt" : [
+            136.51789473684209,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "C",
+          "color" : "white",
+          "displayLabel" : "C",
+          "labelParts" : {
+            "main" : "C",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                152.20651726973682,
+                40.6025390625,
+                6.11328125,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "C",
+              "x" : 151.61569695723682
+            }
+          ],
+          "midiNote" : 43,
+          "physicalKeyID" : "keyC",
+          "rectPt" : [
+            143.8236842105263,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右 Command",
+          "color" : "black",
+          "displayLabel" : "⌘R",
+          "labelParts" : {
+            "main" : "⌘",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.893310546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                162.98290501644738,
+                24.074462890625,
+                6.939453125,
+                6.925537109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌘",
+              "x" : 162.05517064144738
+            },
+            {
+              "baselineY" : 23.474462890624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                169.43307925575658,
+                18.894628906249999,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 168.86179019325658
+            }
+          ],
+          "midiNote" : 44,
+          "physicalKeyID" : "commandRight",
+          "rectPt" : [
+            160.09684210526316,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "V",
+          "color" : "white",
+          "displayLabel" : "V",
+          "labelParts" : {
+            "main" : "V",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                175.72442948190789,
+                40.9541015625,
+                6.2353515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "V",
+              "x" : 175.38751541940789
+            }
+          ],
+          "midiNote" : 45,
+          "physicalKeyID" : "keyV",
+          "rectPt" : [
+            167.40263157894736,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右 Option",
+          "color" : "black",
+          "displayLabel" : "⌥R",
+          "labelParts" : {
+            "main" : "⌥",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.013916015625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                186.28585140830592,
+                24.334228515625,
+                7.491455078125,
+                6.665771484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌥",
+              "x" : 185.35811703330592
+            },
+            {
+              "baselineY" : 23.734228515624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                193.01202662417762,
+                19.154394531249999,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 192.44073756167762
+            }
+          ],
+          "midiNote" : 46,
+          "physicalKeyID" : "optionRight",
+          "rectPt" : [
+            183.6757894736842,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "B",
+          "color" : "white",
+          "displayLabel" : "B",
+          "labelParts" : {
+            "main" : "B",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                199.76480263157893,
+                40.9541015625,
+                5.3125,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "B",
+              "x" : 198.88589638157893
+            }
+          ],
+          "midiNote" : 47,
+          "physicalKeyID" : "keyB",
+          "rectPt" : [
+            190.9815789473684,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "F",
+          "color" : "white",
+          "displayLabel" : "F",
+          "labelParts" : {
+            "main" : "F",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                223.79785156249997,
+                40.9541015625,
+                4.404296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "F",
+              "x" : 222.91894531249997
+            }
+          ],
+          "midiNote" : 48,
+          "physicalKeyID" : "keyF",
+          "rectPt" : [
+            214.56052631578945,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Tab",
+          "color" : "black",
+          "displayLabel" : "⇥",
+          "labelParts" : {
+            "main" : "⇥",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 32.257080078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                233.83964458264802,
+                26.64892578125,
+                7.899658203125,
+                4.35107421875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".LucidaGrandeUI-Bold"
+              ],
+              "text" : "⇥",
+              "x" : 233.05107036389802
+            }
+          ],
+          "midiNote" : 49,
+          "physicalKeyID" : "tab",
+          "rectPt" : [
+            230.83368421052631,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "D",
+          "color" : "white",
+          "displayLabel" : "D",
+          "labelParts" : {
+            "main" : "D",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                246.64437705592104,
+                40.9541015625,
+                5.869140625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "D",
+              "x" : 245.76547080592104
+            }
+          ],
+          "midiNote" : 50,
+          "physicalKeyID" : "keyD",
+          "rectPt" : [
+            238.13947368421051,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Caps Lock",
+          "color" : "black",
+          "displayLabel" : "⇪",
+          "labelParts" : {
+            "main" : "⇪",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.299560546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                257.47193667763156,
+                23.146728515625,
+                7.79296875,
+                7.853271484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇪",
+              "x" : 256.72974917763156
+            }
+          ],
+          "midiNote" : 51,
+          "physicalKeyID" : "capsLock",
+          "rectPt" : [
+            254.41263157894736,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "S",
+          "color" : "white",
+          "displayLabel" : "S",
+          "labelParts" : {
+            "main" : "S",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                270.45037520559208,
+                40.6025390625,
+                5.4150390625,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "S",
+              "x" : 269.90350020559208
+            }
+          ],
+          "midiNote" : 52,
+          "physicalKeyID" : "keyS",
+          "rectPt" : [
+            261.71842105263158,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Shift",
+          "color" : "white",
+          "displayLabel" : "⇧L",
+          "labelParts" : {
+            "main" : "⇧",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.9072265625,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                291.9449475740131,
+                40.7197265625,
+                8.3837890625,
+                7.2802734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇧",
+              "x" : 291.1636975740131
+            },
+            {
+              "baselineY" : 42.7197265625,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                304.21352282072365,
+                38.139892578125,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 303.64223375822365
+            }
+          ],
+          "midiNote" : 53,
+          "physicalKeyID" : "shiftLeft",
+          "rectPt" : [
+            285.29736842105262,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "反引号",
+          "color" : "black",
+          "displayLabel" : "`",
+          "labelParts" : {
+            "main" : "`",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 36.728759765625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                307.58466539884864,
+                29.39501953125,
+                1.88330078125,
+                1.60498046875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "`",
+              "x" : 306.15131578947364
+            }
+          ],
+          "midiNote" : 54,
+          "physicalKeyID" : "grave",
+          "rectPt" : [
+            301.57052631578944,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "A",
+          "color" : "white",
+          "displayLabel" : "A",
+          "labelParts" : {
+            "main" : "A",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                317.17614103618416,
+                40.9541015625,
+                6.279296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "A",
+              "x" : 316.83922697368416
+            }
+          ],
+          "midiNote" : 55,
+          "physicalKeyID" : "keyA",
+          "rectPt" : [
+            308.87631578947367,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "1",
+          "color" : "black",
+          "displayLabel" : "1",
+          "labelParts" : {
+            "main" : "1",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                330.70206491570724,
+                24.306396484375,
+                2.806396484375,
+                6.693603515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "1",
+              "x" : 330.10367624383224
+            }
+          ],
+          "midiNote" : 56,
+          "physicalKeyID" : "digit1",
+          "rectPt" : [
+            325.14947368421053,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "N",
+          "color" : "white",
+          "displayLabel" : "N",
+          "labelParts" : {
+            "main" : "N",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                341.01631887335532,
+                40.9541015625,
+                5.7568359375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "N",
+              "x" : 340.13741262335532
+            }
+          ],
+          "midiNote" : 57,
+          "physicalKeyID" : "keyN",
+          "rectPt" : [
+            332.45526315789476,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "2",
+          "color" : "black",
+          "displayLabel" : "2",
+          "labelParts" : {
+            "main" : "2",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                353.39502595600328,
+                24.139404296875,
+                4.578369140625,
+                6.860595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "2",
+              "x" : 352.73633454975328
+            }
+          ],
+          "midiNote" : 58,
+          "physicalKeyID" : "digit2",
+          "rectPt" : [
+            348.72842105263157,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "G",
+          "color" : "white",
+          "displayLabel" : "G",
+          "labelParts" : {
+            "main" : "G",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                364.31938733552636,
+                40.6025390625,
+                6.30859375,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "G",
+              "x" : 363.72856702302636
+            }
+          ],
+          "midiNote" : 59,
+          "physicalKeyID" : "keyG",
+          "rectPt" : [
+            356.0342105263158,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "空格",
+          "color" : "white",
+          "displayLabel" : "␣",
+          "labelParts" : {
+            "main" : "␣",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.076638965835642,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                387.77469990766389,
+                46.153277931671283,
+                6.5558633425669441,
+                1.8467220683287167
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".HiraKakuInterface-W5"
+              ],
+              "text" : "␣",
+              "x" : 386.43582640812559
+            }
+          ],
+          "midiNote" : 60,
+          "physicalKeyID" : "space",
+          "rectPt" : [
+            379.61315789473684,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "3",
+          "color" : "black",
+          "displayLabel" : "3",
+          "labelParts" : {
+            "main" : "3",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                400.39752518503286,
+                24.055908203125,
+                4.88916015625,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "3",
+              "x" : 399.77594315378286
+            }
+          ],
+          "midiNote" : 61,
+          "physicalKeyID" : "digit3",
+          "rectPt" : [
+            395.88631578947366,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "H",
+          "color" : "white",
+          "displayLabel" : "H",
+          "labelParts" : {
+            "main" : "H",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                411.72386410361844,
+                40.9541015625,
+                5.8154296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "H",
+              "x" : 410.84495785361844
+            }
+          ],
+          "midiNote" : 62,
+          "physicalKeyID" : "keyH",
+          "rectPt" : [
+            403.19210526315788,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "4",
+          "color" : "black",
+          "displayLabel" : "4",
+          "labelParts" : {
+            "main" : "4",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                423.8210770456414,
+                24.306396484375,
+                5.199951171875,
+                6.693603515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "4",
+              "x" : 423.2969071237664
+            }
+          ],
+          "midiNote" : 63,
+          "physicalKeyID" : "digit4",
+          "rectPt" : [
+            419.4652631578947,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "I",
+          "color" : "white",
+          "displayLabel" : "I",
+          "labelParts" : {
+            "main" : "I",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                437.65876850328948,
+                40.9541015625,
+                1.103515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "I",
+              "x" : 436.77986225328948
+            }
+          ],
+          "midiNote" : 64,
+          "physicalKeyID" : "keyI",
+          "rectPt" : [
+            426.77105263157893,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "E",
+          "color" : "white",
+          "displayLabel" : "E",
+          "labelParts" : {
+            "main" : "E",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                459.54826274671052,
+                40.9541015625,
+                4.482421875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "E",
+              "x" : 458.66935649671052
+            }
+          ],
+          "midiNote" : 65,
+          "physicalKeyID" : "keyE",
+          "rectPt" : [
+            450.35000000000002,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "5",
+          "color" : "black",
+          "displayLabel" : "5",
+          "labelParts" : {
+            "main" : "5",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                471.21090537623354,
+                24.139404296875,
+                4.736083984375,
+                6.860595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "5",
+              "x" : 470.49191123560854
+            }
+          ],
+          "midiNote" : 66,
+          "physicalKeyID" : "digit5",
+          "rectPt" : [
+            466.62315789473683,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "右 Shift",
+          "color" : "white",
+          "displayLabel" : "⇧R",
+          "labelParts" : {
+            "main" : "⇧",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.9072265625,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                480.57652652138154,
+                40.7197265625,
+                8.3837890625,
+                7.2802734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇧",
+              "x" : 479.79527652138154
+            },
+            {
+              "baselineY" : 42.7197265625,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                492.23255293996709,
+                38.139892578125,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 491.66126387746709
+            }
+          ],
+          "midiNote" : 67,
+          "physicalKeyID" : "shiftRight",
+          "rectPt" : [
+            473.92894736842106,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "6",
+          "color" : "black",
+          "displayLabel" : "6",
+          "labelParts" : {
+            "main" : "6",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                494.63909590871708,
+                23.97705078125,
+                5.03759765625,
+                7.02294921875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "6",
+              "x" : 494.05462325246708
+            }
+          ],
+          "midiNote" : 68,
+          "physicalKeyID" : "digit6",
+          "rectPt" : [
+            490.20210526315788,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "O",
+          "color" : "white",
+          "displayLabel" : "O",
+          "labelParts" : {
+            "main" : "O",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                505.6539113898026,
+                40.6025390625,
+                6.5869140625,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "O",
+              "x" : 505.0630910773026
+            }
+          ],
+          "midiNote" : 69,
+          "physicalKeyID" : "keyO",
+          "rectPt" : [
+            497.5078947368421,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "7",
+          "color" : "black",
+          "displayLabel" : "7",
+          "labelParts" : {
+            "main" : "7",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                518.45229620682562,
+                24.3017578125,
+                4.569091796875,
+                6.6982421875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "7",
+              "x" : 518.00698370682562
+            }
+          ],
+          "midiNote" : 70,
+          "physicalKeyID" : "digit7",
+          "rectPt" : [
+            513.78105263157886,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "U",
+          "color" : "white",
+          "displayLabel" : "U",
+          "labelParts" : {
+            "main" : "U",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                529.66987047697364,
+                40.7783203125,
+                5.712890625,
+                7.2216796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "U",
+              "x" : 528.79584703947364
+            }
+          ],
+          "midiNote" : 71,
+          "physicalKeyID" : "keyU",
+          "rectPt" : [
+            521.08684210526314,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Return",
+          "color" : "white",
+          "displayLabel" : "↵",
+          "labelParts" : {
+            "main" : "↵",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 49.298828125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                552.15750925164468,
+                41.525390625,
+                7.8955078125,
+                6.474609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".LucidaGrandeUI-Bold"
+              ],
+              "text" : "↵",
+              "x" : 551.63016550164468
+            }
+          ],
+          "midiNote" : 72,
+          "physicalKeyID" : "return",
+          "rectPt" : [
+            544.66578947368419,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "8",
+          "color" : "black",
+          "displayLabel" : "8",
+          "labelParts" : {
+            "main" : "8",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                565.3550639905427,
+                24.055908203125,
+                5.079345703125,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "8",
+              "x" : 564.7659526624177
+            }
+          ],
+          "midiNote" : 73,
+          "physicalKeyID" : "digit8",
+          "rectPt" : [
+            560.93894736842094,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "J",
+          "color" : "white",
+          "displayLabel" : "J",
+          "labelParts" : {
+            "main" : "J",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                577.51868318256572,
+                40.7783203125,
+                4.3310546875,
+                7.2216796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "J",
+              "x" : 577.11829255756572
+            }
+          ],
+          "midiNote" : 74,
+          "physicalKeyID" : "keyJ",
+          "rectPt" : [
+            568.24473684210523,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "9",
+          "color" : "black",
+          "displayLabel" : "9",
+          "labelParts" : {
+            "main" : "9",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.837646484375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                588.95488538240124,
+                23.97705078125,
+                5.03759765625,
+                7.02294921875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "9",
+              "x" : 588.36577405427624
+            }
+          ],
+          "midiNote" : 75,
+          "physicalKeyID" : "digit9",
+          "rectPt" : [
+            584.51789473684198,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "K",
+          "color" : "white",
+          "displayLabel" : "K",
+          "labelParts" : {
+            "main" : "K",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                600.45065789473676,
+                40.9541015625,
+                5.625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "K",
+              "x" : 599.57175164473676
+            }
+          ],
+          "midiNote" : 76,
+          "physicalKeyID" : "keyK",
+          "rectPt" : [
+            591.82368421052627,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "L",
+          "color" : "white",
+          "displayLabel" : "L",
+          "labelParts" : {
+            "main" : "L",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                624.6399568256578,
+                40.9541015625,
+                4.404296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 623.7610505756578
+            }
+          ],
+          "midiNote" : 77,
+          "physicalKeyID" : "keyL",
+          "rectPt" : [
+            615.40263157894731,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "0",
+          "color" : "black",
+          "displayLabel" : "0",
+          "labelParts" : {
+            "main" : "0",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                636.15684750205594,
+                23.972412109375,
+                4.949462890625,
+                7.027587890625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "0",
+              "x" : 635.54454281455594
+            }
+          ],
+          "midiNote" : 78,
+          "physicalKeyID" : "digit0",
+          "rectPt" : [
+            631.67578947368418,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "M",
+          "color" : "white",
+          "displayLabel" : "M",
+          "labelParts" : {
+            "main" : "M",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                646.87124794407896,
+                40.9541015625,
+                7.099609375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "M",
+              "x" : 645.99234169407896
+            }
+          ],
+          "midiNote" : 79,
+          "physicalKeyID" : "keyM",
+          "rectPt" : [
+            638.98157894736846,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "减号",
+          "color" : "black",
+          "displayLabel" : "-",
+          "labelParts" : {
+            "main" : "-",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 33.23583984375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                660.65657123766448,
+                30.072265625,
+                3.10791015625,
+                0.927734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "-",
+              "x" : 659.94685444078948
+            }
+          ],
+          "midiNote" : 80,
+          "physicalKeyID" : "minus",
+          "rectPt" : [
+            655.25473684210522,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Q",
+          "color" : "white",
+          "displayLabel" : "Q",
+          "labelParts" : {
+            "main" : "Q",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.23828125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                670.70654296875,
+                40.0166015625,
+                6.5869140625,
+                7.9833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Q",
+              "x" : 670.11572265625
+            }
+          ],
+          "midiNote" : 81,
+          "physicalKeyID" : "keyQ",
+          "rectPt" : [
+            662.5605263157895,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "等号",
+          "color" : "black",
+          "displayLabel" : "=",
+          "labelParts" : {
+            "main" : "=",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.97412109375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                683.33561626233552,
+                27.548828125,
+                4.90771484375,
+                3.451171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "=",
+              "x" : 682.72331157483552
+            }
+          ],
+          "midiNote" : 82,
+          "physicalKeyID" : "equal",
+          "rectPt" : [
+            678.83368421052626,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "W",
+          "color" : "white",
+          "displayLabel" : "W",
+          "labelParts" : {
+            "main" : "W",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                693.09652549342104,
+                40.9541015625,
+                8.96484375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "W",
+              "x" : 692.66195518092104
+            }
+          ],
+          "midiNote" : 83,
+          "physicalKeyID" : "keyW",
+          "rectPt" : [
+            686.13947368421054,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "R",
+          "color" : "white",
+          "displayLabel" : "R",
+          "labelParts" : {
+            "main" : "R",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                718.48455489309208,
+                40.9541015625,
+                5.3466796875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 717.60564864309208
+            }
+          ],
+          "midiNote" : 84,
+          "physicalKeyID" : "keyR",
+          "rectPt" : [
+            709.71842105263158,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Delete／向后删除",
+          "color" : "black",
+          "displayLabel" : "⌫",
+          "labelParts" : {
+            "main" : "⌫",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.91650390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                728.9349172491776,
+                24.14404296875,
+                8.02490234375,
+                6.85595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌫",
+              "x" : 728.1927297491776
+            }
+          ],
+          "midiNote" : 85,
+          "physicalKeyID" : "delete",
+          "rectPt" : [
+            725.99157894736834,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "T",
+          "color" : "white",
+          "displayLabel" : "T",
+          "labelParts" : {
+            "main" : "T",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                741.97317023026312,
+                40.9541015625,
+                5.52734375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "T",
+              "x" : 741.51906866776312
+            }
+          ],
+          "midiNote" : 86,
+          "physicalKeyID" : "keyT",
+          "rectPt" : [
+            733.29736842105262,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左方向",
+          "color" : "black",
+          "displayLabel" : "←",
+          "labelParts" : {
+            "main" : "←",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.51025390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                753.08442125822364,
+                25.31298828125,
+                6.8837890625,
+                5.68701171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "←",
+              "x" : 752.15668688322364
+            }
+          ],
+          "midiNote" : 87,
+          "physicalKeyID" : "arrowLeft",
+          "rectPt" : [
+            749.57052631578938,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Y",
+          "color" : "white",
+          "displayLabel" : "Y",
+          "labelParts" : {
+            "main" : "Y",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                765.28112150493416,
+                40.9541015625,
+                6.0693359375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Y",
+              "x" : 764.94420744243416
+            }
+          ],
+          "midiNote" : 88,
+          "physicalKeyID" : "keyY",
+          "rectPt" : [
+            756.87631578947367,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "P",
+          "color" : "white",
+          "displayLabel" : "P",
+          "labelParts" : {
+            "main" : "P",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                789.3483501233552,
+                40.9541015625,
+                5.0927734375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "P",
+              "x" : 788.4694438733552
+            }
+          ],
+          "midiNote" : 89,
+          "physicalKeyID" : "keyP",
+          "rectPt" : [
+            780.45526315789471,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "下方向",
+          "color" : "black",
+          "displayLabel" : "↓",
+          "labelParts" : {
+            "main" : "↓",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                800.84070466694072,
+                24.055908203125,
+                5.68701171875,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "↓",
+              "x" : 799.91297029194072
+            }
+          ],
+          "midiNote" : 90,
+          "physicalKeyID" : "arrowDown",
+          "rectPt" : [
+            796.72842105263146,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "单引号",
+          "color" : "white",
+          "displayLabel" : "'",
+          "labelParts" : {
+            "main" : "'",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 52.1748046875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                814.93657483552624,
+                45.12890625,
+                1.07421875,
+                2.87109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "'",
+              "x" : 813.89653577302624
+            }
+          ],
+          "midiNote" : 91,
+          "physicalKeyID" : "quote",
+          "rectPt" : [
+            804.03421052631575,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "上方向",
+          "color" : "black",
+          "displayLabel" : "↑",
+          "labelParts" : {
+            "main" : "↑",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                824.41965203536176,
+                24.055908203125,
+                5.68701171875,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "↑",
+              "x" : 823.49191766036176
+            }
+          ],
+          "midiNote" : 92,
+          "physicalKeyID" : "arrowUp",
+          "rectPt" : [
+            820.3073684210525,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "逗号",
+          "color" : "white",
+          "displayLabel" : ",",
+          "labelParts" : {
+            "main" : ",",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.1689453125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                838.27138157894728,
+                45.12890625,
+                1.5625,
+                2.87109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ",",
+              "x" : 837.69520970394728
+            }
+          ],
+          "midiNote" : 93,
+          "physicalKeyID" : "comma",
+          "rectPt" : [
+            827.61315789473679,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右方向",
+          "color" : "black",
+          "displayLabel" : "→",
+          "labelParts" : {
+            "main" : "→",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.51025390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                847.4002107319078,
+                25.31298828125,
+                6.8837890625,
+                5.68701171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "→",
+              "x" : 846.4724763569078
+            }
+          ],
+          "midiNote" : 94,
+          "physicalKeyID" : "arrowRight",
+          "rectPt" : [
+            843.88631578947354,
+            2,
+            13.911578947368419,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "句点",
+          "color" : "white",
+          "displayLabel" : ".",
+          "labelParts" : {
+            "main" : ".",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.921875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                861.91380550986833,
+                46.5693359375,
+                1.435546875,
+                1.4306640625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ".",
+              "x" : 861.05443050986833
+            }
+          ],
+          "midiNote" : 95,
+          "physicalKeyID" : "period",
+          "rectPt" : [
+            851.19210526315783,
+            2,
+            22.878947368421052,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "斜杠",
+          "color" : "white",
+          "displayLabel" : "/",
+          "labelParts" : {
+            "main" : "/",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.232421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                884.63337787828937,
+                38.849609375,
+                3.154296875,
+                9.150390625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "/",
+              "x" : 884.63337787828937
+            }
+          ],
+          "midiNote" : 96,
+          "physicalKeyID" : "slash",
+          "rectPt" : [
+            874.77105263157887,
+            2,
+            22.878947368421052,
+            50
+          ]
+        }
+      ],
+      "whiteSlotPt" : 23.578947368421051,
+      "widthPt" : 900
+    },
+    {
+      "heightPt" : 56,
+      "keys" : [
+        {
+          "accessibleName" : "左方括号",
+          "color" : "white",
+          "displayLabel" : "[",
+          "labelParts" : {
+            "main" : "[",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.393758604864615,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                14.118572015168715,
+                38.908673703533729,
+                1.9733822854520424,
+                9.0913262964662689
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".CJKSymbolsFallbackSC-Medium"
+              ],
+              "text" : "[",
+              "x" : 13.14105939470061
+            }
+          ],
+          "midiNote" : 33,
+          "physicalKeyID" : "bracketLeft",
+          "rectPt" : [
+            2.3500000000000001,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Fn／地球键",
+          "color" : "black",
+          "displayLabel" : "fn",
+          "labelParts" : {
+            "main" : "fn",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                23.955349503379118,
+                23.935302734375,
+                8.5103536248207092,
+                7.064697265625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "fn",
+              "x" : 23.704861222129118
+            }
+          ],
+          "midiNote" : 34,
+          "physicalKeyID" : "fn",
+          "rectPt" : [
+            20.478421052631578,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "右方括号",
+          "color" : "white",
+          "displayLabel" : "]",
+          "labelParts" : {
+            "main" : "]",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.393758604864615,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                40.329098330958189,
+                38.908673703533729,
+                1.9733822854520424,
+                9.0913262964662689
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".CJKSymbolsFallbackSC-Medium"
+              ],
+              "text" : "]",
+              "x" : 39.96654670177049
+            }
+          ],
+          "midiNote" : 35,
+          "physicalKeyID" : "bracketRight",
+          "rectPt" : [
+            28.560526315789474,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "反斜杠",
+          "color" : "white",
+          "displayLabel" : "\\",
+          "labelParts" : {
+            "main" : "\\",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.232421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                65.949167351973685,
+                38.849609375,
+                3.154296875,
+                9.150390625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "\\",
+              "x" : 65.949167351973685
+            }
+          ],
+          "midiNote" : 36,
+          "physicalKeyID" : "backslash",
+          "rectPt" : [
+            54.771052631578947,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Control",
+          "color" : "black",
+          "displayLabel" : "⌃",
+          "labelParts" : {
+            "main" : "⌃",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 34.01513671875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                77.342760587993411,
+                27.21484375,
+                6.57763671875,
+                3.78515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌃",
+              "x" : 76.415026212993411
+            }
+          ],
+          "midiNote" : 37,
+          "physicalKeyID" : "controlLeft",
+          "rectPt" : [
+            72.89947368421052,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "分号",
+          "color" : "white",
+          "displayLabel" : ";",
+          "labelParts" : {
+            "main" : ";",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.1689453125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                92.877467105263136,
+                41.125,
+                1.71875,
+                6.875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ";",
+              "x" : 92.301295230263136
+            }
+          ],
+          "midiNote" : 38,
+          "physicalKeyID" : "semicolon",
+          "rectPt" : [
+            80.981578947368405,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Option",
+          "color" : "black",
+          "displayLabel" : "⌥L",
+          "labelParts" : {
+            "main" : "⌥",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.013916015625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                102.4963777240954,
+                24.334228515625,
+                7.491455078125,
+                6.665771484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌥",
+              "x" : 101.5686433490954
+            },
+            {
+              "baselineY" : 23.734228515624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                110.6114175575658,
+                19.154394531249999,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 110.0401284950658
+            }
+          ],
+          "midiNote" : 39,
+          "physicalKeyID" : "optionLeft",
+          "rectPt" : [
+            99.109999999999999,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Z",
+          "color" : "white",
+          "displayLabel" : "Z",
+          "labelParts" : {
+            "main" : "Z",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                117.29844263980262,
+                40.9541015625,
+                5.2978515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Z",
+              "x" : 116.61484888980262
+            }
+          ],
+          "midiNote" : 40,
+          "physicalKeyID" : "keyZ",
+          "rectPt" : [
+            107.19210526315788,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "X",
+          "color" : "white",
+          "displayLabel" : "X",
+          "labelParts" : {
+            "main" : "X",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                143.10369551809211,
+                40.9541015625,
+                6.1083984375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "X",
+              "x" : 142.67400801809211
+            }
+          ],
+          "midiNote" : 41,
+          "physicalKeyID" : "keyX",
+          "rectPt" : [
+            133.40263157894736,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Command",
+          "color" : "black",
+          "displayLabel" : "⌘L",
+          "labelParts" : {
+            "main" : "⌘",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.893310546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                155.19343133223683,
+                24.074462890625,
+                6.939453125,
+                6.925537109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌘",
+              "x" : 154.26569695723683
+            },
+            {
+              "baselineY" : 23.474462890624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                163.0324701891447,
+                18.894628906249999,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 162.4611811266447
+            }
+          ],
+          "midiNote" : 42,
+          "physicalKeyID" : "commandLeft",
+          "rectPt" : [
+            151.53105263157892,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "C",
+          "color" : "white",
+          "displayLabel" : "C",
+          "labelParts" : {
+            "main" : "C",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                169.31178042763156,
+                40.6025390625,
+                6.11328125,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "C",
+              "x" : 168.72096011513156
+            }
+          ],
+          "midiNote" : 43,
+          "physicalKeyID" : "keyC",
+          "rectPt" : [
+            159.61315789473682,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右 Command",
+          "color" : "black",
+          "displayLabel" : "⌘R",
+          "labelParts" : {
+            "main" : "⌘",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.893310546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                181.40395764802631,
+                24.074462890625,
+                6.939453125,
+                6.925537109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌘",
+              "x" : 180.47622327302631
+            },
+            {
+              "baselineY" : 23.474462890624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                188.63044767680918,
+                18.894628906249999,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 188.05915861430918
+            }
+          ],
+          "midiNote" : 44,
+          "physicalKeyID" : "commandRight",
+          "rectPt" : [
+            177.7415789473684,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "V",
+          "color" : "white",
+          "displayLabel" : "V",
+          "labelParts" : {
+            "main" : "V",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                195.46127158717104,
+                40.9541015625,
+                6.2353515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "V",
+              "x" : 195.12435752467104
+            }
+          ],
+          "midiNote" : 45,
+          "physicalKeyID" : "keyV",
+          "rectPt" : [
+            185.8236842105263,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右 Option",
+          "color" : "black",
+          "displayLabel" : "⌥R",
+          "labelParts" : {
+            "main" : "⌥",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.013916015625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                207.33848298725329,
+                24.334228515625,
+                7.491455078125,
+                6.665771484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌥",
+              "x" : 206.41074861225329
+            },
+            {
+              "baselineY" : 23.734228515624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                214.84097399259866,
+                19.154394531249999,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 214.26968493009866
+            }
+          ],
+          "midiNote" : 46,
+          "physicalKeyID" : "optionRight",
+          "rectPt" : [
+            203.95210526315788,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "B",
+          "color" : "white",
+          "displayLabel" : "B",
+          "labelParts" : {
+            "main" : "B",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                222.13322368421052,
+                40.9541015625,
+                5.3125,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "B",
+              "x" : 221.25431743421052
+            }
+          ],
+          "midiNote" : 47,
+          "physicalKeyID" : "keyB",
+          "rectPt" : [
+            212.03421052631577,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "F",
+          "color" : "white",
+          "displayLabel" : "F",
+          "labelParts" : {
+            "main" : "F",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                248.7978515625,
+                40.9541015625,
+                4.404296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "F",
+              "x" : 247.9189453125
+            }
+          ],
+          "midiNote" : 48,
+          "physicalKeyID" : "keyF",
+          "rectPt" : [
+            238.24473684210525,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Tab",
+          "color" : "black",
+          "displayLabel" : "⇥",
+          "labelParts" : {
+            "main" : "⇥",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 32.257080078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                260.15543405633224,
+                26.64892578125,
+                7.899658203125,
+                4.35107421875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".LucidaGrandeUI-Bold"
+              ],
+              "text" : "⇥",
+              "x" : 259.36685983758224
+            }
+          ],
+          "midiNote" : 49,
+          "physicalKeyID" : "tab",
+          "rectPt" : [
+            256.37315789473683,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "D",
+          "color" : "white",
+          "displayLabel" : "D",
+          "labelParts" : {
+            "main" : "D",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                274.27595600328948,
+                40.9541015625,
+                5.869140625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "D",
+              "x" : 273.39704975328948
+            }
+          ],
+          "midiNote" : 50,
+          "physicalKeyID" : "keyD",
+          "rectPt" : [
+            264.45526315789476,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Caps Lock",
+          "color" : "black",
+          "displayLabel" : "⇪",
+          "labelParts" : {
+            "main" : "⇪",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.299560546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                286.41930509868422,
+                23.146728515625,
+                7.79296875,
+                7.853271484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇪",
+              "x" : 285.67711759868422
+            }
+          ],
+          "midiNote" : 51,
+          "physicalKeyID" : "capsLock",
+          "rectPt" : [
+            282.58368421052631,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "S",
+          "color" : "white",
+          "displayLabel" : "S",
+          "labelParts" : {
+            "main" : "S",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                300.71353310032896,
+                40.6025390625,
+                5.4150390625,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "S",
+              "x" : 300.16665810032896
+            }
+          ],
+          "midiNote" : 52,
+          "physicalKeyID" : "keyS",
+          "rectPt" : [
+            290.66578947368424,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Shift",
+          "color" : "white",
+          "displayLabel" : "⇧L",
+          "labelParts" : {
+            "main" : "⇧",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.9072265625,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                324.83968441611836,
+                40.7197265625,
+                8.3837890625,
+                7.2802734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇧",
+              "x" : 324.05843441611836
+            },
+            {
+              "baselineY" : 42.7197265625,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                338.42404913651313,
+                38.139892578125,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 337.85276007401313
+            }
+          ],
+          "midiNote" : 53,
+          "physicalKeyID" : "shiftLeft",
+          "rectPt" : [
+            316.87631578947367,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "反引号",
+          "color" : "black",
+          "displayLabel" : "`",
+          "labelParts" : {
+            "main" : "`",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 36.728759765625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                341.79519171463812,
+                29.39501953125,
+                1.88330078125,
+                1.60498046875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "`",
+              "x" : 340.36184210526312
+            }
+          ],
+          "midiNote" : 54,
+          "physicalKeyID" : "grave",
+          "rectPt" : [
+            335.00473684210522,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "A",
+          "color" : "white",
+          "displayLabel" : "A",
+          "labelParts" : {
+            "main" : "A",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                352.70245682565786,
+                40.9541015625,
+                6.279296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "A",
+              "x" : 352.36554276315786
+            }
+          ],
+          "midiNote" : 55,
+          "physicalKeyID" : "keyA",
+          "rectPt" : [
+            343.08684210526314,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "1",
+          "color" : "black",
+          "displayLabel" : "1",
+          "labelParts" : {
+            "main" : "1",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                367.5441701788651,
+                24.306396484375,
+                2.806396484375,
+                6.693603515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "1",
+              "x" : 366.9457815069901
+            }
+          ],
+          "midiNote" : 56,
+          "physicalKeyID" : "digit1",
+          "rectPt" : [
+            361.2152631578947,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "N",
+          "color" : "white",
+          "displayLabel" : "N",
+          "labelParts" : {
+            "main" : "N",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                379.17421361019734,
+                40.9541015625,
+                5.7568359375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "N",
+              "x" : 378.29530736019734
+            }
+          ],
+          "midiNote" : 57,
+          "physicalKeyID" : "keyN",
+          "rectPt" : [
+            369.29736842105262,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "2",
+          "color" : "black",
+          "displayLabel" : "2",
+          "labelParts" : {
+            "main" : "2",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                392.86871016652958,
+                24.139404296875,
+                4.578369140625,
+                6.860595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "2",
+              "x" : 392.21001876027958
+            }
+          ],
+          "midiNote" : 58,
+          "physicalKeyID" : "digit2",
+          "rectPt" : [
+            387.42578947368418,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "G",
+          "color" : "white",
+          "displayLabel" : "G",
+          "labelParts" : {
+            "main" : "G",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                405.10886101973682,
+                40.6025390625,
+                6.30859375,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "G",
+              "x" : 404.51804070723682
+            }
+          ],
+          "midiNote" : 59,
+          "physicalKeyID" : "keyG",
+          "rectPt" : [
+            395.5078947368421,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "空格",
+          "color" : "white",
+          "displayLabel" : "␣",
+          "labelParts" : {
+            "main" : "␣",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.076638965835642,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                431.19575253924279,
+                46.153277931671283,
+                6.5558633425669441,
+                1.8467220683287167
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".HiraKakuInterface-W5"
+              ],
+              "text" : "␣",
+              "x" : 429.85687903970449
+            }
+          ],
+          "midiNote" : 60,
+          "physicalKeyID" : "space",
+          "rectPt" : [
+            421.71842105263158,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "3",
+          "color" : "black",
+          "displayLabel" : "3",
+          "labelParts" : {
+            "main" : "3",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                445.13436729029604,
+                24.055908203125,
+                4.88916015625,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "3",
+              "x" : 444.51278525904604
+            }
+          ],
+          "midiNote" : 61,
+          "physicalKeyID" : "digit3",
+          "rectPt" : [
+            439.84684210526314,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "H",
+          "color" : "white",
+          "displayLabel" : "H",
+          "labelParts" : {
+            "main" : "H",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                457.77649568256578,
+                40.9541015625,
+                5.8154296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "H",
+              "x" : 456.89758943256578
+            }
+          ],
+          "midiNote" : 62,
+          "physicalKeyID" : "keyH",
+          "rectPt" : [
+            447.92894736842106,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "4",
+          "color" : "black",
+          "displayLabel" : "4",
+          "labelParts" : {
+            "main" : "4",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                471.18949809827302,
+                24.306396484375,
+                5.199951171875,
+                6.693603515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "4",
+              "x" : 470.66532817639802
+            }
+          ],
+          "midiNote" : 63,
+          "physicalKeyID" : "digit4",
+          "rectPt" : [
+            466.05736842105262,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "I",
+          "color" : "white",
+          "displayLabel" : "I",
+          "labelParts" : {
+            "main" : "I",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                486.34297902960526,
+                40.9541015625,
+                1.103515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "I",
+              "x" : 485.46407277960526
+            }
+          ],
+          "midiNote" : 64,
+          "physicalKeyID" : "keyI",
+          "rectPt" : [
+            474.13947368421054,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "E",
+          "color" : "white",
+          "displayLabel" : "E",
+          "labelParts" : {
+            "main" : "E",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                510.8640522203948,
+                40.9541015625,
+                4.482421875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "E",
+              "x" : 509.9851459703948
+            }
+          ],
+          "midiNote" : 65,
+          "physicalKeyID" : "keyE",
+          "rectPt" : [
+            500.35000000000002,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "5",
+          "color" : "black",
+          "displayLabel" : "5",
+          "labelParts" : {
+            "main" : "5",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                523.84248432360198,
+                24.139404296875,
+                4.736083984375,
+                6.860595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "5",
+              "x" : 523.12349018297698
+            }
+          ],
+          "midiNote" : 66,
+          "physicalKeyID" : "digit5",
+          "rectPt" : [
+            518.47842105263157,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "右 Shift",
+          "color" : "white",
+          "displayLabel" : "⇧R",
+          "labelParts" : {
+            "main" : "⇧",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.9072265625,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                534.52389494243425,
+                40.7197265625,
+                8.3837890625,
+                7.2802734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇧",
+              "x" : 533.74264494243425
+            },
+            {
+              "baselineY" : 42.7197265625,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                547.49571083470391,
+                38.139892578125,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 546.92442177220391
+            }
+          ],
+          "midiNote" : 67,
+          "physicalKeyID" : "shiftRight",
+          "rectPt" : [
+            526.5605263157895,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "6",
+          "color" : "black",
+          "displayLabel" : "6",
+          "labelParts" : {
+            "main" : "6",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                549.90225380345396,
+                23.97705078125,
+                5.03759765625,
+                7.02294921875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "6",
+              "x" : 549.31778114720396
+            }
+          ],
+          "midiNote" : 68,
+          "physicalKeyID" : "digit6",
+          "rectPt" : [
+            544.68894736842105,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "O",
+          "color" : "white",
+          "displayLabel" : "O",
+          "labelParts" : {
+            "main" : "O",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                562.23285875822376,
+                40.6025390625,
+                6.5869140625,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "O",
+              "x" : 561.64203844572376
+            }
+          ],
+          "midiNote" : 69,
+          "physicalKeyID" : "keyO",
+          "rectPt" : [
+            552.77105263157898,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "7",
+          "color" : "black",
+          "displayLabel" : "7",
+          "labelParts" : {
+            "main" : "7",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                576.34703304893094,
+                24.3017578125,
+                4.569091796875,
+                6.6982421875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "7",
+              "x" : 575.90172054893094
+            }
+          ],
+          "midiNote" : 70,
+          "physicalKeyID" : "digit7",
+          "rectPt" : [
+            570.89947368421053,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "U",
+          "color" : "white",
+          "displayLabel" : "U",
+          "labelParts" : {
+            "main" : "U",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                588.88039679276324,
+                40.7783203125,
+                5.712890625,
+                7.2216796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "U",
+              "x" : 588.00637335526324
+            }
+          ],
+          "midiNote" : 71,
+          "physicalKeyID" : "keyU",
+          "rectPt" : [
+            578.98157894736846,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Return",
+          "color" : "white",
+          "displayLabel" : "↵",
+          "labelParts" : {
+            "main" : "↵",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 49.298828125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                613.99961451480272,
+                41.525390625,
+                7.8955078125,
+                6.474609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".LucidaGrandeUI-Bold"
+              ],
+              "text" : "↵",
+              "x" : 613.47227076480272
+            }
+          ],
+          "midiNote" : 72,
+          "physicalKeyID" : "return",
+          "rectPt" : [
+            605.19210526315794,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "8",
+          "color" : "black",
+          "displayLabel" : "8",
+          "labelParts" : {
+            "main" : "8",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                628.51295872738478,
+                24.055908203125,
+                5.079345703125,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "8",
+              "x" : 627.92384739925978
+            }
+          ],
+          "midiNote" : 73,
+          "physicalKeyID" : "digit8",
+          "rectPt" : [
+            623.32052631578938,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "J",
+          "color" : "white",
+          "displayLabel" : "J",
+          "labelParts" : {
+            "main" : "J",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                641.99236739309208,
+                40.7783203125,
+                4.3310546875,
+                7.2216796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "J",
+              "x" : 641.59197676809208
+            }
+          ],
+          "midiNote" : 74,
+          "physicalKeyID" : "keyJ",
+          "rectPt" : [
+            631.40263157894731,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "9",
+          "color" : "black",
+          "displayLabel" : "9",
+          "labelParts" : {
+            "main" : "9",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.837646484375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                654.74435906661176,
+                23.97705078125,
+                5.03759765625,
+                7.02294921875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "9",
+              "x" : 654.15524773848676
+            }
+          ],
+          "midiNote" : 75,
+          "physicalKeyID" : "digit9",
+          "rectPt" : [
+            649.53105263157886,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "K",
+          "color" : "white",
+          "displayLabel" : "K",
+          "labelParts" : {
+            "main" : "K",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                667.55592105263156,
+                40.9541015625,
+                5.625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "K",
+              "x" : 666.67701480263156
+            }
+          ],
+          "midiNote" : 76,
+          "physicalKeyID" : "keyK",
+          "rectPt" : [
+            657.61315789473679,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "L",
+          "color" : "white",
+          "displayLabel" : "L",
+          "labelParts" : {
+            "main" : "L",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                694.37679893092104,
+                40.9541015625,
+                4.404296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 693.49789268092104
+            }
+          ],
+          "midiNote" : 77,
+          "physicalKeyID" : "keyL",
+          "rectPt" : [
+            683.82368421052627,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "0",
+          "color" : "black",
+          "displayLabel" : "0",
+          "labelParts" : {
+            "main" : "0",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                707.20947908100322,
+                23.972412109375,
+                4.949462890625,
+                7.027587890625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "0",
+              "x" : 706.59717439350322
+            }
+          ],
+          "midiNote" : 78,
+          "physicalKeyID" : "digit0",
+          "rectPt" : [
+            701.95210526315782,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "M",
+          "color" : "white",
+          "displayLabel" : "M",
+          "labelParts" : {
+            "main" : "M",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                719.23966899671052,
+                40.9541015625,
+                7.099609375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "M",
+              "x" : 718.36076274671052
+            }
+          ],
+          "midiNote" : 79,
+          "physicalKeyID" : "keyM",
+          "rectPt" : [
+            710.03421052631575,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "减号",
+          "color" : "black",
+          "displayLabel" : "-",
+          "labelParts" : {
+            "main" : "-",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 33.23583984375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                734.3407817639802,
+                30.072265625,
+                3.10791015625,
+                0.927734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "-",
+              "x" : 733.6310649671052
+            }
+          ],
+          "midiNote" : 80,
+          "physicalKeyID" : "minus",
+          "rectPt" : [
+            728.1626315789473,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Q",
+          "color" : "white",
+          "displayLabel" : "Q",
+          "labelParts" : {
+            "main" : "Q",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.23828125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                745.70654296875,
+                40.0166015625,
+                6.5869140625,
+                7.9833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Q",
+              "x" : 745.11572265625
+            }
+          ],
+          "midiNote" : 81,
+          "physicalKeyID" : "keyQ",
+          "rectPt" : [
+            736.24473684210523,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "等号",
+          "color" : "black",
+          "displayLabel" : "=",
+          "labelParts" : {
+            "main" : "=",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.97412109375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                759.65140573601968,
+                27.548828125,
+                4.90771484375,
+                3.451171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "=",
+              "x" : 759.03910104851968
+            }
+          ],
+          "midiNote" : 82,
+          "physicalKeyID" : "equal",
+          "rectPt" : [
+            754.37315789473678,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "W",
+          "color" : "white",
+          "displayLabel" : "W",
+          "labelParts" : {
+            "main" : "W",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                770.72810444078948,
+                40.9541015625,
+                8.96484375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "W",
+              "x" : 770.29353412828948
+            }
+          ],
+          "midiNote" : 83,
+          "physicalKeyID" : "keyW",
+          "rectPt" : [
+            762.45526315789471,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "R",
+          "color" : "white",
+          "displayLabel" : "R",
+          "labelParts" : {
+            "main" : "R",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                798.74771278782896,
+                40.9541015625,
+                5.3466796875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 797.86880653782896
+            }
+          ],
+          "midiNote" : 84,
+          "physicalKeyID" : "keyR",
+          "rectPt" : [
+            788.66578947368419,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Delete／向后删除",
+          "color" : "black",
+          "displayLabel" : "⌫",
+          "labelParts" : {
+            "main" : "⌫",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.91650390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                810.51386461759864,
+                24.14404296875,
+                8.02490234375,
+                6.85595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌫",
+              "x" : 809.77167711759864
+            }
+          ],
+          "midiNote" : 85,
+          "physicalKeyID" : "delete",
+          "rectPt" : [
+            806.79421052631574,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "T",
+          "color" : "white",
+          "displayLabel" : "T",
+          "labelParts" : {
+            "main" : "T",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                824.86790707236844,
+                40.9541015625,
+                5.52734375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "T",
+              "x" : 824.41380550986844
+            }
+          ],
+          "midiNote" : 86,
+          "physicalKeyID" : "keyT",
+          "rectPt" : [
+            814.87631578947367,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左方向",
+          "color" : "black",
+          "displayLabel" : "←",
+          "labelParts" : {
+            "main" : "←",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.51025390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                837.29494757401312,
+                25.31298828125,
+                6.8837890625,
+                5.68701171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "←",
+              "x" : 836.36721319901312
+            }
+          ],
+          "midiNote" : 87,
+          "physicalKeyID" : "arrowLeft",
+          "rectPt" : [
+            833.00473684210522,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Y",
+          "color" : "white",
+          "displayLabel" : "Y",
+          "labelParts" : {
+            "main" : "Y",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                850.80743729440792,
+                40.9541015625,
+                6.0693359375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Y",
+              "x" : 850.47052323190792
+            }
+          ],
+          "midiNote" : 88,
+          "physicalKeyID" : "keyY",
+          "rectPt" : [
+            841.08684210526314,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "P",
+          "color" : "white",
+          "displayLabel" : "P",
+          "labelParts" : {
+            "main" : "P",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                877.5062448601974,
+                40.9541015625,
+                5.0927734375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "P",
+              "x" : 876.6273386101974
+            }
+          ],
+          "midiNote" : 89,
+          "physicalKeyID" : "keyP",
+          "rectPt" : [
+            867.29736842105262,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "下方向",
+          "color" : "black",
+          "displayLabel" : "↓",
+          "labelParts" : {
+            "main" : "↓",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                890.31438887746708,
+                24.055908203125,
+                5.68701171875,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "↓",
+              "x" : 889.38665450246708
+            }
+          ],
+          "midiNote" : 90,
+          "physicalKeyID" : "arrowDown",
+          "rectPt" : [
+            885.42578947368418,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "单引号",
+          "color" : "white",
+          "displayLabel" : "'",
+          "labelParts" : {
+            "main" : "'",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 52.1748046875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                905.72604851973688,
+                45.12890625,
+                1.07421875,
+                2.87109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "'",
+              "x" : 904.68600945723688
+            }
+          ],
+          "midiNote" : 91,
+          "physicalKeyID" : "quote",
+          "rectPt" : [
+            893.5078947368421,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "上方向",
+          "color" : "black",
+          "displayLabel" : "↑",
+          "labelParts" : {
+            "main" : "↑",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                916.52491519325656,
+                24.055908203125,
+                5.68701171875,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "↑",
+              "x" : 915.59718081825656
+            }
+          ],
+          "midiNote" : 92,
+          "physicalKeyID" : "arrowUp",
+          "rectPt" : [
+            911.63631578947366,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "逗号",
+          "color" : "white",
+          "displayLabel" : ",",
+          "labelParts" : {
+            "main" : ",",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.1689453125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                931.69243421052636,
+                45.12890625,
+                1.5625,
+                2.87109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ",",
+              "x" : 931.11626233552636
+            }
+          ],
+          "midiNote" : 93,
+          "physicalKeyID" : "comma",
+          "rectPt" : [
+            919.71842105263158,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右方向",
+          "color" : "black",
+          "displayLabel" : "→",
+          "labelParts" : {
+            "main" : "→",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.51025390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                942.13705283717104,
+                25.31298828125,
+                6.8837890625,
+                5.68701171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "→",
+              "x" : 941.20931846217104
+            }
+          ],
+          "midiNote" : 94,
+          "physicalKeyID" : "arrowRight",
+          "rectPt" : [
+            937.84684210526314,
+            2,
+            15.464210526315789,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "句点",
+          "color" : "white",
+          "displayLabel" : ".",
+          "labelParts" : {
+            "main" : ".",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.921875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                957.96643708881584,
+                46.5693359375,
+                1.435546875,
+                1.4306640625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ".",
+              "x" : 957.10706208881584
+            }
+          ],
+          "midiNote" : 95,
+          "physicalKeyID" : "period",
+          "rectPt" : [
+            945.92894736842106,
+            2,
+            25.510526315789473,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "斜杠",
+          "color" : "white",
+          "displayLabel" : "/",
+          "labelParts" : {
+            "main" : "/",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.232421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                983.31758840460532,
+                38.849609375,
+                3.154296875,
+                9.150390625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "/",
+              "x" : 983.31758840460532
+            }
+          ],
+          "midiNote" : 96,
+          "physicalKeyID" : "slash",
+          "rectPt" : [
+            972.13947368421054,
+            2,
+            25.510526315789473,
+            50
+          ]
+        }
+      ],
+      "whiteSlotPt" : 26.210526315789473,
+      "widthPt" : 1000
+    },
+    {
+      "heightPt" : 56,
+      "keys" : [
+        {
+          "accessibleName" : "左方括号",
+          "color" : "white",
+          "displayLabel" : "[",
+          "labelParts" : {
+            "main" : "[",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.393758604864615,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                15.434361488852927,
+                38.908673703533729,
+                1.9733822854520424,
+                9.0913262964662689
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".CJKSymbolsFallbackSC-Medium"
+              ],
+              "text" : "[",
+              "x" : 14.456848868384823
+            }
+          ],
+          "midiNote" : 33,
+          "physicalKeyID" : "bracketLeft",
+          "rectPt" : [
+            2.3500000000000001,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Fn／地球键",
+          "color" : "black",
+          "displayLabel" : "fn",
+          "labelParts" : {
+            "main" : "fn",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                26.586928450747536,
+                23.935302734375,
+                8.5103536248207092,
+                7.064697265625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "fn",
+              "x" : 26.336440169497536
+            }
+          ],
+          "midiNote" : 34,
+          "physicalKeyID" : "fn",
+          "rectPt" : [
+            22.333684210526314,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "右方括号",
+          "color" : "white",
+          "displayLabel" : "]",
+          "labelParts" : {
+            "main" : "]",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.393758604864615,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                44.276466752010819,
+                38.908673703533729,
+                1.9733822854520424,
+                9.0913262964662689
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".CJKSymbolsFallbackSC-Medium"
+              ],
+              "text" : "]",
+              "x" : 43.91391512282312
+            }
+          ],
+          "midiNote" : 35,
+          "physicalKeyID" : "bracketRight",
+          "rectPt" : [
+            31.192105263157895,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "反斜杠",
+          "color" : "white",
+          "displayLabel" : "\\",
+          "labelParts" : {
+            "main" : "\\",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.232421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                72.52811472039474,
+                38.849609375,
+                3.154296875,
+                9.150390625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "\\",
+              "x" : 72.52811472039474
+            }
+          ],
+          "midiNote" : 36,
+          "physicalKeyID" : "backslash",
+          "rectPt" : [
+            60.034210526315789,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Control",
+          "color" : "black",
+          "displayLabel" : "⌃",
+          "labelParts" : {
+            "main" : "⌃",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 34.01513671875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                85.237497430098685,
+                27.21484375,
+                6.57763671875,
+                3.78515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌃",
+              "x" : 84.309763055098685
+            }
+          ],
+          "midiNote" : 37,
+          "physicalKeyID" : "controlLeft",
+          "rectPt" : [
+            80.017894736842109,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "分号",
+          "color" : "white",
+          "displayLabel" : ";",
+          "labelParts" : {
+            "main" : ";",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.1689453125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                102.08799342105263,
+                41.125,
+                1.71875,
+                6.875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ";",
+              "x" : 101.51182154605263
+            }
+          ],
+          "midiNote" : 38,
+          "physicalKeyID" : "semicolon",
+          "rectPt" : [
+            88.876315789473679,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Option",
+          "color" : "black",
+          "displayLabel" : "⌥L",
+          "labelParts" : {
+            "main" : "⌥",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.013916015625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                113.02269351356908,
+                24.334228515625,
+                7.491455078125,
+                6.665771484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌥",
+              "x" : 112.09495913856908
+            },
+            {
+              "baselineY" : 23.734228515624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                121.91404913651316,
+                19.154394531249999,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 121.34276007401316
+            }
+          ],
+          "midiNote" : 39,
+          "physicalKeyID" : "optionLeft",
+          "rectPt" : [
+            108.86,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Z",
+          "color" : "white",
+          "displayLabel" : "Z",
+          "labelParts" : {
+            "main" : "Z",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                129.14054790296052,
+                40.9541015625,
+                5.2978515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Z",
+              "x" : 128.45695415296052
+            }
+          ],
+          "midiNote" : 40,
+          "physicalKeyID" : "keyZ",
+          "rectPt" : [
+            117.71842105263157,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "X",
+          "color" : "white",
+          "displayLabel" : "X",
+          "labelParts" : {
+            "main" : "X",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                157.57737972861841,
+                40.9541015625,
+                6.1083984375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "X",
+              "x" : 157.14769222861841
+            }
+          ],
+          "midiNote" : 41,
+          "physicalKeyID" : "keyX",
+          "rectPt" : [
+            146.56052631578947,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Command",
+          "color" : "black",
+          "displayLabel" : "⌘L",
+          "labelParts" : {
+            "main" : "⌘",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.893310546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                170.98290501644738,
+                24.074462890625,
+                6.939453125,
+                6.925537109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌘",
+              "x" : 170.05517064144738
+            },
+            {
+              "baselineY" : 23.474462890624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                179.59825966282895,
+                18.894628906249999,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 179.02697060032895
+            }
+          ],
+          "midiNote" : 42,
+          "physicalKeyID" : "commandLeft",
+          "rectPt" : [
+            166.54421052631579,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "C",
+          "color" : "white",
+          "displayLabel" : "C",
+          "labelParts" : {
+            "main" : "C",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                186.4170435855263,
+                40.6025390625,
+                6.11328125,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "C",
+              "x" : 185.8262232730263
+            }
+          ],
+          "midiNote" : 43,
+          "physicalKeyID" : "keyC",
+          "rectPt" : [
+            175.40263157894736,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右 Command",
+          "color" : "black",
+          "displayLabel" : "⌘R",
+          "labelParts" : {
+            "main" : "⌘",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.893310546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                199.82501027960527,
+                24.074462890625,
+                6.939453125,
+                6.925537109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌘",
+              "x" : 198.89727590460527
+            },
+            {
+              "baselineY" : 23.474462890624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                207.82781609786184,
+                18.894628906249999,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 207.25652703536184
+            }
+          ],
+          "midiNote" : 44,
+          "physicalKeyID" : "commandRight",
+          "rectPt" : [
+            195.38631578947368,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "V",
+          "color" : "white",
+          "displayLabel" : "V",
+          "labelParts" : {
+            "main" : "V",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                215.19811369243419,
+                40.9541015625,
+                6.2353515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "V",
+              "x" : 214.86119962993419
+            }
+          ],
+          "midiNote" : 45,
+          "physicalKeyID" : "keyV",
+          "rectPt" : [
+            204.24473684210525,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右 Option",
+          "color" : "black",
+          "displayLabel" : "⌥R",
+          "labelParts" : {
+            "main" : "⌥",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.013916015625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                228.39111456620066,
+                24.334228515625,
+                7.491455078125,
+                6.665771484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌥",
+              "x" : 227.46338019120066
+            },
+            {
+              "baselineY" : 23.734228515624999,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                236.66992136101973,
+                19.154394531249999,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 236.09863229851973
+            }
+          ],
+          "midiNote" : 46,
+          "physicalKeyID" : "optionRight",
+          "rectPt" : [
+            224.22842105263157,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "B",
+          "color" : "white",
+          "displayLabel" : "B",
+          "labelParts" : {
+            "main" : "B",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                244.50164473684208,
+                40.9541015625,
+                5.3125,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "B",
+              "x" : 243.62273848684208
+            }
+          ],
+          "midiNote" : 47,
+          "physicalKeyID" : "keyB",
+          "rectPt" : [
+            233.08684210526314,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "F",
+          "color" : "white",
+          "displayLabel" : "F",
+          "labelParts" : {
+            "main" : "F",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                273.7978515625,
+                40.9541015625,
+                4.404296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "F",
+              "x" : 272.9189453125
+            }
+          ],
+          "midiNote" : 48,
+          "physicalKeyID" : "keyF",
+          "rectPt" : [
+            261.92894736842106,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Tab",
+          "color" : "black",
+          "displayLabel" : "⇥",
+          "labelParts" : {
+            "main" : "⇥",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 32.257080078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                286.47122353001646,
+                26.64892578125,
+                7.899658203125,
+                4.35107421875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".LucidaGrandeUI-Bold"
+              ],
+              "text" : "⇥",
+              "x" : 285.68264931126646
+            }
+          ],
+          "midiNote" : 49,
+          "physicalKeyID" : "tab",
+          "rectPt" : [
+            281.91263157894736,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "D",
+          "color" : "white",
+          "displayLabel" : "D",
+          "labelParts" : {
+            "main" : "D",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                301.90753495065792,
+                40.9541015625,
+                5.869140625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "D",
+              "x" : 301.02862870065792
+            }
+          ],
+          "midiNote" : 50,
+          "physicalKeyID" : "keyD",
+          "rectPt" : [
+            290.77105263157898,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Caps Lock",
+          "color" : "black",
+          "displayLabel" : "⇪",
+          "labelParts" : {
+            "main" : "⇪",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.299560546875,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                315.36667351973682,
+                23.146728515625,
+                7.79296875,
+                7.853271484375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇪",
+              "x" : 314.62448601973682
+            }
+          ],
+          "midiNote" : 51,
+          "physicalKeyID" : "capsLock",
+          "rectPt" : [
+            310.75473684210522,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "S",
+          "color" : "white",
+          "displayLabel" : "S",
+          "labelParts" : {
+            "main" : "S",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                330.97669099506578,
+                40.6025390625,
+                5.4150390625,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "S",
+              "x" : 330.42981599506578
+            }
+          ],
+          "midiNote" : 52,
+          "physicalKeyID" : "keyS",
+          "rectPt" : [
+            319.61315789473684,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左 Shift",
+          "color" : "white",
+          "displayLabel" : "⇧L",
+          "labelParts" : {
+            "main" : "⇧",
+            "side" : "L"
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.9072265625,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                357.73442125822368,
+                40.7197265625,
+                8.3837890625,
+                7.2802734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇧",
+              "x" : 356.95317125822368
+            },
+            {
+              "baselineY" : 42.7197265625,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                372.63457545230261,
+                38.139892578125,
+                2.86279296875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 372.06328638980261
+            }
+          ],
+          "midiNote" : 53,
+          "physicalKeyID" : "shiftLeft",
+          "rectPt" : [
+            348.45526315789476,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "反引号",
+          "color" : "black",
+          "displayLabel" : "`",
+          "labelParts" : {
+            "main" : "`",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 36.728759765625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                376.0057180304276,
+                29.39501953125,
+                1.88330078125,
+                1.60498046875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "`",
+              "x" : 374.5723684210526
+            }
+          ],
+          "midiNote" : 54,
+          "physicalKeyID" : "grave",
+          "rectPt" : [
+            368.438947368421,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "A",
+          "color" : "white",
+          "displayLabel" : "A",
+          "labelParts" : {
+            "main" : "A",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                388.22877261513156,
+                40.9541015625,
+                6.279296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "A",
+              "x" : 387.89185855263156
+            }
+          ],
+          "midiNote" : 55,
+          "physicalKeyID" : "keyA",
+          "rectPt" : [
+            377.29736842105262,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "1",
+          "color" : "black",
+          "displayLabel" : "1",
+          "labelParts" : {
+            "main" : "1",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                404.38627544202302,
+                24.306396484375,
+                2.806396484375,
+                6.693603515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "1",
+              "x" : 403.78788677014802
+            }
+          ],
+          "midiNote" : 56,
+          "physicalKeyID" : "digit1",
+          "rectPt" : [
+            397.28105263157892,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "N",
+          "color" : "white",
+          "displayLabel" : "N",
+          "labelParts" : {
+            "main" : "N",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                417.33210834703948,
+                40.9541015625,
+                5.7568359375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "N",
+              "x" : 416.45320209703948
+            }
+          ],
+          "midiNote" : 57,
+          "physicalKeyID" : "keyN",
+          "rectPt" : [
+            406.13947368421054,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "2",
+          "color" : "black",
+          "displayLabel" : "2",
+          "labelParts" : {
+            "main" : "2",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                432.34239437705588,
+                24.139404296875,
+                4.578369140625,
+                6.860595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "2",
+              "x" : 431.68370297080588
+            }
+          ],
+          "midiNote" : 58,
+          "physicalKeyID" : "digit2",
+          "rectPt" : [
+            426.12315789473678,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "G",
+          "color" : "white",
+          "displayLabel" : "G",
+          "labelParts" : {
+            "main" : "G",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                445.89833470394734,
+                40.6025390625,
+                6.30859375,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "G",
+              "x" : 445.30751439144734
+            }
+          ],
+          "midiNote" : 59,
+          "physicalKeyID" : "keyG",
+          "rectPt" : [
+            434.9815789473684,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "空格",
+          "color" : "white",
+          "displayLabel" : "␣",
+          "labelParts" : {
+            "main" : "␣",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.076638965835642,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                474.61680517082175,
+                46.153277931671283,
+                6.5558633425669441,
+                1.8467220683287167
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".HiraKakuInterface-W5"
+              ],
+              "text" : "␣",
+              "x" : 473.27793167128345
+            }
+          ],
+          "midiNote" : 60,
+          "physicalKeyID" : "space",
+          "rectPt" : [
+            463.82368421052632,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "3",
+          "color" : "black",
+          "displayLabel" : "3",
+          "labelParts" : {
+            "main" : "3",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                489.87120939555922,
+                24.055908203125,
+                4.88916015625,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "3",
+              "x" : 489.24962736430922
+            }
+          ],
+          "midiNote" : 61,
+          "physicalKeyID" : "digit3",
+          "rectPt" : [
+            483.80736842105262,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "H",
+          "color" : "white",
+          "displayLabel" : "H",
+          "labelParts" : {
+            "main" : "H",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                503.82912726151318,
+                40.9541015625,
+                5.8154296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "H",
+              "x" : 502.95022101151318
+            }
+          ],
+          "midiNote" : 62,
+          "physicalKeyID" : "keyH",
+          "rectPt" : [
+            492.66578947368424,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "4",
+          "color" : "black",
+          "displayLabel" : "4",
+          "labelParts" : {
+            "main" : "4",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                518.55791915090458,
+                24.306396484375,
+                5.199951171875,
+                6.693603515625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "4",
+              "x" : 518.03374922902958
+            }
+          ],
+          "midiNote" : 63,
+          "physicalKeyID" : "digit4",
+          "rectPt" : [
+            512.64947368421053,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "I",
+          "color" : "white",
+          "displayLabel" : "I",
+          "labelParts" : {
+            "main" : "I",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                535.02718955592104,
+                40.9541015625,
+                1.103515625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "I",
+              "x" : 534.14828330592104
+            }
+          ],
+          "midiNote" : 64,
+          "physicalKeyID" : "keyI",
+          "rectPt" : [
+            521.5078947368421,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "E",
+          "color" : "white",
+          "displayLabel" : "E",
+          "labelParts" : {
+            "main" : "E",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                562.17984169407896,
+                40.9541015625,
+                4.482421875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "E",
+              "x" : 561.30093544407896
+            }
+          ],
+          "midiNote" : 65,
+          "physicalKeyID" : "keyE",
+          "rectPt" : [
+            550.35000000000002,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "5",
+          "color" : "black",
+          "displayLabel" : "5",
+          "labelParts" : {
+            "main" : "5",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                576.47406327097042,
+                24.139404296875,
+                4.736083984375,
+                6.860595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "5",
+              "x" : 575.75506913034542
+            }
+          ],
+          "midiNote" : 66,
+          "physicalKeyID" : "digit5",
+          "rectPt" : [
+            570.33368421052637,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "右 Shift",
+          "color" : "white",
+          "displayLabel" : "⇧R",
+          "labelParts" : {
+            "main" : "⇧",
+            "side" : "R"
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.9072265625,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                588.47126336348686,
+                40.7197265625,
+                8.3837890625,
+                7.2802734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⇧",
+              "x" : 587.69001336348686
+            },
+            {
+              "baselineY" : 42.7197265625,
+              "fontSizePt" : 6.5,
+              "inkBoundsPt" : [
+                602.75886872944079,
+                38.139892578125,
+                3.475341796875,
+                4.579833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 602.18757966694079
+            }
+          ],
+          "midiNote" : 67,
+          "physicalKeyID" : "shiftRight",
+          "rectPt" : [
+            579.19210526315794,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "6",
+          "color" : "black",
+          "displayLabel" : "6",
+          "labelParts" : {
+            "main" : "6",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                605.16541169819072,
+                23.97705078125,
+                5.03759765625,
+                7.02294921875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "6",
+              "x" : 604.58093904194072
+            }
+          ],
+          "midiNote" : 68,
+          "physicalKeyID" : "digit6",
+          "rectPt" : [
+            599.17578947368418,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "O",
+          "color" : "white",
+          "displayLabel" : "O",
+          "labelParts" : {
+            "main" : "O",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                618.81180612664468,
+                40.6025390625,
+                6.5869140625,
+                7.3974609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "O",
+              "x" : 618.22098581414468
+            }
+          ],
+          "midiNote" : 69,
+          "physicalKeyID" : "keyO",
+          "rectPt" : [
+            608.03421052631575,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "7",
+          "color" : "black",
+          "displayLabel" : "7",
+          "labelParts" : {
+            "main" : "7",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                634.24176989103614,
+                24.3017578125,
+                4.569091796875,
+                6.6982421875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "7",
+              "x" : 633.79645739103614
+            }
+          ],
+          "midiNote" : 70,
+          "physicalKeyID" : "digit7",
+          "rectPt" : [
+            628.01789473684209,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "U",
+          "color" : "white",
+          "displayLabel" : "U",
+          "labelParts" : {
+            "main" : "U",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                648.0909231085526,
+                40.7783203125,
+                5.712890625,
+                7.2216796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "U",
+              "x" : 647.2168996710526
+            }
+          ],
+          "midiNote" : 71,
+          "physicalKeyID" : "keyU",
+          "rectPt" : [
+            636.87631578947367,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Return",
+          "color" : "white",
+          "displayLabel" : "↵",
+          "labelParts" : {
+            "main" : "↵",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 49.298828125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                675.84171977796052,
+                41.525390625,
+                7.8955078125,
+                6.474609375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".LucidaGrandeUI-Bold"
+              ],
+              "text" : "↵",
+              "x" : 675.31437602796052
+            }
+          ],
+          "midiNote" : 72,
+          "physicalKeyID" : "return",
+          "rectPt" : [
+            665.71842105263158,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "8",
+          "color" : "black",
+          "displayLabel" : "8",
+          "labelParts" : {
+            "main" : "8",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                691.67085346422698,
+                24.055908203125,
+                5.079345703125,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "8",
+              "x" : 691.08174213610198
+            }
+          ],
+          "midiNote" : 73,
+          "physicalKeyID" : "digit8",
+          "rectPt" : [
+            685.70210526315793,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "J",
+          "color" : "white",
+          "displayLabel" : "J",
+          "labelParts" : {
+            "main" : "J",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.82421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                706.46605160361844,
+                40.7783203125,
+                4.3310546875,
+                7.2216796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "J",
+              "x" : 706.06566097861844
+            }
+          ],
+          "midiNote" : 74,
+          "physicalKeyID" : "keyJ",
+          "rectPt" : [
+            694.5605263157895,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "9",
+          "color" : "black",
+          "displayLabel" : "9",
+          "labelParts" : {
+            "main" : "9",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.837646484375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                720.5338327508224,
+                23.97705078125,
+                5.03759765625,
+                7.02294921875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "9",
+              "x" : 719.9447214226974
+            }
+          ],
+          "midiNote" : 75,
+          "physicalKeyID" : "digit9",
+          "rectPt" : [
+            714.54421052631585,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "K",
+          "color" : "white",
+          "displayLabel" : "K",
+          "labelParts" : {
+            "main" : "K",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                734.66118421052636,
+                40.9541015625,
+                5.625,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "K",
+              "x" : 733.78227796052636
+            }
+          ],
+          "midiNote" : 76,
+          "physicalKeyID" : "keyK",
+          "rectPt" : [
+            723.40263157894742,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "L",
+          "color" : "white",
+          "displayLabel" : "L",
+          "labelParts" : {
+            "main" : "L",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                764.11364103618416,
+                40.9541015625,
+                4.404296875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "L",
+              "x" : 763.23473478618416
+            }
+          ],
+          "midiNote" : 77,
+          "physicalKeyID" : "keyL",
+          "rectPt" : [
+            752.24473684210523,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "0",
+          "color" : "black",
+          "displayLabel" : "0",
+          "labelParts" : {
+            "main" : "0",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.8330078125,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                778.26211065995062,
+                23.972412109375,
+                4.949462890625,
+                7.027587890625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "0",
+              "x" : 777.64980597245062
+            }
+          ],
+          "midiNote" : 78,
+          "physicalKeyID" : "digit0",
+          "rectPt" : [
+            772.22842105263157,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "M",
+          "color" : "white",
+          "displayLabel" : "M",
+          "labelParts" : {
+            "main" : "M",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                791.60809004934208,
+                40.9541015625,
+                7.099609375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "M",
+              "x" : 790.72918379934208
+            }
+          ],
+          "midiNote" : 79,
+          "physicalKeyID" : "keyM",
+          "rectPt" : [
+            781.08684210526314,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "减号",
+          "color" : "black",
+          "displayLabel" : "-",
+          "labelParts" : {
+            "main" : "-",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 33.23583984375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                808.02499229029604,
+                30.072265625,
+                3.10791015625,
+                0.927734375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "-",
+              "x" : 807.31527549342104
+            }
+          ],
+          "midiNote" : 80,
+          "physicalKeyID" : "minus",
+          "rectPt" : [
+            801.07052631578949,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Q",
+          "color" : "white",
+          "displayLabel" : "Q",
+          "labelParts" : {
+            "main" : "Q",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.23828125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                820.70654296875,
+                40.0166015625,
+                6.5869140625,
+                7.9833984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Q",
+              "x" : 820.11572265625
+            }
+          ],
+          "midiNote" : 81,
+          "physicalKeyID" : "keyQ",
+          "rectPt" : [
+            809.92894736842106,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "等号",
+          "color" : "black",
+          "displayLabel" : "=",
+          "labelParts" : {
+            "main" : "=",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.97412109375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                835.96719520970396,
+                27.548828125,
+                4.90771484375,
+                3.451171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "=",
+              "x" : 835.35489052220396
+            }
+          ],
+          "midiNote" : 82,
+          "physicalKeyID" : "equal",
+          "rectPt" : [
+            829.91263157894741,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "W",
+          "color" : "white",
+          "displayLabel" : "W",
+          "labelParts" : {
+            "main" : "W",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                848.35968338815792,
+                40.9541015625,
+                8.96484375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "W",
+              "x" : 847.92511307565792
+            }
+          ],
+          "midiNote" : 83,
+          "physicalKeyID" : "keyW",
+          "rectPt" : [
+            838.77105263157898,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "R",
+          "color" : "white",
+          "displayLabel" : "R",
+          "labelParts" : {
+            "main" : "R",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                879.01087068256572,
+                40.9541015625,
+                5.3466796875,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "R",
+              "x" : 878.13196443256572
+            }
+          ],
+          "midiNote" : 84,
+          "physicalKeyID" : "keyR",
+          "rectPt" : [
+            867.61315789473679,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "Delete／向后删除",
+          "color" : "black",
+          "displayLabel" : "⌫",
+          "labelParts" : {
+            "main" : "⌫",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.91650390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                892.09281198601968,
+                24.14404296875,
+                8.02490234375,
+                6.85595703125
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "⌫",
+              "x" : 891.35062448601968
+            }
+          ],
+          "midiNote" : 85,
+          "physicalKeyID" : "delete",
+          "rectPt" : [
+            887.59684210526314,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "T",
+          "color" : "white",
+          "displayLabel" : "T",
+          "labelParts" : {
+            "main" : "T",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                907.76264391447364,
+                40.9541015625,
+                5.52734375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "T",
+              "x" : 907.30854235197364
+            }
+          ],
+          "midiNote" : 86,
+          "physicalKeyID" : "keyT",
+          "rectPt" : [
+            896.45526315789471,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "左方向",
+          "color" : "black",
+          "displayLabel" : "←",
+          "labelParts" : {
+            "main" : "←",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.51025390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                921.5054738898026,
+                25.31298828125,
+                6.8837890625,
+                5.68701171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "←",
+              "x" : 920.5777395148026
+            }
+          ],
+          "midiNote" : 87,
+          "physicalKeyID" : "arrowLeft",
+          "rectPt" : [
+            916.43894736842105,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "Y",
+          "color" : "white",
+          "displayLabel" : "Y",
+          "labelParts" : {
+            "main" : "Y",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                936.33375308388156,
+                40.9541015625,
+                6.0693359375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "Y",
+              "x" : 935.99683902138156
+            }
+          ],
+          "midiNote" : 88,
+          "physicalKeyID" : "keyY",
+          "rectPt" : [
+            925.29736842105262,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "P",
+          "color" : "white",
+          "displayLabel" : "P",
+          "labelParts" : {
+            "main" : "P",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 48,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                965.66413959703948,
+                40.9541015625,
+                5.0927734375,
+                7.0458984375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "P",
+              "x" : 964.78523334703948
+            }
+          ],
+          "midiNote" : 89,
+          "physicalKeyID" : "keyP",
+          "rectPt" : [
+            954.13947368421054,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "下方向",
+          "color" : "black",
+          "displayLabel" : "↓",
+          "labelParts" : {
+            "main" : "↓",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                979.78807308799344,
+                24.055908203125,
+                5.68701171875,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "↓",
+              "x" : 978.86033871299344
+            }
+          ],
+          "midiNote" : 90,
+          "physicalKeyID" : "arrowDown",
+          "rectPt" : [
+            974.12315789473689,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "单引号",
+          "color" : "white",
+          "displayLabel" : "'",
+          "labelParts" : {
+            "main" : "'",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 52.1748046875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                996.5155222039474,
+                45.12890625,
+                1.07421875,
+                2.87109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "'",
+              "x" : 995.4754831414474
+            }
+          ],
+          "midiNote" : 91,
+          "physicalKeyID" : "quote",
+          "rectPt" : [
+            982.98157894736846,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "上方向",
+          "color" : "black",
+          "displayLabel" : "↑",
+          "labelParts" : {
+            "main" : "↑",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 30.874755859375,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                1008.6301783511512,
+                24.055908203125,
+                5.68701171875,
+                6.944091796875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "↑",
+              "x" : 1007.7024439761512
+            }
+          ],
+          "midiNote" : 92,
+          "physicalKeyID" : "arrowUp",
+          "rectPt" : [
+            1002.9652631578947,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "逗号",
+          "color" : "white",
+          "displayLabel" : ",",
+          "labelParts" : {
+            "main" : ",",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.1689453125,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                1025.1134868421052,
+                45.12890625,
+                1.5625,
+                2.87109375
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ",",
+              "x" : 1024.5373149671052
+            }
+          ],
+          "midiNote" : 93,
+          "physicalKeyID" : "comma",
+          "rectPt" : [
+            1011.8236842105263,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "右方向",
+          "color" : "black",
+          "displayLabel" : "→",
+          "labelParts" : {
+            "main" : "→",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 31.51025390625,
+              "fontSizePt" : 9.5,
+              "inkBoundsPt" : [
+                1036.8738949424342,
+                25.31298828125,
+                6.8837890625,
+                5.68701171875
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "→",
+              "x" : 1035.9461605674342
+            }
+          ],
+          "midiNote" : 94,
+          "physicalKeyID" : "arrowRight",
+          "rectPt" : [
+            1031.8073684210526,
+            2,
+            17.016842105263155,
+            32
+          ]
+        },
+        {
+          "accessibleName" : "句点",
+          "color" : "white",
+          "displayLabel" : ".",
+          "labelParts" : {
+            "main" : ".",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 47.921875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                1054.0190686677631,
+                46.5693359375,
+                1.435546875,
+                1.4306640625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : ".",
+              "x" : 1053.1596936677631
+            }
+          ],
+          "midiNote" : 95,
+          "physicalKeyID" : "period",
+          "rectPt" : [
+            1040.6657894736841,
+            2,
+            28.142105263157895,
+            50
+          ]
+        },
+        {
+          "accessibleName" : "斜杠",
+          "color" : "white",
+          "displayLabel" : "/",
+          "labelParts" : {
+            "main" : "/",
+            "side" : null
+          },
+          "labels" : [
+            {
+              "baselineY" : 46.232421875,
+              "fontSizePt" : 10,
+              "inkBoundsPt" : [
+                1082.001798930921,
+                38.849609375,
+                3.154296875,
+                9.150390625
+              ],
+              "missingGlyphs" : 0,
+              "resolvedFonts" : [
+                ".SFNS-Medium"
+              ],
+              "text" : "/",
+              "x" : 1082.001798930921
+            }
+          ],
+          "midiNote" : 96,
+          "physicalKeyID" : "slash",
+          "rectPt" : [
+            1069.507894736842,
+            2,
+            28.142105263157895,
+            50
+          ]
+        }
+      ],
+      "whiteSlotPt" : 28.842105263157894,
+      "widthPt" : 1100
+    }
+  ],
+  "mappingVersion" : "ansi64-draft.0.1",
+  "scenarios" : {
+    "multi" : [
+      "arrowRight",
+      "commandLeft",
+      "commandRight",
+      "digit1",
+      "digit8",
+      "keyA",
+      "keyD",
+      "keyS",
+      "optionLeft",
+      "optionRight",
+      "shiftLeft",
+      "shiftRight",
+      "space"
+    ],
+    "rest" : [
+
+    ],
+    "single" : [
+      "keyA"
+    ]
+  },
+  "schemaVersion" : "u001-preview.1"
+}

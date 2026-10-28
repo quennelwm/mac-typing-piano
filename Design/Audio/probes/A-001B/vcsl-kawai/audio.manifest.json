@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "audioPackVersion": "a001b-sf2-mono.0.1",
+  "artifactState": "candidate",
+  "instrumentName": "VCSL Kawai four-root mono SF2 trial",
+  "runtimeFormat": "sf2",
+  "targetEngine": "AVAudioUnitSampler_candidate_UNTESTED",
+  "noteNaming": "C4=MIDI60",
+  "midiNoteRange": {
+    "min": 33,
+    "max": 96
+  },
+  "coverageMIDI": [
+    33,
+    34,
+    41,
+    42,
+    43,
+    59,
+    60,
+    61,
+    95,
+    96
+  ],
+  "files": [
+    {
+      "path": "instrument-parameters.json",
+      "sha256": "9ccd56741f2a32eacc46b88c020eff90760f204d98cfae642a632d68730ec207",
+      "byteSize": 4902,
+      "role": "qa"
+    },
+    {
+      "path": "licenses/VCSL-CC0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "byteSize": 7048,
+      "role": "license"
+    },
+    {
+      "path": "licenses/VCSL-README.md",
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9",
+      "byteSize": 4365,
+      "role": "license"
+    },
+    {
+      "path": "processing_recipe.md",
+      "sha256": "71a2a7887c7d4fde260ef7b5ca25fec7c31d9fee95871d8401bbb41fe3afcdbb",
+      "byteSize": 4847,
+      "role": "qa"
+    },
+    {
+      "path": "qa_audio.md",
+      "sha256": "9d5bccf955e8009f78a84d245eea5776577aff4bc156a62f0e42ace6236ca3cb",
+      "byteSize": 1562,
+      "role": "qa"
+    },
+    {
+      "path": "source_records.json",
+      "sha256": "039ef32e92b5e8ef5d0b8904099b4f33b3e812595f37f3e86af029ef7c17d01b",
+      "byteSize": 7832,
+      "role": "qa"
+    },
+    {
+      "path": "trial.sf2",
+      "sha256": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1",
+      "byteSize": 2668204,
+      "role": "bank"
+    }
+  ],
+  "instrument": {
+    "bankFile": "trial.sf2",
+    "program": 0,
+    "bankMSB": 121,
+    "bankLSB": 0,
+    "sf2Preset": 0,
+    "sf2Bank": 0,
+    "selectorStatus": "PROPOSED_FOR_APPLE_LOAD_NOT_YET_TESTED_ON_THIS_BANK",
+    "parametersFile": "instrument-parameters.json"
+  },
+  "licenseRecords": [
+    {
+      "sourceURL": "https://github.com/sgossner/VCSL/tree/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "author": "Versilian Studios LLC",
+      "sourceVersion": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "licenseID": "CC0-1.0",
+      "licenseFile": "licenses/VCSL-CC0.txt",
+      "modifications": "Existing A-001 stereo PCM24 -> (L+R)/2 mono, nearest-even PCM16; no dither, loop, new gain or pitch correction; SF2 zones +/-1 only and 500ms release timecents."
+    }
+  ],
+  "processingRecipePath": "processing_recipe.md",
+  "qaReportPath": "qa_audio.md",
+  "readinessNote": "EXPERIMENT ONLY. coverageMIDI is encoded zone coverage, NOT successful audio/engine verification. Four roots only. Mono PCM16 lossy conversion. SF2 preset0 bank0 encoded; Apple selectors proposed/unloaded. Full range, hardware, listening and sampler release NOT_TESTED."
+}

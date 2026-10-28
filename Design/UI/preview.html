@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Typing Piano · U-001 设计预览</title><link rel="stylesheet" href="preview.css"></head>
+<body>
+<main>
+<header><p class="eyebrow">U-001 / 视觉候选 · CR-001 / 002 / 003</p><h1>打字时，轻轻回应。</h1><p class="lede">一条 64 键钢琴，常驻底部。控制入口收进菜单栏。</p><p class="note">此页面是独立设计预览，只模拟视觉状态；没有后台键盘监听、声音播放或系统设置写入。</p></header>
+<section class="review-stage" aria-label="可交互视觉预览">
+<div class="statusbar"><span>菜单栏示意</span><div class="status-area"><span aria-hidden="true">10:28</span><button id="statusItem" class="status-item" aria-label="打字钢琴菜单" aria-haspopup="menu" aria-expanded="false"><span class="status-note" aria-hidden="true">♪</span></button></div></div>
+<div id="menu" class="menu" role="menu" aria-label="打字钢琴" hidden>
+<p class="menu-heading">打字钢琴 <span>预览</span></p>
+<button role="menuitem" id="pauseItem"><span class="tick"></span><span>暂停全部</span></button>
+<div class="divider" role="separator"></div>
+<button role="menuitemcheckbox" id="soundItem" aria-checked="true"><span class="tick">✓</span><span>声音</span></button>
+<div class="volume-control" role="group" aria-label="本App音量"><div><label for="volumeSlider">音量</label><output id="volumeValue" for="volumeSlider">50%</output></div><input id="volumeSlider" aria-label="应用音量" type="range" min="0" max="100" step="1" value="50"><p>仅调整本App · 预览无声音</p></div>
+<button role="menuitemcheckbox" id="pianoItem" aria-checked="true"><span class="tick">✓</span><span>显示钢琴</span></button>
+<button role="menuitemcheckbox" id="labelsItem" aria-checked="true"><span class="tick">✓</span><span>显示按键标签</span></button>
+<div class="divider" role="separator"></div>
+<button role="menuitemcheckbox" id="dockItem" aria-checked="true"><span class="tick">✓</span><span>自动隐藏 Dock</span></button>
+<details class="submenu-group"><summary>钢琴宽度<span id="widthMenuValue">1000pt</span><span>›</span></summary><div class="submenu" role="group" aria-label="钢琴宽度"><button type="button" data-width="900">900pt</button><button type="button" data-width="1000" aria-pressed="true">1000pt · 推荐候选</button><button type="button" data-width="1100">1100pt</button></div></details>
+<div class="divider" role="separator"></div><button role="menuitem" id="helpItem"><span class="tick"></span><span>帮助 / 关于</span></button><button role="menuitem" id="quitItem"><span class="tick"></span><span>退出打字钢琴</span><span class="muted">示意</span></button>
+</div>
+<div class="stage-caption"><span id="stageState">静止</span><p>菜单栏图标可展开 / 收起菜单</p></div>
+<div class="piano-viewport"><div id="pianoHost"></div></div>
+<div class="stage-floor"><span>底部钢琴浮层示意</span><span>56pt · 标签默认显示</span></div>
+</section>
+<div class="controls" aria-label="合成演示控制">
+<div class="group"><span>宽度</span><button data-width="900">900pt</button><button data-width="1000" aria-pressed="true">1000pt</button><button data-width="1100">1100pt</button></div>
+<div class="group"><span>状态</span><button data-state="rest" aria-pressed="true">静止</button><button data-state="single">单键</button><button data-state="multi">多键</button></div>
+<div class="group"><button id="noteSingle">单键小音符</button><button id="noteMulti">多键小音符</button><button id="shortTap">20ms 短按</button><button id="restrike">快速重击</button><button id="hideDemo">隐藏 / 恢复演示</button><button id="labelsToggle" aria-pressed="true">标签：显示</button><label class="check"><input id="reduceMotion" type="checkbox">减少动态效果</label></div>
+</div>
+<p id="feedback" class="feedback" role="status">合成状态 · 不读取真实键盘。按下 45ms，回弹 100ms；声音尾音不决定回弹。</p>
+<section class="spec-row" aria-label="设计说明"><div><h2>琴键独立，标签随动</h2><p>38 个白键与 26 个黑键按 MIDI 33—96 排列。每个标签从统一映射读取，位于自身键底；关闭时只隐藏文字层。</p></div><div><h2>少一点动，仍看得清</h2><p>白键下沉 2pt，黑键 1.5pt。短按与重击使用同一状态规则，减少动态效果时只切换明暗。击发时上方小音符在 700ms 内上升消失；不等待声音尾音。</p></div><div><h2>Dock 选项单独控制</h2><p>“自动隐藏 Dock”对应系统 Dock 的设置，默认开启；关闭前提醒。钢琴让位策略独立。这里仅展示交互，不改系统。</p></div></section>
+<section class="gallery"><div class="section-head"><h2>尺寸与静态验看</h2><p>原生 CoreText 输出 · 原始尺寸可打开 PNG</p></div><div id="previewGallery"></div></section>
+<section class="downloads"><h2>交付资料</h2><a href="previews/floating-single.gif">单键小音符 · 700ms</a><a href="previews/floating-multi.gif">多键小音符 · 700ms</a><a href="previews/floating-keyframes@2x.png">小音符关键帧</a><a href="previews/menu-icon-scales@2x.png">♪ 图标 · 尺寸与深浅色</a><a href="previews/menu-and-warning@2x.png">菜单与提醒</a><a href="previews/overview@2x.png">九状态总览</a><a href="previews/all-labels-900-rest@2x.png">64 标签放大图 · 静止</a><a href="previews/all-labels-900-pressed@2x.png">64 标签放大图 · 按下</a><a href="theme.candidate.json">主题候选</a><a href="UI_SPEC.md">UI 规范</a><a href="MOTION_SPEC.md">动效规范</a><a href="QA_REPORT.md">验证报告</a></section>
+<footer>设计候选 quiet-ivory-u001.0.3 · 等待 PM-002 · 字体可读性与真实浮层行为仍需用户在目标屏幕验收。</footer>
+</main>
+<dialog id="dockWarning" aria-labelledby="dockWarningTitle" aria-describedby="dockWarningText"><div class="dialog-mark" aria-hidden="true">!</div><h2 id="dockWarningTitle">关闭 Dock 自动隐藏？</h2><p id="dockWarningText">关闭自动隐藏后，Dock 可能与底部钢琴重叠或遮挡。仍要关闭吗？</p><p class="dialog-note">视觉演示 · 不改变当前系统设置</p><div class="dialog-actions"><button id="keepDock" autofocus>保持自动隐藏</button><button id="disableDock">仍然关闭</button></div></dialog>
+<script src="preview-data.js"></script><script src="floating-notes.js"></script><script src="preview.js"></script>
+</body></html>

@@ -1,0 +1,25 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Compiling PianoCoreTests GeometryAndDockTests.swift
+[4/5] Emitting module PianoCoreTests
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (1.48s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 14:13:09.022.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 14:13:09.025.
+Test Suite 'GeometryAndDockTests' started at 2026-10-28 14:13:09.025.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:62: error: -[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(true)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:63: error: -[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(false)")
+Test Case '-[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility]' failed (0.114 seconds).
+Test Suite 'GeometryAndDockTests' failed at 2026-10-28 14:13:09.139.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.114 (0.114) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 14:13:09.139.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.114 (0.114) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 14:13:09.139.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.114 (0.117) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

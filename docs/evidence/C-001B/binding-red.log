@@ -1,0 +1,105 @@
+testStaleSnapshotRejected (__main__.EvidenceBindingTests.testStaleSnapshotRejected) ... FAIL
+testValidBoundReportAccepted (__main__.EvidenceBindingTests.testValidBoundReportAccepted) ... ok
+testWrongBankRejected (__main__.EvidenceBindingTests.testWrongBankRejected) ... FAIL
+testWrongCandidateRejected (__main__.EvidenceBindingTests.testWrongCandidateRejected) ... FAIL
+testWrongCoverageRejected (__main__.EvidenceBindingTests.testWrongCoverageRejected) ... FAIL
+testWrongImplementationRejected (__main__.EvidenceBindingTests.testWrongImplementationRejected) ... FAIL
+testWrongSelectorRejected (__main__.EvidenceBindingTests.testWrongSelectorRejected) ... FAIL
+testWrongUncoveredListRejected (__main__.EvidenceBindingTests.testWrongUncoveredListRejected) ... FAIL
+testWrongWAVFramesRejected (__main__.EvidenceBindingTests.testWrongWAVFramesRejected) ... FAIL
+testWrongWAVHashRejected (__main__.EvidenceBindingTests.testWrongWAVHashRejected) ... FAIL
+testWrongWAVNameRejected (__main__.EvidenceBindingTests.testWrongWAVNameRejected) ... FAIL
+testWrongWAVSizeRejected (__main__.EvidenceBindingTests.testWrongWAVSizeRejected) ... FAIL
+
+======================================================================
+FAIL: testStaleSnapshotRejected (__main__.EvidenceBindingTests.testStaleSnapshotRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 41, in testStaleSnapshotRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongBankRejected (__main__.EvidenceBindingTests.testWrongBankRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 51, in testWrongBankRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongCandidateRejected (__main__.EvidenceBindingTests.testWrongCandidateRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 46, in testWrongCandidateRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongCoverageRejected (__main__.EvidenceBindingTests.testWrongCoverageRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 56, in testWrongCoverageRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongImplementationRejected (__main__.EvidenceBindingTests.testWrongImplementationRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 71, in testWrongImplementationRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongSelectorRejected (__main__.EvidenceBindingTests.testWrongSelectorRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 66, in testWrongSelectorRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongUncoveredListRejected (__main__.EvidenceBindingTests.testWrongUncoveredListRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 61, in testWrongUncoveredListRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongWAVFramesRejected (__main__.EvidenceBindingTests.testWrongWAVFramesRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 81, in testWrongWAVFramesRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongWAVHashRejected (__main__.EvidenceBindingTests.testWrongWAVHashRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 76, in testWrongWAVHashRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongWAVNameRejected (__main__.EvidenceBindingTests.testWrongWAVNameRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 86, in testWrongWAVNameRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+======================================================================
+FAIL: testWrongWAVSizeRejected (__main__.EvidenceBindingTests.testWrongWAVSizeRejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001B/test_evidence_binding.py", line 91, in testWrongWAVSizeRejected
+    with self.assertRaises(AssertionError): self.validate(report)
+AssertionError: AssertionError not raised
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+FAILED (failures=11)

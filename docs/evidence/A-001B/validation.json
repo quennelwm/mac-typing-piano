@@ -1,0 +1,610 @@
+{
+  "task": "A-001B",
+  "date": "2026-10-28",
+  "status": "PASS",
+  "python": "3.12.2",
+  "numpy": "1.26.4",
+  "checkCount": 72,
+  "failureCount": 0,
+  "failures": [],
+  "checks": [
+    {
+      "check": "two experimental candidates",
+      "passed": true
+    },
+    {
+      "check": "not runtime approved",
+      "passed": true
+    },
+    {
+      "check": "bank total under20MiB",
+      "passed": true
+    },
+    {
+      "check": "builder hash",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai contract schema",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai candidate sf2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai safe path instrument-parameters.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file/hash/size instrument-parameters.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai safe path licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file/hash/size licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai safe path licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file/hash/size licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai safe path processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file/hash/size processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai safe path qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file/hash/size qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai safe path source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file/hash/size source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai safe path trial.sf2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai file/hash/size trial.sf2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai reference processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai reference qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai reference instrument-parameters.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai reference trial.sf2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai copied license matches A001",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai binary coverage equals index and manifest",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai actual hash/size equals index",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai encoded 500ms",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai explicitly lossy mono16",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai quantization bounded half LSB16",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai rejects wrong RIFF form",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai rejects truncated bank",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai rejects odd INFO declared string length",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai rejects unauthorized full-range zone",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai rejects sampleID points at EOS",
+      "passed": true
+    },
+    {
+      "check": "vcsl-kawai rejects nonzero guard point",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b contract schema",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b candidate sf2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b safe path instrument-parameters.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file/hash/size instrument-parameters.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b safe path licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file/hash/size licenses/VCSL-CC0.txt",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b safe path licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file/hash/size licenses/VCSL-README.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b safe path processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file/hash/size processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b safe path qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file/hash/size qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b safe path source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file/hash/size source_records.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b safe path trial.sf2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b file/hash/size trial.sf2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b reference processing_recipe.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b reference qa_audio.md",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b reference instrument-parameters.json",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b reference trial.sf2",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b copied license matches A001",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b binary coverage equals index and manifest",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b actual hash/size equals index",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b encoded 500ms",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b explicitly lossy mono16",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b quantization bounded half LSB16",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b rejects wrong RIFF form",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b rejects truncated bank",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b rejects odd INFO declared string length",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b rejects unauthorized full-range zone",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b rejects sampleID points at EOS",
+      "passed": true
+    },
+    {
+      "check": "vcsl-steinway-b rejects nonzero guard point",
+      "passed": true
+    },
+    {
+      "check": "all A001 originals unchanged",
+      "passed": true
+    },
+    {
+      "check": "rebuild exit zero",
+      "passed": true
+    },
+    {
+      "check": "rebuilt banks and metadata byte identical",
+      "passed": true
+    },
+    {
+      "check": "independent binary and source PCM tests pass",
+      "passed": true
+    }
+  ],
+  "banks": [
+    {
+      "id": "vcsl-kawai",
+      "byteSize": 2668204,
+      "sha256": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1",
+      "zones": [
+        {
+          "rootMIDI": 33,
+          "lowMIDI": 33,
+          "highMIDI": 34
+        },
+        {
+          "rootMIDI": 42,
+          "lowMIDI": 41,
+          "highMIDI": 43
+        },
+        {
+          "rootMIDI": 60,
+          "lowMIDI": 59,
+          "highMIDI": 61
+        },
+        {
+          "rootMIDI": 96,
+          "lowMIDI": 95,
+          "highMIDI": 96
+        }
+      ],
+      "coverageMIDI": [
+        33,
+        34,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ],
+      "uncoveredMIDI": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "samplePCM16SHA256": [
+        "358dfac56a3300950dc10f4f3f8194547ee62b1d679fdcaf66e2deb477b8d232",
+        "f66f12610e037c4b7aa1bc00f1ef91db5e2a3b00a6cd558efaf42b93d69bed9d",
+        "023d8035c3ae130fa51d4bd6165a618c886f9383a32b657a05c4a3c9bb1556e8",
+        "79fff9f4e828eb73dc17e35ab687799b082d9c48faf8ea2191b6a362517153ed"
+      ]
+    },
+    {
+      "id": "vcsl-steinway-b",
+      "byteSize": 2649954,
+      "sha256": "8261dac642441fcf78a5946e96f898119ebd609227590c8638f148dea5b7f359",
+      "zones": [
+        {
+          "rootMIDI": 34,
+          "lowMIDI": 33,
+          "highMIDI": 35
+        },
+        {
+          "rootMIDI": 42,
+          "lowMIDI": 41,
+          "highMIDI": 43
+        },
+        {
+          "rootMIDI": 60,
+          "lowMIDI": 59,
+          "highMIDI": 61
+        },
+        {
+          "rootMIDI": 96,
+          "lowMIDI": 95,
+          "highMIDI": 96
+        }
+      ],
+      "coverageMIDI": [
+        33,
+        34,
+        35,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ],
+      "uncoveredMIDI": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "samplePCM16SHA256": [
+        "733d5eb856fa48f8b759133a3ffaf7465c231d41f92764177d92486bccb607f1",
+        "a5889e0e2d9cd0675801313250231235f9f175dd5690c1206fcabaf2e5cfaf69",
+        "1f309f95a83b68535ed661c30f8af133b1897116351e20bb312f79f72a676906",
+        "7c7e3421d1ecea0b91f8a96d3e050de6129cb770f0030944009c811011ce75df"
+      ]
+    }
+  ],
+  "mutationChecks": [
+    {
+      "candidate": "vcsl-kawai",
+      "fixture": "wrong RIFF form",
+      "rejected": true,
+      "error": "RIFF/sfbk identity"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "fixture": "truncated bank",
+      "rejected": true,
+      "error": "RIFF length"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "fixture": "odd INFO declared string length",
+      "rejected": true,
+      "error": "INFO string even declared length"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "fixture": "unauthorized full-range zone",
+      "rejected": true,
+      "error": "root plus/minus one only"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "fixture": "sampleID points at EOS",
+      "rejected": true,
+      "error": "range first sampleID last"
+    },
+    {
+      "candidate": "vcsl-kawai",
+      "fixture": "nonzero guard point",
+      "rejected": true,
+      "error": "zero guard sample points"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "fixture": "wrong RIFF form",
+      "rejected": true,
+      "error": "RIFF/sfbk identity"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "fixture": "truncated bank",
+      "rejected": true,
+      "error": "RIFF length"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "fixture": "odd INFO declared string length",
+      "rejected": true,
+      "error": "INFO string even declared length"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "fixture": "unauthorized full-range zone",
+      "rejected": true,
+      "error": "root plus/minus one only"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "fixture": "sampleID points at EOS",
+      "rejected": true,
+      "error": "range first sampleID last"
+    },
+    {
+      "candidate": "vcsl-steinway-b",
+      "fixture": "nonzero guard point",
+      "rejected": true,
+      "error": "zero guard sample points"
+    }
+  ],
+  "inputProtection": {
+    "fileCount": 56,
+    "changedFiles": []
+  },
+  "reproducibility": {
+    "fileCount": 17,
+    "byteIdentical": true,
+    "changedFiles": [],
+    "sha256": {
+      "trial-index.json": "478a14ac3d6f5022cdcabfd68796245b6a98ed62887a90b1b0e658de2c527880",
+      "vcsl-kawai/audio.manifest.json": "aff704d6a963e2129c8c39bbf693e993a24ff24b475485560286ce624faeb5aa",
+      "vcsl-kawai/instrument-parameters.json": "9ccd56741f2a32eacc46b88c020eff90760f204d98cfae642a632d68730ec207",
+      "vcsl-kawai/licenses/VCSL-CC0.txt": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "vcsl-kawai/licenses/VCSL-README.md": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9",
+      "vcsl-kawai/processing_recipe.md": "71a2a7887c7d4fde260ef7b5ca25fec7c31d9fee95871d8401bbb41fe3afcdbb",
+      "vcsl-kawai/qa_audio.md": "9d5bccf955e8009f78a84d245eea5776577aff4bc156a62f0e42ace6236ca3cb",
+      "vcsl-kawai/source_records.json": "039ef32e92b5e8ef5d0b8904099b4f33b3e812595f37f3e86af029ef7c17d01b",
+      "vcsl-kawai/trial.sf2": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1",
+      "vcsl-steinway-b/audio.manifest.json": "550ecdba04bc9b95096a4068ba7909d1e1be070b9412a7a1b1d4a15f32c29674",
+      "vcsl-steinway-b/instrument-parameters.json": "f74079190433121ba699b26e6ced011b053b7362c003b21cadcf2fd22965b770",
+      "vcsl-steinway-b/licenses/VCSL-CC0.txt": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "vcsl-steinway-b/licenses/VCSL-README.md": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9",
+      "vcsl-steinway-b/processing_recipe.md": "71a2a7887c7d4fde260ef7b5ca25fec7c31d9fee95871d8401bbb41fe3afcdbb",
+      "vcsl-steinway-b/qa_audio.md": "f3653c6b1055bd509fb5ed99f81bfab007084783f5e48721c6d97e3f979dedce",
+      "vcsl-steinway-b/source_records.json": "2edd5a4d220ed648e358fd1bf2c380b7355399e99ec0ee6ec0887264101204a6",
+      "vcsl-steinway-b/trial.sf2": "8261dac642441fcf78a5946e96f898119ebd609227590c8638f148dea5b7f359"
+    }
+  },
+  "samplerLoadStatus": "NOT_TESTED",
+  "hardwareAndListening": "NOT_TESTED",
+  "full64NoteCoverage": false,
+  "newAudioDownloads": 0
+}

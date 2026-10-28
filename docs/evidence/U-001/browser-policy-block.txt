@@ -1,0 +1,1 @@
+2026-10-28: cua.createBrowserTab(iab, local file:// preview.html) rejected by browser URL policy. Allowed protocols were http/https; file protocol denied. No workaround, alternate browser or local-server route was attempted. Browser layout/interaction/paint verification remains UNTESTED. Continued source logic testing and previously authorized native artifact rendering only.

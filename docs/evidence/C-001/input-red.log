@@ -1,0 +1,44 @@
+[0/1] Planning build
+Building for debugging...
+[0/8] Write sources
+[2/8] Write swift-version--58304C5D6DBC2206.txt
+[4/11] Compiling PianoMac SDKKeys.swift
+[5/11] Compiling PianoMac InputNormalizer.swift
+[6/11] Emitting module PianoMac
+[6/11] Write Objects.LinkFileList
+[7/13] Linking TypingPianoProbe
+[9/13] Compiling PianoMacTests InputNormalizerTests.swift
+[10/13] Emitting module PianoMacTests
+[10/13] Applying TypingPianoProbe
+[11/13] Write Objects.LinkFileList
+[12/13] Linking TypingPianoProbePackageTests
+Build complete! (2.34s)
+Test Suite 'Selected tests' started at 2026-10-28 13:54:12.068.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 13:54:12.070.
+Test Suite 'InputNormalizerTests' started at 2026-10-28 13:54:12.070.
+Test Case '-[PianoMacTests.InputNormalizerTests testFiltersAutoRepeatAndUnexpectedKinds]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:33: error: -[PianoMacTests.InputNormalizerTests testFiltersAutoRepeatAndUnexpectedKinds] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("keyA")")
+Test Case '-[PianoMacTests.InputNormalizerTests testFiltersAutoRepeatAndUnexpectedKinds]' failed (0.121 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:24: error: -[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(PianoCore.KeyPhase.down)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:25: error: -[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(PianoCore.KeyPhase.up)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:26: error: -[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(PianoCore.KeyPhase.pulse)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:27: error: -[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("unverified")")
+Test Case '-[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate]' failed (0.002 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testSDKResolvesAll64UniqueCodesExcludesTopRow]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testSDKResolvesAll64UniqueCodesExcludesTopRow]' passed (0.001 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:17: error: -[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(PianoCore.KeyPhase.down)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:18: error: -[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(PianoCore.KeyPhase.down)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:19: error: -[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(PianoCore.KeyPhase.up)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift:20: error: -[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(PianoCore.KeyPhase.up)")
+Test Case '-[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag]' failed (0.001 seconds).
+Test Suite 'InputNormalizerTests' failed at 2026-10-28 13:54:12.195.
+	 Executed 4 tests, with 9 failures (0 unexpected) in 0.125 (0.125) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 13:54:12.195.
+	 Executed 4 tests, with 9 failures (0 unexpected) in 0.125 (0.125) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 13:54:12.195.
+	 Executed 4 tests, with 9 failures (0 unexpected) in 0.125 (0.127) seconds
+Note: Some test targets reported failures:
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+  - TypingPianoProbePackageTests (XCTest)

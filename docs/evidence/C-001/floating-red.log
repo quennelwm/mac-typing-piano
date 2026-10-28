@@ -1,0 +1,57 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[1/7] Write swift-version--58304C5D6DBC2206.txt
+[3/9] Emitting module PianoCore
+[4/9] Compiling PianoCore Geometry.swift
+[5/20] Emitting module PianoCoreTests
+[6/20] Compiling PianoCoreTests ReducerTests.swift
+[7/20] Compiling PianoCoreTests MappingTests.swift
+[8/20] Compiling PianoCoreTests FloatingNoteTests.swift
+[9/20] Compiling PianoCoreTests GeometryAndDockTests.swift
+[10/20] Compiling PianoCoreTests CoordinatorTests.swift
+[11/20] Emitting module PianoMac
+[12/20] Compiling PianoMac SDKKeys.swift
+[13/20] Compiling PianoMac InputNormalizer.swift
+[14/20] Compiling PianoMac InputMonitor.swift
+[15/20] Compiling PianoMac PianoView.swift
+[15/20] Write Objects.LinkFileList
+[17/22] Emitting module PianoMacTests
+[18/22] Compiling PianoMacTests InputNormalizerTests.swift
+[18/22] Write Objects.LinkFileList
+[19/22] Linking TypingPianoProbe
+[20/22] Applying TypingPianoProbe
+[21/22] Linking TypingPianoProbePackageTests
+Build complete! (2.58s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 14:02:15.391.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 14:02:15.394.
+Test Suite 'FloatingNoteTests' started at 2026-10-28 14:02:15.394.
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:10: error: -[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:14: error: -[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance] : XCTAssertEqual failed: ("0") is not equal to ("2")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:17: error: -[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance] : XCTAssertNotNil failed
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' failed (0.119 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:32: error: -[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay] : XCTAssertGreaterThan failed: ("0") is not greater than ("0")
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' failed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:39: error: -[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise] : XCTUnwrap failed: expected non-nil value of type "FloatingNote"
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' failed (0.001 seconds).
+Test Suite 'FloatingNoteTests' failed at 2026-10-28 14:02:15.515.
+	 Executed 3 tests, with 5 failures (0 unexpected) in 0.121 (0.121) seconds
+Test Suite 'GeometryAndDockTests' started at 2026-10-28 14:02:15.515.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue]' passed (0.000 seconds).
+Test Suite 'GeometryAndDockTests' passed at 2026-10-28 14:02:15.517.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 14:02:15.517.
+	 Executed 6 tests, with 5 failures (0 unexpected) in 0.123 (0.123) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 14:02:15.517.
+	 Executed 6 tests, with 5 failures (0 unexpected) in 0.123 (0.126) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

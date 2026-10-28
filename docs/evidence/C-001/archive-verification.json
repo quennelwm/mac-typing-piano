@@ -1,0 +1,16 @@
+{
+  "archive": "Code/build/TypingPianoProbe.zip",
+  "byteSize": 547803,
+  "sha256": "d1f78052b5f45398cd5422b4ec7e94b7caff7ad9d986308b75de123a9d07008d",
+  "fileBytesEqualToApp": true,
+  "filesChecked": [
+    "TypingPianoProbe.app/Contents/_CodeSignature/CodeResources",
+    "TypingPianoProbe.app/Contents/MacOS/TypingPianoProbe",
+    "TypingPianoProbe.app/Contents/Resources/placeholder-original.sf2",
+    "TypingPianoProbe.app/Contents/Resources/keymap.ansi64.v0.1.json",
+    "TypingPianoProbe.app/Contents/Info.plist"
+  ],
+  "notarized": false,
+  "metadataIncluded": false,
+  "extractIntoDesktopMayReintroduceFinderInfo": true
+}

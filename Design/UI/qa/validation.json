@@ -1,0 +1,1742 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "canonical MIDI sequence",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "mapping source hash",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900: 38 white, 26 black, 64 unique keys",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/33: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/34: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/34: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/35: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/36: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/37: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/37: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/38: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/39: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/39: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/40: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/41: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/42: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/42: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/43: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/44: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/44: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/45: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/46: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/46: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/47: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/48: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/49: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/49: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/50: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/51: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/51: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/52: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/53: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/54: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/54: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/55: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/56: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/56: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/57: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/58: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/58: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/59: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/60: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/61: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/61: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/62: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/63: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/63: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/64: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/65: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/66: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/66: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/67: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/68: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/68: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/69: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/70: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/70: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/71: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/72: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/73: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/73: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/74: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/75: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/75: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/76: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/77: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/78: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/78: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/79: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/80: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/80: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/81: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/82: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/82: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/83: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/84: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/85: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/85: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/86: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/87: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/87: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/88: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/89: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/90: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/90: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/91: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/92: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/92: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/93: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/94: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/94: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/95: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900/96: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "900: real black grouping",
+      "status": "pass",
+      "detail": [
+        1,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "piano-900-rest@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-900-rest@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-900-single@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-900-single@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-900-multi@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-900-multi@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000: 38 white, 26 black, 64 unique keys",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/33: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/34: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/34: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/35: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/36: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/37: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/37: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/38: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/39: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/39: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/40: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/41: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/42: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/42: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/43: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/44: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/44: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/45: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/46: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/46: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/47: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/48: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/49: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/49: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/50: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/51: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/51: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/52: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/53: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/54: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/54: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/55: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/56: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/56: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/57: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/58: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/58: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/59: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/60: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/61: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/61: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/62: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/63: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/63: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/64: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/65: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/66: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/66: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/67: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/68: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/68: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/69: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/70: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/70: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/71: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/72: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/73: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/73: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/74: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/75: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/75: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/76: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/77: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/78: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/78: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/79: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/80: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/80: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/81: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/82: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/82: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/83: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/84: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/85: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/85: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/86: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/87: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/87: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/88: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/89: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/90: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/90: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/91: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/92: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/92: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/93: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/94: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/94: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/95: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000/96: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1000: real black grouping",
+      "status": "pass",
+      "detail": [
+        1,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "piano-1000-rest@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1000-rest@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1000-single@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1000-single@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1000-multi@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1000-multi@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100: 38 white, 26 black, 64 unique keys",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/33: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/34: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/34: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/35: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/36: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/37: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/37: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/38: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/39: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/39: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/40: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/41: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/42: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/42: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/43: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/44: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/44: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/45: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/46: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/46: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/47: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/48: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/49: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/49: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/50: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/51: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/51: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/52: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/53: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/54: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/54: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/55: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/56: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/56: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/57: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/58: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/58: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/59: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/60: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/61: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/61: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/62: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/63: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/63: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/64: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/65: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/66: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/66: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/67: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/68: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/68: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/69: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/70: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/70: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/71: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/72: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/73: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/73: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/74: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/75: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/75: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/76: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/77: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/78: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/78: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/79: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/80: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/80: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/81: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/82: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/82: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/83: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/84: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/85: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/85: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/86: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/87: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/87: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/88: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/89: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/90: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/90: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/91: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/92: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/92: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/93: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/94: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/94: black centered over neighboring white boundary",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/95: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100/96: mapping/color/label",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "1100: real black grouping",
+      "status": "pass",
+      "detail": [
+        1,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "piano-1100-rest@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1100-rest@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1100-single@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1100-single@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1100-multi@1x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "piano-1100-multi@2x.png: size/alpha",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "actual background pixels under every native glyph ink box: 4.5 target",
+      "status": "pass",
+      "detail": {
+        "widthPt": 900,
+        "whiteDown": true,
+        "blackDown": false,
+        "scale": 1,
+        "physicalKeyID": "bracketLeft",
+        "label": "[",
+        "ratio": 4.870337142333948
+      }
+    },
+    {
+      "name": "no white label covered by neighboring black face in all held combinations",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "native font/glyph/bounds checks",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "floating note bounds including halo in headroom",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "floating glyph exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "preview event logic",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "timeline cases and real monotonic duration",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "white-rest: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "white-rest: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "white-pressed: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "white-pressed: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "black-rest: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "black-rest: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "black-pressed: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "black-pressed: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "base: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "base: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "shadow: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "shadow: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-16-1x: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-16-1x: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-16-2x: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-16-2x: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-18-1x: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-18-1x: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-18-2x: file size/hash/no baked text",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-18-2x: provenance exists",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "floating-single.gif: one-shot under 1s",
+      "status": "pass",
+      "detail": {
+        "durationMs": 720,
+        "frames": 36
+      }
+    },
+    {
+      "name": "floating-multi.gif: one-shot under 1s",
+      "status": "pass",
+      "detail": {
+        "durationMs": 720,
+        "frames": 36
+      }
+    },
+    {
+      "name": "floating-labels-off.gif: one-shot under 1s",
+      "status": "pass",
+      "detail": {
+        "durationMs": 720,
+        "frames": 36
+      }
+    },
+    {
+      "name": "floating-reduced.gif: one-shot under 1s",
+      "status": "pass",
+      "detail": {
+        "durationMs": 720,
+        "frames": 11
+      }
+    },
+    {
+      "name": "label toggle/default retained",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu icon glyphs in all size/scale/appearance specimens",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-16@2x.png: transparent margin",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-18@2x.png: transparent margin",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-18@1x.png: transparent margin",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "menu-note-16@1x.png: transparent margin",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "name": "candidate not registered as ready",
+      "status": "pass",
+      "detail": null
+    }
+  ],
+  "contrastSampleCount": 1680,
+  "minimumContrast": {
+    "widthPt": 900,
+    "whiteDown": true,
+    "blackDown": false,
+    "scale": 1,
+    "physicalKeyID": "bracketLeft",
+    "label": "[",
+    "ratio": 4.870337142333948
+  },
+  "scope": "Native rendering pixels + geometric/manifest/timeline evidence; no browser, production UI or human target-screen acceptance."
+}

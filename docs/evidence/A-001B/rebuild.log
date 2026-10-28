@@ -1,0 +1,42 @@
+{
+  "totalBankBytes": 5318158,
+  "trials": [
+    {
+      "id": "vcsl-kawai",
+      "bankFile": "vcsl-kawai/trial.sf2",
+      "byteSize": 2668204,
+      "sha256": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1",
+      "coverageMIDI": [
+        33,
+        34,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ]
+    },
+    {
+      "id": "vcsl-steinway-b",
+      "bankFile": "vcsl-steinway-b/trial.sf2",
+      "byteSize": 2649954,
+      "sha256": "8261dac642441fcf78a5946e96f898119ebd609227590c8638f148dea5b7f359",
+      "coverageMIDI": [
+        33,
+        34,
+        35,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ]
+    }
+  ]
+}

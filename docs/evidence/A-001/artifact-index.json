@@ -1,0 +1,289 @@
+{
+  "task": "A-001",
+  "date": "2026-10-28",
+  "initialTaskCommit": "6c25ab04fc4fc6254a1762728dd0401f8570a6ff",
+  "headObservedAtHandoff": "67d633a10fd905b3c4063edc226996e26b79373d",
+  "gitWritesByAudioConversation": false,
+  "files": [
+    {
+      "path": "Design/Audio/audition-events.json",
+      "byteSize": 8295,
+      "sha256": "cfb2b5e89ef16a62dcf567e20d232005c42838e38637f65092898a33e74bfc7f"
+    },
+    {
+      "path": "Design/Audio/candidate_comparison.md",
+      "byteSize": 2873,
+      "sha256": "b067a9bdf9503293bb714185a78b3e54f596dab9d2f0d26918b8392d61c1a845"
+    },
+    {
+      "path": "Design/Audio/format-proposal.md",
+      "byteSize": 4204,
+      "sha256": "0116847f8b93d5a3ecdad766ed2a42368d4d18f045cc1713251207dce7e612b0"
+    },
+    {
+      "path": "Design/Audio/processing_recipe.md",
+      "byteSize": 4571,
+      "sha256": "252e7485e1acb27124289f5ecf277d8c316f5bbeb3973c5e3300b646efb92c1c"
+    },
+    {
+      "path": "Design/Audio/proposed-zones.json",
+      "byteSize": 31174,
+      "sha256": "ea9e0be980ff22de281063b94ec904380e261db5f868a89deddc0f33f54b17e5"
+    },
+    {
+      "path": "Design/Audio/scripts/build_candidates.py",
+      "byteSize": 11665,
+      "sha256": "3a47e0e0578680e5d25e73fc6d8b58f0e5a6d01737e5511459993d4a1867ddce"
+    },
+    {
+      "path": "Design/Audio/scripts/fetch_candidates.py",
+      "byteSize": 2746,
+      "sha256": "06c7fffeece5ec1ca44117a92ab5fb7564ec3925cdcce9bf279df2073a0ff708"
+    },
+    {
+      "path": "Design/Audio/scripts/package_candidates.py",
+      "byteSize": 12835,
+      "sha256": "bf5c36dd21db1c1540a41e4405549306f9e29dbd49cdfa8b7da93ea47227d93f"
+    },
+    {
+      "path": "Design/Audio/scripts/validate_candidates.py",
+      "byteSize": 6611,
+      "sha256": "d248bb7a8aa09b72b8f8d5f2a09634c1b4acb4ec637656b323842a702f565f55"
+    },
+    {
+      "path": "Design/Audio/source_evidence/LICENSE",
+      "byteSize": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "Design/Audio/source_evidence/README.md",
+      "byteSize": 4365,
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9"
+    },
+    {
+      "path": "Design/Audio/source_evidence/download-ledger.json",
+      "byteSize": 8959,
+      "sha256": "f20a58c73da80c71a4fc7d99c8417f49c8359f9af3d690e74506f479f68feab2"
+    },
+    {
+      "path": "Design/Audio/source_evidence/vcsl-commit.json",
+      "byteSize": 2100,
+      "sha256": "2c9776cf973cb670813e60e36420fc67a9a5003c2cf2921ace5af9bbf4af58fe"
+    },
+    {
+      "path": "Design/Audio/source_evidence/vcsl-tree.json",
+      "byteSize": 1553479,
+      "sha256": "075d9a4db27230cc712d78814c1ad7c5053a80fef9964846d2a1c4f2742244e6"
+    },
+    {
+      "path": "Design/Audio/source_inventory.md",
+      "byteSize": 3503,
+      "sha256": "fedfb2ab2798ff2946a20203f9a037a66e6009b187ac7d7f38e699836402c487"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/audio.manifest.json",
+      "byteSize": 5386,
+      "sha256": "e4e3a203c0aad4ff591fee40603123584129ef930063ac7ad13de3d448ac628c"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/audition.wav",
+      "byteSize": 8064044,
+      "sha256": "60d64e0b85d0d75874fc8dbfed646287ff4c7b115d18286591024d6c89941560"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/licenses/VCSL-CC0.txt",
+      "byteSize": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/licenses/VCSL-README.md",
+      "byteSize": 4365,
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "byteSize": 5116608,
+      "sha256": "ed2267bd3ae6a319e2143f5c09cbbe72f57c095d431e586f8d780223255de761"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "byteSize": 5217440,
+      "sha256": "3fb2818cbf799cebcd91798f949cacb01e287e12a33158c6520bf381c73f4689"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "byteSize": 5268340,
+      "sha256": "91ab158f01071f29375bb7593304dbb54e240f0db07374fe1fc630ca1b573b82"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "byteSize": 4283328,
+      "sha256": "fce33012fe900309abafd1a4d6d254d142b0cbf33834c7a72c2fd1ada4e746e1"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "byteSize": 2613976,
+      "sha256": "69845de40a38ed6501746520f9f385ae56200a4372faed48178e64a32a75e58c"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "byteSize": 666520,
+      "sha256": "25464db09fe4a25cac979c507fef3efd507cc43369761f9e27488330e6e2a264"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "byteSize": 428708,
+      "sha256": "a5c4ada1e35cc5c7af28b2ef4b379ed4d1b8d31912fa75c71f70edd85f4b69a2"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "byteSize": 4547640,
+      "sha256": "c26ac28fca64b6aaa3e2733673e9217ca378652999e2621cabbb1bcb53254500"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/originals/Legacy.txt",
+      "byteSize": 7,
+      "sha256": "a31d65dc36c05748b8f7b3983fcbc00ba9214b4899e8b7e3f9d675cb27beeae3"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/processing_recipe.md",
+      "byteSize": 4571,
+      "sha256": "252e7485e1acb27124289f5ecf277d8c316f5bbeb3973c5e3300b646efb92c1c"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/qa_audio.md",
+      "byteSize": 3640,
+      "sha256": "266d96091affb6534419142676ff16a5bd6df0012942af66012aa12ab692d75d"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/qa_metrics.json",
+      "byteSize": 9259,
+      "sha256": "c5a7565c93f68aeb1d94665f51d303c1dba60634fdf3a607fc59e0adfea0957b"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/samples/piano_m033_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "f482eb1e3fc98c54d41c722ca6c366ded4f490a7c942190126fde1600f4575fe"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/samples/piano_m042_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "409860aa43b2dc11258b8815c769c12c884aa26aac31f31ff561090e5223af25"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/samples/piano_m060_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "a93f5f0cf7ab76dcaddab1d4833a0e1e31e1564bdd8051f65711de01c5fcd9a1"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/samples/piano_m096_v064_rr01.wav",
+      "byteSize": 1088168,
+      "sha256": "91eebfb4b04031d9dbe024d587a4672fb0d1605da7ad2c9d7895e5097ffcf578"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/source_records.json",
+      "byteSize": 5871,
+      "sha256": "b8ef326ba96224d57f4cf14b785f9208b8cb057cd97c02a26c13752bec948ea8"
+    },
+    {
+      "path": "Design/Audio/vcsl-kawai/stress-preview.wav",
+      "byteSize": 576044,
+      "sha256": "f27c2170dd771d81b1637f911228db6e2cc17a2705c4bba7474ed5e728ad190a"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/audio.manifest.json",
+      "byteSize": 4587,
+      "sha256": "fef008462c5e39c3026ff5625a1c2b1eb4a6ac1b48d08c96635a0b7df95dce62"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/audition.wav",
+      "byteSize": 8064044,
+      "sha256": "1d0cdb2b5f4204449d9d6b9f70b6b3dc5c8b6a1534eb45edc26f574bdb98362a"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/licenses/VCSL-CC0.txt",
+      "byteSize": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/licenses/VCSL-README.md",
+      "byteSize": 4365,
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "byteSize": 6738508,
+      "sha256": "0f91c0d350c12f574f284c23a92a44348216218c49430c4698c7d505955fdb4f"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "byteSize": 2260822,
+      "sha256": "9c2020587943a86dec7a8b7178cdac1c254c4f3dfc016bb27acdef1af292827f"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "byteSize": 949450,
+      "sha256": "23d50d834b7e6780899d5e2a62c4c2ba425ac129ef80a3b3bc066038ba2ee755"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "byteSize": 4332820,
+      "sha256": "3b4c07adb641f09d9fa2630c61c65e17ac7e6fa383661892464957138d03f7b8"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/originals/NORMALIZED.txt",
+      "byteSize": 190,
+      "sha256": "7ae47ef3ae3496c79d32a6814de23c1ed051cf8f8996c67c88cde9a4a0943289"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/processing_recipe.md",
+      "byteSize": 4571,
+      "sha256": "252e7485e1acb27124289f5ecf277d8c316f5bbeb3973c5e3300b646efb92c1c"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/qa_audio.md",
+      "byteSize": 3593,
+      "sha256": "395d93f4f2eea7fc47dd87dd9e542fd4afca00e11c54bc862a95319794ef6fe1"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/qa_metrics.json",
+      "byteSize": 9451,
+      "sha256": "b72f09fbf43dd2ad7a78b43569947cc4c6baba342d14cbfc0a7ba348aa0c0c62"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/samples/piano_m034_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "464b50a60ea702e40898a7fa181f3dfc5558bca77066698b7c39ea5b1eb33eff"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/samples/piano_m042_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "5c7c7d8bdd62379830f04f5fd26a269530159a7f7d2adf1bdbf9704c86c0c663"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/samples/piano_m060_v064_rr01.wav",
+      "byteSize": 2304044,
+      "sha256": "5ce865efc31dac8597a9129212336b0f9620fdbb6e51d32c0bc70e7f198c6c32"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/samples/piano_m096_v064_rr01.wav",
+      "byteSize": 1033406,
+      "sha256": "e9edf14f696e2c7d5141e13de09ec010635e37ccf64ff5c5f6dc134790470254"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/source_records.json",
+      "byteSize": 3508,
+      "sha256": "bc2c9d25aaba06d23148af400b98276b30e8cf6ad9b30e28e6e099dc4e3f6b5e"
+    },
+    {
+      "path": "Design/Audio/vcsl-steinway-b/stress-preview.wav",
+      "byteSize": 576044,
+      "sha256": "9378503afd41917631c777f1bbc6d87bd2b32e7fe7c301823a69f1c31db2892d"
+    },
+    {
+      "path": "docs/handoffs/A-001.md",
+      "byteSize": 7217,
+      "sha256": "1647db4eba2eb2db0d74034ad6e3d1fa8665e0151a07644b972fa013366796a1"
+    }
+  ]
+}

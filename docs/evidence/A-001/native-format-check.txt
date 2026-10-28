@@ -1,0 +1,215 @@
+vcsl-kawai/samples/piano_m033_v064_rr01.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-kawai/samples/piano_m033_v064_rr01.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 8.000000 sec
+audio bytes: 2304000
+audio packets: 384000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-kawai/samples/piano_m042_v064_rr01.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-kawai/samples/piano_m042_v064_rr01.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 8.000000 sec
+audio bytes: 2304000
+audio packets: 384000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-kawai/samples/piano_m060_v064_rr01.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-kawai/samples/piano_m060_v064_rr01.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 8.000000 sec
+audio bytes: 2304000
+audio packets: 384000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-kawai/samples/piano_m096_v064_rr01.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-kawai/samples/piano_m096_v064_rr01.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 3.778208 sec
+audio bytes: 1088124
+audio packets: 181354
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-kawai/audition.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-kawai/audition.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 28.000000 sec
+audio bytes: 8064000
+audio packets: 1344000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-kawai/stress-preview.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-kawai/stress-preview.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 2.000000 sec
+audio bytes: 576000
+audio packets: 96000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-steinway-b/samples/piano_m034_v064_rr01.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-steinway-b/samples/piano_m034_v064_rr01.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 8.000000 sec
+audio bytes: 2304000
+audio packets: 384000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-steinway-b/samples/piano_m042_v064_rr01.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-steinway-b/samples/piano_m042_v064_rr01.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 8.000000 sec
+audio bytes: 2304000
+audio packets: 384000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-steinway-b/samples/piano_m060_v064_rr01.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-steinway-b/samples/piano_m060_v064_rr01.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 8.000000 sec
+audio bytes: 2304000
+audio packets: 384000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-steinway-b/samples/piano_m096_v064_rr01.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-steinway-b/samples/piano_m096_v064_rr01.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 3.588062 sec
+audio bytes: 1033362
+audio packets: 172227
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-steinway-b/audition.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-steinway-b/audition.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 28.000000 sec
+audio bytes: 8064000
+audio packets: 1344000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----
+
+vcsl-steinway-b/stress-preview.wav
+File:           /Users/wuming/Desktop/键盘钢琴/Design/Audio/vcsl-steinway-b/stress-preview.wav
+File type ID:   WAVE
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, lpcm (0x0000000C) 24-bit little-endian signed integer
+                no channel layout.
+estimated duration: 2.000000 sec
+audio bytes: 576000
+audio packets: 96000
+bit rate: 2304000 bits per second
+packet size upper bound: 6
+maximum packet size: 6
+audio data file offset: 44
+optimized
+source bit depth: I24
+----

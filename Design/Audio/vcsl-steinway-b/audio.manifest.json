@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "audioPackVersion": "a001-candidates.0.1",
+  "artifactState": "candidate",
+  "instrumentName": "VCSL Steinway B",
+  "runtimeFormat": null,
+  "targetEngine": "AVAudioUnitSampler_candidate_UNTESTED",
+  "noteNaming": "C4=MIDI60",
+  "midiNoteRange": {
+    "min": 33,
+    "max": 96
+  },
+  "coverageMIDI": [
+    34,
+    42,
+    60,
+    96
+  ],
+  "files": [
+    {
+      "path": "audition.wav",
+      "sha256": "1d0cdb2b5f4204449d9d6b9f70b6b3dc5c8b6a1534eb45edc26f574bdb98362a",
+      "byteSize": 8064044,
+      "role": "qa"
+    },
+    {
+      "path": "licenses/VCSL-CC0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "byteSize": 7048,
+      "role": "license"
+    },
+    {
+      "path": "licenses/VCSL-README.md",
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9",
+      "byteSize": 4365,
+      "role": "license"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "sha256": "0f91c0d350c12f574f284c23a92a44348216218c49430c4698c7d505955fdb4f",
+      "byteSize": 6738508,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "sha256": "9c2020587943a86dec7a8b7178cdac1c254c4f3dfc016bb27acdef1af292827f",
+      "byteSize": 2260822,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "sha256": "23d50d834b7e6780899d5e2a62c4c2ba425ac129ef80a3b3bc066038ba2ee755",
+      "byteSize": 949450,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "sha256": "3b4c07adb641f09d9fa2630c61c65e17ac7e6fa383661892464957138d03f7b8",
+      "byteSize": 4332820,
+      "role": "sample"
+    },
+    {
+      "path": "originals/NORMALIZED.txt",
+      "sha256": "7ae47ef3ae3496c79d32a6814de23c1ed051cf8f8996c67c88cde9a4a0943289",
+      "byteSize": 190,
+      "role": "qa"
+    },
+    {
+      "path": "processing_recipe.md",
+      "sha256": "252e7485e1acb27124289f5ecf277d8c316f5bbeb3973c5e3300b646efb92c1c",
+      "byteSize": 4571,
+      "role": "qa"
+    },
+    {
+      "path": "qa_audio.md",
+      "sha256": "395d93f4f2eea7fc47dd87dd9e542fd4afca00e11c54bc862a95319794ef6fe1",
+      "byteSize": 3593,
+      "role": "qa"
+    },
+    {
+      "path": "qa_metrics.json",
+      "sha256": "b72f09fbf43dd2ad7a78b43569947cc4c6baba342d14cbfc0a7ba348aa0c0c62",
+      "byteSize": 9451,
+      "role": "qa"
+    },
+    {
+      "path": "samples/piano_m034_v064_rr01.wav",
+      "sha256": "464b50a60ea702e40898a7fa181f3dfc5558bca77066698b7c39ea5b1eb33eff",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m042_v064_rr01.wav",
+      "sha256": "5c7c7d8bdd62379830f04f5fd26a269530159a7f7d2adf1bdbf9704c86c0c663",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m060_v064_rr01.wav",
+      "sha256": "5ce865efc31dac8597a9129212336b0f9620fdbb6e51d32c0bc70e7f198c6c32",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m096_v064_rr01.wav",
+      "sha256": "e9edf14f696e2c7d5141e13de09ec010635e37ccf64ff5c5f6dc134790470254",
+      "byteSize": 1033406,
+      "role": "sample"
+    },
+    {
+      "path": "source_records.json",
+      "sha256": "bc2c9d25aaba06d23148af400b98276b30e8cf6ad9b30e28e6e099dc4e3f6b5e",
+      "byteSize": 3508,
+      "role": "qa"
+    },
+    {
+      "path": "stress-preview.wav",
+      "sha256": "9378503afd41917631c777f1bbc6d87bd2b32e7fe7c301823a69f1c31db2892d",
+      "byteSize": 576044,
+      "role": "qa"
+    }
+  ],
+  "instrument": null,
+  "licenseRecords": [
+    {
+      "sourceURL": "https://github.com/sgossner/VCSL/tree/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "author": "Versilian Studios LLC",
+      "sourceVersion": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "licenseID": "CC0-1.0",
+      "licenseFile": "licenses/VCSL-CC0.txt",
+      "modifications": "Original WAV unchanged; selected roots resampled to 48kHz PCM24, max8s, 80ms tail fade, one common gain per candidate. Offline audition with <=3-semitone shifts, synthetic events and 500ms release. See recipe."
+    }
+  ],
+  "processingRecipePath": "processing_recipe.md",
+  "qaReportPath": "qa_audio.md",
+  "readinessNote": "Candidate only. coverageMIDI lists four prepared sample roots, not validated engine/64-note coverage. Extra originals are diagnostic evidence. No SF2/DLS bank or runtime instrument configured. Subjective listening and engine QA NOT_TESTED. Proposed future zones are outside this manifest."
+}

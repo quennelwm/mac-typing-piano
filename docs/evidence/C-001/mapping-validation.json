@@ -1,0 +1,16 @@
+{
+  "schema": "1.0.0",
+  "mappingVersion": "ansi64-draft.0.1",
+  "status": "PASS",
+  "count": 64,
+  "midiRange": [
+    33,
+    96
+  ],
+  "colors": {
+    "black": 26,
+    "white": 38
+  },
+  "sha256": "147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b",
+  "realCaptureTested": false
+}

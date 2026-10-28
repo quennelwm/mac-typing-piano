@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001/audio-structure-check.py", line 35, in <module>
+    records = chunks(12, len(bank))
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001/audio-structure-check.py", line 29, in chunks
+    found.extend(chunks(start+12, start+8+size))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-001/audio-structure-check.py", line 25, in chunks
+    assert size % 2 == 0, f"SF2 {name} body size must include zero terminators to reach even length: {size}"
+AssertionError: SF2 IENG body size must include zero terminators to reach even length: 29

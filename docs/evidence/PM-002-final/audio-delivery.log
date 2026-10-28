@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 72,
+  "failures": [],
+  "originalFilesUnchanged": 56,
+  "rebuiltFilesByteIdentical": 17
+}

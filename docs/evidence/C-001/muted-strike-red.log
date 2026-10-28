@@ -1,0 +1,31 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/8] Emitting module PianoCore
+[5/8] Compiling PianoCore Coordinator.swift
+[5/12] Write Objects.LinkFileList
+[7/13] Emitting module PianoMacTests
+[8/13] Compiling PianoCoreTests FloatingNoteTests.swift
+[9/13] Emitting module PianoCoreTests
+[10/13] Compiling PianoCoreTests CoordinatorTests.swift
+[10/14] Write Objects.LinkFileList
+[11/14] Linking TypingPianoProbe
+[12/14] Applying TypingPianoProbe
+[13/14] Linking TypingPianoProbePackageTests
+Build complete! (2.20s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 14:02:48.401.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 14:02:48.404.
+Test Suite 'FloatingNoteTests' started at 2026-10-28 14:02:48.404.
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:10: error: -[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels] : XCTUnwrap failed: expected non-nil value of type "NoteEvent"
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' failed (0.152 seconds).
+Test Suite 'FloatingNoteTests' failed at 2026-10-28 14:02:48.556.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.152 (0.152) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 14:02:48.556.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.152 (0.152) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 14:02:48.556.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.152 (0.155) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

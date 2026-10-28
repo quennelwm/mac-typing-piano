@@ -1,0 +1,349 @@
+{
+  "origin": "hand-authored synthetic events; no keyboard collection",
+  "mappingVersion": "ansi64-draft.0.1",
+  "durationSeconds": 28,
+  "events": [
+    {
+      "timeSeconds": 0,
+      "midiNote": 33,
+      "holdSeconds": 1,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "low-mid-high",
+      "physicalKeyID": "bracketLeft"
+    },
+    {
+      "timeSeconds": 2.5,
+      "midiNote": 60,
+      "holdSeconds": 1,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "low-mid-high",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 5,
+      "midiNote": 96,
+      "holdSeconds": 1,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "low-mid-high",
+      "physicalKeyID": "slash"
+    },
+    {
+      "timeSeconds": 7,
+      "midiNote": 60,
+      "holdSeconds": 0.05,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "short-1s-5s",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 8,
+      "midiNote": 60,
+      "holdSeconds": 1,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "short-1s-5s",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 10,
+      "midiNote": 60,
+      "holdSeconds": 5,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "short-1s-5s",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 16,
+      "midiNote": 33,
+      "holdSeconds": 0.2,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "four-note-chord",
+      "physicalKeyID": "bracketLeft"
+    },
+    {
+      "timeSeconds": 16,
+      "midiNote": 42,
+      "holdSeconds": 0.2,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "four-note-chord",
+      "physicalKeyID": "commandLeft"
+    },
+    {
+      "timeSeconds": 16,
+      "midiNote": 60,
+      "holdSeconds": 0.2,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "four-note-chord",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 16,
+      "midiNote": 96,
+      "holdSeconds": 0.2,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "four-note-chord",
+      "physicalKeyID": "slash"
+    },
+    {
+      "timeSeconds": 18.0,
+      "midiNote": 60,
+      "holdSeconds": 0.04,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "rapid-retrigger-overlapping-tails",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 18.1,
+      "midiNote": 60,
+      "holdSeconds": 0.04,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "rapid-retrigger-overlapping-tails",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 18.2,
+      "midiNote": 60,
+      "holdSeconds": 0.04,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "rapid-retrigger-overlapping-tails",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 18.3,
+      "midiNote": 60,
+      "holdSeconds": 0.04,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "rapid-retrigger-overlapping-tails",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 18.4,
+      "midiNote": 60,
+      "holdSeconds": 0.04,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "rapid-retrigger-overlapping-tails",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 18.5,
+      "midiNote": 60,
+      "holdSeconds": 0.04,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "rapid-retrigger-overlapping-tails",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 18.6,
+      "midiNote": 60,
+      "holdSeconds": 0.04,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "rapid-retrigger-overlapping-tails",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 18.7,
+      "midiNote": 60,
+      "holdSeconds": 0.04,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "rapid-retrigger-overlapping-tails",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 20,
+      "midiNote": 42,
+      "holdSeconds": 1.2,
+      "releaseSeconds": 0.5,
+      "velocity": 48,
+      "section": "synthetic-command-c-v-c",
+      "physicalKeyID": "commandLeft"
+    },
+    {
+      "timeSeconds": 20.1,
+      "midiNote": 43,
+      "holdSeconds": 0.1,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-command-c-v-c",
+      "physicalKeyID": "keyC"
+    },
+    {
+      "timeSeconds": 20.45,
+      "midiNote": 45,
+      "holdSeconds": 0.1,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-command-c-v-c",
+      "physicalKeyID": "keyV"
+    },
+    {
+      "timeSeconds": 20.8,
+      "midiNote": 43,
+      "holdSeconds": 0.1,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-command-c-v-c",
+      "physicalKeyID": "keyC"
+    },
+    {
+      "timeSeconds": 23.0,
+      "midiNote": 33,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "bracketLeft"
+    },
+    {
+      "timeSeconds": 23.1,
+      "midiNote": 35,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "bracketRight"
+    },
+    {
+      "timeSeconds": 23.2,
+      "midiNote": 60,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 23.3,
+      "midiNote": 62,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "keyH"
+    },
+    {
+      "timeSeconds": 23.4,
+      "midiNote": 94,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "arrowRight"
+    },
+    {
+      "timeSeconds": 23.5,
+      "midiNote": 96,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "slash"
+    },
+    {
+      "timeSeconds": 23.6,
+      "midiNote": 59,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "keyG"
+    },
+    {
+      "timeSeconds": 23.7,
+      "midiNote": 60,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 23.8,
+      "midiNote": 33,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "bracketLeft"
+    },
+    {
+      "timeSeconds": 23.9,
+      "midiNote": 35,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "bracketRight"
+    },
+    {
+      "timeSeconds": 24.0,
+      "midiNote": 60,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "space"
+    },
+    {
+      "timeSeconds": 24.1,
+      "midiNote": 62,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "keyH"
+    },
+    {
+      "timeSeconds": 24.2,
+      "midiNote": 94,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "arrowRight"
+    },
+    {
+      "timeSeconds": 24.3,
+      "midiNote": 96,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "slash"
+    },
+    {
+      "timeSeconds": 24.4,
+      "midiNote": 59,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "keyG"
+    },
+    {
+      "timeSeconds": 24.5,
+      "midiNote": 60,
+      "holdSeconds": 0.045,
+      "releaseSeconds": 0.5,
+      "velocity": 64,
+      "section": "synthetic-fast-typing",
+      "physicalKeyID": "space"
+    }
+  ]
+}

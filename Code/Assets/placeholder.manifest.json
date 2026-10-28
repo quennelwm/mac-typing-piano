@@ -1,0 +1,59 @@
+{
+  "artifactState": "probe-placeholder-not-approved",
+  "format": "SF2 2.1",
+  "filename": "placeholder-original.sf2",
+  "sha256": "ded7747105075d3b5ed95fed7a0453f638dd27882b80defd1fcc7062c4c700fb",
+  "byteSize": 530774,
+  "source": "Original analytic synthesis by Code/Scripts/generate_placeholder.py; no external audio",
+  "licenseID": "CC0-1.0",
+  "licenseFile": "PLACEHOLDER-LICENSE.txt",
+  "noteRange": {
+    "lowMIDI": 33,
+    "highMIDI": 96
+  },
+  "instrument": {
+    "program": 0,
+    "bankMSB": 121,
+    "bankLSB": 0
+  },
+  "sampleRate": 22050,
+  "sampleBits": 16,
+  "sampleChannels": 1,
+  "sampleSeconds": 2.0,
+  "loop": false,
+  "releaseTimecents": -1382,
+  "releaseSecondsEncoded": 0.45010494920905475,
+  "zones": [
+    {
+      "rootMIDI": 36,
+      "lowMIDI": 33,
+      "highMIDI": 41
+    },
+    {
+      "rootMIDI": 48,
+      "lowMIDI": 42,
+      "highMIDI": 53
+    },
+    {
+      "rootMIDI": 60,
+      "lowMIDI": 54,
+      "highMIDI": 65
+    },
+    {
+      "rootMIDI": 72,
+      "lowMIDI": 66,
+      "highMIDI": 77
+    },
+    {
+      "rootMIDI": 84,
+      "lowMIDI": 78,
+      "highMIDI": 89
+    },
+    {
+      "rootMIDI": 96,
+      "lowMIDI": 90,
+      "highMIDI": 96
+    }
+  ],
+  "qa": "See docs/evidence/C-001/audio-format-note.md and audio test logs; no listening or hardware acceptance"
+}

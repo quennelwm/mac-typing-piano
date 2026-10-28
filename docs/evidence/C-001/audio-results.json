@@ -1,0 +1,93 @@
+{
+  "task": "C-001 audio helper",
+  "executedAtLocal": "2026-10-28 13:57 Asia/Shanghai",
+  "environment": {
+    "macOS": "27.2",
+    "build": "26B123",
+    "architecture": "arm64",
+    "hardwareModel": "MacBookPro18,3",
+    "chip": "Apple M1 Pro",
+    "swift": "Apple Swift 6.4; package language mode v5",
+    "minimumDeploymentCandidate": "macOS14; older systems not tested"
+  },
+  "command": "swift test --build-system native --package-path Code --filter PianoAudioTests",
+  "testCount": 8,
+  "failureCount": 0,
+  "log": "docs/evidence/C-001/audio-green.log",
+  "asset": {
+    "path": "Code/Assets/placeholder-original.sf2",
+    "byteSize": 530774,
+    "sha256": "ded7747105075d3b5ed95fed7a0453f638dd27882b80defd1fcc7062c4c700fb",
+    "state": "original synthetic probe placeholder; not approved piano"
+  },
+  "renderer": {
+    "engine": "AVAudioEngine + AVAudioUnitSampler",
+    "manualMode": "offline",
+    "sampleRate": 48000,
+    "channels": 1,
+    "gain": 0.08,
+    "program": 0,
+    "bankMSB": 121,
+    "bankLSB": 0
+  },
+  "measurements": [
+    {
+      "chord_note_commands": 64.0,
+      "velocity": 127.0,
+      "gain": 0.08,
+      "peak": 0.1382335,
+      "rms": 0.02630807394645784
+    },
+    {
+      "coverage": 64.0,
+      "minimum_peak": 0.0024267696,
+      "maximum_peak": 0.0024737462
+    },
+    {
+      "release_early_peak": 0.0019017064,
+      "release_after_800ms_peak": 0.0,
+      "last_frame_above_1e-7_seconds": 0.3595
+    },
+    {
+      "panic_post_render_silent": true,
+      "next_strike_nonzero": true
+    },
+    {
+      "retrigger_hz": 10.0,
+      "strikes": 100.0,
+      "max_peak": 0.0027894115
+    },
+    {
+      "hold_seconds": 10.0,
+      "early_peak": 0.0024724924,
+      "final_peak": 0.0
+    }
+  ],
+  "hardwarePlaybackExecuted": false,
+  "actualKeyInputCaptured": false,
+  "audioAssetDownloads": false,
+  "unverified": [
+    "Listening/timbre",
+    "Hardware output and acoustic latency",
+    "Bluetooth",
+    "Physical audio device change recovery",
+    "64 independently retained sampler voices",
+    "60-minute use",
+    "Official audio pack acceptance"
+  ],
+  "notes": [
+    "64-note chord measures 64 submitted distinct noteOn commands and their mixed output, not internal voice count.",
+    "The release end at 0.3595s is a 1e-7 digital amplitude threshold in this fixture; SF2 release encodes 0.45010494920905475s.",
+    "SF2 INFO even string-length correction was tested asset-only against unchanged compiled engine."
+  ],
+  "CR003": {
+    "testLog": "all-tests.log",
+    "audioTestCount": 9,
+    "appGainDefault": 0.08,
+    "appGainMaximum": 0.16,
+    "maximumGain64NoteChordPeak": 0.276467,
+    "zeroGainOutputPeak": 0.0,
+    "zeroBehavior": "panic + suppress new sampler strikes; input/visual independent; no held-note replay",
+    "hardwareOutput": "NOT_TESTED"
+  }
+}

@@ -1,0 +1,67 @@
+[0/1] Planning build
+Building for debugging...
+[0/8] Write sources
+[2/8] Write swift-version--58304C5D6DBC2206.txt
+[4/11] Compiling PianoCore Geometry.swift
+[5/11] Compiling PianoCore DockOwnership.swift
+[6/11] Emitting module PianoCore
+[7/20] Compiling PianoCoreTests MappingTests.swift
+[8/20] Emitting module PianoCoreTests
+[9/20] Compiling PianoCoreTests CoordinatorTests.swift
+[10/20] Compiling PianoCoreTests GeometryAndDockTests.swift
+[11/20] Compiling PianoCoreTests ReducerTests.swift
+[12/20] Compiling PianoMac SDKKeys.swift
+[13/20] Emitting module PianoMac
+[14/20] Compiling PianoMac InputNormalizer.swift
+[15/20] Compiling PianoMac InputMonitor.swift
+[15/20] Write Objects.LinkFileList
+[17/22] Emitting module PianoMacTests
+[18/22] Compiling PianoMacTests InputNormalizerTests.swift
+[18/22] Write Objects.LinkFileList
+[19/22] Linking TypingPianoProbe
+[20/22] Applying TypingPianoProbe
+[21/22] Linking TypingPianoProbePackageTests
+Build complete! (2.33s)
+Test Suite 'Selected tests' started at 2026-10-28 13:58:16.203.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 13:58:16.205.
+Test Suite 'GeometryAndDockTests' started at 2026-10-28 13:58:16.205.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:8: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("64")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:9: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("38")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:10: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("26")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:12: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(0.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:13: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTUnwrap failed: expected non-nil value of type "PianoKeyRect"
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:13: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: threw error "UnwrappingOptional(errorCode: 105, errorUserInfo: ["XCTestErrorUserInfoKeyShouldIgnore": true])"
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:8: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("64")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:9: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("38")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:10: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("26")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:12: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(0.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:13: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTUnwrap failed: expected non-nil value of type "PianoKeyRect"
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:13: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: threw error "UnwrappingOptional(errorCode: 105, errorUserInfo: ["XCTestErrorUserInfoKeyShouldIgnore": true])"
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:8: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("64")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:9: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("38")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:10: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("0") is not equal to ("26")
+/Users/wuming/Desktop/键�warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+�钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:12: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(0.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:13: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTUnwrap failed: expected non-nil value of type "PianoKeyRect"
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:13: error: -[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths] : XCTAssertEqual failed: threw error "UnwrappingOptional(errorCode: 105, errorUserInfo: ["XCTestErrorUserInfoKeyShouldIgnore": true])"
+Test Case '-[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths]' failed (0.208 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:24: error: -[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership] : XCTAssertEqual failed: ("idle") is not equal to ("unknown")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:25: error: -[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(true)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:27: error: -[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership] : XCTAssertEqual failed: ("idle") is not equal to ("failed")
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership]' failed (0.001 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:33: error: -[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(true)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:35: error: -[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue] : XCTAssertEqual failed: ("idle") is not equal to ("verified")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:36: error: -[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(false)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:38: error: -[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue] : XCTAssertEqual failed: ("idle") is not equal to ("externalChange")
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue]' failed (0.001 seconds).
+Test Suite 'GeometryAndDockTests' failed at 2026-10-28 13:58:16.415.
+	 Executed 3 tests, with 25 failures (3 unexpected) in 0.209 (0.210) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 13:58:16.415.
+	 Executed 3 tests, with 25 failures (3 unexpected) in 0.209 (0.210) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 13:58:16.415.
+	 Executed 3 tests, with 25 failures (3 unexpected) in 0.209 (0.212) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

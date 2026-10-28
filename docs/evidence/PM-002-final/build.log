@@ -1,0 +1,9 @@
+{"byteSize": 530774, "path": "/Users/wuming/Desktop/\u952e\u76d8\u94a2\u7434/Code/Assets/placeholder-original.sf2", "sha256": "ded7747105075d3b5ed95fed7a0453f638dd27882b80defd1fcc7062c4c700fb"}
+[0/1] Planning build
+Building for production...
+[0/2] Write swift-version--58304C5D6DBC2206.txt
+Build complete! (0.24s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+/Users/wuming/Desktop/键盘钢琴/Code/build/TypingPianoProbe.app: replacing existing signature
+/Users/wuming/Desktop/键盘钢琴/Code/build/TypingPianoProbe.app

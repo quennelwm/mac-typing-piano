@@ -1,0 +1,18 @@
+{
+  "macOS": "27.2",
+  "macOSBuild": "26B123",
+  "hardwareModel": "MacBookPro18,3",
+  "chip": "Apple M1 Pro",
+  "sdk": "27.0",
+  "swift": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)\nTarget: arm64-apple-macosx27.2.0",
+  "python": "3.12.2 (v3.12.2:6abddd9f6a, Feb  6 2024, 17:02:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "packageLanguageMode": "v5",
+  "deploymentCandidate": "macOS14; only this host tested",
+  "mode": "AVAudioEngine manual offline",
+  "sampleRate": 48000,
+  "channels": 1,
+  "hardwarePlayback": false,
+  "inputMonitoring": false,
+  "settingsChanges": false,
+  "networkDownloads": false
+}

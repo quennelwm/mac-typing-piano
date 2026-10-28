@@ -1,0 +1,32 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[2/7] Write swift-version--58304C5D6DBC2206.txt
+[4/11] Compiling PianoMac PianoView.swift
+[5/11] Emitting module PianoMac
+[5/12] Write Objects.LinkFileList
+[7/12] Emitting module PianoAudioTests
+[8/12] Compiling PianoAudioTests CandidateBankTests.swift
+[8/12] Write Objects.LinkFileList
+[9/12] Linking TypingPianoProbe
+[10/12] Applying TypingPianoProbe
+[11/12] Linking TypingPianoProbePackageTests
+Build complete! (2.00s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 14:41:44.154.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 14:41:44.156.
+Test Suite 'CandidateBankTests' started at 2026-10-28 14:41:44.156.
+Test Case '-[PianoAudioTests.CandidateBankTests test00PitchEstimatorAgainstKnownSyntheticFrequencies]' started.
+Test Case '-[PianoAudioTests.CandidateBankTests test00PitchEstimatorAgainstKnownSyntheticFrequencies]' passed (2.836 seconds).
+Test Case '-[PianoAudioTests.CandidateBankTests testKawaiCandidateOffline]' started.
+Test Case '-[PianoAudioTests.CandidateBankTests testKawaiCandidateOffline]' passed (4.225 seconds).
+Test Case '-[PianoAudioTests.CandidateBankTests testSteinwayCandidateOffline]' started.
+Test Case '-[PianoAudioTests.CandidateBankTests testSteinwayCandidateOffline]' passed (1.527 seconds).
+Test Suite 'CandidateBankTests' passed at 2026-10-28 14:41:52.745.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 8.588 (8.588) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 14:41:52.745.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 8.588 (8.588) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 14:41:52.745.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 8.588 (8.591) seconds
+CANDIDATE_AUDIO_RESULT id=vcsl-kawai status=passed checks=189 failures=0
+CANDIDATE_AUDIO_RESULT id=vcsl-steinway-b status=passed checks=191 failures=0

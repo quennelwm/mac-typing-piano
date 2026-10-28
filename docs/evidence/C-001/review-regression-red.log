@@ -1,0 +1,55 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/8] Compiling PianoCore Core.swift
+[5/8] Emitting module PianoCore
+[6/9] Compiling PianoCore Coordinator.swift
+[7/21] Compiling PianoCoreTests MappingTests.swift
+[8/21] Compiling PianoCoreTests ReducerTests.swift
+[9/21] Compiling PianoMac InputNormalizer.swift
+[10/21] Emitting module PianoCoreTests
+[11/21] Compiling PianoCoreTests CoordinatorTests.swift
+[12/21] Compiling PianoCoreTests FloatingNoteTests.swift
+[13/21] Compiling PianoCoreTests GeometryAndDockTests.swift
+[14/21] Compiling PianoMac SDKKeys.swift
+[15/21] Emitting module PianoMac
+[16/21] Compiling PianoMac InputMonitor.swift
+[17/21] Compiling PianoMac PianoView.swift
+[18/21] Compiling PianoMac ProbeController.swift
+[19/27] Emitting module PianoMacTests
+[20/27] Compiling PianoMacTests InputNormalizerTests.swift
+[21/27] Emitting module PianoProbe
+[22/27] Compiling PianoProbe main.swift
+[22/27] Write Objects.LinkFileList
+[24/27] Linking TypingPianoProbe
+[25/27] Linking TypingPianoProbePackageTests
+[26/27] Applying TypingPianoProbe
+Build complete! (3.09s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 14:09:50.616.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 14:09:50.619.
+Test Suite 'GeometryAndDockTests' started at 2026-10-28 14:09:50.619.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:48: error: -[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction] : XCTAssertNil failed: "true"
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:49: error: -[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction] : XCTAssertEqual failed: ("pending") is not equal to ("externalChange")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:50: error: -[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction] : XCTAssertNil failed: "true"
+Test Case '-[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction]' failed (0.116 seconds).
+Test Suite 'GeometryAndDockTests' failed at 2026-10-28 14:09:50.736.
+	 Executed 1 test, with 3 failures (0 unexpected) in 0.116 (0.117) seconds
+Test Suite 'ReducerTests' started at 2026-10-28 14:09:50.736.
+Test Case '-[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:39: error: -[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa] : XCTAssertNil failed: "NormalizedKeyEvent(eventID: 350A5AB7-467A-473D-9E4F-9A9766DB7F9C, physicalKeyID: "keyA", phase: PianoCore.KeyPhase.up, monotonicTime: 0.0, captureCapability: "unverified")"
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:40: error: -[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa] : XCTAssertTrue failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:41: error: -[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa] : XCTAssertNotNil failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:44: error: -[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa] : XCTAssertNil failed: "NormalizedKeyEvent(eventID: 6D13AA2F-6C2F-4AD3-9602-CB1B8B6D8E42, physicalKeyID: "keyA", phase: PianoCore.KeyPhase.up, monotonicTime: 0.0, captureCapability: "unverified")"
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:45: error: -[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa] : XCTAssertTrue failed
+Test Case '-[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa]' failed (0.002 seconds).
+Test Suite 'ReducerTests' failed at 2026-10-28 14:09:50.737.
+	 Executed 1 test, with 5 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 14:09:50.737.
+	 Executed 2 tests, with 8 failures (0 unexpected) in 0.118 (0.119) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 14:09:50.737.
+	 Executed 2 tests, with 8 failures (0 unexpected) in 0.118 (0.121) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

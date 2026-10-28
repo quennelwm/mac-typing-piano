@@ -1,0 +1,229 @@
+{
+  "task": "C-001",
+  "date": "2026-10-28",
+  "sharedHEADAtSnapshot": "5c19cab36cd97ced36363bdaeff614581e811d97",
+  "ownCommit": null,
+  "files": [
+    {
+      "path": "Code/.gitignore",
+      "bytes": 35,
+      "sha256": "d5a4500168c65d39543a9eb8e74ccb60735f46b50283c74ca56e73381aaffb0e"
+    },
+    {
+      "path": "Code/Assets/PLACEHOLDER-LICENSE.txt",
+      "bytes": 1050,
+      "sha256": "3453722b28dbd47b38d49761b3a6d51f75adfcf0da6df18bc927e9958b7fdf9d"
+    },
+    {
+      "path": "Code/Assets/placeholder-original.sf2",
+      "bytes": 530774,
+      "sha256": "ded7747105075d3b5ed95fed7a0453f638dd27882b80defd1fcc7062c4c700fb"
+    },
+    {
+      "path": "Code/Assets/placeholder.manifest.json",
+      "bytes": 1309,
+      "sha256": "3d45e3593987ebc63ee966957cb79e7bcb9f110e29ea3411f2ee9fad36d13861"
+    },
+    {
+      "path": "Code/Assets/source_inventory.md",
+      "bytes": 1559,
+      "sha256": "3a77b089446ade64b0216b7f27c105b9cbdad7d5a1ddb0b41180f4abdced8959"
+    },
+    {
+      "path": "Code/IMPLEMENTATION.md",
+      "bytes": 2151,
+      "sha256": "babdf6c249e284f3c999493637ac5fa8d05087df792264ef229f6758e382c662"
+    },
+    {
+      "path": "Code/Package.swift",
+      "bytes": 759,
+      "sha256": "77d14c515302b0ae597fe83123c737f7db8a0f835520fd7ec765daaff7d23e62"
+    },
+    {
+      "path": "Code/README.md",
+      "bytes": 5364,
+      "sha256": "f04bb90ae3ec342dfcd78f71b49b1a3b8a93a604be6611d389e8f6aa05e4f0f1"
+    },
+    {
+      "path": "Code/Scripts/build.sh",
+      "bytes": 2232,
+      "sha256": "12d84e3808220c9006fa26e005912d1c53e316fe65465b4bd1d1d4b56054bcb3"
+    },
+    {
+      "path": "Code/Scripts/generate_placeholder.py",
+      "bytes": 6110,
+      "sha256": "95ee9582ed08d8a018159a622318b6979bdece0710e816dffdb76ea32ad7461a"
+    },
+    {
+      "path": "Code/Sources/PianoAudio/SamplerAudio.swift",
+      "bytes": 9002,
+      "sha256": "bba741de30420d01cc79cfbb6af185db65bef7f28cf29cb3179767a5ceb49f79"
+    },
+    {
+      "path": "Code/Sources/PianoCore/AppPreferences.swift",
+      "bytes": 1000,
+      "sha256": "0ca469709473e1f944336f74b93180ec67b8748c680fa209a58c6393466b1720"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Coordinator.swift",
+      "bytes": 3117,
+      "sha256": "987b7b246f4de5d26f62bd724842dd36cf856a6582fc6dd6f2a8321916294ef4"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Core.swift",
+      "bytes": 1766,
+      "sha256": "0c8ae0aa75bfbc921705598ca3a354089c3dc8fbfacddc29d3e3a5f07918d30c"
+    },
+    {
+      "path": "Code/Sources/PianoCore/DockOwnership.swift",
+      "bytes": 1826,
+      "sha256": "48089a840d9fecd58cc1b636a9f8cd970957275cc52fea4ebc2dc3aa781d4f87"
+    },
+    {
+      "path": "Code/Sources/PianoCore/FloatingNotes.swift",
+      "bytes": 1677,
+      "sha256": "33eb5caab9e661fd47f1ae7dcd85ae648ac504b4e3ea1658cf1d0b5c7a7039d0"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Geometry.swift",
+      "bytes": 1263,
+      "sha256": "5701747e016e92ac54884a03406b04ef5a1912633e33e47722537ef0c6676b25"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Mapping.swift",
+      "bytes": 2373,
+      "sha256": "7730fb0437eacc89c27266bd1c2a7b8fc5e2dda6777375d935985d6e4ffece71"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Policies.swift",
+      "bytes": 1475,
+      "sha256": "21c938679abcfdfd71921e7c755de9aa83e18603a3f6dc6181493b58a8cb250f"
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputMonitor.swift",
+      "bytes": 5950,
+      "sha256": "a84eadce1be6ec0a62daeff6268e2b35897700618be80313ea0f5b9c11481492"
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputNormalizer.swift",
+      "bytes": 1480,
+      "sha256": "6e479581e0f9a68120f1526657eaff69477c356d467c33866aa360cd9270d9e9"
+    },
+    {
+      "path": "Code/Sources/PianoMac/Module.swift",
+      "bytes": 18,
+      "sha256": "dda9b75f64b106eb544de201f599122d75abc483c5b156bba6c05c0f956dbc3c"
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "bytes": 4698,
+      "sha256": "7f36dcd6df3449e0b51ed985928cbfd1d0ac3f91d09b6910b14de6273a543340"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "bytes": 14842,
+      "sha256": "241c4c913246bd740dd02bb47d06e0df4007d718cfb354f2d7323107ecbe42a3"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "bytes": 4770,
+      "sha256": "d3efa9e5b4430b8edcb359a155b17735c0c5357fb4175eb4a17e6be16f51eba0"
+    },
+    {
+      "path": "Code/Sources/PianoMac/SDKKeys.swift",
+      "bytes": 3507,
+      "sha256": "cb27a802b588d29248b16a8aa9691f5a36f369d8bc598d88fb746160742aa97f"
+    },
+    {
+      "path": "Code/Sources/PianoProbe/main.swift",
+      "bytes": 5657,
+      "sha256": "505f130ada0c3e3f27e260d5557c247fb3fffa88e0837760dd12cd97684de64c"
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/SamplerAudioTests.swift",
+      "bytes": 8568,
+      "sha256": "e55c561834ccbfee804cb99386f52d4c968c97f1e3aaaf4ec9514cb490c3a4c7"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/AppPreferencesTests.swift",
+      "bytes": 1297,
+      "sha256": "279e87ea929fcc7b62133565be6b3c626d1503e8bc1fb85465671c916e1e37bc"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/CoordinatorTests.swift",
+      "bytes": 4468,
+      "sha256": "c5a34fae004cf3af308444c1ceac01f33f3823eedc6fdf525b544a26e52185ce"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/FloatingNoteTests.swift",
+      "bytes": 2645,
+      "sha256": "d8ed1679280fb1ae2331b816224acd387466744766103c047a0f6df57ab9bedf"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/GeometryAndDockTests.swift",
+      "bytes": 2911,
+      "sha256": "610024dffa2d5fa286444fe323c4a31627b3543e50dc3d4f7f927a7e356dbc8a"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/MappingTests.swift",
+      "bytes": 894,
+      "sha256": "c282037fc2df71cdcf0bcdb5717b0669e42382f0a1c41f6c18ece3627cacf8e2"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/ReducerTests.swift",
+      "bytes": 2308,
+      "sha256": "3149fe9b4dce176443f417267772ff0cad957356eff96a978ffc61767cd4cd0d"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/InputNormalizerTests.swift",
+      "bytes": 2265,
+      "sha256": "7b16931c8e664723761a280aa64752f9c1b042bda69a9cd3302d9fb7ff46e71f"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/ModuleTests.swift",
+      "bytes": 40,
+      "sha256": "e6b1c631bf72196d2cc05bc2089393a4a383b0d614d53c2618f66c9baa6ab842"
+    },
+    {
+      "path": "Code/build/TypingPianoProbe.app/Contents/MacOS/TypingPianoProbe",
+      "bytes": 564784,
+      "sha256": "8b4e52dd7a910fbd4cf11cb5475658718e3fdd597dc2f2e9840d7564a6eef3bb"
+    },
+    {
+      "path": "docs/evidence/C-001/previews/m0-1000-labels-false.png",
+      "bytes": 12882,
+      "sha256": "23040809db27294757e2c8eb96e90c96aa19a8d12f8c4196484d0d4ec73ae191"
+    },
+    {
+      "path": "docs/evidence/C-001/previews/m0-1000-labels-true.png",
+      "bytes": 28768,
+      "sha256": "11eb3e59ec65bf00198c12f97f0b3e2172562983171808f13f6d5329ecc1e517"
+    },
+    {
+      "path": "docs/evidence/C-001/previews/m0-1100-labels-false.png",
+      "bytes": 13188,
+      "sha256": "de8b6c648c2e673981f14aa74636d0baa08f312de7c527ab08efa4952c7c7b4b"
+    },
+    {
+      "path": "docs/evidence/C-001/previews/m0-1100-labels-true.png",
+      "bytes": 30225,
+      "sha256": "316e4da5e2545d7dae4035446817c193f1553b488944be61955fad1e55f0e675"
+    },
+    {
+      "path": "docs/evidence/C-001/previews/m0-900-labels-false.png",
+      "bytes": 12498,
+      "sha256": "d0e0c412a3eff7a9b2468fe9b6f7323cd84f2c62b965ccf7d3f8247f02342803"
+    },
+    {
+      "path": "docs/evidence/C-001/previews/m0-900-labels-true.png",
+      "bytes": 28633,
+      "sha256": "9be1d1246b63b08564d0cfd9a55a308558828df26dc7b6c06385e7d81acbb2e6"
+    },
+    {
+      "path": "Code/build/TypingPianoProbe.zip",
+      "bytes": 547803,
+      "sha256": "d1f78052b5f45398cd5422b4ec7e94b7caff7ad9d986308b75de123a9d07008d"
+    }
+  ],
+  "note": "C-001 final source/binary snapshot, includes final black-only superscript layout. Subsequent C-001B test-only additions are separate."
+}

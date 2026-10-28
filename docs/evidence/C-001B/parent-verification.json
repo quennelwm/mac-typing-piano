@@ -1,0 +1,217 @@
+{
+  "status": "passed",
+  "timestampUTC": "2026-10-28T06:55:27.272677+00:00",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "inputFileHashesRecomputed": 36,
+  "fullSwiftSuiteTests": 38,
+  "fullSwiftSuiteFailures": 0,
+  "bindingRegressionTests": 12,
+  "bindingRegressionFailures": 0,
+  "c001SnapshotFiles": 44,
+  "c001ExpectedDocumentationChanges": [
+    "Code/IMPLEMENTATION.md",
+    "Code/README.md"
+  ],
+  "c001OtherFilesUnchanged": 42,
+  "bankSummary": [
+    {
+      "id": "vcsl-kawai",
+      "checks": 191,
+      "covered": [
+        33,
+        34,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ],
+      "uncoveredCount": 54,
+      "onsetMin": 0.001,
+      "onsetMax": 0.0012083333333333334,
+      "releaseMin": 0.17233333333333334,
+      "releaseMax": 0.39820833333333333,
+      "relativePitchMaxErrorCents": 0.273401816821945,
+      "chords": [
+        {
+          "gain": 0.07999999821186066,
+          "gainSettlingPeak": 0,
+          "gainSettlingSilenceSeconds": 0.1,
+          "midi": [
+            33,
+            34,
+            41,
+            42,
+            43,
+            59,
+            60,
+            61,
+            95,
+            96
+          ],
+          "noteCommands": 10,
+          "peak": 0.01792849600315094,
+          "renderSeconds": 1,
+          "rms": 0.0032031497169387755,
+          "velocity": 127
+        },
+        {
+          "gain": 0.1599999964237213,
+          "gainSettlingPeak": 0,
+          "gainSettlingSilenceSeconds": 0.1,
+          "midi": [
+            33,
+            34,
+            41,
+            42,
+            43,
+            59,
+            60,
+            61,
+            95,
+            96
+          ],
+          "noteCommands": 10,
+          "peak": 0.02772315964102745,
+          "renderSeconds": 1,
+          "rms": 0.006013933620071452,
+          "velocity": 127
+        }
+      ],
+      "gainZero": {
+        "existingVoiceClearedPeak": 0,
+        "freshStrikePeak": 0.0014251418178901076,
+        "gainRaisedWithoutNewStrikePeak": 0,
+        "mutedStrikePeak": 0
+      },
+      "panic": {
+        "nextStrikePeak": 0.0009756085928529501,
+        "postPanicPeak": 0
+      },
+      "wav": "b24edbbad97888a5a8e89803add09ef49ef8f2d8cc969916e9b7a153aa022669"
+    },
+    {
+      "id": "vcsl-steinway-b",
+      "checks": 193,
+      "covered": [
+        33,
+        34,
+        35,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ],
+      "uncoveredCount": 53,
+      "onsetMin": 0.001,
+      "onsetMax": 0.001,
+      "releaseMin": 0.21508333333333332,
+      "releaseMax": 0.4016875,
+      "relativePitchMaxErrorCents": 0.22145263485607813,
+      "chords": [
+        {
+          "gain": 0.07999999821186066,
+          "gainSettlingPeak": 0,
+          "gainSettlingSilenceSeconds": 0.1,
+          "midi": [
+            33,
+            34,
+            35,
+            41,
+            42,
+            43,
+            59,
+            60,
+            61,
+            95,
+            96
+          ],
+          "noteCommands": 11,
+          "peak": 0.023075371980667114,
+          "renderSeconds": 1,
+          "rms": 0.003850227356509113,
+          "velocity": 127
+        },
+        {
+          "gain": 0.1599999964237213,
+          "gainSettlingPeak": 0,
+          "gainSettlingSilenceSeconds": 0.1,
+          "midi": [
+            33,
+            34,
+            35,
+            41,
+            42,
+            43,
+            59,
+            60,
+            61,
+            95,
+            96
+          ],
+          "noteCommands": 11,
+          "peak": 0.03181697428226471,
+          "renderSeconds": 1,
+          "rms": 0.007270782469029595,
+          "velocity": 127
+        }
+      ],
+      "gainZero": {
+        "existingVoiceClearedPeak": 0,
+        "freshStrikePeak": 0.001279680640436709,
+        "gainRaisedWithoutNewStrikePeak": 0,
+        "mutedStrikePeak": 0
+      },
+      "panic": {
+        "nextStrikePeak": 0.0010227065067738295,
+        "postPanicPeak": 0
+      },
+      "wav": "439b4ea2ff0abe8b425388b4cddceaa15b12bbaa8c8f2ef145e67861963e9ea9"
+    }
+  ],
+  "wavArtifacts": [
+    {
+      "path": "docs/evidence/C-001B/vcsl-kawai-offline-representative.wav",
+      "filename": "vcsl-kawai-offline-representative.wav",
+      "sha256": "b24edbbad97888a5a8e89803add09ef49ef8f2d8cc969916e9b7a153aa022669",
+      "byteSize": 1814444,
+      "frames": 907200,
+      "seconds": 18.9,
+      "format": "48kHz mono PCM16 WAV"
+    },
+    {
+      "path": "docs/evidence/C-001B/vcsl-steinway-b-offline-representative.wav",
+      "filename": "vcsl-steinway-b-offline-representative.wav",
+      "sha256": "439b4ea2ff0abe8b425388b4cddceaa15b12bbaa8c8f2ef145e67861963e9ea9",
+      "byteSize": 1814444,
+      "frames": 907200,
+      "seconds": 18.9,
+      "format": "48kHz mono PCM16 WAV"
+    }
+  ],
+  "hardwarePlayback": false,
+  "productionChanges": false,
+  "independentNumericalAudit": [
+    {
+      "id": "vcsl-kawai",
+      "coverageAndGapsVerified": true,
+      "rootHoldReleaseCombinations": 12,
+      "allLateReleasePeaksZero": true,
+      "retriggerAndGainAndPanicAndReprepareVerified": true
+    },
+    {
+      "id": "vcsl-steinway-b",
+      "coverageAndGapsVerified": true,
+      "rootHoldReleaseCombinations": 12,
+      "allLateReleasePeaksZero": true,
+      "retriggerAndGainAndPanicAndReprepareVerified": true
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="64键钢琴 multi">
+<rect width="100%" height="56" rx="3" fill="#353638"/><rect x="1" y="1" width="898" height="53" rx="2" fill="#71716E"/>
+<g transform="translate(0 0)"><g transform="translate(2.35 2)"><defs><linearGradient id="g33" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g33-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g33-clip)"><rect width="22.878947368421052" height="50" fill="url(#g33)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="11.8252699210164" y="46.393758604864615" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">[</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(25.928947368421053 2)"><defs><linearGradient id="g35" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g35-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g35-clip)"><rect width="22.878947368421052" height="50" fill="url(#g35)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="36.01917828071785" y="46.393758604864615" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">]</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(49.507894736842104 2)"><defs><linearGradient id="g36" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g36-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g36-clip)"><rect width="22.878947368421052" height="50" fill="url(#g36)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="59.37021998355263" y="46.232421875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">\</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(73.08684210526314 2)"><defs><linearGradient id="g38" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g38-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g38-clip)"><rect width="22.878947368421052" height="50" fill="url(#g38)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="83.09076891447367" y="46.1689453125" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">;</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(96.6657894736842 2)"><defs><linearGradient id="g40" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g40-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g40-clip)"><rect width="22.878947368421052" height="50" fill="url(#g40)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="104.77274362664473" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">Z</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(120.24473684210525 2)"><defs><linearGradient id="g41" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g41-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g41-clip)"><rect width="22.878947368421052" height="50" fill="url(#g41)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="128.20032380756578" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">X</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(143.8236842105263 2)"><defs><linearGradient id="g43" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g43-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g43-clip)"><rect width="22.878947368421052" height="50" fill="url(#g43)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="151.61569695723682" y="47.82421875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">C</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(167.40263157894736 2)"><defs><linearGradient id="g45" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g45-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g45-clip)"><rect width="22.878947368421052" height="50" fill="url(#g45)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="175.3875154194079" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">V</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(190.9815789473684 2)"><defs><linearGradient id="g47" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g47-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g47-clip)"><rect width="22.878947368421052" height="50" fill="url(#g47)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="198.88589638157893" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">B</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(214.56052631578945 2)"><defs><linearGradient id="g48" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g48-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g48-clip)"><rect width="22.878947368421052" height="50" fill="url(#g48)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="222.91894531249997" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">F</text>
+</g></g>
+<g transform="translate(0 2)"><g transform="translate(238.13947368421051 2)"><defs><linearGradient id="g50" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7E5DF"/><stop offset="1" stop-color="#D8D6D1"/></linearGradient><clipPath id="g50-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g50-clip)"><rect width="22.878947368421052" height="50" fill="url(#g50)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#C3C1BC"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="245.76547080592104" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">D</text>
+</g></g>
+<g transform="translate(0 2)"><g transform="translate(261.7184210526316 2)"><defs><linearGradient id="g52" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7E5DF"/><stop offset="1" stop-color="#D8D6D1"/></linearGradient><clipPath id="g52-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g52-clip)"><rect width="22.878947368421052" height="50" fill="url(#g52)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#C3C1BC"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="269.9035002055921" y="47.82421875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">S</text>
+</g></g>
+<g transform="translate(0 2)"><g transform="translate(285.2973684210526 2)"><defs><linearGradient id="g53" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7E5DF"/><stop offset="1" stop-color="#D8D6D1"/></linearGradient><clipPath id="g53-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g53-clip)"><rect width="22.878947368421052" height="50" fill="url(#g53)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#C3C1BC"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="291.1636975740131" y="47.9072265625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">⇧</text>
+<text x="303.64223375822365" y="42.7197265625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="6.5" fill="#595959">L</text>
+</g></g>
+<g transform="translate(0 2)"><g transform="translate(308.87631578947367 2)"><defs><linearGradient id="g55" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7E5DF"/><stop offset="1" stop-color="#D8D6D1"/></linearGradient><clipPath id="g55-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g55-clip)"><rect width="22.878947368421052" height="50" fill="url(#g55)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#C3C1BC"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="316.83922697368416" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">A</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(332.45526315789476 2)"><defs><linearGradient id="g57" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g57-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g57-clip)"><rect width="22.878947368421052" height="50" fill="url(#g57)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="340.1374126233553" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">N</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(356.0342105263158 2)"><defs><linearGradient id="g59" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g59-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g59-clip)"><rect width="22.878947368421052" height="50" fill="url(#g59)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="363.72856702302636" y="47.82421875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">G</text>
+</g></g>
+<g transform="translate(0 2)"><g transform="translate(379.61315789473684 2)"><defs><linearGradient id="g60" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7E5DF"/><stop offset="1" stop-color="#D8D6D1"/></linearGradient><clipPath id="g60-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g60-clip)"><rect width="22.878947368421052" height="50" fill="url(#g60)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#C3C1BC"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="386.4358264081256" y="47.07663896583564" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">␣</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(403.1921052631579 2)"><defs><linearGradient id="g62" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g62-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g62-clip)"><rect width="22.878947368421052" height="50" fill="url(#g62)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="410.84495785361844" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">H</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(426.7710526315789 2)"><defs><linearGradient id="g64" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g64-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g64-clip)"><rect width="22.878947368421052" height="50" fill="url(#g64)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="436.7798622532895" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">I</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(450.35 2)"><defs><linearGradient id="g65" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g65-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g65-clip)"><rect width="22.878947368421052" height="50" fill="url(#g65)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="458.6693564967105" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">E</text>
+</g></g>
+<g transform="translate(0 2)"><g transform="translate(473.92894736842106 2)"><defs><linearGradient id="g67" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E7E5DF"/><stop offset="1" stop-color="#D8D6D1"/></linearGradient><clipPath id="g67-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g67-clip)"><rect width="22.878947368421052" height="50" fill="url(#g67)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#C3C1BC"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="479.79527652138154" y="47.9072265625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">⇧</text>
+<text x="491.6612638774671" y="42.7197265625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="6.5" fill="#595959">R</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(497.5078947368421 2)"><defs><linearGradient id="g69" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g69-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g69-clip)"><rect width="22.878947368421052" height="50" fill="url(#g69)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="505.0630910773026" y="47.82421875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">O</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(521.0868421052631 2)"><defs><linearGradient id="g71" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g71-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g71-clip)"><rect width="22.878947368421052" height="50" fill="url(#g71)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="528.7958470394736" y="47.82421875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">U</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(544.6657894736842 2)"><defs><linearGradient id="g72" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g72-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g72-clip)"><rect width="22.878947368421052" height="50" fill="url(#g72)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="551.6301655016447" y="49.298828125" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">↵</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(568.2447368421052 2)"><defs><linearGradient id="g74" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g74-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g74-clip)"><rect width="22.878947368421052" height="50" fill="url(#g74)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="577.1182925575657" y="47.82421875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">J</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(591.8236842105263 2)"><defs><linearGradient id="g76" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g76-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g76-clip)"><rect width="22.878947368421052" height="50" fill="url(#g76)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="599.5717516447368" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">K</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(615.4026315789473 2)"><defs><linearGradient id="g77" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g77-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g77-clip)"><rect width="22.878947368421052" height="50" fill="url(#g77)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="623.7610505756578" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">L</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(638.9815789473685 2)"><defs><linearGradient id="g79" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g79-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g79-clip)"><rect width="22.878947368421052" height="50" fill="url(#g79)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="645.992341694079" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">M</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(662.5605263157895 2)"><defs><linearGradient id="g81" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g81-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g81-clip)"><rect width="22.878947368421052" height="50" fill="url(#g81)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="670.11572265625" y="47.23828125" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">Q</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(686.1394736842105 2)"><defs><linearGradient id="g83" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g83-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g83-clip)"><rect width="22.878947368421052" height="50" fill="url(#g83)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="692.661955180921" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">W</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(709.7184210526316 2)"><defs><linearGradient id="g84" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g84-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g84-clip)"><rect width="22.878947368421052" height="50" fill="url(#g84)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="717.6056486430921" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">R</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(733.2973684210526 2)"><defs><linearGradient id="g86" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g86-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g86-clip)"><rect width="22.878947368421052" height="50" fill="url(#g86)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="741.5190686677631" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">T</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(756.8763157894737 2)"><defs><linearGradient id="g88" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g88-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g88-clip)"><rect width="22.878947368421052" height="50" fill="url(#g88)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="764.9442074424342" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">Y</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(780.4552631578947 2)"><defs><linearGradient id="g89" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g89-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g89-clip)"><rect width="22.878947368421052" height="50" fill="url(#g89)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="788.4694438733552" y="48" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">P</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(804.0342105263157 2)"><defs><linearGradient id="g91" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g91-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g91-clip)"><rect width="22.878947368421052" height="50" fill="url(#g91)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="813.8965357730262" y="52.1748046875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">&#x27;</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(827.6131578947368 2)"><defs><linearGradient id="g93" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g93-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g93-clip)"><rect width="22.878947368421052" height="50" fill="url(#g93)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="837.6952097039473" y="46.1689453125" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">,</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(851.1921052631578 2)"><defs><linearGradient id="g95" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g95-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g95-clip)"><rect width="22.878947368421052" height="50" fill="url(#g95)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="861.0544305098683" y="47.921875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">.</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(874.7710526315789 2)"><defs><linearGradient id="g96" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FEFDFB"/><stop offset="1" stop-color="#EEEDE9"/></linearGradient><clipPath id="g96-clip"><rect width="22.878947368421052" height="50" rx="1"/></clipPath></defs>
+<g clip-path="url(#g96-clip)"><rect width="22.878947368421052" height="50" fill="url(#g96)"/><rect y="47.5" width="22.878947368421052" height="2.5" fill="#D5D3CE"/><path d="M1 .5H21.878947368421052" fill="none" stroke="#FFFFFF" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="884.6333778782894" y="46.232421875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="10" fill="#595959">/</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(18.623157894736842 2)"><defs><linearGradient id="g34" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g34-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g34-clip)"><rect width="13.911578947368419" height="32" fill="url(#g34)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="21.073282274760697" y="31" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">fn</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(65.78105263157894 2)"><defs><linearGradient id="g37" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g37-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g37-clip)"><rect width="13.911578947368419" height="32" fill="url(#g37)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="68.52028937088815" y="34.01513671875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">⌃</text>
+</g></g>
+<g transform="translate(0 1.5)"><g transform="translate(89.36 2)"><defs><linearGradient id="g39" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#303134"/><stop offset="1" stop-color="#1B1C1F"/></linearGradient><clipPath id="g39-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g39-clip)"><rect width="13.911578947368419" height="32" fill="url(#g39)"/><rect y="30" width="13.911578947368419" height="2" fill="#141518"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="91.04232755962171" y="31.013916015625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">⌥</text>
+<text x="98.73749691611843" y="23.734228515625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="6.5" fill="#CDCDCD">L</text>
+</g></g>
+<g transform="translate(0 1.5)"><g transform="translate(136.5178947368421 2)"><defs><linearGradient id="g42" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#303134"/><stop offset="1" stop-color="#1B1C1F"/></linearGradient><clipPath id="g42-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g42-clip)"><rect width="13.911578947368419" height="32" fill="url(#g42)"/><rect y="30" width="13.911578947368419" height="2" fill="#141518"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="138.4762232730263" y="30.893310546875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">⌘</text>
+<text x="145.8953916529605" y="23.474462890625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="6.5" fill="#CDCDCD">L</text>
+</g></g>
+<g transform="translate(0 1.5)"><g transform="translate(160.09684210526316 2)"><defs><linearGradient id="g44" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#303134"/><stop offset="1" stop-color="#1B1C1F"/></linearGradient><clipPath id="g44-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g44-clip)"><rect width="13.911578947368419" height="32" fill="url(#g44)"/><rect y="30" width="13.911578947368419" height="2" fill="#141518"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="162.05517064144738" y="30.893310546875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">⌘</text>
+<text x="168.86179019325658" y="23.474462890625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="6.5" fill="#CDCDCD">R</text>
+</g></g>
+<g transform="translate(0 1.5)"><g transform="translate(183.6757894736842 2)"><defs><linearGradient id="g46" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#303134"/><stop offset="1" stop-color="#1B1C1F"/></linearGradient><clipPath id="g46-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g46-clip)"><rect width="13.911578947368419" height="32" fill="url(#g46)"/><rect y="30" width="13.911578947368419" height="2" fill="#141518"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="185.35811703330592" y="31.013916015625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">⌥</text>
+<text x="192.44073756167762" y="23.734228515625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="6.5" fill="#CDCDCD">R</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(230.83368421052631 2)"><defs><linearGradient id="g49" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g49-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g49-clip)"><rect width="13.911578947368419" height="32" fill="url(#g49)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="233.05107036389802" y="32.257080078125" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">⇥</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(254.41263157894736 2)"><defs><linearGradient id="g51" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g51-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g51-clip)"><rect width="13.911578947368419" height="32" fill="url(#g51)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="256.72974917763156" y="30.299560546875" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">⇪</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(301.57052631578944 2)"><defs><linearGradient id="g54" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g54-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g54-clip)"><rect width="13.911578947368419" height="32" fill="url(#g54)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="306.15131578947364" y="36.728759765625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">`</text>
+</g></g>
+<g transform="translate(0 1.5)"><g transform="translate(325.14947368421053 2)"><defs><linearGradient id="g56" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#303134"/><stop offset="1" stop-color="#1B1C1F"/></linearGradient><clipPath id="g56-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g56-clip)"><rect width="13.911578947368419" height="32" fill="url(#g56)"/><rect y="30" width="13.911578947368419" height="2" fill="#141518"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="330.10367624383224" y="31" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">1</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(348.7284210526316 2)"><defs><linearGradient id="g58" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g58-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g58-clip)"><rect width="13.911578947368419" height="32" fill="url(#g58)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="352.7363345497533" y="31" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">2</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(395.88631578947366 2)"><defs><linearGradient id="g61" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g61-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g61-clip)"><rect width="13.911578947368419" height="32" fill="url(#g61)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="399.77594315378286" y="30.874755859375" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">3</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(419.4652631578947 2)"><defs><linearGradient id="g63" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g63-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g63-clip)"><rect width="13.911578947368419" height="32" fill="url(#g63)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="423.2969071237664" y="31" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">4</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(466.62315789473683 2)"><defs><linearGradient id="g66" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g66-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g66-clip)"><rect width="13.911578947368419" height="32" fill="url(#g66)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="470.49191123560854" y="30.8330078125" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">5</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(490.2021052631579 2)"><defs><linearGradient id="g68" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g68-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g68-clip)"><rect width="13.911578947368419" height="32" fill="url(#g68)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="494.0546232524671" y="30.8330078125" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">6</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(513.7810526315789 2)"><defs><linearGradient id="g70" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g70-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g70-clip)"><rect width="13.911578947368419" height="32" fill="url(#g70)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="518.0069837068256" y="31" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">7</text>
+</g></g>
+<g transform="translate(0 1.5)"><g transform="translate(560.9389473684209 2)"><defs><linearGradient id="g73" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#303134"/><stop offset="1" stop-color="#1B1C1F"/></linearGradient><clipPath id="g73-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g73-clip)"><rect width="13.911578947368419" height="32" fill="url(#g73)"/><rect y="30" width="13.911578947368419" height="2" fill="#141518"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="564.7659526624177" y="30.874755859375" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">8</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(584.517894736842 2)"><defs><linearGradient id="g75" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g75-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g75-clip)"><rect width="13.911578947368419" height="32" fill="url(#g75)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="588.3657740542762" y="30.837646484375" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">9</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(631.6757894736842 2)"><defs><linearGradient id="g78" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g78-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g78-clip)"><rect width="13.911578947368419" height="32" fill="url(#g78)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="635.5445428145559" y="30.8330078125" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">0</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(655.2547368421052 2)"><defs><linearGradient id="g80" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g80-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g80-clip)"><rect width="13.911578947368419" height="32" fill="url(#g80)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="659.9468544407895" y="33.23583984375" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">-</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(678.8336842105263 2)"><defs><linearGradient id="g82" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g82-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g82-clip)"><rect width="13.911578947368419" height="32" fill="url(#g82)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="682.7233115748355" y="31.97412109375" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">=</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(725.9915789473683 2)"><defs><linearGradient id="g85" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g85-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g85-clip)"><rect width="13.911578947368419" height="32" fill="url(#g85)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="728.1927297491776" y="30.91650390625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">⌫</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(749.5705263157894 2)"><defs><linearGradient id="g87" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g87-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g87-clip)"><rect width="13.911578947368419" height="32" fill="url(#g87)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="752.1566868832236" y="31.51025390625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">←</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(796.7284210526315 2)"><defs><linearGradient id="g90" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g90-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g90-clip)"><rect width="13.911578947368419" height="32" fill="url(#g90)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="799.9129702919407" y="30.874755859375" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">↓</text>
+</g></g>
+<g transform="translate(0 0)"><g transform="translate(820.3073684210525 2)"><defs><linearGradient id="g92" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#424346"/><stop offset="1" stop-color="#242528"/></linearGradient><clipPath id="g92-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g92-clip)"><rect width="13.911578947368419" height="32" fill="url(#g92)"/><rect y="30" width="13.911578947368419" height="2" fill="#17181B"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="823.4919176603618" y="30.874755859375" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">↑</text>
+</g></g>
+<g transform="translate(0 1.5)"><g transform="translate(843.8863157894735 2)"><defs><linearGradient id="g94" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#303134"/><stop offset="1" stop-color="#1B1C1F"/></linearGradient><clipPath id="g94-clip"><rect width="13.911578947368419" height="32" rx="1.2"/></clipPath></defs>
+<g clip-path="url(#g94-clip)"><rect width="13.911578947368419" height="32" fill="url(#g94)"/><rect y="30" width="13.911578947368419" height="2" fill="#141518"/><path d="M1 .5H12.911578947368419" fill="none" stroke="#58595C" stroke-width=".5"/></g></g><g class="label-layer">
+<text x="846.4724763569078" y="31.51025390625" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-weight="500" font-size="9.5" fill="#CDCDCD">→</text>
+</g></g>
+</svg>

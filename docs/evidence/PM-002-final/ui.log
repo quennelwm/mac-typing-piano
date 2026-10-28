@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "checks": 334,
+  "minimumContrast": {
+    "widthPt": 900,
+    "whiteDown": true,
+    "blackDown": false,
+    "scale": 1,
+    "physicalKeyID": "bracketLeft",
+    "label": "[",
+    "ratio": 4.870337142333948
+  },
+  "failures": []
+}

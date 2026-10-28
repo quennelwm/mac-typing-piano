@@ -1,0 +1,428 @@
+{
+  "status": "pass",
+  "runtime": "v24.15.0",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "date": "2026-10-28 Asia/Shanghai",
+  "scope": "Node execution of same preview timeline with synthetic events. This is real monotonic timing, not browser paint or production App measurement.",
+  "cases": [
+    {
+      "name": "same pressID and repeated held event do not multiply",
+      "status": "pass"
+    },
+    {
+      "name": "white/black multiple notes and restrike have independent IDs",
+      "status": "pass"
+    },
+    {
+      "name": "stale event time cannot reintroduce an old press",
+      "status": "pass"
+    },
+    {
+      "name": "distinct press IDs can share a quantized monotonic timestamp",
+      "status": "pass"
+    },
+    {
+      "name": "700ms deadline is exact in timeline, fade-in/out and rise match spec",
+      "status": "pass"
+    },
+    {
+      "name": "hiding clears immediately; hidden events never replay",
+      "status": "pass"
+    },
+    {
+      "name": "reduced motion stays at origin and ends at 200ms",
+      "status": "pass"
+    },
+    {
+      "name": "expired instances are reclaimed without altering newer ones",
+      "status": "pass"
+    }
+  ],
+  "realTime": {
+    "logicalDeadlineMs": 700,
+    "lastObservedVisibleMs": 690.168125,
+    "firstObservedEmptyMs": 701.240042,
+    "pollPeriodMs": 10,
+    "samples": [
+      {
+        "elapsedMs": 11.445208999999998,
+        "visibleInstances": 1,
+        "opacity": 0.1907534833333333,
+        "risePt": 1.158078477275641
+      },
+      {
+        "elapsedMs": 22.539792,
+        "visibleInstances": 1,
+        "opacity": 0.3756632,
+        "risePt": 2.2445287512696783
+      },
+      {
+        "elapsedMs": 42.132,
+        "visibleInstances": 1,
+        "opacity": 0.7021999999999999,
+        "risePt": 4.077978356943955
+      },
+      {
+        "elapsedMs": 61.109417,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 5.752785294045746
+      },
+      {
+        "elapsedMs": 73.8235,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 6.820622774244393
+      },
+      {
+        "elapsedMs": 84.70425,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 7.7007032161613544
+      },
+      {
+        "elapsedMs": 96.087625,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 8.588712986160836
+      },
+      {
+        "elapsedMs": 106.328667,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 9.359518613817432
+      },
+      {
+        "elapsedMs": 117.58324999999999,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 10.176478530637189
+      },
+      {
+        "elapsedMs": 128.011625,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 10.90580727534229
+      },
+      {
+        "elapsedMs": 138.159459,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 11.590441164246958
+      },
+      {
+        "elapsedMs": 149.263167,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 12.311750052225392
+      },
+      {
+        "elapsedMs": 159.745834,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 12.966545836562435
+      },
+      {
+        "elapsedMs": 170.88225,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 13.634885259097132
+      },
+      {
+        "elapsedMs": 181.96829200000002,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 14.272837951165352
+      },
+      {
+        "elapsedMs": 193.01416700000001,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 14.881894917850584
+      },
+      {
+        "elapsedMs": 202.323125,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 15.37499201793919
+      },
+      {
+        "elapsedMs": 213.41095900000002,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 15.938718404450654
+      },
+      {
+        "elapsedMs": 224.333792,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 16.46949639898414
+      },
+      {
+        "elapsedMs": 234.88666700000002,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 16.959662329810477
+      },
+      {
+        "elapsedMs": 245.96291700000003,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 17.450757126165286
+      },
+      {
+        "elapsedMs": 256.15833399999997,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 17.88211470125669
+      },
+      {
+        "elapsedMs": 266.301,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 18.29202077197217
+      },
+      {
+        "elapsedMs": 276.743042,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 18.694461864510764
+      },
+      {
+        "elapsedMs": 287.89849999999996,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 19.103004470020288
+      },
+      {
+        "elapsedMs": 298.98191699999995,
+        "visibleInstances": 1,
+        "opacity": 1,
+        "risePt": 19.487585444653313
+      },
+      {
+        "elapsedMs": 310.094042,
+        "visibleInstances": 1,
+        "opacity": 0.974764895,
+        "risePt": 19.852401237416068
+      },
+      {
+        "elapsedMs": 320.59191699999997,
+        "visibleInstances": 1,
+        "opacity": 0.9485202075000001,
+        "risePt": 20.17847364908569
+      },
+      {
+        "elapsedMs": 331.67254199999996,
+        "visibleInstances": 1,
+        "opacity": 0.9208186450000001,
+        "risePt": 20.50361370736654
+      },
+      {
+        "elapsedMs": 342.79079199999995,
+        "visibleInstances": 1,
+        "opacity": 0.8930230200000001,
+        "risePt": 20.81077574792907
+      },
+      {
+        "elapsedMs": 353.867959,
+        "visibleInstances": 1,
+        "opacity": 0.8653301025000001,
+        "risePt": 21.098366668637723
+      },
+      {
+        "elapsedMs": 364.94095899999996,
+        "visibleInstances": 1,
+        "opacity": 0.8376476025000001,
+        "risePt": 21.368028725447253
+      },
+      {
+        "elapsedMs": 376.036792,
+        "visibleInstances": 1,
+        "opacity": 0.8099080200000001,
+        "risePt": 21.620946578328404
+      },
+      {
+        "elapsedMs": 386.126125,
+        "visibleInstances": 1,
+        "opacity": 0.7846846875,
+        "risePt": 21.83637182124501
+      },
+      {
+        "elapsedMs": 397.21966699999996,
+        "visibleInstances": 1,
+        "opacity": 0.7569508325000001,
+        "risePt": 22.057772457438688
+      },
+      {
+        "elapsedMs": 407.91920899999997,
+        "visibleInstances": 1,
+        "opacity": 0.7302019775,
+        "risePt": 22.256483306601936
+      },
+      {
+        "elapsedMs": 418.95962499999996,
+        "visibleInstances": 1,
+        "opacity": 0.7026009375000001,
+        "risePt": 22.446814703762143
+      },
+      {
+        "elapsedMs": 430.00733399999996,
+        "visibleInstances": 1,
+        "opacity": 0.6749816650000001,
+        "risePt": 22.622876074791776
+      },
+      {
+        "elapsedMs": 441.040417,
+        "visibleInstances": 1,
+        "opacity": 0.6473989575,
+        "risePt": 22.784897028744574
+      },
+      {
+        "elapsedMs": 451.07262499999996,
+        "visibleInstances": 1,
+        "opacity": 0.6223184375000002,
+        "risePt": 22.920717587985184
+      },
+      {
+        "elapsedMs": 462.12704199999996,
+        "visibleInstances": 1,
+        "opacity": 0.5946823950000001,
+        "risePt": 23.058213759496457
+      },
+      {
+        "elapsedMs": 473.183334,
+        "visibleInstances": 1,
+        "opacity": 0.567041665,
+        "risePt": 23.183526659117454
+      },
+      {
+        "elapsedMs": 484.223,
+        "visibleInstances": 1,
+        "opacity": 0.5394424999999999,
+        "risePt": 23.29703682687097
+      },
+      {
+        "elapsedMs": 494.544334,
+        "visibleInstances": 1,
+        "opacity": 0.5136391650000001,
+        "risePt": 23.393163786896654
+      },
+      {
+        "elapsedMs": 505.63958399999996,
+        "visibleInstances": 1,
+        "opacity": 0.4859010400000001,
+        "risePt": 23.48626331208159
+      },
+      {
+        "elapsedMs": 516.265334,
+        "visibleInstances": 1,
+        "opacity": 0.45933666499999987,
+        "risePt": 23.565999295655892
+      },
+      {
+        "elapsedMs": 527.343875,
+        "visibleInstances": 1,
+        "opacity": 0.43164031249999996,
+        "risePt": 23.639866857623097
+      },
+      {
+        "elapsedMs": 538.3903750000001,
+        "visibleInstances": 1,
+        "opacity": 0.40402406249999984,
+        "risePt": 23.70466236742859
+      },
+      {
+        "elapsedMs": 549.4417920000001,
+        "visibleInstances": 1,
+        "opacity": 0.3763955199999998,
+        "risePt": 23.761202138853932
+      },
+      {
+        "elapsedMs": 559.645209,
+        "visibleInstances": 1,
+        "opacity": 0.3508869774999999,
+        "risePt": 23.80653658609998
+      },
+      {
+        "elapsedMs": 570.605709,
+        "visibleInstances": 1,
+        "opacity": 0.3234857274999999,
+        "risePt": 23.848412822204182
+      },
+      {
+        "elapsedMs": 581.657959,
+        "visibleInstances": 1,
+        "opacity": 0.29585510249999997,
+        "risePt": 23.884033036138618
+      },
+      {
+        "elapsedMs": 592.653709,
+        "visibleInstances": 1,
+        "opacity": 0.2683657274999999,
+        "risePt": 23.913447771987855
+      },
+      {
+        "elapsedMs": 603.330292,
+        "visibleInstances": 1,
+        "opacity": 0.24167427000000002,
+        "risePt": 23.936789628616452
+      },
+      {
+        "elapsedMs": 614.361125,
+        "visibleInstances": 1,
+        "opacity": 0.21409718749999995,
+        "risePt": 23.956052924255737
+      },
+      {
+        "elapsedMs": 624.5077090000001,
+        "visibleInstances": 1,
+        "opacity": 0.18873072749999978,
+        "risePt": 23.969895949239994
+      },
+      {
+        "elapsedMs": 635.546792,
+        "visibleInstances": 1,
+        "opacity": 0.16113302000000004,
+        "risePt": 23.981265127745065
+      },
+      {
+        "elapsedMs": 646.562959,
+        "visibleInstances": 1,
+        "opacity": 0.13359260250000005,
+        "risePt": 23.989323120856945
+      },
+      {
+        "elapsedMs": 657.728167,
+        "visibleInstances": 1,
+        "opacity": 0.10567958250000004,
+        "risePt": 23.99471469125155
+      },
+      {
+        "elapsedMs": 668.0209590000001,
+        "visibleInstances": 1,
+        "opacity": 0.07994760249999984,
+        "risePt": 23.997711697531408
+      },
+      {
+        "elapsedMs": 679.096,
+        "visibleInstances": 1,
+        "opacity": 0.052259999999999994,
+        "risePt": 23.999360846293413
+      },
+      {
+        "elapsedMs": 690.168125,
+        "visibleInstances": 1,
+        "opacity": 0.02457968749999992,
+        "risePt": 23.999933499307645
+      },
+      {
+        "elapsedMs": 701.240042,
+        "visibleInstances": 0,
+        "opacity": 0,
+        "risePt": 0
+      }
+    ]
+  }
+}

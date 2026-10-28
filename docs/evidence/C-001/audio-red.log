@@ -1,0 +1,44 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Compiling PianoAudioTests SamplerAudioTests.swift
+[4/5] Emitting module PianoAudioTests
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (1.32s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 13:53:21.852.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 13:53:21.853.
+Test Suite 'SamplerAudioTests' started at 2026-10-28 13:53:21.853.
+Test Case '-[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:7: error: -[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom] : failed: caught error: "notImplemented"
+Test Case '-[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom]' failed (0.139 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:7: error: -[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput] : failed: caught error: "notImplemented"
+Test Case '-[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput]' failed (0.000 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:7: error: -[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence] : failed: caught error: "notImplemented"
+Test Case '-[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence]' failed (0.000 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:7: error: -[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike] : failed: caught error: "notImplemented"
+Test Case '-[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike]' failed (0.000 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testRejectsMissingMisnamedAndInvalidBanks]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testRejectsMissingMisnamedAndInvalidBanks]' passed (0.001 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:7: error: -[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare] : failed: caught error: "notImplemented"
+Test Case '-[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare]' failed (0.000 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:7: error: -[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded] : failed: caught error: "notImplemented"
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded]' failed (0.000 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:7: error: -[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout] : failed: caught error: "notImplemented"
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout]' failed (0.001 seconds).
+Test Suite 'SamplerAudioTests' failed at 2026-10-28 13:53:21.996.
+	 Executed 8 tests, with 7 failures (7 unexpected) in 0.142 (0.143) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 13:53:21.996.
+	 Executed 8 tests, with 7 failures (7 unexpected) in 0.142 (0.143) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 13:53:21.996.
+	 Executed 8 tests, with 7 failures (7 unexpected) in 0.142 (0.144) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

@@ -1,0 +1,88 @@
+{
+  "python": "3.12.2 (v3.12.2:6abddd9f6a, Feb  6 2024, 17:02:06) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "same_runtime_byte_reproducible": true,
+  "sha256": "ded7747105075d3b5ed95fed7a0453f638dd27882b80defd1fcc7062c4c700fb",
+  "byte_size": 530774,
+  "sf2_release_timecents": -1382,
+  "sf2_release_seconds": 0.45010494920905475,
+  "chunks": [
+    [
+      "LIST",
+      244
+    ],
+    [
+      "ifil",
+      4
+    ],
+    [
+      "isng",
+      8
+    ],
+    [
+      "INAM",
+      38
+    ],
+    [
+      "IENG",
+      30
+    ],
+    [
+      "ICOP",
+      56
+    ],
+    [
+      "ICMT",
+      56
+    ],
+    [
+      "LIST",
+      529764
+    ],
+    [
+      "smpl",
+      529752
+    ],
+    [
+      "LIST",
+      730
+    ],
+    [
+      "phdr",
+      76
+    ],
+    [
+      "pbag",
+      8
+    ],
+    [
+      "pmod",
+      10
+    ],
+    [
+      "pgen",
+      8
+    ],
+    [
+      "inst",
+      44
+    ],
+    [
+      "ibag",
+      28
+    ],
+    [
+      "imod",
+      10
+    ],
+    [
+      "igen",
+      148
+    ],
+    [
+      "shdr",
+      322
+    ]
+  ],
+  "hardware_playback": false,
+  "audio_asset_downloads": false
+}

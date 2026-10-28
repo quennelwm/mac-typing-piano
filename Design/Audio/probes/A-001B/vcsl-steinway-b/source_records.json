@@ -1,0 +1,94 @@
+{
+  "sourceManifestProjectPath": "Design/Audio/vcsl-steinway-b/audio.manifest.json",
+  "sourceManifestSHA256": "fef008462c5e39c3026ff5625a1c2b1eb4a6ac1b48d08c96635a0b7df95dce62",
+  "licenseRecords": [
+    {
+      "sourceURL": "https://github.com/sgossner/VCSL/tree/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "author": "Versilian Studios LLC",
+      "sourceVersion": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "licenseID": "CC0-1.0",
+      "licenseFile": "licenses/VCSL-CC0.txt",
+      "modifications": "Original WAV unchanged; selected roots resampled to 48kHz PCM24, max8s, 80ms tail fade, one common gain per candidate. Offline audition with <=3-semitone shifts, synthetic events and 500ms release. See recipe."
+    }
+  ],
+  "upstreamSourceRecords": {
+    "sourceCommit": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+    "files": [
+      {
+        "candidate": "vcsl-steinway-b",
+        "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NORMALIZED.txt",
+        "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NORMALIZED.txt",
+        "localPath": "vcsl-steinway-b/originals/NORMALIZED.txt",
+        "expectedBytes": 190,
+        "actualBytes": 190,
+        "gitBlobSHA1": "b6790a98134a31d538eaa943797698e320c976b5",
+        "sha256": "7ae47ef3ae3496c79d32a6814de23c1ed051cf8f8996c67c88cde9a4a0943289"
+      },
+      {
+        "candidate": "vcsl-steinway-b",
+        "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NoSus/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+        "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_A%231_vl2_rr1.wav",
+        "localPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+        "expectedBytes": 6738508,
+        "actualBytes": 6738508,
+        "gitBlobSHA1": "2b7dc07f9cf419c59989cbab5e42101a7be7856b",
+        "sha256": "0f91c0d350c12f574f284c23a92a44348216218c49430c4698c7d505955fdb4f"
+      },
+      {
+        "candidate": "vcsl-steinway-b",
+        "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NoSus/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+        "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+        "localPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+        "expectedBytes": 2260822,
+        "actualBytes": 2260822,
+        "gitBlobSHA1": "5f80e0d82e670ab294d58ac9373b4156f2b6d611",
+        "sha256": "9c2020587943a86dec7a8b7178cdac1c254c4f3dfc016bb27acdef1af292827f"
+      },
+      {
+        "candidate": "vcsl-steinway-b",
+        "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NoSus/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+        "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+        "localPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+        "expectedBytes": 949450,
+        "actualBytes": 949450,
+        "gitBlobSHA1": "5a29bd68c1d245478f05fbcb4c18626cc672c4fe",
+        "sha256": "23d50d834b7e6780899d5e2a62c4c2ba425ac129ef80a3b3bc066038ba2ee755"
+      },
+      {
+        "candidate": "vcsl-steinway-b",
+        "sourcePath": "Chordophones/Zithers/Grand Piano, Steinway B/NoSus/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+        "url": "https://raw.githubusercontent.com/sgossner/VCSL/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/Chordophones/Zithers/Grand%20Piano%2C%20Steinway%20B/NoSus/JHPiano_NoSus_Close_F%232_vl2_rr1.wav",
+        "localPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+        "expectedBytes": 4332820,
+        "actualBytes": 4332820,
+        "gitBlobSHA1": "3002bfd9d03cdd80242e8d28db7de6f1534cd376",
+        "sha256": "3b4c07adb641f09d9fa2630c61c65e17ac7e6fa383661892464957138d03f7b8"
+      }
+    ],
+    "author": "Versilian Studios LLC; repository maintained by Sam Gossner",
+    "note": "localPath in this evidence file is relative to Design/Audio; original URL is pinned. Runtime manifest paths are relative to this candidate directory."
+  },
+  "processedSources": [
+    {
+      "rootMIDI": 34,
+      "projectPath": "Design/Audio/vcsl-steinway-b/samples/piano_m034_v064_rr01.wav",
+      "sha256": "464b50a60ea702e40898a7fa181f3dfc5558bca77066698b7c39ea5b1eb33eff"
+    },
+    {
+      "rootMIDI": 42,
+      "projectPath": "Design/Audio/vcsl-steinway-b/samples/piano_m042_v064_rr01.wav",
+      "sha256": "5c7c7d8bdd62379830f04f5fd26a269530159a7f7d2adf1bdbf9704c86c0c663"
+    },
+    {
+      "rootMIDI": 60,
+      "projectPath": "Design/Audio/vcsl-steinway-b/samples/piano_m060_v064_rr01.wav",
+      "sha256": "5ce865efc31dac8597a9129212336b0f9620fdbb6e51d32c0bc70e7f198c6c32"
+    },
+    {
+      "rootMIDI": 96,
+      "projectPath": "Design/Audio/vcsl-steinway-b/samples/piano_m096_v064_rr01.wav",
+      "sha256": "e9edf14f696e2c7d5141e13de09ec010635e37ccf64ff5c5f6dc134790470254"
+    }
+  ],
+  "modifications": "Existing A-001 stereo PCM24 -> (L+R)/2 mono, nearest-even PCM16; no dither, loop, new gain or pitch correction; SF2 zones +/-1 only and 500ms release timecents."
+}

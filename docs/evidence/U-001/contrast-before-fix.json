@@ -1,0 +1,13 @@
+{
+  "cause": "White Shift side glyph began at y=35.54pt, almost touching adjacent depressed black face ending y=35.5pt. 1x pixel envelope captured dark face/shadow; lower side marker on white keys only.",
+  "minimum": {
+    "widthPt": 900,
+    "whiteDown": false,
+    "blackDown": true,
+    "scale": 1,
+    "physicalKeyID": "shiftLeft",
+    "label": "L",
+    "ratio": 1.4297377640362785
+  },
+  "nativeBoundsWerePass": true
+}

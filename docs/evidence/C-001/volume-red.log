@@ -1,0 +1,68 @@
+[0/1] Planning build
+Building for debugging...
+[0/10] Write sources
+[4/10] Write swift-version--58304C5D6DBC2206.txt
+[6/15] Compiling PianoCore DockOwnership.swift
+[7/15] Emitting module PianoCore
+[8/15] Compiling PianoCore AppPreferences.swift
+[9/22] Emitting module PianoAudio
+[10/22] Compiling PianoAudio SamplerAudio.swift
+[11/22] Compiling PianoCoreTests CoordinatorTests.swift
+[12/22] Compiling PianoCoreTests FloatingNoteTests.swift
+[13/22] Compiling PianoCoreTests AppPreferencesTests.swift
+[14/22] Emitting module PianoCoreTests
+[15/22] Compiling PianoCoreTests MappingTests.swift
+[16/22] Compiling PianoCoreTests GeometryAndDockTests.swift
+[17/22] Compiling PianoCoreTests ReducerTests.swift
+[18/30] Compiling PianoAudioTests SamplerAudioTests.swift
+[19/30] Emitting module PianoAudioTests
+[20/30] Compiling PianoMac SDKKeys.swift
+[21/30] Emitting module PianoMac
+[22/30] Compiling PianoMac PianoView.swift
+[23/30] Compiling PianoMac InputNormalizer.swift
+[24/30] Compiling PianoMac InputMonitor.swift
+[25/30] Compiling PianoMac ProbeController.swift
+[26/34] Emitting module PianoMacTests
+[27/34] Compiling PianoMacTests InputNormalizerTests.swift
+[28/34] Compiling PianoProbe main.swift
+[29/34] Emitting module PianoProbe
+[29/34] Write Objects.LinkFileList
+[31/34] Linking TypingPianoProbe
+[32/34] Linking TypingPianoProbePackageTests
+[33/34] Applying TypingPianoProbe
+Build complete! (3.38s)
+Test Suite 'Selected tests' started at 2026-10-28 14:15:54.605.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 14:15:54.608.
+Test Suite 'AppPreferencesTests' started at 2026-10-28 14:15:54.608.
+Test Case '-[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/AppPreferencesTests.swift:10: error: -[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch] : XCTAssertEqual failed: ("0.5") is not equal to ("1.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/AppPreferencesTests.swift:11: error: -[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch] : XCTAssertEqual failed: ("0.5") is not equal to ("0.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/AppPreferencesTests.swift:12: error: -[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch] : XCTAssertEqual failed: ("0.5") is not equal to ("0.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/AppPreferencesTests.swift:16: error: -[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch] : XCTAssertEqual failed: ("0.5") is not equal to ("0.75")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/AppPreferencesTests.swift:17: error: -[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch] : XCTAssertEqualWithAccuracy failed: ("0.08") is not equal to ("0.12") +/- ("1e-05")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/AppPreferencesTests.swift:18: error: -[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch] : XCTAssertFalse failed
+Test Case '-[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch]' failed (0.203 seconds).
+Test Suite 'AppPreferencesTests' failed at 2026-10-28 14:15:54.812.
+	 Executed 1 test, with 6 failures (0 unexpected) in 0.203 (0.204) seconds
+Test Suite 'GeometryAndDockTests' started at 2026-10-28 14:15:54.812.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility]' passed (0.000 seconds).
+Test Suite 'GeometryAndDockTests' passed at 2026-10-28 14:15:54.812.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'SamplerAudioTests' started at 2026-10-28 14:15:54.812.
+Test Case '-[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/SamplerAudioTests.swift:30: error: -[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle] : XCTAssertLessThan failed: ("0.0024724924") is not less than ("1e-06")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/SamplerAudioTests.swift:37: error: -[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle] : XCTAssertEqual failed: ("0.08") is not equal to ("0.16")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/SamplerAudioTests.swift:40: error: -[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle] : XCTAssertEqual failed: ("0.08") is not equal to ("0.16")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/SamplerAudioTests.swift:42: error: -[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle] : XCTAssertEqual failed: ("0.08") is not equal to ("0.16")
+Test Case '-[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle]' failed (0.076 seconds).
+Test Suite 'SamplerAudioTests' failed at 2026-10-28 14:15:54.889.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.076 (0.076) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 14:15:54.889.
+	warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+ Executed 3 tests, with 10 failures (0 unexpected) in 0.280 (0.281) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 14:15:54.889.
+	 Executed 3 tests, with 10 failures (0 unexpected) in 0.280 (0.284) seconds
+AUDIO_METRIC max_slider_gain=0.16 chord_peak=0.1382335
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

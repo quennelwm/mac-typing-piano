@@ -1,0 +1,3083 @@
+{
+  "checks" : [
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        12.802782541484504,
+        38.908673703533729,
+        1.9733822854520424,
+        9.0913262964662689
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 33,
+      "minimumHorizontalMarginPt" : 10.452782541484504,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        21.323770556010697,
+        23.935302734375,
+        8.5103536248207092,
+        7.064697265625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 34,
+      "minimumHorizontalMarginPt" : 2.7006126612738548,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        36.381729909905552,
+        38.908673703533729,
+        1.9733822854520424,
+        9.0913262964662689
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 35,
+      "minimumHorizontalMarginPt" : 10.452782541484499,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        59.37021998355263,
+        38.849609375,
+        3.154296875,
+        9.150390625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 36,
+      "minimumHorizontalMarginPt" : 9.862325246710526,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        69.44802374588815,
+        27.21484375,
+        6.57763671875,
+        3.78515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 37,
+      "minimumHorizontalMarginPt" : 3.6669711143092059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        83.666940789473671,
+        41.125,
+        1.71875,
+        6.875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 38,
+      "minimumHorizontalMarginPt" : 10.580098684210526,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        91.970061934621711,
+        19.154394531249999,
+        10.20151701274672,
+        11.845605468750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 39,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        105.45633737664473,
+        40.9541015625,
+        5.2978515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 40,
+      "minimumHorizontalMarginPt" : 8.790547902960526,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        128.63001130756578,
+        40.9541015625,
+        6.1083984375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 41,
+      "minimumHorizontalMarginPt" : 8.385274465460526,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        139.40395764802631,
+        18.894628906249999,
+        9.9255160361842059,
+        12.105371093750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 42,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        152.20651726973682,
+        40.6025390625,
+        6.11328125,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 43,
+      "minimumHorizontalMarginPt" : 8.382833059210526,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        162.98290501644738,
+        18.894628906249999,
+        9.9255160361842059,
+        12.105371093750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 44,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        175.72442948190789,
+        40.9541015625,
+        6.2353515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 45,
+      "minimumHorizontalMarginPt" : 8.321797902960526,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        186.28585140830592,
+        19.154394531249999,
+        10.201517012746706,
+        11.845605468750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 46,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        199.76480263157893,
+        40.9541015625,
+        5.3125,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 47,
+      "minimumHorizontalMarginPt" : 8.783223684210526,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        223.79785156249997,
+        40.9541015625,
+        4.404296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 48,
+      "minimumHorizontalMarginPt" : 9.237325246710526,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        233.83964458264802,
+        26.64892578125,
+        7.899658203125,
+        4.35107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 49,
+      "minimumHorizontalMarginPt" : 3.0059603721217059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        246.64437705592104,
+        40.9541015625,
+        5.869140625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 50,
+      "minimumHorizontalMarginPt" : 8.5049033717104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        257.47193667763156,
+        23.146728515625,
+        7.79296875,
+        7.853271484375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 51,
+      "minimumHorizontalMarginPt" : 3.0593050986842059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        270.45037520559208,
+        40.6025390625,
+        5.4150390625,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 52,
+      "minimumHorizontalMarginPt" : 8.7319541529604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        291.9449475740131,
+        38.139892578125,
+        15.131368215460554,
+        9.860107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 53,
+      "minimumHorizontalMarginPt" : 1.1000000000000227,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        307.58466539884864,
+        29.39501953125,
+        1.88330078125,
+        1.60498046875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 54,
+      "minimumHorizontalMarginPt" : 6.0141390830592059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        317.17614103618416,
+        40.9541015625,
+        6.279296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 55,
+      "minimumHorizontalMarginPt" : 8.2998252467104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        330.70206491570724,
+        24.306396484375,
+        2.806396484375,
+        6.693603515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 56,
+      "minimumHorizontalMarginPt" : 5.5525912314967059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        341.01631887335532,
+        40.9541015625,
+        5.7568359375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 57,
+      "minimumHorizontalMarginPt" : 8.5610557154604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        353.39502595600328,
+        24.139404296875,
+        4.578369140625,
+        6.860595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 58,
+      "minimumHorizontalMarginPt" : 4.6666049033717059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        364.31938733552636,
+        40.6025390625,
+        6.30859375,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 59,
+      "minimumHorizontalMarginPt" : 8.2851768092104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        387.77469990766389,
+        46.153277931671283,
+        6.5558633425669441,
+        1.8467220683287167
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 60,
+      "minimumHorizontalMarginPt" : 8.1615420129270433,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        400.39752518503286,
+        24.055908203125,
+        4.88916015625,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 61,
+      "minimumHorizontalMarginPt" : 4.5112093955592059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        411.72386410361844,
+        40.9541015625,
+        5.8154296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 62,
+      "minimumHorizontalMarginPt" : 8.5317588404604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        423.8210770456414,
+        24.306396484375,
+        5.199951171875,
+        6.693603515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 63,
+      "minimumHorizontalMarginPt" : 4.3558138877467059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        437.65876850328948,
+        40.9541015625,
+        1.103515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 64,
+      "minimumHorizontalMarginPt" : 10.887715871710498,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        459.54826274671052,
+        40.9541015625,
+        4.482421875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 65,
+      "minimumHorizontalMarginPt" : 9.1982627467104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        471.21090537623354,
+        24.139404296875,
+        4.736083984375,
+        6.860595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 66,
+      "minimumHorizontalMarginPt" : 4.5877474814967059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        480.57652652138154,
+        38.139892578125,
+        15.131368215460554,
+        9.860107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 67,
+      "minimumHorizontalMarginPt" : 1.1000000000000227,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        494.63909590871708,
+        23.97705078125,
+        5.03759765625,
+        7.02294921875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 68,
+      "minimumHorizontalMarginPt" : 4.4369906455592059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        505.6539113898026,
+        40.6025390625,
+        6.5869140625,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 69,
+      "minimumHorizontalMarginPt" : 8.1460166529604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        518.45229620682562,
+        24.3017578125,
+        4.569091796875,
+        6.6982421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 70,
+      "minimumHorizontalMarginPt" : 4.671243575246649,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        529.66987047697364,
+        40.7783203125,
+        5.712890625,
+        7.2216796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 71,
+      "minimumHorizontalMarginPt" : 8.5830283717104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        552.15750925164468,
+        41.525390625,
+        7.8955078125,
+        6.474609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 72,
+      "minimumHorizontalMarginPt" : 7.4917197779604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        565.3550639905427,
+        24.055908203125,
+        5.079345703125,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 73,
+      "minimumHorizontalMarginPt" : 4.416116622121649,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        577.51868318256572,
+        40.7783203125,
+        4.3310546875,
+        7.2216796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 74,
+      "minimumHorizontalMarginPt" : 9.2739463404604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        588.95488538240124,
+        23.97705078125,
+        5.03759765625,
+        7.02294921875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 75,
+      "minimumHorizontalMarginPt" : 4.436990645559149,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        600.45065789473676,
+        40.9541015625,
+        5.625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 76,
+      "minimumHorizontalMarginPt" : 8.6269736842104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        624.6399568256578,
+        40.9541015625,
+        4.404296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 77,
+      "minimumHorizontalMarginPt" : 9.2373252467104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        636.15684750205594,
+        23.972412109375,
+        4.949462890625,
+        7.027587890625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 78,
+      "minimumHorizontalMarginPt" : 4.481058028371649,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        646.87124794407896,
+        40.9541015625,
+        7.099609375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 79,
+      "minimumHorizontalMarginPt" : 7.8896689967104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        660.65657123766448,
+        30.072265625,
+        3.10791015625,
+        0.927734375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 80,
+      "minimumHorizontalMarginPt" : 5.401834395559149,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        670.70654296875,
+        40.0166015625,
+        6.5869140625,
+        7.9833984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 81,
+      "minimumHorizontalMarginPt" : 8.1460166529604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        683.33561626233552,
+        27.548828125,
+        4.90771484375,
+        3.451171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 82,
+      "minimumHorizontalMarginPt" : 4.501932051809149,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        693.09652549342104,
+        40.9541015625,
+        8.96484375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 83,
+      "minimumHorizontalMarginPt" : 6.9570518092104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        718.48455489309208,
+        40.9541015625,
+        5.3466796875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 84,
+      "minimumHorizontalMarginPt" : 8.7661338404604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        728.9349172491776,
+        24.14404296875,
+        8.02490234375,
+        6.85595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 85,
+      "minimumHorizontalMarginPt" : 2.943338301809149,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        741.97317023026312,
+        40.9541015625,
+        5.52734375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 86,
+      "minimumHorizontalMarginPt" : 8.6758018092104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        753.08442125822364,
+        25.31298828125,
+        6.8837890625,
+        5.68701171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 87,
+      "minimumHorizontalMarginPt" : 3.513894942434149,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        765.28112150493416,
+        40.9541015625,
+        6.0693359375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 88,
+      "minimumHorizontalMarginPt" : 8.4048057154604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        789.3483501233552,
+        40.9541015625,
+        5.0927734375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 89,
+      "minimumHorizontalMarginPt" : 8.8930869654604976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        800.84070466694072,
+        24.055908203125,
+        5.68701171875,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 90,
+      "minimumHorizontalMarginPt" : 4.112283614309149,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        814.93657483552624,
+        45.12890625,
+        1.07421875,
+        2.87109375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 91,
+      "minimumHorizontalMarginPt" : 10.902364309210498,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        824.41965203536176,
+        24.055908203125,
+        5.68701171875,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 92,
+      "minimumHorizontalMarginPt" : 4.112283614309149,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        838.27138157894728,
+        45.12890625,
+        1.5625,
+        2.87109375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 93,
+      "minimumHorizontalMarginPt" : 10.658223684210498,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        847.4002107319078,
+        25.31298828125,
+        6.8837890625,
+        5.68701171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 94,
+      "minimumHorizontalMarginPt" : 3.513894942434149,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        861.91380550986833,
+        46.5693359375,
+        1.435546875,
+        1.4306640625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 95,
+      "minimumHorizontalMarginPt" : 10.721700246710498,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        884.63337787828937,
+        38.849609375,
+        3.154296875,
+        9.150390625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 96,
+      "minimumHorizontalMarginPt" : 9.8623252467104976,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 900
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        14.118572015168715,
+        38.908673703533729,
+        1.9733822854520424,
+        9.0913262964662689
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 33,
+      "minimumHorizontalMarginPt" : 11.768572015168715,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        23.955349503379118,
+        23.935302734375,
+        8.5103536248207092,
+        7.064697265625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 34,
+      "minimumHorizontalMarginPt" : 3.4769284507475398,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        40.329098330958189,
+        38.908673703533729,
+        1.9733822854520424,
+        9.0913262964662689
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 35,
+      "minimumHorizontalMarginPt" : 11.768572015168715,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        65.949167351973685,
+        38.849609375,
+        3.154296875,
+        9.150390625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 36,
+      "minimumHorizontalMarginPt" : 11.178114720394731,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        77.342760587993411,
+        27.21484375,
+        6.57763671875,
+        3.78515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 37,
+      "minimumHorizontalMarginPt" : 4.4432869037828908,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        92.877467105263136,
+        41.125,
+        1.71875,
+        6.875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 38,
+      "minimumHorizontalMarginPt" : 11.895888157894731,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        102.4963777240954,
+        19.154394531249999,
+        10.977832802220405,
+        11.845605468750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 39,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        117.29844263980262,
+        40.9541015625,
+        5.2978515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 40,
+      "minimumHorizontalMarginPt" : 10.106337376644731,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        143.10369551809211,
+        40.9541015625,
+        6.1083984375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 41,
+      "minimumHorizontalMarginPt" : 9.7010639391447171,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        155.19343133223683,
+        18.894628906249999,
+        10.701831825657877,
+        12.105371093750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 42,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        169.31178042763156,
+        40.6025390625,
+        6.11328125,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 43,
+      "minimumHorizontalMarginPt" : 9.6986225328947171,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        181.40395764802631,
+        18.894628906249999,
+        10.701831825657877,
+        12.105371093750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 44,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        195.46127158717104,
+        40.9541015625,
+        6.2353515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 45,
+      "minimumHorizontalMarginPt" : 9.6375873766447171,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        207.33848298725329,
+        19.154394531249999,
+        10.977832802220377,
+        11.845605468750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 46,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        222.13322368421052,
+        40.9541015625,
+        5.3125,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 47,
+      "minimumHorizontalMarginPt" : 10.099013157894717,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        248.7978515625,
+        40.9541015625,
+        4.404296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 48,
+      "minimumHorizontalMarginPt" : 10.553114720394717,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        260.15543405633224,
+        26.64892578125,
+        7.899658203125,
+        4.35107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 49,
+      "minimumHorizontalMarginPt" : 3.782276161595405,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        274.27595600328948,
+        40.9541015625,
+        5.869140625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 50,
+      "minimumHorizontalMarginPt" : 9.8206928453947171,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        286.41930509868422,
+        23.146728515625,
+        7.79296875,
+        7.853271484375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 51,
+      "minimumHorizontalMarginPt" : 3.835620888157905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        300.71353310032896,
+        40.6025390625,
+        5.4150390625,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 52,
+      "minimumHorizontalMarginPt" : 10.047743626644717,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        324.83968441611836,
+        38.139892578125,
+        16.447157689144774,
+        9.860107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 53,
+      "minimumHorizontalMarginPt" : 1.1000000000000227,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        341.79519171463812,
+        29.39501953125,
+        1.88330078125,
+        1.60498046875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 54,
+      "minimumHorizontalMarginPt" : 6.790454872532905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        352.70245682565786,
+        40.9541015625,
+        6.279296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 55,
+      "minimumHorizontalMarginPt" : 9.6156147203947171,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        367.5441701788651,
+        24.306396484375,
+        2.806396484375,
+        6.693603515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 56,
+      "minimumHorizontalMarginPt" : 6.328907020970405,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        379.17421361019734,
+        40.9541015625,
+        5.7568359375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 57,
+      "minimumHorizontalMarginPt" : 9.8768451891447171,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        392.86871016652958,
+        24.139404296875,
+        4.578369140625,
+        6.860595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 58,
+      "minimumHorizontalMarginPt" : 5.442920692845405,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        405.10886101973682,
+        40.6025390625,
+        6.30859375,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 59,
+      "minimumHorizontalMarginPt" : 9.6009662828947171,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        431.19575253924279,
+        46.153277931671283,
+        6.5558633425669441,
+        1.8467220683287167
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 60,
+      "minimumHorizontalMarginPt" : 9.4773314866112059,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        445.13436729029604,
+        24.055908203125,
+        4.88916015625,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 61,
+      "minimumHorizontalMarginPt" : 5.287525185032905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        457.77649568256578,
+        40.9541015625,
+        5.8154296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 62,
+      "minimumHorizontalMarginPt" : 9.8475483141447171,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        471.18949809827302,
+        24.306396484375,
+        5.199951171875,
+        6.693603515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 63,
+      "minimumHorizontalMarginPt" : 5.132129677220405,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        486.34297902960526,
+        40.9541015625,
+        1.103515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 64,
+      "minimumHorizontalMarginPt" : 12.203505345394717,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        510.8640522203948,
+        40.9541015625,
+        4.482421875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 65,
+      "minimumHorizontalMarginPt" : 10.51405222039466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        523.84248432360198,
+        24.139404296875,
+        4.736083984375,
+        6.860595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 66,
+      "minimumHorizontalMarginPt" : 5.364063270970405,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        534.52389494243425,
+        38.139892578125,
+        16.44715768914466,
+        9.860107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 67,
+      "minimumHorizontalMarginPt" : 1.1000000000000227,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        549.90225380345396,
+        23.97705078125,
+        5.03759765625,
+        7.02294921875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 68,
+      "minimumHorizontalMarginPt" : 5.213306435032905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        562.23285875822376,
+        40.6025390625,
+        6.5869140625,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 69,
+      "minimumHorizontalMarginPt" : 9.4618061266446603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        576.34703304893094,
+        24.3017578125,
+        4.569091796875,
+        6.6982421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 70,
+      "minimumHorizontalMarginPt" : 5.447559364720405,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        588.88039679276324,
+        40.7783203125,
+        5.712890625,
+        7.2216796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 71,
+      "minimumHorizontalMarginPt" : 9.8988178453946603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        613.99961451480272,
+        41.525390625,
+        7.8955078125,
+        6.474609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 72,
+      "minimumHorizontalMarginPt" : 8.8075092516446603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        628.51295872738478,
+        24.055908203125,
+        5.079345703125,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 73,
+      "minimumHorizontalMarginPt" : 5.192432411595405,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        641.99236739309208,
+        40.7783203125,
+        4.3310546875,
+        7.2216796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 74,
+      "minimumHorizontalMarginPt" : 10.58973581414466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        654.74435906661176,
+        23.97705078125,
+        5.03759765625,
+        7.02294921875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 75,
+      "minimumHorizontalMarginPt" : 5.213306435032905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        667.55592105263156,
+        40.9541015625,
+        5.625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 76,
+      "minimumHorizontalMarginPt" : 9.9427631578946603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        694.37679893092104,
+        40.9541015625,
+        4.404296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 77,
+      "minimumHorizontalMarginPt" : 10.55311472039466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        707.20947908100322,
+        23.972412109375,
+        4.949462890625,
+        7.027587890625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 78,
+      "minimumHorizontalMarginPt" : 5.257373817845405,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        719.23966899671052,
+        40.9541015625,
+        7.099609375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 79,
+      "minimumHorizontalMarginPt" : 9.2054584703946603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        734.3407817639802,
+        30.072265625,
+        3.10791015625,
+        0.927734375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 80,
+      "minimumHorizontalMarginPt" : 6.178150185032905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        745.70654296875,
+        40.0166015625,
+        6.5869140625,
+        7.9833984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 81,
+      "minimumHorizontalMarginPt" : 9.4618061266446603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        759.65140573601968,
+        27.548828125,
+        4.90771484375,
+        3.451171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 82,
+      "minimumHorizontalMarginPt" : 5.278247841282905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        770.72810444078948,
+        40.9541015625,
+        8.96484375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 83,
+      "minimumHorizontalMarginPt" : 8.2728412828946603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        798.74771278782896,
+        40.9541015625,
+        5.3466796875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 84,
+      "minimumHorizontalMarginPt" : 10.08192331414466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        810.51386461759864,
+        24.14404296875,
+        8.02490234375,
+        6.85595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 85,
+      "minimumHorizontalMarginPt" : 3.719654091282905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        824.86790707236844,
+        40.9541015625,
+        5.52734375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 86,
+      "minimumHorizontalMarginPt" : 9.9915912828946603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        837.29494757401312,
+        25.31298828125,
+        6.8837890625,
+        5.68701171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 87,
+      "minimumHorizontalMarginPt" : 4.290210731907905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        850.80743729440792,
+        40.9541015625,
+        6.0693359375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 88,
+      "minimumHorizontalMarginPt" : 9.7205951891446603,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        877.5062448601974,
+        40.9541015625,
+        5.0927734375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 89,
+      "minimumHorizontalMarginPt" : 10.20887643914466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        890.31438887746708,
+        24.055908203125,
+        5.68701171875,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 90,
+      "minimumHorizontalMarginPt" : 4.888599403782905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        905.72604851973688,
+        45.12890625,
+        1.07421875,
+        2.87109375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 91,
+      "minimumHorizontalMarginPt" : 12.21815378289466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        916.52491519325656,
+        24.055908203125,
+        5.68701171875,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 92,
+      "minimumHorizontalMarginPt" : 4.888599403782905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        931.69243421052636,
+        45.12890625,
+        1.5625,
+        2.87109375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 93,
+      "minimumHorizontalMarginPt" : 11.97401315789466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        942.13705283717104,
+        25.31298828125,
+        6.8837890625,
+        5.68701171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 94,
+      "minimumHorizontalMarginPt" : 4.290210731907905,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        957.96643708881584,
+        46.5693359375,
+        1.435546875,
+        1.4306640625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 95,
+      "minimumHorizontalMarginPt" : 12.03748972039466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        983.31758840460532,
+        38.849609375,
+        3.154296875,
+        9.150390625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 96,
+      "minimumHorizontalMarginPt" : 11.17811472039466,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1000
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        15.434361488852927,
+        38.908673703533729,
+        1.9733822854520424,
+        9.0913262964662689
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 33,
+      "minimumHorizontalMarginPt" : 13.084361488852927,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        26.586928450747536,
+        23.935302734375,
+        8.5103536248207092,
+        7.064697265625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 34,
+      "minimumHorizontalMarginPt" : 4.2532442402212212,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        44.276466752010819,
+        38.908673703533729,
+        1.9733822854520424,
+        9.0913262964662689
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 35,
+      "minimumHorizontalMarginPt" : 13.084361488852924,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        72.52811472039474,
+        38.849609375,
+        3.154296875,
+        9.150390625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 36,
+      "minimumHorizontalMarginPt" : 12.493904194078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        85.237497430098685,
+        27.21484375,
+        6.57763671875,
+        3.78515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 37,
+      "minimumHorizontalMarginPt" : 5.2196026932565758,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        102.08799342105263,
+        41.125,
+        1.71875,
+        6.875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 38,
+      "minimumHorizontalMarginPt" : 13.211677631578937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        113.02269351356908,
+        19.154394531249999,
+        11.754148591694076,
+        11.845605468750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 39,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        129.14054790296052,
+        40.9541015625,
+        5.2978515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 40,
+      "minimumHorizontalMarginPt" : 11.422126850328937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        157.57737972861841,
+        40.9541015625,
+        6.1083984375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 41,
+      "minimumHorizontalMarginPt" : 11.016853412828937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        170.98290501644738,
+        18.894628906249999,
+        11.478147615131576,
+        12.105371093750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 42,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        186.4170435855263,
+        40.6025390625,
+        6.11328125,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 43,
+      "minimumHorizontalMarginPt" : 11.014412006578937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        199.82501027960527,
+        18.894628906249999,
+        11.478147615131576,
+        12.105371093750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 44,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        215.19811369243419,
+        40.9541015625,
+        6.2353515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 45,
+      "minimumHorizontalMarginPt" : 10.953376850328937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        228.39111456620066,
+        19.154394531249999,
+        11.754148591694076,
+        11.845605468750001
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 46,
+      "minimumHorizontalMarginPt" : 1.0999999999999943,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        244.50164473684208,
+        40.9541015625,
+        5.3125,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 47,
+      "minimumHorizontalMarginPt" : 11.414802631578937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        273.7978515625,
+        40.9541015625,
+        4.404296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 48,
+      "minimumHorizontalMarginPt" : 11.868904194078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        286.47122353001646,
+        26.64892578125,
+        7.899658203125,
+        4.35107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 49,
+      "minimumHorizontalMarginPt" : 4.5585919510690474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        301.90753495065792,
+        40.9541015625,
+        5.869140625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 50,
+      "minimumHorizontalMarginPt" : 11.136482319078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        315.36667351973682,
+        23.146728515625,
+        7.79296875,
+        7.853271484375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 51,
+      "minimumHorizontalMarginPt" : 4.6119366776315474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        330.97669099506578,
+        40.6025390625,
+        5.4150390625,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 52,
+      "minimumHorizontalMarginPt" : 11.363533100328937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        357.73442125822368,
+        38.139892578125,
+        17.762947162828937,
+        9.860107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 53,
+      "minimumHorizontalMarginPt" : 1.1000000000000227,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        376.0057180304276,
+        29.39501953125,
+        1.88330078125,
+        1.60498046875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 54,
+      "minimumHorizontalMarginPt" : 7.5667706620065474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        388.22877261513156,
+        40.9541015625,
+        6.279296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 55,
+      "minimumHorizontalMarginPt" : 10.931404194078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        404.38627544202302,
+        24.306396484375,
+        2.806396484375,
+        6.693603515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 56,
+      "minimumHorizontalMarginPt" : 7.1052228104440474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        417.33210834703948,
+        40.9541015625,
+        5.7568359375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 57,
+      "minimumHorizontalMarginPt" : 11.192634662828937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        432.34239437705588,
+        24.139404296875,
+        4.578369140625,
+        6.860595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 58,
+      "minimumHorizontalMarginPt" : 6.2192364823190474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        445.89833470394734,
+        40.6025390625,
+        6.30859375,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 59,
+      "minimumHorizontalMarginPt" : 10.916755756578937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        474.61680517082175,
+        46.153277931671283,
+        6.5558633425669441,
+        1.8467220683287167
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 60,
+      "minimumHorizontalMarginPt" : 10.793120960295425,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        489.87120939555922,
+        24.055908203125,
+        4.88916015625,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 61,
+      "minimumHorizontalMarginPt" : 6.0638409745065474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        503.82912726151318,
+        40.9541015625,
+        5.8154296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 62,
+      "minimumHorizontalMarginPt" : 11.163337787828937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        518.55791915090458,
+        24.306396484375,
+        5.199951171875,
+        6.693603515625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 63,
+      "minimumHorizontalMarginPt" : 5.9084454666940474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        535.02718955592104,
+        40.9541015625,
+        1.103515625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 64,
+      "minimumHorizontalMarginPt" : 13.519294819078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        562.17984169407896,
+        40.9541015625,
+        4.482421875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 65,
+      "minimumHorizontalMarginPt" : 11.829841694078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        576.47406327097042,
+        24.139404296875,
+        4.736083984375,
+        6.860595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 66,
+      "minimumHorizontalMarginPt" : 6.1403790604440474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        588.47126336348686,
+        38.139892578125,
+        17.762947162828937,
+        9.860107421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 67,
+      "minimumHorizontalMarginPt" : 1.1000000000000227,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        605.16541169819072,
+        23.97705078125,
+        5.03759765625,
+        7.02294921875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 68,
+      "minimumHorizontalMarginPt" : 5.9896222245065474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        618.81180612664468,
+        40.6025390625,
+        6.5869140625,
+        7.3974609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 69,
+      "minimumHorizontalMarginPt" : 10.777595600328937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        634.24176989103614,
+        24.3017578125,
+        4.569091796875,
+        6.6982421875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 70,
+      "minimumHorizontalMarginPt" : 6.2238751541940474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        648.0909231085526,
+        40.7783203125,
+        5.712890625,
+        7.2216796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 71,
+      "minimumHorizontalMarginPt" : 11.214607319078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        675.84171977796052,
+        41.525390625,
+        7.8955078125,
+        6.474609375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 72,
+      "minimumHorizontalMarginPt" : 10.123298725328937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        691.67085346422698,
+        24.055908203125,
+        5.079345703125,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 73,
+      "minimumHorizontalMarginPt" : 5.9687482010690474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        706.46605160361844,
+        40.7783203125,
+        4.3310546875,
+        7.2216796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 74,
+      "minimumHorizontalMarginPt" : 11.905525287828937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        720.5338327508224,
+        23.97705078125,
+        5.03759765625,
+        7.02294921875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 75,
+      "minimumHorizontalMarginPt" : 5.9896222245065474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        734.66118421052636,
+        40.9541015625,
+        5.625,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 76,
+      "minimumHorizontalMarginPt" : 11.258552631578937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        764.11364103618416,
+        40.9541015625,
+        4.404296875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 77,
+      "minimumHorizontalMarginPt" : 11.868904194078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        778.26211065995062,
+        23.972412109375,
+        4.949462890625,
+        7.027587890625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 78,
+      "minimumHorizontalMarginPt" : 6.0336896073190474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        791.60809004934208,
+        40.9541015625,
+        7.099609375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 79,
+      "minimumHorizontalMarginPt" : 10.521247944078937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        808.02499229029604,
+        30.072265625,
+        3.10791015625,
+        0.927734375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 80,
+      "minimumHorizontalMarginPt" : 6.9544659745065474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        820.70654296875,
+        40.0166015625,
+        6.5869140625,
+        7.9833984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 81,
+      "minimumHorizontalMarginPt" : 10.777595600328937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        835.96719520970396,
+        27.548828125,
+        4.90771484375,
+        3.451171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 82,
+      "minimumHorizontalMarginPt" : 6.0545636307565474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        848.35968338815792,
+        40.9541015625,
+        8.96484375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 83,
+      "minimumHorizontalMarginPt" : 9.5886307565789366,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        879.01087068256572,
+        40.9541015625,
+        5.3466796875,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 84,
+      "minimumHorizontalMarginPt" : 11.397712787828937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        892.09281198601968,
+        24.14404296875,
+        8.02490234375,
+        6.85595703125
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 85,
+      "minimumHorizontalMarginPt" : 4.4959698807565474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        907.76264391447364,
+        40.9541015625,
+        5.52734375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 86,
+      "minimumHorizontalMarginPt" : 11.307380756578937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        921.5054738898026,
+        25.31298828125,
+        6.8837890625,
+        5.68701171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 87,
+      "minimumHorizontalMarginPt" : 5.0665265213815474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        936.33375308388156,
+        40.9541015625,
+        6.0693359375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 88,
+      "minimumHorizontalMarginPt" : 11.036384662828937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        965.66413959703948,
+        40.9541015625,
+        5.0927734375,
+        7.0458984375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 89,
+      "minimumHorizontalMarginPt" : 11.524665912828937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        979.78807308799344,
+        24.055908203125,
+        5.68701171875,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 90,
+      "minimumHorizontalMarginPt" : 5.6649151932565474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        996.5155222039474,
+        45.12890625,
+        1.07421875,
+        2.87109375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 91,
+      "minimumHorizontalMarginPt" : 13.533943256578937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        1008.6301783511512,
+        24.055908203125,
+        5.68701171875,
+        6.944091796875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 92,
+      "minimumHorizontalMarginPt" : 5.6649151932565474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        1025.1134868421052,
+        45.12890625,
+        1.5625,
+        2.87109375
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 93,
+      "minimumHorizontalMarginPt" : 13.289802631578937,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        1036.8738949424342,
+        25.31298828125,
+        6.8837890625,
+        5.68701171875
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 3,
+      "midiNote" : 94,
+      "minimumHorizontalMarginPt" : 5.0665265213815474,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        1054.0190686677631,
+        46.5693359375,
+        1.435546875,
+        1.4306640625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 95,
+      "minimumHorizontalMarginPt" : 13.353279194078823,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1100
+    },
+    {
+      "insideOwnKey" : true,
+      "labelBoundsPt" : [
+        1082.001798930921,
+        38.849609375,
+        3.154296875,
+        9.150390625
+      ],
+      "labelOverlap" : false,
+      "mainBottomInsetPt" : 4,
+      "midiNote" : 96,
+      "minimumHorizontalMarginPt" : 12.493904194078823,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1100
+    }
+  ],
+  "date" : "2026-10-28 Asia/Shanghai",
+  "failed" : [
+
+  ],
+  "renderer" : "native AppKit + CoreText; sRGB",
+  "scope" : "Native font and geometric evidence only. Not on-screen human legibility, capture or product integration.",
+  "status" : "pass"
+}

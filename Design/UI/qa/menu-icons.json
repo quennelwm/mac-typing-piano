@@ -1,0 +1,94 @@
+{
+  "checks" : [
+    {
+      "appearance" : "light",
+      "glyph" : "♪",
+      "missingGlyphs" : 0,
+      "nominalInkMarginPt" : 1.5,
+      "resolvedFonts" : [
+        ".HiraKakuInterface-W5"
+      ],
+      "scale" : 1,
+      "sizePt" : 16
+    },
+    {
+      "appearance" : "dark",
+      "glyph" : "♪",
+      "missingGlyphs" : 0,
+      "nominalInkMarginPt" : 1.5,
+      "resolvedFonts" : [
+        ".HiraKakuInterface-W5"
+      ],
+      "scale" : 1,
+      "sizePt" : 16
+    },
+    {
+      "appearance" : "light",
+      "glyph" : "♪",
+      "missingGlyphs" : 0,
+      "nominalInkMarginPt" : 1.5,
+      "resolvedFonts" : [
+        ".HiraKakuInterface-W5"
+      ],
+      "scale" : 2,
+      "sizePt" : 16
+    },
+    {
+      "appearance" : "dark",
+      "glyph" : "♪",
+      "missingGlyphs" : 0,
+      "nominalInkMarginPt" : 1.5,
+      "resolvedFonts" : [
+        ".HiraKakuInterface-W5"
+      ],
+      "scale" : 2,
+      "sizePt" : 16
+    },
+    {
+      "appearance" : "light",
+      "glyph" : "♪",
+      "missingGlyphs" : 0,
+      "nominalInkMarginPt" : 1.5,
+      "resolvedFonts" : [
+        ".HiraKakuInterface-W5"
+      ],
+      "scale" : 1,
+      "sizePt" : 18
+    },
+    {
+      "appearance" : "dark",
+      "glyph" : "♪",
+      "missingGlyphs" : 0,
+      "nominalInkMarginPt" : 1.5,
+      "resolvedFonts" : [
+        ".HiraKakuInterface-W5"
+      ],
+      "scale" : 1,
+      "sizePt" : 18
+    },
+    {
+      "appearance" : "light",
+      "glyph" : "♪",
+      "missingGlyphs" : 0,
+      "nominalInkMarginPt" : 1.5,
+      "resolvedFonts" : [
+        ".HiraKakuInterface-W5"
+      ],
+      "scale" : 2,
+      "sizePt" : 18
+    },
+    {
+      "appearance" : "dark",
+      "glyph" : "♪",
+      "missingGlyphs" : 0,
+      "nominalInkMarginPt" : 1.5,
+      "resolvedFonts" : [
+        ".HiraKakuInterface-W5"
+      ],
+      "scale" : 2,
+      "sizePt" : 18
+    }
+  ],
+  "scope" : "CoreText rendering and export only; actual macOS status-bar selection/accessibility/automatic tint not tested.",
+  "status" : "pass"
+}

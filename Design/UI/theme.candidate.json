@@ -1,0 +1,510 @@
+{
+  "schemaVersion": "1.0.0",
+  "themeVersion": "quiet-ivory-u001.0.3",
+  "artifactState": "design_proposal",
+  "geometry": {
+    "preferredWidthPt": 1000,
+    "minPreferredWidthPt": 900,
+    "maxPreferredWidthPt": 1100,
+    "preferredHeightPt": 56,
+    "blackWidthRatio": 0.59,
+    "blackHeightRatio": 0.64,
+    "bottomMarginPt": 8,
+    "whiteKeyCount": 38,
+    "blackKeyCount": 26,
+    "outerInsetHorizontalPt": 2,
+    "keyTopPt": 2,
+    "whiteFaceHeightPt": 50,
+    "blackFaceHeightPt": 32,
+    "whiteGapPt": 0.7,
+    "restKeyBottomPt": 52,
+    "depressedKeyBottomPt": 54,
+    "heightScope": "Only 56pt rendered and checked in U-001; 48–76pt range remains unverified."
+  },
+  "labels": {
+    "visibleByDefault": true,
+    "textSource": "KeyMapping.labelParts",
+    "placement": "each_key_own_bottom",
+    "whiteFontSizePt": 10,
+    "blackFontSizePt": 9.5,
+    "minMainFontSizePt": 9,
+    "sideFontSizePt": 6.5,
+    "whiteBottomInsetPt": 4,
+    "blackBottomInsetPt": 3,
+    "whiteColorHex": "#595959",
+    "blackColorHex": "#CDCDCD",
+    "contrastTarget": 4.5,
+    "bakeIntoTexture": false,
+    "followKeyTransform": true,
+    "sideMarkerMode": "separate_upper_right_text",
+    "userToggleAllowed": true,
+    "mainOpticalOffsetWithSidePt": -0.6,
+    "sideRightInsetPt": 1.1,
+    "sideInkGapAboveMainPt": {
+      "black": 0.6,
+      "white": -2
+    },
+    "fontWeight": "medium",
+    "fontStrategy": "system UI font with verified OS fallback; no font binaries distributed"
+  },
+  "motion": {
+    "pressMs": 45,
+    "releaseMs": 100,
+    "minVisualPulseMs": 45,
+    "whiteDownPt": 2,
+    "blackDownPt": 1.5,
+    "residualGlowEnabled": false,
+    "residualGlowMs": 300,
+    "hideMs": 100,
+    "restoreDelayMs": 400,
+    "reducedMotion": "instant_shading",
+    "floatingNote": {
+      "enabledByDefault": true,
+      "glyph": "♪",
+      "fontSizePt": 12,
+      "durationMs": 700,
+      "maxDurationMs": 1000,
+      "risePt": 24,
+      "startGapPt": 4,
+      "effectHeadroomPt": 48,
+      "fadeInMs": 60,
+      "fadeOutMs": 400,
+      "easing": "easeOut",
+      "trigger": "unique_note_down",
+      "followLabelsVisibility": false,
+      "reducedMotion": "stationary_fade",
+      "reducedMotionDurationMs": 200,
+      "colorHex": "#626C66",
+      "haloColorHex": "#FFFFFF",
+      "haloBlurPt": 1.25,
+      "easingFormula": "1 - (1 - t)^3",
+      "timeDomain": "normalized t in [0,1]"
+    }
+  },
+  "assets": [
+    {
+      "id": "white-rest",
+      "path": "components/white-rest.svg",
+      "sha256": "ae9228b6bbe9602c0ccd1c8895c639d5948e2568288462b3991843a9657ab227",
+      "byteSize": 546,
+      "format": "svg",
+      "pixelWidth": null,
+      "pixelHeight": null,
+      "scale": null,
+      "notApplicable": "Vector, no fixed raster dimensions or backing scale.",
+      "viewBox": [
+        0,
+        0,
+        32,
+        50
+      ],
+      "contentRectPt": [
+        0,
+        0,
+        32,
+        50
+      ],
+      "capInsetsPt": {
+        "top": 1.5,
+        "left": 1.5,
+        "bottom": 3,
+        "right": 1.5
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0,
+        "units": "normalized"
+      },
+      "state": "rest",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#original-design",
+      "role": "key-face-without-labels",
+      "rendering": "Prefer parameterized path drawing to preserve corner radii; do not stretch glyphs."
+    },
+    {
+      "id": "white-pressed",
+      "path": "components/white-pressed.svg",
+      "sha256": "7c0fa41fdbc12a322a4491ba29c997ec3a2e57ea2700fbdb6979c8542f0d87e1",
+      "byteSize": 558,
+      "format": "svg",
+      "pixelWidth": null,
+      "pixelHeight": null,
+      "scale": null,
+      "notApplicable": "Vector, no fixed raster dimensions or backing scale.",
+      "viewBox": [
+        0,
+        0,
+        32,
+        50
+      ],
+      "contentRectPt": [
+        0,
+        0,
+        32,
+        50
+      ],
+      "capInsetsPt": {
+        "top": 1.5,
+        "left": 1.5,
+        "bottom": 3,
+        "right": 1.5
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0,
+        "units": "normalized"
+      },
+      "state": "pressed",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#original-design",
+      "role": "key-face-without-labels",
+      "rendering": "Prefer parameterized path drawing to preserve corner radii; do not stretch glyphs."
+    },
+    {
+      "id": "black-rest",
+      "path": "components/black-rest.svg",
+      "sha256": "ef526f9ac2fcd969459e042a2e53ae642a935d091faad30d0c8afe8d86936c21",
+      "byteSize": 544,
+      "format": "svg",
+      "pixelWidth": null,
+      "pixelHeight": null,
+      "scale": null,
+      "notApplicable": "Vector, no fixed raster dimensions or backing scale.",
+      "viewBox": [
+        0,
+        0,
+        19,
+        32
+      ],
+      "contentRectPt": [
+        0,
+        0,
+        19,
+        32
+      ],
+      "capInsetsPt": {
+        "top": 1.5,
+        "left": 1.5,
+        "bottom": 3,
+        "right": 1.5
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0,
+        "units": "normalized"
+      },
+      "state": "rest",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#original-design",
+      "role": "key-face-without-labels",
+      "rendering": "Prefer parameterized path drawing to preserve corner radii; do not stretch glyphs."
+    },
+    {
+      "id": "black-pressed",
+      "path": "components/black-pressed.svg",
+      "sha256": "852ccbd08501785a5c885eaec230c11a50df614e61acda6fc591c0d96931b6f0",
+      "byteSize": 556,
+      "format": "svg",
+      "pixelWidth": null,
+      "pixelHeight": null,
+      "scale": null,
+      "notApplicable": "Vector, no fixed raster dimensions or backing scale.",
+      "viewBox": [
+        0,
+        0,
+        19,
+        32
+      ],
+      "contentRectPt": [
+        0,
+        0,
+        19,
+        32
+      ],
+      "capInsetsPt": {
+        "top": 1.5,
+        "left": 1.5,
+        "bottom": 3,
+        "right": 1.5
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0,
+        "units": "normalized"
+      },
+      "state": "pressed",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#original-design",
+      "role": "key-face-without-labels",
+      "rendering": "Prefer parameterized path drawing to preserve corner radii; do not stretch glyphs."
+    },
+    {
+      "id": "base",
+      "path": "components/base.svg",
+      "sha256": "515b03536851c9130d457c129967ab897787a243a2f388dcb4bae63c64f1eb9c",
+      "byteSize": 213,
+      "format": "svg",
+      "pixelWidth": null,
+      "pixelHeight": null,
+      "scale": null,
+      "notApplicable": "Vector; shadow is parameterized and not nine-sliced.",
+      "viewBox": [
+        0,
+        0,
+        1000,
+        56
+      ],
+      "contentRectPt": [
+        0,
+        0,
+        1000,
+        56
+      ],
+      "capInsetsPt": {
+        "top": 3,
+        "left": 3,
+        "bottom": 3,
+        "right": 3
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0,
+        "units": "normalized"
+      },
+      "state": "rest",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#original-design",
+      "role": "base"
+    },
+    {
+      "id": "shadow",
+      "path": "components/shadow.svg",
+      "sha256": "faaa62ffaca92b0974e64b602b57c9ad76a0ce0b7bfda80f727f5c9291074ae2",
+      "byteSize": 304,
+      "format": "svg",
+      "pixelWidth": null,
+      "pixelHeight": null,
+      "scale": null,
+      "notApplicable": "Vector; shadow is parameterized and not nine-sliced.",
+      "viewBox": [
+        0,
+        0,
+        23,
+        37
+      ],
+      "contentRectPt": [
+        2,
+        2,
+        19,
+        32
+      ],
+      "capInsetsPt": null,
+      "anchor": {
+        "x": 0.5,
+        "y": 0,
+        "units": "normalized"
+      },
+      "state": "rest",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#original-design",
+      "role": "black-key-shadow"
+    },
+    {
+      "id": "menu-note-16-1x",
+      "path": "components/icons/menu-note-16@1x.png",
+      "sha256": "36997b8c91b1f0b228ddc45b4784589d6e6272c75e266688885c0dbc10f9c376",
+      "byteSize": 329,
+      "format": "png",
+      "pixelWidth": 16,
+      "pixelHeight": 16,
+      "scale": 1,
+      "contentRectPt": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "capInsetsPt": null,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5,
+        "units": "normalized"
+      },
+      "state": "template",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#字体",
+      "role": "status-item-template",
+      "templateImage": true
+    },
+    {
+      "id": "menu-note-16-2x",
+      "path": "components/icons/menu-note-16@2x.png",
+      "sha256": "2b0ec662f81c07fe9d43bb644b57edea140a39f69cace6c465c6b14c8b499c77",
+      "byteSize": 587,
+      "format": "png",
+      "pixelWidth": 32,
+      "pixelHeight": 32,
+      "scale": 2,
+      "contentRectPt": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "capInsetsPt": null,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5,
+        "units": "normalized"
+      },
+      "state": "template",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#字体",
+      "role": "status-item-template",
+      "templateImage": true
+    },
+    {
+      "id": "menu-note-18-1x",
+      "path": "components/icons/menu-note-18@1x.png",
+      "sha256": "1ed72bad7ab26673832b98c290d227cc5aeb52c5ff1642cee110d9659d1634a1",
+      "byteSize": 383,
+      "format": "png",
+      "pixelWidth": 18,
+      "pixelHeight": 18,
+      "scale": 1,
+      "contentRectPt": [
+        0,
+        0,
+        18,
+        18
+      ],
+      "capInsetsPt": null,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5,
+        "units": "normalized"
+      },
+      "state": "template",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#字体",
+      "role": "status-item-template",
+      "templateImage": true
+    },
+    {
+      "id": "menu-note-18-2x",
+      "path": "components/icons/menu-note-18@2x.png",
+      "sha256": "34200ad1fceb3d290f58a6255a66c5dc775fde80ff44678752c2817a0004ba53",
+      "byteSize": 672,
+      "format": "png",
+      "pixelWidth": 36,
+      "pixelHeight": 36,
+      "scale": 2,
+      "contentRectPt": [
+        0,
+        0,
+        18,
+        18
+      ],
+      "capInsetsPt": null,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5,
+        "units": "normalized"
+      },
+      "state": "template",
+      "transparency": true,
+      "licenseRef": "SOURCE_AND_LICENSE.md#字体",
+      "role": "status-item-template",
+      "templateImage": true
+    }
+  ],
+  "readinessNote": "U-001 candidate only; PM-002 approval and native product integration pending. CR-001 label toggle/menu CR-002 floating notes and CR-003 icon/volume slider included. No system setting is changed.",
+  "sourceMapping": {
+    "path": "contracts/keymap.ansi64.v0.1.json",
+    "mappingVersion": "ansi64-draft.0.1",
+    "sha256": "147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b"
+  },
+  "candidateParameters": {
+    "schemaNote": "Additional candidate metadata requires PM/Code acceptance; no contract file changed.",
+    "palette": {
+      "white": {
+        "rest": [
+          "#FEFDFB",
+          "#EEEDE9"
+        ],
+        "pressed": [
+          "#E7E5DF",
+          "#D8D6D1"
+        ],
+        "front": {
+          "rest": "#D5D3CE",
+          "pressed": "#C3C1BC"
+        },
+        "label": "#595959"
+      },
+      "black": {
+        "rest": [
+          "#424346",
+          "#242528"
+        ],
+        "pressed": [
+          "#303134",
+          "#1B1C1F"
+        ],
+        "front": {
+          "rest": "#17181B",
+          "pressed": "#141518"
+        },
+        "label": "#CDCDCD"
+      }
+    },
+    "blackShadow": {
+      "rest": {
+        "offsetPt": [
+          0,
+          1
+        ],
+        "blurPt": 1.5,
+        "opacity": 0.3
+      },
+      "pressed": {
+        "offsetPt": [
+          0,
+          0.5
+        ],
+        "blurPt": 0.5,
+        "opacity": 0.18
+      }
+    },
+    "mainEntry": "macOS status item and drop-down menu",
+    "menuIcon": {
+      "glyph": "♪",
+      "sizesPt": [
+        16,
+        18
+      ],
+      "isTemplate": true,
+      "accessibleName": "打字钢琴",
+      "animateOnTyping": false
+    },
+    "volumeControl": {
+      "kind": "horizontal-slider",
+      "rangePercent": [
+        0,
+        100
+      ],
+      "target": "application-audio-bus",
+      "independentOfSoundToggle": true,
+      "systemVolumeUnchanged": true
+    },
+    "dockAutoHide": {
+      "initialPreference": true,
+      "controls": "macOS Dock setting, separately from piano avoidance",
+      "offWarning": "关闭自动隐藏后，Dock 可能与底部钢琴重叠或遮挡。仍要关闭吗？",
+      "cancelLabel": "保持自动隐藏",
+      "confirmLabel": "仍然关闭",
+      "runtimeImplemented": false
+    },
+    "labelsOff": "Hide label layer only; retain key geometry and press animation."
+  }
+}

@@ -1,0 +1,36 @@
+test_kawai_binary_and_source_contract (__main__.TrialBankContract.test_kawai_binary_and_source_contract) ... FAIL
+test_steinway_binary_and_source_contract (__main__.TrialBankContract.test_steinway_binary_and_source_contract) ... FAIL
+test_trial_index_never_claims_runtime_or_full_coverage (__main__.TrialBankContract.test_trial_index_never_claims_runtime_or_full_coverage) ... FAIL
+
+======================================================================
+FAIL: test_kawai_binary_and_source_contract (__main__.TrialBankContract.test_kawai_binary_and_source_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/Design/Audio/probes/A-001B/scripts/test_sf2_contract.py", line 132, in test_kawai_binary_and_source_contract
+    self.check_candidate('vcsl-kawai')
+  File "/Users/wuming/Desktop/键盘钢琴/Design/Audio/probes/A-001B/scripts/test_sf2_contract.py", line 110, in check_candidate
+    self.assertTrue(p.is_file(), f'missing required trial bank: {candidate}')
+AssertionError: False is not true : missing required trial bank: vcsl-kawai
+
+======================================================================
+FAIL: test_steinway_binary_and_source_contract (__main__.TrialBankContract.test_steinway_binary_and_source_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/Design/Audio/probes/A-001B/scripts/test_sf2_contract.py", line 135, in test_steinway_binary_and_source_contract
+    self.check_candidate('vcsl-steinway-b')
+  File "/Users/wuming/Desktop/键盘钢琴/Design/Audio/probes/A-001B/scripts/test_sf2_contract.py", line 110, in check_candidate
+    self.assertTrue(p.is_file(), f'missing required trial bank: {candidate}')
+AssertionError: False is not true : missing required trial bank: vcsl-steinway-b
+
+======================================================================
+FAIL: test_trial_index_never_claims_runtime_or_full_coverage (__main__.TrialBankContract.test_trial_index_never_claims_runtime_or_full_coverage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/Design/Audio/probes/A-001B/scripts/test_sf2_contract.py", line 139, in test_trial_index_never_claims_runtime_or_full_coverage
+    self.assertTrue(p.is_file(), 'missing trial-index')
+AssertionError: False is not true : missing trial-index
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=3)

@@ -1,0 +1,26 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Compiling PianoAudioTests SamplerAudioTests.swift
+[4/5] Emitting module PianoAudioTests
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (1.57s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 14:19:36.228.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 14:19:36.231.
+Test Suite 'SamplerAudioTests' started at 2026-10-28 14:19:36.231.
+Test Case '-[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/SamplerAudioTests.swift:32: error: -[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle] : XCTAssertLessThan failed: ("0.0023807397") is not less than ("1e-06")
+Test Case '-[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle]' failed (0.194 seconds).
+Test Suite 'SamplerAudioTests' failed at 2026-10-28 14:19:36.426.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.194 (0.194) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 14:19:36.426.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.194 (0.194) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 14:19:36.426.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.194 (0.198) seconds
+AUDIO_DIAGNOSTIC zero_gain_last_nonzero_seconds=0.0853125 late_peak=0.0008927799
+AUDIO_METRIC max_slider_gain=0.16 chord_peak=0.276467
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

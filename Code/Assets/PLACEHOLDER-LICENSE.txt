@@ -1,0 +1,20 @@
+SPDX-License-Identifier: CC0-1.0
+
+Typing Piano original synthetic audio probe
+
+The generated placeholder-original.sf2 consists solely of analytic harmonic
+waveforms created by this project's Code/Scripts/generate_placeholder.py.
+It contains no third-party recordings, factory instrument samples, music,
+system sounds, or downloaded audio. The tone generation and SF2 assembly
+were authored for the C-001 code task on 2026-10-28.
+
+To the extent copyright or related rights subsist in these original generated
+waveforms and the assembled probe sound bank, they are dedicated to the public
+domain under CC0 1.0 Universal. They may be copied, modified, and redistributed,
+including for commercial purposes, without attribution. No warranty is made.
+
+Canonical CC0 1.0 terms: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+This declaration applies to the generated probe sound bank, not to unrelated
+project assets or any future third-party piano sound bank. The asset is a test
+placeholder and is not an accepted or production piano sound.

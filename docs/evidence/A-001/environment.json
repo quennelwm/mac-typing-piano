@@ -1,0 +1,27 @@
+{
+  "recordedDate": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "cwd": "/Users/wuming/Desktop/键盘钢琴",
+  "task": "A-001",
+  "baselineAtStart": "6c25ab04fc4fc6254a1762728dd0401f8570a6ff",
+  "macOS": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2\nBuildVersion:\t\t26B123\n",
+  "arch": "arm64",
+  "python": "3.12.2",
+  "numpy": "1.26.4",
+  "tools": {
+    "afinfo": "/usr/bin/afinfo",
+    "afplay": "/usr/bin/afplay",
+    "ffmpeg": null,
+    "sox": null,
+    "scipy": false,
+    "soundfile": false
+  },
+  "subjectiveAudition": "NOT_TESTED: no human listening observation",
+  "audioDeviceSettingsChanged": false,
+  "systemDependenciesInstalled": false,
+  "pythonPackages": {
+    "numpy": "1.26.4",
+    "requests": "2.31.0",
+    "jsonschema": "4.21.1"
+  }
+}

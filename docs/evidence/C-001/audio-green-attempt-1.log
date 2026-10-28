@@ -1,0 +1,50 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/7] Compiling PianoAudio SamplerAudio.swift
+[4/7] Emitting module PianoAudio
+[5/10] Emitting module PianoMac
+[5/12] Write Objects.LinkFileList
+[7/12] Compiling PianoAudioTests SamplerAudioTests.swift
+[8/12] Emitting module PianoAudioTests
+[8/12] Write Objects.LinkFileList
+[9/12] Linking TypingPianoProbe
+[10/12] Linking TypingPianoProbePackageTests
+[11/12] Applying TypingPianoProbe
+Build complete! (11.76s)
+Test Suite 'Selected tests' started at 2026-10-28 13:55:01.574.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 13:55:01.577.
+Test Suite 'SamplerAudioTests' started at 2026-10-28 13:55:01.577.
+Test Case '-[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:78: error: -[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom] : failed: caught error: "Error Domain=com.apple.coreaudio.avfaudio Code=-10871 "(null)" UserInfo={failed call=error}"
+Test Case '-[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom]' failed (0.187 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:78: error: -[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput] : failed: caught error: "Error Domain=com.apple.coreaudio.avfaudio Code=-10871 "(null)" UserInfo={failed call=error}"
+Test Case '-[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput]' failed (0.002 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:78: error: -[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence] : failed: caught error: "Error Domain=com.apple.coreaudio.avfaudio Code=-10871 "(null)" UserInfo={failed call=error}"
+Test Case '-[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence]' failed (0.001 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:78: error: -[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike] : failed: caught error: "Error Domain=com.apple.coreaudio.avfaudio Code=-10871 "(null)" UserInfo={failed call=error}"
+Test Case '-[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike]' failed (0.001 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testRejectsMissingMisnamedAndInvalidBanks]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testRejectsMissingMisnamedAndInvalidBanks]' passed (0.004 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:78: error: -[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare] : failed: caught error: "Error Domain=com.apple.coreaudio.avfaudio Code=-10871 "(null)" UserInfo={failed call=error}"
+Test Case '-[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare]' failed (0.001 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:78: error: -[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded] : failed: caught error: "Error Domain=com.apple.coreaudio.avfaudio Code=-10871 "(null)" UserInfo={failed call=error}"
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded]' failed (0.001 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoAudio/SamplerAudio.swift:78: error: -[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout] : failed: caught error: "Error Domain=com.apple.coreaudio.avfaudio Code=-10871 "(null)" UserInfo={failed call=error}"
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout]' failed (0.001 seconds).
+Test Suite 'SamplerAudioTests' failed at 2026-10-28 13:55:01.778.
+	 Executed 8 tests, with 7 failures (7 unexpected) in 0.200 (0.201) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 13:55:01.778.
+	 Executed 8 tests, with 7 failures (7 unexpected) in 0.200 (0.201) seconwarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+ds
+Test Suite 'Selected tests' failed at 2026-10-28 13:55:01.778.
+	 Executed 8 tests, with 7 failures (7 unexpected) in 0.200 (0.204) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

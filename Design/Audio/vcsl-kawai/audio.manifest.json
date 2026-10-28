@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "audioPackVersion": "a001-candidates.0.1",
+  "artifactState": "candidate",
+  "instrumentName": "VCSL Kawai",
+  "runtimeFormat": null,
+  "targetEngine": "AVAudioUnitSampler_candidate_UNTESTED",
+  "noteNaming": "C4=MIDI60",
+  "midiNoteRange": {
+    "min": 33,
+    "max": 96
+  },
+  "coverageMIDI": [
+    33,
+    42,
+    60,
+    96
+  ],
+  "files": [
+    {
+      "path": "audition.wav",
+      "sha256": "60d64e0b85d0d75874fc8dbfed646287ff4c7b115d18286591024d6c89941560",
+      "byteSize": 8064044,
+      "role": "qa"
+    },
+    {
+      "path": "licenses/VCSL-CC0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "byteSize": 7048,
+      "role": "license"
+    },
+    {
+      "path": "licenses/VCSL-README.md",
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9",
+      "byteSize": 4365,
+      "role": "license"
+    },
+    {
+      "path": "originals/GPiano_sus_A0_v2_rr1_Player.wav",
+      "sha256": "ed2267bd3ae6a319e2143f5c09cbbe72f57c095d431e586f8d780223255de761",
+      "byteSize": 5116608,
+      "role": "sample"
+    },
+    {
+      "path": "originals/GPiano_sus_A1_v2_rr1_Player.wav",
+      "sha256": "3fb2818cbf799cebcd91798f949cacb01e287e12a33158c6520bf381c73f4689",
+      "byteSize": 5217440,
+      "role": "sample"
+    },
+    {
+      "path": "originals/GPiano_sus_C1_v2_rr1_Player.wav",
+      "sha256": "91ab158f01071f29375bb7593304dbb54e240f0db07374fe1fc630ca1b573b82",
+      "byteSize": 5268340,
+      "role": "sample"
+    },
+    {
+      "path": "originals/GPiano_sus_C3_v2_rr1_Player.wav",
+      "sha256": "fce33012fe900309abafd1a4d6d254d142b0cbf33834c7a72c2fd1ada4e746e1",
+      "byteSize": 4283328,
+      "role": "sample"
+    },
+    {
+      "path": "originals/GPiano_sus_C4_v2_rr1_Player.wav",
+      "sha256": "69845de40a38ed6501746520f9f385ae56200a4372faed48178e64a32a75e58c",
+      "byteSize": 2613976,
+      "role": "sample"
+    },
+    {
+      "path": "originals/GPiano_sus_C6_v2_rr1_Player.wav",
+      "sha256": "25464db09fe4a25cac979c507fef3efd507cc43369761f9e27488330e6e2a264",
+      "byteSize": 666520,
+      "role": "sample"
+    },
+    {
+      "path": "originals/GPiano_sus_C7_v2_rr1_Player.wav",
+      "sha256": "a5c4ada1e35cc5c7af28b2ef4b379ed4d1b8d31912fa75c71f70edd85f4b69a2",
+      "byteSize": 428708,
+      "role": "sample"
+    },
+    {
+      "path": "originals/GPiano_sus_F#1_v2_rr1_Player.wav",
+      "sha256": "c26ac28fca64b6aaa3e2733673e9217ca378652999e2621cabbb1bcb53254500",
+      "byteSize": 4547640,
+      "role": "sample"
+    },
+    {
+      "path": "originals/Legacy.txt",
+      "sha256": "a31d65dc36c05748b8f7b3983fcbc00ba9214b4899e8b7e3f9d675cb27beeae3",
+      "byteSize": 7,
+      "role": "qa"
+    },
+    {
+      "path": "processing_recipe.md",
+      "sha256": "252e7485e1acb27124289f5ecf277d8c316f5bbeb3973c5e3300b646efb92c1c",
+      "byteSize": 4571,
+      "role": "qa"
+    },
+    {
+      "path": "qa_audio.md",
+      "sha256": "266d96091affb6534419142676ff16a5bd6df0012942af66012aa12ab692d75d",
+      "byteSize": 3640,
+      "role": "qa"
+    },
+    {
+      "path": "qa_metrics.json",
+      "sha256": "c5a7565c93f68aeb1d94665f51d303c1dba60634fdf3a607fc59e0adfea0957b",
+      "byteSize": 9259,
+      "role": "qa"
+    },
+    {
+      "path": "samples/piano_m033_v064_rr01.wav",
+      "sha256": "f482eb1e3fc98c54d41c722ca6c366ded4f490a7c942190126fde1600f4575fe",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m042_v064_rr01.wav",
+      "sha256": "409860aa43b2dc11258b8815c769c12c884aa26aac31f31ff561090e5223af25",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m060_v064_rr01.wav",
+      "sha256": "a93f5f0cf7ab76dcaddab1d4833a0e1e31e1564bdd8051f65711de01c5fcd9a1",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m096_v064_rr01.wav",
+      "sha256": "91eebfb4b04031d9dbe024d587a4672fb0d1605da7ad2c9d7895e5097ffcf578",
+      "byteSize": 1088168,
+      "role": "sample"
+    },
+    {
+      "path": "source_records.json",
+      "sha256": "b8ef326ba96224d57f4cf14b785f9208b8cb057cd97c02a26c13752bec948ea8",
+      "byteSize": 5871,
+      "role": "qa"
+    },
+    {
+      "path": "stress-preview.wav",
+      "sha256": "f27c2170dd771d81b1637f911228db6e2cc17a2705c4bba7474ed5e728ad190a",
+      "byteSize": 576044,
+      "role": "qa"
+    }
+  ],
+  "instrument": null,
+  "licenseRecords": [
+    {
+      "sourceURL": "https://github.com/sgossner/VCSL/tree/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "author": "Versilian Studios LLC",
+      "sourceVersion": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "licenseID": "CC0-1.0",
+      "licenseFile": "licenses/VCSL-CC0.txt",
+      "modifications": "Original WAV unchanged; selected roots resampled to 48kHz PCM24, max8s, 80ms tail fade, one common gain per candidate. Offline audition with <=3-semitone shifts, synthetic events and 500ms release. See recipe."
+    }
+  ],
+  "processingRecipePath": "processing_recipe.md",
+  "qaReportPath": "qa_audio.md",
+  "readinessNote": "Candidate only. coverageMIDI lists four prepared sample roots, not validated engine/64-note coverage. Extra originals are diagnostic evidence. No SF2/DLS bank or runtime instrument configured. Subjective listening and engine QA NOT_TESTED. Proposed future zones are outside this manifest."
+}

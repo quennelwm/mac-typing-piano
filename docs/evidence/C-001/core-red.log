@@ -1,0 +1,79 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+[3/7] Emitting module PianoCoreTests
+[4/7] Compiling PianoCoreTests MappingTests.swift
+[5/7] Compiling PianoCoreTests CoordinatorTests.swift
+[6/9] Emitting module TypingPianoProbePackageTests
+[7/9] Compiling TypingPianoProbePackageTests runner.swift
+[7/9] Write Objects.LinkFileList
+[8/9] Linking TypingPianoProbePackageTests
+Build complete! (3.18s)
+Test Suite 'Selected tests' started at 2026-10-28 13:52:33.162.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 13:52:33.166.
+Test Suite 'CoordinatorTests' started at 2026-10-28 13:52:33.166.
+Test Case '-[PianoCoreTests.CoordinatorTests testDockAndVisualHidingDoNotProduceAudioStop]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:22: error: -[PianoCoreTests.CoordinatorTests testDockAndVisualHidingDoNotProduceAudioStop] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:26: error: -[PianoCoreTests.CoordinatorTests testDockAndVisualHidingDoNotProduceAudioStop] : XCTAssertEqual failed: ("0") is not equal to ("1")
+Test Case '-[PianoCoreTests.CoordinatorTests testDockAndVisualHidingDoNotProduceAudioStop]' failed (0.352 seconds).
+Test Case '-[PianoCoreTests.CoordinatorTests testMappingAndUnknownKey]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:54: error: -[PianoCoreTests.CoordinatorTests testMappingAndUnknownKey] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(60)")
+Test Case '-[PianoCoreTests.CoordinatorTests testMappingAndUnknownKey]' failed (0.002 seconds).
+Test Case '-[PianoCoreTests.CoordinatorTests testMuteClearsAudioButKeepsPhysicalVisualStateAndDoesNotRearticulateHeldKey]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:31: error: -[PianoCoreTests.CoordinatorTests testMuteClearsAudioButKeepsPhysicalVisualStateAndDoesNotRearticulateHeldKey] : XCTAssertEqual failed: ("[]") is not equal to ("[PianoCore.NoteEvent.Phase.panic]")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:32: error: -[PianoCoreTests.CoordinatorTests testMuteClearsAudioButKeepsPhysicalVisualStateAndDoesNotRearticulateHeldKey] : XCTAssertNotNil failed
+Test Case '-[PianoCoreTests.CoordinatorTests testMuteClearsAudioButKeepsPhysicalVisualStateAndDoesNotRearticulateHeldKey]' failed (0.001 seconds).
+Test Case '-[PianoCoreTests.CoordinatorTests testOldReleaseCannotStopRetriggerIncludingPulse]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:10: error: -[PianoCoreTests.CoordinatorTests testOldReleaseCannotStopRetriggerIncludingPulse] : XCTUnwrap failed: expected non-nil value of type "NoteEvent"
+Test Case '-[PianoCoreTests.CoordinatorTests testOldReleaseCannotStopRetriggerIncludingPulse]' failed (0.003 seconds).
+Test Case '-[PianoCoreTests.CoordinatorTests testPanicClearsPressesAndBumpsGenerationAndPauseRejectsNewEvents]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:40: error: -[PianoCoreTests.CoordinatorTests testPanicClearsPressesAndBumpsGenerationAndPauseRejectsNewEvents] : XCTAssertEqual failed: ("[]") is not equal to ("[PianoCore.NoteEvent.Phase.panic]")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:42: error: -[PianoCoreTests.CoordinatorTests testPanicClearsPressesAndBumpsGenerationAndPauseRejectsNewEvents] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:44: error: -[PianoCoreTests.CoordinatorTests testPanicClearsPressesAndBumpsGenerationAndPauseRejectsNewEvents] : XCTAssertFalse failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:46: error: -[PianoCoreTests.CoordinatorTests testPanicClearsPressesAndBumpsGenerationAndPauseRejectsNewEvents] : XCTAssertEqual failed: ("0") is not equal to ("1")
+Test Case '-[PianoCoreTests.CoordinatorTests testPanicClearsPressesAndBumpsGenerationAndPauseRejectsNewEvents]' failed (0.001 seconds).
+Test Suite 'CoordinatorTests' failed at 2026-10-28 13:52:33.526.
+	 Executed 5 tests, with 10 failures (0 unexpected) in 0.358 (0.359) seconds
+Test Suite 'MappingTests' started at 2026-10-28 13:52:33.526.
+Test Case '-[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/MappingTests.swift:10: error: -[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes] : XCTAssertThrowsError failed: did not throw an error
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/MappingTests.swift:16: error: -[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes] : XCTAssertThrowsError failed: did not throw an error
+Test Case '-[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes]' failed (0.003 seconds).
+Test Suite 'MappingTests' failed at 2026-10-28 13:52:33.528.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'PolicyTests' started at 2026-10-28 13:52:33.528.
+Test Case '-[PianoCoreTests.PolicyTests testCR001DefaultLabelsAndExplicitDockConfirmation]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:76: error: -[PianoCoreTests.PolicyTests testCR001DefaultLabelsAndExplicitDockConfirmation] : XCTAssertTrue failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:82: error: -[PianoCoreTests.PolicyTests testCR001DefaultLabelsAndExplicitDockConfirmation] : XCTAssertFalse failed
+Test Case '-[PianoCoreTests.PolicyTests testCR001DefaultLabelsAndExplicitDockConfirmation]' failed (0.000 seconds).
+Test Case '-[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:60: error: -[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch] : XCTAssertTrue failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:61: error: -[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch] : XCTAssertTrue failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:63: error: -[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch] : XCTAssertTrue failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift:64: error: -[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch] : XCTAssertTrue failed
+Test Case '-[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch]' failed (0.001 seconds).
+Test Suite 'PolicyTests' failed at 2026-10-28 13:52:33.530.
+	 Executed 2 tests, with 6 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'ReducerTests' started at 2026-10-28 13:52:33.530.
+Test Case '-[PianoCoreTests.ReducerTests testModifierSidesStayIndependentInInterleavedRelease]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:18: error: -[PianoCoreTests.ReducerTests testModifierSidesStayIndependentInInterleavedRelease] : XCTAssertEqual failed: ("[]") is not equal to ("["shiftRight"]")
+Test Case '-[PianoCoreTests.ReducerTests testModifierSidesStayIndependentInInterleavedRelease]' failed (0.001 seconds).
+Test Case '-[PianoCoreTests.ReducerTests testPulseDoesNotLatchAndLongHoldHasNoExpiry]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:24: error: -[PianoCoreTests.ReducerTests testPulseDoesNotLatchAndLongHoldHasNoExpiry] : XCTAssertNotNil failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:28: error: -[PianoCoreTests.ReducerTests testPulseDoesNotLatchAndLongHoldHasNoExpiry] : XCTAssertTrue failed
+Test Case '-[PianoCoreTests.ReducerTests testPulseDoesNotLatchAndLongHoldHasNoExpiry]' failed (0.001 seconds).
+Test Case '-[PianoCoreTests.ReducerTests testSingleStrikeIgnoresRepeatAndDuplicateDown]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:6: error: -[PianoCoreTests.ReducerTests testSingleStrikeIgnoresRepeatAndDuplicateDown] : XCTAssertNotNil failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:9: error: -[PianoCoreTests.ReducerTests testSingleStrikeIgnoresRepeatAndDuplicateDown] : XCTAssertNotNil failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift:11: error: -[PianoCoreTewarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+sts.ReducerTests testSingleStrikeIgnoresRepeatAndDuplicateDown] : XCTAssertNotNil failed
+Test Case '-[PianoCoreTests.ReducerTests testSingleStrikeIgnoresRepeatAndDuplicateDown]' failed (0.001 seconds).
+Test Suite 'ReducerTests' failed at 2026-10-28 13:52:33.532.
+	 Executed 3 tests, with 6 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 13:52:33.532.
+	 Executed 11 tests, with 24 failures (0 unexpected) in 0.364 (0.366) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 13:52:33.532.
+	 Executed 11 tests, with 24 failures (0 unexpected) in 0.364 (0.371) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

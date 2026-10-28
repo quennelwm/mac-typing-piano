@@ -1,0 +1,20 @@
+{
+  "command": "OPENBLAS_NUM_THREADS=1 python3 Design/Audio/scripts/build_candidates.py",
+  "wavFileCount": 12,
+  "byteIdentical": true,
+  "changedFiles": [],
+  "sha256": {
+    "Design/Audio/vcsl-kawai/audition.wav": "60d64e0b85d0d75874fc8dbfed646287ff4c7b115d18286591024d6c89941560",
+    "Design/Audio/vcsl-kawai/stress-preview.wav": "f27c2170dd771d81b1637f911228db6e2cc17a2705c4bba7474ed5e728ad190a",
+    "Design/Audio/vcsl-steinway-b/audition.wav": "1d0cdb2b5f4204449d9d6b9f70b6b3dc5c8b6a1534eb45edc26f574bdb98362a",
+    "Design/Audio/vcsl-steinway-b/stress-preview.wav": "9378503afd41917631c777f1bbc6d87bd2b32e7fe7c301823a69f1c31db2892d",
+    "Design/Audio/vcsl-kawai/samples/piano_m033_v064_rr01.wav": "f482eb1e3fc98c54d41c722ca6c366ded4f490a7c942190126fde1600f4575fe",
+    "Design/Audio/vcsl-kawai/samples/piano_m042_v064_rr01.wav": "409860aa43b2dc11258b8815c769c12c884aa26aac31f31ff561090e5223af25",
+    "Design/Audio/vcsl-kawai/samples/piano_m060_v064_rr01.wav": "a93f5f0cf7ab76dcaddab1d4833a0e1e31e1564bdd8051f65711de01c5fcd9a1",
+    "Design/Audio/vcsl-kawai/samples/piano_m096_v064_rr01.wav": "91eebfb4b04031d9dbe024d587a4672fb0d1605da7ad2c9d7895e5097ffcf578",
+    "Design/Audio/vcsl-steinway-b/samples/piano_m034_v064_rr01.wav": "464b50a60ea702e40898a7fa181f3dfc5558bca77066698b7c39ea5b1eb33eff",
+    "Design/Audio/vcsl-steinway-b/samples/piano_m042_v064_rr01.wav": "5c7c7d8bdd62379830f04f5fd26a269530159a7f7d2adf1bdbf9704c86c0c663",
+    "Design/Audio/vcsl-steinway-b/samples/piano_m060_v064_rr01.wav": "5ce865efc31dac8597a9129212336b0f9620fdbb6e51d32c0bc70e7f198c6c32",
+    "Design/Audio/vcsl-steinway-b/samples/piano_m096_v064_rr01.wav": "e9edf14f696e2c7d5141e13de09ec010635e37ccf64ff5c5f6dc134790470254"
+  }
+}

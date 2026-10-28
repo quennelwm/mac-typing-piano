@@ -1,0 +1,8 @@
+test_kawai_binary_and_source_contract (__main__.TrialBankContract.test_kawai_binary_and_source_contract) ... ok
+test_steinway_binary_and_source_contract (__main__.TrialBankContract.test_steinway_binary_and_source_contract) ... ok
+test_trial_index_never_claims_runtime_or_full_coverage (__main__.TrialBankContract.test_trial_index_never_claims_runtime_or_full_coverage) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.113s
+
+OK
