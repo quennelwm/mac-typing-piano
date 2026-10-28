@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "checkedAtLocal": "2026-10-28T17:43:21.418828",
+  "derivedKeys": 192,
+  "widths": [
+    1280,
+    1512,
+    1920
+  ],
+  "keyCounts": "64=38white+26black each",
+  "labelInkWithinOwnKey": true,
+  "nativeRasterOrLiveDockTested": false,
+  "referenceSHA256": "6372be6d0b6a52ca6db49a70c8e5cb02a003c8e21f7076cc97a74ff0914cf48e",
+  "frozenOriginalFilesVerified": 182,
+  "frozenOriginalFilesChanged": []
+}

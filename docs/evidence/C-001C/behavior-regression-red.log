@@ -1,0 +1,43 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/9] Compiling PianoMac DockAdapter.swift
+[4/9] Compiling PianoMac ProbeController.swift
+[5/9] Compiling PianoMac PianoView.swift
+[6/9] Emitting module PianoMac
+[6/11] Write Objects.LinkFileList
+[8/11] Linking TypingPianoProbe
+[9/11] Linking TypingPianoProbePackageTests
+[10/11] Applying TypingPianoProbe
+Build complete! (1.88s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 15:52:12.891.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 15:52:12.894.
+Test Suite 'ControllerIntegrationTests' started at 2026-10-28 15:52:12.894.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' passed (0.237 seconds).
+Test Suite 'ControllerIntegrationTests' passed at 2026-10-28 15:52:13.132.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.237 (0.238) seconds
+Test Suite 'DockAdapterTests' started at 2026-10-28 15:52:13.132.
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:101: error: -[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket] : XCTAssertTrue failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:103: error: -[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket] : XCTAssertEqual failed: ("unknown") is not equal to ("recoveryRequired")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:106: error: -[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket] : XCTAssertEqual failed: ("noChange") is not equal to ("restoredPreference")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:107: error: -[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket] : XCTAssertEqual failed: ("[true]") is not equal to ("[true, false]")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:107: error: -[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket] : XCTAssertNil failed: "DockTicket(session: D4DF14A2-F337-416E-9BE5-1A292C8C1EE3, original: false, intended: true, lastVerified: nil)"
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket]' failed (0.115 seconds).
+Test Suite 'DockAdapterTests' failed at 2026-10-28 15:52:13.247.
+	 Executed 1 test, with 5 failures (0 unexpected) in 0.115 (0.115) seconds
+Test Suite 'IntegrationTests' started at 2026-10-28 15:52:13.247.
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:66: error: -[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition] : XCTAssertEqualWithAccuracy failed: ("1.0") is not equal to ("0.681321459263792") +/- ("0.001")
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' failed (0.003 seconds).
+Test Suite 'IntegrationTests' failed at 2026-10-28 15:52:13.250.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.003 (0.004) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 15:52:13.250.
+	 Executed 3 tests, with 6 failures (0 unexpected) in 0.356 (0.356) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 15:52:13.250.
+	 Executed 3 tests, with 6 failures (0 unexpected) in 0.356 (0.359) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

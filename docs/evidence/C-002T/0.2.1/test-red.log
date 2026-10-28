@@ -1,0 +1,85 @@
+Building for debugging...
+[0/16] /Users/wuming/Library/Caches/local.typingpiano.trial/verify021/arm64-apple-macosx/debug/TypingPianoProbePackageTests.derived/runner.swift
+[0/16] Write sources
+[9/16] Write TypingPianoProbe-entitlement.plist
+[10/16] Write swift-version--58304C5D6DBC2206.txt
+[12/27] Compiling PianoCore FloatingNotes.swift
+[13/27] Compiling PianoCore AppPreferences.swift
+[14/28] Emitting module PianoCore
+[15/28] Compiling PianoCore Mapping.swift
+[16/28] Compiling PianoCore DockOwnership.swift
+[17/28] Compiling PianoCore Core.swift
+[18/28] Compiling PianoCore Coordinator.swift
+[19/28] Compiling PianoCore Geometry.swift
+[20/28] Compiling PianoCore Policies.swift
+[21/35] Emitting module PianoAudio
+[22/35] Compiling PianoAudio AuditionSession.swift
+[23/35] Compiling PianoAudio SamplerAudio.swift
+[24/51] Emitting module PianoAudioTests
+[25/51] Compiling PianoMac InputNormalizer.swift
+[26/52] Compiling PianoMac QuietIvoryProvenance.swift
+[27/52] Compiling PianoMac SDKKeys.swift
+[28/52] Compiling PianoAudioTests RuntimeDiagnosticsTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/RuntimeDiagnosticsTests.swift:7:23: error: value of type 'SamplerAudio' has no member 'runtimeDiagnostics'
+ 5 |     func testUnpreparedEngineDoesNotPretendToHaveOutput() {
+ 6 |         let audio = SamplerAudio()
+ 7 |         let d = audio.runtimeDiagnostics()
+   |                       `- error: value of type 'SamplerAudio' has no member 'runtimeDiagnostics'
+ 8 |         XCTAssertEqual(d["engineRunning"] as? Bool, false)
+ 9 |         XCTAssertEqual(d["samplerLoaded"] as? Bool, false)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/RuntimeDiagnosticsTests.swift:13:30: error: value of type 'SamplerAudio' has no member 'runtimeDiagnostics'
+11 |         XCTAssertEqual(d["meterStatus"] as? String, "not-installed")
+12 |         audio.noteOn(midi: 60, velocity: 80)
+13 |         XCTAssertEqual(audio.runtimeDiagnostics()["noteOnRequests"] as? Int, 1)
+   |                              `- error: value of type 'SamplerAudio' has no member 'runtimeDiagnostics'
+14 |         XCTAssertEqual(audio.runtimeDiagnostics()["noteOnAccepted"] as? Int, 0)
+15 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/RuntimeDiagnosticsTests.swift:14:30: error: value of type 'SamplerAudio' has no member 'runtimeDiagnostics'
+12 |         audio.noteOn(midi: 60, velocity: 80)
+13 |         XCTAssertEqual(audio.runtimeDiagnostics()["noteOnRequests"] as? Int, 1)
+14 |         XCTAssertEqual(audio.runtimeDiagnostics()["noteOnAccepted"] as? Int, 0)
+   |                              `- error: value of type 'SamplerAudio' has no member 'runtimeDiagnostics'
+15 |     }
+16 |     func testIdentityRejectsUnrelatedAndRetiredEngines() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/RuntimeDiagnosticsTests.swift:17:24: error: cannot find 'EngineNotificationIdentity' in scope
+15 |     }
+16 |     func testIdentityRejectsUnrelatedAndRetiredEngines() {
+17 |         let identity = EngineNotificationIdentity()
+   |                        `- error: cannot find 'EngineNotificationIdentity' in scope
+18 |         let old = NSObject(), current = NSObject(), unrelated = NSObject()
+19 |         identity.set(old)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/RuntimeDiagnosticsTests.swift:28:29: error: value of type 'AudioSelectionTests.Engine' has no member 'runtimeDiagnostics'
+26 |     func testMockDiagnosticsStayUnknown() {
+27 |         let mock = AudioSelectionTests.Engine()
+28 |         XCTAssertEqual(mock.runtimeDiagnostics()["diagnosticsSupport"] as? String, "unsupported")
+   |                             `- error: value of type 'AudioSelectionTests.Engine' has no member 'runtimeDiagnostics'
+29 |         XCTAssertNil(mock.runtimeDiagnostics()["engineRunning"])
+30 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/RuntimeDiagnosticsTests.swift:29:27: error: value of type 'AudioSelectionTests.Engine' has no member 'runtimeDiagnostics'
+27 |         let mock = AudioSelectionTests.Engine()
+28 |         XCTAssertEqual(mock.runtimeDiagnostics()["diagnosticsSupport"] as? String, "unsupported")
+29 |         XCTAssertNil(mock.runtimeDiagnostics()["engineRunning"])
+   |                           `- error: value of type 'AudioSelectionTests.Engine' has no member 'runtimeDiagnostics'
+30 |     }
+31 | }
+[29/52] Compiling PianoCoreTests ReducerTests.swift
+[30/52] Compiling PianoCoreTests MappingTests.swift
+[31/52] Compiling PianoCoreTests FloatingNoteTests.swift
+[32/52] Compiling PianoCoreTests AppPreferencesTests.swift
+[33/52] Compiling PianoCoreTests CoordinatorTests.swift
+[34/52] Emitting module PianoCoreTests
+[35/52] Compiling PianoCoreTests GeometryAndDockTests.swift
+[36/52] Compiling PianoAudioTests SamplerAudioTests.swift
+[37/52] Compiling PianoAudioTests TrialBankTests.swift
+[38/52] Compiling PianoAudioTests TrialGainTests.swift
+[39/52] Compiling PianoAudioTests CandidateBankTests.swift
+[40/52] Compiling PianoAudioTests AudioSelectionTests.swift
+[41/52] Emitting module PianoMac
+[42/52] Compiling PianoMac Module.swift
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

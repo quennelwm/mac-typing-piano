@@ -63,3 +63,17 @@ extension GeometryAndDockTests {
         XCTAssertEqual(d.restoration(observed: true), false)
     }
 }
+
+extension GeometryAndDockTests {
+    func testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease() {
+        var d = DockAvoidance()
+        XCTAssertFalse(d.update(nearEdge: false, recoverySafe: true, mouseDown: true, dockFrontmost: false, time: 0))
+        XCTAssertFalse(d.latched)
+        XCTAssertTrue(d.update(nearEdge: true, recoverySafe: false, mouseDown: true, dockFrontmost: false, time: 1))
+        XCTAssertTrue(d.update(nearEdge: false, recoverySafe: true, mouseDown: true, dockFrontmost: false, time: 2))
+        XCTAssertTrue(d.update(nearEdge: false, recoverySafe: true, mouseDown: false, dockFrontmost: false, time: 3))
+        XCTAssertFalse(d.update(nearEdge: false, recoverySafe: true, mouseDown: false, dockFrontmost: false, time: 3.5))
+        XCTAssertFalse(d.latched)
+        XCTAssertTrue(d.update(nearEdge: false, recoverySafe: true, mouseDown: false, dockFrontmost: true, time: 4))
+    }
+}

@@ -1,0 +1,49 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+[3/10] Compiling PianoMac ProbeController.swift
+[4/10] Emitting module PianoMac
+[5/10] Compiling PianoMac InputMonitor.swift
+[6/10] Compiling PianoMac ProbeMenu.swift
+[7/20] Compiling PianoMacTests InputNormalizerTests.swift
+[8/20] Compiling PianoMacTests TrialSessionTests.swift
+[9/20] Compiling PianoMacTests MenuIntegrationTests.swift
+[10/20] Emitting module PianoMacTests
+[11/20] Compiling PianoMacTests ControllerIntegrationTests.swift
+[12/20] Compiling PianoMacTests DockAdapterTests.swift
+[13/20] Compiling PianoMacTests IntegrationTests.swift
+[13/20] Write Objects.LinkFileList
+[15/20] Compiling PianoProbe main.swift
+[16/20] Emitting module PianoProbe
+[16/20] Write Objects.LinkFileList
+[17/20] Linking TypingPianoProbe
+[18/20] Linking TypingPianoProbePackageTests
+[19/20] Applying TypingPianoProbe
+Build complete! (2.75s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 16:02:29.660.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 16:02:29.663.
+Test Suite 'ControllerIntegrationTests' started at 2026-10-28 16:02:29.663.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' passed (0.396 seconds).
+Test Suite 'ControllerIntegrationTests' passed at 2026-10-28 16:02:30.059.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.396 (0.397) seconds
+Test Suite 'MenuIntegrationTests' started at 2026-10-28 16:02:30.059.
+Test Case '-[PianoMacTests.MenuIntegrationTests testDailyMenuAndTestSourceCallbacksStaySeparated]' started.
+Test Case '-[PianoMacTests.MenuIntegrationTests testDailyMenuAndTestSourceCallbacksStaySeparated]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.MenuIntegrationTests testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme]' started.
+Test Case '-[PianoMacTests.MenuIntegrationTests testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme]' passed (0.002 seconds).
+Test Suite 'MenuIntegrationTests' passed at 2026-10-28 16:02:30.064.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'TrialSessionTests' started at 2026-10-28 16:02:30.064.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' passed (0.050 seconds).
+Test Suite 'TrialSessionTests' passed at 2026-10-28 16:02:30.114.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.050 (0.050) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 16:02:30.114.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.451 (0.452) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 16:02:30.114.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.451 (0.454) seconds

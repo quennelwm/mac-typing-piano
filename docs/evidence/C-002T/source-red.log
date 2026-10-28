@@ -1,0 +1,25 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Emitting module PianoAudioTests
+[4/5] Compiling PianoAudioTests AudioSelectionTests.swift
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (1.09s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 16:05:54.370.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 16:05:54.371.
+Test Suite 'AudioSelectionTests' started at 2026-10-28 16:05:54.371.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/AudioSelectionTests.swift:37: error: -[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths] : XCTAssertEqual failed: ("[64, 10, 11]") is not equal to ("[64, 64, 10, 11]")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/AudioSelectionTests.swift:38: error: -[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths] : XCTAssertEqual failed: ("Optional("synthetic")") is not equal to ("Optional("steinway-trial-64")")
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' failed (0.076 seconds).
+Test Suite 'AudioSelectionTests' failed at 2026-10-28 16:05:54.448.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.076 (0.077) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 16:05:54.448.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.076 (0.077) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 16:05:54.448.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.076 (0.078) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

@@ -1,0 +1,16 @@
+{
+  "source": "CUA actual 0.2.1 test console",
+  "inputMonitoring": "authorized",
+  "inputMode": "stopped",
+  "effectiveEvents": 1458,
+  "noteOnRequests": 729,
+  "noteOnAccepted": 729,
+  "appVolume": 0.8444062499999997,
+  "mixerGain": 0.6333047,
+  "outputTapCallbacks": 9498,
+  "outputTapFrames": 45590400,
+  "outputTapPeak": 0.07822905,
+  "engineRunningAtRead": false,
+  "sourceID": "steinway-trial-64",
+  "privacy": "Aggregate counts only. No key sequence or audio samples. Preserve user volume at upgrade."
+}

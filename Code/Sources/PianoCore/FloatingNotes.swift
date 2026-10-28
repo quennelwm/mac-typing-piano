@@ -6,7 +6,7 @@ public struct FloatingNote {
     public let duration: TimeInterval
     public let rise: Double
 }
-/// CR-002 pure lifecycle model. The formal animated renderer is an M1 task.
+/// CR-002 pure lifecycle model. Used by the native renderer.
 public struct FloatingNotes {
     public private(set) var instances: [UUID: FloatingNote] = [:]
     public private(set) var sceneGeneration: UInt64 = 0
@@ -31,6 +31,25 @@ public struct FloatingNotes {
             duration: reducedMotion ? 0.2 : 0.7, rise: reducedMotion ? 0 : 24)
     }
     public mutating func expire(at time: TimeInterval) {
-        instances = instances.filter { time < $0.value.startedAt + $0.value.duration }
+        instances = instances.filter { time + 0.000000001 < $0.value.startedAt + $0.value.duration }
+    }
+}
+
+public struct FloatingPresentation {
+    public let pressID: UUID
+    public let midi: Int
+    public let rise: Double
+    public let opacity: Double
+}
+extension FloatingNotes {
+    public func presentations(at time: TimeInterval) -> [FloatingPresentation] {
+        instances.values.sorted { $0.startedAt < $1.startedAt }.compactMap { note in
+            let elapsed = time - note.startedAt
+            guard elapsed >= 0, elapsed + 0.000000001 < note.duration else { return nil }
+            let t = elapsed / note.duration
+            return FloatingPresentation(pressID: note.pressID, midi: note.midi,
+                rise: note.rise * (1 - pow(1 - t, 3)),
+                opacity: note.rise == 0 ? 1 - t : max(0, min(1, elapsed / 0.06, (0.7 - elapsed) / 0.4)))
+        }
     }
 }

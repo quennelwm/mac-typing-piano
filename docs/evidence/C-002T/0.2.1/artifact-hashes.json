@@ -1,0 +1,46 @@
+{
+  "version": "0.2.1",
+  "frozenBinarySHA256": "3e90c772f6590658377d94f2c7436677de9c44d3f3b15eb0dd6528492e4eaeae",
+  "files": [
+    {
+      "path": "docs/evidence/C-002T/0.2.1/HANDOFF.md",
+      "sha256": "d524247789d79cf432e5885f5c641368765398d2f843ea8eac79327debac44f6"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/IMPLEMENTATION-AND-VALIDATION.md",
+      "sha256": "be1be8f3067c29ad570a3c8ef486ff35189194686a23fce48301d82e4e15157f"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/build.log",
+      "sha256": "6217dc2e72d6a38a7868fcd757178d1746319bb72fa63e9ab00b7a8b3910eda3"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/frozen-delivery.json",
+      "sha256": "f3f0dc0cfc38858e798545a1d6b0fc5ce8677f25028c82298465fb65fc4aa863"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/headless-tests.log",
+      "sha256": "5be29a326c9172733a93212d9f0ccdbb8575d020914575ad7b77433d76a1a3ac"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/local-red.log",
+      "sha256": "7429b34f3cefc61b3f9a94cda5305a0fc1a6574d3228944fed93c3fea9a5495d"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/offline-audio-regression.log",
+      "sha256": "731169c75df412d2c381043756b64320fa00727d117f3913bc1a0200d47e15c4"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/scope.md",
+      "sha256": "f5724e943199b086a723999fd2065b6010864f7ba2e2384392dfe7694b3c0a91"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/signature-readonly.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/C-002T/0.2.1/test-red.log",
+      "sha256": "d8689c6234a61caecb53d0b7e2e59136e03e51f73120da188d8693427e3259fd"
+    }
+  ]
+}

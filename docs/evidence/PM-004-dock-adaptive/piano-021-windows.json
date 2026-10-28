@@ -1,0 +1,39 @@
+[
+  {
+    "kCGWindowAlpha" : 1,
+    "kCGWindowBounds" : {
+      "Height" : 104,
+      "Width" : 1000,
+      "X" : 256,
+      "Y" : 870
+    },
+    "kCGWindowLayer" : 0,
+    "kCGWindowNumber" : 3277,
+    "kCGWindowOwnerPID" : 48529
+  },
+  {
+    "kCGWindowAlpha" : 1,
+    "kCGWindowBounds" : {
+      "Height" : 592,
+      "Width" : 1040,
+      "X" : 236,
+      "Y" : 108
+    },
+    "kCGWindowIsOnscreen" : true,
+    "kCGWindowLayer" : 0,
+    "kCGWindowNumber" : 3276,
+    "kCGWindowOwnerPID" : 48529
+  },
+  {
+    "kCGWindowAlpha" : 1,
+    "kCGWindowBounds" : {
+      "Height" : 522,
+      "Width" : 480,
+      "X" : 516,
+      "Y" : 126
+    },
+    "kCGWindowLayer" : 0,
+    "kCGWindowNumber" : 3278,
+    "kCGWindowOwnerPID" : 48529
+  }
+]

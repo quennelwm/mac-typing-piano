@@ -1,0 +1,49 @@
+[0/1] Planning build
+Building for debugging...
+[0/9] Write sources
+[3/9] Write swift-version--58304C5D6DBC2206.txt
+[5/14] Compiling PianoCore Geometry.swift
+[6/14] Emitting module PianoCore
+[7/14] Compiling PianoCore FloatingNotes.swift
+[8/27] Compiling PianoCoreTests ReducerTests.swift
+[9/27] Compiling PianoCoreTests MappingTests.swift
+[10/27] Compiling PianoCoreTests CoordinatorTests.swift
+[11/27] Compiling PianoCoreTests AppPreferencesTests.swift
+[12/27] Emitting module PianoCoreTests
+[13/27] Compiling PianoCoreTests GeometryAndDockTests.swift
+[14/27] Compiling PianoCoreTests FloatingNoteTests.swift
+[15/27] Compiling PianoMac SDKKeys.swift
+[16/27] Emitting module PianoMac
+[17/27] Emitting module PianoAudioTests
+[18/27] Compiling PianoAudioTests CandidateBankTests.swift
+[19/27] Compiling PianoMac ProbeController.swift
+[20/27] Compiling PianoMac InputNormalizer.swift
+[21/27] Compiling PianoMac PianoView.swift
+[22/27] Compiling PianoMac InputMonitor.swift
+[23/32] Emitting module PianoMacTests
+[24/32] Compiling PianoMacTests IntegrationTests.swift
+[25/32] Compiling PianoMacTests InputNormalizerTests.swift
+[26/32] Emitting module PianoProbe
+[27/32] Compiling PianoProbe main.swift
+[27/34] Write Objects.LinkFileList
+[28/34] Linking TypingPianoProbe
+[29/34] Applying TypingPianoProbe
+[31/34] Compiling TypingPianoProbePackageTests runner.swift
+[32/34] Emitting module TypingPianoProbePackageTests
+[32/34] Write Objects.LinkFileList
+[33/34] Linking TypingPianoProbePackageTests
+Build complete! (6.01s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 15:36:57.651.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 15:36:57.653.
+Test Suite 'IntegrationTests' started at 2026-10-28 15:36:57.653.
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' started.
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' passed (0.052 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' started.
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' passed (0.003 seconds).
+Test Suite 'IntegrationTests' passed at 2026-10-28 15:36:57.708.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.055 (0.055) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 15:36:57.708.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.055 (0.055) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 15:36:57.708.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.055 (0.058) seconds

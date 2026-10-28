@@ -1,0 +1,1067 @@
+{
+  "status": "pass",
+  "regularFrames": 152,
+  "labelOnOffEffectPairs": 76,
+  "extraShortTapRestrikeFrames": 28,
+  "headroomBounds": [
+    {
+      "file": "native-reduced-false-labels-false-0ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-false-labels-false-20ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        66,
+        1271,
+        91
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-40ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        62,
+        1271,
+        87
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-60ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        59,
+        1271,
+        84
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-80ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        55,
+        1271,
+        80
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-100ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        52,
+        1271,
+        77
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-120ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        49,
+        1271,
+        74
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-140ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        47,
+        1271,
+        72
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-160ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        44,
+        1271,
+        69
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-180ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        42,
+        1271,
+        67
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-200ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        40,
+        1271,
+        65
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-220ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        37,
+        1271,
+        62
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-240ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        36,
+        1271,
+        61
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-260ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        34,
+        1271,
+        59
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-280ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        32,
+        1271,
+        57
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-300ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        31,
+        1271,
+        56
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-320ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        30,
+        1271,
+        55
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-340ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        29,
+        1271,
+        54
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-350ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        28,
+        1271,
+        53
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-360ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        28,
+        1271,
+        53
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-380ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        27,
+        1271,
+        52
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-400ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        26,
+        1271,
+        51
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-420ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        25,
+        1271,
+        50
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-440ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        24,
+        1271,
+        49
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-460ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        24,
+        1271,
+        49
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-480ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        24,
+        1271,
+        49
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-500ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        23,
+        1271,
+        48
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-520ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        23,
+        1271,
+        48
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-540ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        23,
+        1271,
+        48
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-560ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        22,
+        1271,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-580ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        22,
+        1271,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-600ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        22,
+        1270,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-620ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        22,
+        1270,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-640ms.png",
+      "headroomAlphaBoundsPx": [
+        310,
+        22,
+        1270,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-660ms.png",
+      "headroomAlphaBoundsPx": [
+        310,
+        23,
+        1270,
+        46
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-680ms.png",
+      "headroomAlphaBoundsPx": [
+        310,
+        23,
+        1270,
+        46
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-false-700ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-false-labels-false-720ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-false-labels-true-0ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-false-labels-true-20ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        66,
+        1271,
+        91
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-40ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        62,
+        1271,
+        87
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-60ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        59,
+        1271,
+        84
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-80ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        55,
+        1271,
+        80
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-100ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        52,
+        1271,
+        77
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-120ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        49,
+        1271,
+        74
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-140ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        47,
+        1271,
+        72
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-160ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        44,
+        1271,
+        69
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-180ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        42,
+        1271,
+        67
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-200ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        40,
+        1271,
+        65
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-220ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        37,
+        1271,
+        62
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-240ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        36,
+        1271,
+        61
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-260ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        34,
+        1271,
+        59
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-280ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        32,
+        1271,
+        57
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-300ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        31,
+        1271,
+        56
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-320ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        30,
+        1271,
+        55
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-340ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        29,
+        1271,
+        54
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-350ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        28,
+        1271,
+        53
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-360ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        28,
+        1271,
+        53
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-380ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        27,
+        1271,
+        52
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-400ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        26,
+        1271,
+        51
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-420ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        25,
+        1271,
+        50
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-440ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        24,
+        1271,
+        49
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-460ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        24,
+        1271,
+        49
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-480ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        24,
+        1271,
+        49
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-500ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        23,
+        1271,
+        48
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-520ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        23,
+        1271,
+        48
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-540ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        23,
+        1271,
+        48
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-560ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        22,
+        1271,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-580ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        22,
+        1271,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-600ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        22,
+        1270,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-620ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        22,
+        1270,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-640ms.png",
+      "headroomAlphaBoundsPx": [
+        310,
+        22,
+        1270,
+        47
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-660ms.png",
+      "headroomAlphaBoundsPx": [
+        310,
+        23,
+        1270,
+        46
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-680ms.png",
+      "headroomAlphaBoundsPx": [
+        310,
+        23,
+        1270,
+        46
+      ]
+    },
+    {
+      "file": "native-reduced-false-labels-true-700ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-false-labels-true-720ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-0ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-20ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-40ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-60ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-80ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-100ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-120ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-140ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-160ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1270,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-180ms.png",
+      "headroomAlphaBoundsPx": [
+        310,
+        71,
+        1270,
+        94
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-false-200ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-220ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-240ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-260ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-280ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-300ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-320ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-340ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-350ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-360ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-380ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-400ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-420ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-440ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-460ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-480ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-500ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-520ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-540ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-560ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-580ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-600ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-620ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-640ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-660ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-680ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-700ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-false-720ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-0ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-20ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-40ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-60ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-80ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-100ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-120ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-140ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1271,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-160ms.png",
+      "headroomAlphaBoundsPx": [
+        309,
+        70,
+        1270,
+        95
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-180ms.png",
+      "headroomAlphaBoundsPx": [
+        310,
+        71,
+        1270,
+        94
+      ]
+    },
+    {
+      "file": "native-reduced-true-labels-true-200ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-220ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-240ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-260ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-280ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-300ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-320ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-340ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-350ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-360ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-380ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-400ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-420ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-440ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-460ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-480ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-500ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-520ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-540ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-560ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-580ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-600ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-620ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-640ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-660ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-680ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-700ms.png",
+      "headroomAlphaBoundsPx": null
+    },
+    {
+      "file": "native-reduced-true-labels-true-720ms.png",
+      "headroomAlphaBoundsPx": null
+    }
+  ],
+  "scope": "Synthetic production-render frames and diagnostics. Does not verify wall-clock paint scheduling, startup first event, hidden-event cleanup or hardware input."
+}

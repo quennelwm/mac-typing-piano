@@ -1,0 +1,426 @@
+{
+  "task": "C-002T",
+  "timestampUTC": "2026-10-28T08:22:08.691622+00:00",
+  "files": [
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/audio-calibration/calibration-initial-unity.json",
+      "byteSize": 19225,
+      "sha256": "0794933967ecc94225d2ee59266bf3e92e47a258fbb74783ad6253988174ad7c"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/audio-calibration/calibration.json",
+      "byteSize": 22434,
+      "sha256": "90f2b8b6cfb0222bed98fe479e110ba59183df14674b6c56dddfca897d74a72a"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/audio-calibration/steinway-trial-float32.wav",
+      "byteSize": 5963564,
+      "sha256": "b0b0107969320512853bcf7a8cea75cf10d32c74a52fe9f2fd4ec2dae1395b38"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/binding-tests.log",
+      "byteSize": 1209,
+      "sha256": "9b759139ec767cf8a21b5c31fabf210e4d086331fd34b75f6db803100bb12751"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/build.log",
+      "byteSize": 1010,
+      "sha256": "23383247c494b02cb42ab588baca074bbd6dd242f80ac741522229bea0aa048c"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/cache-signature.log",
+      "byteSize": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/calibration-final.log",
+      "byteSize": 5522,
+      "sha256": "d4eb76fad558c6c8e214c2cd6a038cdf6eeb5b57dc2118d9cf28c03d339d178d"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/calibration-first.log",
+      "byteSize": 4962,
+      "sha256": "e34dcde8513f6025a3ae4bd3526f1c30bb13b50c9bfb9afc00c7af4bbb35cd79"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/candidate-regression/input-verification.json",
+      "byteSize": 10469,
+      "sha256": "b9715c85f26a39e0af314334ea8f3075f0d10900dae004226336c0cbf9eb2bdb"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/candidate-regression/pitch-estimator-calibration.json",
+      "byteSize": 12957,
+      "sha256": "bb3914167bfd7f88b023d9eee5501658990094cc7e7c8b9df27b686daaeb7ebc"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/candidate-regression/results.json",
+      "byteSize": 82573,
+      "sha256": "b233cb542cfb60609bd13e87dbcd26632136637bfe28e6375a1e75081ab8c573"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/candidate-regression/vcsl-kawai-offline-representative.wav",
+      "byteSize": 1814444,
+      "sha256": "b24edbbad97888a5a8e89803add09ef49ef8f2d8cc969916e9b7a153aa022669"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/candidate-regression/vcsl-kawai-results.json",
+      "byteSize": 30053,
+      "sha256": "d7f189e5aac30afdfd623c83cb3000205b91abad85191bde876e66633914755a"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/candidate-regression/vcsl-steinway-b-offline-representative.wav",
+      "byteSize": 1814444,
+      "sha256": "439b4ea2ff0abe8b425388b4cddceaa15b12bbaa8c8f2ef145e67861963e9ea9"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/candidate-regression/vcsl-steinway-b-results.json",
+      "byteSize": 30506,
+      "sha256": "bff5e0392badc4e833e5c0c472e74e9f069ef631fa8b6a06e8ee5ce7b6fdfee1"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/candidate-summary.log",
+      "byteSize": 76,
+      "sha256": "6bad7ffce1d29199b2b3b2d2d0991d0775ef5be10c25b895129d80813c50db50"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/component-notes.md",
+      "byteSize": 5525,
+      "sha256": "93eed60176d333d6b3a864d856384d46bcd441baf1d8fd5b448f568a3354b3d9"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/delivery.json",
+      "byteSize": 1071,
+      "sha256": "e39bc5e35a14d3f7c4702dedd057632b8358704a8a5df1c783f0f1fa77a35036"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/dock-red.log",
+      "byteSize": 3443,
+      "sha256": "c60a3cf7f0699e0ec6d84dfedfbcc3b63b657ef558f977d883d728b347426803"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/fault-cleanup.log",
+      "byteSize": 1912,
+      "sha256": "22c4e88d62e366603531cb3be2de419cb272cf868dd570cb4d7a7fc7ca808c02"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/feature-green.log",
+      "byteSize": 4668,
+      "sha256": "9f9c0bd71a95924c20af3bff93d155d4666e1c28334c61300e399a0501d7e854"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/full-tests.log",
+      "byteSize": 22220,
+      "sha256": "e12b523b1766cf6e85b8cd7e47006b0daafbd744869787cd07c3c1ab6c1df6d8"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/gain-red.log",
+      "byteSize": 2446,
+      "sha256": "78837b8a74a55baa56b73cb948cb5cdf31f2e43af8e22839291f8a9bc7911f4a"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/menu-smoke.json",
+      "byteSize": 310,
+      "sha256": "29b31f3dfff18917a15bb9c8c7616e99f7f12441529bc206835efb2beda75986"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/plan.md",
+      "byteSize": 489,
+      "sha256": "7c622d15e3741b7e5db0b8e0282507a91a15377fa1035e62fa0c0308378a23a2"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/preflight.log",
+      "byteSize": 1677,
+      "sha256": "0c291dfa56ae23247559ef67daeb878ece0a1b89d1edd7bc198eedfef0ceec2e"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/review.md",
+      "byteSize": 512,
+      "sha256": "907f0cfd3d6ea6da656071db55466d43ae3adf845fec38150f3f436eb660df09"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/self-check.json",
+      "byteSize": 4262,
+      "sha256": "2af971819f757ae2448b7ceb52001c08951db02112a08a988c283fbbf7590fc0"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/session-green.log",
+      "byteSize": 3507,
+      "sha256": "3c3f1885f7bd09ff0218846aaeb7f1116a19bf1cb5b727fc318d16aace5475af"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/session-red.log",
+      "byteSize": 7661,
+      "sha256": "18bdaf26a50e7c2837d1f0e65208e2937463b4cf4e632a18e2fca4fb0f5fd482"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/source-red.log",
+      "byteSize": 2040,
+      "sha256": "196f8c13d4e268adb2263b1be48f9d86c58c987420d0d5db0243dd595baf6253"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/stereo-red.log",
+      "byteSize": 1160,
+      "sha256": "8ab7422fda856fc95d9365214d6c1e84114f51abaddf96599e2e13d8d81a5fcf"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/test-compile.log",
+      "byteSize": 6113,
+      "sha256": "ea6c548cf5a166f5bf58a41d55bdfdfdcde782037cadb288dd21efb23b652ccf"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/window-smoke.json",
+      "byteSize": 431,
+      "sha256": "16f0a1877c5bec7b95358fb8011011841bfa56455998c1bf8bdda5ef94ef3c49"
+    },
+    {
+      "path": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-002T/开始试用.md",
+      "byteSize": 1317,
+      "sha256": "01e6565ab6c3b06f466698e4aea1161c24537ff37cfc0a4a4c22083780856c3e"
+    },
+    {
+      "path": "Code/Assets/PLACEHOLDER-LICENSE.txt",
+      "byteSize": 1050,
+      "sha256": "3453722b28dbd47b38d49761b3a6d51f75adfcf0da6df18bc927e9958b7fdf9d"
+    },
+    {
+      "path": "Code/Assets/placeholder-original.sf2",
+      "byteSize": 530774,
+      "sha256": "ded7747105075d3b5ed95fed7a0453f638dd27882b80defd1fcc7062c4c700fb"
+    },
+    {
+      "path": "Code/Assets/placeholder.manifest.json",
+      "byteSize": 1309,
+      "sha256": "3d45e3593987ebc63ee966957cb79e7bcb9f110e29ea3411f2ee9fad36d13861"
+    },
+    {
+      "path": "Code/Assets/source_inventory.md",
+      "byteSize": 1559,
+      "sha256": "3a77b089446ade64b0216b7f27c105b9cbdad7d5a1ddb0b41180f4abdced8959"
+    },
+    {
+      "path": "Code/IMPLEMENTATION.md",
+      "byteSize": 3274,
+      "sha256": "659fb4949c9dc51f016befbd522ea75aacfd34154e8f8305a0482bb68e8df448"
+    },
+    {
+      "path": "Code/Package.swift",
+      "byteSize": 759,
+      "sha256": "77d14c515302b0ae597fe83123c737f7db8a0f835520fd7ec765daaff7d23e62"
+    },
+    {
+      "path": "Code/README.md",
+      "byteSize": 3778,
+      "sha256": "66f38208be159c81aa949594c3a809b92dd2997ead76ee3116bd69325f061709"
+    },
+    {
+      "path": "Code/Scripts/build.sh",
+      "byteSize": 6500,
+      "sha256": "507dff3442973f473a2497a7058fa983a939004c121c1ddb3d8d78bb6b02f331"
+    },
+    {
+      "path": "Code/Scripts/generate_placeholder.py",
+      "byteSize": 6110,
+      "sha256": "95ee9582ed08d8a018159a622318b6979bdece0710e816dffdb76ea32ad7461a"
+    },
+    {
+      "path": "Code/Scripts/verify_candidate_banks.py",
+      "byteSize": 11901,
+      "sha256": "4650a311016821d2f82121f04a339364950efb5fa38f248864852a43e30b571f"
+    },
+    {
+      "path": "Code/Sources/PianoAudio/AuditionSession.swift",
+      "byteSize": 5963,
+      "sha256": "14363f0226de7dccf287a3d24d2c6ee3289e5899d6f74cd308caa3b6d5a48cca"
+    },
+    {
+      "path": "Code/Sources/PianoAudio/SamplerAudio.swift",
+      "byteSize": 10092,
+      "sha256": "01a6043db8dc83cb2e3eb3c663e400d1801dbda3b67320d8ef8c5e115124905e"
+    },
+    {
+      "path": "Code/Sources/PianoCore/AppPreferences.swift",
+      "byteSize": 1000,
+      "sha256": "0ca469709473e1f944336f74b93180ec67b8748c680fa209a58c6393466b1720"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Coordinator.swift",
+      "byteSize": 3117,
+      "sha256": "987b7b246f4de5d26f62bd724842dd36cf856a6582fc6dd6f2a8321916294ef4"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Core.swift",
+      "byteSize": 1766,
+      "sha256": "0c8ae0aa75bfbc921705598ca3a354089c3dc8fbfacddc29d3e3a5f07918d30c"
+    },
+    {
+      "path": "Code/Sources/PianoCore/DockOwnership.swift",
+      "byteSize": 1826,
+      "sha256": "48089a840d9fecd58cc1b636a9f8cd970957275cc52fea4ebc2dc3aa781d4f87"
+    },
+    {
+      "path": "Code/Sources/PianoCore/FloatingNotes.swift",
+      "byteSize": 2461,
+      "sha256": "e3af94367721bc0b5293f6e4d3773eaf52a4c78cd2379fa8dfbe0f461271568d"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Geometry.swift",
+      "byteSize": 2019,
+      "sha256": "9b25f119014c35254db9c00214b360eb3cd4a0209def9610dd270d955a3ea10c"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Mapping.swift",
+      "byteSize": 2373,
+      "sha256": "7730fb0437eacc89c27266bd1c2a7b8fc5e2dda6777375d935985d6e4ffece71"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Policies.swift",
+      "byteSize": 1538,
+      "sha256": "34d8610ae34a1562e3d3db6e69849f3f56bdb94eb8fda5c6c96f9c46c49372e2"
+    },
+    {
+      "path": "Code/Sources/PianoMac/DockAdapter.swift",
+      "byteSize": 8833,
+      "sha256": "422860f7af10cb90c2eef5d8efc92e760d98bb8695e9b61605f64fb8a6f019b8"
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputMonitor.swift",
+      "byteSize": 6780,
+      "sha256": "a347e2e298ed57bb16fe4221431f37534ab3dda6547d77c89c59d401b48a87cc"
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputNormalizer.swift",
+      "byteSize": 1480,
+      "sha256": "6e479581e0f9a68120f1526657eaff69477c356d467c33866aa360cd9270d9e9"
+    },
+    {
+      "path": "Code/Sources/PianoMac/Module.swift",
+      "byteSize": 18,
+      "sha256": "dda9b75f64b106eb544de201f599122d75abc483c5b156bba6c05c0f956dbc3c"
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "byteSize": 15376,
+      "sha256": "7f3c15f5734bbd927d05e668a39cedd77d92897cf37d763faf641509f9c469f7"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "byteSize": 25645,
+      "sha256": "5f6b9f0f37269e60fb77066d7182030be8c67acc17c17d55498b486f0f9063d2"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "byteSize": 8097,
+      "sha256": "3cac00b426a3c43f9a832624d8ac2ef3b1888d4a6f0e454ca6da0863a9d4acbf"
+    },
+    {
+      "path": "Code/Sources/PianoMac/QuietIvoryProvenance.swift",
+      "byteSize": 1710,
+      "sha256": "303724378f7578a54ec4a48246ee780b417f0c434ccef607303d59f9517d9c6f"
+    },
+    {
+      "path": "Code/Sources/PianoMac/SDKKeys.swift",
+      "byteSize": 3507,
+      "sha256": "cb27a802b588d29248b16a8aa9691f5a36f369d8bc598d88fb746160742aa97f"
+    },
+    {
+      "path": "Code/Sources/PianoProbe/main.swift",
+      "byteSize": 12738,
+      "sha256": "1af2d25f61c16b39b774f91858b0fd33190df5c3c853eb46e22529acb44fc035"
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/AudioSelectionTests.swift",
+      "byteSize": 4060,
+      "sha256": "0eb2b12be98749c735f0d0fbb8e8e53c8d8c2e854ae0c007b7a0b8ca172cd6c9"
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/CandidateBankTests.swift",
+      "byteSize": 23331,
+      "sha256": "3d130611fca0932528de6f0de1f030a1c04a3b0235760924644c19287bd3ee25"
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/SamplerAudioTests.swift",
+      "byteSize": 8568,
+      "sha256": "e55c561834ccbfee804cb99386f52d4c968c97f1e3aaaf4ec9514cb490c3a4c7"
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/TrialBankTests.swift",
+      "byteSize": 8898,
+      "sha256": "4d8952eca10492f7161de2bcc9290d2be67d02ded31ba9c662df8dc13e97f983"
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/TrialGainTests.swift",
+      "byteSize": 1430,
+      "sha256": "869beb1c2a011bd117ad9c8d9297eb6c8cc8f2d483fb1355f4013868a417a6d4"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/AppPreferencesTests.swift",
+      "byteSize": 1297,
+      "sha256": "279e87ea929fcc7b62133565be6b3c626d1503e8bc1fb85465671c916e1e37bc"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/CoordinatorTests.swift",
+      "byteSize": 4468,
+      "sha256": "af8cb39647934b82025f72868965508bc45471eafe63092eef5cc01b9cc705c4"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/FloatingNoteTests.swift",
+      "byteSize": 2645,
+      "sha256": "d8ed1679280fb1ae2331b816224acd387466744766103c047a0f6df57ab9bedf"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/GeometryAndDockTests.swift",
+      "byteSize": 3842,
+      "sha256": "7f2e77062597a534d603e6f5e381c776edd277c59ec4223ae1ea42f9dad8bd1e"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/MappingTests.swift",
+      "byteSize": 894,
+      "sha256": "c282037fc2df71cdcf0bcdb5717b0669e42382f0a1c41f6c18ece3627cacf8e2"
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/ReducerTests.swift",
+      "byteSize": 2308,
+      "sha256": "3149fe9b4dce176443f417267772ff0cad957356eff96a978ffc61767cd4cd0d"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/ControllerIntegrationTests.swift",
+      "byteSize": 3871,
+      "sha256": "35802a13759c4175549c6b2dd06ea7592e373f058e8f3f2abe9be49987b1cf89"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/DockAdapterTests.swift",
+      "byteSize": 6454,
+      "sha256": "3d76a57f3e84c50be803cf4966c4b2ec1ca4898c87e8cd1a50cf67bf59794d08"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/InputNormalizerTests.swift",
+      "byteSize": 2265,
+      "sha256": "7b16931c8e664723761a280aa64752f9c1b042bda69a9cd3302d9fb7ff46e71f"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/IntegrationTests.swift",
+      "byteSize": 4836,
+      "sha256": "c80bcc50de097cae93a6201ea21f16de3004a6bcbc5bc9bc256e83ed62a5008a"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/MenuIntegrationTests.swift",
+      "byteSize": 2293,
+      "sha256": "159c38bd053772e1750273aa9c5b095a70cd85420f298206533b0f7b0b299dcb"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/ModuleTests.swift",
+      "byteSize": 40,
+      "sha256": "e6b1c631bf72196d2cc05bc2089393a4a383b0d614d53c2618f66c9baa6ab842"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/TrialSessionTests.swift",
+      "byteSize": 3216,
+      "sha256": "120d7e5b83813a1f351931970030136df32fff1f0915033604d9d782d2e7ca80"
+    },
+    {
+      "path": "docs/handoffs/C-002T.md",
+      "byteSize": 5531,
+      "sha256": "d2cbad16a59142524de37e4b776cd77c0a9f5a1c1d9f74c36fdb08aafe5cdddc"
+    }
+  ]
+}

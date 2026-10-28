@@ -1,0 +1,23 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+[3/6] Emitting module PianoMacTests
+[4/6] Compiling PianoMacTests AdaptiveOverlayTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift:8:24: error: cannot find 'AdaptiveOverlay' in scope
+ 6 | final class AdaptiveOverlayTests: XCTestCase {
+ 7 |     func testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen() {
+ 8 |         XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: 0, y: 0, width: 1512, height: 982)), CGRect(x: 8, y: 8, width: 1496, height: 104))
+   |                        `- error: cannot find 'AdaptiveOverlay' in scope
+ 9 |         XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: -1920, y: -200, width: 1920, height: 1080)), CGRect(x: -1912, y: -192, width: 1904, height: 104))
+10 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift:9:24: error: cannot find 'AdaptiveOverlay' in scope
+ 7 |     func testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen() {
+ 8 |         XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: 0, y: 0, width: 1512, height: 982)), CGRect(x: 8, y: 8, width: 1496, height: 104))
+ 9 |         XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: -1920, y: -200, width: 1920, height: 1080)), CGRect(x: -1912, y: -192, width: 1904, height: 104))
+   |                        `- error: cannot find 'AdaptiveOverlay' in scope
+10 |     }
+11 |     func testUserEnabledDockIsNotRestoredToAnOlderFalseValue() {
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

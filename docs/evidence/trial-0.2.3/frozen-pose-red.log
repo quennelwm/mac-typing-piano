@@ -1,0 +1,24 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Compiling PianoMacTests IntegrationTests.swift
+[4/5] Emitting module PianoMacTests
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (1.93s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 18:00:06.597.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 18:00:06.598.
+Test Suite 'IntegrationTests' started at 2026-10-28 18:00:06.598.
+Test Case '-[PianoMacTests.IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:32: error: -[PianoMacTests.IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay] : XCTAssertEqualWithAccuracy failed: ("1.0") is not equal to ("0.681321459263792") +/- ("1e-05")
+Test Case '-[PianoMacTests.IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay]' failed (0.172 seconds).
+Test Suite 'IntegrationTests' failed at 2026-10-28 18:00:06.771.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.172 (0.172) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 18:00:06.771.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.172 (0.172) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 18:00:06.771.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.172 (0.174) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

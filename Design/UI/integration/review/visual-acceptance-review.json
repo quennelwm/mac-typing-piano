@@ -1,0 +1,123 @@
+{
+  "version": "u001b.1",
+  "nativeReviewStatus": "static_render_pass_runtime_acceptance_pending",
+  "tolerancesAreIntegrationReviewProposals": true,
+  "geometryTolerancePt": 0.25,
+  "textPositionReviewTolerancePt": 0.5,
+  "criteria": [
+    {
+      "id": "V01",
+      "severity": "must_fix",
+      "criterion": "64音位与38白26黑、真实邻接、首尾、Fn34保留/顶部排除",
+      "expectedSource": "reference.json.layouts",
+      "requiredEvidence": "snapshot+mapping diagnostics",
+      "status": "pass_offscreen",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "36图64音位、MIDI33–96、38白26黑与基准逐像素相同；mapping SHA一致。真实Fn/物理布局仍属硬件验收。"
+    },
+    {
+      "id": "V02",
+      "severity": "must_fix",
+      "criterion": "标签存在、内容及L/R侧别一致，非音名代替实体键",
+      "expectedSource": "reference.json.layouts.keys.labelParts",
+      "requiredEvidence": "snapshot+independent text-layer evidence",
+      "status": "pass_offscreen",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "36图标签开关/侧标、缺字诊断通过；文字开关帧分别与冻结图完全相同。"
+    },
+    {
+      "id": "V03",
+      "severity": "must_fix",
+      "criterion": "黑标签在黑键自己的底部，标签随键变换，无裁剪/邻键遮挡，4.5:1目标",
+      "expectedSource": "reference labels/ink bounds + frozen qa/contrast.json",
+      "requiredEvidence": "1x/2x native render + ink bounds/contrast",
+      "status": "pass_provided_states",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "rest/single/multi所有宽度、比例的按压后正文与基准逐像素一致，包含既有颜色及标签位置；未另测全黑按下/白键松开的组合。actualNativeMetrics是局部静态坐标，不包含按压平移。"
+    },
+    {
+      "id": "V04",
+      "severity": "must_fix",
+      "criterion": "标签关闭只影响文字，琴键/音符/声音状态独立",
+      "expectedSource": "CR-001",
+      "requiredEvidence": "paired frames+state diagnostics; sound only simulated this round",
+      "status": "partial",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "静态标签关闭通过；76对音符透明区在标签开关前后逐像素相同。音频状态独立性未由本证据验证。"
+    },
+    {
+      "id": "V05",
+      "severity": "must_fix",
+      "criterion": "主体56pt、额外48pt透明效果区，单键音符不裁剪",
+      "expectedSource": "coordinateSystem/floatingFrames",
+      "requiredEvidence": "alpha PNG+all-endpoint bounds",
+      "status": "partial",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "36图56+48pt/1x2x正确；152帧所覆盖5音位在额外透明区内未触边。所有64音位端点尚无原生浮动帧。"
+    },
+    {
+      "id": "V06",
+      "severity": "must_fix",
+      "criterion": "整体104pt透明区不抢焦点/鼠标穿透",
+      "expectedSource": "native presenter policy",
+      "requiredEvidence": "live pointer evidence; screenshot alone insufficient",
+      "status": "untested",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "离屏PNG不能验证全104pt区域鼠标穿透和焦点。"
+    },
+    {
+      "id": "V07",
+      "severity": "must_fix",
+      "criterion": "700ms到期且≤1000ms，200ms减少动态无位移，重击/隐藏不留旧实例",
+      "expectedSource": "reference motion/floatingFrames",
+      "requiredEvidence": "timed synthetic capture+instance lifecycle log",
+      "status": "partial",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "152合成帧700ms/200ms清零，位移和透明度误差仅浮点精度；28短击/重击帧验证新旧实例分开到期。timer=false，未证明真实时钟/首帧绘制/隐藏生命周期。"
+    },
+    {
+      "id": "V08",
+      "severity": "must_fix",
+      "criterion": "♪单色模板图标、菜单滑块、不暗开声音/改系统音量；Dock关闭确认取消语义",
+      "expectedSource": "CR-001/003",
+      "requiredEvidence": "menu frames+simulated preference traces; actual OS checks separate",
+      "status": "untested",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "此次给定的钢琴及动画PNG没有菜单交互与Dock确认操作证据。"
+    },
+    {
+      "id": "V09",
+      "severity": "must_fix",
+      "criterion": "新按/松开状态独立、旧回弹不覆盖重击、隐藏不补播",
+      "expectedSource": "MOTION_SPEC",
+      "requiredEvidence": "synthetic timing evidence",
+      "status": "partial",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "短击45ms到位、180ms回弹完成；80ms重击后重新下沉，700ms保留第二音符至780ms清零。隐藏不补播和真实输入链路未测。"
+    },
+    {
+      "id": "V10",
+      "severity": "tunable",
+      "criterion": "材质渐变/高光/阴影软边渲染差异；不突破对比度/遮挡要求",
+      "expectedSource": "palette and SVG components",
+      "requiredEvidence": "native comparison at matched backing scale",
+      "status": "pass_offscreen",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "36主体图逐像素相同，材质、阴影无差异；本次不要求额外微调。"
+    },
+    {
+      "id": "V11",
+      "severity": "tunable",
+      "criterion": "不同系统字体回退的微小墨迹/抗锯齿差异；不可删除/缩小到不可读",
+      "expectedSource": "reference observed fonts are evidence only",
+      "requiredEvidence": "side-by-side at real logical size",
+      "status": "pass_offscreen",
+      "actualEvidence": "comparison.json; animation-checks.json; reviewed-evidence.zip",
+      "difference": "给定OS/比例下的标签栅格逐像素相同且missingGlyphs=0；实际屏幕可读性、其他系统字体未验收。"
+    }
+  ],
+  "rule": "Numeric tolerance never overrides semantic correctness, containment or contrast. Missing evidence remains untested, not pass.",
+  "reviewedExecutableSHA256": "5903a94885faa73198e7721474d4bab75337a554213e6f16ac3e4826655a99d5",
+  "reviewedCapturesManifestSHA256": "4434e07d1626bbb85f4a3314c4866494c1ae3a39ee80d0bccdd2fa44cbe55973",
+  "reviewedAnimationManifestSHA256": "3668c5f30e453806f73e013b10637aa85dfc0be05d590f752bf1f908a5f7fc05"
+}

@@ -5,11 +5,11 @@ public struct DockAvoidance {
     private var safeSince: TimeInterval?
     public init() {}
     public mutating func update(nearEdge: Bool, recoverySafe: Bool, mouseDown: Bool, dockFrontmost: Bool, time: TimeInterval) -> Bool {
-        if mouseDown || dockFrontmost { latched = true }
-        if nearEdge || latched { hidden = true; safeSince = nil }
+        if dockFrontmost || (nearEdge && mouseDown) { latched = true }
+        if nearEdge || dockFrontmost || (latched && mouseDown) { hidden = true; safeSince = nil }
         else if recoverySafe {
             if safeSince == nil { safeSince = time }
-            if time - (safeSince ?? time) >= 0.4 { hidden = false }
+            if time - (safeSince ?? time) >= 0.4 { hidden = false; latched = false }
         } else { safeSince = nil }
         return hidden
     }

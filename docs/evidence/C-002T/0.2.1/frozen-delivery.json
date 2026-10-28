@@ -1,0 +1,17 @@
+{
+  "frozen": true,
+  "version": "0.2.1",
+  "build": "4",
+  "bundleID": "local.typingpiano.trial",
+  "appPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/打字钢琴试用.app",
+  "binarySHA256": "3e90c772f6590658377d94f2c7436677de9c44d3f3b15eb0dd6528492e4eaeae",
+  "zipSHA256": "f551974878c64b06860bffa41c3eddebb95ea6b19567a0480f6ca81fd2697dab",
+  "frozenRecordedAtUTC": "2026-10-28T09:21:08.178519+00:00",
+  "signatureVerifiedReadOnly": true,
+  "headlessTests": 31,
+  "offlineAudioRegressionTests": 9,
+  "permissionRequestedByCodeRole": false,
+  "hardwarePlaybackByCodeRole": false,
+  "GUIStartedByCodeRole": false,
+  "packageWillNotBeOverwritten": true
+}

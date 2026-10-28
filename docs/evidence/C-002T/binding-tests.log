@@ -1,0 +1,17 @@
+testStaleSnapshotRejected (__main__.EvidenceBindingTests.testStaleSnapshotRejected) ... ok
+testValidBoundReportAccepted (__main__.EvidenceBindingTests.testValidBoundReportAccepted) ... ok
+testWrongBankRejected (__main__.EvidenceBindingTests.testWrongBankRejected) ... ok
+testWrongCandidateRejected (__main__.EvidenceBindingTests.testWrongCandidateRejected) ... ok
+testWrongCoverageRejected (__main__.EvidenceBindingTests.testWrongCoverageRejected) ... ok
+testWrongImplementationRejected (__main__.EvidenceBindingTests.testWrongImplementationRejected) ... ok
+testWrongSelectorRejected (__main__.EvidenceBindingTests.testWrongSelectorRejected) ... ok
+testWrongUncoveredListRejected (__main__.EvidenceBindingTests.testWrongUncoveredListRejected) ... ok
+testWrongWAVFramesRejected (__main__.EvidenceBindingTests.testWrongWAVFramesRejected) ... ok
+testWrongWAVHashRejected (__main__.EvidenceBindingTests.testWrongWAVHashRejected) ... ok
+testWrongWAVNameRejected (__main__.EvidenceBindingTests.testWrongWAVNameRejected) ... ok
+testWrongWAVSizeRejected (__main__.EvidenceBindingTests.testWrongWAVSizeRejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK

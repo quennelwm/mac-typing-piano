@@ -1,0 +1,14 @@
+{
+  "observedVia": "CUA actual GUI + process/native preference read",
+  "version": "0.2.4",
+  "inputMode": "stopped",
+  "engineRunning": false,
+  "noteOnRequested": 6,
+  "noteOnAccepted": 6,
+  "outputTapFrames": 37564800,
+  "outputTapPeak": 0.025665896,
+  "appVolume": 0.8444062499999997,
+  "systemDockAutohide": true,
+  "singleTrialPID": 64997,
+  "pending": "User re-confirmation of Input Monitoring for frozen 0.2.4; not performed by agent"
+}

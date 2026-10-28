@@ -1,0 +1,87 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+[3/6] Emitting module PianoMacTests
+[4/6] Compiling PianoMacTests NativeDockStorageTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:7:23: error: cannot find 'NativeDockStorage' in scope
+ 5 |     func testNativeWriteVerifiesRuntimeAndPreferenceWithoutDefaultsWrite() throws {
+ 6 |         var native: UInt8 = 1, preference = true, calls: [UInt8] = []
+ 7 |         let storage = NativeDockStorage(getter: { native }, setter: { native = $0; preference = $0 == 1; calls.append($0) }, readPreference: { preference })
+   |                       `- error: cannot find 'NativeDockStorage' in scope
+ 8 |         XCTAssertEqual(try storage.read(), true)
+ 9 |         try storage.write(false)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:15:23: error: cannot find 'NativeDockStorage' in scope
+13 |     }
+14 |     func testUnavailableInvalidOrIgnoredCallsCannotClaimSuccess() {
+15 |         let missing = NativeDockStorage(getter: nil, setter: nil, readPreference: { true })
+   |                       `- error: cannot find 'NativeDockStorage' in scope
+16 |         XCTAssertThrowsError(try missing.read()); XCTAssertThrowsError(try missing.write(false))
+17 |         var writes = 0
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:18:23: error: cannot find 'NativeDockStorage' in scope
+16 |         XCTAssertThrowsError(try missing.read()); XCTAssertThrowsError(try missing.write(false))
+17 |         var writes = 0
+18 |         let invalid = NativeDockStorage(getter: { 2 }, setter: { _ in writes += 1 }, readPreference: { true })
+   |                       `- error: cannot find 'NativeDockStorage' in scope
+19 |         XCTAssertThrowsError(try invalid.write(false)); XCTAssertEqual(writes, 0)
+20 |         let ignored = NativeDockStorage(getter: { 1 }, setter: { _ in }, readPreference: { true })
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:20:23: error: cannot find 'NativeDockStorage' in scope
+18 |         let invalid = NativeDockStorage(getter: { 2 }, setter: { _ in writes += 1 }, readPreference: { true })
+19 |         XCTAssertThrowsError(try invalid.write(false)); XCTAssertEqual(writes, 0)
+20 |         let ignored = NativeDockStorage(getter: { 1 }, setter: { _ in }, readPreference: { true })
+   |                       `- error: cannot find 'NativeDockStorage' in scope
+21 |         XCTAssertThrowsError(try ignored.write(false))
+22 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:25:23: error: cannot find 'NativeDockStorage' in scope
+23 |     func testPreferenceMismatchFailsAndAdapterPreservesOwnershipForRestoration() {
+24 |         var native: UInt8 = 1, preference = true
+25 |         let storage = NativeDockStorage(getter: { native }, setter: { native = $0 }, readPreference: { preference })
+   |                       `- error: cannot find 'NativeDockStorage' in scope
+26 |         let ticket = MemoryDockTicketStore(), adapter = DockAdapter(storage: storage, tickets: ticket)
+27 |         XCTAssertEqual(adapter.request(false, confirmedDisable: true), .failed)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:27:73: error: type 'Equatable' has no member 'failed'
+25 |         let storage = NativeDockStorage(getter: { native }, setter: { native = $0 }, readPreference: { preference })
+26 |         let ticket = MemoryDockTicketStore(), adapter = DockAdapter(storage: storage, tickets: ticket)
+27 |         XCTAssertEqual(adapter.request(false, confirmedDisable: true), .failed)
+   |                                                                         `- error: type 'Equatable' has no member 'failed'
+28 |         XCTAssertEqual(native, 0); XCTAssertEqual(ticket.ticket?.original, true)
+29 |         preference = true
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:30:50: error: type 'Equatable' has no member 'restoredPreference'
+28 |         XCTAssertEqual(native, 0); XCTAssertEqual(ticket.ticket?.original, true)
+29 |         preference = true
+30 |         XCTAssertEqual(adapter.restoreOnExit(), .restoredPreference)
+   |                                                  `- error: type 'Equatable' has no member 'restoredPreference'
+31 |         XCTAssertEqual(native, 1); XCTAssertNil(ticket.ticket)
+32 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:35:23: error: cannot find 'NativeDockStorage' in scope
+33 |     func testUserEnabledNativeBaselineDoesNotWriteOrRestoreFalse() {
+34 |         var writes: [UInt8] = []
+35 |         let storage = NativeDockStorage(getter: { 1 }, setter: { writes.append($0) }, readPreference: { true })
+   |                       `- error: cannot find 'NativeDockStorage' in scope
+36 |         let adapter = DockAdapter(storage: storage, tickets: MemoryDockTicketStore())
+37 |         XCTAssertEqual(adapter.request(true, confirmedDisable: true), .noChange)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:37:72: error: type 'Equatable' has no member 'noChange'
+35 |         let storage = NativeDockStorage(getter: { 1 }, setter: { writes.append($0) }, readPreference: { true })
+36 |         let adapter = DockAdapter(storage: storage, tickets: MemoryDockTicketStore())
+37 |         XCTAssertEqual(adapter.request(true, confirmedDisable: true), .noChange)
+   |                                                                        `- error: type 'Equatable' has no member 'noChange'
+38 |         XCTAssertEqual(adapter.restoreOnExit(), .noChange); XCTAssertTrue(writes.isEmpty)
+39 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift:38:50: error: type 'Equatable' has no member 'noChange'
+36 |         let adapter = DockAdapter(storage: storage, tickets: MemoryDockTicketStore())
+37 |         XCTAssertEqual(adapter.request(true, confirmedDisable: true), .noChange)
+38 |         XCTAssertEqual(adapter.restoreOnExit(), .noChange); XCTAssertTrue(writes.isEmpty)
+   |                                                  `- error: type 'Equatable' has no member 'noChange'
+39 |     }
+40 | }
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

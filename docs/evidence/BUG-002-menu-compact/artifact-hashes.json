@@ -1,0 +1,73 @@
+{
+  "candidateVersion": "0.2.2",
+  "files": [
+    {
+      "path": "Code/Scripts/build.sh",
+      "sha256": "2b0c16d9f92fbaa38706dcfb00d66c13cecf23230b1b233d8a1c815205a797e0"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "sha256": "6b45a6223e8950a51ceb22f84ba95e65f95fa8f1de053865fecc3b4f5f86cb15"
+    },
+    {
+      "path": "Code/Sources/PianoMac/SingleInstance.swift",
+      "sha256": "6969ac41f1ba3b46b4f56a86bccee2b6309148f30f903016a7e77f3993bc1bb0"
+    },
+    {
+      "path": "Code/Sources/PianoProbe/main.swift",
+      "sha256": "9b2884a91579e7af226f65455d5b724d97d7e4eea7eb57fbbbc23c5c1fa28511"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/SingleInstanceTests.swift",
+      "sha256": "535b525f0e9cb41720dc2101ef268092fcacc15fd0c9cf43da764815a8679478"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/HANDOFF.md",
+      "sha256": "175d93a581997f2e82393f0b003af1728c33da5e6c7d6151d4acce085a608585"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/build.log",
+      "sha256": "0bea1fef707f58c09d26505517b8b9fc8f9dcea7c9d862231c96b25c9cb66d1c"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/delivery.json",
+      "sha256": "b7ed655b0cf50ee9ca64b146d1f83c131402f480a664c55bc84d11f581cfdbeb"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/frozen-path-guard.json",
+      "sha256": "43d6f403bd31e8b486190e694ee878e43572a7031e9f5a56934b9647c7c69717"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/menu-smoke.json",
+      "sha256": "906a6ae0accb83e4a1cba143e976b0504221c4c21dc9945b909f2b30aa896811"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/menu-smoke.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/plan.md",
+      "sha256": "799c09820765a47c22b8e1b97f81379a0858b0a5d9e8fb48a1235b585096ed5f"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/self-check.json",
+      "sha256": "1540d1239d784cfc3035beb59ef975509a0b7816e2dfb0dd29153aa366c88b03"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/self-check.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/signing-comparison.json",
+      "sha256": "f38c304b064c218c1d38cd736aaa0d6d905a1721cfcdacdc36a6b9adde288d84"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/test-red.log",
+      "sha256": "b18d67ca33bc9e020d2aedb688bb2be0647f5dfb0ad0b13dcaad088677658058"
+    },
+    {
+      "path": "docs/evidence/BUG-002-menu-compact/tests.log",
+      "sha256": "9a2c91d9d8bc438f65ac7ab5d4fb2e467682ea2f9c3dc5e3e87c9e9a3e551a37"
+    }
+  ]
+}

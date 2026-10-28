@@ -1,0 +1,241 @@
+Building for debugging...
+[0/16] /Users/wuming/Library/Caches/local.typingpiano.probe/swift-build/arm64-apple-macosx/debug/TypingPianoProbePackageTests.derived/runner.swift
+[0/16] Write sources
+[8/16] Write TypingPianoProbe-entitlement.plist
+[9/16] Write sources
+[10/16] Write swift-version--58304C5D6DBC2206.txt
+[12/26] Emitting module PianoCore
+[13/26] Compiling PianoCore Mapping.swift
+[14/26] Compiling PianoCore AppPreferences.swift
+[15/26] Compiling PianoCore DockOwnership.swift
+[16/26] Compiling PianoCore Geometry.swift
+[17/26] Compiling PianoCore FloatingNotes.swift
+[18/26] Compiling PianoCore Core.swift
+[19/26] Compiling PianoCore Coordinator.swift
+[20/27] Compiling PianoCore Policies.swift
+[21/34] Emitting module PianoAudio
+[22/34] Compiling PianoAudio SamplerAudio.swift
+[23/45] Compiling PianoMac SDKKeys.swift
+[24/45] Compiling PianoCoreTests ReducerTests.swift
+[25/45] Compiling PianoCoreTests MappingTests.swift
+[26/45] Compiling PianoCoreTests FloatingNoteTests.swift
+[27/45] Compiling PianoCoreTests GeometryAndDockTests.swift
+[28/45] Compiling PianoCoreTests AppPreferencesTests.swift
+[29/45] Emitting module PianoCoreTests
+[30/45] Compiling PianoCoreTests CoordinatorTests.swift
+[31/45] Compiling PianoAudioTests SamplerAudioTests.swift
+[32/45] Emitting module PianoAudioTests
+[33/45] Compiling PianoAudioTests CandidateBankTests.swift
+[34/45] Compiling PianoMac ProbeMenu.swift
+[35/45] Compiling PianoMac Module.swift
+[36/45] Compiling PianoMac PianoView.swift
+[37/45] Compiling PianoMac InputNormalizer.swift
+[38/45] Compiling PianoMac InputMonitor.swift
+[39/45] Emitting module PianoMac
+[40/45] Compiling PianoMac ProbeController.swift
+[41/51] Compiling PianoMacTests ModuleTests.swift
+[42/51] Compiling PianoMacTests IntegrationTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:14:38: error: type 'PianoGeometry' has no member 'quietIvory'
+12 |         let mapping = try mapping()
+13 |         for width in [900.0, 1000, 1100] {
+14 |             let keys = PianoGeometry.quietIvory(mapping: mapping, width: width)
+   |                                      `- error: type 'PianoGeometry' has no member 'quietIvory'
+15 |             XCTAssertEqual(keys.count, 64)
+16 |             XCTAssertEqual(keys[0].rect.minX, 2.35, accuracy: 0.001)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:18:40: error: cannot infer key path type from context; consider explicitly specifying a root type
+16 |             XCTAssertEqual(keys[0].rect.minX, 2.35, accuracy: 0.001)
+17 |             XCTAssertEqual(keys[0].rect.height, 50)
+18 |             XCTAssertEqual(keys.filter(\.isBlack).first?.rect.height, 32)
+   |                                        `- error: cannot infer key path type from context; consider explicitly specifying a root type
+19 |             let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 104))
+20 |             XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && $0.missingGlyphs == 0 && !$0.overlap })
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:20:32: error: value of type 'PianoView' has no member 'labelMetrics'
+18 |             XCTAssertEqual(keys.filter(\.isBlack).first?.rect.height, 32)
+19 |             let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 104))
+20 |             XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && $0.missingGlyphs == 0 && !$0.overlap })
+   |                                `- error: value of type 'PianoView' has no member 'labelMetrics'
+21 |             XCTAssertEqual(view.labelMetrics.count, 64)
+22 |         }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:21:33: error: value of type 'PianoView' has no member 'labelMetrics'
+19 |             let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 104))
+20 |             XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && $0.missingGlyphs == 0 && !$0.overlap })
+21 |             XCTAssertEqual(view.labelMetrics.count, 64)
+   |                                 `- error: value of type 'PianoView' has no member 'labelMetrics'
+22 |         }
+23 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:27:14: error: value of type 'PianoView' has no member 'automaticAnimation'
+25 |         let mapping = try mapping()
+26 |         let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
+27 |         view.automaticAnimation = false
+   |              `- error: value of type 'PianoView' has no member 'automaticAnimation'
+28 |         view.showLabels = false
+29 |         var coordinator = NoteCoordinator(mapping: mapping)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:33:14: error: value of type 'PianoView' has no member 'strike'
+31 |         _ = coordinator.consume(.init("keyA", .down))
+32 |         let strike = try XCTUnwrap(coordinator.lastStrike)
+33 |         view.strike(strike, at: 10)
+   |              `- error: value of type 'PianoView' has no member 'strike'
+34 |         view.strike(strike, at: 10.01)
+35 |         XCTAssertEqual(view.floatingCount, 1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:34:14: error: value of type 'PianoView' has no member 'strike'
+32 |         let strike = try XCTUnwrap(coordinator.lastStrike)
+33 |         view.strike(strike, at: 10)
+34 |         view.strike(strike, at: 10.01)
+   |              `- error: value of type 'PianoView' has no member 'strike'
+35 |         XCTAssertEqual(view.floatingCount, 1)
+36 |         view.advanceAnimations(at: 10.35)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:35:29: error: value of type 'PianoView' has no member 'floatingCount'
+33 |         view.strike(strike, at: 10)
+34 |         view.strike(strike, at: 10.01)
+35 |         XCTAssertEqual(view.floatingCount, 1)
+   |                             `- error: value of type 'PianoView' has no member 'floatingCount'
+36 |         view.advanceAnimations(at: 10.35)
+37 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 21, accuracy: 0.001)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:36:14: error: value of type 'PianoView' has no member 'advanceAnimations'
+34 |         view.strike(strike, at: 10.01)
+35 |         XCTAssertEqual(view.floatingCount, 1)
+36 |         view.advanceAnimations(at: 10.35)
+   |              `- error: value of type 'PianoView' has no member 'advanceAnimations'
+37 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 21, accuracy: 0.001)
+38 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.875, accuracy: 0.001)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:37:29: error: value of type 'PianoView' has no member 'floatingPresentations'
+35 |         XCTAssertEqual(view.floatingCount, 1)
+36 |         view.advanceAnimations(at: 10.35)
+37 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 21, accuracy: 0.001)
+   |                             `- error: value of type 'PianoView' has no member 'floatingPresentations'
+38 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.875, accuracy: 0.001)
+39 |         view.advanceAnimations(at: 10.7)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:38:29: error: value of type 'PianoView' has no member 'floatingPresentations'
+36 |         view.advanceAnimations(at: 10.35)
+37 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 21, accuracy: 0.001)
+38 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.875, accuracy: 0.001)
+   |                             `- error: value of type 'PianoView' has no member 'floatingPresentations'
+39 |         view.advanceAnimations(at: 10.7)
+40 |         XCTAssertEqual(view.floatingCount, 0)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:39:14: error: value of type 'PianoView' has no member 'advanceAnimations'
+37 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 21, accuracy: 0.001)
+38 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.875, accuracy: 0.001)
+39 |         view.advanceAnimations(at: 10.7)
+   |              `- error: value of type 'PianoView' has no member 'advanceAnimations'
+40 |         XCTAssertEqual(view.floatingCount, 0)
+41 |         XCTAssertFalse(view.animationTimerRunning)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:40:29: error: value of type 'PianoView' has no member 'floatingCount'
+38 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.875, accuracy: 0.001)
+39 |         view.advanceAnimations(at: 10.7)
+40 |         XCTAssertEqual(view.floatingCount, 0)
+   |                             `- error: value of type 'PianoView' has no member 'floatingCount'
+41 |         XCTAssertFalse(view.animationTimerRunning)
+42 |         view.setSceneVisible(false)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:41:29: error: value of type 'PianoView' has no member 'animationTimerRunning'
+39 |         view.advanceAnimations(at: 10.7)
+40 |         XCTAssertEqual(view.floatingCount, 0)
+41 |         XCTAssertFalse(view.animationTimerRunning)
+   |                             `- error: value of type 'PianoView' has no member 'animationTimerRunning'
+42 |         view.setSceneVisible(false)
+43 |         view.strike(strike, at: 11)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:42:14: error: value of type 'PianoView' has no member 'setSceneVisible'
+40 |         XCTAssertEqual(view.floatingCount, 0)
+41 |         XCTAssertFalse(view.animationTimerRunning)
+42 |         view.setSceneVisible(false)
+   |              `- error: value of type 'PianoView' has no member 'setSceneVisible'
+43 |         view.strike(strike, at: 11)
+44 |         view.setSceneVisible(true)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:43:14: error: value of type 'PianoView' has no member 'strike'
+41 |         XCTAssertFalse(view.animationTimerRunning)
+42 |         view.setSceneVisible(false)
+43 |         view.strike(strike, at: 11)
+   |              `- error: value of type 'PianoView' has no member 'strike'
+44 |         view.setSceneVisible(true)
+45 |         XCTAssertEqual(view.floatingCount, 0)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:44:14: error: value of type 'PianoView' has no member 'setSceneVisible'
+42 |         view.setSceneVisible(false)
+43 |         view.strike(strike, at: 11)
+44 |         view.setSceneVisible(true)
+   |              `- error: value of type 'PianoView' has no member 'setSceneVisible'
+45 |         XCTAssertEqual(view.floatingCount, 0)
+46 |         view.reducedMotion = true
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:45:29: error: value of type 'PianoView' has no member 'floatingCount'
+43 |         view.strike(strike, at: 11)
+44 |         view.setSceneVisible(true)
+45 |         XCTAssertEqual(view.floatingCount, 0)
+   |                             `- error: value of type 'PianoView' has no member 'floatingCount'
+46 |         view.reducedMotion = true
+47 |         _ = coordinator.consume(.init("keyA", .up))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:46:14: error: value of type 'PianoView' has no member 'reducedMotion'
+44 |         view.setSceneVisible(true)
+45 |         XCTAssertEqual(view.floatingCount, 0)
+46 |         view.reducedMotion = true
+   |              `- error: value of type 'PianoView' has no member 'reducedMotion'
+47 |         _ = coordinator.consume(.init("keyA", .up))
+48 |         _ = coordinator.consume(.init("keyA", .down))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:49:14: error: value of type 'PianoView' has no member 'strike'
+47 |         _ = coordinator.consume(.init("keyA", .up))
+48 |         _ = coordinator.consume(.init("keyA", .down))
+49 |         view.strike(try XCTUnwrap(coordinator.lastStrike), at: 12)
+   |              `- error: value of type 'PianoView' has no member 'strike'
+50 |         view.advanceAnimations(at: 12.1)
+51 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 0)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:50:14: error: value of type 'PianoView' has no member 'advanceAnimations'
+48 |         _ = coordinator.consume(.init("keyA", .down))
+49 |         view.strike(try XCTUnwrap(coordinator.lastStrike), at: 12)
+50 |         view.advanceAnimations(at: 12.1)
+   |              `- error: value of type 'PianoView' has no member 'advanceAnimations'
+51 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 0)
+52 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.5, accuracy: 0.001)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:51:29: error: value of type 'PianoView' has no member 'floatingPresentations'
+49 |         view.strike(try XCTUnwrap(coordinator.lastStrike), at: 12)
+50 |         view.advanceAnimations(at: 12.1)
+51 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 0)
+   |                             `- error: value of type 'PianoView' has no member 'floatingPresentations'
+52 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.5, accuracy: 0.001)
+53 |         view.advanceAnimations(at: 12.2)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:52:29: error: value of type 'PianoView' has no member 'floatingPresentations'
+50 |         view.advanceAnimations(at: 12.1)
+51 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 0)
+52 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.5, accuracy: 0.001)
+   |                             `- error: value of type 'PianoView' has no member 'floatingPresentations'
+53 |         view.advanceAnimations(at: 12.2)
+54 |         XCTAssertEqual(view.floatingCount, 0)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:53:14: error: value of type 'PianoView' has no member 'advanceAnimations'
+51 |         XCTAssertEqual(view.floatingPresentations.first!.rise, 0)
+52 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.5, accuracy: 0.001)
+53 |         view.advanceAnimations(at: 12.2)
+   |              `- error: value of type 'PianoView' has no member 'advanceAnimations'
+54 |         XCTAssertEqual(view.floatingCount, 0)
+55 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:54:29: error: value of type 'PianoView' has no member 'floatingCount'
+52 |         XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.5, accuracy: 0.001)
+53 |         view.advanceAnimations(at: 12.2)
+54 |         XCTAssertEqual(view.floatingCount, 0)
+   |                             `- error: value of type 'PianoView' has no member 'floatingCount'
+55 |     }
+56 | }
+[43/51] Emitting module PianoMacTests
+[44/51] Compiling PianoMacTests InputNormalizerTests.swift
+[45/51] Emitting module PianoProbe
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

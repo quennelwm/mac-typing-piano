@@ -1,0 +1,854 @@
+{
+  "appPID" : 64997,
+  "appVersion" : "0.2.4",
+  "finalNativeAutohide" : 1,
+  "pianoBounds" : {
+    "Height" : 104,
+    "Width" : 1496,
+    "X" : 8,
+    "Y" : 878
+  },
+  "samples" : [
+    {
+      "alpha" : 1,
+      "elapsed" : 0.0038566666626138613,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.029813166664098389,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.059812291663547512,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.091975333329173736,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.11738845833315281,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.14104366666288115,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.16682104166102363,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.19124033333355328,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.21684574999380857,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.24145241666701622,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.26686625000002095,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.29243062499881489,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.31798995833378285,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.34342054166336311,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.37185012499685399,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.39883470832864987,
+      "onscreen" : true,
+      "phase" : "dock-hidden-before",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 0.42874558333278401,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.77842909097671509,
+      "elapsed" : 0.56382237499929033,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.33455118536949158,
+      "elapsed" : 0.61808174999896437,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 4.0392966184299439e-05,
+      "elapsed" : 0.76636354166112142,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0,
+      "elapsed" : 0.78959329166536918,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0,
+      "elapsed" : 0.82637733333103824,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0,
+      "elapsed" : 0.87135429166664835,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0,
+      "elapsed" : 0.94905304166604765,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0,
+      "elapsed" : 0.99600887499400415,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0,
+      "elapsed" : 1.0296877916625817,
+      "onscreen" : true,
+      "phase" : "dock-visible",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.0634082083270187,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.0984538333286764,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.1370744166633813,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.1710350416615256,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.2075871249980992,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.2401290416601114,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.2811261249953532,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.3150381249943166,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.3520029166611494,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.3903269999937038,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.4222090416660649,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.4602721666669822,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.5006415833267965,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.536556583327183,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.5753271249996033,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.6085479583271081,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.6474703333296929,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.6823369166668272,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.7174827083290438,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.7664244166662684,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.7906030416634167,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.8182477916634525,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.8416169583288138,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.8672735000000102,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.8966736250004033,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.9201976249969448,
+      "onscreen" : false,
+      "phase" : "dock-visible",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 1.9684266666663461,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.0127904166656663,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.0934439166667289,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.1401322499950766,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.1673137916659471,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.1967983750000712,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.2238694166662754,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.2503421250003157,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.2779129166665371,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.3050262916658539,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.3316732083330862,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.3587694999951054,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.3845977916644188,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.4104362500002026,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : -1,
+      "elapsed" : 2.43813920833054,
+      "onscreen" : false,
+      "phase" : "dock-hidden-after",
+      "present" : false,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.00078142003621906042,
+      "elapsed" : 2.4648917499944218,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.01271249633282423,
+      "elapsed" : 2.4918854583302164,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.069490745663642883,
+      "elapsed" : 2.5181687083313591,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.15931281447410583,
+      "elapsed" : 2.5440089583280496,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.23052398860454559,
+      "elapsed" : 2.5710559166618623,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.34019622206687927,
+      "elapsed" : 2.5985342916610534,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.47566774487495422,
+      "elapsed" : 2.6258634999976493,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.54393136501312256,
+      "elapsed" : 2.6520670833269833,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.6603085994720459,
+      "elapsed" : 2.6775283749957453,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.80341827869415283,
+      "elapsed" : 2.7048068333315314,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.85695397853851318,
+      "elapsed" : 2.7305028333285009,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.92917025089263916,
+      "elapsed" : 2.7582529999999679,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 0.97416138648986816,
+      "elapsed" : 2.7846656249967054,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 2.8100735833286308,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 2.8585413333275937,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 2.8829157083309838,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 2.9121903749983176,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 2.9417527499972493,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 2.965629499994975,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 2.9907446666620672,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.0177913333318429,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.048323666662327,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.0807640416605864,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.1104491249934654,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.1398919166604173,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.1741996249984368,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.2097793749999255,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.2367574166637496,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.2649842916653142,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.2937266666631331,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.3280155416650814,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.3591093333307072,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.3941707916601445,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.4190552916625165,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.4418809583294205,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.4732447083297302,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.5000614166638115,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    },
+    {
+      "alpha" : 1,
+      "elapsed" : 3.5362824583280599,
+      "onscreen" : true,
+      "phase" : "dock-hidden-after",
+      "present" : true,
+      "windowID" : 3456
+    }
+  ],
+  "scope" : "Live application window alpha and visibility only; native Dock toggled off then restored on; no input\/audio state changed directly."
+}

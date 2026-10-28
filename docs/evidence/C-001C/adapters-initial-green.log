@@ -1,0 +1,53 @@
+[0/1] Planning build
+Building for debugging...
+[0/9] Write sources
+[3/9] Write swift-version--58304C5D6DBC2206.txt
+[5/11] Emitting module PianoAudio
+[6/11] Compiling PianoAudio AuditionSession.swift
+[7/12] Compiling PianoAudio SamplerAudio.swift
+[8/19] Compiling PianoAudioTests AudioSelectionTests.swift
+[9/19] Compiling PianoAudioTests SamplerAudioTests.swift
+[10/19] Compiling PianoAudioTests CandidateBankTests.swift
+[11/19] Emitting module PianoAudioTests
+[12/19] Compiling PianoMac DockAdapter.swift
+[13/19] Compiling PianoMac ProbeController.swift
+[14/19] Emitting module PianoMac
+[15/25] Compiling PianoMacTests IntegrationTests.swift
+[16/25] Compiling PianoMacTests DockAdapterTests.swift
+[17/25] Compiling PianoMacTests InputNormalizerTests.swift
+[18/25] Emitting module PianoMacTests
+[18/25] Write Objects.LinkFileList
+[20/25] Compiling PianoProbe main.swift
+[21/25] Emitting module PianoProbe
+[21/25] Write Objects.LinkFileList
+[22/25] Linking TypingPianoProbe
+[23/25] Linking TypingPianoProbePackageTests
+[24/25] Applying TypingPianoProbe
+Build complete! (3.18s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 15:40:35.523.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 15:40:35.525.
+Test Suite 'AudioSelectionTests' started at 2026-10-28 15:40:35.525.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' passed (0.002 seconds).
+Test Case '-[PianoAudioTests.AudioSelectionTests testDefaultSilentExplicitEnableSwitchStopsAndNoFallback]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testDefaultSilentExplicitEnableSwitchStopsAndNoFallback]' passed (0.000 seconds).
+Test Suite 'AudioSelectionTests' passed at 2026-10-28 15:40:35.528.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+Test Suite 'DockAdapterTests' started at 2026-10-28 15:40:35.528.
+Test Case '-[PianoMacTests.DockAdapterTests testCancelZeroWritesAndReadbackNotVisual]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testCancelZeroWritesAndReadbackNotVisual]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testCrashTicketNeedsExplicitRecoveryAndMatchingReadback]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testCrashTicketNeedsExplicitRecoveryAndMatchingReadback]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testExternalChangeIsRespectedAndWriteFailureKeepsPriorOwnership]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testExternalChangeIsRespectedAndWriteFailureKeepsPriorOwnership]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testFixedSystemCommandArgumentsOnlyAutohide]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testFixedSystemCommandArgumentsOnlyAutohide]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownReadbackPreservesRecoveryTicketAndCannotClaimSuccess]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownReadbackPreservesRecoveryTicketAndCannotClaimSuccess]' passed (0.000 seconds).
+Test Suite 'DockAdapterTests' passed at 2026-10-28 15:40:35.531.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 15:40:35.531.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 15:40:35.531.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.005 (0.008) seconds

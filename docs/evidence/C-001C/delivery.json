@@ -1,0 +1,13 @@
+{
+  "appPath": "/Users/wuming/Library/Caches/local.typingpiano.probe/TypingPianoProbe.app",
+  "binarySHA256": "784c2ac32157fad02efc10dfbd37b81191ea4d0c7ded4df65655057168fda6f1",
+  "zipPath": "/Users/wuming/Library/Caches/local.typingpiano.probe/TypingPianoProbe.zip",
+  "zipSHA256": "62437b89aa569cc31aded3038dcb6f0b9c2fea8062163545af0d68d0fa1c5a0d",
+  "strictSignatureVerifiedAtUTC": "2026-10-28T07:56:33.761602+00:00",
+  "xctestTests": 54,
+  "xctestFailures": 0,
+  "bindingTests": 12,
+  "hardwareOutputStarted": false,
+  "globalListenerStarted": false,
+  "systemDockWritten": false
+}

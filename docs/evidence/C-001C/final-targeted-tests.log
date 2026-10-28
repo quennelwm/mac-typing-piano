@@ -1,0 +1,65 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/7] Emitting module PianoMac
+[4/7] Compiling PianoMac ProbeController.swift
+[4/9] Write Objects.LinkFileList
+[6/9] Linking TypingPianoProbe
+[7/9] Linking TypingPianoProbePackageTests
+[8/9] Applying TypingPianoProbe
+Build complete! (1.49s)
+Test Suite 'Selected tests' started at 2026-10-28 15:53:22.208.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 15:53:22.209.
+Test Suite 'AudioSelectionTests' started at 2026-10-28 15:53:22.209.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' passed (0.001 seconds).
+Test Case '-[PianoAudioTests.AudioSelectionTests testDefaultSilentExplicitEnableSwitchStopsAndNoFallback]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testDefaultSilentExplicitEnableSwitchStopsAndNoFallback]' passed (0.000 seconds).
+Test Suite 'AudioSelectionTests' passed at 2026-10-28 15:53:22.211.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+Test Suite 'ControllerIntegrationTests' started at 2026-10-28 15:53:22.211.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' passed (0.190 seconds).
+Test Suite 'ControllerIntegrationTests' passed at 2026-10-28 15:53:22.401.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.190 (0.190) seconds
+Test Suite 'DockAdapterTests' started at 2026-10-28 15:53:22.401.
+Test Case '-[PianoMacTests.DockAdapterTests testAtomicFileTicketRoundTripAndRestoreFailureRetainsTicket]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testAtomicFileTicketRoundTripAndRestoreFailureRetainsTicket]' passed (0.004 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testCancelZeroWritesAndReadbackNotVisual]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testCancelZeroWritesAndReadbackNotVisual]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testCrashTicketNeedsExplicitRecoveryAndMatchingReadback]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testCrashTicketNeedsExplicitRecoveryAndMatchingReadback]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testExternalChangeIsRespectedAndWriteFailureKeepsPriorOwnership]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testExternalChangeIsRespectedAndWriteFailureKeepsPriorOwnership]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testFixedSystemCommandArgumentsOnlyAutohide]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testFixedSystemCommandArgumentsOnlyAutohide]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownReadbackPreservesRecoveryTicketAndCannotClaimSuccess]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownReadbackPreservesRecoveryTicketAndCannotClaimSuccess]' passed (0.000 seconds).
+Test Suite 'DockAdapterTests' passed at 2026-10-28 15:53:22.406.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.005 (0.005) seconds
+Test Suite 'IntegrationTests' started at 2026-10-28 15:53:22.406.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' started.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' passed (0.809 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' started.
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' passed (0.020 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' started.
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' passed (0.006 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' started.
+Test Case '-[PianoMacTests.Inwarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+tegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' passed (0.006 seconds).
+Test Suite 'IntegrationTests' passed at 2026-10-28 15:53:23.248.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.841 (0.842) seconds
+Test Suite 'MenuIntegrationTests' started at 2026-10-28 15:53:23.248.
+Test Case '-[PianoMacTests.MenuIntegrationTests testDailyMenuAndTestSourceCallbacksStaySeparated]' started.
+Test Case '-[PianoMacTests.MenuIntegrationTests testDailyMenuAndTestSourceCallbacksStaySeparated]' passed (0.004 seconds).
+Test Case '-[PianoMacTests.MenuIntegrationTests testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme]' started.
+Test Case '-[PianoMacTests.MenuIntegrationTests testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme]' passed (0.002 seconds).
+Test Suite 'MenuIntegrationTests' passed at 2026-10-28 15:53:23.254.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.006) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 15:53:23.254.
+	 Executed 16 tests, with 0 failures (0 unexpected) in 1.043 (1.045) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 15:53:23.254.
+	 Executed 16 tests, with 0 failures (0 unexpected) in 1.043 (1.046) seconds

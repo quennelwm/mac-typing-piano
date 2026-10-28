@@ -1,0 +1,248 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[2/7] Write swift-version--58304C5D6DBC2206.txt
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[4/9] Emitting module PianoAudioTests
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/AudioSelectionTests.swift:5:25: error: cannot find type 'AuditionEngine' in scope
+ 3 | 
+ 4 | final class AudioSelectionTests: XCTestCase {
+ 5 |     final class Engine: AuditionEngine {
+   |                         `- error: cannot find type 'AuditionEngine' in scope
+ 6 |         var calls: [String] = []
+ 7 |         var fail = false
+[5/9] Compiling PianoAudioTests AudioSelectionTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/AudioSelectionTests.swift:5:25: error: cannot find type 'AuditionEngine' in scope
+ 3 | 
+ 4 | final class AudioSelectionTests: XCTestCase {
+ 5 |     final class Engine: AuditionEngine {
+   |                         `- error: cannot find type 'AuditionEngine' in scope
+ 6 |         var calls: [String] = []
+ 7 |         var fail = false
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/AudioSelectionTests.swift:17:22: error: cannot find 'AudioSource' in scope
+15 |     func testDefaultSilentExplicitEnableSwitchStopsAndNoFallback() throws {
+16 |         let engine = Engine()
+17 |         let source = AudioSource(id: "a", title: "a", url: URL(fileURLWithPath: "/a.sf2"), coveredMIDI: [60])
+   |                      `- error: cannot find 'AudioSource' in scope
+18 |         let other = AudioSource(id: "b", title: "b", url: URL(fileURLWithPath: "/b.sf2"), coveredMIDI: [61])
+19 |         let session = AuditionSession(engine: engine, source: source)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/AudioSelectionTests.swift:18:21: error: cannot find 'AudioSource' in scope
+16 |         let engine = Engine()
+17 |         let source = AudioSource(id: "a", title: "a", url: URL(fileURLWithPath: "/a.sf2"), coveredMIDI: [60])
+18 |         let other = AudioSource(id: "b", title: "b", url: URL(fileURLWithPath: "/b.sf2"), coveredMIDI: [61])
+   |                     `- error: cannot find 'AudioSource' in scope
+19 |         let session = AuditionSession(engine: engine, source: source)
+20 |         XCTAssertFalse(session.enabled); XCTAssertTrue(engine.calls.isEmpty)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/AudioSelectionTests.swift:19:23: error: cannot find 'AuditionSession' in scope
+17 |         let source = AudioSource(id: "a", title: "a", url: URL(fileURLWithPath: "/a.sf2"), coveredMIDI: [60])
+18 |         let other = AudioSource(id: "b", title: "b", url: URL(fileURLWithPath: "/b.sf2"), coveredMIDI: [61])
+19 |         let session = AuditionSession(engine: engine, source: source)
+   |                       `- error: cannot find 'AuditionSession' in scope
+20 |         XCTAssertFalse(session.enabled); XCTAssertTrue(engine.calls.isEmpty)
+21 |         session.noteOn(midi: 60, velocity: 80); XCTAssertTrue(engine.calls.isEmpty)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/AudioSelectionTests.swift:35:23: error: cannot find 'AudioSource' in scope
+33 |     }
+34 |     func testCandidateCoverageExactAndBundlePaths() {
+35 |         let sources = AudioSource.available(root: URL(fileURLWithPath: "/Bundle"), bundled: true)
+   |                       `- error: cannot find 'AudioSource' in scope
+36 |         XCTAssertEqual(sources.map { $0.coveredMIDI.count }, [64, 10, 11])
+37 |         XCTAssertEqual(sources[1].url.path, "/Bundle/AudioCandidates/vcsl-kawai/trial.sf2")
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[6/9] Emitting module PianoMacTests
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:5:24: error: cannot find type 'DockAutohideStorage' in scope
+ 3 | 
+ 4 | final class DockAdapterTests: XCTestCase {
+ 5 |     final class Store: DockAutohideStorage {
+   |                        `- error: cannot find type 'DockAutohideStorage' in scope
+ 6 |         var value: Bool? = false
+ 7 |         var writes: [Bool] = []
+[7/9] Compiling PianoMacTests DockAdapterTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:5:24: error: cannot find type 'DockAutohideStorage' in scope
+ 3 | 
+ 4 | final class DockAdapterTests: XCTestCase {
+ 5 |     final class Store: DockAutohideStorage {
+   |                        `- error: cannot find type 'DockAutohideStorage' in scope
+ 6 |         var value: Bool? = false
+ 7 |         var writes: [Bool] = []
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:18:42: error: cannot find 'MemoryDockTicketStore' in scope
+16 |     }
+17 |     func testCancelZeroWritesAndReadbackNotVisual() throws {
+18 |         let storage = Store(), tickets = MemoryDockTicketStore()
+   |                                          `- error: cannot find 'MemoryDockTicketStore' in scope
+19 |         let adapter = DockAdapter(storage: storage, tickets: tickets)
+20 |         XCTAssertEqual(adapter.request(false, confirmedDisable: false), .cancelled)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:19:23: error: cannot find 'DockAdapter' in scope
+17 |     func testCancelZeroWritesAndReadbackNotVisual() throws {
+18 |         let storage = Store(), tickets = MemoryDockTicketStore()
+19 |         let adapter = DockAdapter(storage: storage, tickets: tickets)
+   |                       `- error: cannot find 'DockAdapter' in scope
+20 |         XCTAssertEqual(adapter.request(false, confirmedDisable: false), .cancelled)
+21 |         XCTAssertTrue(storage.writes.isEmpty); XCTAssertNil(tickets.ticket)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:20:74: error: type 'Equatable' has no member 'cancelled'
+18 |         let storage = Store(), tickets = MemoryDockTicketStore()
+19 |         let adapter = DockAdapter(storage: storage, tickets: tickets)
+20 |         XCTAssertEqual(adapter.request(false, confirmedDisable: false), .cancelled)
+   |                                                                          `- error: type 'Equatable' has no member 'cancelled'
+21 |         XCTAssertTrue(storage.writes.isEmpty); XCTAssertNil(tickets.ticket)
+22 |         XCTAssertTrue(adapter.desired)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:23:72: error: type 'Equatable' has no member 'verifiedPreference'
+21 |         XCTAssertTrue(storage.writes.isEmpty); XCTAssertNil(tickets.ticket)
+22 |         XCTAssertTrue(adapter.desired)
+23 |         XCTAssertEqual(adapter.request(true, confirmedDisable: true), .verifiedPreference)
+   |                                                                        `- error: type 'Equatable' has no member 'verifiedPreference'
+24 |         XCTAssertEqual(storage.writes, [true]); XCTAssertFalse(adapter.visualEffectVerified)
+25 |         XCTAssertEqual(tickets.ticket?.original, false)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:26:50: error: type 'Equatable' has no member 'restoredPreference'
+24 |         XCTAssertEqual(storage.writes, [true]); XCTAssertFalse(adapter.visualEffectVerified)
+25 |         XCTAssertEqual(tickets.ticket?.original, false)
+26 |         XCTAssertEqual(adapter.restoreOnExit(), .restoredPreference)
+   |                                                  `- error: type 'Equatable' has no member 'restoredPreference'
+27 |         XCTAssertEqual(storage.writes, [true, false]); XCTAssertNil(tickets.ticket)
+28 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:30:42: error: cannot find 'MemoryDockTicketStore' in scope
+28 |     }
+29 |     func testExternalChangeIsRespectedAndWriteFailureKeepsPriorOwnership() {
+30 |         let storage = Store(), tickets = MemoryDockTicketStore()
+   |                                          `- error: cannot find 'MemoryDockTicketStore' in scope
+31 |         let adapter = DockAdapter(storage: storage, tickets: tickets)
+32 |         _ = adapter.request(true, confirmedDisable: true)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:31:23: error: cannot find 'DockAdapter' in scope
+29 |     func testExternalChangeIsRespectedAndWriteFailureKeepsPriorOwnership() {
+30 |         let storage = Store(), tickets = MemoryDockTicketStore()
+31 |         let adapter = DockAdapter(storage: storage, tickets: tickets)
+   |                       `- error: cannot find 'DockAdapter' in scope
+32 |         _ = adapter.request(true, confirmedDisable: true)
+33 |         storage.failWrite = true
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:34:73: error: type 'Equatable' has no member 'failed'
+32 |         _ = adapter.request(true, confirmedDisable: true)
+33 |         storage.failWrite = true
+34 |         XCTAssertEqual(adapter.request(false, confirmedDisable: true), .failed)
+   |                                                                         `- error: type 'Equatable' has no member 'failed'
+35 |         XCTAssertNotNil(tickets.ticket)
+36 |         storage.failWrite = false
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:37:50: error: type 'Equatable' has no member 'restoredPreference'
+35 |         XCTAssertNotNil(tickets.ticket)
+36 |         storage.failWrite = false
+37 |         XCTAssertEqual(adapter.restoreOnExit(), .restoredPreference)
+   |                                                  `- error: type 'Equatable' has no member 'restoredPreference'
+38 |         let other = DockAdapter(storage: storage, tickets: tickets)
+39 |         _ = other.request(true, confirmedDisable: true)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:38:21: error: cannot find 'DockAdapter' in scope
+36 |         storage.failWrite = false
+37 |         XCTAssertEqual(adapter.restoreOnExit(), .restoredPreference)
+38 |         let other = DockAdapter(storage: storage, tickets: tickets)
+   |                     `- error: cannot find 'DockAdapter' in scope
+39 |         _ = other.request(true, confirmedDisable: true)
+40 |         storage.value = false // external change
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:41:48: error: type 'Equatable' has no member 'externalChange'
+39 |         _ = other.request(true, confirmedDisable: true)
+40 |         storage.value = false // external change
+41 |         XCTAssertEqual(other.restoreOnExit(), .externalChange)
+   |                                                `- error: type 'Equatable' has no member 'externalChange'
+42 |         XCTAssertEqual(storage.writes.count, 4)
+43 |         XCTAssertNil(tickets.ticket)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:46:42: error: cannot find 'MemoryDockTicketStore' in scope
+44 |     }
+45 |     func testCrashTicketNeedsExplicitRecoveryAndMatchingReadback() throws {
+46 |         let storage = Store(), tickets = MemoryDockTicketStore()
+   |                                          `- error: cannot find 'MemoryDockTicketStore' in scope
+47 |         let old = DockAdapter(storage: storage, tickets: tickets)
+48 |         _ = old.request(true, confirmedDisable: true)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:47:19: error: cannot find 'DockAdapter' in scope
+45 |     func testCrashTicketNeedsExplicitRecoveryAndMatchingReadback() throws {
+46 |         let storage = Store(), tickets = MemoryDockTicketStore()
+47 |         let old = DockAdapter(storage: storage, tickets: tickets)
+   |                   `- error: cannot find 'DockAdapter' in scope
+48 |         _ = old.request(true, confirmedDisable: true)
+49 |         let restarted = DockAdapter(storage: storage, tickets: tickets)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:49:25: error: cannot find 'DockAdapter' in scope
+47 |         let old = DockAdapter(storage: storage, tickets: tickets)
+48 |         _ = old.request(true, confirmedDisable: true)
+49 |         let restarted = DockAdapter(storage: storage, tickets: tickets)
+   |                         `- error: cannot find 'DockAdapter' in scope
+50 |         XCTAssertEqual(storage.writes, [true])
+51 |         XCTAssertEqual(restarted.request(false, confirmedDisable: true), .recoveryRequired)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:51:75: error: type 'Equatable' has no member 'recoveryRequired'
+49 |         let restarted = DockAdapter(storage: storage, tickets: tickets)
+50 |         XCTAssertEqual(storage.writes, [true])
+51 |         XCTAssertEqual(restarted.request(false, confirmedDisable: true), .recoveryRequired)
+   |                                                                           `- error: type 'Equatable' has no member 'recoveryRequired'
+52 |         XCTAssertEqual(restarted.recoverPreviousSession(confirmed: false), .cancelled)
+53 |         XCTAssertEqual(storage.writes, [true])
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:52:77: error: type 'Equatable' has no member 'cancelled'
+50 |         XCTAssertEqual(storage.writes, [true])
+51 |         XCTAssertEqual(restarted.request(false, confirmedDisable: true), .recoveryRequired)
+52 |         XCTAssertEqual(restarted.recoverPreviousSession(confirmed: false), .cancelled)
+   |                                                                             `- error: type 'Equatable' has no member 'cancelled'
+53 |         XCTAssertEqual(storage.writes, [true])
+54 |         XCTAssertEqual(restarted.recoverPreviousSession(confirmed: true), .restoredPreference)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:54:76: error: type 'Equatable' has no member 'restoredPreference'
+52 |         XCTAssertEqual(restarted.recoverPreviousSession(confirmed: false), .cancelled)
+53 |         XCTAssertEqual(storage.writes, [true])
+54 |         XCTAssertEqual(restarted.recoverPreviousSession(confirmed: true), .restoredPreference)
+   |                                                                            `- error: type 'Equatable' has no member 'restoredPreference'
+55 |         XCTAssertEqual(storage.writes, [true, false]); XCTAssertNil(tickets.ticket)
+56 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:58:42: error: cannot find 'MemoryDockTicketStore' in scope
+56 |     }
+57 |     func testUnknownReadbackPreservesRecoveryTicketAndCannotClaimSuccess() {
+58 |         let storage = Store(), tickets = MemoryDockTicketStore()
+   |                                          `- error: cannot find 'MemoryDockTicketStore' in scope
+59 |         storage.ignoreWrite = true
+60 |         let adapter = DockAdapter(storage: storage, tickets: tickets)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:60:23: error: cannot find 'DockAdapter' in scope
+58 |         let storage = Store(), tickets = MemoryDockTicketStore()
+59 |         storage.ignoreWrite = true
+60 |         let adapter = DockAdapter(storage: storage, tickets: tickets)
+   |                       `- error: cannot find 'DockAdapter' in scope
+61 |         XCTAssertEqual(adapter.request(true, confirmedDisable: true), .failed)
+62 |         XCTAssertFalse(adapter.visualEffectVerified)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:61:72: error: type 'Equatable' has no member 'failed'
+59 |         storage.ignoreWrite = true
+60 |         let adapter = DockAdapter(storage: storage, tickets: tickets)
+61 |         XCTAssertEqual(adapter.request(true, confirmedDisable: true), .failed)
+   |                                                                        `- error: type 'Equatable' has no member 'failed'
+62 |         XCTAssertFalse(adapter.visualEffectVerified)
+63 |         storage.value = nil
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:64:72: error: type 'Equatable' has no member 'unknown'
+62 |         XCTAssertFalse(adapter.visualEffectVerified)
+63 |         storage.value = nil
+64 |         XCTAssertEqual(adapter.request(true, confirmedDisable: true), .unknown)
+   |                                                                        `- error: type 'Equatable' has no member 'unknown'
+65 |         XCTAssertEqual(storage.writes, [true])
+66 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift:69:23: error: cannot find 'DefaultsDockStorage' in scope
+67 |     func testFixedSystemCommandArgumentsOnlyAutohide() throws {
+68 |         var calls: [(String, [String])] = []
+69 |         let storage = DefaultsDockStorage { executable, arguments in
+   |                       `- error: cannot find 'DefaultsDockStorage' in scope
+70 |             calls.append((executable, arguments)); return (0, "1\n")
+71 |         }
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

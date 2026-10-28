@@ -1,0 +1,31 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/8] Compiling PianoMac ProbeController.swift
+[5/8] Emitting module PianoMac
+[6/12] Emitting module PianoMacTests
+[7/12] Compiling PianoMacTests ControllerIntegrationTests.swift
+[7/13] Write Objects.LinkFileList
+[9/13] Compiling PianoProbe main.swift
+[10/13] Emitting module PianoProbe
+[10/14] Write Objects.LinkFileList
+[11/14] Linking TypingPianoProbePackageTests
+[12/14] Linking TypingPianoProbe
+[13/14] Applying TypingPianoProbe
+Build complete! (2.48s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 15:53:19.163.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 15:53:19.164.
+Test Suite 'ControllerIntegrationTests' started at 2026-10-28 15:53:19.164.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:39: error: -[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' failed (0.287 seconds).
+Test Suite 'ControllerIntegrationTests' failed at 2026-10-28 15:53:19.452.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.287 (0.288) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 15:53:19.452.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.287 (0.288) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 15:53:19.452.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.287 (0.289) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

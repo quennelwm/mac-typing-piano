@@ -1,0 +1,822 @@
+{
+  "bankSHA256": "2819d43506550ece98d80455388c913850acfcdd7ae45ee61908311a52997b5a",
+  "date": "2026-10-28T08:10:16Z",
+  "defaultVolume": 0.5,
+  "environment": "版本27.2（版号26B123）",
+  "hardwareOutput": false,
+  "limits": "Deterministic sequences only; no hardware listening, acoustic latency, exhaustive arbitrary-polyphony or device-change acceptance.",
+  "maximumMixerGain": 1,
+  "measurements": [
+    {
+      "frames": 24000,
+      "gain": 0.07999999821186066,
+      "name": "legacy-chain-C4-v32",
+      "peak": 0.00025567624834366143,
+      "rms": 6.305965476813798e-05,
+      "samplerDB": 0,
+      "velocity": 32
+    },
+    {
+      "frames": 24000,
+      "gain": 0.07999999821186066,
+      "name": "legacy-chain-C4-v64",
+      "peak": 0.0010227065067738295,
+      "rms": 0.0002522389726141739,
+      "samplerDB": 0,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.07999999821186066,
+      "name": "legacy-chain-C4-v100",
+      "peak": 0.0024968357756733894,
+      "rms": 0.0006158163873807742,
+      "samplerDB": 0,
+      "velocity": 100
+    },
+    {
+      "frames": 24000,
+      "gain": 0.07999999821186066,
+      "name": "legacy-chain-C4-v127",
+      "peak": 0.004027152433991432,
+      "rms": 0.0009932514656672252,
+      "samplerDB": 0,
+      "velocity": 127
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI33",
+      "peak": 0.041004594415426254,
+      "rms": 0.012455186858933813,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI34",
+      "peak": 0.04101119562983513,
+      "rms": 0.01227764831013866,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI35",
+      "peak": 0.04099315032362938,
+      "rms": 0.012103884407407287,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI36",
+      "peak": 0.029177037999033928,
+      "rms": 0.008895390262931142,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI37",
+      "peak": 0.029173335060477257,
+      "rms": 0.008767349158945286,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI38",
+      "peak": 0.03205816075205803,
+      "rms": 0.010635582379600163,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI39",
+      "peak": 0.03205820545554161,
+      "rms": 0.010409470248502455,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI40",
+      "peak": 0.032303519546985626,
+      "rms": 0.011032576388928454,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI41",
+      "peak": 0.03230276331305504,
+      "rms": 0.010945774277118323,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI42",
+      "peak": 0.0300341434776783,
+      "rms": 0.009468913590274233,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI43",
+      "peak": 0.030022118240594864,
+      "rms": 0.009324155717551174,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI44",
+      "peak": 0.02286912500858307,
+      "rms": 0.006922506547795509,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI45",
+      "peak": 0.02286474034190178,
+      "rms": 0.006801598989505004,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI46",
+      "peak": 0.018914682790637016,
+      "rms": 0.007391924925526841,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI47",
+      "peak": 0.01891101524233818,
+      "rms": 0.007272766654525762,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI48",
+      "peak": 0.023895123973488808,
+      "rms": 0.007271493412968281,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI49",
+      "peak": 0.02389182150363922,
+      "rms": 0.007122149731902643,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI50",
+      "peak": 0.01956077665090561,
+      "rms": 0.006908062715928205,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI51",
+      "peak": 0.01955868862569332,
+      "rms": 0.006780164684689588,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI52",
+      "peak": 0.018835142254829407,
+      "rms": 0.006038965119041973,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI53",
+      "peak": 0.018832789734005928,
+      "rms": 0.0059333665853695495,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI54",
+      "peak": 0.01840153895318508,
+      "rms": 0.006282881282609435,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI55",
+      "peak": 0.018397606909275055,
+      "rms": 0.006171904375734996,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI56",
+      "peak": 0.022610154002904892,
+      "rms": 0.008467573477720857,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI57",
+      "peak": 0.022609492763876915,
+      "rms": 0.008361200258530743,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI58",
+      "peak": 0.011624961160123348,
+      "rms": 0.0033636235007797645,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI59",
+      "peak": 0.011624881997704506,
+      "rms": 0.003295825749494653,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI60",
+      "peak": 0.025446666404604912,
+      "rms": 0.006276130933986238,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI61",
+      "peak": 0.025421105325222015,
+      "rms": 0.006126022046679048,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI62",
+      "peak": 0.017856430262327194,
+      "rms": 0.005811308818428862,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI63",
+      "peak": 0.0178519356995821,
+      "rms": 0.005675610982750392,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI64",
+      "peak": 0.03696384280920029,
+      "rms": 0.01220932756876258,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI65",
+      "peak": 0.036940645426511765,
+      "rms": 0.011945295909744172,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI66",
+      "peak": 0.02445336803793907,
+      "rms": 0.00602605684667611,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI67",
+      "peak": 0.024443795904517174,
+      "rms": 0.005884559619135033,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI68",
+      "peak": 0.037117764353752136,
+      "rms": 0.007844941149882137,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI69",
+      "peak": 0.03711575269699097,
+      "rms": 0.007682595149369965,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI70",
+      "peak": 0.026271704584360123,
+      "rms": 0.00998490407298102,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI71",
+      "peak": 0.026268191635608673,
+      "rms": 0.00972361233872459,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI72",
+      "peak": 0.023743361234664917,
+      "rms": 0.007087446526499834,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI73",
+      "peak": 0.023725302889943123,
+      "rms": 0.0068895304931166825,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI74",
+      "peak": 0.016032859683036804,
+      "rms": 0.005065114260910021,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI75",
+      "peak": 0.016026269644498825,
+      "rms": 0.004936922961358369,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI76",
+      "peak": 0.03305720165371895,
+      "rms": 0.010199958167179772,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI77",
+      "peak": 0.03303729370236397,
+      "rms": 0.009932309252266838,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI78",
+      "peak": 0.027204258367419243,
+      "rms": 0.00685513346951497,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI79",
+      "peak": 0.027203211560845375,
+      "rms": 0.006671075735044951,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI80",
+      "peak": 0.018110590055584908,
+      "rms": 0.005221037340220255,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI81",
+      "peak": 0.01810973323881626,
+      "rms": 0.005069382514299899,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI82",
+      "peak": 0.026172038167715073,
+      "rms": 0.008111101918469674,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI83",
+      "peak": 0.026123208925127983,
+      "rms": 0.00788537953602671,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI84",
+      "peak": 0.018688051030039787,
+      "rms": 0.0041875086916055675,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI85",
+      "peak": 0.018672654405236244,
+      "rms": 0.004084764051040989,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI86",
+      "peak": 0.01308983750641346,
+      "rms": 0.002565227362644595,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI87",
+      "peak": 0.013077687472105026,
+      "rms": 0.00249039922681641,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI88",
+      "peak": 0.024743445217609406,
+      "rms": 0.006265210408521814,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI89",
+      "peak": 0.024711601436138153,
+      "rms": 0.006073668165783522,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI90",
+      "peak": 0.01601674035191536,
+      "rms": 0.0037454392674310184,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI91",
+      "peak": 0.015952512621879578,
+      "rms": 0.003627290422321314,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI92",
+      "peak": 0.014721514657139778,
+      "rms": 0.002237755133319933,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI93",
+      "peak": 0.014707108028233051,
+      "rms": 0.002165379820016693,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI94",
+      "peak": 0.011924711056053638,
+      "rms": 0.0018404208533580515,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI95",
+      "peak": 0.011900096200406551,
+      "rms": 0.0017872504248717714,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 24000,
+      "gain": 0.5,
+      "name": "default-MIDI96",
+      "peak": 0.01820107363164425,
+      "rms": 0.0017539510656755578,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 55200,
+      "gain": 0.5,
+      "name": "representative-MIDI33",
+      "peak": 0.041004594415426254,
+      "rms": 0.007488559311724517,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 55200,
+      "gain": 0.5,
+      "name": "representative-MIDI48",
+      "peak": 0.023895123973488808,
+      "rms": 0.004537688115056665,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 55200,
+      "gain": 0.5,
+      "name": "representative-MIDI60",
+      "peak": 0.025446666404604912,
+      "rms": 0.004002135677058536,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 55200,
+      "gain": 0.5,
+      "name": "representative-MIDI72",
+      "peak": 0.023743361234664917,
+      "rms": 0.0045770161238033345,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 55200,
+      "gain": 0.5,
+      "name": "representative-MIDI84",
+      "peak": 0.018688051030039787,
+      "rms": 0.0026147170970966314,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 55200,
+      "gain": 0.5,
+      "name": "representative-MIDI96",
+      "peak": 0.01820107363164425,
+      "rms": 0.00115423505130153,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 48480,
+      "gain": 0.5,
+      "name": "hold-0.01s-release",
+      "peak": 0.02185196243226528,
+      "rms": 0.0021404710330628195,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 52800,
+      "gain": 0.5,
+      "name": "hold-0.1s-release",
+      "peak": 0.025446666404604912,
+      "rms": 0.003498638872100675,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 96000,
+      "gain": 0.5,
+      "name": "hold-1.0s-release",
+      "peak": 0.025446666404604912,
+      "rms": 0.003319639817387475,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 432000,
+      "gain": 0.5,
+      "name": "hold-8.0s-release",
+      "peak": 0.025446666404604912,
+      "rms": 0.0017096718220079529,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 393600,
+      "gain": 0.5,
+      "name": "typing-overlapping-tails-volume0.5",
+      "peak": 0.04093772917985916,
+      "rms": 0.009625371829902153,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 240000,
+      "gain": 0.5,
+      "name": "20Hz-retrigger-volume0.5",
+      "peak": 0.027522800490260124,
+      "rms": 0.0135672610971538,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 96000,
+      "gain": 0.5,
+      "name": "64-note-chord-volume0.5-v64",
+      "peak": 0.28786882758140564,
+      "rms": 0.035333371695095664,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 96000,
+      "gain": 0.5,
+      "name": "64-note-chord-volume0.5-v127",
+      "peak": 0.4665111005306244,
+      "rms": 0.05741450920252009,
+      "samplerDB": 12,
+      "velocity": 127
+    },
+    {
+      "frames": 393600,
+      "gain": 1,
+      "name": "typing-overlapping-tails-volume1.0",
+      "peak": 0.08187545835971832,
+      "rms": 0.019250743659804306,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 240000,
+      "gain": 1,
+      "name": "20Hz-retrigger-volume1.0",
+      "peak": 0.05504560098052025,
+      "rms": 0.0271345221943076,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 96000,
+      "gain": 1,
+      "name": "64-note-chord-volume1.0-v64",
+      "peak": 0.5757376551628113,
+      "rms": 0.07066674339019133,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 96000,
+      "gain": 1,
+      "name": "64-note-chord-volume1.0-v127",
+      "peak": 0.9330222010612488,
+      "rms": 0.11482901840504019,
+      "samplerDB": 12,
+      "velocity": 127
+    },
+    {
+      "frames": 9600,
+      "gain": 0,
+      "name": "zero-clears-and-suppresses",
+      "peak": 0,
+      "rms": 0,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 9600,
+      "gain": 1,
+      "name": "raising-volume-no-replay",
+      "peak": 0,
+      "rms": 0,
+      "samplerDB": 12,
+      "velocity": 64
+    },
+    {
+      "frames": 14400,
+      "gain": 1,
+      "name": "panic-clears",
+      "peak": 0,
+      "rms": 0,
+      "samplerDB": 12,
+      "velocity": 64
+    }
+  ],
+  "muteShutdownAndReenableSilent": true,
+  "realInput": false,
+  "renderFormat": "mono IEEE float32, no offline post-gain or normalization",
+  "sampleRate": 48000,
+  "samplerGainDB": 12,
+  "samplerSourceSHA256": "86a19cc07ea6c0638d86300d22ffc4261394a6d006d2da284a5586c7ccc5a5b7",
+  "selectionSourceSHA256": "c282365948e5ef41bd11e5fdc65ae1c7d8a8869ec98675417b450c9bd4abb2dd",
+  "task": "C-002T",
+  "testSourceSHA256": "8c3cbc571dd19bcc420f0cfbfeee73ad30b6ea8627b4c61d11329a077ca1d772",
+  "note": "Superseded exploratory unity-gain numerical measurements. The original temporary representative WAV was replaced by the final calibrated float32 render. See calibration-first.log for the deliberate headroom failure."
+}

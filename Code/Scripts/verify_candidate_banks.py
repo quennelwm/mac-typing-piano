@@ -4,6 +4,7 @@
 Uses the existing jsonschema installation; never rebuilds or changes candidates.
 """
 import argparse
+import os
 import hashlib
 import json
 from pathlib import Path, PurePosixPath
@@ -15,7 +16,7 @@ import wave
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[2]
 INPUT = ROOT / "Design/Audio/probes/A-001B"
-OUT = ROOT / "docs/evidence/C-001B"
+OUT = Path(os.environ.get("TYPING_PIANO_EVIDENCE_DIR", str(ROOT / "docs/evidence/C-001B"))).resolve()
 IMPLEMENTATION_PATHS = {"Code/Tests/PianoAudioTests/CandidateBankTests.swift",
                         "Code/Scripts/verify_candidate_banks.py"}
 

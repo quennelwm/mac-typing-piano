@@ -1,0 +1,27 @@
+{
+  "app": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.4/打字钢琴试用.app",
+  "version": "0.2.4",
+  "build": "7",
+  "bundleID": "local.typingpiano.trial",
+  "binarySHA256": "6edd694ea26998ffb0015c1301b4042ed5a22c4fa594611eee102dcb41222202",
+  "zipSHA256": "cddc86e138116a26f3be6c24a5d0dd7da7b761c9006d0ba3f61e605bb015f039",
+  "testsPassed": 64,
+  "signatureStrictPass": true,
+  "guiLaunched": false,
+  "realNativeDockSetterCalledByCodeRole": false,
+  "old021BinaryUnchanged": "3e90c772f6590658377d94f2c7436677de9c44d3f3b15eb0dd6528492e4eaeae",
+  "userPreferencesSHA256": "e2e805d42928f2a7ffe60b8e3b8fb7a7b1f4a1fbe1fdf78e05667d436933c9da",
+  "nativeSnapshots": "36 from 0.2.3; three render/layout source hashes unchanged",
+  "candidateFrozen": true,
+  "permissionRequested": false,
+  "TCCModified": false,
+  "hardwareAudioStarted": false,
+  "dockProductionObserver": {
+    "dockVisibility": "hidden",
+    "permissionRequested": false,
+    "pianoWidthPt": 1496,
+    "source": "hidden：Dock PID1339/window49/layer20，onScreenOnly，orientation=bottom",
+    "systemSettingWritten": false,
+    "targetDisplayID": 1
+  }
+}

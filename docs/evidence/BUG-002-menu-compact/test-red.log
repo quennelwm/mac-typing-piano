@@ -1,0 +1,333 @@
+Building for debugging...
+[0/16] Write sources
+[6/16] /Users/wuming/Library/Caches/local.typingpiano.trial/verify022/arm64-apple-macosx/debug/TypingPianoProbePackageTests.derived/runner.swift
+[7/16] Write sources
+[8/16] Write TypingPianoProbe-entitlement.plist
+[8/16] Write sources
+[10/16] Write swift-version--58304C5D6DBC2206.txt
+[12/28] Compiling PianoCore Core.swift
+[13/29] Compiling PianoCore DockOwnership.swift
+[14/29] Compiling PianoCore Coordinator.swift
+[15/29] Compiling PianoCore AppPreferences.swift
+[16/29] Compiling PianoCore Mapping.swift
+[17/29] Compiling PianoCore FloatingNotes.swift
+[18/29] Emitting module PianoCore
+[19/29] Compiling PianoCore Geometry.swift
+[20/29] Compiling PianoCore Policies.swift
+[21/36] Emitting module PianoAudio
+[22/36] Compiling PianoAudio AuditionSession.swift
+[23/36] Compiling PianoAudio SamplerAudio.swift
+[24/36] Compiling PianoAudio RuntimeDiagnostics.swift
+[25/53] Compiling PianoMac Module.swift
+[26/54] Compiling PianoMac QuietIvoryProvenance.swift
+[27/54] Compiling PianoMac SDKKeys.swift
+[28/54] Compiling PianoCoreTests ReducerTests.swift
+[29/54] Compiling PianoCoreTests MappingTests.swift
+[30/54] Compiling PianoCoreTests FloatingNoteTests.swift
+[31/54] Compiling PianoCoreTests CoordinatorTests.swift
+[32/54] Compiling PianoCoreTests AppPreferencesTests.swift
+[33/54] Emitting module PianoCoreTests
+[34/54] Compiling PianoCoreTests GeometryAndDockTests.swift
+[35/54] Compiling PianoAudioTests TrialGainTests.swift
+[36/54] Compiling PianoAudioTests SamplerAudioTests.swift
+[37/54] Compiling PianoAudioTests RuntimeDiagnosticsTests.swift
+[38/54] Compiling PianoAudioTests TrialBankTests.swift
+[39/54] Compiling PianoAudioTests CandidateBankTests.swift
+[40/54] Compiling PianoAudioTests AudioSelectionTests.swift
+[41/54] Emitting module PianoAudioTests
+[42/54] Compiling PianoMac InputMonitor.swift
+[43/54] Compiling PianoMac InputNormalizer.swift
+[44/54] Emitting module PianoMac
+[45/54] Compiling PianoMac ContinuousTrialStart.swift
+[46/54] Compiling PianoMac DockAdapter.swift
+[47/54] Compiling PianoMac ProbeMenu.swift
+[48/54] Compiling PianoMac PianoView.swift
+[49/54] Compiling PianoMac ProbeController.swift
+[50/65] Compiling PianoMacTests ModuleTests.swift
+[51/66] Compiling PianoMacTests LocalTrialStartTests.swift
+[52/66] Compiling PianoMacTests SingleInstanceTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:6:135: error: cannot find type 'PianoInstanceRecord' in scope
+ 4 | 
+ 5 | final class SingleInstanceTests: XCTestCase {
+ 6 |     private func record(_ id: String = "local.typingpiano.trial", pid: Int32 = 2, modern: Bool = false, executable: String? = nil) -> PianoInstanceRecord {
+   |                                                                                                                                       `- error: cannot find type 'PianoInstanceRecord' in scope
+ 7 |         let path = "/tmp/打字钢琴试用.app"
+ 8 |         return PianoInstanceRecord(pid: pid, bundleID: id, bundlePath: path,
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:8:16: error: cannot find 'PianoInstanceRecord' in scope
+ 6 |     private func record(_ id: String = "local.typingpiano.trial", pid: Int32 = 2, modern: Bool = false, executable: String? = nil) -> PianoInstanceRecord {
+ 7 |         let path = "/tmp/打字钢琴试用.app"
+ 8 |         return PianoInstanceRecord(pid: pid, bundleID: id, bundlePath: path,
+   |                `- error: cannot find 'PianoInstanceRecord' in scope
+ 9 |             executablePath: executable ?? path + "/Contents/MacOS/TypingPianoProbe", usesLockProtocol: modern)
+10 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:12:30: error: missing argument for parameter #1 in call
+10 |     }
+11 |     func testRecognizesTrialAndOldProbeWithoutMatchingOtherSoftware() {
+12 |         XCTAssertTrue(record().isPiano)
+   |                              `- error: missing argument for parameter #1 in call
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestCase.h:158:1: note: 'record' declared here
+156 |  * @param issue Object with all details related to the issue.
+157 |  */
+158 | - (void)recordIssue:(XCTIssue *)issue;
+    | `- note: 'record' declared here
+159 | 
+160 | /*!
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:12:32: error: value of tuple type 'Void' has no member 'isPiano'
+10 |     }
+11 |     func testRecognizesTrialAndOldProbeWithoutMatchingOtherSoftware() {
+12 |         XCTAssertTrue(record().isPiano)
+   |                                `- error: value of tuple type 'Void' has no member 'isPiano'
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:13:30: error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+11 |     func testRecognizesTrialAndOldProbeWithoutMatchingOtherSoftware() {
+12 |         XCTAssertTrue(record().isPiano)
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+   |                              `- error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:13:57: error: value of tuple type 'Void' has no member 'isPiano'
+11 |     func testRecognizesTrialAndOldProbeWithoutMatchingOtherSoftware() {
+12 |         XCTAssertTrue(record().isPiano)
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+   |                                                         `- error: value of tuple type 'Void' has no member 'isPiano'
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:14:31: error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+12 |         XCTAssertTrue(record().isPiano)
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+   |                               `- error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+16 |         XCTAssertFalse(record(executable: "/tmp/打字钢琴试用.app/Contents/MacOS/Other").isPiano)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:14:50: error: value of tuple type 'Void' has no member 'isPiano'
+12 |         XCTAssertTrue(record().isPiano)
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+   |                                                  `- error: value of tuple type 'Void' has no member 'isPiano'
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+16 |         XCTAssertFalse(record(executable: "/tmp/打字钢琴试用.app/Contents/MacOS/Other").isPiano)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:15:30: error: extraneous argument label 'executable:' in call
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+   |                              `- error: extraneous argument label 'executable:' in call
+16 |         XCTAssertFalse(record(executable: "/tmp/打字钢琴试用.app/Contents/MacOS/Other").isPiano)
+17 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:15:43: error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+   |                                           `- error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+16 |         XCTAssertFalse(record(executable: "/tmp/打字钢琴试用.app/Contents/MacOS/Other").isPiano)
+17 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:15:74: error: value of tuple type 'Void' has no member 'isPiano'
+13 |         XCTAssertTrue(record("local.typingpiano.probe").isPiano)
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+   |                                                                          `- error: value of tuple type 'Void' has no member 'isPiano'
+16 |         XCTAssertFalse(record(executable: "/tmp/打字钢琴试用.app/Contents/MacOS/Other").isPiano)
+17 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:16:30: error: extraneous argument label 'executable:' in call
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+16 |         XCTAssertFalse(record(executable: "/tmp/打字钢琴试用.app/Contents/MacOS/Other").isPiano)
+   |                              `- error: extraneous argument label 'executable:' in call
+17 |     }
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:16:43: error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+16 |         XCTAssertFalse(record(executable: "/tmp/打字钢琴试用.app/Contents/MacOS/Other").isPiano)
+   |                                           `- error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+17 |     }
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:16:95: error: value of tuple type 'Void' has no member 'isPiano'
+14 |         XCTAssertFalse(record("com.other.music").isPiano)
+15 |         XCTAssertFalse(record(executable: "/tmp/other/TypingPianoProbe").isPiano)
+16 |         XCTAssertFalse(record(executable: "/tmp/打字钢琴试用.app/Contents/MacOS/Other").isPiano)
+   |                                                                                   `- error: value of tuple type 'Void' has no member 'isPiano'
+17 |     }
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:19:22: error: cannot find 'PianoInstanceRecord' in scope
+17 |     }
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+   |                      `- error: cannot find 'PianoInstanceRecord' in scope
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:19:67: error: extraneous argument label 'pid:' in call
+17 |     }
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+   |                                                                   `- error: extraneous argument label 'pid:' in call
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:19:73: error: cannot convert value of type 'Int' to expected argument type 'XCTIssue'
+17 |     }
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+   |                                                                         `- error: cannot convert value of type 'Int' to expected argument type 'XCTIssue'
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:19:100: error: extra argument 'modern' in call
+17 |     }
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+   |                                                                                                    `- error: extra argument 'modern' in call
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:19:89: error: cannot convert value of type 'Int' to expected argument type 'XCTIssue'
+17 |     }
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+   |                                                                                         `- error: cannot convert value of type 'Int' to expected argument type 'XCTIssue'
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:20:24: error: cannot find 'PianoInstanceRecord' in scope
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+   |                        `- error: cannot find 'PianoInstanceRecord' in scope
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+22 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:20:86: error: extra argument 'modern' in call
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+   |                                                                                      `- error: extra argument 'modern' in call
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+22 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:20:75: error: cannot convert value of type 'Int' to expected argument type 'XCTIssue'
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+   |                                                                           `- error: cannot convert value of type 'Int' to expected argument type 'XCTIssue'
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+22 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:20:99: error: extraneous argument label 'pid:' in call
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+   |                                                                                                   `- error: extraneous argument label 'pid:' in call
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+22 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:20:105: error: cannot convert value of type 'Int' to expected argument type 'XCTIssue'
+18 |     func testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps() {
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+   |                                                                                                         `- error: cannot convert value of type 'Int' to expected argument type 'XCTIssue'
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+22 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:21:22: error: cannot find 'PianoInstanceRecord' in scope
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+   |                      `- error: cannot find 'PianoInstanceRecord' in scope
+22 |     }
+23 |     func testLockContentionReleaseAndStaleFileRecovery() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:21:68: error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+19 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1), record(pid: 2, modern: true)], ownPID: 1))
+20 |         XCTAssertEqual(PianoInstanceRecord.legacyBlocker(in: [record(pid: 1, modern: true), record(pid: 3)], ownPID: 1)?.pid, 3)
+21 |         XCTAssertNil(PianoInstanceRecord.legacyBlocker(in: [record("com.other.music")], ownPID: 1))
+   |                                                                    `- error: cannot convert value of type 'String' to expected argument type 'XCTIssue'
+22 |     }
+23 |     func testLockContentionReleaseAndStaleFileRecovery() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:28:20: error: cannot find type 'PianoInstanceLease' in scope
+26 |         defer { try? FileManager.default.removeItem(at: dir) }
+27 |         let path = dir.appendingPathComponent("instance.lock")
+28 |         var first: PianoInstanceLease? = try XCTUnwrap(PianoInstanceLease.acquire(at: path))
+   |                    `- error: cannot find type 'PianoInstanceLease' in scope
+29 |         XCTAssertNotNil(first)
+30 |         XCTAssertNil(try PianoInstanceLease.acquire(at: path))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:28:56: error: cannot find 'PianoInstanceLease' in scope
+26 |         defer { try? FileManager.default.removeItem(at: dir) }
+27 |         let path = dir.appendingPathComponent("instance.lock")
+28 |         var first: PianoInstanceLease? = try XCTUnwrap(PianoInstanceLease.acquire(at: path))
+   |                                                        `- error: cannot find 'PianoInstanceLease' in scope
+29 |         XCTAssertNotNil(first)
+30 |         XCTAssertNil(try PianoInstanceLease.acquire(at: path))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:30:26: error: cannot find 'PianoInstanceLease' in scope
+28 |         var first: PianoInstanceLease? = try XCTUnwrap(PianoInstanceLease.acquire(at: path))
+29 |         XCTAssertNotNil(first)
+30 |         XCTAssertNil(try PianoInstanceLease.acquire(at: path))
+   |                          `- error: cannot find 'PianoInstanceLease' in scope
+31 |         first = nil
+32 |         let next = try XCTUnwrap(PianoInstanceLease.acquire(at: path))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:32:34: error: cannot find 'PianoInstanceLease' in scope
+30 |         XCTAssertNil(try PianoInstanceLease.acquire(at: path))
+31 |         first = nil
+32 |         let next = try XCTUnwrap(PianoInstanceLease.acquire(at: path))
+   |                                  `- error: cannot find 'PianoInstanceLease' in scope
+33 |         withExtendedLifetime(next) { XCTAssertTrue(FileManager.default.fileExists(atPath: path.path)) }
+34 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:32:24: error: generic parameter 'T' could not be inferred
+30 |         XCTAssertNil(try PianoInstanceLease.acquire(at: path))
+31 |         first = nil
+32 |         let next = try XCTUnwrap(PianoInstanceLease.acquire(at: path))
+   |                        `- error: generic parameter 'T' could not be inferred
+33 |         withExtendedLifetime(next) { XCTAssertTrue(FileManager.default.fileExists(atPath: path.path)) }
+34 |     }
+
+XCTest.XCTUnwrap:1:13: note: in call to function 'XCTUnwrap(_:_:file:line:)'
+1 | public func XCTUnwrap<T>(_ expression: @autoclosure () throws -> T?, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) throws -> T
+  |             `- note: in call to function 'XCTUnwrap(_:_:file:line:)'
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:42:34: error: cannot find 'PianoInstanceLease' in scope
+40 |         try Data("unchanged".utf8).write(to: target)
+41 |         try FileManager.default.createSymbolicLink(at: link, withDestinationURL: target)
+42 |         XCTAssertThrowsError(try PianoInstanceLease.acquire(at: link))
+   |                                  `- error: cannot find 'PianoInstanceLease' in scope
+43 |         XCTAssertEqual(try String(contentsOf: target, encoding: .utf8), "unchanged")
+44 |     }
+[53/66] Compiling PianoMacTests MenuIntegrationTests.swift
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[54/66] Emitting module PianoMacTests
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift:6:135: error: cannot find type 'PianoInstanceRecord' in scope
+ 4 | 
+ 5 | final class SingleInstanceTests: XCTestCase {
+ 6 |     private func record(_ id: String = "local.typingpiano.trial", pid: Int32 = 2, modern: Bool = false, executable: String? = nil) -> PianoInstanceRecord {
+   |                                                                                                                                       `- error: cannot find type 'PianoInstanceRecord' in scope
+ 7 |         let path = "/tmp/打字钢琴试用.app"
+ 8 |         return PianoInstanceRecord(pid: pid, bundleID: id, bundlePath: path,
+[55/66] Compiling PianoMacTests IntegrationTests.swift
+[56/66] Compiling PianoMacTests TrialSessionTests.swift
+[57/66] Compiling PianoMacTests InputNormalizerTests.swift
+[58/66] Compiling PianoMacTests ControllerIntegrationTests.swift
+[59/66] Compiling PianoMacTests DockAdapterTests.swift
+[60/66] Emitting module PianoProbe
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

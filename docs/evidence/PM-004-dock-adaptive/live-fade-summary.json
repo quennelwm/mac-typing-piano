@@ -1,0 +1,79 @@
+{
+  "version": "0.2.4",
+  "pid": 64997,
+  "pianoBounds": {
+    "Height": 104,
+    "Width": 1496,
+    "X": 8,
+    "Y": 878
+  },
+  "finalNativeAutohide": 1,
+  "phases": {
+    "dock-hidden-before": {
+      "samples": 16,
+      "first": {
+        "alpha": 1,
+        "elapsed": 0.0038566666626138613,
+        "onscreen": true,
+        "phase": "dock-hidden-before",
+        "present": true,
+        "windowID": 3456
+      },
+      "last": {
+        "alpha": 1,
+        "elapsed": 0.39883470832864987,
+        "onscreen": true,
+        "phase": "dock-hidden-before",
+        "present": true,
+        "windowID": 3456
+      },
+      "minAlpha": 1,
+      "maxAlpha": 1,
+      "intermediateAlphaCount": 0
+    },
+    "dock-visible": {
+      "samples": 36,
+      "first": {
+        "alpha": 1,
+        "elapsed": 0.428745583332784,
+        "onscreen": true,
+        "phase": "dock-visible",
+        "present": true,
+        "windowID": 3456
+      },
+      "last": {
+        "alpha": -1,
+        "elapsed": 1.9201976249969448,
+        "onscreen": false,
+        "phase": "dock-visible",
+        "present": false,
+        "windowID": 3456
+      },
+      "minAlpha": -1,
+      "maxAlpha": 1,
+      "intermediateAlphaCount": 3
+    },
+    "dock-hidden-after": {
+      "samples": 53,
+      "first": {
+        "alpha": -1,
+        "elapsed": 1.9684266666663461,
+        "onscreen": false,
+        "phase": "dock-hidden-after",
+        "present": false,
+        "windowID": 3456
+      },
+      "last": {
+        "alpha": 1,
+        "elapsed": 3.53628245832806,
+        "onscreen": true,
+        "phase": "dock-hidden-after",
+        "present": true,
+        "windowID": 3456
+      },
+      "minAlpha": -1,
+      "maxAlpha": 1,
+      "intermediateAlphaCount": 13
+    }
+  }
+}

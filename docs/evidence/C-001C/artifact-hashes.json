@@ -1,0 +1,1341 @@
+{
+  "task": "C-001C",
+  "timestampUTC": "2026-10-28T08:00:10.205278+00:00",
+  "files": [
+    {
+      "path": "docs/evidence/C-001C/adapters-api-red.log",
+      "byteSize": 17311,
+      "sha256": "15e6df5b402d4db3210d4a0bad36a0e19060a64d749317da90e222ced2bbf3a9"
+    },
+    {
+      "path": "docs/evidence/C-001C/adapters-initial-green.log",
+      "byteSize": 3802,
+      "sha256": "1e0efba6921b088704ec5cd70ecf17515efc4002d3b035dc75ffa34dac797ed2"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/frames.json",
+      "byteSize": 171616,
+      "sha256": "3668c5f30e453806f73e013b10637aa85dfc0be05d590f752bf1f908a5f7fc05"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-0ms.png",
+      "byteSize": 69944,
+      "sha256": "6ebdda7c091c48fecc99ec6f23cb9c1dac198f58d0642bc823b1ce017d477134"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-100ms.png",
+      "byteSize": 73783,
+      "sha256": "70fc2567f8ba71c386b055d1a1a5508c48343a9abe21c65db45e85f78dd7698a"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-120ms.png",
+      "byteSize": 73783,
+      "sha256": "c05739cd4441cba0e90032386e777ae115dcb33004ac6340073485fc17ebb5e8"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-140ms.png",
+      "byteSize": 73783,
+      "sha256": "c0946bbfb87818bf44c01561824aaa8223865709fac087ce4e56fc6d22f0ee56"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-160ms.png",
+      "byteSize": 73783,
+      "sha256": "5c97de553d1d1df16bb4dbd5851a34ef25d1af5b6b7d5d07d493b1f5900ec4c3"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-180ms.png",
+      "byteSize": 73783,
+      "sha256": "1a2b7e2c820e7fe53d216e17c0eccf19241899e1cc17aa42335a82494c14bf07"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-200ms.png",
+      "byteSize": 73156,
+      "sha256": "d2594c2608a8a0968fe90e87d5830bc602807d92e4746285727010f8261320b4"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-20ms.png",
+      "byteSize": 73854,
+      "sha256": "ae1be48660ff3d818850fca642eba9a43ea7f3a9cb32c43f8ac7b9c626b2d24b"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-220ms.png",
+      "byteSize": 72756,
+      "sha256": "102c1500d4e00be6b852b5aaa32b2aa46283cecb9ee4c33fab5337a56f4c534b"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-240ms.png",
+      "byteSize": 72484,
+      "sha256": "7e6e59319b9f505c904ed958f5289269bd67e3c075991903d64b0eb8ce96e611"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-260ms.png",
+      "byteSize": 72380,
+      "sha256": "a694f5217ea5b2eec6a8410e8500205afde9feae33806a87ccf637fb94f2a872"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-280ms.png",
+      "byteSize": 64733,
+      "sha256": "5f4b54afa2ff8680486ae7019dcd2a7970d64529cb4811902864f195ffe10d4b"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-300ms.png",
+      "byteSize": 64733,
+      "sha256": "43ff664db0a3bb59ed5be4dffd45764a50fbc51208c4d43b9d5e2e850ca6ae26"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-320ms.png",
+      "byteSize": 64755,
+      "sha256": "e584ec7c994a517752e6d099314bd0d239e15d1193d513e6c93127776789ba19"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-340ms.png",
+      "byteSize": 64793,
+      "sha256": "d20711de7eaf3922377fb1b52274929d397eddee30749ea209c077aaf16d0f42"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-350ms.png",
+      "byteSize": 64781,
+      "sha256": "cdac15e7b132c95da96abb5d1c492b826b5019882ef0806c774c5fcddfe79171"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-360ms.png",
+      "byteSize": 64807,
+      "sha256": "0d109585f4c474e08153ee978765eced44cf87b1375a618fa1c470f0b2628d3d"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-380ms.png",
+      "byteSize": 64799,
+      "sha256": "805a9d15d0a258e82f3e8e942b63eedbfc9cedf459fd2403bafb5c899b3e2506"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-400ms.png",
+      "byteSize": 64777,
+      "sha256": "869649cdd54f26d78f0a1cdf3f1a41a64db589dfe7a2e60a64e81196f6a09307"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-40ms.png",
+      "byteSize": 74244,
+      "sha256": "19e065d553dda45f71b085a4f9410b6c4d37ca42b41a4c6c246f1da1a7f0d02f"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-420ms.png",
+      "byteSize": 64767,
+      "sha256": "c45a395f059f9504f6d117ce085855c940f7d1058440e7c150aedb981f17deb2"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-440ms.png",
+      "byteSize": 64751,
+      "sha256": "a8f2dc6606712f4188880f5c49f0d9bb152f24bb35ac028b152aae73f6605800"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-460ms.png",
+      "byteSize": 64742,
+      "sha256": "426ab733684e7bbbdede38379c1e3e11f6e577e5cec8c7eb8ad3353c135f75c0"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-480ms.png",
+      "byteSize": 64727,
+      "sha256": "f775a583a0a45ccbf16b806598efd029b38e78acc87065d1404dd03cea691404"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-500ms.png",
+      "byteSize": 64720,
+      "sha256": "893ba589eb97e93ce2dfbf9dcd0f41b36016ae4b806659b5eb36dda5e96a8896"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-520ms.png",
+      "byteSize": 64717,
+      "sha256": "ab34325b8d19757a087ec9c5cb7ccdaa574295f7bebb8436ec6e84e1fb484752"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-540ms.png",
+      "byteSize": 64695,
+      "sha256": "7878fe67941be8fc173dab042a8eb6588bd61668c3ff7cfbf7760146fa300439"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-560ms.png",
+      "byteSize": 64653,
+      "sha256": "52211f845e33dfc362d2554aa4cfab898a7ecf71a5b0310b959f6c78aa486dd6"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-580ms.png",
+      "byteSize": 64651,
+      "sha256": "054874a60ebe044847c235155b4476d7d6cf8f702881669e599482198dd92bf9"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-600ms.png",
+      "byteSize": 64625,
+      "sha256": "26219b6e507bfd3a0c0890a4a5bcae192e462dec3dcc05e4720d9de374ad33fe"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-60ms.png",
+      "byteSize": 73783,
+      "sha256": "aeb67b5e40539f3c06c6dc65bd5920d1bbacf088be151e121e6e8ce03085c6d8"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-620ms.png",
+      "byteSize": 64551,
+      "sha256": "350a5741ccaba96177fc197cff5f9f1825b360ed38cd0a8029363340cff36485"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-640ms.png",
+      "byteSize": 64439,
+      "sha256": "f9915735ed8a130b71fd2ce0d66116f6558e9424c33136886fcf2f5898a6e46e"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-660ms.png",
+      "byteSize": 64306,
+      "sha256": "d6a61219ef15c185fdbf7539551f57608ea4065da65d0cdd0e319144e5b4a37d"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-680ms.png",
+      "byteSize": 64078,
+      "sha256": "9dc8060e25573bc844f1edb4bb1cd6725c98dfeeb6612668f2b843438d483b02"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-700ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-720ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-false-80ms.png",
+      "byteSize": 73783,
+      "sha256": "12d70a9f5c096e4adf6bbddb1dcb474e2f78821cd5e0cb1fa0b4e940ccc0f748"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-0ms.png",
+      "byteSize": 97002,
+      "sha256": "610dca7e16b12c2cf414986f3bf55e929c04e90fc2609f905055b6eeba3f67a7"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-100ms.png",
+      "byteSize": 100352,
+      "sha256": "ed590517b4ed91c32c93e1a19c48d77e9a8cd4440e5a9851e915802f2b2470e5"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-120ms.png",
+      "byteSize": 100352,
+      "sha256": "b7d3b4cb8e4b5ac31a5aa1c1b2ba92a725a2fc64459e942b29be6f3908a4d1b2"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-140ms.png",
+      "byteSize": 100352,
+      "sha256": "cb812097e09217a54dcc28325ac89770ec8bfca09ca6428b9256870ce7976c90"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-160ms.png",
+      "byteSize": 100352,
+      "sha256": "3483122265df709aff88a2573af0bd23433689444a693cc3f64097f852df97d9"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-180ms.png",
+      "byteSize": 100352,
+      "sha256": "c11487abad7d49650e0a3d51e5d31bb5c1ec5c599b630f338e109d7b12811717"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-200ms.png",
+      "byteSize": 100229,
+      "sha256": "91a8b7526d47e9ecd03f898b04c2b22418f9f747a8b24af2117abe6baad75e85"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-20ms.png",
+      "byteSize": 100513,
+      "sha256": "65692dfed64208d41e9091ddbd11723d4c05d262fb8afd1c30404577dbf1ac24"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-220ms.png",
+      "byteSize": 100146,
+      "sha256": "c019ec42acc522340f04dc384c4e21dc015583d52937096f7b2ed8ca39807c72"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-240ms.png",
+      "byteSize": 99638,
+      "sha256": "52130691073d3807f7f6ef9c44d3f04ceeb31d5105ee79b7f8a5e3b32ecf9a98"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-260ms.png",
+      "byteSize": 99451,
+      "sha256": "e9bfef090de07102d890a85c1dad1e30a8258e8b91b9bbd287b2dc692d1e2e87"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-280ms.png",
+      "byteSize": 91543,
+      "sha256": "622698c5d44d6d1b680857113f46480d8be25d3a62dba0c8f8d6dec8927a9f59"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-300ms.png",
+      "byteSize": 91543,
+      "sha256": "c62486e5f616376a66c2b43dde7f10edbd54475d64f37d02f1783bd5f195902c"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-320ms.png",
+      "byteSize": 91571,
+      "sha256": "f245a9ee05a3a48b03b81f00755ec2c9d8b2721041f01eb054de9cc869d913bf"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-340ms.png",
+      "byteSize": 91611,
+      "sha256": "5dcc942b5f8f2b50b90e97d9d8d61b9740b75635997d184aa3c64d227b132d38"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-350ms.png",
+      "byteSize": 91600,
+      "sha256": "224982382f08dcda58d878cb1c7286dd05c8b80e9bc95fd01dc226937bf162e7"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-360ms.png",
+      "byteSize": 91625,
+      "sha256": "8d92bdd95a2c74b20c82c79bca421ae0ee90e6130563b6bf66dfe75fc229eed6"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-380ms.png",
+      "byteSize": 91621,
+      "sha256": "f55e5b7bbb2f8c1ac765a61f0afeadd66d49d88aedaceb0f1b98f975bbc77d8d"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-400ms.png",
+      "byteSize": 91592,
+      "sha256": "82f2b799a30506f47cef0fdc154ca3da9ce3c681360bb1ce3c13425ebc63ada9"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-40ms.png",
+      "byteSize": 100965,
+      "sha256": "2d53d98b4aff4942eaeb9bfaa1259b28744d682250df2cd38b72dfc1cf726b21"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-420ms.png",
+      "byteSize": 91583,
+      "sha256": "2038825396178b78cd8af1b59991eb2d5cf167cadb9e6944974fb4abaf4766e7"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-440ms.png",
+      "byteSize": 91566,
+      "sha256": "ffa639dd70cc27cb0e1891372597c6cb989b2bfb4f347a7bcc01d74f11cb26c3"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-460ms.png",
+      "byteSize": 91555,
+      "sha256": "64e005ae508a005a4308040d37261eab489e79865b4ff1744706fe7cf16e3aa9"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-480ms.png",
+      "byteSize": 91537,
+      "sha256": "d00fff7d150384744bfc43d2430cc347735dd080aae2dbbf3618d6f123542b73"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-500ms.png",
+      "byteSize": 91530,
+      "sha256": "44fece8fd27b7f9ca38d94000191718f18d7be95100978315aebec52b2b5b8a6"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-520ms.png",
+      "byteSize": 91530,
+      "sha256": "cfaf1fa9a146a5688096f37bb2373a04ca04c46663bcd7efa977d9657c573747"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-540ms.png",
+      "byteSize": 91502,
+      "sha256": "45a373506282b227f8d38fdb3a2f08a6c38204255788afb8357ce800b1ef9d61"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-560ms.png",
+      "byteSize": 91459,
+      "sha256": "815217e814b305b5b0938e78a03e438626bf901bc75813e913fa1a5c780f9c51"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-580ms.png",
+      "byteSize": 91455,
+      "sha256": "60ede856c4dc477dd1a0c97de23dd9deba54f452bfaad34e1d15dc47f6b83439"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-600ms.png",
+      "byteSize": 91429,
+      "sha256": "cee32760351ec1e7f391e85e551e8a52c7cbe9289a9f9b85ce0fa2105b230931"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-60ms.png",
+      "byteSize": 100352,
+      "sha256": "db2aba72618ede5ea271c809e9d2495cd6e2938b0f7f7d2d63434aa0a1684255"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-620ms.png",
+      "byteSize": 91353,
+      "sha256": "b30dcedc4f758b1c29424c7d25a4dc607919fc6e55fdc7ebc83860ba0b5b3bf5"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-640ms.png",
+      "byteSize": 91229,
+      "sha256": "fda041986fa9dbeaaa862faf1315ec828d55cd75064aeaa7a7263b4f540aa984"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-660ms.png",
+      "byteSize": 91093,
+      "sha256": "aae1e1fc038c43489a4d040421e7bd99d8c5c730b995a1f23f6f27d22427a990"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-680ms.png",
+      "byteSize": 90837,
+      "sha256": "2372b64ce28df41b17910eee532786f23fbbab801ebbc3fe6965a067e6b4d007"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-700ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-720ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-false-labels-true-80ms.png",
+      "byteSize": 100352,
+      "sha256": "07f05529ab1ff46443f181bc6e84c59b2935a0404a8934bc9ca3ef89d5c5e959"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-0ms.png",
+      "byteSize": 72219,
+      "sha256": "d92e523becfbfedabe657f89ed7e27526f1ef8c7b4967a250aed5d63c4cf0e1d"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-100ms.png",
+      "byteSize": 72207,
+      "sha256": "719868fc1d99ce3600778d4bf24a12ff2f7640aefff5f53de47dcaaf0666d074"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-120ms.png",
+      "byteSize": 72183,
+      "sha256": "82c256f55f3dd24c77e1ed5c7edf12f3bb4e749752616ede0f5f7f76ecbe2efa"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-140ms.png",
+      "byteSize": 72145,
+      "sha256": "d3cca0fa3eceb96be57cf0d259748ee3a7cb5521c99c286bf05d6864904eefcc"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-160ms.png",
+      "byteSize": 72052,
+      "sha256": "a652b1e12758e5a8e88c1c4d4423461a1d6886f570ece262acd67e7c6c7bc6e8"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-180ms.png",
+      "byteSize": 64300,
+      "sha256": "ab13991e36cc27e1a4283ac08f6203e0c5df199176968a358d6ea9a18ef287cd"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-200ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-20ms.png",
+      "byteSize": 72279,
+      "sha256": "adbf46da09609bf383ee381f451b3aa1b76a78a5636ac86cb245132d49496822"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-220ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-240ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-260ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-280ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-300ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-320ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-340ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-350ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-360ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-380ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-400ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-40ms.png",
+      "byteSize": 72285,
+      "sha256": "68efcbe86bbe682f332f07deb555efbec59c1a3f7af233b836b6b8e53d01112f"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-420ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-440ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-460ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-480ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-500ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-520ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-540ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-560ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-580ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-600ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-60ms.png",
+      "byteSize": 72254,
+      "sha256": "da8130a4c1c964b8f4a5c1a01544a1d485492f022d165ecdc7dd58728fdfbf4d"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-620ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-640ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-660ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-680ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-700ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-720ms.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-false-80ms.png",
+      "byteSize": 72234,
+      "sha256": "084c1cac541e546f7d5a8b85e99f231a4493e80735962408ba72b4889b870e01"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-0ms.png",
+      "byteSize": 99370,
+      "sha256": "27e79cef8ff6845b497802e17529c0d2cfb74637026ff241447482a2d3ce1dc7"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-100ms.png",
+      "byteSize": 99356,
+      "sha256": "1b709862094dbc880c74973f90441a62e1a63ba1f645c0ea246bcd0e6bedb933"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-120ms.png",
+      "byteSize": 99326,
+      "sha256": "8d6337c1a33d6764b1be0896776574d2dcd3fb8ac94de6436caa375ff7c60788"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-140ms.png",
+      "byteSize": 99283,
+      "sha256": "fcb115591f64bef31f16335f556f227b14de02b8e6acc5c518ecb917d62bcb71"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-160ms.png",
+      "byteSize": 99193,
+      "sha256": "8dddf50309000dad142b760584d3b7a7a014332d86b23241ba1a356b69622e70"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-180ms.png",
+      "byteSize": 91083,
+      "sha256": "e24ff775b6640b441b80bcd41136c514bfca2263e07e0e1b468b28c62fff1fe7"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-200ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-20ms.png",
+      "byteSize": 99435,
+      "sha256": "78673df9e49648501c7191c77791025f29536eddb4b430cebeb2b813301d5b53"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-220ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-240ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-260ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-280ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-300ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-320ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-340ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-350ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-360ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-380ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-400ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-40ms.png",
+      "byteSize": 99444,
+      "sha256": "73446095a04629e967ac52dc77bd149d3cd94f7f71a6f67980fd8fd82a2ae611"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-420ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-440ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-460ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-480ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-500ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-520ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-540ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-560ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-580ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-600ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-60ms.png",
+      "byteSize": 99409,
+      "sha256": "1237c52d3a0c270e1b89f7ff05be016b68549461391972422be11b90f54e4779"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-620ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-640ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-660ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-680ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-700ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-720ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-reduced-true-labels-true-80ms.png",
+      "byteSize": 99383,
+      "sha256": "2f807bbeaa31e4246b2869823e56c444062b2baa766f70865fe08d8c85851233"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-0ms.png",
+      "byteSize": 92095,
+      "sha256": "41850c478a2342097cc61f9aef178fc9fd346975913b018b1f2a29f585939efe"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-100ms.png",
+      "byteSize": 95160,
+      "sha256": "b2069eaceb0334571ad2fcdd267e4f40bc8b399dd97a82389bae63e8c5cb5209"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-10ms.png",
+      "byteSize": 93023,
+      "sha256": "eb3cea8d0cc271a764b5615d4fdaf190455c2ac319d6c6c55cc31c7e666a6a74"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-125ms.png",
+      "byteSize": 94147,
+      "sha256": "0f63b44f43e584936babbdab2a921545bb99f13d0a57197dfd5416f48e1169bc"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-180ms.png",
+      "byteSize": 94009,
+      "sha256": "1cc08d6fb9ed299dcef248f68ba54b9eb61d245d516b8d4bc0c7d53007950a8f"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-20ms.png",
+      "byteSize": 94243,
+      "sha256": "61630ea66b2906f5cab3af5bac4a4d5803ed71fe47931237919217d35e3def19"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-350ms.png",
+      "byteSize": 93745,
+      "sha256": "6c67eb6fc30ed9edb5d374851cd0e1d1d7162fe7d94e33efb203a1a656a7239e"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-44ms.png",
+      "byteSize": 93293,
+      "sha256": "2fa71ca12a7b7e72ab8cce3bafef87cec8b357e2d3672a7762a84139c1f2a480"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-45ms.png",
+      "byteSize": 93293,
+      "sha256": "ad972ccedf87a22299e5dccd755df6e080c97bb1490875326d6fd9447693b44a"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-60ms.png",
+      "byteSize": 93520,
+      "sha256": "1b639418a9b81112567af0fa03bd04c3208ba10f0256540fa21fb5fc03cc18e1"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-700ms.png",
+      "byteSize": 93143,
+      "sha256": "d76a59a61da173923f3b014e52f7ec244da3e54c7176f5c250a48e07114d84a4"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-780ms.png",
+      "byteSize": 92117,
+      "sha256": "50ccf990d66a75db978c8b4d796d0d41e7e545e5e8dd96f952eb729d2e1e1d47"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-80ms.png",
+      "byteSize": 92813,
+      "sha256": "9ef4bff879619e7354fe0529cbee807faa0e432c79cd1a1f3f50a33ea9e864aa"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-restrike-90ms.png",
+      "byteSize": 93938,
+      "sha256": "28930fc77794432407eef56b1854ac020e4dee5d2f06328a9dd00ae64f9dc62d"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-0ms.png",
+      "byteSize": 92095,
+      "sha256": "41850c478a2342097cc61f9aef178fc9fd346975913b018b1f2a29f585939efe"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-100ms.png",
+      "byteSize": 93042,
+      "sha256": "3fd83f539603c37aa0bdb3d13b1c9208e8e87d1c4938c4cd80e87ece0e95b7cd"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-10ms.png",
+      "byteSize": 93023,
+      "sha256": "eb3cea8d0cc271a764b5615d4fdaf190455c2ac319d6c6c55cc31c7e666a6a74"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-125ms.png",
+      "byteSize": 93164,
+      "sha256": "1215f1b5387d2580c63ed75713b0a7a5acf1b27b701eab8a423992b5bd5463da"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-180ms.png",
+      "byteSize": 90260,
+      "sha256": "aac83a3826cf1a237245cc23c486cbb0120e0bd943ac5f9eea82b1c4a9e1d0ec"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-20ms.png",
+      "byteSize": 94243,
+      "sha256": "61630ea66b2906f5cab3af5bac4a4d5803ed71fe47931237919217d35e3def19"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-350ms.png",
+      "byteSize": 90295,
+      "sha256": "a83832646d7466144322e832d29a3f30ebc0089ff36be18149640f2487a1afb2"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-44ms.png",
+      "byteSize": 93293,
+      "sha256": "2fa71ca12a7b7e72ab8cce3bafef87cec8b357e2d3672a7762a84139c1f2a480"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-45ms.png",
+      "byteSize": 93293,
+      "sha256": "ad972ccedf87a22299e5dccd755df6e080c97bb1490875326d6fd9447693b44a"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-60ms.png",
+      "byteSize": 93520,
+      "sha256": "1b639418a9b81112567af0fa03bd04c3208ba10f0256540fa21fb5fc03cc18e1"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-700ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-780ms.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-80ms.png",
+      "byteSize": 92813,
+      "sha256": "9ef4bff879619e7354fe0529cbee807faa0e432c79cd1a1f3f50a33ea9e864aa"
+    },
+    {
+      "path": "docs/evidence/C-001C/animation-frames/native-short-tap-90ms.png",
+      "byteSize": 93000,
+      "sha256": "6b0bf4e9cef7ffc4cf15467a025a213356c5eeec8a351b8d72e2e2dc652ac81f"
+    },
+    {
+      "path": "docs/evidence/C-001C/behavior-regression-red.log",
+      "byteSize": 4358,
+      "sha256": "0d37922a992a24f1bc8d55537d70548a8799f802bc461a96a5f67de4ef4bcf7f"
+    },
+    {
+      "path": "docs/evidence/C-001C/binding-tests.log",
+      "byteSize": 1209,
+      "sha256": "9b759139ec767cf8a21b5c31fabf210e4d086331fd34b75f6db803100bb12751"
+    },
+    {
+      "path": "docs/evidence/C-001C/build.log",
+      "byteSize": 1006,
+      "sha256": "6a9b88cff57c37dd785782b62a8553f8a5241f767425cef1d3cccf23059234a6"
+    },
+    {
+      "path": "docs/evidence/C-001C/cache-signature.log",
+      "byteSize": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-preflight.log",
+      "byteSize": 1677,
+      "sha256": "0c291dfa56ae23247559ef67daeb878ece0a1b89d1edd7bc198eedfef0ceec2e"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/input-verification.json",
+      "byteSize": 10468,
+      "sha256": "92ad0bbb3b75269f8751996d54dd449d6470afef21d2c43492091df5b699ad02"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/pitch-estimator-calibration.json",
+      "byteSize": 12957,
+      "sha256": "d15e03952ed9501f1501aad1cb21aca733630b595ed66b5b08f8a07df2e2c652"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/results.json",
+      "byteSize": 82573,
+      "sha256": "bdcf02a467bbd378c6637f184812162a873c37ae4dab02b53e6dcfdcc7a7c85f"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/vcsl-kawai-offline-representative.wav",
+      "byteSize": 1814444,
+      "sha256": "b24edbbad97888a5a8e89803add09ef49ef8f2d8cc969916e9b7a153aa022669"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/vcsl-kawai-results.json",
+      "byteSize": 30053,
+      "sha256": "812b3685f5653f08c72d3a1e8a158cd9def80ae63f8aec709b464ab498934cd7"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/vcsl-steinway-b-offline-representative.wav",
+      "byteSize": 1814444,
+      "sha256": "439b4ea2ff0abe8b425388b4cddceaa15b12bbaa8c8f2ef145e67861963e9ea9"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/vcsl-steinway-b-results.json",
+      "byteSize": 30506,
+      "sha256": "f5cfac0c3578cc0fcc095dcaa9d4fd9a1c22e9a8eca00add0ff6feb463fe398e"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-summarize.log",
+      "byteSize": 76,
+      "sha256": "6bad7ffce1d29199b2b3b2d2d0991d0775ef5be10c25b895129d80813c50db50"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-summary.log",
+      "byteSize": 76,
+      "sha256": "6bad7ffce1d29199b2b3b2d2d0991d0775ef5be10c25b895129d80813c50db50"
+    },
+    {
+      "path": "docs/evidence/C-001C/component-notes.md",
+      "byteSize": 6666,
+      "sha256": "f6f4aa75513a5d08b3676a099d8de3fae127dc378620cb06ede9f5fe016607cb"
+    },
+    {
+      "path": "docs/evidence/C-001C/controller-api-red.log",
+      "byteSize": 3079,
+      "sha256": "a270b7daf887ea19e02da30a38edd1f56672b8d9ef03ea76ce08a4388ea399e0"
+    },
+    {
+      "path": "docs/evidence/C-001C/delivery.json",
+      "byteSize": 586,
+      "sha256": "a0de95cee873fdb639bed68fbee6564ea423c48ede8c970ae34e679be4cef2c1"
+    },
+    {
+      "path": "docs/evidence/C-001C/final-targeted-tests.log",
+      "byteSize": 5937,
+      "sha256": "feabc05692ce3b4e8a99be0f8fa69cfd41012b9743c95f249c03aa5c8ef22743"
+    },
+    {
+      "path": "docs/evidence/C-001C/first-strike-red.log",
+      "byteSize": 2108,
+      "sha256": "9b0fd7e9429e5739b17b6276186f5be1021950a5de7babd1d6f3e09218bf41e5"
+    },
+    {
+      "path": "docs/evidence/C-001C/full-tests.log",
+      "byteSize": 19685,
+      "sha256": "763dc91c2d48b0740df7a9a70937218993a3fb45c1bc0b8ae80a24f7555ab54b"
+    },
+    {
+      "path": "docs/evidence/C-001C/implementation-plan.md",
+      "byteSize": 988,
+      "sha256": "1f6b3141d97341a93745eafe95f8784bfeb55f1e670fc88afd527b3d1e517de5"
+    },
+    {
+      "path": "docs/evidence/C-001C/menu-api-red.log",
+      "byteSize": 1861,
+      "sha256": "3fd2aac74233e24cdd0b6e182bfde3c618468ff2dda47f2ed48555134da14bcf"
+    },
+    {
+      "path": "docs/evidence/C-001C/menu-smoke.json",
+      "byteSize": 310,
+      "sha256": "29b31f3dfff18917a15bb9c8c7616e99f7f12441529bc206835efb2beda75986"
+    },
+    {
+      "path": "docs/evidence/C-001C/motion-api-red.log",
+      "byteSize": 3975,
+      "sha256": "5578bde9a9c71fec79a120c54e9bb6c6894f5948b58ed9aa6cdcf877611812cd"
+    },
+    {
+      "path": "docs/evidence/C-001C/motion-green.log",
+      "byteSize": 2576,
+      "sha256": "def0c78110d832b0c78859015fb0edb84fff85a77007278adc9561e670073310"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/captures.json",
+      "byteSize": 1527405,
+      "sha256": "4434e07d1626bbb85f4a3314c4866494c1ae3a39ee80d0bccdd2fa44cbe55973"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-labels-false@1x.png",
+      "byteSize": 21488,
+      "sha256": "97f317fd67c4909afb81a62968ea3640f03ea4956e8b7761b0ac9e7724eeea8e"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-labels-false@2x.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-labels-true@1x.png",
+      "byteSize": 32348,
+      "sha256": "b870a44e8057fbcdaec22424c71d6e315976a330f5147a10c6f69211cae5c423"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-labels-true@2x.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-multi-labels-false@1x.png",
+      "byteSize": 25850,
+      "sha256": "f0e734f2060844031fc962f55270da71e09e19701052360b2a661ce3c565c375"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-multi-labels-false@2x.png",
+      "byteSize": 74423,
+      "sha256": "1894342d3a0a387d0894b9b765c90d6c1f983b5178b99b4e03c65ee11326eea9"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-multi-labels-true@1x.png",
+      "byteSize": 36256,
+      "sha256": "a3c5e6de6cb3d616eff7f66c3478483c83a618f88a9f666078e279e4ed5620f7"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-multi-labels-true@2x.png",
+      "byteSize": 100398,
+      "sha256": "aeb2847b4e43fc1287831d048496a87b2650c98a814938a22ad825105dc46428"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-rest-labels-false@1x.png",
+      "byteSize": 21488,
+      "sha256": "97f317fd67c4909afb81a62968ea3640f03ea4956e8b7761b0ac9e7724eeea8e"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-rest-labels-false@2x.png",
+      "byteSize": 62395,
+      "sha256": "da07e51db742e7758f883c2ac5e1f4b446e2346f7580b43b355387d31e76a989"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-rest-labels-true@1x.png",
+      "byteSize": 32348,
+      "sha256": "b870a44e8057fbcdaec22424c71d6e315976a330f5147a10c6f69211cae5c423"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-rest-labels-true@2x.png",
+      "byteSize": 89063,
+      "sha256": "8d8e150a8304424de1c2d4eb95797dfd3098f306e2b53715377cf58b5e759128"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-single-labels-false@1x.png",
+      "byteSize": 22555,
+      "sha256": "4528af8489d606c98f482e4d8acbf281998f7aa3b9ffb26c810aa9e74fccea30"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-single-labels-false@2x.png",
+      "byteSize": 65621,
+      "sha256": "f23006ee6486a60076993407a78ffe7a8f8db3a4049b8cb73089ce22e4020358"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-single-labels-true@1x.png",
+      "byteSize": 33043,
+      "sha256": "bfb8038c670baf25217fb0d92a93348d47088763b5400c7f457cb2d6f5c818f0"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1000-single-labels-true@2x.png",
+      "byteSize": 92117,
+      "sha256": "50ccf990d66a75db978c8b4d796d0d41e7e545e5e8dd96f952eb729d2e1e1d47"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-labels-false@1x.png",
+      "byteSize": 22785,
+      "sha256": "6e4dcd76e9a74d3d3c1926b51d82a4a0688c9701b86eb66b946026f6bb2b450c"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-labels-false@2x.png",
+      "byteSize": 66463,
+      "sha256": "c14c1f7e3c537c0d26d158a26cc4162fa78dd7d4f011486ccccc8466d8fbab80"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-labels-true@1x.png",
+      "byteSize": 33842,
+      "sha256": "0ad241deec4bc9dbb6a51c2cdede65fa455f619f72e47bffdf0feedee293554b"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-labels-true@2x.png",
+      "byteSize": 94056,
+      "sha256": "ccd54e52637cf1be1bbe74a54258642834a6a0337204edca44d918637fe4878e"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-multi-labels-false@1x.png",
+      "byteSize": 26975,
+      "sha256": "03897469f560f731c1173bb8fe5cc3a78a2f900da5f0cd6ce1c6952dc70cca35"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-multi-labels-false@2x.png",
+      "byteSize": 79875,
+      "sha256": "7046cef910c502d14de8c215779a46ccd0d3410b0023085ea0c9349c4d3f4ef8"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-multi-labels-true@1x.png",
+      "byteSize": 37755,
+      "sha256": "7e4a85b31ed8abdaed56bdbdcb68cd1cc0b103ae3efd3aa4c2a737143b103e24"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-multi-labels-true@2x.png",
+      "byteSize": 107964,
+      "sha256": "53b544e6a62f4ecb1d47ce16588c50415f45f7c2a57854fadc1a20a9eaeddcf0"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-rest-labels-false@1x.png",
+      "byteSize": 22785,
+      "sha256": "6e4dcd76e9a74d3d3c1926b51d82a4a0688c9701b86eb66b946026f6bb2b450c"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-rest-labels-false@2x.png",
+      "byteSize": 66463,
+      "sha256": "c14c1f7e3c537c0d26d158a26cc4162fa78dd7d4f011486ccccc8466d8fbab80"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-rest-labels-true@1x.png",
+      "byteSize": 33842,
+      "sha256": "0ad241deec4bc9dbb6a51c2cdede65fa455f619f72e47bffdf0feedee293554b"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-rest-labels-true@2x.png",
+      "byteSize": 94056,
+      "sha256": "ccd54e52637cf1be1bbe74a54258642834a6a0337204edca44d918637fe4878e"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-single-labels-false@1x.png",
+      "byteSize": 23711,
+      "sha256": "7a3d70727453a4162dc76f6cfef5d7e5d53a9fdcd4e1458faffc3dc370ae1a6e"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-single-labels-false@2x.png",
+      "byteSize": 69661,
+      "sha256": "3e45cb59a9199f0d020e7d78404e2ea78a7e89a59a6e074bf91ad5aa0607cb65"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-single-labels-true@1x.png",
+      "byteSize": 34627,
+      "sha256": "dedd28bc1165c85845107d12d1bc95ce92af883dbf71ce55d152415f8e7d190e"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-1100-single-labels-true@2x.png",
+      "byteSize": 97713,
+      "sha256": "6b0dbc452f46c1e539e23969109eb02196e89af9717837bf01dd13cd4b220d7e"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-labels-false@1x.png",
+      "byteSize": 20185,
+      "sha256": "028a63685d85f8322ee7c54eb197825de03ab9bd1264dd577a6156024b324375"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-labels-false@2x.png",
+      "byteSize": 59024,
+      "sha256": "665e8aebbbf910bc07869af770c79f8b55d55678518156847e5d8ee9bfda624f"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-labels-true@1x.png",
+      "byteSize": 31010,
+      "sha256": "32be238ca36c2571696658b6faeaa9f6bed90d29146f9087133abb0d246c2ec1"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-labels-true@2x.png",
+      "byteSize": 84994,
+      "sha256": "ea5a12bc465d35800638bac835e713c4123adccabd9596b79358dd4e7517f26a"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-multi-labels-false@1x.png",
+      "byteSize": 24093,
+      "sha256": "83b6a738ca8da2872b7533f72c84974f6e742a1545b7635d91675fb92c87cc95"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-multi-labels-false@2x.png",
+      "byteSize": 69868,
+      "sha256": "86702ab73709717d84d16f6a02d4df098f58dc899289ba2651a1c3f0aab4ca0d"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-multi-labels-true@1x.png",
+      "byteSize": 34465,
+      "sha256": "bda623f1016643b41a447a550af4df57ba26a068f6b6a2f6b3e138304a29ad9b"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-multi-labels-true@2x.png",
+      "byteSize": 95069,
+      "sha256": "7f77f7fa4e18f1979099ab0f311ce71cea2bbb1da237d029a35394e331381f8e"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-rest-labels-false@1x.png",
+      "byteSize": 20185,
+      "sha256": "028a63685d85f8322ee7c54eb197825de03ab9bd1264dd577a6156024b324375"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-rest-labels-false@2x.png",
+      "byteSize": 59024,
+      "sha256": "665e8aebbbf910bc07869af770c79f8b55d55678518156847e5d8ee9bfda624f"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-rest-labels-true@1x.png",
+      "byteSize": 31010,
+      "sha256": "32be238ca36c2571696658b6faeaa9f6bed90d29146f9087133abb0d246c2ec1"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-rest-labels-true@2x.png",
+      "byteSize": 84994,
+      "sha256": "ea5a12bc465d35800638bac835e713c4123adccabd9596b79358dd4e7517f26a"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-single-labels-false@1x.png",
+      "byteSize": 21158,
+      "sha256": "b8918ee1b106fa03f9c06e1f6074b1f2f9749b7f4f4d0465c123fc743ae97cef"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-single-labels-false@2x.png",
+      "byteSize": 62563,
+      "sha256": "ef9466e30c35a4dc846b9b94c1d7aca5660b899c47f6a76951fb77105bf58cac"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-single-labels-true@1x.png",
+      "byteSize": 31748,
+      "sha256": "c3a2ea9af7bcb46597571d02dc0625778dc1e584b2361c698093170985fbb99b"
+    },
+    {
+      "path": "docs/evidence/C-001C/native-snapshots/native-900-single-labels-true@2x.png",
+      "byteSize": 88141,
+      "sha256": "6ead475370cc218d8dfb8cc1cfd85c616263f87d7fe3eb401af658d9d5328580"
+    },
+    {
+      "path": "docs/evidence/C-001C/preflight.log",
+      "byteSize": 1677,
+      "sha256": "0c291dfa56ae23247559ef67daeb878ece0a1b89d1edd7bc198eedfef0ceec2e"
+    },
+    {
+      "path": "docs/evidence/C-001C/review.md",
+      "byteSize": 642,
+      "sha256": "badcd3657640d0b76946d95e3445d6f4f037f622181f162f42690b0503bdb549"
+    },
+    {
+      "path": "docs/evidence/C-001C/self-check.json",
+      "byteSize": 2889,
+      "sha256": "4f1c4a98d7df52f56d06ae92644b746eb9a4075e5535d97aa4dcee33fd95a53c"
+    },
+    {
+      "path": "docs/evidence/C-001C/snapshot-ready.md",
+      "byteSize": 1496,
+      "sha256": "ef35c425e64c459150bed7ea1f5835df5de57dbda4d30a000c9cb51214643ac3"
+    },
+    {
+      "path": "docs/evidence/C-001C/swift-tests.log",
+      "byteSize": 17484,
+      "sha256": "1cfca3c0ad054e5336cfa18b0c16fdbff1d0c29e5a87ed8b6d0f6c6399dd8f9d"
+    },
+    {
+      "path": "docs/evidence/C-001C/ui-green.log",
+      "byteSize": 2838,
+      "sha256": "a262c432d5e30371c30d11eeb5330545b974c45e018b36a217e853cc5888af44"
+    },
+    {
+      "path": "docs/evidence/C-001C/ui-red.log",
+      "byteSize": 15682,
+      "sha256": "0a3a51bf15ab33dc92ddcec20becfa1bbca18042acefe86a4b7b0e8556256c8a"
+    },
+    {
+      "path": "docs/evidence/C-001C/user-five-minute-checklist.md",
+      "byteSize": 1867,
+      "sha256": "8d71c9ead1b4d9898ef366fbfbc45fe9b182b55255bcff19236e010da8fa3c4e"
+    },
+    {
+      "path": "docs/evidence/C-001C/window-smoke.json",
+      "byteSize": 431,
+      "sha256": "16f0a1877c5bec7b95358fb8011011841bfa56455998c1bf8bdda5ef94ef3c49"
+    },
+    {
+      "path": "docs/handoffs/C-001C.md",
+      "byteSize": 3778,
+      "sha256": "993e395eb0feb15e765541d072c7af4b8bf3ed435c77380f7d7a1fff7dc576c7"
+    }
+  ]
+}

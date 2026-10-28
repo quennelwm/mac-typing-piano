@@ -1,0 +1,40 @@
+[0/1] Planning build
+Building for debugging...
+[0/4] Write swift-version--58304C5D6DBC2206.txt
+Build complete! (0.24s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 17:20:28.060.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 17:20:28.062.
+Test Suite 'SamplerAudioTests' started at 2026-10-28 17:20:28.062.
+Test Case '-[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom]' passed (0.116 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput]' passed (0.216 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle]' passed (0.055 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence]' passed (0.036 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike]' passed (0.030 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testRejectsMissingMisnamedAndInvalidBanks]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testRejectsMissingMisnamedAndInvalidBanks]' passed (0.003 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare]' passed (0.034 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded]' passed (0.226 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout]' passed (0.153 seconds).
+Test Suite 'SamplerAudioTests' passed at 2026-10-28 17:20:28.932.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.868 (0.869) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 17:20:28.932.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.868 (0.869) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 17:20:28.932.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.868 (0.872) seconds
+AUDIO_METRIC chord_note_commands=64 velocity=127 gain=0.08 peak=0.1382335 rms=0.02630807394645784
+AUDIO_METRIC coverage=64 minimum_peak=0.0024267696 maximum_peak=0.0024737462
+AUDIO_DIAGNOSTIC zero_gain_last_nonzero_seconds=0.0 late_peak=0.0
+AUDIO_METRIC max_slider_gain=0.16 chord_peak=0.276467
+AUDIO_METRIC release_early_peak=0.0019017064 release_after_800ms_peak=0.0 last_frame_above_1e-7_seconds=0.3595
+AUDIO_METRIC panic_post_render_silent=true next_strike_nonzero=true
+AUDIO_METRIC retrigger_hz=10 strikes=100 max_peak=0.0027894115
+AUDIO_METRIC hold_seconds=10 early_peak=0.0024724924 final_peak=0.0

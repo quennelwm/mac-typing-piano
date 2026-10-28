@@ -22,3 +22,11 @@ C-001软件/自动部分已写docs/handoffs/C-001.md；35项XCTest、release编�
 本地.app受Desktop再次添加FinderInfo影响，签名即时通过不等于稳定安装包；见signing-stability.md。代码探针未规避系统保护。
 
 另接C-001B任务，单独核验A-001B候选bank清单后离线实载，仅增加测试、复现脚本和独立证据，不替换默认占位或推进ready/M1。测试结果绑定输入快照、测试源码及代表性WAV哈希，后续变更须重新核验并渲染；验收状态以 `docs/handoffs/C-001B.md` 为准。
+
+## C-001C限定原生联调
+
+按PM-002及ADR-015接入批准主题、真实浮动音符、候选选择、Dock可注入适配器和Caches构建。复用已冻结资源，只在Code与C-001C证据/交接写入；原生绘制逐帧证据先交。默认模拟Dock、停止监听和声音；真实动作只留用户主动入口，本轮没有现场执行。候选回归通过TYPING_PIANO_EVIDENCE_DIR隔离到当前证据目录。最终结果以docs/handoffs/C-001C.md为准。
+
+## C-002T用户主动试用
+
+在C-001C完成并被PM接收后推进持续会话、中文启动卡、全64音Steinway及源独立增益。新版使用local.typingpiano.trial和“打字钢琴试用”名称/version0.2.0，不覆盖旧Reviewed-C001C或PM维护入口。实际Float32测量及交付以docs/handoffs/C-002T.md为准；默认停止，用户点击开始才启用输入/声音。普通区域鼠标点击不再永久锁住隐藏；Dock现场行为仍保留未测。

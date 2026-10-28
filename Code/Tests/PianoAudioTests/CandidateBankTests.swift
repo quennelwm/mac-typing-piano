@@ -12,7 +12,7 @@ final class CandidateBankTests: XCTestCase {
         URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent()
             .deletingLastPathComponent().deletingLastPathComponent()
     }
-    private var output: URL { root.appendingPathComponent("docs/evidence/C-001B") }
+    private var output: URL { ProcessInfo.processInfo.environment["TYPING_PIANO_EVIDENCE_DIR"].map { URL(fileURLWithPath: $0, isDirectory: true) } ?? root.appendingPathComponent("docs/evidence/C-001B") }
     private var input: URL { root.appendingPathComponent("Design/Audio/probes/A-001B") }
     private enum EvidenceError: Error { case invalidInput(String) }
 

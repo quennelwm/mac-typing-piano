@@ -1,0 +1,225 @@
+[0/1] Planning build
+Building for debugging...
+[0/8] Write sources
+[2/8] Write swift-version--58304C5D6DBC2206.txt
+[4/10] Emitting module PianoCore
+[5/10] Compiling PianoCore DockFade.swift
+[6/26] Compiling PianoCoreTests ReducerTests.swift
+[7/26] Compiling PianoCoreTests AppPreferencesTests.swift
+[8/26] Compiling PianoCoreTests MappingTests.swift
+[9/26] Compiling PianoCoreTests CoordinatorTests.swift
+[10/26] Emitting module PianoCoreTests
+[11/26] Compiling PianoCoreTests FloatingNoteTests.swift
+[12/26] Compiling PianoCoreTests DockFadeTests.swift
+[13/26] Compiling PianoCoreTests GeometryAndDockTests.swift
+[14/26] Compiling PianoMac QuietIvoryProvenance.swift
+[15/27] Compiling PianoMac ContinuousTrialStart.swift
+[16/27] Emitting module PianoMac
+[17/27] Compiling PianoMac SDKKeys.swift
+[18/27] Compiling PianoMac ProbeController.swift
+[19/27] Compiling PianoMac InputMonitor.swift
+[20/27] Compiling PianoMac DockAdapter.swift
+[21/27] Compiling PianoMac InputNormalizer.swift
+[22/27] Compiling PianoMac PianoView.swift
+[23/37] Compiling PianoMacTests LocalTrialStartTests.swift
+[24/37] Compiling PianoMacTests DockWindowVisibilityTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:8:93: error: cannot find type 'DockWindowEvidence' in scope
+ 6 | final class DockWindowVisibilityTests: XCTestCase {
+ 7 |     let screen = CGRect(x: 0, y: 0, width: 1512, height: 982)
+ 8 |     func row(pid: Int32 = 1339, id: UInt32 = 49, layer: Int = 20, bounds: CGRect? = nil) -> DockWindowEvidence {
+   |                                                                                             `- error: cannot find type 'DockWindowEvidence' in scope
+ 9 |         .init(pid: pid, id: id, layer: layer, bounds: bounds ?? screen, alpha: 1)
+10 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:12:37: error: cannot find 'DockWindowMatcher' in scope
+10 |     }
+11 |     func testPairedHostObservationUsesMembershipNotFullScreenBoundsOrMissingFlag() throws {
+12 |         let tracked = try XCTUnwrap(DockWindowMatcher.candidate(in: [row()], dockPID: 1339, screen: screen))
+   |                                     `- error: cannot find 'DockWindowMatcher' in scope
+13 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+14 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [row()], orientation: "bottom"), .visible)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:12:27: error: generic parameter 'T' could not be inferred
+10 |     }
+11 |     func testPairedHostObservationUsesMembershipNotFullScreenBoundsOrMissingFlag() throws {
+12 |         let tracked = try XCTUnwrap(DockWindowMatcher.candidate(in: [row()], dockPID: 1339, screen: screen))
+   |                           `- error: generic parameter 'T' could not be inferred
+13 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+14 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [row()], orientation: "bottom"), .visible)
+
+XCTest.XCTUnwrap:1:13: note: in call to function 'XCTUnwrap(_:_:file:line:)'
+1 | public func XCTUnwrap<T>(_ expression: @autoclosure () throws -> T?, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) throws -> T
+  |             `- note: in call to function 'XCTUnwrap(_:_:file:line:)'
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:13:24: error: cannot find 'DockWindowMatcher' in scope
+11 |     func testPairedHostObservationUsesMembershipNotFullScreenBoundsOrMissingFlag() throws {
+12 |         let tracked = try XCTUnwrap(DockWindowMatcher.candidate(in: [row()], dockPID: 1339, screen: screen))
+13 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+   |                        `- error: cannot find 'DockWindowMatcher' in scope
+14 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [row()], orientation: "bottom"), .visible)
+15 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:13:110: error: type 'Equatable' has no member 'hidden'
+11 |     func testPairedHostObservationUsesMembershipNotFullScreenBoundsOrMissingFlag() throws {
+12 |         let tracked = try XCTUnwrap(DockWindowMatcher.candidate(in: [row()], dockPID: 1339, screen: screen))
+13 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+   |                                                                                                              `- error: type 'Equatable' has no member 'hidden'
+14 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [row()], orientation: "bottom"), .visible)
+15 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:14:24: error: cannot find 'DockWindowMatcher' in scope
+12 |         let tracked = try XCTUnwrap(DockWindowMatcher.candidate(in: [row()], dockPID: 1339, screen: screen))
+13 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+14 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [row()], orientation: "bottom"), .visible)
+   |                        `- error: cannot find 'DockWindowMatcher' in scope
+15 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+16 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:14:115: error: type 'Equatable' has no member 'visible'
+12 |         let tracked = try XCTUnwrap(DockWindowMatcher.candidate(in: [row()], dockPID: 1339, screen: screen))
+13 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+14 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [row()], orientation: "bottom"), .visible)
+   |                                                                                                                   `- error: type 'Equatable' has no member 'visible'
+15 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+16 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:15:24: error: cannot find 'DockWindowMatcher' in scope
+13 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+14 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [row()], orientation: "bottom"), .visible)
+15 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+   |                        `- error: cannot find 'DockWindowMatcher' in scope
+16 |     }
+17 |     func testOtherLayerOtherOwnerOtherDisplayAndAmbiguityAreNotCandidates() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:15:110: error: type 'Equatable' has no member 'hidden'
+13 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+14 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [row()], orientation: "bottom"), .visible)
+15 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: tracked, onscreen: [], orientation: "bottom"), .hidden)
+   |                                                                                                              `- error: type 'Equatable' has no member 'hidden'
+16 |     }
+17 |     func testOtherLayerOtherOwnerOtherDisplayAndAmbiguityAreNotCandidates() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:18:22: error: cannot find 'DockWindowMatcher' in scope
+16 |     }
+17 |     func testOtherLayerOtherOwnerOtherDisplayAndAmbiguityAreNotCandidates() {
+18 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(pid: 99)], dockPID: 1339, screen: screen))
+   |                      `- error: cannot find 'DockWindowMatcher' in scope
+19 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(layer: 101)], dockPID: 1339, screen: screen))
+20 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(bounds: CGRect(x: 1512, y: -100, width: 1920, height: 1080))], dockPID: 1339, screen: screen))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:19:22: error: cannot find 'DockWindowMatcher' in scope
+17 |     func testOtherLayerOtherOwnerOtherDisplayAndAmbiguityAreNotCandidates() {
+18 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(pid: 99)], dockPID: 1339, screen: screen))
+19 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(layer: 101)], dockPID: 1339, screen: screen))
+   |                      `- error: cannot find 'DockWindowMatcher' in scope
+20 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(bounds: CGRect(x: 1512, y: -100, width: 1920, height: 1080))], dockPID: 1339, screen: screen))
+21 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(), row(id: 50)], dockPID: 1339, screen: screen))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:20:22: error: cannot find 'DockWindowMatcher' in scope
+18 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(pid: 99)], dockPID: 1339, screen: screen))
+19 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(layer: 101)], dockPID: 1339, screen: screen))
+20 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(bounds: CGRect(x: 1512, y: -100, width: 1920, height: 1080))], dockPID: 1339, screen: screen))
+   |                      `- error: cannot find 'DockWindowMatcher' in scope
+21 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(), row(id: 50)], dockPID: 1339, screen: screen))
+22 |         let offset = CGRect(x: -1920, y: 100, width: 1920, height: 1080)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:21:22: error: cannot find 'DockWindowMatcher' in scope
+19 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(layer: 101)], dockPID: 1339, screen: screen))
+20 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(bounds: CGRect(x: 1512, y: -100, width: 1920, height: 1080))], dockPID: 1339, screen: screen))
+21 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(), row(id: 50)], dockPID: 1339, screen: screen))
+   |                      `- error: cannot find 'DockWindowMatcher' in scope
+22 |         let offset = CGRect(x: -1920, y: 100, width: 1920, height: 1080)
+23 |         XCTAssertNotNil(DockWindowMatcher.candidate(in: [row(bounds: offset)], dockPID: 1339, screen: offset))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:23:25: error: cannot find 'DockWindowMatcher' in scope
+21 |         XCTAssertNil(DockWindowMatcher.candidate(in: [row(), row(id: 50)], dockPID: 1339, screen: screen))
+22 |         let offset = CGRect(x: -1920, y: 100, width: 1920, height: 1080)
+23 |         XCTAssertNotNil(DockWindowMatcher.candidate(in: [row(bounds: offset)], dockPID: 1339, screen: offset))
+   |                         `- error: cannot find 'DockWindowMatcher' in scope
+24 |     }
+25 |     func testUnknownQueryAndReusedWindowIDRemainUnknownAndSideDockDoesNotHide() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:26:24: error: cannot find 'DockWindowMatcher' in scope
+24 |     }
+25 |     func testUnknownQueryAndReusedWindowIDRemainUnknownAndSideDockDoesNotHide() {
+26 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: nil, orientation: "bottom"), .unknown)
+   |                        `- error: cannot find 'DockWindowMatcher' in scope
+27 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row(pid: 99)], orientation: "bottom"), .unknown)
+28 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "left"), .hidden)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:26:109: error: type 'Equatable' has no member 'unknown'
+24 |     }
+25 |     func testUnknownQueryAndReusedWindowIDRemainUnknownAndSideDockDoesNotHide() {
+26 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: nil, orientation: "bottom"), .unknown)
+   |                                                                                                             `- error: type 'Equatable' has no member 'unknown'
+27 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row(pid: 99)], orientation: "bottom"), .unknown)
+28 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "left"), .hidden)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:27:24: error: cannot find 'DockWindowMatcher' in scope
+25 |     func testUnknownQueryAndReusedWindowIDRemainUnknownAndSideDockDoesNotHide() {
+26 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: nil, orientation: "bottom"), .unknown)
+27 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row(pid: 99)], orientation: "bottom"), .unknown)
+   |                        `- error: cannot find 'DockWindowMatcher' in scope
+28 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "left"), .hidden)
+29 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "invalid"), .unknown)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:27:120: error: type 'Equatable' has no member 'unknown'
+25 |     func testUnknownQueryAndReusedWindowIDRemainUnknownAndSideDockDoesNotHide() {
+26 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: nil, orientation: "bottom"), .unknown)
+27 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row(pid: 99)], orientation: "bottom"), .unknown)
+   |                                                                                                                        `- error: type 'Equatable' has no member 'unknown'
+28 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "left"), .hidden)
+29 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "invalid"), .unknown)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:28:24: error: cannot find 'DockWindowMatcher' in scope
+26 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: nil, orientation: "bottom"), .unknown)
+27 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row(pid: 99)], orientation: "bottom"), .unknown)
+28 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "left"), .hidden)
+   |                        `- error: cannot find 'DockWindowMatcher' in scope
+29 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "invalid"), .unknown)
+30 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:28:111: error: type 'Equatable' has no member 'hidden'
+26 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: nil, orientation: "bottom"), .unknown)
+27 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row(pid: 99)], orientation: "bottom"), .unknown)
+28 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "left"), .hidden)
+   |                                                                                                               `- error: type 'Equatable' has no member 'hidden'
+29 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "invalid"), .unknown)
+30 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:29:24: error: cannot find 'DockWindowMatcher' in scope
+27 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row(pid: 99)], orientation: "bottom"), .unknown)
+28 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "left"), .hidden)
+29 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "invalid"), .unknown)
+   |                        `- error: cannot find 'DockWindowMatcher' in scope
+30 |     }
+31 | }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:29:114: error: type 'Equatable' has no member 'unknown'
+27 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row(pid: 99)], orientation: "bottom"), .unknown)
+28 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "left"), .hidden)
+29 |         XCTAssertEqual(DockWindowMatcher.visibility(tracked: row(), onscreen: [row()], orientation: "invalid"), .unknown)
+   |                                                                                                                  `- error: type 'Equatable' has no member 'unknown'
+30 |     }
+31 | }
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[25/38] Emitting module PianoMacTests
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift:8:93: error: cannot find type 'DockWindowEvidence' in scope
+ 6 | final class DockWindowVisibilityTests: XCTestCase {
+ 7 |     let screen = CGRect(x: 0, y: 0, width: 1512, height: 982)
+ 8 |     func row(pid: Int32 = 1339, id: UInt32 = 49, layer: Int = 20, bounds: CGRect? = nil) -> DockWindowEvidence {
+   |                                                                                             `- error: cannot find type 'DockWindowEvidence' in scope
+ 9 |         .init(pid: pid, id: id, layer: layer, bounds: bounds ?? screen, alpha: 1)
+10 |     }
+[26/38] Compiling PianoMacTests IntegrationTests.swift
+[27/38] Compiling PianoMacTests DockAdapterTests.swift
+[28/38] Compiling PianoMacTests ControllerIntegrationTests.swift
+[29/38] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[30/38] Compiling PianoMacTests InputNormalizerTests.swift
+[31/38] Emitting module PianoProbe
+[32/38] Compiling PianoProbe main.swift
+[32/38] Write Objects.LinkFileList
+[34/38] Compiling PianoMacTests TrialSessionTests.swift
+[34/38] Linking TypingPianoProbe
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

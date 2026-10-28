@@ -1,0 +1,62 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[3/7] Write swift-version--58304C5D6DBC2206.txt
+[5/15] Compiling PianoMacTests TrialSessionTests.swift
+[6/15] Compiling PianoMacTests ControllerIntegrationTests.swift
+[7/15] Emitting module PianoMacTests
+[8/15] Compiling PianoMacTests MenuIntegrationTests.swift
+[9/15] Compiling PianoAudioTests AudioSelectionTests.swift
+[10/15] Emitting module PianoAudioTests
+[10/16] Write Objects.LinkFileList
+[12/16] Compiling PianoProbe main.swift
+[13/16] Emitting module PianoProbe
+[13/17] Write Objects.LinkFileList
+[14/17] Linking TypingPianoProbe
+[15/17] Linking TypingPianoProbePackageTests
+[16/17] Applying TypingPianoProbe
+Build complete! (1.87s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 16:10:14.569.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 16:10:14.572.
+Test Suite 'AudioSelectionTests' started at 2026-10-28 16:10:14.572.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' passed (0.041 seconds).
+Test Case '-[PianoAudioTests.AudioSelectionTests testDefaultSilentExplicitEnableSwitchStopsAndNoFallback]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testDefaultSilentExplicitEnableSwitchStopsAndNoFallback]' passed (0.000 seconds).
+Test Case '-[PianoAudioTests.AudioSelectionTests testMissingOrChangedFullBankCannotSilentlyFallBack]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testMissingOrChangedFullBankCannotSilentlyFallBack]' passed (0.005 seconds).
+Test Suite 'AudioSelectionTests' passed at 2026-10-28 16:10:14.618.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.046 (0.047) seconds
+Test Suite 'MenuIntegrationTests' started at 2026-10-28 16:10:14.618.
+Test Case '-[PianoMacTests.MenuIntegrationTests testDailyMenuAndTestSourceCallbacksStaySeparated]' started.
+Test Case '-[PianoMacTests.MenuIntegrationTests testDailyMenuAndTestSourceCallbacksStaySeparated]' passed (0.127 seconds).
+Test Case '-[PianoMacTests.MenuIntegrationTests testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme]' started.
+Test Case '-[PianoMacTests.MenuIntegrationTests testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme]' passed (0.001 seconds).
+Test Suite 'MenuIntegrationTests' passed at 2026-10-28 16:10:14.747.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.128 (0.128) seconds
+Test Suite 'TrialBankTests' started at 2026-10-28 16:10:14.747.
+Test Case '-[PianoAudioTests.TrialBankTests testTrialBankCalibrationCoverageAndLifecycle]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/TrialBankTests.swift:31: error: -[PianoAudioTests.TrialBankTests testTrialBankCalibrationCoverageAndLifecycle] : XCTAssertLessThan failed: ("0.9330222") is not less than ("0.9") - 64-note-chord-volume1.0-v127
+Test Case '-[PianoAudioTests.TrialBankTests testTrialBankCalibrationCoverageAndLifecycle]' failed (1.809 seconds).
+Test Suite 'TrialBankTests' failed at 2026-10-28 16:10:16.556.
+	 Executed 1 test, with 1 failure (0 unexpected) in 1.809 (1.809) seconds
+Test Suite 'TrialGainTests' started at 2026-10-28 16:10:16.556.
+Test Case '-[PianoAudioTests.TrialGainTests testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp]' started.
+Test Case '-[PianoAudioTests.TrialGainTests testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp]' passed (0.000 seconds).
+Test Suite 'TrialGainTests' passed at 2026-10-28 16:10:16.557.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'TrialSessionTests' started at 2026-10-28 16:10:16.557.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' passed (0.171 seconds).
+Test Suite 'TrialSessionTests' passed at 2026-10-28 16:10:16.727.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.171 (0.171) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 16:10:16.728.
+	 Executed 9 tests, with 1 failure (0 unexpected) in 2.154 (2.156) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 16:10:16.728.
+	 Executed 9 tests, with 1 failure (0 unexpected) in 2.154 (2.159) seconds
+TRIAL_CALIBRATION rows=89 largest_peak=0.9330222
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

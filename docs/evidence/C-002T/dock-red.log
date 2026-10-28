@@ -1,0 +1,43 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[2/7] Write swift-version--58304C5D6DBC2206.txt
+[4/11] Emitting module PianoCoreTests
+[5/11] Compiling PianoCoreTests GeometryAndDockTests.swift
+[6/11] Compiling PianoAudio SamplerAudio.swift
+[7/11] Emitting module PianoAudio
+[8/12] Compiling PianoAudio AuditionSession.swift
+[9/19] Compiling PianoAudioTests SamplerAudioTests.swift
+[10/19] Compiling PianoAudioTests TrialGainTests.swift
+[11/19] Emitting module PianoMac
+[12/19] Compiling PianoMac ProbeController.swift
+[13/19] Emitting module PianoAudioTests
+[14/19] Compiling PianoAudioTests CandidateBankTests.swift
+[14/19] Write Objects.LinkFileList
+[16/19] Linking TypingPianoProbe
+[17/19] Linking TypingPianoProbePackageTests
+[18/19] Applying TypingPianoProbe
+Build complete! (3.24s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 16:04:51.996.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 16:04:51.999.
+Test Suite 'GeometryAndDockTests' started at 2026-10-28 16:04:51.999.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:70: error: -[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease] : XCTAssertFalse failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:71: error: -[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease] : XCTAssertFalse failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:75: error: -[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease] : XCTAssertFalse failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift:76: error: -[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease] : XCTAssertFalse failed
+Test Case '-[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease]' failed (0.123 seconds).
+Test Suite 'GeometryAndDockTests' failed at 2026-10-28 16:04:52.123.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.123 (0.124) seconds
+Test Suite 'TrialGainTests' started at 2026-10-28 16:04:52.123.
+Test Case '-[PianoAudioTests.TrialGainTests testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp]' started.
+Test Case '-[PianoAudioTests.TrialGainTests testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp]' passed (0.000 seconds).
+Test Suite 'TrialGainTests' passed at 2026-10-28 16:04:52.123.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 16:04:52.123.
+	 Executed 2 tests, with 4 failures (0 unexpected) in 0.123 (0.124) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 16:04:52.123.
+	 Executed 2 tests, with 4 failures (0 unexpected) in 0.123 (0.127) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

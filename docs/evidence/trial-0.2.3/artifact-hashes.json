@@ -1,0 +1,290 @@
+{
+  "version": "0.2.3",
+  "binarySHA256": "3c75954a9811b6c36677375ba1d86a288514c45f18640aa6d7cfca47dcc25da3",
+  "files": [
+    {
+      "path": "Code/Scripts/build.sh",
+      "sha256": "122216a84e41dbfb641f98e40ce058590701c723d23e4e40397400a8fd299f7f"
+    },
+    {
+      "path": "Code/Sources/PianoCore/DockFade.swift",
+      "sha256": "9da2157b8a6d827e9893b9b5b3977b3f3b5922846bf239d867fa718d272b987e"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Geometry.swift",
+      "sha256": "b11b86e2b2db56306033158b7bfee8e97ac93ddb2e98f033c7cd8a291b937c01"
+    },
+    {
+      "path": "Code/Sources/PianoMac/AdaptiveOverlay.swift",
+      "sha256": "ceaa2f5c37df7064959540cd65a73f6af831179151e81e1aaa89358bdb9c6408"
+    },
+    {
+      "path": "Code/Sources/PianoMac/DockWindowVisibility.swift",
+      "sha256": "a8329a3997e325ef2cebd3e1b8082a96d7608685126ad8101962284a80df8d75"
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "sha256": "91fc4dd3b8ac76824ea2a8c262f63ba8617fb3c6eefe6f3f4c0344a5e8596445"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "sha256": "6b3fca3d9d0e270e982be8f918dd0a7b510dd5eb20e9cbf533328aba4d08b3fc"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "sha256": "8fbbf11ceeb285611b1fc106521894c57a99d588873c501c6ecb16b59eefa586"
+    },
+    {
+      "path": "Code/Sources/PianoMac/SingleInstance.swift",
+      "sha256": "6969ac41f1ba3b46b4f56a86bccee2b6309148f30f903016a7e77f3993bc1bb0"
+    },
+    {
+      "path": "Code/Sources/PianoProbe/main.swift",
+      "sha256": "cb056f8938ff1da1e21dd21b81322cd9e386d26b260c4f54716142e2f788175a"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/HANDOFF.md",
+      "sha256": "f222611d05a7f3099ab8311d47b07e803a623e1417e9a88d88088ac5781c4081"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/PLAN-AND-PROBE.md",
+      "sha256": "e0a72bb41166ad26de93900cc6497a206ca481fbb6302007d1f0d45ab21aeefa"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/adaptive-red.log",
+      "sha256": "ee7fbe2aac994dfa06c0a42d8f784f7e1b141c717516649215a735f517c74051"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/adaptive-snapshots.json",
+      "sha256": "aaf0bf76a1a75e5ebc91b2981fe2a0c6aff668ddf9e100bcb1f0d1c255e34658"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/adaptive-snapshots.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/adaptive-tests.log",
+      "sha256": "17132b892b9193eebc01bc901c68a36c25775e478fd47c1c6b115fc11350cc81"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/build.log",
+      "sha256": "61929a5c148d9e93e81791231fa98f935ee669a1acc4b26e7e57dedcc5284f1d"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/delivery.json",
+      "sha256": "f77bb7a404043829b82d25049fda39a84c6c5d289d24db84fb7b0ad7dfe00927"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/dock-metadata-sequence.jsonl",
+      "sha256": "c8ebe255f48fa1a4409dc7aa32af354f7729615e8e4336d19a93dd5ac7edc505"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/dock-production-observer.json",
+      "sha256": "24ba2cf058a8254e9babc2ce1417a775230d6929d827fb70ead37552ffbeabb4"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/dock-production-observer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/fade-red.log",
+      "sha256": "9eb8bfe68e6451d67c87d122a5a91ccb683413a6a85de422a825ee574e256135"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/frozen-pose-red.log",
+      "sha256": "a83e91b5c2aa7714a7b1c96495481dd137afaa2f4d68f5af2ee5b3dd1338a014"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/menu-smoke.json",
+      "sha256": "906a6ae0accb83e4a1cba143e976b0504221c4c21dc9945b909f2b30aa896811"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/menu-smoke.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/captures.json",
+      "sha256": "f83cff1c65b810555b07ec75818741e4609ceba3306e868f220966887d0270ca"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-multi-labels-false@1x.png",
+      "sha256": "673e1349420af571deedb995514927d676e4fc3497bca2e54bd8605d88ed389d"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-multi-labels-false@2x.png",
+      "sha256": "45846f07d7ca9bb767780163e3f6bb2f36b5f84d879a15bf902efc02148d6a6a"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-multi-labels-true@1x.png",
+      "sha256": "487ca67768b71d9dcf87a90c33000ed5cbb5add4df22425fb65d00ab86e8fc13"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-multi-labels-true@2x.png",
+      "sha256": "c7ea44e67cefd131868a6f10804165bd086e3a77748d1ee96c64b023ce10f31a"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-rest-labels-false@1x.png",
+      "sha256": "ee4a1f8480508eb73299fdcacb2d16ef26a93a59f64e26d81a7cb4a567c61346"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-rest-labels-false@2x.png",
+      "sha256": "fcb4086b549f69008ac2ef1e7a02174aee54adb7423a4d42bbc3e4ba511ed48f"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-rest-labels-true@1x.png",
+      "sha256": "42c570d61b12056d85235890cab818bf57117685da5e21da0b1dcc499ad4abce"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-rest-labels-true@2x.png",
+      "sha256": "66c6659d3bd3bd349c9a62496080d96e2e885ebc2de77ebd781b732307a21df3"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-single-labels-false@1x.png",
+      "sha256": "440fada9e30306e8e2f560c6d0b280b1dcb11a08e7a04ffdc25de8508d31354a"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-single-labels-false@2x.png",
+      "sha256": "7cdf04bdaf04dfb1b798c2d03792afe98178ed7651f8b657b75cd644c739289d"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-single-labels-true@1x.png",
+      "sha256": "9c833913acdc40d57c7125b1bb03717c50af84da701908db08ca049a36a0fba1"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1264-single-labels-true@2x.png",
+      "sha256": "dfbeb3952e51ab4ab6f7b0917a71acf67401f25ae2329a110a54cd9fb0c07240"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-multi-labels-false@1x.png",
+      "sha256": "9047b4b742a43415021ad5de886583ddca888be79622874ef8cd2a2232281fd3"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-multi-labels-false@2x.png",
+      "sha256": "15ac793b196df082e8dc3b119add0aa81f4c5c6ea0f1fe00c15ec066f5cb854d"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-multi-labels-true@1x.png",
+      "sha256": "1ffc5b1d2f8b92b27371b59b931985eb7aa9e759fb98dee73c3d381442dbceaa"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-multi-labels-true@2x.png",
+      "sha256": "3e5c0560453cd2f67af913e527394f4fb6f14f2396953a737a8246c68aab2cd9"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-rest-labels-false@1x.png",
+      "sha256": "fd455c31290e187adf27be5c2d0342f63160274d86705e3ef0592048afe1826e"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-rest-labels-false@2x.png",
+      "sha256": "1975a62586cda940141203e97d8a96f40c93c2a66a82dd3dcf6a1aeda71cc278"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-rest-labels-true@1x.png",
+      "sha256": "1f1ce2f3d275ed916d13835b0667a0b0742b31a4800aacbb4a00c27652f8bfab"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-rest-labels-true@2x.png",
+      "sha256": "f9b1478e7723584800708bc9d659d92ed712aeaa6e9d757760ab0b5c479c8e71"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-single-labels-false@1x.png",
+      "sha256": "942ab26fe8311b3491f8ceb7d1c13e7e4333a333ea5dc6043f8ab0d0bb2da25f"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-single-labels-false@2x.png",
+      "sha256": "d327529500cb161b1bd0290eef488ec045903a8faacb21416c6b20e1153c0703"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-single-labels-true@1x.png",
+      "sha256": "f5ece0fc34589f9b1f64daca2e58f3b9c64363b8de9730fc66d469bcb4bce388"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1496-single-labels-true@2x.png",
+      "sha256": "49ac623fcef983ac98f527a2788cd423c06284baf32814cc98424ae28e7bfd2b"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-multi-labels-false@1x.png",
+      "sha256": "9ef96d2345f3ce55538479045b9a4634eae63d77dad6fce42efa19412edcdacc"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-multi-labels-false@2x.png",
+      "sha256": "402a613879832385a73a41f43e4f46dd9cdfdcfe0de94f819a23438ef7782819"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-multi-labels-true@1x.png",
+      "sha256": "0fd1ea78615775d990c040e3e29aae067a5e3026ac70b8797ae27180543b303e"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-multi-labels-true@2x.png",
+      "sha256": "53440b121ae066ed9e0338aa16588d8ac511b9792052a45b5514f1e055287e2d"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-rest-labels-false@1x.png",
+      "sha256": "12a6849e34d4bd135d82a8accd7bc7a9207690cb31847ba6a62e311d11666b08"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-rest-labels-false@2x.png",
+      "sha256": "ff145bf9f173b912c06e41ffd8f325393b1d12955baa31f1c78a0ac5111509de"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-rest-labels-true@1x.png",
+      "sha256": "081ff54498be3428eccee8dda5cf690f4d2f092d535d1fca320304f2427c7bc8"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-rest-labels-true@2x.png",
+      "sha256": "9ada5f117d358f18db9927fa3e5d4c993db14c7bf1c17c4cb612bd3906b22550"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-single-labels-false@1x.png",
+      "sha256": "50d7a63c2355b908d7ea6d3e59f0c2830d3ff3bae29422646a919e613c940ef6"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-single-labels-false@2x.png",
+      "sha256": "7f9a62f4d251de8265bf1500da6cbbd1ef61db45c492f83e6f12b3818e2393e9"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-single-labels-true@1x.png",
+      "sha256": "b95dc7dc91f0a721fe8ffb8c1bfa02e9495525f4379f330fc783e74e62d32479"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/native-snapshots/native-1904-single-labels-true@2x.png",
+      "sha256": "7d51de7426816046d84ca9faf1e8c3f524ca24838286bd2251a04819282a1ae8"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/old-DR-comparison.txt",
+      "sha256": "2e857c16aa5095e6b48f4af4c8d7b6bbe59d8a12b204b57e1c730003bf0799ee"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/probe-one-readonly.jsonl",
+      "sha256": "74b286874085d0e957216a481b1c52f59ab6d790ce1c0a156b0e3e6630358bbc"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/self-check.json",
+      "sha256": "4b8753b04227953f6c453cb56f5a9fbc03ac2f50e6cd43b87271c87c905f90d9"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/self-check.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/signature.txt",
+      "sha256": "385fe8f9c4641f26865174871fc714e027ca0f549eca1071c741d4642cb9d2da"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/tests-final.log",
+      "sha256": "1e7d58530f23fb9a60c2bcb09d31338adf8ab7da8cfbea39ac9f8780ecb0c4dc"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/tests.log",
+      "sha256": "02d933316f37d3886619f64edec4d426ca70c10ffc51e6ef87a682fb7e29dd34"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/unknown-timeout-red.log",
+      "sha256": "5cc1dbfefb535824cbf33682d55f17983d52926286074f82c49ff5533ce56be0"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.3/visibility-red.log",
+      "sha256": "6869e64394f0e9ab5e86d5be3bc27a0d2cea351a7377bc90611d514a4c7fbbd5"
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 # Mac 打字钢琴｜四对话开发包 v1.0
 
-当前工作规格：v1.0＋[CR-001 菜单与开关调整](docs/changes/CR-001-menu-options.md)＋[CR-002 上升小音符](docs/changes/CR-002-floating-note.md)＋[CR-003 音量滑块与♪图标](docs/changes/CR-003-menu-volume-icon.md)。原始DOCX保留为导入快照；开发以已更新Markdown、任务卡与ADR为准。
+当前工作规格：v1.0＋[CR-001 菜单与开关调整](docs/changes/CR-001-menu-options.md)＋[CR-002 上升小音符](docs/changes/CR-002-floating-note.md)＋[CR-003 音量滑块与♪图标](docs/changes/CR-003-menu-volume-icon.md)＋[CR-004 原生Dock与自适应宽度](docs/changes/CR-004-native-dock-adaptive-width.md)。原始DOCX保留为导入快照；开发以已更新Markdown、任务卡与ADR为准。
 
-这是给吴铭与四个独立开发对话使用的规划和交接包，不是已完成的软件。
+这是本地试用工程及四对话协作仓库。当前固定试用版为 **0.2.4**：已实测原生Dock显隐带动钢琴渐变、自动屏宽、20pt紧凑菜单图标和本窗口发声。0.2.1曾由用户授权并确认全局琴声；0.2.4因开发签名变化，正在等待用户重新确认输入监控。验收见 [PM-004](docs/reviews/PM-004.md)。
+
+本机试用请打开[启动入口](试用版/打开打字钢琴.command)，步骤见[试用说明](试用版/开始试用.md)。旧Reviewed-C001C入口已替换，避免同时运行两个版本。
 
 ## 最快开始
 
@@ -32,4 +34,4 @@
 
 ## 证据边界
 
-当前在M0：文档/映射静态核对已通过，已有代码探针、两个钢琴音源小样和UI预览，阶段评审见 [PM-002](docs/reviews/PM-002.md)。已有本机离线音频/程序化窗口证据，但真实键盘输入、Dock行为、声学延迟与正式App尚未验收。映射仍是联调初稿，contracts清单仍是模板/设计参数；实际候选位于Design，不得在未完成对应验证时标为ready。
+当前为本地试用，尚未正式发布。64键Steinway候选已集成；本机单屏、底部Dock的实际联动已验证，历史0.2.1全局发声由用户确认。0.2.4输入监控重新确认、Fn/Caps/左右修饰键完整实按、多屏切换及声学延迟仍未关闭。最终音色未冻结，原始contracts模板不等于正式资源ready。历史评审见 [PM-002](docs/reviews/PM-002.md)，当前边界见 [PM-004](docs/reviews/PM-004.md)。

@@ -1,0 +1,33 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Emitting module PianoCoreTests
+[4/5] Compiling PianoCoreTests DockFadeTests.swift
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (1.93s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 17:56:42.129.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 17:56:42.138.
+Test Suite 'DockFadeTests' started at 2026-10-28 17:56:42.138.
+Test Case '-[PianoCoreTests.DockFadeTests testReducedMotionIsLinearAndRetargetsCurrentAlpha]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testReducedMotionIsLinearAndRetargetsCurrentAlpha]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.DockFadeTests testReversalIsContinuousAndUsesRemainingDistance]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testReversalIsContinuousAndUsesRemainingDistance]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.DockFadeTests testSustainedUnknownRecoversAfterTwoSecondsWithoutRestartingTheFade]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/DockFadeTests.swift:53: error: -[PianoCoreTests.DockFadeTests testSustainedUnknownRecoversAfterTwoSecondsWithoutRestartingTheFade] : XCTAssertFalse failed
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/DockFadeTests.swift:57: error: -[PianoCoreTests.DockFadeTests testSustainedUnknownRecoversAfterTwoSecondsWithoutRestartingTheFade] : XCTAssertEqualWithAccuracy failed: ("0.0") is not equal to ("1.0") +/- ("1e-05")
+Test Case '-[PianoCoreTests.DockFadeTests testSustainedUnknownRecoversAfterTwoSecondsWithoutRestartingTheFade]' failed (0.158 seconds).
+Test Case '-[PianoCoreTests.DockFadeTests testUnknownCancelsPendingRestoreAndRepeatedSignalsDoNotRestart]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testUnknownCancelsPendingRestoreAndRepeatedSignalsDoNotRestart]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.DockFadeTests testUnknownStartsVisibleAndHiddenMustStabilizeBeforeRestore]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testUnknownStartsVisibleAndHiddenMustStabilizeBeforeRestore]' passed (0.000 seconds).
+Test Suite 'DockFadeTests' failed at 2026-10-28 17:56:42.300.
+	 Executed 5 tests, with 2 failures (0 unexpected) in 0.161 (0.162) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-28 17:56:42.300.
+	 Executed 5 tests, with 2 failures (0 unexpected) in 0.161 (0.162) seconds
+Test Suite 'Selected tests' failed at 2026-10-28 17:56:42.300.
+	 Executed 5 tests, with 2 failures (0 unexpected) in 0.161 (0.171) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

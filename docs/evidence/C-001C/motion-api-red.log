@@ -1,0 +1,55 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Emitting module PianoMacTests
+[4/5] Compiling PianoMacTests IntegrationTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:64:27: error: value of type 'PianoView' has no member 'keyDepression'
+62 |         var now = 0.0; view.clock = { now }
+63 |         view.activeMIDI = [60]
+64 |         let before = view.keyDepression(midi: 60, at: 0.01)
+   |                           `- error: value of type 'PianoView' has no member 'keyDepression'
+65 |         now = 0.01; view.activeMIDI = []
+66 |         XCTAssertEqual(view.keyDepression(midi: 60, at: now), before, accuracy: 0.001)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:66:29: error: value of type 'PianoView' has no member 'keyDepression'
+64 |         let before = view.keyDepression(midi: 60, at: 0.01)
+65 |         now = 0.01; view.activeMIDI = []
+66 |         XCTAssertEqual(view.keyDepression(midi: 60, at: now), before, accuracy: 0.001)
+   |                             `- error: value of type 'PianoView' has no member 'keyDepression'
+67 |         XCTAssertEqual(view.keyDepression(midi: 60, at: 0.045), 1, accuracy: 0.001)
+68 |         let released = view.keyDepression(midi: 60, at: 0.08)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:67:29: error: value of type 'PianoView' has no member 'keyDepression'
+65 |         now = 0.01; view.activeMIDI = []
+66 |         XCTAssertEqual(view.keyDepression(midi: 60, at: now), before, accuracy: 0.001)
+67 |         XCTAssertEqual(view.keyDepression(midi: 60, at: 0.045), 1, accuracy: 0.001)
+   |                             `- error: value of type 'PianoView' has no member 'keyDepression'
+68 |         let released = view.keyDepression(midi: 60, at: 0.08)
+69 |         XCTAssertGreaterThan(released, 0); XCTAssertLessThan(released, 1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:68:29: error: value of type 'PianoView' has no member 'keyDepression'
+66 |         XCTAssertEqual(view.keyDepression(midi: 60, at: now), before, accuracy: 0.001)
+67 |         XCTAssertEqual(view.keyDepression(midi: 60, at: 0.045), 1, accuracy: 0.001)
+68 |         let released = view.keyDepression(midi: 60, at: 0.08)
+   |                             `- error: value of type 'PianoView' has no member 'keyDepression'
+69 |         XCTAssertGreaterThan(released, 0); XCTAssertLessThan(released, 1)
+70 |         now = 0.08; view.activeMIDI = [60]
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:71:29: error: value of type 'PianoView' has no member 'keyDepression'
+69 |         XCTAssertGreaterThan(released, 0); XCTAssertLessThan(released, 1)
+70 |         now = 0.08; view.activeMIDI = [60]
+71 |         XCTAssertEqual(view.keyDepression(midi: 60, at: now), released, accuracy: 0.001)
+   |                             `- error: value of type 'PianoView' has no member 'keyDepression'
+72 |         view.advanceAnimations(at: 0.2)
+73 |         XCTAssertEqual(view.keyDepression(midi: 60, at: 0.2), 1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:73:29: error: value of type 'PianoView' has no member 'keyDepression'
+71 |         XCTAssertEqual(view.keyDepression(midi: 60, at: now), released, accuracy: 0.001)
+72 |         view.advanceAnimations(at: 0.2)
+73 |         XCTAssertEqual(view.keyDepression(midi: 60, at: 0.2), 1)
+   |                             `- error: value of type 'PianoView' has no member 'keyDepression'
+74 |         XCTAssertFalse(view.animationTimerRunning)
+75 |     }
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

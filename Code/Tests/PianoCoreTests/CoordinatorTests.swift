@@ -60,7 +60,7 @@ final class PolicyTests: XCTestCase {
         XCTAssertTrue(d.update(nearEdge: true, recoverySafe: false, mouseDown: false, dockFrontmost: false, time: 0))
         XCTAssertTrue(d.update(nearEdge: false, recoverySafe: true, mouseDown: false, dockFrontmost: false, time: 1))
         XCTAssertFalse(d.update(nearEdge: false, recoverySafe: true, mouseDown: false, dockFrontmost: false, time: 1.5))
-        XCTAssertTrue(d.update(nearEdge: false, recoverySafe: true, mouseDown: true, dockFrontmost: false, time: 2))
+        XCTAssertTrue(d.update(nearEdge: true, recoverySafe: false, mouseDown: true, dockFrontmost: false, time: 2))
         XCTAssertTrue(d.update(nearEdge: false, recoverySafe: true, mouseDown: false, dockFrontmost: false, time: 4))
         d.acknowledge()
         _ = d.update(nearEdge: false, recoverySafe: true, mouseDown: false, dockFrontmost: false, time: 5)

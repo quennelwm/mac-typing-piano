@@ -1,0 +1,38 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/8] Emitting module PianoMac
+[4/8] Compiling PianoMac PianoView.swift
+[5/8] Compiling PianoMac ProbeMenu.swift
+[6/9] Compiling PianoMac ProbeController.swift
+[7/16] Compiling PianoMacTests IntegrationTests.swift
+[8/16] Compiling PianoMacTests DockAdapterTests.swift
+[9/16] Emitting module PianoMacTests
+[10/16] Compiling PianoMacTests InputNormalizerTests.swift
+[10/17] Write Objects.LinkFileList
+[12/17] Compiling PianoProbe main.swift
+[13/17] Emitting module PianoProbe
+[13/17] Write Objects.LinkFileList
+[14/17] Linking TypingPianoProbePackageTests
+[14/17] Linking TypingPianoProbe
+[16/17] Applying TypingPianoProbe
+Build complete! (2.97s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 15:42:26.734.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 15:42:26.737.
+Test Suite 'IntegrationTests' started at 2026-10-28 15:42:26.737.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' started.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' passed (0.866 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' started.
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' passed (0.016 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' started.
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' passed (0.005 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' started.
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' passed (0.005 seconds).
+Test Suite 'IntegrationTests' passed at 2026-10-28 15:42:27.630.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.892 (0.893) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 15:42:27.630.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.892 (0.893) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 15:42:27.630.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.892 (0.896) seconds

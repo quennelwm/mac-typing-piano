@@ -1,0 +1,7976 @@
+{
+  "artifactState" : "design_proposal",
+  "executableSHA256" : "5903a94885faa73198e7721474d4bab75337a554213e6f16ac3e4826655a99d5",
+  "frames" : [
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 1.9989271137026234
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 1.9989271137026234
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 1.9989271137026234
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 1.9989271137026234
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 1.9989271137026234
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 20,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 3.8836618075801752
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 3.8836618075801752
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 3.8836618075801752
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 3.8836618075801752
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 3.8836618075801752
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 40,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 5.6575626822157457
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 5.6575626822157457
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 5.6575626822157457
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 5.6575626822157457
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 5.6575626822157457
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 60,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 7.3239883381924225
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 80,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 8.886297376093296
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 100,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 10.347848396501462
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 10.347848396501462
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 10.347848396501462
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 10.347848396501462
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 10.347848396501462
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 120,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 11.712000000000003
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 11.712000000000003
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 11.712000000000003
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 11.712000000000003
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 11.712000000000003
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 140,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 12.982110787172013
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 12.982110787172013
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 12.982110787172013
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 12.982110787172013
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 12.982110787172013
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+        "20799F56-80CD-46EC-A361-2EC340917145",
+        "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+        "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+        "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 160,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 14.161539358600582
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 180,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 15.253644314868808
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 15.253644314868808
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 15.253644314868808
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 15.253644314868808
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 15.253644314868808
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 200,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 16.261784256559768
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 16.261784256559768
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 16.261784256559768
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 16.261784256559768
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 16.261784256559768
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 220,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 17.189317784256559
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 17.189317784256559
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 17.189317784256559
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 17.189317784256559
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 17.189317784256559
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 240,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 18.039603498542277
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 18.039603498542277
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 18.039603498542277
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 18.039603498542277
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 18.039603498542277
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 260,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 18.816000000000003
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 18.816000000000003
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 18.816000000000003
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 18.816000000000003
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 18.816000000000003
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 280,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 19.52186588921283
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 19.52186588921283
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 19.52186588921283
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 19.52186588921283
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 19.52186588921283
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 300,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 20.16055976676385
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 20.16055976676385
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 20.16055976676385
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 20.16055976676385
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 20.16055976676385
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 320,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 20.735440233236151
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 20.735440233236151
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 20.735440233236151
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 20.735440233236151
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 20.735440233236151
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 340,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 21
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 21
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 21
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 21
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 21
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 350,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 21.249865889212828
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 21.249865889212828
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 21.249865889212828
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 21.249865889212828
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 21.249865889212828
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 360,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 21.707195335276968
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 21.707195335276968
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 21.707195335276968
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 21.707195335276968
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 21.707195335276968
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 380,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 22.110787172011662
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 22.110787172011662
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 22.110787172011662
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 22.110787172011662
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 22.110787172011662
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 400,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 22.463999999999999
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 22.463999999999999
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 22.463999999999999
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 22.463999999999999
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 22.463999999999999
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 420,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 22.770192419825072
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 22.770192419825072
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 22.770192419825072
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 22.770192419825072
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 22.770192419825072
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 440,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.032723032069971
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.032723032069971
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.032723032069971
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.032723032069971
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.032723032069971
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 460,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.254950437317785
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.254950437317785
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.254950437317785
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.254950437317785
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.254950437317785
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 480,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.440233236151602
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.440233236151602
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.440233236151602
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.440233236151602
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.440233236151602
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 500,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.591930029154518
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.591930029154518
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.591930029154518
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.591930029154518
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.591930029154518
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 520,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.713399416909624
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.713399416909624
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.713399416909624
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.713399416909624
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.713399416909624
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 540,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.808
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.808
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.808
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.808
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.808
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 560,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.879090379008744
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.879090379008744
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.879090379008744
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.879090379008744
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.879090379008744
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 580,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.930029154518952
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.930029154518952
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.930029154518952
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.930029154518952
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.930029154518952
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 600,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.964174927113703
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.964174927113703
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.964174927113703
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.964174927113703
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.964174927113703
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 620,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.984886297376093
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.984886297376093
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.984886297376093
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.984886297376093
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.984886297376093
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 640,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.995521865889213
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.995521865889213
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.995521865889213
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.995521865889213
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.995521865889213
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 660,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "B1904EC3-CEDE-4A40-A806-C2D9CD07C3FF",
+          "rise" : 23.99944023323615
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "A45CE388-AB85-4E20-A9B1-721A3F31A69F",
+          "rise" : 23.99944023323615
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "9D31FEC9-DB9A-4AE9-A7BA-AEB41D6A86C7",
+          "rise" : 23.99944023323615
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "1DDD7B27-A273-4A50-99A5-1729A57A57A8",
+          "rise" : 23.99944023323615
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "20799F56-80CD-46EC-A361-2EC340917145",
+          "rise" : 23.99944023323615
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 680,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 700,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 720,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 1.9989271137026234
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 1.9989271137026234
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 1.9989271137026234
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 1.9989271137026234
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 1.9989271137026234
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 20,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 3.8836618075801752
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 3.8836618075801752
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 3.8836618075801752
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 3.8836618075801752
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.66666666666666674,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 3.8836618075801752
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 40,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 5.6575626822157457
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 5.6575626822157457
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 5.6575626822157457
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 5.6575626822157457
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 5.6575626822157457
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 60,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 7.3239883381924225
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 80,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 8.886297376093296
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 100,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 10.347848396501462
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 10.347848396501462
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 10.347848396501462
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 10.347848396501462
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 10.347848396501462
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 120,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 11.712000000000003
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 11.712000000000003
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 11.712000000000003
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 11.712000000000003
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 11.712000000000003
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 140,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 12.982110787172013
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 12.982110787172013
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 12.982110787172013
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 12.982110787172013
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 12.982110787172013
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "6747D278-FE14-4F1C-8450-94C87D75C968",
+        "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+        "EE65227B-9FD3-468C-841D-4784F43616F8",
+        "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+        "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA"
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 160,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 14.161539358600582
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 180,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 15.253644314868808
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 15.253644314868808
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 15.253644314868808
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 15.253644314868808
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 15.253644314868808
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 200,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 16.261784256559768
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 16.261784256559768
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 16.261784256559768
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 16.261784256559768
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 16.261784256559768
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 220,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 17.189317784256559
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 17.189317784256559
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 17.189317784256559
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 17.189317784256559
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 17.189317784256559
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 240,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 18.039603498542277
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 18.039603498542277
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 18.039603498542277
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 18.039603498542277
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 18.039603498542277
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 260,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 18.816000000000003
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 18.816000000000003
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 18.816000000000003
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 18.816000000000003
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 18.816000000000003
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 280,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 19.52186588921283
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 19.52186588921283
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 19.52186588921283
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 19.52186588921283
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.99999999999999989,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 19.52186588921283
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 300,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 20.16055976676385
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 20.16055976676385
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 20.16055976676385
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 20.16055976676385
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.94999999999999984,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 20.16055976676385
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 320,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 20.735440233236151
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 20.735440233236151
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 20.735440233236151
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 20.735440233236151
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.8999999999999998,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 20.735440233236151
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 340,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 21
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 21
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 21
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 21
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 21
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 350,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 21.249865889212828
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 21.249865889212828
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 21.249865889212828
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 21.249865889212828
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.84999999999999987,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 21.249865889212828
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 360,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 21.707195335276968
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 21.707195335276968
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 21.707195335276968
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 21.707195335276968
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.79999999999999982,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 21.707195335276968
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 380,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 22.110787172011662
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 22.110787172011662
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 22.110787172011662
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 22.110787172011662
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.74999999999999978,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 22.110787172011662
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 400,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 22.463999999999999
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 22.463999999999999
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 22.463999999999999
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 22.463999999999999
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.69999999999999984,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 22.463999999999999
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 420,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 22.770192419825072
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 22.770192419825072
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 22.770192419825072
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 22.770192419825072
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.6499999999999998,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 22.770192419825072
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 440,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.032723032069971
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.032723032069971
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.032723032069971
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.032723032069971
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.59999999999999976,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.032723032069971
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 460,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.254950437317785
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.254950437317785
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.254950437317785
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.254950437317785
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.54999999999999993,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.254950437317785
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 480,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.440233236151602
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.440233236151602
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.440233236151602
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.440233236151602
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.49999999999999989,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.440233236151602
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 500,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.591930029154518
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.591930029154518
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.591930029154518
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.591930029154518
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.44999999999999984,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.591930029154518
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 520,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.713399416909624
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.713399416909624
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.713399416909624
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.713399416909624
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.3999999999999998,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.713399416909624
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 540,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.808
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.808
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.808
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.808
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.34999999999999976,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.808
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 560,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.879090379008744
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.879090379008744
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.879090379008744
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.879090379008744
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.29999999999999999,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.879090379008744
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 580,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.930029154518952
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.930029154518952
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.930029154518952
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.930029154518952
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.24999999999999994,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.930029154518952
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 600,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.964174927113703
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.964174927113703
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.964174927113703
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.964174927113703
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.964174927113703
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 620,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.984886297376093
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.984886297376093
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.984886297376093
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.984886297376093
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.14999999999999986,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.984886297376093
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 640,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.995521865889213
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.995521865889213
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.995521865889213
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.995521865889213
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.099999999999999811,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.995521865889213
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 660,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "6747D278-FE14-4F1C-8450-94C87D75C968",
+          "rise" : 23.99944023323615
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "EE65227B-9FD3-468C-841D-4784F43616F8",
+          "rise" : 23.99944023323615
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "CBD67781-35F2-413E-9ACD-DB8E8C53F52D",
+          "rise" : 23.99944023323615
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "84E2BA1A-E8B1-4AE0-B5A5-006A117510CA",
+          "rise" : 23.99944023323615
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.049999999999999767,
+          "pressID" : "CCA68B4F-7F99-4E53-819F-FF1CE811580F",
+          "rise" : 23.99944023323615
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 680,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 700,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : false,
+      "timeMs" : 720,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 20,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 40,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 60,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 80,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.5,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.5,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.5,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.5,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.5,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 100,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 120,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 140,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+        "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+        "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+        "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+        "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 160,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : false,
+      "notes" : [
+        {
+          "midi" : 60,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "7A03572F-7AD0-40D3-9DF9-63CB15801402",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "E0FDF398-F2F6-498B-9B19-DE4A7A56479C",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "EB130172-0CE2-405C-991E-2ADF21C2B0A9",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "11D36FA5-A1A3-4F76-B25E-7668DE2A62EE",
+          "rise" : 0
+        },
+        {
+          "midi" : 67,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "D45119BC-2259-4A07-BF90-7DDE7C0DC1C1",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 180,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 200,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 220,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 240,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 260,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 280,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 300,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 320,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 340,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 350,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 360,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 380,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 400,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 420,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 440,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 460,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 480,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 500,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 520,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 540,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 560,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 580,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 600,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 620,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 640,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 660,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 680,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 700,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : false,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 720,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 1,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 1,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 1,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 1,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.90000000000000002,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 20,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.80000000000000004,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 40,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.69999999999999996,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 60,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.60000000000000009,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 80,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.5,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.5,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.5,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.5,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.5,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 100,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.40000000000000002,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 120,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.29999999999999993,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 140,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.20000000000000007,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+        "commandLeft",
+        "digit8",
+        "keyA",
+        "shiftRight",
+        "space"
+      ],
+      "pressIDs" : [
+        "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+        "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+        "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+        "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+        "A2F9D8B3-017D-44FD-8383-883B82AEE023"
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 160,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 5,
+      "labels" : true,
+      "notes" : [
+        {
+          "midi" : 67,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "A2F9D8B3-017D-44FD-8383-883B82AEE023",
+          "rise" : 0
+        },
+        {
+          "midi" : 60,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "DA0EAECD-46D1-4F33-9FCD-028F05620E02",
+          "rise" : 0
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "FC0A90F2-4AD3-403F-B2BF-BBEA82322E37",
+          "rise" : 0
+        },
+        {
+          "midi" : 73,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "7D09EA72-B5CF-42BC-B6EB-16B514242C31",
+          "rise" : 0
+        },
+        {
+          "midi" : 42,
+          "opacity" : 0.10000000000000009,
+          "pressID" : "CFEB3D68-B6BB-4C86-8104-5CC5127481CE",
+          "rise" : 0
+        }
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 180,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 200,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 220,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 240,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 260,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 280,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 300,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 320,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 340,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 350,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 360,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 380,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 400,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 420,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 440,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 460,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 480,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 500,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 520,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 540,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 560,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 580,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 600,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 620,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 640,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 660,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 680,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 700,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "hiddenReasons" : [
+
+      ],
+      "instances" : 0,
+      "labels" : true,
+      "notes" : [
+
+      ],
+      "pressedPhysicalIDs" : [
+
+      ],
+      "pressIDs" : [
+
+      ],
+      "reducedMotion" : true,
+      "timeMs" : 720,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0,
+      "file" : "native-short-tap-0ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 0
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 0,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.68132145926379195,
+      "file" : "native-short-tap-10ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.16666666666666669,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 1.0139475218658847
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 10,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.90427964742603772,
+      "file" : "native-short-tap-20ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 1.9989271137026234
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 20,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.99992127314032631,
+      "file" : "native-short-tap-44ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.73333333333333328,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 4.2472012128279859
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 44,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 1,
+      "file" : "native-short-tap-45ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.75,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 4.337396501457726
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 45,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.48364564997064785,
+      "file" : "native-short-tap-60ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 5.6575626822157457
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 60,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.15861990365902534,
+      "file" : "native-short-tap-80ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 7.3239883381924225
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 80,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.09287515451703765,
+      "file" : "native-short-tap-90ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 8.1179475218658883
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 90,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.052723054319973928,
+      "file" : "native-short-tap-100ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 8.886297376093296
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 100,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.0075888919030304702,
+      "file" : "native-short-tap-125ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 10.697886297376094
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 125,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0,
+      "file" : "native-short-tap-180ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 14.161539358600582
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 180,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0,
+      "file" : "native-short-tap-350ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "1B19A17F-7F38-4059-8C76-7F6B2341F763",
+          "rise" : 21
+        }
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 350,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0,
+      "file" : "native-short-tap-700ms.png",
+      "instances" : 0,
+      "notes" : [
+
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 700,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0,
+      "file" : "native-short-tap-780ms.png",
+      "instances" : 0,
+      "notes" : [
+
+      ],
+      "scenario" : "short-tap",
+      "syntheticKey" : "keyA",
+      "timeMs" : 780,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0,
+      "file" : "native-restrike-0ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 0
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 0,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.68132145926379195,
+      "file" : "native-restrike-10ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.16666666666666669,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 1.0139475218658847
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 10,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.90427964742603772,
+      "file" : "native-restrike-20ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.33333333333333337,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 1.9989271137026234
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 20,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.99992127314032631,
+      "file" : "native-restrike-44ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.73333333333333328,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 4.2472012128279859
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 44,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 1,
+      "file" : "native-restrike-45ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.75,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 4.337396501457726
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 45,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.48364564997064785,
+      "file" : "native-restrike-60ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 5.6575626822157457
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 60,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.15861990365902534,
+      "file" : "native-restrike-80ms.png",
+      "instances" : 2,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 7.3239883381924225
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0,
+          "pressID" : "CFE7CAEB-41D0-47BF-A087-D8DB5839F893",
+          "rise" : 0
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 80,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.73187021869356805,
+      "file" : "native-restrike-90ms.png",
+      "instances" : 2,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 8.1179475218658883
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.1666666666666666,
+          "pressID" : "CFE7CAEB-41D0-47BF-A087-D8DB5839F893",
+          "rise" : 1.0139475218658847
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 90,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 0.91946280052952756,
+      "file" : "native-restrike-100ms.png",
+      "instances" : 2,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 8.886297376093296
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.33333333333333343,
+          "pressID" : "CFE7CAEB-41D0-47BF-A087-D8DB5839F893",
+          "rise" : 1.9989271137026234
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 100,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 1,
+      "file" : "native-restrike-125ms.png",
+      "instances" : 2,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 10.697886297376094
+        },
+        {
+          "midi" : 55,
+          "opacity" : 0.75,
+          "pressID" : "CFE7CAEB-41D0-47BF-A087-D8DB5839F893",
+          "rise" : 4.337396501457726
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 125,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 1,
+      "file" : "native-restrike-180ms.png",
+      "instances" : 2,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 14.161539358600582
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "CFE7CAEB-41D0-47BF-A087-D8DB5839F893",
+          "rise" : 8.8862973760932906
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 180,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 1,
+      "file" : "native-restrike-350ms.png",
+      "instances" : 2,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.87499999999999989,
+          "pressID" : "6EDB48E6-4CA5-4989-954F-EEA2D7239F75",
+          "rise" : 21
+        },
+        {
+          "midi" : 55,
+          "opacity" : 1,
+          "pressID" : "CFE7CAEB-41D0-47BF-A087-D8DB5839F893",
+          "rise" : 18.436827988338191
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 350,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 1,
+      "file" : "native-restrike-700ms.png",
+      "instances" : 1,
+      "notes" : [
+        {
+          "midi" : 55,
+          "opacity" : 0.1999999999999999,
+          "pressID" : "CFE7CAEB-41D0-47BF-A087-D8DB5839F893",
+          "rise" : 23.964174927113703
+        }
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 700,
+      "timer" : false
+    },
+    {
+      "backingScale" : 2,
+      "bodyOriginPt" : [
+        0,
+        48
+      ],
+      "canvasPt" : [
+        1000,
+        104
+      ],
+      "depression" : 1,
+      "file" : "native-restrike-780ms.png",
+      "instances" : 0,
+      "notes" : [
+
+      ],
+      "scenario" : "restrike",
+      "syntheticKey" : "keyA",
+      "timeMs" : 780,
+      "timer" : false
+    }
+  ],
+  "hardwareAudio" : false,
+  "hardwareInput" : false,
+  "integrationBuild" : "C-001C",
+  "kind" : "deterministic native production renderer frames; not hardware input or screen recording",
+  "mappingSHA256" : "147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b",
+  "OS" : "Version 27.2 (Build 26B123)",
+  "systemDockWrites" : false,
+  "themeSHA256" : "1cd6ec885ff33d3cb071300c63b753604d29c5b4b28fbcdccf69812fff0220fb",
+  "themeVersion" : "quiet-ivory-u001.0.3"
+}

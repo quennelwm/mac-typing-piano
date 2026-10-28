@@ -1,0 +1,13 @@
+{
+  "audioOutputStarted" : false,
+  "callbackVolume" : 0.75,
+  "kind" : "programmatic native menu control smoke; actual menu tracking\/drag not tested",
+  "menuItems" : 14,
+  "nativeContinuousSlider" : true,
+  "passed" : true,
+  "percentage" : "75%",
+  "requestedStatusItemWidthPt" : 20,
+  "statusBarThicknessPt" : 22,
+  "systemVolumeChanged" : false,
+  "templateIcon" : true
+}

@@ -1,0 +1,56 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[3/7] Write swift-version--58304C5D6DBC2206.txt
+[5/9] Emitting module PianoCore
+[6/9] Compiling PianoCore Policies.swift
+[7/15] Emitting module PianoCoreTests
+[8/15] Compiling PianoCoreTests CoordinatorTests.swift
+[9/15] Compiling PianoMac ProbeController.swift
+[10/15] Emitting module PianoMac
+[10/15] Write Objects.LinkFileList
+[12/15] Linking TypingPianoProbe
+[13/15] Linking TypingPianoProbePackageTests
+[14/15] Applying TypingPianoProbe
+Build complete! (2.58s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 16:05:17.544.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 16:05:17.547.
+Test Suite 'GeometryAndDockTests' started at 2026-10-28 16:05:17.547.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths]' passed (0.006 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease]' passed (0.000 seconds).
+Test Suite 'GeometryAndDockTests' passed at 2026-10-28 16:05:17.553.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+Test Suite 'PolicyTests' started at 2026-10-28 16:05:17.553.
+Test Case '-[PianoCoreTests.PolicyTests testCR001DefaultLabelsAndExplicitDockConfirmation]' started.
+Test Case '-[PianoCoreTests.PolicyTests testCR001DefaultLabelsAndExplicitDockConfirmation]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch]' started.
+Test Case '-[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch]' passed (0.000 seconds).
+Test Suite 'PolicyTests' passed at 2026-10-28 16:05:17.554.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'TrialGainTests' started at 2026-10-28 16:05:17.554.
+Test Case '-[PianoAudioTests.TrialGainTests testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp]' started.
+Test Case '-[PianoAudioTests.TrialGainTests testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp]' passed (0.000 seconds).
+Test Suite 'TrialGainTests' passed at 2026-10-28 16:05:17.554.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'TrialSessionTests' started at 2026-10-28 16:05:17.554.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' passed (0.359 seconds).
+Test Suite 'TrialSessionTests' passed at 2026-10-28 16:05:17.913.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.359 (0.359) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 16:05:17.913.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.365 (0.366) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 16:05:17.913.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.365 (0.369) seconds

@@ -1,0 +1,39 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[3/6] Emitting module PianoMacTests
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:8:24: error: cannot find type 'InputMonitoring' in scope
+ 6 | 
+ 7 | final class ControllerIntegrationTests: XCTestCase {
+ 8 |     final class Input: InputMonitoring {
+   |                        `- error: cannot find type 'InputMonitoring' in scope
+ 9 |         var mode: InputMonitor.Mode = .stopped
+10 |         var onEvent: ((NormalizedKeyEvent) -> Void)?
+[4/6] Compiling PianoMacTests ControllerIntegrationTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:8:24: error: cannot find type 'InputMonitoring' in scope
+ 6 | 
+ 7 | final class ControllerIntegrationTests: XCTestCase {
+ 8 |     final class Input: InputMonitoring {
+   |                        `- error: cannot find type 'InputMonitoring' in scope
+ 9 |         var mode: InputMonitor.Mode = .stopped
+10 |         var onEvent: ((NormalizedKeyEvent) -> Void)?
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:32:45: error: extra arguments at positions #4, #5, #6 in call
+30 |         let preference = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString).appendingPathComponent("preferences.json")
+31 |         defer { try? FileManager.default.removeItem(at: preference.deletingLastPathComponent()) }
+32 |         let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preference, input: input, audioEngine: engine, installStatusItem: false)
+   |                                             `- error: extra arguments at positions #4, #5, #6 in call
+33 |         controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
+34 |         defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/ProbeController.swift:37:12: note: 'init(mapping:sources:preferencesURL:)' declared here
+ 35 |     private var receivedCount = 0
+ 36 | 
+ 37 |     public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL) throws {
+    |            `- note: 'init(mapping:sources:preferencesURL:)' declared here
+ 38 |         guard let first = sources.first else { throw ProbeError.invalid("没有可用试听音源") }
+ 39 |         self.mapping = mapping; self.sources = sources; self.preferencesURL = preferencesURL
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

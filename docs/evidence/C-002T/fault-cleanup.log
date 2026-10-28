@@ -1,0 +1,29 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/8] Emitting module PianoMac
+[5/8] Compiling PianoMac ProbeController.swift
+[5/10] Write Objects.LinkFileList
+[6/13] Linking TypingPianoProbe
+[8/13] Emitting module PianoMacTests
+[9/13] Compiling PianoMacTests ControllerIntegrationTests.swift
+[10/13] Compiling PianoMacTests TrialSessionTests.swift
+[10/13] Applying TypingPianoProbe
+[11/13] Write Objects.LinkFileList
+[12/13] Linking TypingPianoProbePackageTests
+Build complete! (2.49s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-28 16:14:11.833.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-28 16:14:11.835.
+Test Suite 'TrialSessionTests' started at 2026-10-28 16:14:11.835.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' passed (0.309 seconds).
+Test Suite 'TrialSessionTests' passed at 2026-10-28 16:14:12.144.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.309 (0.309) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-28 16:14:12.144.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.309 (0.309) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 16:14:12.144.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.309 (0.311) seconds

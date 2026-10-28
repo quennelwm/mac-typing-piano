@@ -1,0 +1,39 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+[3/6] Emitting module PianoAudioTests
+[4/6] Compiling PianoAudioTests TrialGainTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/TrialGainTests.swift:7:15: error: value of type 'SamplerAudio' has no member 'configureGain'
+ 5 |     func testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp() {
+ 6 |         let audio = SamplerAudio()
+ 7 |         audio.configureGain(maximum: 1, samplerDB: 12)
+   |               `- error: value of type 'SamplerAudio' has no member 'configureGain'
+ 8 |         audio.setGain(0.5)
+ 9 |         XCTAssertEqual(audio.gain, 0.5)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/TrialGainTests.swift:10:30: error: value of type 'SamplerAudio' has no member 'samplerGainDB'
+ 8 |         audio.setGain(0.5)
+ 9 |         XCTAssertEqual(audio.gain, 0.5)
+10 |         XCTAssertEqual(audio.samplerGainDB, 12)
+   |                              `- error: value of type 'SamplerAudio' has no member 'samplerGainDB'
+11 |         audio.setGain(2); XCTAssertEqual(audio.gain, 1)
+12 |         audio.setGain(.nan); XCTAssertEqual(audio.gain, 1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/TrialGainTests.swift:13:15: error: value of type 'SamplerAudio' has no member 'configureGain'
+11 |         audio.setGain(2); XCTAssertEqual(audio.gain, 1)
+12 |         audio.setGain(.nan); XCTAssertEqual(audio.gain, 1)
+13 |         audio.configureGain(maximum: 0.16, samplerDB: 0)
+   |               `- error: value of type 'SamplerAudio' has no member 'configureGain'
+14 |         XCTAssertEqual(audio.gain, 0.16)
+15 |         XCTAssertEqual(audio.samplerGainDB, 0)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/TrialGainTests.swift:15:30: error: value of type 'SamplerAudio' has no member 'samplerGainDB'
+13 |         audio.configureGain(maximum: 0.16, samplerDB: 0)
+14 |         XCTAssertEqual(audio.gain, 0.16)
+15 |         XCTAssertEqual(audio.samplerGainDB, 0)
+   |                              `- error: value of type 'SamplerAudio' has no member 'samplerGainDB'
+16 |     }
+17 | }
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

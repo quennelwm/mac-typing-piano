@@ -1,0 +1,23 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+[3/6] Emitting module PianoMacTests
+[4/6] Compiling PianoMacTests MenuIntegrationTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/MenuIntegrationTests.swift:27:30: error: cannot find 'QuietIvoryProvenance' in scope
+25 |     func testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme() throws {
+26 |         let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+27 |         let provenance = try QuietIvoryProvenance(themeURL: root.appendingPathComponent("Design/UI/theme.candidate.json"), mappingURL: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json"))
+   |                              `- error: cannot find 'QuietIvoryProvenance' in scope
+28 |         XCTAssertEqual(provenance.themeVersion, "quiet-ivory-u001.0.3")
+29 |         let wrong = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/MenuIntegrationTests.swift:32:34: error: cannot find 'QuietIvoryProvenance' in scope
+30 |         defer { try? FileManager.default.removeItem(at: wrong) }
+31 |         try Data("{}".utf8).write(to: wrong)
+32 |         XCTAssertThrowsError(try QuietIvoryProvenance(themeURL: wrong, mappingURL: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")))
+   |                                  `- error: cannot find 'QuietIvoryProvenance' in scope
+33 |     }
+34 | }
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

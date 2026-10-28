@@ -1,0 +1,95 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[3/7] Emitting module PianoMacTests
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:12:23: error: cannot find type 'InputSessionDuration' in scope
+10 |         var onEvent: ((NormalizedKeyEvent) -> Void)?
+11 |         var onStop: ((String) -> Void)?
+12 |         var duration: InputSessionDuration = .test60Seconds
+   |                       `- error: cannot find type 'InputSessionDuration' in scope
+13 |         func start(global: Bool, duration: InputSessionDuration) throws { self.duration = duration; mode = global ? .global : .local }
+14 |         func stop() { mode = .stopped }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:13:44: error: cannot find type 'InputSessionDuration' in scope
+11 |         var onStop: ((String) -> Void)?
+12 |         var duration: InputSessionDuration = .test60Seconds
+13 |         func start(global: Bool, duration: InputSessionDuration) throws { self.duration = duration; mode = global ? .global : .local }
+   |                                            `- error: cannot find type 'InputSessionDuration' in scope
+14 |         func stop() { mode = .stopped }
+15 |     }
+[4/7] Compiling PianoMacTests TrialSessionTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TrialSessionTests.swift:9:22: error: cannot find 'InputSessionDuration' in scope
+ 7 | final class TrialSessionTests: XCTestCase {
+ 8 |     func testContinuousSessionHasNoTimeoutButRetainsSafetyStops() {
+ 9 |         XCTAssertNil(InputSessionDuration.continuous.stopReason(elapsed: 86_400, secureInput: false, permissionValid: true))
+   |                      `- error: cannot find 'InputSessionDuration' in scope
+10 |         XCTAssertNotNil(InputSessionDuration.test60Seconds.stopReason(elapsed: 60, secureInput: false, permissionValid: true))
+11 |         XCTAssertNotNil(InputSessionDuration.continuous.stopReason(elapsed: 1, secureInput: true, permissionValid: true))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TrialSessionTests.swift:10:25: error: cannot find 'InputSessionDuration' in scope
+ 8 |     func testContinuousSessionHasNoTimeoutButRetainsSafetyStops() {
+ 9 |         XCTAssertNil(InputSessionDuration.continuous.stopReason(elapsed: 86_400, secureInput: false, permissionValid: true))
+10 |         XCTAssertNotNil(InputSessionDuration.test60Seconds.stopReason(elapsed: 60, secureInput: false, permissionValid: true))
+   |                         `- error: cannot find 'InputSessionDuration' in scope
+11 |         XCTAssertNotNil(InputSessionDuration.continuous.stopReason(elapsed: 1, secureInput: true, permissionValid: true))
+12 |         XCTAssertNotNil(InputSessionDuration.continuous.stopReason(elapsed: 1, secureInput: false, permissionValid: false))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TrialSessionTests.swift:11:25: error: cannot find 'InputSessionDuration' in scope
+ 9 |         XCTAssertNil(InputSessionDuration.continuous.stopReason(elapsed: 86_400, secureInput: false, permissionValid: true))
+10 |         XCTAssertNotNil(InputSessionDuration.test60Seconds.stopReason(elapsed: 60, secureInput: false, permissionValid: true))
+11 |         XCTAssertNotNil(InputSessionDuration.continuous.stopReason(elapsed: 1, secureInput: true, permissionValid: true))
+   |                         `- error: cannot find 'InputSessionDuration' in scope
+12 |         XCTAssertNotNil(InputSessionDuration.continuous.stopReason(elapsed: 1, secureInput: false, permissionValid: false))
+13 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TrialSessionTests.swift:12:25: error: cannot find 'InputSessionDuration' in scope
+10 |         XCTAssertNotNil(InputSessionDuration.test60Seconds.stopReason(elapsed: 60, secureInput: false, permissionValid: true))
+11 |         XCTAssertNotNil(InputSessionDuration.continuous.stopReason(elapsed: 1, secureInput: true, permissionValid: true))
+12 |         XCTAssertNotNil(InputSessionDuration.continuous.stopReason(elapsed: 1, secureInput: false, permissionValid: false))
+   |                         `- error: cannot find 'InputSessionDuration' in scope
+13 |     }
+14 |     func testStartTrialEnablesAudioOverlayAndPauseFullyCleans() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TrialSessionTests.swift:24:20: error: value of type 'ProbeController' has no member 'startTrial'
+22 |         defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
+23 |         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
+24 |         controller.startTrial()
+   |                    `- error: value of type 'ProbeController' has no member 'startTrial'
+25 |         XCTAssertEqual(input.mode, .global)
+26 |         XCTAssertEqual(input.duration, .continuous)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:12:23: error: cannot find type 'InputSessionDuration' in scope
+10 |         var onEvent: ((NormalizedKeyEvent) -> Void)?
+11 |         var onStop: ((String) -> Void)?
+12 |         var duration: InputSessionDuration = .test60Seconds
+   |                       `- error: cannot find type 'InputSessionDuration' in scope
+13 |         func start(global: Bool, duration: InputSessionDuration) throws { self.duration = duration; mode = global ? .global : .local }
+14 |         func stop() { mode = .stopped }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TrialSessionTests.swift:26:41: error: type 'Equatable' has no member 'continuous'
+24 |         controller.startTrial()
+25 |         XCTAssertEqual(input.mode, .global)
+26 |         XCTAssertEqual(input.duration, .continuous)
+   |                                         `- error: type 'Equatable' has no member 'continuous'
+27 |         XCTAssertTrue(engine.prepared); XCTAssertTrue(controller.integrationState.soundEnabled)
+28 |         input.onEvent?(.init("keyA", .down))
+[5/7] Compiling PianoMacTests ControllerIntegrationTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:12:23: error: cannot find type 'InputSessionDuration' in scope
+10 |         var onEvent: ((NormalizedKeyEvent) -> Void)?
+11 |         var onStop: ((String) -> Void)?
+12 |         var duration: InputSessionDuration = .test60Seconds
+   |                       `- error: cannot find type 'InputSessionDuration' in scope
+13 |         func start(global: Bool, duration: InputSessionDuration) throws { self.duration = duration; mode = global ? .global : .local }
+14 |         func stop() { mode = .stopped }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:13:44: error: cannot find type 'InputSessionDuration' in scope
+11 |         var onStop: ((String) -> Void)?
+12 |         var duration: InputSessionDuration = .test60Seconds
+13 |         func start(global: Bool, duration: InputSessionDuration) throws { self.duration = duration; mode = global ? .global : .local }
+   |                                            `- error: cannot find type 'InputSessionDuration' in scope
+14 |         func stop() { mode = .stopped }
+15 |     }
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

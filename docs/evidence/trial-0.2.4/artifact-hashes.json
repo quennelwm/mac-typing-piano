@@ -1,0 +1,182 @@
+{
+  "version": "0.2.4",
+  "binarySHA256": "6edd694ea26998ffb0015c1301b4042ed5a22c4fa594611eee102dcb41222202",
+  "files": [
+    {
+      "path": "Code/Scripts/build.sh",
+      "sha256": "3417e084432aac93e1d1b14a1b50322fd0373014b76d302cd38f5a58ccc90e99"
+    },
+    {
+      "path": "Code/Sources/PianoAudio/AuditionSession.swift",
+      "sha256": "6fc8fbc4538e3e03d116a28b5e4b0335933b802ef281e671f43e78f04dd96996"
+    },
+    {
+      "path": "Code/Sources/PianoAudio/RuntimeDiagnostics.swift",
+      "sha256": "5dc3c7095eb19d86f781a88a2594ae0d1ed3436a06302a329e87085ec74b7d3c"
+    },
+    {
+      "path": "Code/Sources/PianoAudio/SamplerAudio.swift",
+      "sha256": "11131742a6e8a41db3fcee5584958488a25feed68bf64f9efc83330c0c5222c4"
+    },
+    {
+      "path": "Code/Sources/PianoCore/AppPreferences.swift",
+      "sha256": "0ca469709473e1f944336f74b93180ec67b8748c680fa209a58c6393466b1720"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Coordinator.swift",
+      "sha256": "987b7b246f4de5d26f62bd724842dd36cf856a6582fc6dd6f2a8321916294ef4"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Core.swift",
+      "sha256": "0c8ae0aa75bfbc921705598ca3a354089c3dc8fbfacddc29d3e3a5f07918d30c"
+    },
+    {
+      "path": "Code/Sources/PianoCore/DockFade.swift",
+      "sha256": "9da2157b8a6d827e9893b9b5b3977b3f3b5922846bf239d867fa718d272b987e"
+    },
+    {
+      "path": "Code/Sources/PianoCore/DockOwnership.swift",
+      "sha256": "48089a840d9fecd58cc1b636a9f8cd970957275cc52fea4ebc2dc3aa781d4f87"
+    },
+    {
+      "path": "Code/Sources/PianoCore/FloatingNotes.swift",
+      "sha256": "e3af94367721bc0b5293f6e4d3773eaf52a4c78cd2379fa8dfbe0f461271568d"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Geometry.swift",
+      "sha256": "b11b86e2b2db56306033158b7bfee8e97ac93ddb2e98f033c7cd8a291b937c01"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Mapping.swift",
+      "sha256": "7730fb0437eacc89c27266bd1c2a7b8fc5e2dda6777375d935985d6e4ffece71"
+    },
+    {
+      "path": "Code/Sources/PianoCore/Policies.swift",
+      "sha256": "34d8610ae34a1562e3d3db6e69849f3f56bdb94eb8fda5c6c96f9c46c49372e2"
+    },
+    {
+      "path": "Code/Sources/PianoMac/AdaptiveOverlay.swift",
+      "sha256": "ceaa2f5c37df7064959540cd65a73f6af831179151e81e1aaa89358bdb9c6408"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ContinuousTrialStart.swift",
+      "sha256": "2bac029abbfa68f52fba3d7b693cad8ea3e2c635f9d6f5d95d6f3badd8ca7cfd"
+    },
+    {
+      "path": "Code/Sources/PianoMac/DockAdapter.swift",
+      "sha256": "422860f7af10cb90c2eef5d8efc92e760d98bb8695e9b61605f64fb8a6f019b8"
+    },
+    {
+      "path": "Code/Sources/PianoMac/DockWindowVisibility.swift",
+      "sha256": "a8329a3997e325ef2cebd3e1b8082a96d7608685126ad8101962284a80df8d75"
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputMonitor.swift",
+      "sha256": "a347e2e298ed57bb16fe4221431f37534ab3dda6547d77c89c59d401b48a87cc"
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputNormalizer.swift",
+      "sha256": "6e479581e0f9a68120f1526657eaff69477c356d467c33866aa360cd9270d9e9"
+    },
+    {
+      "path": "Code/Sources/PianoMac/Module.swift",
+      "sha256": "dda9b75f64b106eb544de201f599122d75abc483c5b156bba6c05c0f956dbc3c"
+    },
+    {
+      "path": "Code/Sources/PianoMac/NativeDockStorage.swift",
+      "sha256": "29ac849206f39c1d2a1695ec6eda85951ca2b6d0cae5ce164e1f574b6adf30b3"
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "sha256": "91fc4dd3b8ac76824ea2a8c262f63ba8617fb3c6eefe6f3f4c0344a5e8596445"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "sha256": "1cc7d11c405bb45a2f9ff7ee3bc881ac25d75c1ecd2f1c38809d42d4daa8e880"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "sha256": "81d44fca93cae0dd2b8c327c0120100773cfb6d4d161a0862a2799323d64df13"
+    },
+    {
+      "path": "Code/Sources/PianoMac/QuietIvoryProvenance.swift",
+      "sha256": "303724378f7578a54ec4a48246ee780b417f0c434ccef607303d59f9517d9c6f"
+    },
+    {
+      "path": "Code/Sources/PianoMac/SDKKeys.swift",
+      "sha256": "cb27a802b588d29248b16a8aa9691f5a36f369d8bc598d88fb746160742aa97f"
+    },
+    {
+      "path": "Code/Sources/PianoMac/SingleInstance.swift",
+      "sha256": "6969ac41f1ba3b46b4f56a86bccee2b6309148f30f903016a7e77f3993bc1bb0"
+    },
+    {
+      "path": "Code/Sources/PianoProbe/main.swift",
+      "sha256": "03ae65021c02666c5e177f56255d6eb67374c79025622e48369161a16b8860f4"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/NativeDockStorageTests.swift",
+      "sha256": "489eaa7394b066475bf1d0a64e682fc00eca9388cb8115edddb2108596a5c354"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/HANDOFF.md",
+      "sha256": "12859c0993313bca1079a95318c4b627e383b979a0fad8d7e8aca68006c67099"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/NATIVE-DOCK-DECISION.md",
+      "sha256": "8eb84ef8c760704e563c43793bb3c713355c642d7160d0e2a7f251c52e4bc318"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/build.log",
+      "sha256": "3c4c5e88dcd05adf1bdfcca10ba065b12afe40612fa5e99ec02081d0e99600df"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/coredock-readonly.jsonl",
+      "sha256": "0ab3f20bcf875983d48bf0bcb154c2aed82324daa326e2c5388f9579a8558593"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/delivery.json",
+      "sha256": "f9e3ef228ef621a96acceda0eda6b053d94967decdb16ca5b30d7baab704219a"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/dock-production-observer.json",
+      "sha256": "24ba2cf058a8254e9babc2ce1417a775230d6929d827fb70ead37552ffbeabb4"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/dock-production-observer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/menu-smoke.json",
+      "sha256": "a870d201e7aaae9bf93e92f49d53cd6c4511c9a06b74398107e0d796c8113fef"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/menu-smoke.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/native-red.log",
+      "sha256": "ed59d225a8ffc9be5c34db55b27c57787ec3c3dd08f7c5f50f4406fd741d61e1"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/old-DR-comparison.txt",
+      "sha256": "2e857c16aa5095e6b48f4af4c8d7b6bbe59d8a12b204b57e1c730003bf0799ee"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/self-check.json",
+      "sha256": "96f07f1cb6eb3258a43867bcc3aed5a3974cb78e611768f52899141d797316c6"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/self-check.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/signature.txt",
+      "sha256": "0082543ae7a7133c6bea2411a7982ae472cd1b9d93ef76613f66e0e80bf31f88"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.4/tests-final.log",
+      "sha256": "a34582d5df58b82214b8f12508e1223e49f08a091f6a3eda511a13ed8bdb86de"
+    }
+  ]
+}

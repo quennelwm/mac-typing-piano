@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 134,
+    "name" : "QuennelAPP",
+    "transport" : "blue"
+  },
+  {
+    "id" : 122,
+    "name" : "MacBook Pro扬声器",
+    "transport" : "bltn"
+  },
+  {
+    "id" : 75,
+    "name" : "OrayVirtualAudioDevice",
+    "transport" : "virt"
+  },
+  {
+    "id" : 96,
+    "name" : "Steam Streaming Microphone",
+    "transport" : "virt"
+  },
+  {
+    "id" : 104,
+    "name" : "Steam Streaming Speakers",
+    "transport" : "virt"
+  },
+  {
+    "id" : 112,
+    "name" : "WeMeet Audio Device",
+    "transport" : "virt"
+  }
+]

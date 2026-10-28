@@ -1,0 +1,14 @@
+[
+  {
+    "match" : true,
+    "nativeImmediate" : 0,
+    "preferenceImmediate" : "0",
+    "requested" : 0
+  },
+  {
+    "match" : true,
+    "nativeImmediate" : 1,
+    "preferenceImmediate" : "1",
+    "requested" : 1
+  }
+]

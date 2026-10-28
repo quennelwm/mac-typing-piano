@@ -1,0 +1,45 @@
+[
+  {
+    "dockPID" : 1339,
+    "nativeAutohide" : 1,
+    "onscreenDockWindows" : [
+
+    ],
+    "screens" : [
+      "{{0, 0}, {1512, 949}}"
+    ],
+    "stage" : "before"
+  },
+  {
+    "dockPID" : 1339,
+    "nativeAutohide" : 0,
+    "onscreenDockWindows" : [
+      {
+        "kCGWindowBounds" : {
+          "Height" : 982,
+          "Width" : 1512,
+          "X" : 0,
+          "Y" : 0
+        },
+        "kCGWindowIsOnscreen" : true,
+        "kCGWindowLayer" : 20,
+        "kCGWindowNumber" : 49
+      }
+    ],
+    "screens" : [
+      "{{0, 0}, {1512, 949}}"
+    ],
+    "stage" : "native-disabled"
+  },
+  {
+    "dockPID" : 1339,
+    "nativeAutohide" : 1,
+    "onscreenDockWindows" : [
+
+    ],
+    "screens" : [
+      "{{0, 0}, {1512, 949}}"
+    ],
+    "stage" : "native-enabled-restored"
+  }
+]

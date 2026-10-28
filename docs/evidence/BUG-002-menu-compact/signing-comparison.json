@@ -1,0 +1,12 @@
+{
+  "signatures": {
+    "authorized021": "# designated => cdhash H\"ef6156f4e1f2deb96add72f58c2628820749542d\"\nExecutable=/Users/wuming/Library/Caches/local.typingpiano.trial/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe\n",
+    "candidate022": "# designated => cdhash H\"b838e35112c72d9291b0cfb06df430a30aad2dde\"\nExecutable=/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.2/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe\n"
+  },
+  "oldRequirement": "cdhash H\"ef6156f4e1f2deb96add72f58c2628820749542d\"",
+  "candidateMatchesOldRequirement": false,
+  "comparisonExit": 3,
+  "comparisonOutput": "test-requirement: code failed to satisfy specified code requirement(s)\n",
+  "TCCDatabaseReadOrModified": false,
+  "comparisonUsesInlineRequirement": true
+}

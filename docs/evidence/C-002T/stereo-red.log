@@ -1,0 +1,15 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Emitting module PianoAudioTests
+[4/5] Compiling PianoAudioTests TrialGainTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/TrialGainTests.swift:19:54: error: argument passed to call that takes no arguments
+17 |     func testStereoOfflineRenderingReturnsBothChannelsAndFrameCount() throws {
+18 |         let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+19 |         let audio = SamplerAudio(renderChannelCount: 2)
+   |                                                      `- error: argument passed to call that takes no arguments
+20 |         defer { audio.shutdown() }
+21 |         try audio.prepare(bankURL: root.appendingPathComponent("Assets/placeholder-original.sf2"), offline: true)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

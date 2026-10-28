@@ -1,0 +1,2762 @@
+{
+  "task": "C-001B",
+  "status": "passed",
+  "inputVerificationSHA256": "92ad0bbb3b75269f8751996d54dd449d6470afef21d2c43492091df5b699ad02",
+  "inputFilesUnchanged": true,
+  "inputStateRemains": "candidate",
+  "banks": [
+    {
+      "bankPath": "Design/Audio/probes/A-001B/vcsl-kawai/trial.sf2",
+      "bankSHA256": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1",
+      "candidateID": "vcsl-kawai",
+      "checkCount": 191,
+      "chords": [
+        {
+          "gain": 0.07999999821186066,
+          "gainSettlingPeak": 0,
+          "gainSettlingSilenceSeconds": 0.1,
+          "midi": [
+            33,
+            34,
+            41,
+            42,
+            43,
+            59,
+            60,
+            61,
+            95,
+            96
+          ],
+          "noteCommands": 10,
+          "peak": 0.01792849600315094,
+          "renderSeconds": 1,
+          "rms": 0.0032031497169387755,
+          "velocity": 127
+        },
+        {
+          "gain": 0.1599999964237213,
+          "gainSettlingPeak": 0,
+          "gainSettlingSilenceSeconds": 0.1,
+          "midi": [
+            33,
+            34,
+            41,
+            42,
+            43,
+            59,
+            60,
+            61,
+            95,
+            96
+          ],
+          "noteCommands": 10,
+          "peak": 0.02772315964102745,
+          "renderSeconds": 1,
+          "rms": 0.006013933620071452,
+          "velocity": 127
+        }
+      ],
+      "coverageMeasurements": [
+        {
+          "absoluteOffsetFromNominalCentsUncertified": -2.326653791468047,
+          "analysisAverageStride": 8,
+          "correlation": 0.994745127388495,
+          "declaredCovered": true,
+          "estimatedHz": 54.926133610533675,
+          "midi": 33,
+          "onsetFrameAboveThreshold": 49,
+          "onsetSecondsAboveThreshold": 0.0010208333333333332,
+          "peak": 0.0010874579893425107,
+          "rms": 0.0003885763924754427
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": -2.495147735133436,
+          "analysisAverageStride": 8,
+          "correlation": 0.9955080053269997,
+          "declaredCovered": true,
+          "estimatedHz": 58.186548141385764,
+          "midi": 34,
+          "onsetFrameAboveThreshold": 49,
+          "onsetSecondsAboveThreshold": 0.0010208333333333332,
+          "peak": 0.0010873711435124278,
+          "rms": 0.0003850076105345066
+        },
+        {
+          "declaredCovered": false,
+          "midi": 35,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 36,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 37,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 38,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 39,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 40,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": -1.6608740478500321,
+          "analysisAverageStride": 8,
+          "correlation": 0.9973106972373033,
+          "declaredCovered": true,
+          "estimatedHz": 87.22333925733332,
+          "midi": 41,
+          "onsetFrameAboveThreshold": 58,
+          "onsetSecondsAboveThreshold": 0.0012083333333333334,
+          "peak": 0.0007998861256055534,
+          "rms": 0.0003249022106186746
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": -1.6896173341769125,
+          "analysisAverageStride": 8,
+          "correlation": 0.9978413976572336,
+          "declaredCovered": true,
+          "estimatedHz": 92.40837466189943,
+          "midi": 42,
+          "onsetFrameAboveThreshold": 56,
+          "onsetSecondsAboveThreshold": 0.0011666666666666668,
+          "peak": 0.0008003188413567841,
+          "rms": 0.0003165198158892467
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": -1.4162155173549764,
+          "analysisAverageStride": 8,
+          "correlation": 0.9966185183779659,
+          "declaredCovered": true,
+          "estimatedHz": 97.91872496988164,
+          "midi": 43,
+          "onsetFrameAboveThreshold": 56,
+          "onsetSecondsAboveThreshold": 0.0011666666666666668,
+          "peak": 0.0007998148212209344,
+          "rms": 0.0003082056455703695
+        },
+        {
+          "declaredCovered": false,
+          "midi": 44,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 45,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 46,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 47,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 48,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 49,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 50,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 51,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 52,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 53,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 54,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 55,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 56,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 57,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 58,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": -3.964397615335936,
+          "analysisAverageStride": 4,
+          "correlation": 0.997055164941313,
+          "declaredCovered": true,
+          "estimatedHz": 246.37681951435968,
+          "midi": 59,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0009752010810188949,
+          "rms": 0.0002308363875877816
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": -3.919708406866496,
+          "analysisAverageStride": 3,
+          "correlation": 0.9978751933658764,
+          "declaredCovered": true,
+          "estimatedHz": 261.0338856920762,
+          "midi": 60,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0009756085928529501,
+          "rms": 0.00022582435901492593
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": -4.016292914718892,
+          "analysisAverageStride": 3,
+          "correlation": 0.9989771437944404,
+          "declaredCovered": true,
+          "estimatedHz": 276.54033981811585,
+          "midi": 61,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0009752278565429151,
+          "rms": 0.00022079240208713988
+        },
+        {
+          "declaredCovered": false,
+          "midi": 62,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 63,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 64,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 65,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 66,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 67,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 68,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 69,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 70,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 71,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 72,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 73,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 74,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 75,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 76,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 77,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 78,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 79,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 80,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 81,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 82,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 83,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 84,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 85,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 86,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 87,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 88,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 89,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 90,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 91,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 92,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 93,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 94,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 0.07675359969437211,
+          "analysisAverageStride": 1,
+          "correlation": 0.9949823214910791,
+          "declaredCovered": true,
+          "estimatedHz": 1975.6207914754132,
+          "midi": 95,
+          "onsetFrameAboveThreshold": 58,
+          "onsetSecondsAboveThreshold": 0.0012083333333333334,
+          "peak": 0.0015420240815728903,
+          "rms": 0.00022070916594815266
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 0.00048322147906822583,
+          "analysisAverageStride": 1,
+          "correlation": 0.998071184552973,
+          "declaredCovered": true,
+          "estimatedHz": 2093.0051066036053,
+          "midi": 96,
+          "onsetFrameAboveThreshold": 57,
+          "onsetSecondsAboveThreshold": 0.0011875,
+          "peak": 0.0015432002255693078,
+          "rms": 0.00021584175889418944
+        }
+      ],
+      "coveredMIDI": [
+        33,
+        34,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ],
+      "failures": [],
+      "gainZero": {
+        "existingVoiceClearedPeak": 0,
+        "freshStrikePeak": 0.0014251418178901076,
+        "gainRaisedWithoutNewStrikePeak": 0,
+        "mutedStrikePeak": 0
+      },
+      "hardwareOutput": false,
+      "inputSnapshotUnchangedAfterRender": true,
+      "inputState": "candidate",
+      "inputVerificationSHA256": "92ad0bbb3b75269f8751996d54dd449d6470afef21d2c43492091df5b699ad02",
+      "loadedSelectors": {
+        "bankLSB": 0,
+        "bankMSB": 121,
+        "program": 0
+      },
+      "loadStatus": "passed",
+      "panic": {
+        "nextStrikePeak": 0.0009756085928529501,
+        "postPanicPeak": 0
+      },
+      "pitchRelationships": [
+        {
+          "errorCents": -0.16849394366553838,
+          "expectedCents": 100,
+          "measuredCents": 99.83150605633446,
+          "neighborEstimatedHz": 58.186548141385764,
+          "neighborMIDI": 34,
+          "rootEstimatedHz": 54.926133610533675,
+          "rootMIDI": 33,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": 0.028743286326729844,
+          "expectedCents": -100,
+          "measuredCents": -99.97125671367327,
+          "neighborEstimatedHz": 87.22333925733332,
+          "neighborMIDI": 41,
+          "rootEstimatedHz": 92.40837466189943,
+          "rootMIDI": 42,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": 0.273401816821945,
+          "expectedCents": 100,
+          "measuredCents": 100.27340181682194,
+          "neighborEstimatedHz": 97.91872496988164,
+          "neighborMIDI": 43,
+          "rootEstimatedHz": 92.40837466189943,
+          "rootMIDI": 42,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": -0.0446892084690802,
+          "expectedCents": -100,
+          "measuredCents": -100.04468920846908,
+          "neighborEstimatedHz": 246.37681951435968,
+          "neighborMIDI": 59,
+          "rootEstimatedHz": 261.0338856920762,
+          "rootMIDI": 60,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": -0.09658450785248363,
+          "expectedCents": 100,
+          "measuredCents": 99.90341549214752,
+          "neighborEstimatedHz": 276.54033981811585,
+          "neighborMIDI": 61,
+          "rootEstimatedHz": 261.0338856920762,
+          "rootMIDI": 60,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": 0.07627037821525562,
+          "expectedCents": -100,
+          "measuredCents": -99.92372962178474,
+          "neighborEstimatedHz": 1975.6207914754132,
+          "neighborMIDI": 95,
+          "rootEstimatedHz": 2093.0051066036053,
+          "rootMIDI": 96,
+          "toleranceCents": 25
+        }
+      ],
+      "releaseMeasurements": [
+        {
+          "earlyRelease100msPeak": 0.0008477707742713392,
+          "heldPeak": 0.001035848050378263,
+          "holdSeconds": 0.05,
+          "midi": 33,
+          "preReleaseLast10msPeak": 0.0007029540720395744,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 19114,
+          "releaseLastSecondsAboveThreshold": 0.39820833333333333,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.0005408292636275291,
+          "heldPeak": 0.0010874579893425107,
+          "holdSeconds": 1,
+          "midi": 33,
+          "preReleaseLast10msPeak": 0.0005841561942361295,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 18146,
+          "releaseLastSecondsAboveThreshold": 0.37804166666666666,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 6.493432010756806e-05,
+          "heldPeak": 0.0010874579893425107,
+          "holdSeconds": 5,
+          "midi": 33,
+          "preReleaseLast10msPeak": 7.197776722023264e-05,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 13752,
+          "releaseLastSecondsAboveThreshold": 0.2865,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.0006855137762613595,
+          "heldPeak": 0.0006443531601689756,
+          "holdSeconds": 0.05,
+          "midi": 42,
+          "preReleaseLast10msPeak": 0.0005964375450275838,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 17860,
+          "releaseLastSecondsAboveThreshold": 0.3720833333333333,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.0001563893019920215,
+          "heldPeak": 0.0008003188413567841,
+          "holdSeconds": 1,
+          "midi": 42,
+          "preReleaseLast10msPeak": 0.00018491885566618294,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 15595,
+          "releaseLastSecondsAboveThreshold": 0.32489583333333333,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 4.299163629184477e-05,
+          "heldPeak": 0.0008003188413567841,
+          "holdSeconds": 5,
+          "midi": 42,
+          "preReleaseLast10msPeak": 5.08515331603121e-05,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 12805,
+          "releaseLastSecondsAboveThreshold": 0.26677083333333335,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.0008444078266620636,
+          "heldPeak": 0.0009756085928529501,
+          "holdSeconds": 0.05,
+          "midi": 60,
+          "preReleaseLast10msPeak": 0.0009756085928529501,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 16834,
+          "releaseLastSecondsAboveThreshold": 0.35070833333333334,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.00017056929937098175,
+          "heldPeak": 0.0009756085928529501,
+          "holdSeconds": 1,
+          "midi": 60,
+          "preReleaseLast10msPeak": 0.00018195403390564024,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 15725,
+          "releaseLastSecondsAboveThreshold": 0.32760416666666664,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 2.10554753721226e-05,
+          "heldPeak": 0.0009756085928529501,
+          "holdSeconds": 5,
+          "midi": 60,
+          "preReleaseLast10msPeak": 2.223229421360884e-05,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 10960,
+          "releaseLastSecondsAboveThreshold": 0.22833333333333333,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.0007703760638833046,
+          "heldPeak": 0.0015432002255693078,
+          "holdSeconds": 0.05,
+          "midi": 96,
+          "preReleaseLast10msPeak": 0.0009147725650109351,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 14288,
+          "releaseLastSecondsAboveThreshold": 0.2976666666666667,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 4.8186848289333284e-05,
+          "heldPeak": 0.0015432002255693078,
+          "holdSeconds": 1,
+          "midi": 96,
+          "preReleaseLast10msPeak": 5.164480535313487e-05,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 8272,
+          "releaseLastSecondsAboveThreshold": 0.17233333333333334,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0,
+          "heldPeak": 0.0015432002255693078,
+          "holdSeconds": 5,
+          "midi": 96,
+          "preReleaseLast10msPeak": 0,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": null,
+          "releaseLastSecondsAboveThreshold": null,
+          "sampleAlreadySilentBeforeRelease": true
+        }
+      ],
+      "renderChannels": 1,
+      "renderSampleRate": 48000,
+      "reprepare": {
+        "gain": 0.07999999821186066,
+        "initialPeak": 0,
+        "newStrikePeak": 0.0009756085928529501,
+        "renderRejectedWhileShutdown": true
+      },
+      "representativeWAV": {
+        "byteSize": 1814444,
+        "filename": "vcsl-kawai-offline-representative.wav",
+        "format": "48kHz mono PCM16",
+        "frames": 907200,
+        "normalization": "none",
+        "peakBeforePCM16": 0.02772315964102745,
+        "seconds": 18.9,
+        "segments": [
+          {
+            "durationSeconds": 1.55,
+            "frameCount": 74400,
+            "gain": 0.07999999821186066,
+            "label": "root MIDI 33, hold750ms + release800ms",
+            "startFrame": 0,
+            "startSeconds": 0,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.55,
+            "frameCount": 74400,
+            "gain": 0.07999999821186066,
+            "label": "root MIDI 42, hold750ms + release800ms",
+            "startFrame": 76800,
+            "startSeconds": 1.6,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.55,
+            "frameCount": 74400,
+            "gain": 0.07999999821186066,
+            "label": "root MIDI 60, hold750ms + release800ms",
+            "startFrame": 153600,
+            "startSeconds": 3.2,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.55,
+            "frameCount": 74400,
+            "gain": 0.07999999821186066,
+            "label": "root MIDI 96, hold750ms + release800ms",
+            "startFrame": 230400,
+            "startSeconds": 4.8,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 0.85,
+            "frameCount": 40800,
+            "gain": 0.07999999821186066,
+            "label": "MIDI60 hold0.05s + release800ms",
+            "startFrame": 307200,
+            "startSeconds": 6.4,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.8,
+            "frameCount": 86400,
+            "gain": 0.07999999821186066,
+            "label": "MIDI60 hold1.0s + release800ms",
+            "startFrame": 350400,
+            "startSeconds": 7.3,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 5.8,
+            "frameCount": 278400,
+            "gain": 0.07999999821186066,
+            "label": "MIDI60 hold5.0s + release800ms",
+            "startFrame": 439200,
+            "startSeconds": 9.15,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 2,
+            "frameCount": 96000,
+            "gain": 0.07999999821186066,
+            "label": "MIDI60 10Hz, first20 of100 measured strikes",
+            "startFrame": 720000,
+            "startSeconds": 15,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.8,
+            "frameCount": 86400,
+            "gain": 0.1599999964237213,
+            "label": "All covered notes, gain0.16 velocity127, hold1s + release800ms",
+            "startFrame": 818400,
+            "startSeconds": 17.05,
+            "velocity": 127
+          }
+        ],
+        "sha256": "b24edbbad97888a5a8e89803add09ef49ef8f2d8cc969916e9b7a153aa022669"
+      },
+      "retrigger": {
+        "first10Maximum": 0.001040786737576127,
+        "hz": 10,
+        "last10Maximum": 0.0010405390057712793,
+        "midi": 60,
+        "peak": 0.001040786737576127,
+        "strikePeaks": [
+          0.0009756085928529501,
+          0.001040786737576127,
+          0.0010407500667497516,
+          0.0010405733482912183,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793,
+          0.0010405390057712793
+        ],
+        "strikes": 100,
+        "velocity": 64
+      },
+      "status": "passed",
+      "task": "C-001B",
+      "thresholdAmplitude": 1.0000000116860974e-07,
+      "timestampUTC": "2026-10-28T07:55:30Z",
+      "uncoveredMIDI": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "verificationImplementation": [
+        {
+          "byteSize": 11901,
+          "path": "Code/Scripts/verify_candidate_banks.py",
+          "sha256": "4650a311016821d2f82121f04a339364950efb5fa38f248864852a43e30b571f"
+        },
+        {
+          "byteSize": 23331,
+          "path": "Code/Tests/PianoAudioTests/CandidateBankTests.swift",
+          "sha256": "3d130611fca0932528de6f0de1f030a1c04a3b0235760924644c19287bd3ee25"
+        }
+      ]
+    },
+    {
+      "bankPath": "Design/Audio/probes/A-001B/vcsl-steinway-b/trial.sf2",
+      "bankSHA256": "8261dac642441fcf78a5946e96f898119ebd609227590c8638f148dea5b7f359",
+      "candidateID": "vcsl-steinway-b",
+      "checkCount": 193,
+      "chords": [
+        {
+          "gain": 0.07999999821186066,
+          "gainSettlingPeak": 0,
+          "gainSettlingSilenceSeconds": 0.1,
+          "midi": [
+            33,
+            34,
+            35,
+            41,
+            42,
+            43,
+            59,
+            60,
+            61,
+            95,
+            96
+          ],
+          "noteCommands": 11,
+          "peak": 0.023075371980667114,
+          "renderSeconds": 1,
+          "rms": 0.003850227356509113,
+          "velocity": 127
+        },
+        {
+          "gain": 0.1599999964237213,
+          "gainSettlingPeak": 0,
+          "gainSettlingSilenceSeconds": 0.1,
+          "midi": [
+            33,
+            34,
+            35,
+            41,
+            42,
+            43,
+            59,
+            60,
+            61,
+            95,
+            96
+          ],
+          "noteCommands": 11,
+          "peak": 0.03181697428226471,
+          "renderSeconds": 1,
+          "rms": 0.007270782469029595,
+          "velocity": 127
+        }
+      ],
+      "coverageMeasurements": [
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 2.993725424041945,
+          "analysisAverageStride": 8,
+          "correlation": 0.9773496816408016,
+          "declaredCovered": true,
+          "estimatedHz": 55.09519067899755,
+          "midi": 33,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0016479827463626862,
+          "rms": 0.0004483549334785645
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 3.028122782604205,
+          "analysisAverageStride": 8,
+          "correlation": 0.975482806763073,
+          "declaredCovered": true,
+          "estimatedHz": 58.372480974493264,
+          "midi": 34,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.001648247940465808,
+          "rms": 0.00044039925739649687
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 2.935497039797845,
+          "analysisAverageStride": 8,
+          "correlation": 0.977706889879711,
+          "declaredCovered": true,
+          "estimatedHz": 61.84018061184939,
+          "midi": 35,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0016475229058414698,
+          "rms": 0.0004319547047180029
+        },
+        {
+          "declaredCovered": false,
+          "midi": 36,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 37,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 38,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 39,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 40,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 0.24311685590383483,
+          "analysisAverageStride": 8,
+          "correlation": 0.990343289936463,
+          "declaredCovered": true,
+          "estimatedHz": 87.3193192320696,
+          "midi": 41,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0012067279312759638,
+          "rms": 0.0003455463724650259
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 0.1500213700554982,
+          "analysisAverageStride": 8,
+          "correlation": 0.9918187621826347,
+          "declaredCovered": true,
+          "estimatedHz": 92.50662156046802,
+          "midi": 42,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0012070781085640192,
+          "rms": 0.0003395467195373538
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 0.23505343440117804,
+          "analysisAverageStride": 8,
+          "correlation": 0.9903917469166746,
+          "declaredCovered": true,
+          "estimatedHz": 98.01216541822372,
+          "midi": 43,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0012065948685631156,
+          "rms": 0.0003336918021616819
+        },
+        {
+          "declaredCovered": false,
+          "midi": 44,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 45,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 46,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 47,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 48,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 49,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 50,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 51,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 52,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 53,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 54,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 55,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 56,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 57,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 58,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 1.195819983626741,
+          "analysisAverageStride": 4,
+          "correlation": 0.9807882035095874,
+          "declaredCovered": true,
+          "estimatedHz": 247.11228022616106,
+          "midi": 59,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0010226914891973138,
+          "rms": 0.0002184100974260734
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 0.9743673487710065,
+          "analysisAverageStride": 3,
+          "correlation": 0.983832908377919,
+          "declaredCovered": true,
+          "estimatedHz": 261.7728539693225,
+          "midi": 60,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0010227065067738295,
+          "rms": 0.00021327938770707692
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 0.934098003604818,
+          "analysisAverageStride": 3,
+          "correlation": 0.9825148416616534,
+          "declaredCovered": true,
+          "estimatedHz": 277.33222692822585,
+          "midi": 61,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0010216792579740286,
+          "rms": 0.0002080655619311336
+        },
+        {
+          "declaredCovered": false,
+          "midi": 62,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 63,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 64,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 65,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 66,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 67,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 68,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 69,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 70,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 71,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 72,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 73,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 74,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 75,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 76,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 77,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 78,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 79,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 80,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 81,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 82,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 83,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 84,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 85,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 86,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 87,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 88,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 89,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 90,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 91,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 92,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 93,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "declaredCovered": false,
+          "midi": 94,
+          "onsetFrameAboveThreshold": null,
+          "onsetSecondsAboveThreshold": null,
+          "peak": 0,
+          "rms": 0
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 10.795116317829342,
+          "analysisAverageStride": 1,
+          "correlation": 0.9230065999974431,
+          "declaredCovered": true,
+          "estimatedHz": 1987.8901354377833,
+          "midi": 95,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0007307506748475134,
+          "rms": 5.928131339584359e-05
+        },
+        {
+          "absoluteOffsetFromNominalCentsUncertified": 10.764298082403803,
+          "analysisAverageStride": 1,
+          "correlation": 0.9307428306536408,
+          "declaredCovered": true,
+          "estimatedHz": 2106.0587431972276,
+          "midi": 96,
+          "onsetFrameAboveThreshold": 48,
+          "onsetSecondsAboveThreshold": 0.001,
+          "peak": 0.0007315065013244748,
+          "rms": 5.7862000106496154e-05
+        }
+      ],
+      "coveredMIDI": [
+        33,
+        34,
+        35,
+        41,
+        42,
+        43,
+        59,
+        60,
+        61,
+        95,
+        96
+      ],
+      "failures": [],
+      "gainZero": {
+        "existingVoiceClearedPeak": 0,
+        "freshStrikePeak": 0.001279680640436709,
+        "gainRaisedWithoutNewStrikePeak": 0,
+        "mutedStrikePeak": 0
+      },
+      "hardwareOutput": false,
+      "inputSnapshotUnchangedAfterRender": true,
+      "inputState": "candidate",
+      "inputVerificationSHA256": "92ad0bbb3b75269f8751996d54dd449d6470afef21d2c43492091df5b699ad02",
+      "loadedSelectors": {
+        "bankLSB": 0,
+        "bankMSB": 121,
+        "program": 0
+      },
+      "loadStatus": "passed",
+      "panic": {
+        "nextStrikePeak": 0.0010227065067738295,
+        "postPanicPeak": 0
+      },
+      "pitchRelationships": [
+        {
+          "errorCents": -0.034397358562216596,
+          "expectedCents": -100,
+          "measuredCents": -100.03439735856222,
+          "neighborEstimatedHz": 55.09519067899755,
+          "neighborMIDI": 33,
+          "rootEstimatedHz": 58.372480974493264,
+          "rootMIDI": 34,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": -0.09262574280680269,
+          "expectedCents": 100,
+          "measuredCents": 99.9073742571932,
+          "neighborEstimatedHz": 61.84018061184939,
+          "neighborMIDI": 35,
+          "rootEstimatedHz": 58.372480974493264,
+          "rootMIDI": 34,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": 0.09309548584830907,
+          "expectedCents": -100,
+          "measuredCents": -99.90690451415169,
+          "neighborEstimatedHz": 87.3193192320696,
+          "neighborMIDI": 41,
+          "rootEstimatedHz": 92.50662156046802,
+          "rootMIDI": 42,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": 0.08503206434571098,
+          "expectedCents": 100,
+          "measuredCents": 100.08503206434571,
+          "neighborEstimatedHz": 98.01216541822372,
+          "neighborMIDI": 43,
+          "rootEstimatedHz": 92.50662156046802,
+          "rootMIDI": 42,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": 0.22145263485607813,
+          "expectedCents": -100,
+          "measuredCents": -99.77854736514392,
+          "neighborEstimatedHz": 247.11228022616106,
+          "neighborMIDI": 59,
+          "rootEstimatedHz": 261.7728539693225,
+          "rootMIDI": 60,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": -0.04026934516615199,
+          "expectedCents": 100,
+          "measuredCents": 99.95973065483385,
+          "neighborEstimatedHz": 277.33222692822585,
+          "neighborMIDI": 61,
+          "rootEstimatedHz": 261.7728539693225,
+          "rootMIDI": 60,
+          "toleranceCents": 25
+        },
+        {
+          "errorCents": 0.030818235425215335,
+          "expectedCents": -100,
+          "measuredCents": -99.96918176457478,
+          "neighborEstimatedHz": 1987.8901354377833,
+          "neighborMIDI": 95,
+          "rootEstimatedHz": 2106.0587431972276,
+          "rootMIDI": 96,
+          "toleranceCents": 25
+        }
+      ],
+      "releaseMeasurements": [
+        {
+          "earlyRelease100msPeak": 0.0010886164382100105,
+          "heldPeak": 0.001648247940465808,
+          "holdSeconds": 0.05,
+          "midi": 34,
+          "preReleaseLast10msPeak": 0.0015391504857689142,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 19281,
+          "releaseLastSecondsAboveThreshold": 0.4016875,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.0005575064569711685,
+          "heldPeak": 0.001648247940465808,
+          "holdSeconds": 1,
+          "midi": 34,
+          "preReleaseLast10msPeak": 0.0005332626169547439,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 18152,
+          "releaseLastSecondsAboveThreshold": 0.37816666666666665,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.00013414431305136532,
+          "heldPeak": 0.001648247940465808,
+          "holdSeconds": 5,
+          "midi": 34,
+          "preReleaseLast10msPeak": 0.0001305549085373059,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 15186,
+          "releaseLastSecondsAboveThreshold": 0.316375,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.0010076598264276981,
+          "heldPeak": 0.0011698507005348802,
+          "holdSeconds": 0.05,
+          "midi": 42,
+          "preReleaseLast10msPeak": 0.0009774329373613,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 18503,
+          "releaseLastSecondsAboveThreshold": 0.38547916666666665,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.00029072651523165405,
+          "heldPeak": 0.0012070781085640192,
+          "holdSeconds": 1,
+          "midi": 42,
+          "preReleaseLast10msPeak": 0.0003705855633597821,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 17274,
+          "releaseLastSecondsAboveThreshold": 0.359875,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 8.386601257370785e-05,
+          "heldPeak": 0.0012070781085640192,
+          "holdSeconds": 5,
+          "midi": 42,
+          "preReleaseLast10msPeak": 0.00011205492046428844,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 15379,
+          "releaseLastSecondsAboveThreshold": 0.3203958333333333,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.0006212141597643495,
+          "heldPeak": 0.0010227065067738295,
+          "holdSeconds": 0.05,
+          "midi": 60,
+          "preReleaseLast10msPeak": 0.000837244966533035,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 17173,
+          "releaseLastSecondsAboveThreshold": 0.3577708333333333,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.00012018100096611306,
+          "heldPeak": 0.0010227065067738295,
+          "holdSeconds": 1,
+          "midi": 60,
+          "preReleaseLast10msPeak": 0.0001375386054860428,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 15228,
+          "releaseLastSecondsAboveThreshold": 0.31725,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 3.1184426916297525e-05,
+          "heldPeak": 0.0010227065067738295,
+          "holdSeconds": 5,
+          "midi": 60,
+          "preReleaseLast10msPeak": 3.532061236910522e-05,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 13099,
+          "releaseLastSecondsAboveThreshold": 0.27289583333333334,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0.00018417663522996008,
+          "heldPeak": 0.0007315065013244748,
+          "holdSeconds": 0.05,
+          "midi": 96,
+          "preReleaseLast10msPeak": 0.00030427545425482094,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 12923,
+          "releaseLastSecondsAboveThreshold": 0.2692291666666667,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 1.6654066712362692e-05,
+          "heldPeak": 0.0007315065013244748,
+          "holdSeconds": 1,
+          "midi": 96,
+          "preReleaseLast10msPeak": 8.57778013596544e-06,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": 10324,
+          "releaseLastSecondsAboveThreshold": 0.21508333333333332,
+          "sampleAlreadySilentBeforeRelease": false
+        },
+        {
+          "earlyRelease100msPeak": 0,
+          "heldPeak": 0.0007315065013244748,
+          "holdSeconds": 5,
+          "midi": 96,
+          "preReleaseLast10msPeak": 0,
+          "release600to800msPeak": 0,
+          "releaseLastFrameAboveThreshold": null,
+          "releaseLastSecondsAboveThreshold": null,
+          "sampleAlreadySilentBeforeRelease": true
+        }
+      ],
+      "renderChannels": 1,
+      "renderSampleRate": 48000,
+      "reprepare": {
+        "gain": 0.07999999821186066,
+        "initialPeak": 0,
+        "newStrikePeak": 0.0010227065067738295,
+        "renderRejectedWhileShutdown": true
+      },
+      "representativeWAV": {
+        "byteSize": 1814444,
+        "filename": "vcsl-steinway-b-offline-representative.wav",
+        "format": "48kHz mono PCM16",
+        "frames": 907200,
+        "normalization": "none",
+        "peakBeforePCM16": 0.03181697428226471,
+        "seconds": 18.9,
+        "segments": [
+          {
+            "durationSeconds": 1.55,
+            "frameCount": 74400,
+            "gain": 0.07999999821186066,
+            "label": "root MIDI 34, hold750ms + release800ms",
+            "startFrame": 0,
+            "startSeconds": 0,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.55,
+            "frameCount": 74400,
+            "gain": 0.07999999821186066,
+            "label": "root MIDI 42, hold750ms + release800ms",
+            "startFrame": 76800,
+            "startSeconds": 1.6,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.55,
+            "frameCount": 74400,
+            "gain": 0.07999999821186066,
+            "label": "root MIDI 60, hold750ms + release800ms",
+            "startFrame": 153600,
+            "startSeconds": 3.2,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.55,
+            "frameCount": 74400,
+            "gain": 0.07999999821186066,
+            "label": "root MIDI 96, hold750ms + release800ms",
+            "startFrame": 230400,
+            "startSeconds": 4.8,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 0.85,
+            "frameCount": 40800,
+            "gain": 0.07999999821186066,
+            "label": "MIDI60 hold0.05s + release800ms",
+            "startFrame": 307200,
+            "startSeconds": 6.4,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.8,
+            "frameCount": 86400,
+            "gain": 0.07999999821186066,
+            "label": "MIDI60 hold1.0s + release800ms",
+            "startFrame": 350400,
+            "startSeconds": 7.3,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 5.8,
+            "frameCount": 278400,
+            "gain": 0.07999999821186066,
+            "label": "MIDI60 hold5.0s + release800ms",
+            "startFrame": 439200,
+            "startSeconds": 9.15,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 2,
+            "frameCount": 96000,
+            "gain": 0.07999999821186066,
+            "label": "MIDI60 10Hz, first20 of100 measured strikes",
+            "startFrame": 720000,
+            "startSeconds": 15,
+            "velocity": 64
+          },
+          {
+            "durationSeconds": 1.8,
+            "frameCount": 86400,
+            "gain": 0.1599999964237213,
+            "label": "All covered notes, gain0.16 velocity127, hold1s + release800ms",
+            "startFrame": 818400,
+            "startSeconds": 17.05,
+            "velocity": 127
+          }
+        ],
+        "sha256": "439b4ea2ff0abe8b425388b4cddceaa15b12bbaa8c8f2ef145e67861963e9ea9"
+      },
+      "retrigger": {
+        "first10Maximum": 0.0010227065067738295,
+        "hz": 10,
+        "last10Maximum": 0.0010093852179124951,
+        "midi": 60,
+        "peak": 0.0010227065067738295,
+        "strikePeaks": [
+          0.0010227065067738295,
+          0.0010130757000297308,
+          0.0010096468031406403,
+          0.0010094166500493884,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951,
+          0.0010093852179124951
+        ],
+        "strikes": 100,
+        "velocity": 64
+      },
+      "status": "passed",
+      "task": "C-001B",
+      "thresholdAmplitude": 1.0000000116860974e-07,
+      "timestampUTC": "2026-10-28T07:55:32Z",
+      "uncoveredMIDI": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "verificationImplementation": [
+        {
+          "byteSize": 11901,
+          "path": "Code/Scripts/verify_candidate_banks.py",
+          "sha256": "4650a311016821d2f82121f04a339364950efb5fa38f248864852a43e30b571f"
+        },
+        {
+          "byteSize": 23331,
+          "path": "Code/Tests/PianoAudioTests/CandidateBankTests.swift",
+          "sha256": "3d130611fca0932528de6f0de1f030a1c04a3b0235760924644c19287bd3ee25"
+        }
+      ]
+    }
+  ],
+  "verificationImplementation": [
+    {
+      "path": "Code/Scripts/verify_candidate_banks.py",
+      "byteSize": 11901,
+      "sha256": "4650a311016821d2f82121f04a339364950efb5fa38f248864852a43e30b571f"
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/CandidateBankTests.swift",
+      "byteSize": 23331,
+      "sha256": "3d130611fca0932528de6f0de1f030a1c04a3b0235760924644c19287bd3ee25"
+    }
+  ],
+  "pitchEstimatorCalibration": {
+    "inputVerificationSHA256": "92ad0bbb3b75269f8751996d54dd449d6470afef21d2c43492091df5b699ad02",
+    "maxAbsoluteErrorCents": 0.07518491594601413,
+    "method": "Same estimator, pure generated sines, MIDI33...96",
+    "results": [
+      {
+        "correlation": 0.9999862229236685,
+        "errorCents": 0.0020292972516431696,
+        "estimatedHz": 55.00006446928093,
+        "knownHz": 55,
+        "midi": 33
+      },
+      {
+        "correlation": 0.9999981238168679,
+        "errorCents": 0.0008768396208971477,
+        "estimatedHz": 58.27049970273781,
+        "knownHz": 58.27047018976124,
+        "midi": 34
+      },
+      {
+        "correlation": 0.9999247951942811,
+        "errorCents": -0.0005384865318652384,
+        "estimatedHz": 61.735393454711165,
+        "knownHz": 61.7354126570155,
+        "midi": 35
+      },
+      {
+        "correlation": 0.9998342642169804,
+        "errorCents": -0.0014533917951928062,
+        "estimatedHz": 65.40633641572094,
+        "knownHz": 65.40639132514966,
+        "midi": 36
+      },
+      {
+        "correlation": 0.9995477652418397,
+        "errorCents": -0.0036451329224557513,
+        "estimatedHz": 69.29551184157843,
+        "knownHz": 69.29565774421802,
+        "midi": 37
+      },
+      {
+        "correlation": 0.9997766604417593,
+        "errorCents": 0.00029588690961990667,
+        "estimatedHz": 73.41620452698635,
+        "knownHz": 73.41619197935188,
+        "midi": 38
+      },
+      {
+        "correlation": 0.99993590524576,
+        "errorCents": 0.0021726166587444167,
+        "estimatedHz": 77.78184354298521,
+        "knownHz": 77.78174593052023,
+        "midi": 39
+      },
+      {
+        "correlation": 0.9998649002593943,
+        "errorCents": -0.005879153429140565,
+        "estimatedHz": 82.40660938048516,
+        "knownHz": 82.4068892282175,
+        "midi": 40
+      },
+      {
+        "correlation": 0.9996790137727729,
+        "errorCents": -0.0033107038705733056,
+        "estimatedHz": 87.30689089784596,
+        "knownHz": 87.30705785825097,
+        "midi": 41
+      },
+      {
+        "correlation": 0.9999150525439527,
+        "errorCents": -0.0038719578307377473,
+        "estimatedHz": 92.498398802183,
+        "knownHz": 92.4986056779086,
+        "midi": 42
+      },
+      {
+        "correlation": 0.9997317969812295,
+        "errorCents": 0.009070190764289934,
+        "estimatedHz": 97.99937242727209,
+        "knownHz": 97.99885899543733,
+        "midi": 43
+      },
+      {
+        "correlation": 0.9997362707006462,
+        "errorCents": -0.006004557174269399,
+        "estimatedHz": 103.82581428820608,
+        "knownHz": 103.82617439498628,
+        "midi": 44
+      },
+      {
+        "correlation": 0.9986275562631852,
+        "errorCents": -0.0031189195256356972,
+        "estimatedHz": 109.99980182873658,
+        "knownHz": 110,
+        "midi": 45
+      },
+      {
+        "correlation": 0.998252689325568,
+        "errorCents": 0.003696764548318689,
+        "estimatedHz": 116.5411892337297,
+        "knownHz": 116.54094037952248,
+        "midi": 46
+      },
+      {
+        "correlation": 0.9986225329913696,
+        "errorCents": -0.004413605525815803,
+        "estimatedHz": 123.47051053809273,
+        "knownHz": 123.47082531403103,
+        "midi": 47
+      },
+      {
+        "correlation": 0.9987339286650605,
+        "errorCents": 0.0012038188268271384,
+        "estimatedHz": 130.8128736113946,
+        "knownHz": 130.8127826502993,
+        "midi": 48
+      },
+      {
+        "correlation": 0.9981626928544685,
+        "errorCents": 0.0004078575808215839,
+        "estimatedHz": 138.5913481388598,
+        "knownHz": 138.59131548843604,
+        "midi": 49
+      },
+      {
+        "correlation": 0.9984456756759967,
+        "errorCents": 0.0013566200026715956,
+        "estimatedHz": 146.83249901872543,
+        "knownHz": 146.8323839587038,
+        "midi": 50
+      },
+      {
+        "correlation": 0.9986419355416775,
+        "errorCents": 0.0035398272136221817,
+        "estimatedHz": 155.56380993960715,
+        "knownHz": 155.56349186104046,
+        "midi": 51
+      },
+      {
+        "correlation": 0.9982240020118597,
+        "errorCents": -0.0025050713121073866,
+        "estimatedHz": 164.81353997338886,
+        "knownHz": 164.81377845643496,
+        "midi": 52
+      },
+      {
+        "correlation": 0.9999969436871942,
+        "errorCents": -0.006282491617964191,
+        "estimatedHz": 174.61348205883533,
+        "knownHz": 174.61411571650194,
+        "midi": 53
+      },
+      {
+        "correlation": 0.9999154832482566,
+        "errorCents": 0.0011909744488142026,
+        "estimatedHz": 184.99733862169884,
+        "knownHz": 184.9972113558172,
+        "midi": 54
+      },
+      {
+        "correlation": 0.9999967701371744,
+        "errorCents": 0.00018603197972964208,
+        "estimatedHz": 195.99773905206243,
+        "knownHz": 195.99771799087463,
+        "midi": 55
+      },
+      {
+        "correlation": 0.9997370819810187,
+        "errorCents": -0.007196996278224922,
+        "estimatedHz": 207.6514855502068,
+        "knownHz": 207.65234878997256,
+        "midi": 56
+      },
+      {
+        "correlation": 0.9986313441681635,
+        "errorCents": -0.003932467188273509,
+        "estimatedHz": 219.99950027450112,
+        "knownHz": 220,
+        "midi": 57
+      },
+      {
+        "correlation": 0.9982575340057313,
+        "errorCents": 0.0006948351954911867,
+        "estimatedHz": 233.08197430707028,
+        "knownHz": 233.08188075904496,
+        "midi": 58
+      },
+      {
+        "correlation": 0.9986254279643286,
+        "errorCents": -0.0068958819541295475,
+        "estimatedHz": 246.94066700768923,
+        "knownHz": 246.94165062806206,
+        "midi": 59
+      },
+      {
+        "correlation": 0.9998711939888093,
+        "errorCents": 0.0015513527087528886,
+        "estimatedHz": 261.6257997424475,
+        "knownHz": 261.6255653005986,
+        "midi": 60
+      },
+      {
+        "correlation": 0.9995476635733024,
+        "errorCents": -0.004360010068032971,
+        "estimatedHz": 277.1819329097675,
+        "knownHz": 277.1826309768721,
+        "midi": 61
+      },
+      {
+        "correlation": 0.9984445937048431,
+        "errorCents": 0.0005274313724475501,
+        "estimatedHz": 293.66485738424495,
+        "knownHz": 293.6647679174076,
+        "midi": 62
+      },
+      {
+        "correlation": 0.9986446489187714,
+        "errorCents": 0.005638172311451048,
+        "estimatedHz": 311.12799698219004,
+        "knownHz": 311.1269837220809,
+        "midi": 63
+      },
+      {
+        "correlation": 0.9982233905202988,
+        "errorCents": -0.002731737553245098,
+        "estimatedHz": 329.6270367895129,
+        "knownHz": 329.6275569128699,
+        "midi": 64
+      },
+      {
+        "correlation": 0.9996790883575627,
+        "errorCents": -0.004579434734029698,
+        "estimatedHz": 349.2273076608664,
+        "knownHz": 349.2282314330039,
+        "midi": 65
+      },
+      {
+        "correlation": 0.9999156323248501,
+        "errorCents": -0.003835164855428624,
+        "estimatedHz": 369.99360307200465,
+        "knownHz": 369.9944227116344,
+        "midi": 66
+      },
+      {
+        "correlation": 0.9997328646826209,
+        "errorCents": 0.0054349735130647765,
+        "estimatedHz": 391.9966665999647,
+        "knownHz": 391.99543598174927,
+        "midi": 67
+      },
+      {
+        "correlation": 0.9997367811072897,
+        "errorCents": -0.00492875829210596,
+        "estimatedHz": 415.3035152247579,
+        "knownHz": 415.3046975799451,
+        "midi": 68
+      },
+      {
+        "correlation": 0.9986301482424487,
+        "errorCents": -0.002860689431700058,
+        "estimatedHz": 439.99927294503556,
+        "knownHz": 440,
+        "midi": 69
+      },
+      {
+        "correlation": 0.99825509203245,
+        "errorCents": 0.0012327186652832888,
+        "estimatedHz": 466.16409344835364,
+        "knownHz": 466.1637615180899,
+        "midi": 70
+      },
+      {
+        "correlation": 0.9986256181222426,
+        "errorCents": -0.008202576387445412,
+        "estimatedHz": 493.88096124559223,
+        "knownHz": 493.8833012561241,
+        "midi": 71
+      },
+      {
+        "correlation": 0.9998340538897448,
+        "errorCents": -0.0014096580676596954,
+        "estimatedHz": 523.250704543913,
+        "knownHz": 523.2511306011972,
+        "midi": 72
+      },
+      {
+        "correlation": 0.999547674220632,
+        "errorCents": -0.0009779044912918131,
+        "estimatedHz": 554.3649488151904,
+        "knownHz": 554.3652619537442,
+        "midi": 73
+      },
+      {
+        "correlation": 0.9997778576334195,
+        "errorCents": -0.001994412913763023,
+        "estimatedHz": 587.3288592209645,
+        "knownHz": 587.3295358348151,
+        "midi": 74
+      },
+      {
+        "correlation": 0.9999359855740819,
+        "errorCents": 0.0016240098622101087,
+        "estimatedHz": 622.2545511590296,
+        "knownHz": 622.2539674441618,
+        "midi": 75
+      },
+      {
+        "correlation": 0.9998648049567184,
+        "errorCents": -0.0024086898637417664,
+        "estimatedHz": 659.254196595625,
+        "knownHz": 659.2551138257398,
+        "midi": 76
+      },
+      {
+        "correlation": 0.9996791408960435,
+        "errorCents": -0.0037063977089223294,
+        "estimatedHz": 698.4549675426781,
+        "knownHz": 698.4564628660078,
+        "midi": 77
+      },
+      {
+        "correlation": 0.9999155929353757,
+        "errorCents": -0.002702544554329738,
+        "estimatedHz": 739.9876902638814,
+        "knownHz": 739.9888454232688,
+        "midi": 78
+      },
+      {
+        "correlation": 0.999732908909985,
+        "errorCents": 0.004642843629427092,
+        "estimatedHz": 783.9929744821661,
+        "knownHz": 783.9908719634985,
+        "midi": 79
+      },
+      {
+        "correlation": 0.9997366293948107,
+        "errorCents": -0.005536880554405563,
+        "estimatedHz": 830.6067386862283,
+        "knownHz": 830.6093951598903,
+        "midi": 80
+      },
+      {
+        "correlation": 0.9986291839459854,
+        "errorCents": -0.003041836782868557,
+        "estimatedHz": 879.9984538115925,
+        "knownHz": 880,
+        "midi": 81
+      },
+      {
+        "correlation": 0.9982559644697038,
+        "errorCents": 0.000979538302870549,
+        "estimatedHz": 932.3280505505148,
+        "knownHz": 932.3275230361799,
+        "midi": 82
+      },
+      {
+        "correlation": 0.9986255847207273,
+        "errorCents": -0.007521452575125712,
+        "estimatedHz": 987.7623111089448,
+        "knownHz": 987.7666025122483,
+        "midi": 83
+      },
+      {
+        "correlation": 0.9998342283748876,
+        "errorCents": -0.006134338772276106,
+        "estimatedHz": 1046.4985531029458,
+        "knownHz": 1046.5022612023945,
+        "midi": 84
+      },
+      {
+        "correlation": 0.9990974752908646,
+        "errorCents": 0.014153995626759168,
+        "estimatedHz": 1108.7395885577275,
+        "knownHz": 1108.7305239074883,
+        "midi": 85
+      },
+      {
+        "correlation": 0.9997778390272565,
+        "errorCents": -0.011955092165845666,
+        "estimatedHz": 1174.6509600518018,
+        "knownHz": 1174.6590716696303,
+        "midi": 86
+      },
+      {
+        "correlation": 0.9975422274807569,
+        "errorCents": -0.011528827872784033,
+        "estimatedHz": 1244.4996473491533,
+        "knownHz": 1244.5079348883237,
+        "midi": 87
+      },
+      {
+        "correlation": 0.9975609310655502,
+        "errorCents": 0.01570182034419679,
+        "estimatedHz": 1318.522186233633,
+        "knownHz": 1318.5102276514797,
+        "midi": 88
+      },
+      {
+        "correlation": 0.9978164233951079,
+        "errorCents": 0.024274291275811124,
+        "estimatedHz": 1396.9325125169403,
+        "knownHz": 1396.9129257320155,
+        "midi": 89
+      },
+      {
+        "correlation": 0.9964845597936932,
+        "errorCents": 0.017736189172039767,
+        "estimatedHz": 1479.992853036057,
+        "knownHz": 1479.9776908465376,
+        "midi": 90
+      },
+      {
+        "correlation": 0.9968395737745055,
+        "errorCents": -0.0309226978885814,
+        "estimatedHz": 1567.953737434883,
+        "knownHz": 1567.981743926997,
+        "midi": 91
+      },
+      {
+        "correlation": 0.9997365690051928,
+        "errorCents": -0.022930207802490395,
+        "estimatedHz": 1661.196787610312,
+        "knownHz": 1661.2187903197805,
+        "midi": 92
+      },
+      {
+        "correlation": 0.998026677209255,
+        "errorCents": 0.05389064797324222,
+        "estimatedHz": 1760.0547869404072,
+        "knownHz": 1760,
+        "midi": 93
+      },
+      {
+        "correlation": 0.9980185128905654,
+        "errorCents": -0.06392858483508893,
+        "estimatedHz": 1864.5861919752033,
+        "knownHz": 1864.6550460723597,
+        "midi": 94
+      },
+      {
+        "correlation": 0.9970470848629913,
+        "errorCents": 0.07518491594601413,
+        "estimatedHz": 1975.619001351873,
+        "knownHz": 1975.533205024496,
+        "midi": 95
+      },
+      {
+        "correlation": 0.9998342250964141,
+        "errorCents": -0.032436489193871786,
+        "estimatedHz": 2092.9653081329684,
+        "knownHz": 2093.004522404789,
+        "midi": 96
+      }
+    ],
+    "status": "passed",
+    "testSourceSHA256": "3d130611fca0932528de6f0de1f030a1c04a3b0235760924644c19287bd3ee25",
+    "toleranceCents": 5
+  },
+  "wavArtifacts": [
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/vcsl-kawai-offline-representative.wav",
+      "filename": "vcsl-kawai-offline-representative.wav",
+      "sha256": "b24edbbad97888a5a8e89803add09ef49ef8f2d8cc969916e9b7a153aa022669",
+      "byteSize": 1814444,
+      "frames": 907200,
+      "seconds": 18.9,
+      "format": "48kHz mono PCM16 WAV"
+    },
+    {
+      "path": "docs/evidence/C-001C/candidate-regression/vcsl-steinway-b-offline-representative.wav",
+      "filename": "vcsl-steinway-b-offline-representative.wav",
+      "sha256": "439b4ea2ff0abe8b425388b4cddceaa15b12bbaa8c8f2ef145e67861963e9ea9",
+      "byteSize": 1814444,
+      "frames": 907200,
+      "seconds": 18.9,
+      "format": "48kHz mono PCM16 WAV"
+    }
+  ],
+  "wavTotalBytes": 3628888,
+  "hardwarePlayback": false,
+  "actualInputCaptured": false,
+  "limitations": [
+    "Partial 10/11 pitch coverage only",
+    "Pitch estimator uses expected-period search and is not an absolute tuning certification",
+    "Mixed peaks do not establish internal voice counts",
+    "No listening, hardware latency or real device switch tests"
+  ]
+}

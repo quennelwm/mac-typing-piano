@@ -3,9 +3,25 @@ import Carbon
 import CoreGraphics
 import PianoCore
 
-/// Finite, opt-in probe. No authorization request or event injection APIs.
+/// User-started, opt-in observation. No authorization request or event injection APIs.
 /// All state belongs to the main run loop; callbacks only normalize and enqueue.
-public final class InputMonitor {
+public enum InputSessionDuration: Equatable {
+    case test60Seconds, continuous
+    public func stopReason(elapsed: TimeInterval, secureInput: Bool, permissionValid: Bool) -> String? {
+        if secureInput { return "安全输入阻断；已暂停，请在安全输入结束后手动开始" }
+        if !permissionValid { return "输入监控授权已失效；已暂停" }
+        if self == .test60Seconds && elapsed >= 60 { return "60秒测试窗口结束" }
+        return nil
+    }
+}
+public protocol InputMonitoring: AnyObject {
+    var mode: InputMonitor.Mode { get }
+    var onEvent: ((NormalizedKeyEvent) -> Void)? { get set }
+    var onStop: ((String) -> Void)? { get set }
+    func start(global: Bool, duration: InputSessionDuration) throws
+    func stop()
+}
+public final class InputMonitor: InputMonitoring {
     public enum Mode { case stopped, local, global }
     public private(set) var mode: Mode = .stopped
     public var onEvent: ((NormalizedKeyEvent) -> Void)?
@@ -21,7 +37,7 @@ public final class InputMonitor {
     public static var secureInput: Bool { IsSecureEventInputEnabled() }
     public init(mapping: KeyMapping) throws { normalizer = try InputNormalizer(mapping: mapping) }
 
-    public func start(global: Bool) throws {
+    public func start(global: Bool, duration: InputSessionDuration = .test60Seconds) throws {
         precondition(Thread.isMainThread)
         stop()
         guard !Self.secureInput else { throw ProbeError.invalid("安全输入已启用；探针保持停止") }
@@ -62,9 +78,7 @@ public final class InputMonitor {
         let start = ProcessInfo.processInfo.systemUptime
         timer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true) { [weak self] _ in
             guard let self else { return }
-            if ProcessInfo.processInfo.systemUptime - start >= 60 { self.fail("60秒测试窗口结束") }
-            else if Self.secureInput { self.fail("安全输入阻断") }
-            else if self.mode == .global && !Self.hasExistingPermission { self.fail("输入监控授权已失效") }
+            if let reason = duration.stopReason(elapsed: ProcessInfo.processInfo.systemUptime - start, secureInput: Self.secureInput, permissionValid: self.mode != .global || Self.hasExistingPermission) { self.fail(reason) }
         }
         if let timer { RunLoop.main.add(timer, forMode: .common) }
     }
@@ -99,8 +113,9 @@ public final class InputMonitor {
     private func fail(_ reason: String) {
         guard accepting else { return }
         accepting = false; epoch &+= 1
+        let expected = epoch
         DispatchQueue.main.async { [weak self] in
-            guard let self else { return }
+            guard let self, self.epoch == expected else { return }
             self.stop(); self.onStop?(reason)
         }
     }

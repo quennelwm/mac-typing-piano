@@ -1,0 +1,2 @@
+# designated => cdhash H"3f1d41bf04e557b9b73ebe1f6799fb1e394e3d22"
+Executable=/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.4/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe

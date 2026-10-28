@@ -1,0 +1,7 @@
+{
+  "exitCode": 1,
+  "message": "Refusing to overwrite the authorized frozen trial. Use an independent candidate directory.",
+  "beforeSHA256": "3e90c772f6590658377d94f2c7436677de9c44d3f3b15eb0dd6528492e4eaeae",
+  "afterSHA256": "3e90c772f6590658377d94f2c7436677de9c44d3f3b15eb0dd6528492e4eaeae",
+  "unchanged": true
+}

@@ -1,0 +1,20 @@
+{
+  "defaultDeviceID" : 134,
+  "defaultDeviceStatus" : 0,
+  "deviceName" : "QuennelAPP",
+  "outputControls" : [
+    {
+      "element" : 0,
+      "muted" : false
+    },
+    {
+      "element" : 1,
+      "volumeScalar" : 0.49999916553497314
+    },
+    {
+      "element" : 2,
+      "volumeScalar" : 0.5
+    }
+  ],
+  "readOnly" : true
+}
