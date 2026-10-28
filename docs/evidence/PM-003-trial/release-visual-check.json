@@ -1,0 +1,97 @@
+{
+  "binaryBuild": "C-001C release 784c2ac3",
+  "checks": [
+    {
+      "native": "native-900-rest-labels-true@1x.png",
+      "reference": "piano-900-rest@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-900-rest-labels-true@2x.png",
+      "reference": "piano-900-rest@2x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-900-single-labels-true@1x.png",
+      "reference": "piano-900-single@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-900-single-labels-true@2x.png",
+      "reference": "piano-900-single@2x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-900-multi-labels-true@1x.png",
+      "reference": "piano-900-multi@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-900-multi-labels-true@2x.png",
+      "reference": "piano-900-multi@2x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1000-rest-labels-true@1x.png",
+      "reference": "piano-1000-rest@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1000-rest-labels-true@2x.png",
+      "reference": "piano-1000-rest@2x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1000-single-labels-true@1x.png",
+      "reference": "piano-1000-single@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1000-single-labels-true@2x.png",
+      "reference": "piano-1000-single@2x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1000-multi-labels-true@1x.png",
+      "reference": "piano-1000-multi@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1000-multi-labels-true@2x.png",
+      "reference": "piano-1000-multi@2x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1100-rest-labels-true@1x.png",
+      "reference": "piano-1100-rest@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1100-rest-labels-true@2x.png",
+      "reference": "piano-1100-rest@2x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1100-single-labels-true@1x.png",
+      "reference": "piano-1100-single@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1100-single-labels-true@2x.png",
+      "reference": "piano-1100-single@2x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1100-multi-labels-true@1x.png",
+      "reference": "piano-1100-multi@1x.png",
+      "exactPixelMatch": true
+    },
+    {
+      "native": "native-1100-multi-labels-true@2x.png",
+      "reference": "piano-1100-multi@2x.png",
+      "exactPixelMatch": true
+    }
+  ],
+  "allPassed": true,
+  "count": 18
+}

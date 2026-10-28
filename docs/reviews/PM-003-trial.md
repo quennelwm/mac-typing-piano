@@ -16,3 +16,10 @@
 - UI已收到C-001C原生快照与动画证据，active复查硬缺陷；不因材质微调延迟试用。
 
 保留Fn及顶部整排排除；不新加触控板。完整音库/新程序尚未验收，生成即完成的说法无效。证据见docs/evidence/PM-003-trial。
+
+## 第一版可试用包接收
+
+- C-001C已交接；执行对话报告54项/12项回归通过。主对话对同一release二进制784c2ac3独立执行self-check/menu-smoke、strict签名、生成release快照并核对18张带标签三宽度/状态/倍率，主体与UI参考逐像素一致。
+- 通过CUA启动GUI并确认isRunning，但读取菜单超时，已结束本次默认停止的进程；不冒称实际菜单拖动/真实按键/硬件播放通过。
+- 包冻结在/Users/wuming/Library/Caches/local.typingpiano.probe/Reviewed-C001C/TypingPianoProbe.app，项目“试用版”目录有双击启动脚本及说明，脚本语法检查通过。不会被后续C-002T原路径打包覆盖。
+- 本版仍60秒会话，合成测试音覆盖64键；真实候选仅10/11音位、偏轻。可先体验输入/画面/菜单，完整钢琴和持续会话升级继续C-002T/A-002T。
