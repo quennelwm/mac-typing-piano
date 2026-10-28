@@ -1,0 +1,71 @@
+{
+  "appPID": 79922,
+  "appVersion": "0.2.4",
+  "finalNativeAutohide": 1,
+  "pianoBounds": {
+    "Height": 104,
+    "Width": 1496,
+    "X": 8,
+    "Y": 878
+  },
+  "phases": {
+    "dock-hidden-before": {
+      "first": {
+        "alpha": 1,
+        "elapsed": 0.004879958331002854,
+        "onscreen": true,
+        "phase": "dock-hidden-before",
+        "present": true,
+        "windowID": 4107
+      },
+      "last": {
+        "alpha": 1,
+        "elapsed": 0.3788334999990184,
+        "onscreen": true,
+        "phase": "dock-hidden-before",
+        "present": true,
+        "windowID": 4107
+      },
+      "intermediateAlphaCount": 0
+    },
+    "dock-visible": {
+      "first": {
+        "alpha": 1,
+        "elapsed": 0.4114359999948647,
+        "onscreen": true,
+        "phase": "dock-visible",
+        "present": true,
+        "windowID": 4107
+      },
+      "last": {
+        "alpha": -1,
+        "elapsed": 1.887356583327346,
+        "onscreen": false,
+        "phase": "dock-visible",
+        "present": false,
+        "windowID": 4107
+      },
+      "intermediateAlphaCount": 5
+    },
+    "dock-hidden-after": {
+      "first": {
+        "alpha": -1,
+        "elapsed": 1.9168158333268366,
+        "onscreen": false,
+        "phase": "dock-hidden-after",
+        "present": false,
+        "windowID": 4107
+      },
+      "last": {
+        "alpha": 1,
+        "elapsed": 3.499168083333643,
+        "onscreen": true,
+        "phase": "dock-hidden-after",
+        "present": true,
+        "windowID": 4107
+      },
+      "intermediateAlphaCount": 14
+    }
+  },
+  "scope": "Continuous global session after successful physical-key audio verification; native Dock setting toggled 1→0→1."
+}

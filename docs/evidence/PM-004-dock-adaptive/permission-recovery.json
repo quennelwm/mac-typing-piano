@@ -1,0 +1,11 @@
+{
+  "version": "0.2.4",
+  "oldRecordedCDHash": "ef6156f4e1f2deb96add72f58c2628820749542d",
+  "installedCDHash": "3f1d41bf04e557b9b73ebe1f6799fb1e394e3d22",
+  "toggleOffOnWasInsufficient": true,
+  "recovery": "Removed stale GUI entry; user personally added the selected fixed installed app and confirmed allowed. No TCC database editing, no tccutil reset.",
+  "actualGUI": "Current process permission authorized; global listen-only tap established; audio engine running; synthetic per-app TextEdit input captured 0 global events, so no false claim of physical keyboard proof.",
+  "secureInputObservation": "SecurityAgent PID77452 temporarily activated protected input; app stopped; agent then exited and global start succeeded. No security bypass.",
+  "physicalTest": "Passed: GUI observed global mode, 10 effective events, 5/5 NoteOn, live peak 0.041894343; user explicitly confirmed audible piano. Export occurred just after bounded timer ended and preserves counters.",
+  "finalSession": "Fixed installed 0.2.4 restarted into continuous global mode, PID79922. Global-session native Dock fade passed; original volume and binary unchanged."
+}
