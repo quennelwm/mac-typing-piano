@@ -6,7 +6,7 @@
 先确认自己的角色与任务ID，读 docs/00_Master_Development.md、docs/01_Interface_Contract.md、docs/03_Task_Board.md、docs/04_Decision_Log.md 和对应 prompts 文件。检查实际仓库与基线，不覆盖用户已有文件。
 
 ## 不可悄悄改变
-- 下方五排，排除顶部功能/Touch ID/电源；修饰键与空格也发声。
+- 下方五排，最上方整排全部排除（包括Esc、功能键、Touch ID/电源）；修饰键与空格也发声。Fn保留，不以Esc替代，见ADR-014。
 - 64键A1—C7、MIDI33—96、38白26黑作为本版基线；映射修改须审批。
 - 标签可由用户开关，默认显示；开启时每个黑白琴键在自身最底部显示对应实体按键灰色小字，左右可分；文字不烘焙进贴图。
 - 主入口为菜单栏下拉/子菜单，不做复杂主界面；系统Dock自动隐藏默认开启且可关闭，关闭前提醒与钢琴重叠风险，详见 docs/changes/CR-001-menu-options.md。
