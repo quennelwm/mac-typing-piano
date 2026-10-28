@@ -57,7 +57,8 @@
       ],
       "properties": {
         "visibleByDefault": {
-          "const": true
+          "const": true,
+          "description": "Initial default only; CR-001 permits a user showKeyLabels preference to hide labels at runtime."
         },
         "placement": {
           "const": "each_key_own_bottom"

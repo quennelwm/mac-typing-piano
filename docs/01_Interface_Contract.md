@@ -49,7 +49,7 @@ WAV 集合需要 zones：sampleFile、rootMIDI、lowMIDI、highMIDI、velocityMi
 
 `ui.theme.example.json` 是设计参数，尚无图形资源。正式 theme 的 assets 应包含：id、path、sha256、format、pixelWidth、pixelHeight、scale、contentRectPt、capInsetsPt、anchor、state、transparency、licenseRef。矢量则给 viewBox／设计坐标；不存在的字段写明不适用，不伪造像素尺寸。
 
-每个琴键标签独立绘制，位置为 each_key_own_bottom；visibleByDefault=true；bakeIntoTexture=false；followKeyTransform=true。theme 不允许重新定义 physicalKey→MIDI 关系，只控制样式。
+每个琴键标签独立绘制，位置为 each_key_own_bottom；visibleByDefault=true 只定义首次默认，运行时 showKeyLabels 用户偏好可关闭；bakeIntoTexture=false；followKeyTransform=true。theme 不允许重新定义 physicalKey→MIDI 关系，只控制样式。
 
 字母、数字直接显示；左右修饰键主符号＋独立 L/R 角标；完整名称放在设置预览的可访问说明。黑键标签不得落到白键下缘。字体缺字、裁剪和色彩对比度必须在真实字号检查。
 
@@ -63,6 +63,14 @@ InputService: startObservation()/stopObservation()；KeyStateReducer: consume(ev
 
 ## 8. 必须自动检查的静态项
 
-所有JSON可解析；schema验证；64键双射；音域与颜色一致；标签非空与左右可分；resource状态不冒充ready；引用文件存在、大小和hash一致；路径在资源根下；主题不得关闭标签；正式audio不可缺许可和覆盖。
+所有JSON可解析；schema验证；64键双射；音域与颜色一致；标签非空与左右可分；resource状态不冒充ready；引用文件存在、大小和hash一致；路径在资源根下；主题不得静默覆盖用户标签偏好；用户主动关闭合法；正式audio不可缺许可和覆盖。
 
 空assets数组属于未完成，不是“用代码生成好了”；程序化矢量方案可在manifest中明确 `format=procedural` 与实现版本，但仍需可复现、预览及审稿证据。
+
+## 9. CR-001 菜单与用户偏好
+
+主入口为原生菜单栏下拉/子菜单，不做复杂主界面。`showKeyLabels: Bool = true`只改变独立文字层，关闭时不清理activePressIDs、不停止动画或音频，重新开启读取当前映射。标签开启时原位置/颜色/随键规则完整保留。
+
+`autoHideSystemDock: Bool = true`代表用户期望的系统自动隐藏，与DockAvoidance独立。关闭经过风险提醒及确认；取消无写入，确认才请求关闭。系统读回状态和期望值分开，失败/未知不可作为已应用显示。原值、应用拥有的改动和外部变化需可区分，正常退出恢复策略见CR-001。
+
+当前只新增运行时偏好语义，现有资产字段结构与schemaVersion不变；后续若增加结构由主对话另行版本化。详细交互与本轮不写系统设置的边界见 `changes/CR-001-menu-options.md`。
