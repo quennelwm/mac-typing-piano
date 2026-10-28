@@ -1,6 +1,6 @@
 # Mac 打字钢琴｜四对话开发包 v1.0
 
-当前工作规格：v1.0＋[CR-001 菜单与开关调整](docs/changes/CR-001-menu-options.md)。原始DOCX保留为导入快照；开发以已更新Markdown、任务卡与ADR为准。
+当前工作规格：v1.0＋[CR-001 菜单与开关调整](docs/changes/CR-001-menu-options.md)＋[CR-002 上升小音符](docs/changes/CR-002-floating-note.md)。原始DOCX保留为导入快照；开发以已更新Markdown、任务卡与ADR为准。
 
 这是给吴铭与四个独立开发对话使用的规划和交接包，不是已完成的软件。
 

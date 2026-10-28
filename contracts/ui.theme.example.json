@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "themeVersion": "classic-draft.0.1",
+  "themeVersion": "classic-draft.0.2",
   "artifactState": "design_proposal",
   "geometry": {
     "preferredWidthPt": 1000,
@@ -40,8 +40,25 @@
     "residualGlowMs": 300,
     "hideMs": 100,
     "restoreDelayMs": 400,
-    "reducedMotion": "instant_shading"
+    "reducedMotion": "instant_shading",
+    "floatingNote": {
+      "enabledByDefault": true,
+      "glyph": "♪",
+      "fontSizePt": 12,
+      "durationMs": 700,
+      "maxDurationMs": 1000,
+      "risePt": 24,
+      "startGapPt": 4,
+      "effectHeadroomPt": 48,
+      "fadeInMs": 60,
+      "fadeOutMs": 400,
+      "easing": "easeOut",
+      "trigger": "unique_note_down",
+      "followLabelsVisibility": false,
+      "reducedMotion": "stationary_fade",
+      "reducedMotionDurationMs": 200
+    }
   },
   "assets": [],
-  "readinessNote": "Design proposal only; no image assets shipped in this development document package."
+  "readinessNote": "Design proposal including CR-002 floating-note parameters; production rendering and animation timing are not yet verified."
 }

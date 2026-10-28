@@ -74,3 +74,9 @@ InputService: startObservation()/stopObservation()；KeyStateReducer: consume(ev
 `autoHideSystemDock: Bool = true`代表用户期望的系统自动隐藏，与DockAvoidance独立。关闭经过风险提醒及确认；取消无写入，确认才请求关闭。系统读回状态和期望值分开，失败/未知不可作为已应用显示。原值、应用拥有的改动和外部变化需可区分，正常退出恢复策略见CR-001。
 
 当前只新增运行时偏好语义，现有资产字段结构与schemaVersion不变；后续若增加结构由主对话另行版本化。详细交互与本轮不写系统设置的边界见 `changes/CR-001-menu-options.md`。
+
+## 10. CR-002 击键小音符
+
+渲染层从统一NoteEvent.down按pressID生成一次浮动音符，保留独立instanceID、midiNote、单调开始时间及可视代次。release不再次生成、不截断实例；系统重复过滤沿用输入层。隐藏/暂停/安全重置清理全部实例，恢复不补播。标签关闭/声音关闭均不等同于隐藏浮层，小音符独立于音频尾音/residualGlow。
+
+themeVersion classic-draft.0.2在既有motion对象增加可选floatingNote配置，未改变schemaVersion或键映射。参数默认700ms、最大1000ms、12pt、上移24pt、上方48pt透明留白；旧主题缺字段按CR-002默认。留白不能缩放琴键本体或扩大鼠标拦截范围。具体配置和验收见 `changes/CR-002-floating-note.md`。

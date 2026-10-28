@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-28",
+  "scope": "CR-002 specification and theme proposal only",
+  "schemaValidation": "pass",
+  "themeVersion": "classic-draft.0.2",
+  "durationMs": 700,
+  "maxDurationMs": 1000,
+  "fadeBudgetCheck": "pass",
+  "headroomArithmetic": "pass; rendering still untested",
+  "keymapUnchanged": true,
+  "dispatch": {
+    "C-001": "tool returned target threadId successfully",
+    "U-001": "tool returned target threadId successfully"
+  },
+  "animationActuallyRendered": false,
+  "productionAppTested": false
+}
