@@ -1,0 +1,19 @@
+{
+  "verifiedAtUTC": "2026-10-28T17:56:51.211603+00:00",
+  "repository": "https://github.com/quennelwm/mac-typing-piano",
+  "visibility": "public",
+  "release": "https://github.com/quennelwm/mac-typing-piano/releases/tag/v0.2.6-trial",
+  "prerelease": true,
+  "releaseCommit": "2180a0478336991e59b3d7d3066e5877f1fc319f",
+  "tag": "v0.2.6-trial",
+  "annotatedTagObject": "32eb8371931a97fc37eec73369449f8ef10fbca5",
+  "archive": "Mac-Typing-Piano-0.2.6-arm64.zip",
+  "archiveBytes": 15347717,
+  "archiveSHA256": "d103175a0c64d14d24ae34c9f797bcd978b92bf192ec37b62563825a54215123",
+  "anonymousArchiveAndChecksumDownload": "PASS; curl config disabled, no GitHub credentials supplied",
+  "zipCRC": "PASS",
+  "remoteMainAndPeeledTagMatchReleaseCommit": "PASS before this publication receipt commit",
+  "temporaryTransferBranchRemoved": true,
+  "currentAuthorizedApp": "0.2.4 retained; binary hash unchanged",
+  "newReleaseFirstInstallAndPhysicalKeyboardAcceptance": "NOT RUN"
+}
