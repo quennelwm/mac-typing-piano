@@ -1,0 +1,301 @@
+{
+  "version": "u001b.1",
+  "deliveryRoute": "Code -> PM -> UI",
+  "status": "awaiting",
+  "requiredMetadata": [
+    "build revision",
+    "themeVersion and SHA-256",
+    "mappingVersion and SHA-256",
+    "OS and font fallback",
+    "backingScale",
+    "canvas and crop origin in pt",
+    "synthetic pressed IDs/pressIDs",
+    "elapsed monotonic time",
+    "showLabels/reducedMotion/hidden reason state"
+  ],
+  "scenes": [
+    {
+      "id": "900-1x-rest",
+      "widthPt": 900,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        900,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.rest",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "900-1x-single",
+      "widthPt": 900,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        900,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.single",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "900-1x-multi",
+      "widthPt": 900,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        900,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.multi",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "900-2x-rest",
+      "widthPt": 900,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1800,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.rest",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "900-2x-single",
+      "widthPt": 900,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1800,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.single",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "900-2x-multi",
+      "widthPt": 900,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1800,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.multi",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1000-1x-rest",
+      "widthPt": 1000,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1000,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.rest",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1000-1x-single",
+      "widthPt": 1000,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1000,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.single",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1000-1x-multi",
+      "widthPt": 1000,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1000,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.multi",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1000-2x-rest",
+      "widthPt": 1000,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        2000,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.rest",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1000-2x-single",
+      "widthPt": 1000,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        2000,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.single",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1000-2x-multi",
+      "widthPt": 1000,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        2000,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.multi",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1100-1x-rest",
+      "widthPt": 1100,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1100,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.rest",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1100-1x-single",
+      "widthPt": 1100,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1100,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.single",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1100-1x-multi",
+      "widthPt": 1100,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        1100,
+        104
+      ],
+      "backingScale": 1,
+      "scenarioFrom": "reference.json.scenarios.multi",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1100-2x-rest",
+      "widthPt": 1100,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        2200,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.rest",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1100-2x-single",
+      "widthPt": 1100,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        2200,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.single",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    },
+    {
+      "id": "1100-2x-multi",
+      "widthPt": 1100,
+      "bodyHeightPt": 56,
+      "headroomPt": 48,
+      "pixelSize": [
+        2200,
+        208
+      ],
+      "backingScale": 2,
+      "scenarioFrom": "reference.json.scenarios.multi",
+      "labelsVisible": true,
+      "format": "RGBA PNG",
+      "status": "awaiting"
+    }
+  ],
+  "additionalCases": [
+    "900/1000/1100 labels off same held snapshot",
+    "white-rest/all-black-held: Shift side markers regression",
+    "white-held/black-rest: minimum-contrast regression",
+    "1000pt floating single/multi at 0/100/350/700ms",
+    "reduced motion 0/100/200ms",
+    "restrike at 0/30ms: old expiry leaves newer instance",
+    "hide clears effects; restore does not replay",
+    "18pt template menu light/dark at1x/2x; slider0/50/100 sound disabled",
+    "Dock cancel/confirm simulated adapter only"
+  ],
+  "boundsExport": "Optional actual per-key rects and label ink bounds in reference coordinate system; identify measured vs predicted explicitly. Do not present expected reference values as measured output.",
+  "privacy": "Synthetic examples only; no real keyboard sequence, private desktop, global monitoring, hardware playback or OS Dock write required."
+}

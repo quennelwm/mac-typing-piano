@@ -1,0 +1,2238 @@
+{
+  "themeSha256": "1cd6ec885ff33d3cb071300c63b753604d29c5b4b28fbcdccf69812fff0220fb",
+  "fieldCount": 372,
+  "fields": [
+    {
+      "jsonPointer": "/schemaVersion",
+      "value": "1.0.0",
+      "classification": "load_validation",
+      "handling": "Validate identity/status/hash; PM acceptance authorizes prototype loading, not ready/public release."
+    },
+    {
+      "jsonPointer": "/themeVersion",
+      "value": "quiet-ivory-u001.0.3",
+      "classification": "load_validation",
+      "handling": "Validate identity/status/hash; PM acceptance authorizes prototype loading, not ready/public release."
+    },
+    {
+      "jsonPointer": "/artifactState",
+      "value": "design_proposal",
+      "classification": "load_validation",
+      "handling": "Validate identity/status/hash; PM acceptance authorizes prototype loading, not ready/public release."
+    },
+    {
+      "jsonPointer": "/geometry/preferredWidthPt",
+      "value": 1000,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/minPreferredWidthPt",
+      "value": 900,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/maxPreferredWidthPt",
+      "value": 1100,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/preferredHeightPt",
+      "value": 56,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/blackWidthRatio",
+      "value": 0.59,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/blackHeightRatio",
+      "value": 0.64,
+      "classification": "derived_consistency",
+      "handling": "Check against explicit 50/32pt faces and 2pt white travel; do not apply to 56pt body height."
+    },
+    {
+      "jsonPointer": "/geometry/bottomMarginPt",
+      "value": 8,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/whiteKeyCount",
+      "value": 38,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/blackKeyCount",
+      "value": 26,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/outerInsetHorizontalPt",
+      "value": 2,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/keyTopPt",
+      "value": 2,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/whiteFaceHeightPt",
+      "value": 50,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/blackFaceHeightPt",
+      "value": 32,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/whiteGapPt",
+      "value": 0.7,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/geometry/restKeyBottomPt",
+      "value": 52,
+      "classification": "derived_consistency",
+      "handling": "Check against explicit 50/32pt faces and 2pt white travel; do not apply to 56pt body height."
+    },
+    {
+      "jsonPointer": "/geometry/depressedKeyBottomPt",
+      "value": 54,
+      "classification": "derived_consistency",
+      "handling": "Check against explicit 50/32pt faces and 2pt white travel; do not apply to 56pt body height."
+    },
+    {
+      "jsonPointer": "/geometry/heightScope",
+      "value": "Only 56pt rendered and checked in U-001; 48–76pt range remains unverified.",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/labels/visibleByDefault",
+      "value": true,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/textSource",
+      "value": "KeyMapping.labelParts",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/placement",
+      "value": "each_key_own_bottom",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/whiteFontSizePt",
+      "value": 10,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/blackFontSizePt",
+      "value": 9.5,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/minMainFontSizePt",
+      "value": 9,
+      "classification": "validation_constraint",
+      "handling": "Acceptance guard; do not silently shrink text to fit."
+    },
+    {
+      "jsonPointer": "/labels/sideFontSizePt",
+      "value": 6.5,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/whiteBottomInsetPt",
+      "value": 4,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/blackBottomInsetPt",
+      "value": 3,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/whiteColorHex",
+      "value": "#595959",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/blackColorHex",
+      "value": "#CDCDCD",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/contrastTarget",
+      "value": 4.5,
+      "classification": "validation_constraint",
+      "handling": "Acceptance guard; do not silently shrink text to fit."
+    },
+    {
+      "jsonPointer": "/labels/bakeIntoTexture",
+      "value": false,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/followKeyTransform",
+      "value": true,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/sideMarkerMode",
+      "value": "separate_upper_right_text",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/userToggleAllowed",
+      "value": true,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/mainOpticalOffsetWithSidePt",
+      "value": -0.6,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/sideRightInsetPt",
+      "value": 1.1,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/sideInkGapAboveMainPt/black",
+      "value": 0.6,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/sideInkGapAboveMainPt/white",
+      "value": -2,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/fontWeight",
+      "value": "medium",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/labels/fontStrategy",
+      "value": "system UI font with verified OS fallback; no font binaries distributed",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/motion/pressMs",
+      "value": 45,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/releaseMs",
+      "value": 100,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/minVisualPulseMs",
+      "value": 45,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/whiteDownPt",
+      "value": 2,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/blackDownPt",
+      "value": 1.5,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/residualGlowEnabled",
+      "value": false,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/residualGlowMs",
+      "value": 300,
+      "classification": "inactive_parameter",
+      "handling": "Residual glow is disabled; floating note remains enabled independently."
+    },
+    {
+      "jsonPointer": "/motion/hideMs",
+      "value": 100,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/restoreDelayMs",
+      "value": 400,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/reducedMotion",
+      "value": "instant_shading",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/enabledByDefault",
+      "value": true,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/glyph",
+      "value": "♪",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/fontSizePt",
+      "value": 12,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/durationMs",
+      "value": 700,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/maxDurationMs",
+      "value": 1000,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/risePt",
+      "value": 24,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/startGapPt",
+      "value": 4,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/effectHeadroomPt",
+      "value": 48,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/fadeInMs",
+      "value": 60,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/fadeOutMs",
+      "value": 400,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/easing",
+      "value": "easeOut",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/trigger",
+      "value": "unique_note_down",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/followLabelsVisibility",
+      "value": false,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/reducedMotion",
+      "value": "stationary_fade",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/reducedMotionDurationMs",
+      "value": 200,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/colorHex",
+      "value": "#626C66",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/haloColorHex",
+      "value": "#FFFFFF",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/haloBlurPt",
+      "value": 1.25,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/easingFormula",
+      "value": "1 - (1 - t)^3",
+      "classification": "design_metadata",
+      "handling": "Implement declared cubic function; never evaluate a theme expression as code."
+    },
+    {
+      "jsonPointer": "/motion/floatingNote/timeDomain",
+      "value": "normalized t in [0,1]",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/assets/0/id",
+      "value": "white-rest",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/path",
+      "value": "components/white-rest.svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/sha256",
+      "value": "ae9228b6bbe9602c0ccd1c8895c639d5948e2568288462b3991843a9657ab227",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/byteSize",
+      "value": 546,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/format",
+      "value": "svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/pixelWidth",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/pixelHeight",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/scale",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/notApplicable",
+      "value": "Vector, no fixed raster dimensions or backing scale.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/viewBox/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/viewBox/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/viewBox/2",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/viewBox/3",
+      "value": 50,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/contentRectPt/2",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/contentRectPt/3",
+      "value": 50,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/capInsetsPt/top",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/capInsetsPt/left",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/capInsetsPt/bottom",
+      "value": 3,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/capInsetsPt/right",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/anchor/y",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/state",
+      "value": "rest",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#original-design",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/role",
+      "value": "key-face-without-labels",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/0/rendering",
+      "value": "Prefer parameterized path drawing to preserve corner radii; do not stretch glyphs.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/id",
+      "value": "white-pressed",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/path",
+      "value": "components/white-pressed.svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/sha256",
+      "value": "7c0fa41fdbc12a322a4491ba29c997ec3a2e57ea2700fbdb6979c8542f0d87e1",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/byteSize",
+      "value": 558,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/format",
+      "value": "svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/pixelWidth",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/pixelHeight",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/scale",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/notApplicable",
+      "value": "Vector, no fixed raster dimensions or backing scale.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/viewBox/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/viewBox/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/viewBox/2",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/viewBox/3",
+      "value": 50,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/contentRectPt/2",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/contentRectPt/3",
+      "value": 50,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/capInsetsPt/top",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/capInsetsPt/left",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/capInsetsPt/bottom",
+      "value": 3,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/capInsetsPt/right",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/anchor/y",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/state",
+      "value": "pressed",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#original-design",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/role",
+      "value": "key-face-without-labels",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/1/rendering",
+      "value": "Prefer parameterized path drawing to preserve corner radii; do not stretch glyphs.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/id",
+      "value": "black-rest",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/path",
+      "value": "components/black-rest.svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/sha256",
+      "value": "ef526f9ac2fcd969459e042a2e53ae642a935d091faad30d0c8afe8d86936c21",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/byteSize",
+      "value": 544,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/format",
+      "value": "svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/pixelWidth",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/pixelHeight",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/scale",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/notApplicable",
+      "value": "Vector, no fixed raster dimensions or backing scale.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/viewBox/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/viewBox/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/viewBox/2",
+      "value": 19,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/viewBox/3",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/contentRectPt/2",
+      "value": 19,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/contentRectPt/3",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/capInsetsPt/top",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/capInsetsPt/left",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/capInsetsPt/bottom",
+      "value": 3,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/capInsetsPt/right",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/anchor/y",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/state",
+      "value": "rest",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#original-design",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/role",
+      "value": "key-face-without-labels",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/2/rendering",
+      "value": "Prefer parameterized path drawing to preserve corner radii; do not stretch glyphs.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/id",
+      "value": "black-pressed",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/path",
+      "value": "components/black-pressed.svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/sha256",
+      "value": "852ccbd08501785a5c885eaec230c11a50df614e61acda6fc591c0d96931b6f0",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/byteSize",
+      "value": 556,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/format",
+      "value": "svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/pixelWidth",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/pixelHeight",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/scale",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/notApplicable",
+      "value": "Vector, no fixed raster dimensions or backing scale.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/viewBox/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/viewBox/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/viewBox/2",
+      "value": 19,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/viewBox/3",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/contentRectPt/2",
+      "value": 19,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/contentRectPt/3",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/capInsetsPt/top",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/capInsetsPt/left",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/capInsetsPt/bottom",
+      "value": 3,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/capInsetsPt/right",
+      "value": 1.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/anchor/y",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/state",
+      "value": "pressed",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#original-design",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/role",
+      "value": "key-face-without-labels",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/3/rendering",
+      "value": "Prefer parameterized path drawing to preserve corner radii; do not stretch glyphs.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/id",
+      "value": "base",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/path",
+      "value": "components/base.svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/sha256",
+      "value": "515b03536851c9130d457c129967ab897787a243a2f388dcb4bae63c64f1eb9c",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/byteSize",
+      "value": 213,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/format",
+      "value": "svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/pixelWidth",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/pixelHeight",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/scale",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/notApplicable",
+      "value": "Vector; shadow is parameterized and not nine-sliced.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/viewBox/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/viewBox/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/viewBox/2",
+      "value": 1000,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/viewBox/3",
+      "value": 56,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/contentRectPt/2",
+      "value": 1000,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/contentRectPt/3",
+      "value": 56,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/capInsetsPt/top",
+      "value": 3,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/capInsetsPt/left",
+      "value": 3,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/capInsetsPt/bottom",
+      "value": 3,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/capInsetsPt/right",
+      "value": 3,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/anchor/y",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/state",
+      "value": "rest",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#original-design",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/4/role",
+      "value": "base",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/id",
+      "value": "shadow",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/path",
+      "value": "components/shadow.svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/sha256",
+      "value": "faaa62ffaca92b0974e64b602b57c9ad76a0ce0b7bfda80f727f5c9291074ae2",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/byteSize",
+      "value": 304,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/format",
+      "value": "svg",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/pixelWidth",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/pixelHeight",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/scale",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/notApplicable",
+      "value": "Vector; shadow is parameterized and not nine-sliced.",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/viewBox/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/viewBox/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/viewBox/2",
+      "value": 23,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/viewBox/3",
+      "value": 37,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/contentRectPt/0",
+      "value": 2,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/contentRectPt/1",
+      "value": 2,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/contentRectPt/2",
+      "value": 19,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/contentRectPt/3",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/capInsetsPt",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/anchor/y",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/state",
+      "value": "rest",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#original-design",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/5/role",
+      "value": "black-key-shadow",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/id",
+      "value": "menu-note-16-1x",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/path",
+      "value": "components/icons/menu-note-16@1x.png",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/sha256",
+      "value": "36997b8c91b1f0b228ddc45b4784589d6e6272c75e266688885c0dbc10f9c376",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/byteSize",
+      "value": 329,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/format",
+      "value": "png",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/pixelWidth",
+      "value": 16,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/pixelHeight",
+      "value": 16,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/scale",
+      "value": 1,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/contentRectPt/2",
+      "value": 16,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/contentRectPt/3",
+      "value": 16,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/capInsetsPt",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/anchor/y",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/state",
+      "value": "template",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#字体",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/role",
+      "value": "status-item-template",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/6/templateImage",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/id",
+      "value": "menu-note-16-2x",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/path",
+      "value": "components/icons/menu-note-16@2x.png",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/sha256",
+      "value": "2b0ec662f81c07fe9d43bb644b57edea140a39f69cace6c465c6b14c8b499c77",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/byteSize",
+      "value": 587,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/format",
+      "value": "png",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/pixelWidth",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/pixelHeight",
+      "value": 32,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/scale",
+      "value": 2,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/contentRectPt/2",
+      "value": 16,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/contentRectPt/3",
+      "value": 16,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/capInsetsPt",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/anchor/y",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/state",
+      "value": "template",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#字体",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/role",
+      "value": "status-item-template",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/7/templateImage",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/id",
+      "value": "menu-note-18-1x",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/path",
+      "value": "components/icons/menu-note-18@1x.png",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/sha256",
+      "value": "1ed72bad7ab26673832b98c290d227cc5aeb52c5ff1642cee110d9659d1634a1",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/byteSize",
+      "value": 383,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/format",
+      "value": "png",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/pixelWidth",
+      "value": 18,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/pixelHeight",
+      "value": 18,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/scale",
+      "value": 1,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/contentRectPt/2",
+      "value": 18,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/contentRectPt/3",
+      "value": 18,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/capInsetsPt",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/anchor/y",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/state",
+      "value": "template",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#字体",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/role",
+      "value": "status-item-template",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/8/templateImage",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/id",
+      "value": "menu-note-18-2x",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/path",
+      "value": "components/icons/menu-note-18@2x.png",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/sha256",
+      "value": "34200ad1fceb3d290f58a6255a66c5dc775fde80ff44678752c2817a0004ba53",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/byteSize",
+      "value": 672,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/format",
+      "value": "png",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/pixelWidth",
+      "value": 36,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/pixelHeight",
+      "value": 36,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/scale",
+      "value": 2,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/contentRectPt/0",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/contentRectPt/1",
+      "value": 0,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/contentRectPt/2",
+      "value": 18,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/contentRectPt/3",
+      "value": 18,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/capInsetsPt",
+      "value": null,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/anchor/x",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/anchor/y",
+      "value": 0.5,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/anchor/units",
+      "value": "normalized",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/state",
+      "value": "template",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/transparency",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/licenseRef",
+      "value": "SOURCE_AND_LICENSE.md#字体",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/role",
+      "value": "status-item-template",
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/assets/9/templateImage",
+      "value": true,
+      "classification": "resource_manifest",
+      "handling": "Integrity and optional component loading; native equivalent drawing may avoid SVG runtime dependency."
+    },
+    {
+      "jsonPointer": "/readinessNote",
+      "value": "U-001 candidate only; PM-002 approval and native product integration pending. CR-001 label toggle/menu CR-002 floating notes and CR-003 icon/volume slider included. No system setting is changed.",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/sourceMapping/path",
+      "value": "contracts/keymap.ansi64.v0.1.json",
+      "classification": "load_validation",
+      "handling": "Validate identity/status/hash; PM acceptance authorizes prototype loading, not ready/public release."
+    },
+    {
+      "jsonPointer": "/sourceMapping/mappingVersion",
+      "value": "ansi64-draft.0.1",
+      "classification": "load_validation",
+      "handling": "Validate identity/status/hash; PM acceptance authorizes prototype loading, not ready/public release."
+    },
+    {
+      "jsonPointer": "/sourceMapping/sha256",
+      "value": "147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b",
+      "classification": "load_validation",
+      "handling": "Validate identity/status/hash; PM acceptance authorizes prototype loading, not ready/public release."
+    },
+    {
+      "jsonPointer": "/candidateParameters/schemaNote",
+      "value": "Additional candidate metadata requires PM/Code acceptance; no contract file changed.",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/white/rest/0",
+      "value": "#FEFDFB",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/white/rest/1",
+      "value": "#EEEDE9",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/white/pressed/0",
+      "value": "#E7E5DF",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/white/pressed/1",
+      "value": "#D8D6D1",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/white/front/rest",
+      "value": "#D5D3CE",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/white/front/pressed",
+      "value": "#C3C1BC",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/white/label",
+      "value": "#595959",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/black/rest/0",
+      "value": "#424346",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/black/rest/1",
+      "value": "#242528",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/black/pressed/0",
+      "value": "#303134",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/black/pressed/1",
+      "value": "#1B1C1F",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/black/front/rest",
+      "value": "#17181B",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/black/front/pressed",
+      "value": "#141518",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/palette/black/label",
+      "value": "#CDCDCD",
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/blackShadow/rest/offsetPt/0",
+      "value": 0,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/blackShadow/rest/offsetPt/1",
+      "value": 1,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/blackShadow/rest/blurPt",
+      "value": 1.5,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/blackShadow/rest/opacity",
+      "value": 0.3,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/blackShadow/pressed/offsetPt/0",
+      "value": 0,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/blackShadow/pressed/offsetPt/1",
+      "value": 0.5,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/blackShadow/pressed/blurPt",
+      "value": 0.5,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/blackShadow/pressed/opacity",
+      "value": 0.18,
+      "classification": "runtime_parameter",
+      "handling": "Read from accepted candidate; preserve units and user preferences."
+    },
+    {
+      "jsonPointer": "/candidateParameters/mainEntry",
+      "value": "macOS status item and drop-down menu",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/candidateParameters/menuIcon/glyph",
+      "value": "♪",
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/menuIcon/sizesPt/0",
+      "value": 16,
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/menuIcon/sizesPt/1",
+      "value": 18,
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/menuIcon/isTemplate",
+      "value": true,
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/menuIcon/accessibleName",
+      "value": "打字钢琴",
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/menuIcon/animateOnTyping",
+      "value": false,
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/volumeControl/kind",
+      "value": "horizontal-slider",
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/volumeControl/rangePercent/0",
+      "value": 0,
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/volumeControl/rangePercent/1",
+      "value": 100,
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/volumeControl/target",
+      "value": "application-audio-bus",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/candidateParameters/volumeControl/independentOfSoundToggle",
+      "value": true,
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/volumeControl/systemVolumeUnchanged",
+      "value": true,
+      "classification": "product_adapter",
+      "handling": "Menu preferences/controls, separate from piano renderer. No global gestures or system volume."
+    },
+    {
+      "jsonPointer": "/candidateParameters/dockAutoHide/initialPreference",
+      "value": true,
+      "classification": "product_adapter",
+      "handling": "Code-owned system adapter and user confirmation; never apply setting while loading theme."
+    },
+    {
+      "jsonPointer": "/candidateParameters/dockAutoHide/controls",
+      "value": "macOS Dock setting, separately from piano avoidance",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/candidateParameters/dockAutoHide/offWarning",
+      "value": "关闭自动隐藏后，Dock 可能与底部钢琴重叠或遮挡。仍要关闭吗？",
+      "classification": "product_adapter",
+      "handling": "Code-owned system adapter and user confirmation; never apply setting while loading theme."
+    },
+    {
+      "jsonPointer": "/candidateParameters/dockAutoHide/cancelLabel",
+      "value": "保持自动隐藏",
+      "classification": "product_adapter",
+      "handling": "Code-owned system adapter and user confirmation; never apply setting while loading theme."
+    },
+    {
+      "jsonPointer": "/candidateParameters/dockAutoHide/confirmLabel",
+      "value": "仍然关闭",
+      "classification": "product_adapter",
+      "handling": "Code-owned system adapter and user confirmation; never apply setting while loading theme."
+    },
+    {
+      "jsonPointer": "/candidateParameters/dockAutoHide/runtimeImplemented",
+      "value": false,
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    },
+    {
+      "jsonPointer": "/candidateParameters/labelsOff",
+      "value": "Hide label layer only; retain key geometry and press animation.",
+      "classification": "design_metadata",
+      "handling": "Explanation/candidate history only; not a runtime success state or executable expression."
+    }
+  ]
+}

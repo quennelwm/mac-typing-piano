@@ -1,0 +1,100 @@
+{
+  "outputs": [
+    {
+      "label": "B",
+      "candidateID": "vcsl-kawai",
+      "file": "B.wav",
+      "sha256": "369692dbda315b2817ebd9671d96b7c2de88da5a9466da917488458f33410141",
+      "byteSize": 2224844,
+      "gainDB": 48.31898930487199,
+      "measured": {
+        "frames": 741600,
+        "durationSeconds": 15.45,
+        "rmsDBFS": -25.999999599169175,
+        "peakDBFS": -7.838606306642553,
+        "clippedSamples": 0
+      }
+    },
+    {
+      "label": "A",
+      "candidateID": "vcsl-steinway-b",
+      "file": "A.wav",
+      "sha256": "bd1535e666832ab8158d4f2e113bd6a4c6951e00fa1c5dcb8c7caee8974e376d",
+      "byteSize": 2224844,
+      "gainDB": 48.304218268635466,
+      "measured": {
+        "frames": 741600,
+        "durationSeconds": 15.45,
+        "rmsDBFS": -26.00000002602148,
+        "peakDBFS": -9.963579855059212,
+        "clippedSamples": 0
+      }
+    }
+  ],
+  "targetRMSdB": -26.0,
+  "plans": {
+    "vcsl-kawai": {
+      "rootCount": 28,
+      "additionalDownloadBytes": 62513620,
+      "fullRawLayerBytes": 90227472,
+      "missingRootMIDI": [
+        39,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        62,
+        64,
+        66,
+        68,
+        70,
+        74,
+        76,
+        78,
+        80,
+        82,
+        84,
+        87,
+        90,
+        93
+      ]
+    },
+    "vcsl-steinway-b": {
+      "rootCount": 32,
+      "additionalDownloadBytes": 96963856,
+      "fullRawLayerBytes": 111245456,
+      "missingRootMIDI": [
+        36,
+        38,
+        40,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        62,
+        64,
+        66,
+        68,
+        70,
+        72,
+        74,
+        76,
+        78,
+        80,
+        82,
+        84,
+        86,
+        88,
+        90,
+        92,
+        94
+      ]
+    }
+  }
+}

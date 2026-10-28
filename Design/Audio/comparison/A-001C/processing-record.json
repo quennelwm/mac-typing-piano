@@ -1,0 +1,241 @@
+{
+  "task": "A-001C",
+  "algorithm": "identical segments; final repeat excerpt 5ms linear endpoint fade; whole-excerpt constant gain to shared RMS target; peak ceiling -6.1dBFS; PCM24 nearest-even output",
+  "rmsTargetDBFS": -26.0,
+  "notLUFS": true,
+  "inputs": {
+    "Design/Audio/probes/A-001B/trial-index.json": {
+      "sha256": "478a14ac3d6f5022cdcabfd68796245b6a98ed62887a90b1b0e658de2c527880",
+      "byteSize": 5064
+    },
+    "docs/evidence/C-001B/vcsl-kawai-results.json": {
+      "sha256": "ffd0e3b7b7b0c96d14244b4dbea66330f99623d65f1e39b167c4a89404712b1f",
+      "byteSize": 30053
+    },
+    "Design/Audio/probes/A-001B/vcsl-kawai/trial.sf2": {
+      "sha256": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1",
+      "byteSize": 2668204
+    },
+    "docs/evidence/C-001B/vcsl-kawai-offline-representative.wav": {
+      "sha256": "b24edbbad97888a5a8e89803add09ef49ef8f2d8cc969916e9b7a153aa022669",
+      "byteSize": 1814444
+    },
+    "docs/evidence/C-001B/vcsl-steinway-b-results.json": {
+      "sha256": "020516ea474e285632eda34171135b638866d097860cab5f9a454bf04c00b752",
+      "byteSize": 30506
+    },
+    "Design/Audio/probes/A-001B/vcsl-steinway-b/trial.sf2": {
+      "sha256": "8261dac642441fcf78a5946e96f898119ebd609227590c8638f148dea5b7f359",
+      "byteSize": 2649954
+    },
+    "docs/evidence/C-001B/vcsl-steinway-b-offline-representative.wav": {
+      "sha256": "439b4ea2ff0abe8b425388b4cddceaa15b12bbaa8c8f2ef145e67861963e9ea9",
+      "byteSize": 1814444
+    },
+    "Design/Audio/proposed-zones.json": {
+      "sha256": "ea9e0be980ff22de281063b94ec904380e261db5f868a89deddc0f33f54b17e5",
+      "byteSize": 31174
+    },
+    "Design/Audio/source_evidence/download-ledger.json": {
+      "sha256": "f20a58c73da80c71a4fc7d99c8417f49c8359f9af3d690e74506f479f68feab2",
+      "byteSize": 8959
+    },
+    "Design/Audio/source_evidence/vcsl-tree.json": {
+      "sha256": "075d9a4db27230cc712d78814c1ad7c5053a80fef9964846d2a1c4f2742244e6",
+      "byteSize": 1553479
+    },
+    "Design/Audio/vcsl-kawai/originals/GPiano_sus_A0_v2_rr1_Player.wav": {
+      "sha256": "ed2267bd3ae6a319e2143f5c09cbbe72f57c095d431e586f8d780223255de761",
+      "byteSize": 5116608
+    },
+    "Design/Audio/vcsl-kawai/originals/GPiano_sus_C1_v2_rr1_Player.wav": {
+      "sha256": "91ab158f01071f29375bb7593304dbb54e240f0db07374fe1fc630ca1b573b82",
+      "byteSize": 5268340
+    },
+    "Design/Audio/vcsl-kawai/originals/GPiano_sus_F#1_v2_rr1_Player.wav": {
+      "sha256": "c26ac28fca64b6aaa3e2733673e9217ca378652999e2621cabbb1bcb53254500",
+      "byteSize": 4547640
+    },
+    "Design/Audio/vcsl-kawai/originals/GPiano_sus_A1_v2_rr1_Player.wav": {
+      "sha256": "3fb2818cbf799cebcd91798f949cacb01e287e12a33158c6520bf381c73f4689",
+      "byteSize": 5217440
+    },
+    "Design/Audio/vcsl-kawai/originals/GPiano_sus_C3_v2_rr1_Player.wav": {
+      "sha256": "fce33012fe900309abafd1a4d6d254d142b0cbf33834c7a72c2fd1ada4e746e1",
+      "byteSize": 4283328
+    },
+    "Design/Audio/vcsl-kawai/originals/GPiano_sus_C4_v2_rr1_Player.wav": {
+      "sha256": "69845de40a38ed6501746520f9f385ae56200a4372faed48178e64a32a75e58c",
+      "byteSize": 2613976
+    },
+    "Design/Audio/vcsl-kawai/originals/GPiano_sus_C6_v2_rr1_Player.wav": {
+      "sha256": "25464db09fe4a25cac979c507fef3efd507cc43369761f9e27488330e6e2a264",
+      "byteSize": 666520
+    },
+    "Design/Audio/vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav": {
+      "sha256": "0f91c0d350c12f574f284c23a92a44348216218c49430c4698c7d505955fdb4f",
+      "byteSize": 6738508
+    },
+    "Design/Audio/vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav": {
+      "sha256": "3b4c07adb641f09d9fa2630c61c65e17ac7e6fa383661892464957138d03f7b8",
+      "byteSize": 4332820
+    },
+    "Design/Audio/vcsl-steinway-b/originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav": {
+      "sha256": "9c2020587943a86dec7a8b7178cdac1c254c4f3dfc016bb27acdef1af292827f",
+      "byteSize": 2260822
+    },
+    "Design/Audio/vcsl-steinway-b/originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav": {
+      "sha256": "23d50d834b7e6780899d5e2a62c4c2ba425ac129ef80a3b3bc066038ba2ee755",
+      "byteSize": 949450
+    }
+  },
+  "sources": {
+    "vcsl-kawai": {
+      "path": "docs/evidence/C-001B/vcsl-kawai-offline-representative.wav",
+      "sha256": "b24edbbad97888a5a8e89803add09ef49ef8f2d8cc969916e9b7a153aa022669",
+      "bankSHA256": "caa0675616bd5004dd81e78608cc194ac84686f4f8c1128ef891aaaf9e34b8c1",
+      "format": "48kHz mono PCM16 render from mono PCM16 SF2",
+      "original": {
+        "frames": 907200,
+        "durationSeconds": 18.9,
+        "rmsDBFS": -57.07214111667051,
+        "peakDBFS": -31.147281728772658,
+        "clippedSamples": 0
+      },
+      "extracted": {
+        "frames": 741600,
+        "durationSeconds": 15.45,
+        "rmsDBFS": -74.31898930487199,
+        "peakDBFS": -56.157595177235635,
+        "clippedSamples": 0
+      }
+    },
+    "vcsl-steinway-b": {
+      "path": "docs/evidence/C-001B/vcsl-steinway-b-offline-representative.wav",
+      "sha256": "439b4ea2ff0abe8b425388b4cddceaa15b12bbaa8c8f2ef145e67861963e9ea9",
+      "bankSHA256": "8261dac642441fcf78a5946e96f898119ebd609227590c8638f148dea5b7f359",
+      "format": "48kHz mono PCM16 render from mono PCM16 SF2",
+      "original": {
+        "frames": 907200,
+        "durationSeconds": 18.9,
+        "rmsDBFS": -55.448750658744615,
+        "peakDBFS": -29.94331253066374,
+        "clippedSamples": 0
+      },
+      "extracted": {
+        "frames": 741600,
+        "durationSeconds": 15.45,
+        "rmsDBFS": -74.30421826863548,
+        "peakDBFS": -58.26779887263511,
+        "clippedSamples": 0
+      }
+    }
+  },
+  "segments": [
+    {
+      "label": "root MIDI 42, hold750ms + release800ms",
+      "sourceStartFrame": 76800,
+      "frameCount": 74400,
+      "outputStartFrame": 0,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "root MIDI 60, hold750ms + release800ms",
+      "sourceStartFrame": 153600,
+      "frameCount": 74400,
+      "outputStartFrame": 76800,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "root MIDI 96, hold750ms + release800ms",
+      "sourceStartFrame": 230400,
+      "frameCount": 74400,
+      "outputStartFrame": 153600,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "MIDI60 hold0.05s + release800ms",
+      "sourceStartFrame": 307200,
+      "frameCount": 40800,
+      "outputStartFrame": 230400,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "MIDI60 hold1.0s + release800ms",
+      "sourceStartFrame": 350400,
+      "frameCount": 86400,
+      "outputStartFrame": 273600,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "MIDI60 hold5.0s + release800ms",
+      "sourceStartFrame": 439200,
+      "frameCount": 278400,
+      "outputStartFrame": 362400,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "MIDI60 10Hz, first20 of100 measured strikes",
+      "sourceStartFrame": 720000,
+      "frameCount": 96000,
+      "outputStartFrame": 643200,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 240,
+      "velocity": 64,
+      "engineGain": 0.08
+    }
+  ],
+  "outputs": [
+    {
+      "label": "B",
+      "candidateID": "vcsl-kawai",
+      "file": "B.wav",
+      "sha256": "369692dbda315b2817ebd9671d96b7c2de88da5a9466da917488458f33410141",
+      "byteSize": 2224844,
+      "gainDB": 48.31898930487199,
+      "measured": {
+        "frames": 741600,
+        "durationSeconds": 15.45,
+        "rmsDBFS": -25.999999599169175,
+        "peakDBFS": -7.838606306642553,
+        "clippedSamples": 0
+      }
+    },
+    {
+      "label": "A",
+      "candidateID": "vcsl-steinway-b",
+      "file": "A.wav",
+      "sha256": "bd1535e666832ab8158d4f2e113bd6a4c6951e00fa1c5dcb8c7caee8974e376d",
+      "byteSize": 2224844,
+      "gainDB": 48.304218268635466,
+      "measured": {
+        "frames": 741600,
+        "durationSeconds": 15.45,
+        "rmsDBFS": -26.00000002602148,
+        "peakDBFS": -9.963579855059212,
+        "clippedSamples": 0
+      }
+    }
+  ],
+  "sourcePrecisionCaveat": "Common excerpts RMS approximately -74.3dBFS in PCM16. Approximately +48.3dB gain also amplifies existing quantization; PCM24 output cannot recover source detail. Do not use for final long-session comfort/noise-floor judgment.",
+  "subjectiveListening": "NOT_TESTED",
+  "hardwareOutput": false
+}

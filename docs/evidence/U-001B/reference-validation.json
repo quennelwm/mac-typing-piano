@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "frozenFilesVerified": 182,
+  "sourceManifestSha256": "23bcc0653f6394e0e4ded985eb467786daf8b9b0d577537765b0670f95721f7d",
+  "referenceSha256": "0a58dff2feed5d616ef9044c5a485a9e316fa9baa5e41b496818950fbd066f3e",
+  "themeFieldCount": 372,
+  "layouts": [
+    {
+      "widthPt": 900,
+      "keys": 64,
+      "white": 38,
+      "black": 26,
+      "mappingAndCoordinates": "pass"
+    },
+    {
+      "widthPt": 1000,
+      "keys": 64,
+      "white": 38,
+      "black": 26,
+      "mappingAndCoordinates": "pass"
+    },
+    {
+      "widthPt": 1100,
+      "keys": 64,
+      "white": 38,
+      "black": 26,
+      "mappingAndCoordinates": "pass"
+    }
+  ],
+  "fn": {
+    "midiNote": 34,
+    "label": "fn",
+    "captureStatus": "unverified"
+  },
+  "topRowIncluded": false,
+  "nativeScreenshotReview": "awaiting",
+  "scope": "Read-only provenance, coordinate and expectation validation, not native runtime acceptance."
+}

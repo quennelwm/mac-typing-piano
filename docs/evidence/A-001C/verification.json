@@ -1,0 +1,149 @@
+{
+  "task": "A-001C",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Rebuild all payload files byte-identical",
+      "status": "passed"
+    },
+    {
+      "check": "All bound inputs remain unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai file hash and size",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai format and frame count",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai no clipping and peak <= -6dBFS",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai independently measured levels agree",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai shared event 1",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai shared event 2",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai shared event 3",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai shared event 4",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai shared event 5",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai shared event 6",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai shared event 7",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai output matches documented extraction and constant gain",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai last gap silent",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b file hash and size",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b format and frame count",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b no clipping and peak <= -6dBFS",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b independently measured levels agree",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b shared event 1",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b shared event 2",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b shared event 3",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b shared event 4",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b shared event 5",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b shared event 6",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b shared event 7",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b output matches documented extraction and constant gain",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b last gap silent",
+      "status": "passed"
+    },
+    {
+      "check": "Two RMS levels match within 0.001dB",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai complete planned range and <=1 semitone shift",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-kawai exact planned download sums",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b complete planned range and <=1 semitone shift",
+      "status": "passed"
+    },
+    {
+      "check": "vcsl-steinway-b exact planned download sums",
+      "status": "passed"
+    },
+    {
+      "check": "Delivery under 20MiB with 64KiB evidence headroom",
+      "status": "passed"
+    }
+  ],
+  "checkCount": 34,
+  "deliveryBytesBeforeThisReport": 4521803,
+  "inputFileCount": 21,
+  "humanListening": "NOT_TESTED",
+  "hardwarePlayback": false,
+  "finalToneSelection": false,
+  "limitation": "Very low-level PCM16 source rendering quantization amplified by approximately 48dB. Not final comfort/noise-floor validation."
+}

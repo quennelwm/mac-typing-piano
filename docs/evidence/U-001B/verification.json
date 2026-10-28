@@ -1,0 +1,57 @@
+{
+  "status": "pass",
+  "verifiedFrozenFiles": 182,
+  "keysCompared": 192,
+  "widths": [
+    900,
+    1000,
+    1100
+  ],
+  "themeLeafFieldsCompared": 372,
+  "referenceImageHashes": 18,
+  "visualCriteria": 11,
+  "nativeReviewStatus": "awaiting_PM_forwarded_C-001C_snapshots",
+  "scope": "Reference derivation/provenance verified; no native runtime measurement performed.",
+  "integrationFiles": [
+    {
+      "path": "Design/UI/integration/NATIVE_ADAPTER.md",
+      "sha256": "c85c3a54a1b644e9e49f939c051e8cdd5585b3521312dfbe2564a621574741fc",
+      "byteSize": 8069
+    },
+    {
+      "path": "Design/UI/integration/README.md",
+      "sha256": "a4da3ac006d3574fa3c1431355bf8b2ca197422243f7a05c2af68378887da356",
+      "byteSize": 824
+    },
+    {
+      "path": "Design/UI/integration/build_reference.py",
+      "sha256": "d2029d673410ddaab7e3fd37fe9828db30c9e4c503acaba7832c0ef6221cfb49",
+      "byteSize": 7663
+    },
+    {
+      "path": "Design/UI/integration/capture-request.json",
+      "sha256": "c3eaf05219b256aaf0115ab89b7ac22addde7a02b6bc1eaf69ba4936962cbff3",
+      "byteSize": 7345
+    },
+    {
+      "path": "Design/UI/integration/reference.json",
+      "sha256": "0a58dff2feed5d616ef9044c5a485a9e316fa9baa5e41b496818950fbd066f3e",
+      "byteSize": 346035
+    },
+    {
+      "path": "Design/UI/integration/theme-field-policy.json",
+      "sha256": "8f9b2d7cb7c2a3a664341a1a6e81e425d048ddb7025266d0a77aaf8bc8c95487",
+      "byteSize": 92673
+    },
+    {
+      "path": "Design/UI/integration/verify_reference.py",
+      "sha256": "6d50c8b33c5a1680f60b542fddc06b8cd354250761c1dced1818659b7e7e388f",
+      "byteSize": 3801
+    },
+    {
+      "path": "Design/UI/integration/visual-acceptance.json",
+      "sha256": "5d61f93d770c9435326404f4f3ea2df41c5ec44c11e80a65b4ac7613df8768b5",
+      "byteSize": 4407
+    }
+  ]
+}

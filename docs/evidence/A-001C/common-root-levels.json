@@ -1,0 +1,21 @@
+{
+  "note": "RMS only, not subjective brightness/comfort judgment; low precision source limitation applies",
+  "rows": [
+    {
+      "candidateID": "vcsl-kawai",
+      "rootSegmentRMSdBFS": {
+        "root MIDI 42, hold750ms + release800ms": -24.81,
+        "root MIDI 60, hold750ms + release800ms": -27.721,
+        "root MIDI 96, hold750ms + release800ms": -28.142
+      }
+    },
+    {
+      "candidateID": "vcsl-steinway-b",
+      "rootSegmentRMSdBFS": {
+        "root MIDI 42, hold750ms + release800ms": -24.176,
+        "root MIDI 60, hold750ms + release800ms": -28.24,
+        "root MIDI 96, hold750ms + release800ms": -39.534
+      }
+    }
+  ]
+}

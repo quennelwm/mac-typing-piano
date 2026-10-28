@@ -1,0 +1,93 @@
+{
+  "task": "A-001C",
+  "state": "comparison_only_not_final_selection",
+  "format": "48kHz mono PCM24 derived from mono PCM16 engine renders; no recovered precision",
+  "sequence": [
+    {
+      "label": "root MIDI 42, hold750ms + release800ms",
+      "sourceStartFrame": 76800,
+      "frameCount": 74400,
+      "outputStartFrame": 0,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "root MIDI 60, hold750ms + release800ms",
+      "sourceStartFrame": 153600,
+      "frameCount": 74400,
+      "outputStartFrame": 76800,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "root MIDI 96, hold750ms + release800ms",
+      "sourceStartFrame": 230400,
+      "frameCount": 74400,
+      "outputStartFrame": 153600,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "MIDI60 hold0.05s + release800ms",
+      "sourceStartFrame": 307200,
+      "frameCount": 40800,
+      "outputStartFrame": 230400,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "MIDI60 hold1.0s + release800ms",
+      "sourceStartFrame": 350400,
+      "frameCount": 86400,
+      "outputStartFrame": 273600,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "MIDI60 hold5.0s + release800ms",
+      "sourceStartFrame": 439200,
+      "frameCount": 278400,
+      "outputStartFrame": 362400,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 0,
+      "velocity": 64,
+      "engineGain": 0.08
+    },
+    {
+      "label": "MIDI60 10Hz, first20 of100 measured strikes",
+      "sourceStartFrame": 720000,
+      "frameCount": 96000,
+      "outputStartFrame": 643200,
+      "trailingSilenceFrames": 2400,
+      "endFadeFrames": 240,
+      "velocity": 64,
+      "engineGain": 0.08
+    }
+  ],
+  "options": [
+    {
+      "label": "A",
+      "file": "A.wav",
+      "sha256": "bd1535e666832ab8158d4f2e113bd6a4c6951e00fa1c5dcb8c7caee8974e376d",
+      "byteSize": 2224844
+    },
+    {
+      "label": "B",
+      "file": "B.wav",
+      "sha256": "369692dbda315b2817ebd9671d96b7c2de88da5a9466da917488458f33410141",
+      "byteSize": 2224844
+    }
+  ],
+  "revealFile": "reveal.json",
+  "instructions": "Keep playback volume/device fixed. Listen to A and B before opening reveal. Scores: softness, high-note comfort, rapid-strike clarity. No formal perceptual equality or double-blind claim."
+}

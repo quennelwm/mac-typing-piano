@@ -1,0 +1,7 @@
+{
+  "purpose": "Open only after blind preference noted; fixed labels, not randomized trial",
+  "mapping": {
+    "B": "vcsl-kawai",
+    "A": "vcsl-steinway-b"
+  }
+}
