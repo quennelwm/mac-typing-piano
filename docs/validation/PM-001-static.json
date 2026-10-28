@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-28",
+  "scope": "Independent static recheck of supplied contracts only",
+  "schema_validation": "pass",
+  "physical_keys": 64,
+  "row_counts": [
+    14,
+    14,
+    13,
+    12,
+    11
+  ],
+  "unique_midi": 64,
+  "range": [
+    33,
+    96
+  ],
+  "white": 38,
+  "black": 26,
+  "labels_and_sides": "pass",
+  "all_capture_statuses": "unverified",
+  "mac_input_tested": false,
+  "audio_tested": false,
+  "ui_render_tested": false
+}

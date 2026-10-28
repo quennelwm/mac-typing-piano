@@ -1,0 +1,25 @@
+{
+  "validationScope": "Document/JSON only; no macOS runtime tests",
+  "validatedDate": "2026-10-28",
+  "schemasValid": true,
+  "physicalKeyCount": 64,
+  "rowCounts": [
+    14,
+    14,
+    13,
+    12,
+    11
+  ],
+  "uniqueMIDICount": 64,
+  "midiRange": [
+    33,
+    96
+  ],
+  "whiteCount": 38,
+  "blackCount": 26,
+  "labelsComplete": true,
+  "keyCaptureTested": false,
+  "audioAssetsDelivered": false,
+  "uiAssetsDelivered": false,
+  "appImplemented": false
+}

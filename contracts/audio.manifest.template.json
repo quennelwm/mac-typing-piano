@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "audioPackVersion": "unselected.0.1",
+  "artifactState": "template",
+  "instrumentName": null,
+  "runtimeFormat": null,
+  "targetEngine": "AVAudioUnitSampler_candidate",
+  "noteNaming": "C4=MIDI60",
+  "midiNoteRange": {
+    "min": 33,
+    "max": 96
+  },
+  "coverageMIDI": [],
+  "files": [],
+  "instrument": null,
+  "licenseRecords": [],
+  "processingRecipePath": null,
+  "qaReportPath": null,
+  "readinessNote": "No samples/bank are included. Freeze format with code conversation in M0 before producing full pack."
+}

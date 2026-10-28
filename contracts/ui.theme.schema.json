@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "UI Theme Contract",
+  "required": [
+    "schemaVersion",
+    "themeVersion",
+    "artifactState",
+    "geometry",
+    "labels",
+    "motion",
+    "assets",
+    "readinessNote"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "themeVersion": {
+      "type": "string"
+    },
+    "artifactState": {
+      "enum": [
+        "design_proposal",
+        "ready"
+      ]
+    },
+    "geometry": {
+      "type": "object",
+      "required": [
+        "whiteKeyCount",
+        "blackKeyCount",
+        "preferredHeightPt"
+      ],
+      "properties": {
+        "whiteKeyCount": {
+          "const": 38
+        },
+        "blackKeyCount": {
+          "const": 26
+        },
+        "preferredHeightPt": {
+          "type": "number",
+          "minimum": 48,
+          "maximum": 76
+        }
+      }
+    },
+    "labels": {
+      "type": "object",
+      "required": [
+        "visibleByDefault",
+        "placement",
+        "bakeIntoTexture",
+        "followKeyTransform"
+      ],
+      "properties": {
+        "visibleByDefault": {
+          "const": true
+        },
+        "placement": {
+          "const": "each_key_own_bottom"
+        },
+        "bakeIntoTexture": {
+          "const": false
+        },
+        "followKeyTransform": {
+          "const": true
+        }
+      }
+    },
+    "motion": {
+      "type": "object"
+    },
+    "assets": {
+      "type": "array"
+    },
+    "readinessNote": {
+      "type": "string"
+    }
+  }
+}

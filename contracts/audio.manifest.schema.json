@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Audio Asset Manifest",
+  "required": [
+    "schemaVersion",
+    "audioPackVersion",
+    "artifactState",
+    "instrumentName",
+    "runtimeFormat",
+    "targetEngine",
+    "noteNaming",
+    "midiNoteRange",
+    "coverageMIDI",
+    "files",
+    "instrument",
+    "licenseRecords",
+    "processingRecipePath",
+    "qaReportPath",
+    "readinessNote"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "audioPackVersion": {
+      "type": "string"
+    },
+    "artifactState": {
+      "enum": [
+        "template",
+        "candidate",
+        "ready"
+      ]
+    },
+    "instrumentName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "runtimeFormat": {
+      "enum": [
+        null,
+        "sf2",
+        "dls",
+        "aupreset",
+        "wav_set"
+      ]
+    },
+    "targetEngine": {
+      "type": "string"
+    },
+    "noteNaming": {
+      "const": "C4=MIDI60"
+    },
+    "midiNoteRange": {
+      "const": {
+        "min": 33,
+        "max": 96
+      }
+    },
+    "coverageMIDI": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 33,
+        "maximum": 96
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256",
+          "byteSize",
+          "role"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "byteSize": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "role": {
+            "enum": [
+              "bank",
+              "sample",
+              "preset",
+              "license",
+              "qa"
+            ]
+          }
+        }
+      }
+    },
+    "instrument": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "licenseRecords": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceURL",
+          "author",
+          "sourceVersion",
+          "licenseID",
+          "licenseFile",
+          "modifications"
+        ],
+        "properties": {
+          "sourceURL": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "sourceVersion": {
+            "type": "string"
+          },
+          "licenseID": {
+            "type": "string"
+          },
+          "licenseFile": {
+            "type": "string"
+          },
+          "modifications": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "processingRecipePath": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "qaReportPath": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "readinessNote": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "artifactState": {
+            "const": "ready"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "instrumentName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "runtimeFormat": {
+            "enum": [
+              "sf2",
+              "dls",
+              "aupreset",
+              "wav_set"
+            ]
+          },
+          "coverageMIDI": {
+            "minItems": 64,
+            "maxItems": 64
+          },
+          "files": {
+            "minItems": 1
+          },
+          "instrument": {
+            "type": "object"
+          },
+          "licenseRecords": {
+            "minItems": 1
+          },
+          "processingRecipePath": {
+            "type": "string",
+            "minLength": 1
+          },
+          "qaReportPath": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "archive": "/Users/wuming/Downloads/Mac_Typing_Piano_DevKit_v1.0.zip",
+  "archive_sha256": "96f0091557dbc1c97940bec1a15a00a4252278ea7dc28a5732b20a829cca4928",
+  "extracted_files": 22,
+  "date": "2026-10-28",
+  "files": {
+    "AGENTS.md": "220dfe4f01b84a5b2cfc382fb3d8d58424b4f9b634526c5b85cc429d0409837c",
+    "Mac_Typing_Piano_Development_v1.0.docx": "2dbf7dddff1b2f576558b5b1debbd3039de7ac94b1a2ab73cb26b39ebc9a07ae",
+    "README.md": "d7973c7d6a7d45e8386841c6087dd1aa902c2463c58ffa8a0d4ddd37129f7737",
+    "contracts/audio.manifest.schema.json": "0e7f684d5c40f1cd6f998e1bf4396eeea00a4552059063bfd4032817dc38f947",
+    "contracts/audio.manifest.template.json": "3473943d9d21ba53171449ab22efa136ecf97fbaa0e34af0b3182ef384f2df35",
+    "contracts/keymap.ansi64.v0.1.json": "147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b",
+    "contracts/keymap.schema.json": "c3bb6b23162997baa66f50bc1678edbce0fc935322338d5bde39d51dcbcf806b",
+    "contracts/static_validation_report.json": "0d170bb4dc7222ac6e48b083c8d4c5c840253d5fd4d2554326d09d1482897ebb",
+    "contracts/ui.theme.example.json": "30d2bdf7bd7f0cd08f7ee627a9118607f1ab071b27f273eea98c2c643bd59b43",
+    "contracts/ui.theme.schema.json": "d18bee1fc9a87f1e68e0d72d6943915c951e3165820d820658e8622854717d09",
+    "docs/00_Master_Development.md": "eb33e86bf5279d951025a77bb91e3471de9451fd47cab968420932c177497038",
+    "docs/01_Interface_Contract.md": "0dd1ee4d502eeacec2edd5387cb694c864ba743eb112d0da38022c147372090b",
+    "docs/02_Acceptance.md": "2b5b24a170e1308feb82d6fcc3a921deff4c06c0f213e8cd74f616831b5d1e86",
+    "docs/03_Task_Board.md": "57d29893a905c626f3e7731456234ef22e35e35ead90fa2d2e9f52f7d16df1ff",
+    "docs/04_Decision_Log.md": "5b65eca0ee4aeca3ce2c9ca6a180857b05af6c8d23e47027969eb6c468104031",
+    "docs/05_Keymap_Reference.md": "56cb169ea5ae5e10c6dc6630236af63cd5b95290cf3761d590c4b88ab87b2eb5",
+    "prompts/01_Main_Conversation.md": "3f45941b1a92fd9b4918c49c343de74084a3375572da2d3f27729cb185345715",
+    "prompts/02_Code_Conversation.md": "964c5a44ada41d396e02bbee4c024782b7a96a5cc07aa04fa0bc4d26f7477b87",
+    "prompts/03_Audio_Conversation.md": "7e1a81eb5aabadb2bb0875fcc32ce0085c0ba993b15700b7b31b509ce07a9ee8",
+    "prompts/04_UI_Conversation.md": "e43826f2261fdf2b5aeaa3fa634eca80ad33c290e14a0e404c66d11bf23932fa",
+    "templates/HANDOFF.md": "6f10ed0c71218df2622e17fccf81516358b421e1952c7da286334db9b40fa30c",
+    "templates/TASK.md": "4e47ffe328e17b603a6eb853473d830aae2c956f4c2f91e84a0b9ef2c56678fd"
+  }
+}

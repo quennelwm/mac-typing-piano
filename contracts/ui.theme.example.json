@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "themeVersion": "classic-draft.0.1",
+  "artifactState": "design_proposal",
+  "geometry": {
+    "preferredWidthPt": 1000,
+    "minPreferredWidthPt": 900,
+    "maxPreferredWidthPt": 1100,
+    "preferredHeightPt": 56,
+    "blackWidthRatio": 0.59,
+    "blackHeightRatio": 0.64,
+    "bottomMarginPt": 8,
+    "whiteKeyCount": 38,
+    "blackKeyCount": 26
+  },
+  "labels": {
+    "visibleByDefault": true,
+    "textSource": "KeyMapping.labelParts",
+    "placement": "each_key_own_bottom",
+    "whiteFontSizePt": 10,
+    "blackFontSizePt": 9.5,
+    "minMainFontSizePt": 9,
+    "sideFontSizePt": 6,
+    "whiteBottomInsetPt": 4,
+    "blackBottomInsetPt": 3,
+    "whiteColorHex": "#6B6B6B",
+    "blackColorHex": "#C2C2C2",
+    "contrastTarget": 4.5,
+    "bakeIntoTexture": false,
+    "followKeyTransform": true,
+    "sideMarkerMode": "separate_small_text"
+  },
+  "motion": {
+    "pressMs": 45,
+    "releaseMs": 100,
+    "minVisualPulseMs": 45,
+    "whiteDownPt": 2,
+    "blackDownPt": 1.5,
+    "residualGlowEnabled": false,
+    "residualGlowMs": 300,
+    "hideMs": 100,
+    "restoreDelayMs": 400,
+    "reducedMotion": "instant_shading"
+  },
+  "assets": [],
+  "readinessNote": "Design proposal only; no image assets shipped in this development document package."
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "ANSI64 Integration Mapping",
+  "required": [
+    "schemaVersion",
+    "mappingVersion",
+    "artifactState",
+    "layout",
+    "noteNaming",
+    "midiNoteRange",
+    "statusNote",
+    "keys"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "mappingVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifactState": {
+      "enum": [
+        "integration_draft",
+        "approved"
+      ]
+    },
+    "layout": {
+      "const": "macbook-ansi-lower-five-rows"
+    },
+    "noteNaming": {
+      "const": "C4=MIDI60"
+    },
+    "midiNoteRange": {
+      "const": {
+        "min": 33,
+        "max": 96
+      }
+    },
+    "statusNote": {
+      "type": "string"
+    },
+    "keys": {
+      "type": "array",
+      "minItems": 64,
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "physicalKeyID",
+          "physicalRow",
+          "positionInRow",
+          "sdkConstantCandidate",
+          "captureStatus",
+          "eventSemantics",
+          "midiNote",
+          "noteName",
+          "pianoKeyColor",
+          "displayLabel",
+          "labelParts",
+          "accessibleName",
+          "velocity"
+        ],
+        "properties": {
+          "physicalKeyID": {
+            "type": "string",
+            "minLength": 1
+          },
+          "physicalRow": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "positionInRow": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 14
+          },
+          "sdkConstantCandidate": {
+            "type": "string"
+          },
+          "captureStatus": {
+            "enum": [
+              "unverified",
+              "full",
+              "pulseOnly",
+              "unavailable"
+            ]
+          },
+          "eventSemantics": {
+            "enum": [
+              "ordinary",
+              "modifier",
+              "toggleCandidate"
+            ]
+          },
+          "midiNote": {
+            "type": "integer",
+            "minimum": 33,
+            "maximum": 96
+          },
+          "noteName": {
+            "type": "string"
+          },
+          "pianoKeyColor": {
+            "enum": [
+              "white",
+              "black"
+            ]
+          },
+          "displayLabel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "labelParts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "main",
+              "side"
+            ],
+            "properties": {
+              "main": {
+                "type": "string",
+                "minLength": 1
+              },
+              "side": {
+                "enum": [
+                  "L",
+                  "R",
+                  null
+                ]
+              }
+            }
+          },
+          "accessibleName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "velocity": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 127
+          }
+        }
+      }
+    }
+  }
+}
