@@ -1,0 +1,307 @@
+{
+  "taskID": "A-002T",
+  "trialVersion": "a002t-steinway-mono.0.1",
+  "artifactState": "candidate",
+  "pathBase": "Directory containing this trial-index.json",
+  "format": "SF2 2.01",
+  "noteNaming": "C4=MIDI60",
+  "midiTargetRange": {
+    "min": 33,
+    "max": 96
+  },
+  "totalBankBytes": 22744220,
+  "validationStatus": "Static source/build complete; run scripts/verify_trial.py. Code role owns actual sampler verification and mixer calibration.",
+  "buildScript": "scripts/build_trial.py",
+  "buildScriptSHA256": "a1958a035953398338f76dbff86d46f9bb3df78acc218bb7d996218f9a2bb3b0",
+  "runtimeApproved": false,
+  "finalInstrumentSelected": false,
+  "trialDefaultCandidate": "vcsl-steinway-b",
+  "trials": [
+    {
+      "id": "vcsl-steinway-b",
+      "bankFile": "vcsl-steinway-b/trial.sf2",
+      "manifestFile": "vcsl-steinway-b/audio.manifest.json",
+      "parametersFile": "vcsl-steinway-b/instrument-parameters.json",
+      "byteSize": 22744220,
+      "sha256": "2819d43506550ece98d80455388c913850acfcdd7ae45ee61908311a52997b5a",
+      "sf2Preset": 0,
+      "sf2Bank": 0,
+      "program": 0,
+      "bankMSB": 121,
+      "bankLSB": 0,
+      "selectorStatus": "SAME_SELECTOR_AS_C001B_NEW_BANK_RUNTIME_PENDING",
+      "samplerLoadStatus": "NOT_TESTED",
+      "coverageMIDI": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "uncoveredMIDI": [],
+      "rootMIDI": [
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60,
+        62,
+        64,
+        66,
+        68,
+        70,
+        72,
+        74,
+        76,
+        78,
+        80,
+        82,
+        84,
+        86,
+        88,
+        90,
+        92,
+        94,
+        96
+      ],
+      "zones": [
+        {
+          "rootMIDI": 34,
+          "lowMIDI": 33,
+          "highMIDI": 35
+        },
+        {
+          "rootMIDI": 36,
+          "lowMIDI": 36,
+          "highMIDI": 37
+        },
+        {
+          "rootMIDI": 38,
+          "lowMIDI": 38,
+          "highMIDI": 39
+        },
+        {
+          "rootMIDI": 40,
+          "lowMIDI": 40,
+          "highMIDI": 41
+        },
+        {
+          "rootMIDI": 42,
+          "lowMIDI": 42,
+          "highMIDI": 43
+        },
+        {
+          "rootMIDI": 44,
+          "lowMIDI": 44,
+          "highMIDI": 45
+        },
+        {
+          "rootMIDI": 46,
+          "lowMIDI": 46,
+          "highMIDI": 47
+        },
+        {
+          "rootMIDI": 48,
+          "lowMIDI": 48,
+          "highMIDI": 49
+        },
+        {
+          "rootMIDI": 50,
+          "lowMIDI": 50,
+          "highMIDI": 51
+        },
+        {
+          "rootMIDI": 52,
+          "lowMIDI": 52,
+          "highMIDI": 53
+        },
+        {
+          "rootMIDI": 54,
+          "lowMIDI": 54,
+          "highMIDI": 55
+        },
+        {
+          "rootMIDI": 56,
+          "lowMIDI": 56,
+          "highMIDI": 57
+        },
+        {
+          "rootMIDI": 58,
+          "lowMIDI": 58,
+          "highMIDI": 59
+        },
+        {
+          "rootMIDI": 60,
+          "lowMIDI": 60,
+          "highMIDI": 61
+        },
+        {
+          "rootMIDI": 62,
+          "lowMIDI": 62,
+          "highMIDI": 63
+        },
+        {
+          "rootMIDI": 64,
+          "lowMIDI": 64,
+          "highMIDI": 65
+        },
+        {
+          "rootMIDI": 66,
+          "lowMIDI": 66,
+          "highMIDI": 67
+        },
+        {
+          "rootMIDI": 68,
+          "lowMIDI": 68,
+          "highMIDI": 69
+        },
+        {
+          "rootMIDI": 70,
+          "lowMIDI": 70,
+          "highMIDI": 71
+        },
+        {
+          "rootMIDI": 72,
+          "lowMIDI": 72,
+          "highMIDI": 73
+        },
+        {
+          "rootMIDI": 74,
+          "lowMIDI": 74,
+          "highMIDI": 75
+        },
+        {
+          "rootMIDI": 76,
+          "lowMIDI": 76,
+          "highMIDI": 77
+        },
+        {
+          "rootMIDI": 78,
+          "lowMIDI": 78,
+          "highMIDI": 79
+        },
+        {
+          "rootMIDI": 80,
+          "lowMIDI": 80,
+          "highMIDI": 81
+        },
+        {
+          "rootMIDI": 82,
+          "lowMIDI": 82,
+          "highMIDI": 83
+        },
+        {
+          "rootMIDI": 84,
+          "lowMIDI": 84,
+          "highMIDI": 85
+        },
+        {
+          "rootMIDI": 86,
+          "lowMIDI": 86,
+          "highMIDI": 87
+        },
+        {
+          "rootMIDI": 88,
+          "lowMIDI": 88,
+          "highMIDI": 89
+        },
+        {
+          "rootMIDI": 90,
+          "lowMIDI": 90,
+          "highMIDI": 91
+        },
+        {
+          "rootMIDI": 92,
+          "lowMIDI": 92,
+          "highMIDI": 93
+        },
+        {
+          "rootMIDI": 94,
+          "lowMIDI": 94,
+          "highMIDI": 95
+        },
+        {
+          "rootMIDI": 96,
+          "lowMIDI": 96,
+          "highMIDI": 96
+        }
+      ],
+      "sampleChannels": 1,
+      "sampleBits": 16,
+      "sampleRate": 48000,
+      "releaseTimecents": -1586,
+      "releaseSecondsEncoded": 0.4000724898613191,
+      "suggestedProbeVelocity": 64,
+      "suggestedInitialMixerGain": 0.08,
+      "gainNote": ".08 legacy probe starting point only, NOT calibrated. Save Float32 or adequately scaled renders; do not amplify low-level PCM16 by48dB as quality evidence."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "task": "A-002T",
+  "repositoryRevisionObservedDuringVerification": "a66f6610ac4112a4a8145f1e15ebf6f7d0dbba45",
+  "bankBytes": 22744220,
+  "monoPeakDBFSMin": -25.46811391180334,
+  "monoPeakDBFSMax": -14.517384455905848,
+  "quantizationMaxAbsError": 1.52587890625e-05,
+  "encodedReleaseMs": 400.0724898613191,
+  "commonGainDB": -9.08202406938941,
+  "pitchCentsApproxRange": [
+    -9.12643227029095,
+    14.001084083865656
+  ],
+  "monoReview": [
+    {
+      "rootMIDI": 94,
+      "monoToStereoRMSdB": -6.090153152728513
+    }
+  ],
+  "limitation": "Not runtime sampler verification, not hardware/subjective listening, not tuning certification."
+}

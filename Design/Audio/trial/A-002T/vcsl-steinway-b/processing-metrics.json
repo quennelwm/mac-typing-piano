@@ -1,0 +1,2026 @@
+{
+  "task": "A-002T",
+  "candidateWideGainDB": -9.08202406938941,
+  "gainPolicy": "Reuse A001 Steinway common gain for all32 roots; no per-note normalization",
+  "sampleFormat": "48kHz stereo PCM24 intermediates -> arithmetic mono PCM16 SF2",
+  "sourceSamples": [
+    {
+      "rootMIDI": 34,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "originalSHA256": "0f91c0d350c12f574f284c23a92a44348216218c49430c4698c7d505955fdb4f",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 25.466598639455782,
+        "peakDBFS": -3.5107959627159717,
+        "rmsDBFS": -29.756430381788817,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 2.181529998779297e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -94.98497600187163,
+        "maxAdjacentStep": 0.029920339584350586,
+        "finite": true
+      },
+      "thresholdDBFS": -63.51079596271597,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -12.592788578746015,
+        "rmsDBFS": -33.942525983325694,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.5735626220703125e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -54.28944294510846,
+        "maxAdjacentStep": 0.00960230827331543,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -25.980393481593236,
+      "monoToStereoRMSdB": -0.7383986896540924,
+      "dcMean": -1.047661838432153e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 34,
+        "expectedHz": 58.27047018976124,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 57.875,
+            "relativeMagnitude": 0.16886254574121984
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 116.125,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 173.875,
+            "relativeMagnitude": 0.42275346865447716
+          }
+        ],
+        "estimatorHarmonic": 2,
+        "estimatedFundamentalHz": 58.0625,
+        "estimatedCentsFromEqualTemperament": -6.189912570408142,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 36,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C2_vl2_rr1.wav",
+      "originalSHA256": "8efd86d8a58e6334dea0c34c53872e67baa27e3982b5708b844c937bfb5fd5be",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 27.84938775510204,
+        "peakDBFS": -4.8413475000094826,
+        "rmsDBFS": -32.04840643246343,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 6.413459777832031e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -91.75357361384549,
+        "maxAdjacentStep": 0.040017008781433105,
+        "finite": true
+      },
+      "thresholdDBFS": -64.84134750000949,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -13.920721620934378,
+        "rmsDBFS": -35.933567786958804,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.337860107421875e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -56.01824657484868,
+        "maxAdjacentStep": 0.01288759708404541,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -28.818151412540395,
+      "monoToStereoRMSdB": -1.6745490662139781,
+      "dcMean": -2.059446026881536e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 36,
+        "expectedHz": 65.40639132514966,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 64.75,
+            "relativeMagnitude": 0.515122098826848
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 130.125,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 196.0,
+            "relativeMagnitude": 0.4875730899801681
+          }
+        ],
+        "estimatorHarmonic": 2,
+        "estimatedFundamentalHz": 65.0625,
+        "estimatedCentsFromEqualTemperament": -9.12643227029095,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 38,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_D2_vl2_rr1.wav",
+      "originalSHA256": "a03ff79f60e3d8133ca34e65dd99df8c4b755c5b3f7662c50d203973f1b931dc",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 21.174943310657596,
+        "peakDBFS": -5.722532542288636,
+        "rmsDBFS": -30.651474885695155,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 5.936622619628906e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -82.66241357554142,
+        "maxAdjacentStep": 0.015042543411254883,
+        "finite": true
+      },
+      "thresholdDBFS": -65.72253254228863,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -14.80536017887055,
+        "rmsDBFS": -35.75076692630166,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.2901763916015625e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -57.13538028923714,
+        "maxAdjacentStep": 0.004896402359008789,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -27.6517887864174,
+      "monoToStereoRMSdB": -0.892034150026272,
+      "dcMean": -1.236942441513141e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 38,
+        "expectedHz": 73.41619197935188,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 72.75,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 146.375,
+            "relativeMagnitude": 0.5542274634954475
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 219.625,
+            "relativeMagnitude": 0.2281097490034767
+          }
+        ],
+        "estimatorHarmonic": 2,
+        "estimatedFundamentalHz": 73.1875,
+        "estimatedCentsFromEqualTemperament": -5.4012236281331925,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 40,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_E2_vl2_rr1.wav",
+      "originalSHA256": "b1cb8bf86450371b08c1f7fd39d6fcb2dda6e1a9062157c40d05e785fb661627",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 18.45952380952381,
+        "peakDBFS": -4.239002793825416,
+        "rmsDBFS": -27.5438757636287,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 0.00010395050048828125,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -91.04119226587312,
+        "maxAdjacentStep": 0.016003131866455078,
+        "finite": true
+      },
+      "thresholdDBFS": -64.23900279382542,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -13.316234795476593,
+        "rmsDBFS": -33.18973563353373,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 4.267692565917969e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -52.958368129138265,
+        "maxAdjacentStep": 0.004999876022338867,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -26.613808857337467,
+      "monoToStereoRMSdB": -1.2365920779948711,
+      "dcMean": -2.6368494145572187e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 40,
+        "expectedHz": 82.4068892282175,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 82.25,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 164.25,
+            "relativeMagnitude": 0.3809332191225887
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 246.75,
+            "relativeMagnitude": 0.15086065554891037
+          }
+        ],
+        "estimatorHarmonic": 2,
+        "estimatedFundamentalHz": 82.125,
+        "estimatedCentsFromEqualTemperament": -5.932183842796166,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 42,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "originalSHA256": "3b4c07adb641f09d9fa2630c61c65e17ac7e6fa383661892464957138d03f7b8",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 16.374807256235826,
+        "peakDBFS": -4.45404335664934,
+        "rmsDBFS": -29.30219160121837,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 8.20159912109375e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -88.54478544974262,
+        "maxAdjacentStep": 0.022824883460998535,
+        "finite": true
+      },
+      "thresholdDBFS": -64.45404335664934,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -13.536763359700396,
+        "rmsDBFS": -35.341459609305225,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 4.112720489501953e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -59.31830102978872,
+        "maxAdjacentStep": 0.007388710975646973,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -28.233809787774216,
+      "monoToStereoRMSdB": -1.0445019176066481,
+      "dcMean": 8.119673778613409e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 42,
+        "expectedHz": 92.4986056779086,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 92.0,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 185.0,
+            "relativeMagnitude": 0.6270428718530606
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 277.125,
+            "relativeMagnitude": 0.28385093668455913
+          }
+        ],
+        "estimatorHarmonic": 2,
+        "estimatedFundamentalHz": 92.5,
+        "estimatedCentsFromEqualTemperament": 0.026096389982859246,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 44,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_G#2_vl2_rr1.wav",
+      "originalSHA256": "795d1fade3adb7ce8b844594a21f7768b769e97f1dfd82392acfca1077917c36",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 17.00643990929705,
+        "peakDBFS": -7.158437338689453,
+        "rmsDBFS": -32.1582482848149,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 9.357929229736328e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -88.53729487450792,
+        "maxAdjacentStep": 0.01262974739074707,
+        "finite": true
+      },
+      "thresholdDBFS": -67.15843733868945,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -16.242015603371197,
+        "rmsDBFS": -38.12470848603858,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.2067298889160156e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -53.428332016719025,
+        "maxAdjacentStep": 0.004210352897644043,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -31.100488960380304,
+      "monoToStereoRMSdB": -1.715885517066574,
+      "dcMean": 2.891594854493936e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 44,
+        "expectedHz": 103.82617439498628,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 103.25,
+            "relativeMagnitude": 0.7863438000081245
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 207.5,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 311.375,
+            "relativeMagnitude": 0.29555445013694975
+          }
+        ],
+        "estimatorHarmonic": 2,
+        "estimatedFundamentalHz": 103.75,
+        "estimatedCentsFromEqualTemperament": -1.2706247484469826,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 46,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#2_vl2_rr1.wav",
+      "originalSHA256": "777b890ce11600c21ca110991b3b23657901d44b0fe8c4bf283d80a8c3567b27",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 19.38106575963719,
+        "peakDBFS": -9.98137183601622,
+        "rmsDBFS": -34.00681365020345,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 6.568431854248047e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -90.35461553089023,
+        "maxAdjacentStep": 0.016457676887512207,
+        "finite": true
+      },
+      "thresholdDBFS": -69.98137183601622,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -19.065000746396073,
+        "rmsDBFS": -39.32474082174582,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.790855407714844e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -69.37416963390964,
+        "maxAdjacentStep": 0.0053702592849731445,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -30.523561016789074,
+      "monoToStereoRMSdB": -0.6478582388045228,
+      "dcMean": 2.75056017562747e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 46,
+        "expectedHz": 116.54094037952248,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 116.625,
+            "relativeMagnitude": 0.3256114374674712
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 232.75,
+            "relativeMagnitude": 0.5874172483881367
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 349.0,
+            "relativeMagnitude": 1.0
+          }
+        ],
+        "estimatorHarmonic": 2,
+        "estimatedFundamentalHz": 116.375,
+        "estimatedCentsFromEqualTemperament": -2.466827159039138,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 48,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C3_vl2_rr1.wav",
+      "originalSHA256": "53c2cf94051119d240c8ccd4b9a91f07aa07333d845515c1ea1276daa775549e",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 19.46668934240363,
+        "peakDBFS": -8.748856263399102,
+        "rmsDBFS": -34.47941457800734,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 0.00011730194091796875,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -90.45935487143005,
+        "maxAdjacentStep": 0.01723635196685791,
+        "finite": true
+      },
+      "thresholdDBFS": -68.7488562633991,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -17.829685564133992,
+        "rmsDBFS": -39.86462779151549,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 6.091594696044922e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -60.76758443470027,
+        "maxAdjacentStep": 0.005576610565185547,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -30.85499011049475,
+      "monoToStereoRMSdB": -0.649574744795606,
+      "dcMean": 6.4741627623637515e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 48,
+        "expectedHz": 130.8127826502993,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 130.75,
+            "relativeMagnitude": 0.656969963481364
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 261.375,
+            "relativeMagnitude": 0.11727996255261532
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 392.125,
+            "relativeMagnitude": 1.0
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 130.75,
+        "estimatedCentsFromEqualTemperament": -0.8310927332617188,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 50,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_D3_vl2_rr1.wav",
+      "originalSHA256": "6daf884bd71087a04b3a89cab1f12df47d8d8acf89967bf6da73fe4aa73aa99d",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 19.824195011337867,
+        "peakDBFS": -8.706938667575896,
+        "rmsDBFS": -33.354346944699614,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 8.96453857421875e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -99.95709988728471,
+        "maxAdjacentStep": 0.017931580543518066,
+        "finite": true
+      },
+      "thresholdDBFS": -68.7069386675759,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -17.78638740078103,
+        "rmsDBFS": -38.51892796604764,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 4.3392181396484375e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -65.8763251183925,
+        "maxAdjacentStep": 0.005820035934448242,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -31.185649097613325,
+      "monoToStereoRMSdB": -2.1037002309569477,
+      "dcMean": 4.089818491290013e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 50,
+        "expectedHz": 146.8323839587038,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 146.75,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 293.5,
+            "relativeMagnitude": 0.7463134842650992
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 440.625,
+            "relativeMagnitude": 0.7331865511080978
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 146.75,
+        "estimatedCentsFromEqualTemperament": -0.9716244975290707,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 52,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_E3_vl2_rr1.wav",
+      "originalSHA256": "3fe1ebfe49e96a33909089284f4d3ca988e9c76578df3c59fb17a6f7e981dabe",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 16.69448979591837,
+        "peakDBFS": -8.653005282355082,
+        "rmsDBFS": -34.73799666216338,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 7.581710815429688e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -88.77852962903862,
+        "maxAdjacentStep": 0.017145752906799316,
+        "finite": true
+      },
+      "thresholdDBFS": -68.65300528235508,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -17.73766025169269,
+        "rmsDBFS": -40.7554175544921,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.337860107421875e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -61.393612989403195,
+        "maxAdjacentStep": 0.005576729774475098,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -32.32475772582396,
+      "monoToStereoRMSdB": -0.943791842975054,
+      "dcMean": 4.509130337586005e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 52,
+        "expectedHz": 164.81377845643496,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 164.625,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 329.25,
+            "relativeMagnitude": 0.340522202859126
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 493.75,
+            "relativeMagnitude": 0.17580775448660038
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 164.625,
+        "estimatedCentsFromEqualTemperament": -1.9840999217741684,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 54,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#3_vl2_rr1.wav",
+      "originalSHA256": "4a2b66d066aba3a0688421cdf3d168fa13fe91c62a42d7159f8084c8f1c99fd1",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 13.385442176870749,
+        "peakDBFS": -9.23045477622357,
+        "rmsDBFS": -33.2029753417208,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.8623809814453125e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -89.93355012136256,
+        "maxAdjacentStep": 0.024499893188476562,
+        "finite": true
+      },
+      "thresholdDBFS": -69.23045477622357,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -18.311226434223286,
+        "rmsDBFS": -40.09023293331862,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.5020370483398438e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -66.05692841960376,
+        "maxAdjacentStep": 0.007874250411987305,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -31.987608582188418,
+      "monoToStereoRMSdB": -1.205979182390513,
+      "dcMean": -3.3135851845145225e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 54,
+        "expectedHz": 184.9972113558172,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 184.625,
+            "relativeMagnitude": 0.7654409635756162
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 369.5,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 554.375,
+            "relativeMagnitude": 0.3416957578283307
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 184.625,
+        "estimatedCentsFromEqualTemperament": -3.486723311844355,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 56,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_G#3_vl2_rr1.wav",
+      "originalSHA256": "6b518361c4db76e2ae996e5a3bf93fec3ee861da5f7973271b0fef7ca12edf94",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 19.146099773242632,
+        "peakDBFS": -6.90103901581256,
+        "rmsDBFS": -30.64969625472476,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.7642974853515625e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -98.67373149759953,
+        "maxAdjacentStep": 0.030455708503723145,
+        "finite": true
+      },
+      "thresholdDBFS": -66.90103901581256,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -15.982865828149153,
+        "rmsDBFS": -35.98616072366327,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 7.271766662597656e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -58.3184243441972,
+        "maxAdjacentStep": 0.009865283966064453,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -29.0295131461384,
+      "monoToStereoRMSdB": -1.4556929876369544,
+      "dcMean": -1.2658239963153997e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 56,
+        "expectedHz": 207.65234878997256,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 207.25,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 414.875,
+            "relativeMagnitude": 0.6544833999098414
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 622.625,
+            "relativeMagnitude": 0.47506771705932554
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 207.25,
+        "estimatedCentsFromEqualTemperament": -3.3577064346909298,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 58,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#3_vl2_rr1.wav",
+      "originalSHA256": "beac32193fe1d5ed0e8e33d2f526a232f9cd744557addf7c8c1932261a805847",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 12.251201814058957,
+        "peakDBFS": -10.210600097754458,
+        "rmsDBFS": -34.56059080930292,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 4.482269287109375e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -92.00327250481953,
+        "maxAdjacentStep": 0.015358209609985352,
+        "finite": true
+      },
+      "thresholdDBFS": -70.21060009775445,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -19.292655181909517,
+        "rmsDBFS": -41.81717481759002,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 2.5153160095214844e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -68.96659761413369,
+        "maxAdjacentStep": 0.0049659013748168945,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -37.586097318004036,
+      "monoToStereoRMSdB": -5.077305249426195,
+      "dcMean": 1.2767488757769267e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 58,
+        "expectedHz": 233.08188075904496,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 232.5,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 465.875,
+            "relativeMagnitude": 0.20532429681022749
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 699.125,
+            "relativeMagnitude": 0.16895167145224002
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 232.5,
+        "estimatedCentsFromEqualTemperament": -4.327369035119025,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 60,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "originalSHA256": "9c2020587943a86dec7a8b7178cdac1c254c4f3dfc016bb27acdef1af292827f",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 8.544126984126985,
+        "peakDBFS": -6.879673670769446,
+        "rmsDBFS": -30.0581272034603,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.2636184692382812e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -84.79350332910016,
+        "maxAdjacentStep": 0.027965784072875977,
+        "finite": true
+      },
+      "thresholdDBFS": -66.87967367076945,
+      "firstThresholdCrossingMs": 0.045351473922902494,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -15.962299083609778,
+        "rmsDBFS": -38.85479955616594,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 6.4373016357421875e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -72.89590341246247,
+        "maxAdjacentStep": 0.009134292602539062,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -32.268646354157504,
+      "monoToStereoRMSdB": -2.742726119052546,
+      "dcMean": -1.0306453332304954e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 60,
+        "expectedHz": 261.6255653005986,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 261.625,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 523.25,
+            "relativeMagnitude": 0.48766624818269066
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 785.375,
+            "relativeMagnitude": 0.15295018604777702
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 261.625,
+        "estimatedCentsFromEqualTemperament": -0.0037407227404289336,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 62,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_D4_vl2_rr1.wav",
+      "originalSHA256": "583cc59c22286511ef2964520bfb256caadcc33fe21d2bad5b30b8e7e3cc18a0",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 11.166825396825397,
+        "peakDBFS": -9.501934560885633,
+        "rmsDBFS": -34.43600041929008,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 8.440017700195312e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -89.8400964856736,
+        "maxAdjacentStep": 0.022434115409851074,
+        "finite": true
+      },
+      "thresholdDBFS": -69.50193456088563,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -18.584357800988556,
+        "rmsDBFS": -42.07559779292407,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 4.589557647705078e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -77.3658014902281,
+        "maxAdjacentStep": 0.0072672367095947266,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -33.02129335711962,
+      "monoToStereoRMSdB": -1.0456743608263808,
+      "dcMean": 4.926992890735467e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 62,
+        "expectedHz": 293.6647679174076,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 293.25,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 587.25,
+            "relativeMagnitude": 0.3907155388652179
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 881.5,
+            "relativeMagnitude": 0.10510223037006079
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 293.25,
+        "estimatedCentsFromEqualTemperament": -2.446898595381538,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 64,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_E4_vl2_rr1.wav",
+      "originalSHA256": "df2dcee59e5a5d4f8a816eec041e876eab901ac4aa60c408fe82f873cb292bb5",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 11.425102040816327,
+        "peakDBFS": -5.349805577037513,
+        "rmsDBFS": -28.479156905651966,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 2.849102020263672e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -82.83844097185026,
+        "maxAdjacentStep": 0.028206825256347656,
+        "finite": true
+      },
+      "thresholdDBFS": -65.34980557703751,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -14.429885986434911,
+        "rmsDBFS": -36.028192882596365,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 9.298324584960938e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -64.38324477234931,
+        "maxAdjacentStep": 0.009145736694335938,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -26.46267310764898,
+      "monoToStereoRMSdB": -0.2027452231038879,
+      "dcMean": -3.017579826215903e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 64,
+        "expectedHz": 329.6275569128699,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 329.625,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 660.125,
+            "relativeMagnitude": 0.16062509351329257
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 991.5,
+            "relativeMagnitude": 0.06007321375078977
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 329.625,
+        "estimatedCentsFromEqualTemperament": -0.013429192119275209,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 66,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#4_vl2_rr1.wav",
+      "originalSHA256": "c296451071e80e936f4b582cd5e1133fe617f7f9a5ca396ad0144d72a3f6f2f5",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 11.305714285714286,
+        "peakDBFS": -9.030872928481156,
+        "rmsDBFS": -34.38547440305507,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 4.6372413635253906e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -92.08913561228704,
+        "maxAdjacentStep": 0.02527296543121338,
+        "finite": true
+      },
+      "thresholdDBFS": -69.03087292848116,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -18.113084953613022,
+        "rmsDBFS": -41.9914156036105,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 2.3126602172851562e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -68.71828028137504,
+        "maxAdjacentStep": 0.008177399635314941,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -32.643336170219,
+      "monoToStereoRMSdB": -0.51579667816912,
+      "dcMean": -7.137246429920196e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 66,
+        "expectedHz": 369.9944227116344,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 369.875,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 741.25,
+            "relativeMagnitude": 0.4749200925574682
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 1113.375,
+            "relativeMagnitude": 0.23998617290354815
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 369.875,
+        "estimatedCentsFromEqualTemperament": -0.5588787968858454,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 68,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_G#4_vl2_rr1.wav",
+      "originalSHA256": "5af09c48cb511796a5c526aa4efdac6257c7525656a673a20c22d2d420fa589f",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 13.388321995464853,
+        "peakDBFS": -5.144844349305396,
+        "rmsDBFS": -29.587977242401475,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 0.00015163421630859375,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -84.83953739382682,
+        "maxAdjacentStep": 0.04776811599731445,
+        "finite": true
+      },
+      "thresholdDBFS": -65.1448443493054,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -14.226002324830112,
+        "rmsDBFS": -36.50332273806371,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 7.903575897216797e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -57.35141083863297,
+        "maxAdjacentStep": 0.015389800071716309,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -30.17552842162178,
+      "monoToStereoRMSdB": -2.9275773016726254,
+      "dcMean": -2.0878389477729797e-08,
+      "pitchEvidence": {
+        "assignedMIDI": 68,
+        "expectedHz": 415.3046975799451,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 415.0,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 830.125,
+            "relativeMagnitude": 0.2745226398908823
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 1249.125,
+            "relativeMagnitude": 0.04522192585203779
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 415.0,
+        "estimatedCentsFromEqualTemperament": -1.2706247484469826,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 70,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#4_vl2_rr1.wav",
+      "originalSHA256": "17b094ae71298be4f9e99be050e57c7045e4cce990abf6a98a74de01576bab49",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 14.621065759637188,
+        "peakDBFS": -8.232368606091695,
+        "rmsDBFS": -31.53274653861125,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.2755393981933594e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -90.91807468584935,
+        "maxAdjacentStep": 0.031139612197875977,
+        "finite": true
+      },
+      "thresholdDBFS": -68.2323686060917,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -17.3050497424516,
+        "rmsDBFS": -38.042130086209966,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 6.318092346191406e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -62.68033565440706,
+        "maxAdjacentStep": 0.009930253028869629,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -28.476704153701426,
+      "monoToStereoRMSdB": -0.16161957144480213,
+      "dcMean": 2.2860330839951833e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 70,
+        "expectedHz": 466.1637615180899,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 466.0,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 935.0,
+            "relativeMagnitude": 0.07710139268119044
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 1403.5,
+            "relativeMagnitude": 0.009462186260374046
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 466.0,
+        "estimatedCentsFromEqualTemperament": -0.6082826444551899,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 72,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C5_vl2_rr1.wav",
+      "originalSHA256": "167d625aeb78f0d64491d6cb8b0436302f63bd0dd4c2e21180460ef568e4faea",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 12.811587301587302,
+        "peakDBFS": -3.139568593261273,
+        "rmsDBFS": -31.16752380559509,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.5762786865234375e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -84.88581466818475,
+        "maxAdjacentStep": 0.06076371669769287,
+        "finite": true
+      },
+      "thresholdDBFS": -63.139568593261274,
+      "firstThresholdCrossingMs": 0.045351473922902494,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -12.21844490856384,
+        "rmsDBFS": -38.2675555832133,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.1324882507324219e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -59.54420159995734,
+        "maxAdjacentStep": 0.019638419151306152,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -31.419518684155786,
+      "monoToStereoRMSdB": -2.5076149075215155,
+      "dcMean": 5.065492975215118e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 72,
+        "expectedHz": 523.2511306011972,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 522.375,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 1047.125,
+            "relativeMagnitude": 0.1960144824699758
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 1575.5,
+            "relativeMagnitude": 0.10616700529050842
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 522.375,
+        "estimatedCentsFromEqualTemperament": -2.901204242700437,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 74,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_D5_vl2_rr1.wav",
+      "originalSHA256": "40132bf1fe91b890311af70707e9b007d4edca8de1cc17995a6d9784eb6ca680",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 10.903424036281178,
+        "peakDBFS": -9.512580204453899,
+        "rmsDBFS": -34.277787255944524,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 2.3484230041503906e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -92.32897151435091,
+        "maxAdjacentStep": 0.03145647048950195,
+        "finite": true
+      },
+      "thresholdDBFS": -69.5125802044539,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -18.592692705557287,
+        "rmsDBFS": -42.029384804489425,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 7.867813110351562e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -68.1530740791583,
+        "maxAdjacentStep": 0.01016378402709961,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -34.283174710568225,
+      "monoToStereoRMSdB": -2.057844541183018,
+      "dcMean": -1.7624896330138048e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 74,
+        "expectedHz": 587.3295358348151,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 586.75,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 1175.5,
+            "relativeMagnitude": 0.08140025851438487
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 1770.25,
+            "relativeMagnitude": 0.01968955747763442
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 586.75,
+        "estimatedCentsFromEqualTemperament": -1.709104401787282,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 76,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_E5_vl2_rr1.wav",
+      "originalSHA256": "1c6d4ab5b8298a0b0858dab0d01d08af3cbc580c941fa4b2eff7ba76ff51f947",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 12.247324263038548,
+        "peakDBFS": -4.867691599727509,
+        "rmsDBFS": -29.78464055078672,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.266334533691406e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -85.13237199128287,
+        "maxAdjacentStep": 0.05500912666320801,
+        "finite": true
+      },
+      "thresholdDBFS": -64.86769159972751,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -13.956942521069966,
+        "rmsDBFS": -37.05242784341976,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.1920928955078125e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -61.10415545264385,
+        "maxAdjacentStep": 0.01773536205291748,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -28.281626472274496,
+      "monoToStereoRMSdB": -1.0275588845534949,
+      "dcMean": -4.6712326196332775e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 76,
+        "expectedHz": 659.2551138257398,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 659.25,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 1318.875,
+            "relativeMagnitude": 0.057306750605361986
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 1988.125,
+            "relativeMagnitude": 0.0032502754395046666
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 659.25,
+        "estimatedCentsFromEqualTemperament": -0.013429192119275209,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 78,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#5_vl2_rr1.wav",
+      "originalSHA256": "2f0eaf6a898a33576c3697bd52c6590be1715675a177556ed8d9ca6f2142e970",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 11.789931972789116,
+        "peakDBFS": -5.116044335585403,
+        "rmsDBFS": -30.99609302905933,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.823902130126953e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -82.3854974986409,
+        "maxAdjacentStep": 0.06003093719482422,
+        "finite": true
+      },
+      "thresholdDBFS": -65.1160443355854,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -14.198721362526474,
+        "rmsDBFS": -38.425169089004825,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.33514404296875e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -66.2706465761691,
+        "maxAdjacentStep": 0.019392967224121094,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -31.678515810765923,
+      "monoToStereoRMSdB": -2.5585205918719334,
+      "dcMean": -4.633101634681225e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 78,
+        "expectedHz": 739.9888454232688,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 738.75,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 1484.375,
+            "relativeMagnitude": 0.04353213881646893
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 2237.5,
+            "relativeMagnitude": 0.02390466497479529
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 738.75,
+        "estimatedCentsFromEqualTemperament": -2.90075815171786,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 80,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_G#5_vl2_rr1.wav",
+      "originalSHA256": "a44811e0b228d968557b8bec4ad6ddb1d230333c9bfb22775b385843aef5d13c",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 9.360430839002268,
+        "peakDBFS": -10.986945369458162,
+        "rmsDBFS": -35.812244984161495,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 5.125999450683594e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -96.22373560279868,
+        "maxAdjacentStep": 0.03183257579803467,
+        "finite": true
+      },
+      "thresholdDBFS": -70.98694536945816,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -20.063807664129925,
+        "rmsDBFS": -44.21357491008425,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.6954879760742188e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -78.3493597159631,
+        "maxAdjacentStep": 0.010308027267456055,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -34.160094671583344,
+      "monoToStereoRMSdB": -0.14958822589436088,
+      "dcMean": 9.372370938460033e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 80,
+        "expectedHz": 830.6093951598903,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 831.125,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 1665.75,
+            "relativeMagnitude": 0.010260592845625726
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 2516.0,
+            "relativeMagnitude": 0.031905700867487174
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 831.125,
+        "estimatedCentsFromEqualTemperament": 1.074338578183707,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 82,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#5_vl2_rr1.wav",
+      "originalSHA256": "11b12c90c490510bc0817b89e8596d807b44a718ba0af51ca05478dcabb07edc",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 9.366054421768707,
+        "peakDBFS": -4.571722385440768,
+        "rmsDBFS": -30.76039229388399,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 4.017353057861328e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -86.34528876987146,
+        "maxAdjacentStep": 0.07596659660339355,
+        "finite": true
+      },
+      "thresholdDBFS": -64.57172238544076,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -13.64928058771991,
+        "rmsDBFS": -39.15930115236698,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.800060272216797e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -67.22197252547649,
+        "maxAdjacentStep": 0.0246049165725708,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -30.226388453059837,
+      "monoToStereoRMSdB": -0.9559472886569507,
+      "dcMean": -2.8818071198960145e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 82,
+        "expectedHz": 932.3275230361799,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 934.0,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 1870.375,
+            "relativeMagnitude": 0.06258925034464172
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 2825.75,
+            "relativeMagnitude": 0.046213058536145254
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 934.0,
+        "estimatedCentsFromEqualTemperament": 3.1028314220028586,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 84,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C6_vl2_rr1.wav",
+      "originalSHA256": "9feff6271739e80f80b1fdaa450fee2d9c76ccf0c5bbeb89bb73f78fcd8d309f",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 8.17140589569161,
+        "peakDBFS": -8.23321281712677,
+        "rmsDBFS": -33.40414442454809,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 0.0001354217529296875,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -83.10007067630389,
+        "maxAdjacentStep": 0.05510449409484863,
+        "finite": true
+      },
+      "thresholdDBFS": -68.23321281712677,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 8.0,
+        "peakDBFS": -17.311870360576407,
+        "rmsDBFS": -42.394199281138086,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 7.176399230957031e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -83.08059117554122,
+        "maxAdjacentStep": 0.017870664596557617,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -35.821620956411756,
+      "monoToStereoRMSdB": -2.935607090981836,
+      "dcMean": 8.669309318065643e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 84,
+        "expectedHz": 1046.5022612023945,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 1048.0,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 2104.25,
+            "relativeMagnitude": 0.04792677490465928
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 3179.0,
+            "relativeMagnitude": 0.008792129876921375
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 1048.0,
+        "estimatedCentsFromEqualTemperament": 2.4759456153490413,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 86,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_D6_vl2_rr1.wav",
+      "originalSHA256": "d3bc5bfee95eabebefe41cd24f5c2c996f7bbcbbb09e1df13108e7d4041dd995",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 7.6538548752834465,
+        "peakDBFS": -10.233805374022044,
+        "rmsDBFS": -35.89995214202653,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 8.58306884765625e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -92.0692082964303,
+        "maxAdjacentStep": 0.049992918968200684,
+        "finite": true
+      },
+      "thresholdDBFS": -70.23380537402204,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 7.653854166666667,
+        "peakDBFS": -19.3158891208471,
+        "rmsDBFS": -44.98200133561903,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.1920928955078125e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -106.5391754888424,
+        "maxAdjacentStep": 0.01614058017730713,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -40.226052202301815,
+      "monoToStereoRMSdB": -4.828071849045557,
+      "dcMean": 8.923150430171548e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 86,
+        "expectedHz": 1174.6590716696303,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 1176.25,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 2365.75,
+            "relativeMagnitude": 0.05799141667104506
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 3581.5,
+            "relativeMagnitude": 0.0028887782991287338
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 1176.25,
+        "estimatedCentsFromEqualTemperament": 2.3431529094871886,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 88,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_E6_vl2_rr1.wav",
+      "originalSHA256": "a1e18f919b61e174c84e73f49710033a04ab7e65b39d0e259b508545ca52d73c",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 6.505034013605442,
+        "peakDBFS": -6.848177158702096,
+        "rmsDBFS": -32.00803029288849,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 9.894371032714844e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -96.42988234881236,
+        "maxAdjacentStep": 0.08321964740753174,
+        "finite": true
+      },
+      "thresholdDBFS": -66.84817715870209,
+      "firstThresholdCrossingMs": 0.045351473922902494,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 6.505020833333333,
+        "peakDBFS": -15.934275776268452,
+        "rmsDBFS": -41.09004921139312,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 5.4836273193359375e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -111.45128102710258,
+        "maxAdjacentStep": 0.026862382888793945,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -32.554833489367006,
+      "monoToStereoRMSdB": -0.7696359605863661,
+      "dcMean": -3.9750447765101856e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 88,
+        "expectedHz": 1318.5102276514797,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 1322.5,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 2660.375,
+            "relativeMagnitude": 0.03504889740103409
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 4034.625,
+            "relativeMagnitude": 0.005852251122806411
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 1322.5,
+        "estimatedCentsFromEqualTemperament": 5.23075217207419,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 90,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_F#6_vl2_rr1.wav",
+      "originalSHA256": "20d98852932c8a22cea9bee1b4892f7bc92e2c6085e9db5ab4efaf2a6a6e7e9e",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 4.623537414965987,
+        "peakDBFS": -11.54265867163479,
+        "rmsDBFS": -35.116273751559945,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 3.7550926208496094e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -93.2600689788766,
+        "maxAdjacentStep": 0.05892026424407959,
+        "finite": true
+      },
+      "thresholdDBFS": -71.54265867163478,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 4.623520833333333,
+        "peakDBFS": -20.6243703146465,
+        "rmsDBFS": -44.198287056601835,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.71661376953125e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -108.74964612601318,
+        "maxAdjacentStep": 0.01901865005493164,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -37.051593915083096,
+      "monoToStereoRMSdB": -0.7447919664740632,
+      "dcMean": -3.942685206992932e-09,
+      "pitchEvidence": {
+        "assignedMIDI": 90,
+        "expectedHz": 1479.9776908465376,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 1485.75,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 2987.125,
+            "relativeMagnitude": 0.016018033592907405
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 4548.25,
+            "relativeMagnitude": 0.0011108178580040327
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 1485.75,
+        "estimatedCentsFromEqualTemperament": 6.739142503179785,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 92,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_G#6_vl2_rr1.wav",
+      "originalSHA256": "07a6750ddb986331522c1fd2c70489134f6c8cd8008e03ba16f109bc8f87bd3f",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 3.834285714285714,
+        "peakDBFS": -7.828509865060341,
+        "rmsDBFS": -34.22747043575909,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.9550323486328125e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -83.41006794570939,
+        "maxAdjacentStep": 0.0739736557006836,
+        "finite": true
+      },
+      "thresholdDBFS": -67.82850986506034,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 3.8342708333333335,
+        "peakDBFS": -16.91349703271516,
+        "rmsDBFS": -43.30951143513212,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.5735626220703125e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -98.3222557317834,
+        "maxAdjacentStep": 0.024063587188720703,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -41.412549824655194,
+      "monoToStereoRMSdB": -4.981429069127957,
+      "dcMean": 4.764099880737613e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 92,
+        "expectedHz": 1661.2187903197805,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 1665.5,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 3374.125,
+            "relativeMagnitude": 0.022908305498548477
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 5132.875,
+            "relativeMagnitude": 0.0013920961642049973
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 1665.5,
+        "estimatedCentsFromEqualTemperament": 4.455910179630009,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    },
+    {
+      "rootMIDI": 94,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_A#6_vl2_rr1.wav",
+      "originalSHA256": "9517f6f1c44f6ec1ca75824aba001a92f584179cc566430e5ff0a1672f063995",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 2.636235827664399,
+        "peakDBFS": -7.9665155467575355,
+        "rmsDBFS": -32.43086819798985,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 2.9921531677246094e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -76.34026459073287,
+        "maxAdjacentStep": 0.09191441535949707,
+        "finite": true
+      },
+      "thresholdDBFS": -67.96651554675753,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 2.636229166666667,
+        "peakDBFS": -17.00509883272526,
+        "rmsDBFS": -41.51296588228916,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.430511474609375e-05,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -90.70317391871212,
+        "maxAdjacentStep": 0.02976822853088379,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -42.84323625246705,
+      "monoToStereoRMSdB": -6.090153152728513,
+      "dcMean": -1.0213068574105264e-06,
+      "pitchEvidence": {
+        "assignedMIDI": 94,
+        "expectedHz": 1864.6550460723597,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 1871.625,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 3795.75,
+            "relativeMagnitude": 0.004144616444751947
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 5459.375,
+            "relativeMagnitude": 0.0019334153237063542
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 1871.625,
+        "estimatedCentsFromEqualTemperament": 6.459170837586346,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": true
+    },
+    {
+      "rootMIDI": 96,
+      "originalPath": "vcsl-steinway-b/originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "originalSHA256": "23d50d834b7e6780899d5e2a62c4c2ba425ac129ef80a3b3bc066038ba2ee755",
+      "sourceSampleRate": 44100,
+      "sourceBits": 24,
+      "sourceChannels": 2,
+      "sourceMetrics": {
+        "durationSeconds": 3.5880725623582768,
+        "peakDBFS": -8.466131615504128,
+        "rmsDBFS": -35.82734578668615,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 1.8835067749023438e-05,
+        "lastFrameAbsMax": 1.1920928955078125e-07,
+        "last50msRMSDBFS": -80.88948984401699,
+        "maxAdjacentStep": 0.09674632549285889,
+        "finite": true
+      },
+      "thresholdDBFS": -68.46613161550412,
+      "firstThresholdCrossingMs": 0.022675736961451247,
+      "trimmedLeadingMs": 0.0,
+      "processedMetrics": {
+        "durationSeconds": 3.5880625,
+        "peakDBFS": -17.56654812794702,
+        "rmsDBFS": -44.909435438312684,
+        "samplesAtOrAboveFullScale": 0,
+        "firstFrameAbsMax": 7.510185241699219e-06,
+        "lastFrameAbsMax": 0.0,
+        "last50msRMSDBFS": -96.92941155908161,
+        "maxAdjacentStep": 0.031193852424621582,
+        "finite": true
+      },
+      "monoFirst750msRMSdBFS": -43.55486043975822,
+      "monoToStereoRMSdB": -5.24781625138889,
+      "dcMean": 1.858345514414533e-07,
+      "pitchEvidence": {
+        "assignedMIDI": 96,
+        "expectedHz": 2093.004522404789,
+        "partials": [
+          {
+            "harmonic": 1,
+            "peakHz": 2110.0,
+            "relativeMagnitude": 1.0
+          },
+          {
+            "harmonic": 2,
+            "peakHz": 4283.25,
+            "relativeMagnitude": 0.02284215777613936
+          },
+          {
+            "harmonic": 3,
+            "peakHz": 6359.5,
+            "relativeMagnitude": 0.0015099805021812956
+          }
+        ],
+        "estimatorHarmonic": 1,
+        "estimatedFundamentalHz": 2110.0,
+        "estimatedCentsFromEqualTemperament": 14.001084083865656,
+        "method": "0.08–0.58 s stereo mean, Hann FFT, 0.125 Hz grid; bass uses harmonic 2. Approximate; not a tuning certification."
+      },
+      "pitchReviewFlag": false,
+      "monoReviewFlag": false
+    }
+  ],
+  "subjectiveListening": "NOT_TESTED",
+  "engineLoad": "NOT_TESTED"
+}

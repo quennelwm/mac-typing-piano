@@ -1,0 +1,910 @@
+{
+  "task": "A-002T",
+  "status": "passed",
+  "checkCount": 223,
+  "checks": [
+    {
+      "check": "Candidate and replaceable trial state",
+      "status": "passed"
+    },
+    {
+      "check": "Index single bank binding",
+      "status": "passed"
+    },
+    {
+      "check": "Independent binary RIFF/SF2 structure, guards, selectors, no loops or FX, release -1586",
+      "status": "passed"
+    },
+    {
+      "check": "All64 notes exactly once; no out-of-range zones",
+      "status": "passed"
+    },
+    {
+      "check": "32 roots and <=1-semitone map",
+      "status": "passed"
+    },
+    {
+      "check": "Index complete coverage",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest schema",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest no duplicate paths",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest instrument-parameters.json",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest licenses/NORMALIZED.txt",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest licenses/VCSL-CC0.txt",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest licenses/VCSL-README.md",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_A#2_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_A#3_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_A#4_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_A#5_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_A#6_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_C2_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_C3_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_C5_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_C6_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_D2_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_D3_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_D4_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_D5_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_D6_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_E2_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_E3_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_E4_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_E5_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_E6_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_F#3_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_F#4_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_F#5_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_F#6_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_G#2_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_G#3_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_G#4_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_G#5_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest originals/JHPiano_NoSus_Close_G#6_vl2_rr1.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest processing-metrics.json",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest processing_recipe.md",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest qa_audio.md",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m034_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m036_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m038_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m040_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m042_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m044_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m046_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m048_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m050_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m052_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m054_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m056_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m058_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m060_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m062_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m064_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m066_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m068_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m070_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m072_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m074_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m076_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m078_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m080_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m082_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m084_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m086_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m088_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m090_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m092_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m094_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest samples/piano_m096_v064_rr01.wav",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest source_records.json",
+      "status": "passed"
+    },
+    {
+      "check": "Manifest trial.sf2",
+      "status": "passed"
+    },
+    {
+      "check": "All three source license/notice files present",
+      "status": "passed"
+    },
+    {
+      "check": "Pinned source commit and32 records",
+      "status": "passed"
+    },
+    {
+      "check": "Approved28 files and exact bytes",
+      "status": "passed"
+    },
+    {
+      "check": "Actual received audio within110MiB",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 34",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 36",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 38",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 40",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 42",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 44",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 46",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 48",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 50",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 52",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 54",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 56",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 58",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 60",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 62",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 64",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 66",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 68",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 70",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 72",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 74",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 76",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 78",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 80",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 82",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 84",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 86",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 88",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 90",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 92",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 94",
+      "status": "passed"
+    },
+    {
+      "check": "Original root 96",
+      "status": "passed"
+    },
+    {
+      "check": "Same candidate-wide gain as A001",
+      "status": "passed"
+    },
+    {
+      "check": "Encoded400ms within0.2ms and requested parameters",
+      "status": "passed"
+    },
+    {
+      "check": "Root 34 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 34 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 34 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Legacy root 34 processed WAV unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "Root 36 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 36 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 36 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 38 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 38 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 38 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 40 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 40 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 40 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 42 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 42 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 42 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Legacy root 42 processed WAV unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "Root 44 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 44 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 44 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 46 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 46 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 46 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 48 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 48 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 48 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 50 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 50 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 50 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 52 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 52 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 52 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 54 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 54 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 54 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 56 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 56 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 56 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 58 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 58 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 58 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 60 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 60 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 60 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Legacy root 60 processed WAV unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "Root 62 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 62 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 62 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 64 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 64 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 64 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 66 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 66 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 66 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 68 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 68 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 68 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 70 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 70 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 70 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 72 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 72 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 72 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 74 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 74 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 74 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 76 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 76 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 76 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 78 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 78 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 78 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 80 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 80 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 80 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 82 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 82 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 82 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 84 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 84 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 84 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 86 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 86 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 86 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 88 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 88 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 88 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 90 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 90 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 90 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 92 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 92 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 92 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 94 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 94 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 94 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Root 96 PCM byte match, frames <=8s",
+      "status": "passed"
+    },
+    {
+      "check": "Root 96 finite/nonempty/unclipped and bounded quantization",
+      "status": "passed"
+    },
+    {
+      "check": "Root 96 terminal fade and source format",
+      "status": "passed"
+    },
+    {
+      "check": "Legacy root 96 processed WAV unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "Frozen prior artifacts unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "Reject wrong RIFF extent",
+      "status": "passed"
+    },
+    {
+      "check": "Reject truncated sample table",
+      "status": "passed"
+    },
+    {
+      "check": "Reject wrong form",
+      "status": "passed"
+    }
+  ],
+  "bankSHA256": "2819d43506550ece98d80455388c913850acfcdd7ae45ee61908311a52997b5a",
+  "bankBytes": 22744220,
+  "frozenInputFileCount": 130,
+  "pitchReviewRoots": [],
+  "monoReviewRoots": [
+    94
+  ],
+  "sourcePrecision": "Originalstereo24->stereo24processed->mono16bank, not amplified C001B render",
+  "engineLoad": "NOT_TESTED_BY_AUDIO_ROLE",
+  "hardwareListening": "NOT_TESTED",
+  "reproducibilityEvidence": "reproducibility.json (separate actual rebuild evidence)"
+}

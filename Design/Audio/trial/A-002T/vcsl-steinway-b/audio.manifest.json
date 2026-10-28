@@ -1,0 +1,542 @@
+{
+  "schemaVersion": "1.0.0",
+  "audioPackVersion": "a002t-steinway-mono.0.1",
+  "artifactState": "candidate",
+  "instrumentName": "VCSL Steinway B 64-note mono trial",
+  "runtimeFormat": "sf2",
+  "targetEngine": "AVAudioUnitSampler_candidate_UNTESTED",
+  "noteNaming": "C4=MIDI60",
+  "midiNoteRange": {
+    "min": 33,
+    "max": 96
+  },
+  "coverageMIDI": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+  ],
+  "files": [
+    {
+      "path": "instrument-parameters.json",
+      "sha256": "19c93bfd37c2b3ea3cbe3ed1f72daed18fc687750ea9a16d10d687f20eec57de",
+      "byteSize": 32348,
+      "role": "qa"
+    },
+    {
+      "path": "licenses/NORMALIZED.txt",
+      "sha256": "7ae47ef3ae3496c79d32a6814de23c1ed051cf8f8996c67c88cde9a4a0943289",
+      "byteSize": 190,
+      "role": "license"
+    },
+    {
+      "path": "licenses/VCSL-CC0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "byteSize": 7048,
+      "role": "license"
+    },
+    {
+      "path": "licenses/VCSL-README.md",
+      "sha256": "6f7214a188f106c917d6503748485413c3e47cf56bce69f82beb9d16aa0894a9",
+      "byteSize": 4365,
+      "role": "license"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_A#1_vl2_rr1.wav",
+      "sha256": "0f91c0d350c12f574f284c23a92a44348216218c49430c4698c7d505955fdb4f",
+      "byteSize": 6738508,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_A#2_vl2_rr1.wav",
+      "sha256": "777b890ce11600c21ca110991b3b23657901d44b0fe8c4bf283d80a8c3567b27",
+      "byteSize": 5128276,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_A#3_vl2_rr1.wav",
+      "sha256": "beac32193fe1d5ed0e8e33d2f526a232f9cd744557addf7c8c1932261a805847",
+      "byteSize": 3241714,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_A#4_vl2_rr1.wav",
+      "sha256": "17b094ae71298be4f9e99be050e57c7045e4cce990abf6a98a74de01576bab49",
+      "byteSize": 3868780,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_A#5_vl2_rr1.wav",
+      "sha256": "11b12c90c490510bc0817b89e8596d807b44a718ba0af51ca05478dcabb07edc",
+      "byteSize": 2478304,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_A#6_vl2_rr1.wav",
+      "sha256": "9517f6f1c44f6ec1ca75824aba001a92f584179cc566430e5ff0a1672f063995",
+      "byteSize": 697594,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_C2_vl2_rr1.wav",
+      "sha256": "8efd86d8a58e6334dea0c34c53872e67baa27e3982b5708b844c937bfb5fd5be",
+      "byteSize": 7368994,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_C3_vl2_rr1.wav",
+      "sha256": "53c2cf94051119d240c8ccd4b9a91f07aa07333d845515c1ea1276daa775549e",
+      "byteSize": 5150932,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_C4_vl2_rr1.wav",
+      "sha256": "9c2020587943a86dec7a8b7178cdac1c254c4f3dfc016bb27acdef1af292827f",
+      "byteSize": 2260822,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_C5_vl2_rr1.wav",
+      "sha256": "167d625aeb78f0d64491d6cb8b0436302f63bd0dd4c2e21180460ef568e4faea",
+      "byteSize": 3389992,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_C6_vl2_rr1.wav",
+      "sha256": "9feff6271739e80f80b1fdaa450fee2d9c76ccf0c5bbeb89bb73f78fcd8d309f",
+      "byteSize": 2162200,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_C7_vl2_rr1.wav",
+      "sha256": "23d50d834b7e6780899d5e2a62c4c2ba425ac129ef80a3b3bc066038ba2ee755",
+      "byteSize": 949450,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_D2_vl2_rr1.wav",
+      "sha256": "a03ff79f60e3d8133ca34e65dd99df8c4b755c5b3f7662c50d203973f1b931dc",
+      "byteSize": 5602936,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_D3_vl2_rr1.wav",
+      "sha256": "6daf884bd71087a04b3a89cab1f12df47d8d8acf89967bf6da73fe4aa73aa99d",
+      "byteSize": 5245528,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_D4_vl2_rr1.wav",
+      "sha256": "583cc59c22286511ef2964520bfb256caadcc33fe21d2bad5b30b8e7e3cc18a0",
+      "byteSize": 2954788,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_D5_vl2_rr1.wav",
+      "sha256": "40132bf1fe91b890311af70707e9b007d4edca8de1cc17995a6d9784eb6ca680",
+      "byteSize": 2885092,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_D6_vl2_rr1.wav",
+      "sha256": "d3bc5bfee95eabebefe41cd24f5c2c996f7bbcbbb09e1df13108e7d4041dd995",
+      "byteSize": 2025256,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_E2_vl2_rr1.wav",
+      "sha256": "b1cb8bf86450371b08c1f7fd39d6fcb2dda6e1a9062157c40d05e785fb661627",
+      "byteSize": 4884436,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_E3_vl2_rr1.wav",
+      "sha256": "3fe1ebfe49e96a33909089284f4d3ca988e9c76578df3c59fb17a6f7e981dabe",
+      "byteSize": 4417408,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_E4_vl2_rr1.wav",
+      "sha256": "df2dcee59e5a5d4f8a816eec041e876eab901ac4aa60c408fe82f873cb292bb5",
+      "byteSize": 3023128,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_E5_vl2_rr1.wav",
+      "sha256": "1c6d4ab5b8298a0b0858dab0d01d08af3cbc580c941fa4b2eff7ba76ff51f947",
+      "byteSize": 3240688,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_E6_vl2_rr1.wav",
+      "sha256": "a1e18f919b61e174c84e73f49710033a04ab7e65b39d0e259b508545ca52d73c",
+      "byteSize": 1721278,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_F#2_vl2_rr1.wav",
+      "sha256": "3b4c07adb641f09d9fa2630c61c65e17ac7e6fa383661892464957138d03f7b8",
+      "byteSize": 4332820,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_F#3_vl2_rr1.wav",
+      "sha256": "4a2b66d066aba3a0688421cdf3d168fa13fe91c62a42d7159f8084c8f1c99fd1",
+      "byteSize": 3541834,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_F#4_vl2_rr1.wav",
+      "sha256": "c296451071e80e936f4b582cd5e1133fe617f7f9a5ca396ad0144d72a3f6f2f5",
+      "byteSize": 2991538,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_F#5_vl2_rr1.wav",
+      "sha256": "2f0eaf6a898a33576c3697bd52c6590be1715675a177556ed8d9ca6f2142e970",
+      "byteSize": 3119662,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_F#6_vl2_rr1.wav",
+      "sha256": "20d98852932c8a22cea9bee1b4892f7bc92e2c6085e9db5ab4efaf2a6a6e7e9e",
+      "byteSize": 1223434,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_G#2_vl2_rr1.wav",
+      "sha256": "795d1fade3adb7ce8b844594a21f7768b769e97f1dfd82392acfca1077917c36",
+      "byteSize": 4499950,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_G#3_vl2_rr1.wav",
+      "sha256": "6b518361c4db76e2ae996e5a3bf93fec3ee861da5f7973271b0fef7ca12edf94",
+      "byteSize": 5066104,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_G#4_vl2_rr1.wav",
+      "sha256": "5af09c48cb511796a5c526aa4efdac6257c7525656a673a20c22d2d420fa589f",
+      "byteSize": 3542596,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_G#5_vl2_rr1.wav",
+      "sha256": "a44811e0b228d968557b8bec4ad6ddb1d230333c9bfb22775b385843aef5d13c",
+      "byteSize": 2476816,
+      "role": "sample"
+    },
+    {
+      "path": "originals/JHPiano_NoSus_Close_G#6_vl2_rr1.wav",
+      "sha256": "07a6750ddb986331522c1fd2c70489134f6c8cd8008e03ba16f109bc8f87bd3f",
+      "byteSize": 1014598,
+      "role": "sample"
+    },
+    {
+      "path": "processing-metrics.json",
+      "sha256": "2895d647a95239fed108be064ad6dcc82ad72942c71c1ac297dd503554e17265",
+      "byteSize": 71804,
+      "role": "qa"
+    },
+    {
+      "path": "processing_recipe.md",
+      "sha256": "17b4161abce75d87312bab2139566a8cb2e282a8d254d44600e0c66faea29885",
+      "byteSize": 1960,
+      "role": "qa"
+    },
+    {
+      "path": "qa_audio.md",
+      "sha256": "e0ef31ec22431191217742cdf1d4d9b2e040b477164ef2491f702a03a47d9ad9",
+      "byteSize": 1244,
+      "role": "qa"
+    },
+    {
+      "path": "samples/piano_m034_v064_rr01.wav",
+      "sha256": "464b50a60ea702e40898a7fa181f3dfc5558bca77066698b7c39ea5b1eb33eff",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m036_v064_rr01.wav",
+      "sha256": "1d4209e99cabd3fabe019b9e9e78ad193b60c9f0020689a9199bab7ce90fa0e5",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m038_v064_rr01.wav",
+      "sha256": "272d68cb19f6263e4c9e47c12de24a33d1bb9a663b6a3cc17c356a7ee0813a94",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m040_v064_rr01.wav",
+      "sha256": "f19214a974f1b90528102bed0b9273286d357c59a541970630eb2e31cd575a83",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m042_v064_rr01.wav",
+      "sha256": "5c7c7d8bdd62379830f04f5fd26a269530159a7f7d2adf1bdbf9704c86c0c663",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m044_v064_rr01.wav",
+      "sha256": "8790744cd8d2d475324a6d2fc9d4b1ec66823ae9b7600235029809ee1ff0f0ab",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m046_v064_rr01.wav",
+      "sha256": "91de85744098fa033c63cac3020197fb27702b40030b56befac0657d1f95332c",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m048_v064_rr01.wav",
+      "sha256": "2fa3e9e1e97ad5aa0cd256772086b00a402d3eb1ab7ae19e1d8cfd651e25d5a0",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m050_v064_rr01.wav",
+      "sha256": "4e331806b34596e8aabb79d855f03f8c033c42eaef84aabe2c1a3e7e2776cefc",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m052_v064_rr01.wav",
+      "sha256": "bc8fb0fd7ec6af5c007c6f59bda9011b59c53f43a640b3971303d3468ed20ff1",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m054_v064_rr01.wav",
+      "sha256": "949acaba39af24709ac3157b6f516bb5ebaa5d78a1f440cbeef3a5f1f51668bb",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m056_v064_rr01.wav",
+      "sha256": "6fa66aee8d96872494a52408868be5d96cd8ed24bfdf32c215febe92af1f6270",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m058_v064_rr01.wav",
+      "sha256": "4c59512c9378b9bb97bc7669318c3ed0102fb95c1fc6f01498b6307258c8e759",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m060_v064_rr01.wav",
+      "sha256": "5ce865efc31dac8597a9129212336b0f9620fdbb6e51d32c0bc70e7f198c6c32",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m062_v064_rr01.wav",
+      "sha256": "8826d44c1938912904d803b6dcc393ea88a2fec1e29c040e891ad38f75f6a5b5",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m064_v064_rr01.wav",
+      "sha256": "a396cbf9b3a86493f785cbabd875972ed452ac2d3d3a1f9d05dd8d63287538d2",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m066_v064_rr01.wav",
+      "sha256": "f41af4bc4f0352e8a3303fb7ec6ba7e36baae33509a610ea1038220dd858182c",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m068_v064_rr01.wav",
+      "sha256": "861164cdb3b5ba2db170cbece33cbe260cf87ddc8781af949c53503d3d269a23",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m070_v064_rr01.wav",
+      "sha256": "deee5c86f38e953ec6ab63eb9c5e2b0ac7e51094bf284c9d0768059c2914813f",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m072_v064_rr01.wav",
+      "sha256": "90c0612107bb8395b44af41d21578df16f7e944cc7590f9aee6dde5a4ab67b7e",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m074_v064_rr01.wav",
+      "sha256": "721fe2965fa2b205fb1852846ab595f060913d1dac680d0bf247b013d32bdba1",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m076_v064_rr01.wav",
+      "sha256": "2c1cb0774270ce6b485aadb29622877aad925b8e5d2c6ab1058ec5eab9862696",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m078_v064_rr01.wav",
+      "sha256": "b67353ce083a71708299e5f08479c5dd2e05e2688b12c54da6dc4be76d26db6d",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m080_v064_rr01.wav",
+      "sha256": "22f8ad30bd109ddf92cb3de58f521353624be878a49ae02f05ff52258b6567bb",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m082_v064_rr01.wav",
+      "sha256": "782635ff6a9ec888b67a045cc090c0fcf92fd27c0ba5d37b18c6a02cfd25e37b",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m084_v064_rr01.wav",
+      "sha256": "3440453ba4c9dd8642a176db71a9d313bc27851f55e7d4de2b090668cad10afa",
+      "byteSize": 2304044,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m086_v064_rr01.wav",
+      "sha256": "3a5ab793b36b4448587176cffefc8b15dc2791c10f6ffc3f362e1e4c8364c9b1",
+      "byteSize": 2204354,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m088_v064_rr01.wav",
+      "sha256": "fa1b4de00d69f902176f6c753c108300eef576e2e92ba5a7192d75b73173906a",
+      "byteSize": 1873490,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m090_v064_rr01.wav",
+      "sha256": "eafe04d55a85cf44303cbe6274d4335e91fbebfeadf1746733e3ff516af1ce43",
+      "byteSize": 1331618,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m092_v064_rr01.wav",
+      "sha256": "7eb4440ee8339ce09e716c9f7e2a0850ad5732ff0304e823c288f33fe9404e55",
+      "byteSize": 1104314,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m094_v064_rr01.wav",
+      "sha256": "64ff544b459d811688967bba05bc140f09cecb3981ff7862048c4033c7adca36",
+      "byteSize": 759278,
+      "role": "sample"
+    },
+    {
+      "path": "samples/piano_m096_v064_rr01.wav",
+      "sha256": "e9edf14f696e2c7d5141e13de09ec010635e37ccf64ff5c5f6dc134790470254",
+      "byteSize": 1033406,
+      "role": "sample"
+    },
+    {
+      "path": "source_records.json",
+      "sha256": "f4eed277b9a6fcf7fb02c6f2c0a0c8f3b39b71c1c91a9cb9e34f4525e6a09c74",
+      "byteSize": 33596,
+      "role": "qa"
+    },
+    {
+      "path": "trial.sf2",
+      "sha256": "2819d43506550ece98d80455388c913850acfcdd7ae45ee61908311a52997b5a",
+      "byteSize": 22744220,
+      "role": "bank"
+    }
+  ],
+  "instrument": {
+    "bankFile": "trial.sf2",
+    "program": 0,
+    "bankMSB": 121,
+    "bankLSB": 0,
+    "sf2Preset": 0,
+    "sf2Bank": 0,
+    "selectorStatus": "SAME_SELECTOR_AS_C001B_NEW_BANK_RUNTIME_PENDING",
+    "parametersFile": "instrument-parameters.json"
+  },
+  "licenseRecords": [
+    {
+      "sourceURL": "https://github.com/sgossner/VCSL/tree/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "author": "Versilian Studios LLC",
+      "sourceVersion": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+      "licenseID": "CC0-1.0",
+      "licenseFile": "licenses/VCSL-CC0.txt",
+      "modifications": "Same candidate-wide A001 gain, onset threshold trim with2ms pre-roll, max8s,64tap sinc48kHz,last80ms cosine-squared fade,stereo24 rounding,arithmetic(L+R)/2,nearest-even PCM16,no dither/no pitch correction/no loops,no FX,approx400ms encoded release."
+    }
+  ],
+  "processingRecipePath": "processing_recipe.md",
+  "qaReportPath": "qa_audio.md",
+  "readinessNote": "CANDIDATE. Full64-note encoded coverage from32 roots; not final tone selection. New bank engine/hardware/listening validation pending. Mono16 lossy reduction; inherited recorded tuning kept; trial release approx400ms."
+}
