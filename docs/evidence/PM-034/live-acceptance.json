@@ -1,0 +1,23 @@
+{
+  "versionObservedInStartup": "0.2.11",
+  "startupPrimaryButton": "开始打字钢琴",
+  "primaryClicked": true,
+  "remainingAXWindow": "64-key overlay; popover not exposed by current CUA surface",
+  "inputPermissionRetained": true,
+  "permissionPromptShown": false,
+  "userConfirmedMenuOpened": true,
+  "userConfirmedAnimationsSmoother": true,
+  "userConfirmedBlackLabelsVisible": true,
+  "userConfirmedCloseAndSliders": "PASS: user replied 菜单我测试了，没啥问题，美观问题下一个版本再调整",
+  "editorManualTested": false,
+  "layerVisualTested": false,
+  "preferencesAfterUserTesting": {
+    "heightScale": 0.96,
+    "floatingNotesEnabled": true,
+    "soundEnabled": true,
+    "pianoLayer": "top",
+    "transparency": 0.3,
+    "showKeyLabels": true,
+    "volume": 1
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "task": "C-033",
+  "requirements": [
+    "CR-010",
+    "CR-011"
+  ],
+  "status": "COMPLETE_AWAITING_PM_ACCEPTANCE",
+  "sourceFrozen": true,
+  "version": "0.2.10",
+  "build": 13,
+  "timestamp": "2026-10-29T16:02:33.845196+08:00",
+  "verification": {
+    "sourceFrozenFileCount": 93,
+    "sourceChanges": [],
+    "protectedFileCount": 153,
+    "protectedChanges": [],
+    "protectedInstalledVersion": "0.2.9",
+    "strictSignatureExitCode": 0,
+    "adHoc": true,
+    "zipCorruptMember": null,
+    "zipBinaryMatches": true,
+    "version": "0.2.10",
+    "build": "13",
+    "binarySHA256": "a95146a73d2ef5784a77827bca3bf53c33bef2acfa7f3f7ecd6ad331c374397d",
+    "zipSHA256": "8171537a872c3e5c28973cc115e4fc6c6d4d42daf319025cf0387574c025eab5",
+    "sourceManifestSHA256": "212add602c1fee7c2ea32d29e5b25783a5a0c0028e134f512ea3ad7a70be6fc7",
+    "appPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.10/打字钢琴试用.app",
+    "zipPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.10/打字钢琴试用.zip"
+  },
+  "changedSourceFiles": [
+    "Code/IMPLEMENTATION.md",
+    "Code/README.md",
+    "Code/Scripts/build.sh",
+    "Code/Sources/PianoMac/CompactMenuEvidence.swift",
+    "Code/Sources/PianoMac/PianoView.swift",
+    "Code/Sources/PianoMac/ProbeController.swift",
+    "Code/Sources/PianoMac/ProbeMenu.swift",
+    "Code/Sources/PianoMac/QuietIvoryProvenance.swift",
+    "Code/Sources/PianoProbe/main.swift",
+    "Code/Tests/PianoMacTests/CompactMenuTests.swift",
+    "Code/Tests/PianoMacTests/GlossyBlackTests.swift",
+    "Code/Tests/PianoMacTests/KeymapEditorTests.swift",
+    "Code/Tests/PianoMacTests/MenuIntegrationTests.swift",
+    "Code/Tests/PianoMacTests/StartupEntryTests.swift"
+  ],
+  "tests": {
+    "targetedPassed": 24,
+    "fullSuiteRuns": 1,
+    "total": 150,
+    "passed": 147,
+    "skipped": 3,
+    "failed": 0,
+    "skipReason": "Existing CandidateBankTests opt-in replay condition"
+  },
+  "cli": {
+    "selfCheck": "PASS",
+    "menuSmoke": "PASS",
+    "compactMenuEvidence": "PASS"
+  },
+  "menu": {
+    "measurement": "same macOS host, NSMenu.size; native logical size, not custom view width or screenshot pixels",
+    "initial": {
+      "oldWidth": 313,
+      "newWidth": 180,
+      "oldVisibleRootItems": 28,
+      "newVisibleRootItems": 17
+    },
+    "stressStates": [
+      {
+        "state": "运行中：持续全局打字",
+        "oldWidth": 352,
+        "newWidth": 181,
+        "oldVisibleRootItems": 28,
+        "newVisibleRootItems": 18
+      },
+      {
+        "state": "已暂停：尚未获得输入监控授权",
+        "oldWidth": 352,
+        "newWidth": 181,
+        "oldVisibleRootItems": 28,
+        "newVisibleRootItems": 18
+      },
+      {
+        "state": "已暂停：安全输入阻断",
+        "oldWidth": 352,
+        "newWidth": 184,
+        "oldVisibleRootItems": 29,
+        "newVisibleRootItems": 19
+      },
+      {
+        "state": "已暂停：开始状态保存失败",
+        "oldWidth": 352,
+        "newWidth": 181,
+        "oldVisibleRootItems": 29,
+        "newVisibleRootItems": 19
+      }
+    ],
+    "normalRunningWidth": 181,
+    "notes": "State fixtures include keymap warning; secure input also enables reduced transparency, save failure adds warning. Same long input strings were passed before/after. New permission item additionally reflects granted/ungranted. Native checkmark and shortcut columns count toward width."
+  },
+  "blackKeys": {
+    "keyCount": 26,
+    "bodyMaxRGB": 0,
+    "combinations": 12,
+    "whiteRGBAPreservedSamples": 456,
+    "labelColorsUnchanged": true
+  },
+  "previews": {
+    "count": 2,
+    "report": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/trial-0.2.10/previews/report.json",
+    "menuImageKind": "offscreen reconstructed root using actual native slider views; NOT a system menu screenshot",
+    "blackImageKind": "production PianoView opaque crop with MIDI34 pressed; synthetic background"
+  },
+  "notRun": [
+    "real status-item first click / second click / outside click",
+    "real native slider drag / submenu tracking",
+    "real permission request / TCC continuity",
+    "candidate GUI / live global input and audio",
+    "fixed identity sign / install / publish"
+  ],
+  "authority": "Only Code and trial-0.2.10; no Git, user preferences or TCC writes; installed 0.2.9 remains byte-identical to pre-task protected files",
+  "handoff": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/trial-0.2.10/HANDOFF.md"
+}

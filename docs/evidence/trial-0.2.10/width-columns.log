@@ -1,0 +1,43 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Emitting module PianoMacTests
+[4/5] Compiling PianoMacTests CompactMenuTests.swift
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (2.13s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 15:45:46.284.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 15:45:46.287.
+Test Suite 'CompactMenuTests' started at 2026-10-29 15:45:46.287.
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:33: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:33: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:33: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:33: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' failed (0.416 seconds).
+Test Suite 'CompactMenuTests' failed at 2026-10-29 15:45:46.704.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.416 (0.416) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 15:45:46.704.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.416 (0.416) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 15:45:46.704.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.416 (0.420) seconds
+WIDTH_COLUMNS marks=true shortcuts=true width=197.0
+WIDTH_COLUMNS marks=true shortcuts=false width=181.0
+WIDTH_COLUMNS marks=false shortcuts=true width=183.0
+WIDTH_COLUMNS marks=false shortcuts=false width=167.0
+WIDTH_COLUMNS marks=true shortcuts=true width=197.0
+WIDTH_COLUMNS marks=true shortcuts=false width=181.0
+WIDTH_COLUMNS marks=false shortcuts=true width=183.0
+WIDTH_COLUMNS marks=false shortcuts=false width=167.0
+WIDTH_COLUMNS marks=true shortcuts=true width=197.0
+WIDTH_COLUMNS marks=true shortcuts=false width=181.0
+WIDTH_COLUMNS marks=false shortcuts=true width=183.0
+WIDTH_COLUMNS marks=false shortcuts=false width=167.0
+WIDTH_COLUMNS marks=true shortcuts=true width=197.0
+WIDTH_COLUMNS marks=true shortcuts=false width=181.0
+WIDTH_COLUMNS marks=false shortcuts=true width=183.0
+WIDTH_COLUMNS marks=false shortcuts=false width=167.0
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

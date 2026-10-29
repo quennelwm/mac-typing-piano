@@ -1,0 +1,89 @@
+{
+  "cacheLimitPerViewBytes" : 4194304,
+  "canvasPt" : [
+    1496,
+    256
+  ],
+  "kind" : "paired same-process offline CPU milliseconds per production frame, no PNG IO; NOT hosted frame pacing",
+  "scale" : 2,
+  "scenarios" : [
+    {
+      "cacheEnabled" : false,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 0,
+      "frames" : 60,
+      "keyLayerRenders" : 64,
+      "meanCPUms" : 29.213283333333333,
+      "p50CPUms" : 28.916999999999859,
+      "p95CPUms" : 31.080999999999914,
+      "p95Wallms" : 33.96950000023935,
+      "retainedKeyCacheBytes" : 0,
+      "scenario" : "static"
+    },
+    {
+      "cacheEnabled" : false,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 64,
+      "frames" : 60,
+      "keyLayerRenders" : 64,
+      "meanCPUms" : 29.020600000000005,
+      "p50CPUms" : 28.905000000000403,
+      "p95CPUms" : 30.384999999999884,
+      "p95Wallms" : 30.444916672422551,
+      "retainedKeyCacheBytes" : 0,
+      "scenario" : "floating-only"
+    },
+    {
+      "cacheEnabled" : false,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 64,
+      "frames" : 60,
+      "keyLayerRenders" : 64,
+      "meanCPUms" : 29.287183333333306,
+      "p50CPUms" : 29.189999999999827,
+      "p95CPUms" : 30.656000000000461,
+      "p95Wallms" : 30.782291680225171,
+      "retainedKeyCacheBytes" : 0,
+      "scenario" : "press-plus-floating"
+    },
+    {
+      "cacheEnabled" : true,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 0,
+      "frames" : 60,
+      "keyLayerRenders" : 1,
+      "meanCPUms" : 0.62001666666677835,
+      "p50CPUms" : 0.61399999999967037,
+      "p95CPUms" : 0.71599999999971686,
+      "p95Wallms" : 0.74195832712575793,
+      "retainedKeyCacheBytes" : 2798336,
+      "scenario" : "static"
+    },
+    {
+      "cacheEnabled" : true,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 64,
+      "frames" : 60,
+      "keyLayerRenders" : 1,
+      "meanCPUms" : 1.1154999999999726,
+      "p50CPUms" : 1.1630000000000251,
+      "p95CPUms" : 1.394999999999591,
+      "p95Wallms" : 1.1270416580373421,
+      "retainedKeyCacheBytes" : 2798336,
+      "scenario" : "floating-only"
+    },
+    {
+      "cacheEnabled" : true,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 64,
+      "frames" : 60,
+      "keyLayerRenders" : 54,
+      "meanCPUms" : 22.51243333333333,
+      "p50CPUms" : 26.813000000000642,
+      "p95CPUms" : 29.031999999999947,
+      "p95Wallms" : 28.947041661012918,
+      "retainedKeyCacheBytes" : 2915840,
+      "scenario" : "press-plus-floating"
+    }
+  ]
+}

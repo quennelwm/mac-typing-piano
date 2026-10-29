@@ -1,0 +1,11 @@
+{
+  "runningInstances" : 1,
+  "scope" : "read-only current application window geometry; no screenshot, input capture, or settings changes",
+  "screenFrames" : [
+    "{{0, 0}, {1512, 982}}",
+    "{{-1920, 0}, {1920, 1080}}"
+  ],
+  "windows" : [
+
+  ]
+}

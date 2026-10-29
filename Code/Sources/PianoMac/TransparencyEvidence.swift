@@ -45,7 +45,7 @@ public enum TransparencyEvidence {
         }
         let report: [String: Any] = ["passed": passed, "samples": rows, "images": captures,
                                     "kind": "offscreen production rendering on synthetic backgrounds; no App GUI",
-                                    "labelPolicy": "independent white #969FA9/0.86 and black #414B55/0.84",
+                                    "labelPolicy": "independent white #969FA9/0.86 and black #68717A/0.90",
                                     "listenerStarted": false, "audioOutputStarted": false, "systemSettingsWritten": false]
         try JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]).write(to: directory.appendingPathComponent("report.json"))
         return ["passed": passed, "imageCount": captures.count, "sampleRows": rows.count, "outputDirectory": directory.path]

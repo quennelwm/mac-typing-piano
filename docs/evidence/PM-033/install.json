@@ -1,0 +1,16 @@
+{
+  "version": "0.2.10",
+  "installed": "/Users/wuming/Library/Caches/local.typingpiano.trial/打字钢琴试用.app",
+  "backup": "/Users/wuming/Library/Caches/local.typingpiano.trial/backup-before-0.2.10/打字钢琴试用-0.2.9.app.retired",
+  "retiredCandidate": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.10/打字钢琴试用.app.retired",
+  "inputPermissionRetained": true,
+  "secureInputEnabled": false,
+  "permissionRequested": false,
+  "binarySHA256": "c54a5bc3bb4789e045832f0d467aef0d3ee589381cbe0c3731ed7b02eb3957bd",
+  "preferences": {
+    "transparency": 0.12,
+    "heightScale": 1.32,
+    "showKeyLabels": true,
+    "volume": 1
+  }
+}

@@ -50,6 +50,6 @@ final class KeymapEditorTests: XCTestCase {
         var calls = 0; menu.onCustomize = { calls += 1 }
         NSApp.sendAction(try XCTUnwrap(item.action), to: item.target, from: item); XCTAssertEqual(calls, 1)
         menu.updateKeymap(custom: false, warning: "损坏文件已保留")
-        XCTAssertTrue(menu.menu.items.contains { $0.title.contains("配置读取失败") })
+        XCTAssertTrue(menu.menu.items.contains { $0.title == "键位读取失败" })
     }
 }

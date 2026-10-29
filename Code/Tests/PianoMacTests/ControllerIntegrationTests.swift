@@ -41,7 +41,7 @@ final class ControllerIntegrationTests: XCTestCase {
         func noteOff(midi: UInt8) { offs.append(midi) }
         func panic() { panics += 1 }
     }
-    func testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio() throws {
+    func testPausedOverlaySettingDoesNotStartInputOrAudio() throws {
         _ = NSApplication.shared
         let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
         let input = Input(), engine = Engine()
@@ -51,7 +51,7 @@ final class ControllerIntegrationTests: XCTestCase {
         controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
         defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
         controller.toggleOverlay()
-        XCTAssertEqual(controller.runtimeDiagnostics()["overlayAlpha"] as? CGFloat, 1)
+        XCTAssertEqual(controller.runtimeDiagnostics()["overlayAlpha"] as? CGFloat, 0)
         XCTAssertEqual(input.mode, .stopped)
         XCTAssertFalse(engine.prepared)
         XCTAssertTrue(engine.downs.isEmpty)

@@ -1,0 +1,63 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/8] Emitting module PianoMac
+[4/8] Compiling PianoMac ProbeController.swift
+[5/8] Compiling PianoMac KeymapEditor.swift
+[5/9] Write Objects.LinkFileList
+[7/11] Compiling PianoMacTests KeymapEditorTests.swift
+[8/11] Emitting module PianoMacTests
+[8/12] Write Objects.LinkFileList
+[9/12] Linking TypingPianoProbe
+[10/12] Applying TypingPianoProbe
+[11/12] Linking TypingPianoProbePackageTests
+Build complete! (3.45s)
+Test Suite 'Selected tests' started at 2026-10-29 16:43:58.512.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 16:43:58.514.
+Test Suite 'AlertVolumeTests' started at 2026-10-29 16:43:58.514.
+Test Case '-[PianoMacTests.AlertVolumeTests testAlreadyZeroHasNoInventedRestoreValue]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testAlreadyZeroHasNoInventedRestoreValue]' passed (0.001 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testDefaultAndCancellationDoNotReadOrWriteSystem]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testDefaultAndCancellationDoNotReadOrWriteSystem]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testExternalChangeDropsOwnershipAndIsNeverOverwrittenOnExit]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testExternalChangeDropsOwnershipAndIsNeverOverwrittenOnExit]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testFailedOrIgnoredWritesDoNotReportSuccess]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testFailedOrIgnoredWritesDoNotReportSuccess]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testMuteAndCloseOrExitRestoreOnlyOriginalOwnedValue]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testMuteAndCloseOrExitRestoreOnlyOriginalOwnedValue]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testReadFailurePreventsWritesAndFailedRestoreCanBeRetried]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testReadFailurePreventsWritesAndFailedRestoreCanBeRetried]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testStandardAdditionsBackendOnlyUsesAlertParameterAndRejectsInvalidReadback]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testStandardAdditionsBackendOnlyUsesAlertParameterAndRejectsInvalidReadback]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testUnverifiedWriteRequiresManualRecoveryAndDoesNotInventOwnership]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:92: error: -[PianoMacTests.AlertVolumeTests testUnverifiedWriteRequiresManualRecoveryAndDoesNotInventOwnership] : XCTAssertEqual failed: ("externalChange") is not equal to ("failed")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift:95: error: -[PianoMacTests.AlertVolumeTests testUnverifiedWriteRequiresManualRecoveryAndDoesNotInventOwnership] : XCTAssertEqual failed: ("noChange") is not equal to ("externalChange")
+Test Case '-[PianoMacTests.AlertVolumeTests testUnverifiedWriteRequiresManualRecoveryAndDoesNotInventOwnership]' failed (0.153 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testWriteErrorAfterActualChangeRetainsRestorableOwnership]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testWriteErrorAfterActualChangeRetainsRestorableOwnership]' passed (0.000 seconds).
+Test Suite 'AlertVolumeTests' failed at 2026-10-29 16:43:58.669.
+	 Executed 9 tests, with 2 failures (0 unexpected) in 0.154 (0.155) seconds
+Test Suite 'ControlPanelTests' started at 2026-10-29 16:43:58.669.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' passed (0.001 seconds).
+Test Suite 'ControlPanelTests' passed at 2026-10-29 16:43:58.670.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'KeymapEditorTests' started at 2026-10-29 16:43:58.670.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' passed (0.277 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSawarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+ve]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' passed (0.233 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' passed (0.078 seconds).
+Test Suite 'KeymapEditorTests' passed at 2026-10-29 16:43:59.259.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.589 (0.589) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 16:43:59.259.
+	 Executed 14 tests, with 2 failures (0 unexpected) in 0.744 (0.745) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 16:43:59.259.
+	 Executed 14 tests, with 2 failures (0 unexpected) in 0.744 (0.747) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

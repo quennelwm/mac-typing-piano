@@ -1,0 +1,101 @@
+{
+  "cacheLimitPerViewBytes" : 4194304,
+  "canvasPt" : [
+    1496,
+    256
+  ],
+  "kind" : "paired same-process offline CPU milliseconds per production frame, no PNG IO; NOT hosted frame pacing",
+  "scale" : 2,
+  "scenarios" : [
+    {
+      "cacheEnabled" : false,
+      "coldCPUms" : 17.923999999999996,
+      "coldWallms" : 17.980499993427657,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 0,
+      "frames" : 60,
+      "keyLayerRenders" : 64,
+      "meanCPUms" : 15.070133333333342,
+      "p50CPUms" : 14.900000000000023,
+      "p95CPUms" : 16.417999999999989,
+      "p95Wallms" : 18.210124995675869,
+      "retainedKeyCacheBytes" : 0,
+      "scenario" : "static"
+    },
+    {
+      "cacheEnabled" : false,
+      "coldCPUms" : 15.184000000000086,
+      "coldWallms" : 15.393166671856306,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 64,
+      "frames" : 60,
+      "keyLayerRenders" : 64,
+      "meanCPUms" : 15.295616666666637,
+      "p50CPUms" : 15.334999999999877,
+      "p95CPUms" : 15.852000000000199,
+      "p95Wallms" : 15.866541667492129,
+      "retainedKeyCacheBytes" : 0,
+      "scenario" : "floating-only"
+    },
+    {
+      "cacheEnabled" : false,
+      "coldCPUms" : 14.922000000000102,
+      "coldWallms" : 14.975625002989545,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 64,
+      "frames" : 60,
+      "keyLayerRenders" : 64,
+      "meanCPUms" : 15.383116666666657,
+      "p50CPUms" : 15.410000000000146,
+      "p95CPUms" : 15.956000000000081,
+      "p95Wallms" : 15.855916673899628,
+      "retainedKeyCacheBytes" : 0,
+      "scenario" : "press-plus-floating"
+    },
+    {
+      "cacheEnabled" : true,
+      "coldCPUms" : 13.214000000000059,
+      "coldWallms" : 13.288208341691643,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 0,
+      "frames" : 60,
+      "keyLayerRenders" : 1,
+      "meanCPUms" : 0.61045000000002525,
+      "p50CPUms" : 0.59100000000000819,
+      "p95CPUms" : 0.72399999999994691,
+      "p95Wallms" : 0.74245833093300462,
+      "retainedKeyCacheBytes" : 2798336,
+      "scenario" : "static"
+    },
+    {
+      "cacheEnabled" : true,
+      "coldCPUms" : 13.487000000000027,
+      "coldWallms" : 13.544125002226792,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 64,
+      "frames" : 60,
+      "keyLayerRenders" : 1,
+      "meanCPUms" : 1.1232166666666599,
+      "p50CPUms" : 1.1709999999998111,
+      "p95CPUms" : 1.4080000000000759,
+      "p95Wallms" : 1.1112499923910946,
+      "retainedKeyCacheBytes" : 2798336,
+      "scenario" : "floating-only"
+    },
+    {
+      "cacheEnabled" : true,
+      "coldCPUms" : 12.53100000000007,
+      "coldWallms" : 12.572624997119419,
+      "finalFloatingCount" : 0,
+      "floatingLayerRenders" : 64,
+      "frames" : 60,
+      "keyLayerRenders" : 54,
+      "meanCPUms" : 11.616650000000002,
+      "p50CPUms" : 13.506000000000018,
+      "p95CPUms" : 14.746000000000148,
+      "p95Wallms" : 15.272250006091781,
+      "retainedKeyCacheBytes" : 2915840,
+      "scenario" : "press-plus-floating"
+    }
+  ]
+}

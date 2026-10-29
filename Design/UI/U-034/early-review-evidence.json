@@ -1,0 +1,28 @@
+{
+  "stage": "interim UI layout review; not final frozen acceptance",
+  "review": "Design/UI/U-034/EARLY_REVIEW.md",
+  "inputs": [
+    {
+      "path": "docs/evidence/trial-0.2.11/previews/control-panel.png",
+      "sha256": "af1f7cbaa684393ead46b0592188e65686a13e7324c91f0982285c16c058bdee"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.11/previews/binding-draft.png",
+      "sha256": "68fb5fbac484083c522f31ccc9faa467441fa7e5e3405021f7527b6b92bd0663"
+    },
+    {
+      "path": "Code/Sources/PianoMac/KeymapEditor.swift",
+      "sha256": "9e0833c472311013b2c29b608acb87035fe9b9160e29418ab31b00f0c8753bf0"
+    }
+  ],
+  "findings": [
+    "binding window retains old primary selectors/table and excess whitespace",
+    "control panel repeats granted permission in footer"
+  ],
+  "requestedBindingContentPt": [
+    760,
+    390
+  ],
+  "appLaunched": false,
+  "swiftTestsRun": false
+}

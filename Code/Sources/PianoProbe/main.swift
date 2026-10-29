@@ -66,6 +66,15 @@ do {
             "secureInputEnabled": InputMonitor.secureInput,
             "listenerStarted": false, "permissionRequested": false, "audioOutputStarted": false,
             "dockSettingWritten": false, "realKeysTested": false])
+    } else if arguments.contains("--render-benchmark") {
+        _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
+        emit(try RenderBenchmark.run(mapping: mapping))
+    } else if let index = arguments.firstIndex(of: "--control-panel-evidence"), arguments.count > index + 1 {
+        _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
+        emit(try ControlPanelEvidence.render(mapping: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))
+    } else if let index = arguments.firstIndex(of: "--compact-menu-evidence"), arguments.count > index + 1 {
+        _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
+        emit(try CompactMenuEvidence.render(mapping: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))
     } else if let index = arguments.firstIndex(of: "--transparency-snapshot"), arguments.count > index + 1 {
         _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
         emit(try TransparencyEvidence.render(mapping: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))

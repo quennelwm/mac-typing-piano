@@ -1,0 +1,13 @@
+{
+  "role": "main coordinator",
+  "task": "PM-033",
+  "head": "b74f560f97c64ead47e64fc510c01b7c8e92d371",
+  "installedVersion": "0.2.9",
+  "binarySHA256": "3ac6200b87fb31d37f69dd9e81436f97b2bf8d70ceb1c7b7aee0101790697819",
+  "preferences": {
+    "transparency": 0.12,
+    "heightScale": 1.32,
+    "showKeyLabels": true,
+    "volume": 1
+  }
+}

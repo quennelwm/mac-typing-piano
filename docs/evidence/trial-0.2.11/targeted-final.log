@@ -1,0 +1,50 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Emitting module PianoMacTests
+[4/5] Compiling PianoMacTests ControlPanelTests.swift
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (1.81s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 16:49:24.444.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 16:49:24.446.
+Test Suite 'ControlPanelTests' started at 2026-10-29 16:49:24.446.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' passed (0.001 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testDirectBindingIsDraftOnlyAndCancellationDoesNotSave]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testDirectBindingIsDraftOnlyAndCancellationDoesNotSave]' passed (0.263 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testPausedControlsPersistWithoutStartingAndLayerDoesNotInterruptHeldInput]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testPausedControlsPersistWithoutStartingAndLayerDoesNotInterruptHeldInput]' passed (0.144 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testUnchangedFloatingSettingDoesNotInvalidateOrResetHeldAnimation]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testUnchangedFloatingSettingDoesNotInvalidateOrResetHeldAnimation]' passed (0.004 seconds).
+Test Suite 'ControlPanelTests' passed at 2026-10-29 16:49:24.858.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.412 (0.412) seconds
+Test Suite 'CrystalRenderingTests' started at 2026-10-29 16:49:24.858.
+Test Case '-[PianoMacTests.CrystalRenderingTests testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback]' started.
+Test Case '-[PianoMacTests.CrystalRenderingTests testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback]' passed (0.383 seconds).
+Test Case '-[PianoMacTests.CrystalRenderingTests testHitTestingUsesPressedRoundedBlackFaceAfterHeightChange]' started.
+Test Case '-[PianoMacTests.CrystalRenderingTests testHitTestingUsesPressedRoundedBlackFaceAfterHeightChange]' passed (0.006 seconds).
+Test Suite 'CrystalRenderingTests' passed at 2026-10-29 16:49:25.248.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.389 (0.390) seconds
+Test Suite 'GlossyBlackTests' started at 2026-10-29 16:49:25.248.
+Test Case '-[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces]' started.
+Test Case '-[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces]' passed (0.346 seconds).
+Test Suite 'GlossyBlackTests' passed at 2026-10-29 16:49:25.594.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.346 (0.346) seconds
+Test Suite 'KeymapEditorTests' started at 2026-10-29 16:49:25.594.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' passed (0.015 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' passed (0.218 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' passed (0.137 seconds).
+Test Suite 'KeymapEditorTests' passed at 2026-10-29 16:49:25.964.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.369 (0.370) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-29 16:49:25.964.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 1.516 (1.518) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 16:49:25.964.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 1.516 (1.519) seconds

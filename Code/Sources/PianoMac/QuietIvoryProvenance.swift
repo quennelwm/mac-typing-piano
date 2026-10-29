@@ -27,8 +27,8 @@ public struct QuietIvoryProvenance {
     public var metadata: [String: Any] {
         let binaryHash = (try? Data(contentsOf: URL(fileURLWithPath: CommandLine.arguments[0]))).map(Self.digest) ?? "unavailable"
         return ["themeVersion": themeVersion, "themeSHA256": themeSHA256, "mappingSHA256": mappingSHA256,
-         "materialVersion": "u031.1", "crystalRecipeSHA256": crystalRecipeSHA256.map { $0 as Any } ?? NSNull(),
-         "artifactState": "design_proposal", "integrationBuild": "C-032", "visualRevision": "CR-009 transparency / U-031 colors; Quiet Ivory base geometry provenance retained", "executableSHA256": binaryHash, "OS": ProcessInfo.processInfo.operatingSystemVersionString,
+         "materialVersion": "u031.1+cr012", "crystalRecipeSHA256": crystalRecipeSHA256.map { $0 as Any } ?? NSNull(),
+         "artifactState": "design_proposal", "integrationBuild": "C-034", "visualRevision": "CR-012 control popover, readable black labels and bounded material caches; CR-009 opacity retained", "executableSHA256": binaryHash, "OS": ProcessInfo.processInfo.operatingSystemVersionString,
          "hardwareInput": false, "hardwareAudio": false, "systemDockWrites": false]
     }
 }

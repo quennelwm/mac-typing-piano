@@ -1,0 +1,11 @@
+Building for production...
+[0/7] Write sources
+[4/7] Write swift-version--58304C5D6DBC2206.txt
+[6/9] Compiling PianoCore AppPreferences.swift
+[7/9] Compiling PianoAudio AuditionSession.swift
+[8/10] Compiling PianoMac AdaptiveOverlay.swift
+[9/11] Compiling PianoProbe main.swift
+[9/11] Write Objects.LinkFileList
+[10/11] Linking TypingPianoProbe
+Build complete! (31.17s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.

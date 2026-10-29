@@ -1,0 +1,41 @@
+{
+  "measurement": "same macOS host, NSMenu.size; native logical size, not custom view width or screenshot pixels",
+  "initial": {
+    "oldWidth": 313,
+    "newWidth": 180,
+    "oldVisibleRootItems": 28,
+    "newVisibleRootItems": 17
+  },
+  "stressStates": [
+    {
+      "state": "运行中：持续全局打字",
+      "oldWidth": 352,
+      "newWidth": 181,
+      "oldVisibleRootItems": 28,
+      "newVisibleRootItems": 18
+    },
+    {
+      "state": "已暂停：尚未获得输入监控授权",
+      "oldWidth": 352,
+      "newWidth": 181,
+      "oldVisibleRootItems": 28,
+      "newVisibleRootItems": 18
+    },
+    {
+      "state": "已暂停：安全输入阻断",
+      "oldWidth": 352,
+      "newWidth": 184,
+      "oldVisibleRootItems": 29,
+      "newVisibleRootItems": 19
+    },
+    {
+      "state": "已暂停：开始状态保存失败",
+      "oldWidth": 352,
+      "newWidth": 181,
+      "oldVisibleRootItems": 29,
+      "newVisibleRootItems": 19
+    }
+  ],
+  "normalRunningWidth": 181,
+  "notes": "State fixtures include keymap warning; secure input also enables reduced transparency, save failure adds warning. Same long input strings were passed before/after. New permission item additionally reflects granted/ungranted. Native checkmark and shortcut columns count toward width."
+}

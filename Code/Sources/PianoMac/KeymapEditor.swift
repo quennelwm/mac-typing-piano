@@ -1,8 +1,14 @@
 import AppKit
 import PianoCore
 
-/// A draft-only settings window. Never captures keys or invokes an audio engine.
+/// Draft-only settings; local capture is gated by focused editor and explicit waiting. No audio.
 final class KeymapEditor: NSWindowController, NSWindowDelegate, NSTableViewDataSource {
+    private(set) var waitingMIDI: Int?
+    private var pendingCommand: String?
+    private var capturedCode: UInt16?
+    private var captureMonitor: Any?
+    private var keyboard: PianoView!
+    private var normalizer: InputNormalizer!
     private let base: KeyMapping
     private let configuration: () -> CustomKeymap
     private let save: (CustomKeymap, CustomKeymap) throws -> Void
@@ -20,12 +26,26 @@ final class KeymapEditor: NSWindowController, NSWindowDelegate, NSTableViewDataS
     init(base: KeyMapping, configuration: @escaping () -> CustomKeymap, warning: String?, save: @escaping (CustomKeymap, CustomKeymap) throws -> Void) throws {
         self.base = base; self.configuration = configuration; self.save = save
         draft = try KeymapDraft(configuration: configuration(), selectedKey: "keyG")
-        let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 560, height: 440), styleMask: [.titled, .closable], backing: .buffered, defer: false)
+        let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 760, height: 390), styleMask: [.titled, .closable], backing: .buffered, defer: false)
         super.init(window: window)
+        normalizer = try InputNormalizer(mapping: base)
+        keyboard = PianoView(mapping: try draft.candidate.mapping(from: base), frame: NSRect(x: 0, y: 0, width: 712, height: 256))
+        keyboard.automaticAnimation = false
+        keyboard.onPress = { [weak self] physical in
+            guard let self, let midi = self.draft.candidate.notes[physical] else { return }
+            self.beginBinding(midi: midi)
+        }
+        let pianoScroll = NSScrollView(); pianoScroll.documentView = keyboard; pianoScroll.hasHorizontalScroller = true
+        pianoScroll.heightAnchor.constraint(equalToConstant: 112).isActive = true
+        pianoScroll.contentView.scroll(to: NSPoint(x: 0, y: 144))
+        captureMonitor = NSEvent.addLocalMonitorForEvents(matching: [.keyDown, .keyUp, .flagsChanged]) { [weak self] event in
+            guard let self else { return event }
+            return self.processBindingEvent(event, focused: self.window?.isKeyWindow == true)
+        }
         window.title = "自定义键位"; window.isReleasedWhenClosed = false; window.delegate = self; window.center()
         let title = NSTextField(labelWithString: "让常用按键对应你熟悉的音高")
         title.font = .systemFont(ofSize: 18, weight: .semibold)
-        let description = NSTextField(labelWithString: "选择实体键和音高，保存后生效。已占用音高会交换。")
+        let description = NSTextField(labelWithString: "点击下方音位，再按电脑按键；保存后生效，重复绑定会交换。")
         description.font = .systemFont(ofSize: 12)
         for key in base.keys { keyPopup.addItem(withTitle: Self.keyName(key)) }
         keyPopup.target = self; keyPopup.action = #selector(keyChanged)
@@ -40,10 +60,10 @@ final class KeymapEditor: NSWindowController, NSWindowDelegate, NSTableViewDataS
             let column = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(id)); column.title = title; column.width = width; table.addTableColumn(column)
         }
         table.rowHeight = 23; table.dataSource = self; table.usesAlternatingRowBackgroundColors = true
-        table.setAccessibilityLabel("保存后全部变更")
+        table.setAccessibilityLabel("草稿变更详情")
         let scroll = NSScrollView(); scroll.documentView = table; scroll.hasVerticalScroller = true; scroll.borderType = .bezelBorder
         scroll.heightAnchor.constraint(equalToConstant: 145).isActive = true
-        let restore = NSButton(title: "恢复新表默认", target: self, action: #selector(restoreDefault))
+        let restore = NSButton(title: "恢复默认", target: self, action: #selector(restoreDefault))
         let cancel = NSButton(title: "取消", target: self, action: #selector(cancel)); cancel.keyEquivalent = "\u{1b}"
         saveButton.target = self; saveButton.action = #selector(saveDraft); saveButton.keyEquivalent = "\r"
         reloadButton.target = self; reloadButton.action = #selector(reloadDraft); reloadButton.isHidden = true
@@ -56,17 +76,61 @@ final class KeymapEditor: NSWindowController, NSWindowDelegate, NSTableViewDataS
         errorLabel.font = .systemFont(ofSize: 11); errorLabel.textColor = .systemRed
         errorLabel.setAccessibilityLabel("键位保存或载入提示")
         errorLabel.stringValue = warning ?? ""; errorLabel.isHidden = warning == nil
-        let stack = NSStackView(views: [title, current, dirty, description, selectors, hint, scroll, errorLabel, buttons])
-        stack.orientation = .vertical; stack.alignment = .leading; stack.spacing = 10; stack.translatesAutoresizingMaskIntoConstraints = false
+        let stack = NSStackView(views: [title, description, pianoScroll, hint, dirty, errorLabel, buttons])
+        stack.orientation = .vertical; stack.alignment = .leading; stack.spacing = 6; stack.translatesAutoresizingMaskIntoConstraints = false
         window.contentView!.addSubview(stack)
-        NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor, constant: 24), stack.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor, constant: -24), stack.topAnchor.constraint(equalTo: window.contentView!.topAnchor, constant: 20), scroll.widthAnchor.constraint(equalTo: stack.widthAnchor), buttons.widthAnchor.constraint(equalTo: stack.widthAnchor)])
-        window.initialFirstResponder = keyPopup
+        NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor, constant: 24), stack.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor, constant: -24), stack.topAnchor.constraint(equalTo: window.contentView!.topAnchor, constant: 20), pianoScroll.widthAnchor.constraint(equalTo: stack.widthAnchor), buttons.widthAnchor.constraint(equalTo: stack.widthAnchor)])
+        window.initialFirstResponder = saveButton
         keyPopup.nextKeyView = pitchPopup; pitchPopup.nextKeyView = restore; restore.nextKeyView = cancel; cancel.nextKeyView = saveButton
         update()
+        window.contentView?.layoutSubtreeIfNeeded()
+        pianoScroll.contentView.scroll(to: NSPoint(x: 0, y: 144)); pianoScroll.reflectScrolledClipView(pianoScroll.contentView)
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) unavailable") }
     static func keyName(_ key: KeyMapping.Key) -> String { key.labelParts.main == key.accessibleName ? key.displayLabel : key.labelParts.main + " · " + key.accessibleName }
+    func processBindingEvent(_ event: NSEvent, focused: Bool) -> NSEvent? {
+            guard focused else { return event }
+            if capturedCode == event.keyCode {
+                if event.type == .keyUp { capturedCode = nil; return nil }
+                if event.type == .keyDown { return nil }
+            }
+            if event.type == .keyDown && event.modifierFlags.contains(.command) {
+                pendingCommand = nil; waitingMIDI = nil; keyboard.highlightedMIDI = nil
+                if event.keyCode == 1 { saveDraft(); return nil }
+                if event.keyCode == 13 { cancel(); return nil }
+                return event
+            }
+            guard waitingMIDI != nil else { return event }
+            if event.type == .keyDown && event.keyCode == 53 { waitingMIDI = nil; keyboard.highlightedMIDI = nil; hint.stringValue = "已取消等待；草稿保持。"; return nil }
+            let kind: InputNormalizer.Kind = event.type == .flagsChanged ? .flags : (event.type == .keyUp ? .up : .down)
+            guard let key = normalizer.normalize(code: event.keyCode, kind: kind, flags: UInt64(event.modifierFlags.rawValue), isRepeat: event.type == .keyDown ? event.isARepeat : false ) else { return event }
+            if key.physicalKeyID.hasPrefix("command") {
+                if key.phase == .down { pendingCommand = key.physicalKeyID; return event }
+                guard pendingCommand == key.physicalKeyID else { return event }
+                pendingCommand = nil
+            } else if key.phase == .up { return event }
+            try? bindPhysicalKey(key.physicalKeyID)
+            if event.type == .keyDown { capturedCode = event.keyCode }
+            return nil
+    }
+    func beginBinding(midi: Int) {
+        guard (33...96).contains(midi) else { return }
+        waitingMIDI = midi; keyboard.highlightedMIDI = midi
+        hint.stringValue = "等待实体按键 → \(CustomKeymap.noteName(midi))；Esc取消。Fn取决于系统是否交付事件。"
+    }
+    func bindPhysicalKey(_ id: String) throws {
+        guard let midi = waitingMIDI, base.key(id) != nil else { return }
+        let old = draft.candidate.notes[id]!
+        let owner = draft.candidate.notes.first { $0.value == midi }!.key
+        try draft.selectKey(id); try draft.selectPitch(midi); waitingMIDI = nil; keyboard.highlightedMIDI = nil
+        lastSwapSummary = old == midi ? "绑定未改变。" : "草稿：\(base.key(id)!.displayLabel) \(CustomKeymap.noteName(old))→\(CustomKeymap.noteName(midi))；\(base.key(owner)!.displayLabel) \(CustomKeymap.noteName(midi))→\(CustomKeymap.noteName(old))（交换）。"
+        update()
+    }
+    func windowDidResignKey(_ notification: Notification) { waitingMIDI = nil; pendingCommand = nil; capturedCode = nil; keyboard.highlightedMIDI = nil }
+    func windowWillClose(_ notification: Notification) { waitingMIDI = nil; pendingCommand = nil; capturedCode = nil; keyboard.highlightedMIDI = nil }
+    deinit { if let captureMonitor { NSEvent.removeMonitor(captureMonitor) } }
     private func update() {
+        if let mapped = try? draft.candidate.mapping(from: base) { keyboard?.setMapping(mapped) }
         let candidate = draft.candidate
         rows = base.keys.filter { candidate.notes[$0.physicalKeyID] != draft.baseline.notes[$0.physicalKeyID] }
         current.stringValue = "当前使用：" + (draft.baseline == CustomKeymap(defaultMapping: base) ? "新表默认" : "自定义键位")
@@ -78,7 +142,7 @@ final class KeymapEditor: NSWindowController, NSWindowDelegate, NSTableViewDataS
             pitchPopup.addItem(withTitle: "\(CustomKeymap.noteName(midi)) · MIDI \(midi) · \(owner.displayLabel)" + (midi == 60 ? " 中央C" : ""))
         }
         pitchPopup.selectItem(at: draft.targetMIDI - 33)
-        hint.stringValue = lastSwapSummary ?? (rows.isEmpty ? "尚无变更。选择目标音高即可交换；关闭或取消不保存。" : "草稿 \(CustomKeymap.noteName(draft.targetMIDI))；下表列出全部待保存变更。")
+        hint.stringValue = lastSwapSummary ?? (rows.isEmpty ? "先点琴键，再按实体键；保存生效，取消不应用。" : "草稿 \(CustomKeymap.noteName(draft.targetMIDI))；下方摘要仅为草稿，保存后生效。")
         saveButton.isEnabled = draft.dirty
         table.reloadData()
     }
@@ -100,7 +164,7 @@ final class KeymapEditor: NSWindowController, NSWindowDelegate, NSTableViewDataS
         lastSwapSummary = target == old ? "已是此音高；草稿未改变。" : "本次交换：\(key.displayLabel) \(CustomKeymap.noteName(old))→\(CustomKeymap.noteName(target))；\(other.displayLabel) \(CustomKeymap.noteName(target))→\(CustomKeymap.noteName(old))（仅草稿）。"
         update()
     }
-    @objc func restoreDefault() { draft.restoreDefault(base); lastSwapSummary = "恢复新表默认（仅草稿）；下表列出全部待保存变更。"; update() }
+    @objc func restoreDefault() { draft.restoreDefault(base); lastSwapSummary = "恢复默认（仅草稿）；下方摘要仅为草稿，保存后生效。"; update() }
     @objc func cancel() { close() }
     @objc func reloadDraft() {
         if let fresh = try? KeymapDraft(configuration: configuration(), selectedKey: draft.selectedKey) { draft = fresh }
@@ -165,7 +229,7 @@ public enum KeymapEditorEvidence {
         try restore.savePNG(to: directory.appendingPathComponent("editor-restore-draft.png"))
         restore.cancel()
         guard writes == 1, current.notes["keyG"] == 53 else { throw ProbeError.invalid("取消恢复不应写入") }
-        return ["kind": "production NSWindow/NSPopUpButton/NSTableView rendering", "canvasPt": [560,440],
+        return ["kind": "production NSWindow/NSPopUpButton/NSTableView rendering", "canvasPt": [760,390],
             "images": 4, "saveFailureRetainedDraft": true, "retryCommittedOnce": true, "cancelDidNotCommitRestore": true,
             "persistenceCallback": "in-memory simulation; production filesystem is tested separately", "userPreferencesWritten": false,
             "inputStarted": false, "audioStarted": false, "systemSettingsChanged": false]

@@ -1,0 +1,48 @@
+{
+  "startAt": "2026-10-29T17:34:18.171675+08:00",
+  "pid": 34381,
+  "binary": "/Users/wuming/Library/Caches/local.typingpiano.trial/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe",
+  "binarySHA256": "bb77fb34931168c171796a1f4a9e209288e30628e0a508b69dbcfd19854e61ef",
+  "info": {
+    "CFBundleIdentifier": "local.typingpiano.trial",
+    "CFBundleVersion": "14",
+    "CFBundleShortVersionString": "0.2.11"
+  },
+  "OS": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2\nBuildVersion:\t\t26B123\n",
+  "architecture": "arm64",
+  "memoryBytes": "17179869184",
+  "topCommand": [
+    "top",
+    "-l",
+    "6",
+    "-s",
+    "2",
+    "-pid",
+    "34381",
+    "-stats",
+    "pid,command,cpu,mem,threads,time,state"
+  ],
+  "psCommand": [
+    "ps",
+    "-p",
+    "34381",
+    "-o",
+    "pid=,etime=,time=,%cpu=,rss=,vsz=,stat="
+  ],
+  "endAt": "2026-10-29T17:34:29.346855+08:00",
+  "topExitCode": 0,
+  "topStderr": "",
+  "condition": "Uncontrolled observation; user may type or interact with menu. No injected keys or runtime-setting changes. Initial top CPU sample discarded for conclusions.",
+  "sampleCommand": [
+    "sample",
+    "34381",
+    "2",
+    "-file",
+    "docs/evidence/PM-034/performance-after/sample-2s.txt"
+  ],
+  "sampleStartAt": "2026-10-29T17:34:29.346933+08:00",
+  "sampleEndAt": "2026-10-29T17:34:38.125421+08:00",
+  "sampleExitCode": 0,
+  "sampleStdout": "",
+  "sampleStderr": "Sampling process 34381 for 2 seconds with 1 millisecond of run time between samples\nSampling completed, processing symbols...\nSample analysis of process 34381 written to file docs/evidence/PM-034/performance-after/sample-2s.txt\n"
+}

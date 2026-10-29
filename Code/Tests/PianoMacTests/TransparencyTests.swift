@@ -72,7 +72,7 @@ final class TransparencyTests: XCTestCase {
             }
             // Thin glyphs need not fully cover any pixel; antialiasing lowers their peak alpha.
             XCTAssertGreaterThan(alpha, 0.6)
-            XCTAssertLessThanOrEqual(alpha, (key.isBlack ? 0.84 : 0.86) + 0.01)
+            XCTAssertLessThanOrEqual(alpha, (key.isBlack ? 0.90 : 0.86) + 0.01)
         }
     }
     func testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences() throws {

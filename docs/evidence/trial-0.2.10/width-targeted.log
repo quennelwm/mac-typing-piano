@@ -1,0 +1,40 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/7] Compiling PianoMac ProbeMenu.swift
+[4/7] Emitting module PianoMac
+[5/8] Compiling PianoMac ProbeController.swift
+[6/19] Compiling PianoMacTests KeymapEditorTests.swift
+[7/19] Emitting module PianoMacTests
+[8/19] Compiling PianoMacTests CompactMenuTests.swift
+[9/19] Compiling PianoMacTests StartupEntryTests.swift
+[10/19] Compiling PianoMacTests HeightIntegrationTests.swift
+[11/19] Compiling PianoMacTests MenuIntegrationTests.swift
+[12/19] Compiling PianoMacTests TransparencyTests.swift
+[12/19] Write Objects.LinkFileList
+[14/19] Compiling PianoProbe main.swift
+[15/19] Emitting module PianoProbe
+[15/19] Write Objects.LinkFileList
+[16/19] Linking TypingPianoProbe
+[17/19] Linking TypingPianoProbePackageTests
+[18/19] Applying TypingPianoProbe
+Build complete! (3.48s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 15:38:23.828.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 15:38:23.829.
+Test Suite 'CompactMenuTests' started at 2026-10-29 15:38:23.829.
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:20: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:20: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:20: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:20: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' failed (0.274 seconds).
+Test Suite 'CompactMenuTests' failed at 2026-10-29 15:38:24.104.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.274 (0.275) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 15:38:24.104.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.274 (0.275) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 15:38:24.104.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.274 (0.276) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

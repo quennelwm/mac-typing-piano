@@ -1,0 +1,8 @@
+{
+  "observedAt": "2026-10-29T17:34:49.816329+08:00",
+  "manifest": "docs/evidence/trial-0.2.11/source-hashes.json",
+  "manifestSHA256": "873388910a57dc99eb302b8e2d28bcb04e95b6b6d7cc914db5aaeb8608c920a0",
+  "checkedFileCount": 97,
+  "mismatches": [],
+  "alertVolumeReview": "mute(confirmed:) now assigns originalVolume only if nil (AlertVolume.swift:87), preserving first original through setVolume(45), setVolume(20), mute; restore uses first original. Matching source regression assertion present in ControlPanelTests.swift:18. Read-only inspection, tests not run."
+}

@@ -1,0 +1,80 @@
+[0/1] Planning build
+Building for debugging...
+[0/8] Write sources
+[2/8] Write swift-version--58304C5D6DBC2206.txt
+[4/10] Compiling PianoCore AppPreferences.swift
+[5/10] Emitting module PianoCore
+[6/40] Compiling PianoCoreTests ReducerTests.swift
+[7/40] Compiling PianoCoreTests PreferencesMigrationTests.swift
+[8/40] Compiling PianoCoreTests MappingTests.swift
+[9/41] Compiling PianoCoreTests HeightPreferencesTests.swift
+[10/41] Compiling PianoMac DockAdapter.swift
+[11/41] Compiling PianoMac DockWindowVisibility.swift
+[12/41] Compiling PianoMac AlertVolume.swift
+[13/41] Compiling PianoMac CompactMenuEvidence.swift
+[14/41] Emitting module PianoCoreTests
+[15/41] Compiling PianoMac InputEventQueue.swift
+[16/41] Compiling PianoMac AdaptiveOverlay.swift
+[17/41] Compiling PianoCoreTests StartupFlowTests.swift
+[21/43] Compiling PianoMac ContinuousTrialStart.swift
+[22/43] Compiling PianoMac ControlPanel.swift
+[23/43] Compiling PianoMac CrystalEvidence.swift
+[27/43] Emitting module PianoMac
+[28/43] Compiling PianoMac ProbeMenu.swift
+[29/43] Compiling PianoMac QuietIvoryProvenance.swift
+[30/43] Compiling PianoMac InputMonitor.swift
+[31/43] Compiling PianoMac InputNormalizer.swift
+[32/43] Compiling PianoMac KeymapEditor.swift
+[33/43] Compiling PianoMac SDKKeys.swift
+[34/43] Compiling PianoMac TransparencyEvidence.swift
+[35/43] Compiling PianoMac NativeDockStorage.swift
+[36/43] Compiling PianoMac OverlayWindowEvidence.swift
+[37/43] Compiling PianoMac PianoView.swift
+[38/43] Compiling PianoMac ProbeController.swift
+[39/66] Emitting module PianoMacTests
+[40/68] Compiling PianoMacTests KeymapEditorTests.swift
+[41/68] Compiling PianoMacTests LocalTrialStartTests.swift
+[42/68] Compiling PianoMacTests MenuIntegrationTests.swift
+[43/68] Compiling PianoMacTests DockAdapterTests.swift
+[44/68] Compiling PianoMacTests DockWindowVisibilityTests.swift
+[45/68] Compiling PianoMacTests GlossyBlackTests.swift
+[46/68] Compiling PianoMacTests SingleInstanceTests.swift
+[47/68] Compiling PianoMacTests StartupEntryTests.swift
+[48/68] Compiling PianoMacTests NativeDockStorageTests.swift
+[49/68] Compiling PianoMacTests OverlayVisibilityTests.swift
+[50/68] Compiling PianoMacTests OverlayWindowStackTests.swift
+[51/68] Emitting module PianoProbe
+[52/68] Compiling PianoProbe main.swift
+[52/68] Write Objects.LinkFileList
+[54/68] Compiling PianoMacTests TransparencyTests.swift
+[55/68] Compiling PianoMacTests TrialSessionTests.swift
+[56/68] Compiling PianoMacTests ControlPanelTests.swift
+[57/68] Compiling PianoMacTests ControllerIntegrationTests.swift
+[58/68] Compiling PianoMacTests CrystalRenderingTests.swift
+[59/68] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[60/68] Compiling PianoMacTests AlertVolumeTests.swift
+[61/68] Compiling PianoMacTests CompactMenuTests.swift
+[62/68] Compiling PianoMacTests HeightIntegrationTests.swift
+[63/68] Compiling PianoMacTests InputNormalizerTests.swift
+[64/68] Compiling PianoMacTests IntegrationTests.swift
+[64/70] Linking TypingPianoProbe
+[65/70] Applying TypingPianoProbe
+[67/70] Emitting module TypingPianoProbePackageTests
+[68/70] Compiling TypingPianoProbePackageTests runner.swift
+[68/70] Write Objects.LinkFileList
+[69/70] Linking TypingPianoProbePackageTests
+Build complete! (6.22s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 16:42:25.057.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 16:42:25.060.
+Test Suite 'ControlPanelTests' started at 2026-10-29 16:42:25.060.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' passed (0.000 seconds).
+Test Suite 'ControlPanelTests' passed at 2026-10-29 16:42:25.063.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-29 16:42:25.063.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 16:42:25.063.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.003 (0.006) seconds

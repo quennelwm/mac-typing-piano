@@ -1,0 +1,56 @@
+{
+  "pid": 34381,
+  "version": "0.2.11/build14",
+  "startAt": "2026-10-29T17:34:18.171675+08:00",
+  "endAt": "2026-10-29T17:34:29.346855+08:00",
+  "validCPUSamplesPercent": [
+    4.6,
+    4.1,
+    4.5,
+    9.1,
+    2.3
+  ],
+  "meanCPUPercent": 4.92,
+  "cpuMinPercent": 2.3,
+  "cpuMaxPercent": 9.1,
+  "topMEMSamples": [
+    "188M+",
+    "188M",
+    "188M+",
+    "189M+",
+    "189M+"
+  ],
+  "threadSamples": [
+    "12",
+    "12",
+    "10",
+    "12",
+    "12"
+  ],
+  "rssBeforeKiB": 201728,
+  "rssAfterKiB": 193920,
+  "cumulativeCPUBefore": "0:38.25",
+  "cumulativeCPUAfter": "0:38.87",
+  "physicalFootprintSampleReported": "189.4M",
+  "physicalFootprintPeakSampleReported": "273.5M",
+  "controlledIdle": false,
+  "observedSampleState": "ControlPanel.systemAction native system-options NSMenu tracking; main-thread mostly event wait; no user keystrokes recorded.",
+  "sampleCommand": [
+    "sample",
+    "34381",
+    "2",
+    "-file",
+    "docs/evidence/PM-034/performance-after/sample-2s.txt"
+  ],
+  "writes": "Evidence files only; no app or user-setting changes",
+  "leakConclusion": "UNKNOWN; short window insufficient",
+  "causalBeforeAfterConclusion": "UNKNOWN; baseline and after are different uncontrolled workloads",
+  "stackEvidence": {
+    "mainThreadSamples": 1032,
+    "mainThreadEventMachWaitSamples": 904,
+    "dockTickSamplesIncludingWait": 83,
+    "audioIOThreadSamples": 1032,
+    "audioIOWaitSamples": 1024,
+    "pianoViewFramesObserved": false
+  }
+}

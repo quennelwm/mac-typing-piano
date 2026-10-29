@@ -1,0 +1,403 @@
+{
+  "blackPreview" : "production PianoView crop; opacity 1, MIDI34 pressed, synthetic background",
+  "candidateGUIStarted" : false,
+  "images" : [
+    "menu-layout.png",
+    "black-opaque-detail.png"
+  ],
+  "measurement" : "NSMenu.size native logical layout, not custom view width",
+  "menuPreview" : "offscreen reconstructed root layout using actual native slider views; NOT a system menu screenshot",
+  "normalHeight" : 444,
+  "normalVisibleRootCount" : 17,
+  "normalWidth" : 181,
+  "passed" : true,
+  "realClicksTested" : false,
+  "states" : [
+    {
+      "height" : 468,
+      "state" : "运行中：持续全局打字",
+      "visibleRootCount" : 18,
+      "width" : 181
+    },
+    {
+      "height" : 468,
+      "state" : "已暂停：尚未获得输入监控授权",
+      "visibleRootCount" : 18,
+      "width" : 181
+    },
+    {
+      "height" : 492,
+      "state" : "已暂停：安全输入阻断",
+      "visibleRootCount" : 19,
+      "width" : 184
+    },
+    {
+      "height" : 492,
+      "state" : "已暂停：开始状态保存失败",
+      "visibleRootCount" : 19,
+      "width" : 181
+    }
+  ],
+  "tree" : [
+    {
+      "enabled" : false,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 0,
+      "title" : "运行中",
+      "tooltip" : "运行中：持续全局打字"
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 0,
+      "title" : "暂停打字钢琴",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : false,
+      "hidden" : false,
+      "separator" : true,
+      "state" : 0,
+      "title" : "",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 1,
+      "title" : "声音",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "labels" : [
+        {
+          "fittingWidth" : 30,
+          "frameWidth" : 96,
+          "text" : "音量"
+        },
+        {
+          "fittingWidth" : 39,
+          "frameWidth" : 44,
+          "text" : "100%"
+        }
+      ],
+      "separator" : false,
+      "state" : 0,
+      "title" : "音量",
+      "tooltip" : "",
+      "viewHeight" : 50,
+      "viewWidth" : 166
+    },
+    {
+      "enabled" : false,
+      "hidden" : false,
+      "separator" : true,
+      "state" : 0,
+      "title" : "",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 1,
+      "title" : "显示钢琴",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 1,
+      "title" : "显示按键标签",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "labels" : [
+        {
+          "fittingWidth" : 56,
+          "frameWidth" : 96,
+          "text" : "钢琴高度"
+        },
+        {
+          "fittingWidth" : 39,
+          "frameWidth" : 44,
+          "text" : "180%"
+        }
+      ],
+      "separator" : false,
+      "state" : 0,
+      "title" : "钢琴高度",
+      "tooltip" : "",
+      "viewHeight" : 50,
+      "viewWidth" : 166
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "labels" : [
+        {
+          "fittingWidth" : 69,
+          "frameWidth" : 96,
+          "text" : "琴键透明度"
+        },
+        {
+          "fittingWidth" : 39,
+          "frameWidth" : 44,
+          "text" : "100%"
+        }
+      ],
+      "separator" : false,
+      "state" : 0,
+      "title" : "琴键透明度",
+      "tooltip" : "",
+      "viewHeight" : 50,
+      "viewWidth" : 166
+    },
+    {
+      "enabled" : false,
+      "hidden" : true,
+      "separator" : false,
+      "state" : 0,
+      "title" : "已减少透明度",
+      "tooltip" : "系统减少透明度正在生效；保存的透明度保留，系统选项关闭后恢复。"
+    },
+    {
+      "enabled" : false,
+      "hidden" : true,
+      "separator" : false,
+      "state" : 0,
+      "title" : "",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 0,
+      "title" : "自定义键位…",
+      "tooltip" : "当前：默认键位"
+    },
+    {
+      "enabled" : false,
+      "hidden" : true,
+      "separator" : false,
+      "state" : 0,
+      "title" : "键位读取失败",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : false,
+      "hidden" : false,
+      "separator" : true,
+      "state" : 0,
+      "title" : "",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 1,
+      "title" : "输入监控授权…",
+      "tooltip" : "输入监控已授权；点击打开系统设置，不中断打字钢琴。"
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 0,
+      "submenu" : [
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : -1,
+          "title" : "静音系统提示音",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : false,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "提示音：默认保持系统现状",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "系统声音设置…",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : false,
+          "hidden" : false,
+          "separator" : true,
+          "state" : 0,
+          "title" : "",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 1,
+          "title" : "自动隐藏 Dock",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "系统Dock设置…",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : false,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "Dock：模拟模式，不改系统",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "检查上次 Dock 恢复票据…",
+          "tooltip" : ""
+        }
+      ],
+      "title" : "系统选项",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 0,
+      "submenu" : [
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "打开启动窗口…",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "帮助 \/ 关于",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "下载新版…",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : false,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "钢琴宽度：自动适应屏幕",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : false,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "钢琴：已显示",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : false,
+          "hidden" : false,
+          "separator" : true,
+          "state" : 0,
+          "title" : "",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "打开测试控制台…",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "全局观察60秒…",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "title" : "本窗口测试60秒",
+          "tooltip" : ""
+        },
+        {
+          "enabled" : true,
+          "hidden" : false,
+          "separator" : false,
+          "state" : 0,
+          "submenu" : [
+            {
+              "enabled" : false,
+              "hidden" : false,
+              "separator" : false,
+              "state" : 0,
+              "title" : "切换后需重开测试与声音；缺音不替补",
+              "tooltip" : ""
+            }
+          ],
+          "title" : "试听音源",
+          "tooltip" : ""
+        }
+      ],
+      "title" : "帮助与测试",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : false,
+      "hidden" : false,
+      "separator" : true,
+      "state" : 0,
+      "title" : "",
+      "tooltip" : ""
+    },
+    {
+      "enabled" : true,
+      "hidden" : false,
+      "separator" : false,
+      "state" : 0,
+      "title" : "退出打字钢琴",
+      "tooltip" : ""
+    }
+  ]
+}

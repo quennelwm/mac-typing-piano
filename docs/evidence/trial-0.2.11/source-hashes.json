@@ -1,0 +1,494 @@
+{
+  "task": "C-034",
+  "version": "0.2.11",
+  "build": 14,
+  "baseline": "b74f560 + uncommitted C-033; no Git operations",
+  "files": [
+    {
+      "path": "Code/Assets/PLACEHOLDER-LICENSE.txt",
+      "sha256": "3453722b28dbd47b38d49761b3a6d51f75adfcf0da6df18bc927e9958b7fdf9d",
+      "byteSize": 1050
+    },
+    {
+      "path": "Code/Assets/placeholder-original.sf2",
+      "sha256": "ded7747105075d3b5ed95fed7a0453f638dd27882b80defd1fcc7062c4c700fb",
+      "byteSize": 530774
+    },
+    {
+      "path": "Code/Assets/placeholder.manifest.json",
+      "sha256": "3d45e3593987ebc63ee966957cb79e7bcb9f110e29ea3411f2ee9fad36d13861",
+      "byteSize": 1309
+    },
+    {
+      "path": "Code/Assets/source_inventory.md",
+      "sha256": "3a77b089446ade64b0216b7f27c105b9cbdad7d5a1ddb0b41180f4abdced8959",
+      "byteSize": 1559
+    },
+    {
+      "path": "Code/IMPLEMENTATION.md",
+      "sha256": "7a40738c7731a40e1af6252eb6bd31557842f45db43c06986236b184263f1d61",
+      "byteSize": 10669
+    },
+    {
+      "path": "Code/Package.swift",
+      "sha256": "77d14c515302b0ae597fe83123c737f7db8a0f835520fd7ec765daaff7d23e62",
+      "byteSize": 759
+    },
+    {
+      "path": "Code/README.md",
+      "sha256": "df1bcd5e6bc8a8ef4786355f2e8f9713216c0aede1c2538d8f668725134ce666",
+      "byteSize": 19171
+    },
+    {
+      "path": "Code/Scripts/build.sh",
+      "sha256": "7f080f582e787bf992f8301af4e800f986802d1bc614d49fa1786f2fe662d558",
+      "byteSize": 8123
+    },
+    {
+      "path": "Code/Scripts/generate_placeholder.py",
+      "sha256": "95ee9582ed08d8a018159a622318b6979bdece0710e816dffdb76ea32ad7461a",
+      "byteSize": 6110
+    },
+    {
+      "path": "Code/Scripts/import_playable_mapping.py",
+      "sha256": "50bf9191868e0bf0a2c4268b6d56c5d338dc557d5f0362ee97fa62834ba4db1d",
+      "byteSize": 2266
+    },
+    {
+      "path": "Code/Scripts/probe-coredock.swift",
+      "sha256": "abbb829a86f1b09425f56d226f82cb9fba7318785d9031c0c43eced8f513d428",
+      "byteSize": 2235
+    },
+    {
+      "path": "Code/Scripts/probe-dock-visibility.swift",
+      "sha256": "25dfb2c4c31a68754e2511512083a2ebbcacaec41ef80a9441d0a68f9210cdd0",
+      "byteSize": 2525
+    },
+    {
+      "path": "Code/Scripts/release_sign.py",
+      "sha256": "7633e0e77b9be1fc3a9c32865ad7c52ba2dea4a74e9cf22dd16abc5d61bc9604",
+      "byteSize": 7338
+    },
+    {
+      "path": "Code/Scripts/verify_candidate_banks.py",
+      "sha256": "4650a311016821d2f82121f04a339364950efb5fa38f248864852a43e30b571f",
+      "byteSize": 11901
+    },
+    {
+      "path": "Code/Sources/PianoAudio/AuditionSession.swift",
+      "sha256": "6fc8fbc4538e3e03d116a28b5e4b0335933b802ef281e671f43e78f04dd96996",
+      "byteSize": 6801
+    },
+    {
+      "path": "Code/Sources/PianoAudio/RuntimeDiagnostics.swift",
+      "sha256": "5dc3c7095eb19d86f781a88a2594ae0d1ed3436a06302a329e87085ec74b7d3c",
+      "byteSize": 3972
+    },
+    {
+      "path": "Code/Sources/PianoAudio/SamplerAudio.swift",
+      "sha256": "11131742a6e8a41db3fcee5584958488a25feed68bf64f9efc83330c0c5222c4",
+      "byteSize": 11881
+    },
+    {
+      "path": "Code/Sources/PianoCore/AppPreferences.swift",
+      "sha256": "541b55a8741b2caed9a2d874a790139bbb79a82885c915da2b84854f4bdf1604",
+      "byteSize": 3013
+    },
+    {
+      "path": "Code/Sources/PianoCore/Coordinator.swift",
+      "sha256": "987b7b246f4de5d26f62bd724842dd36cf856a6582fc6dd6f2a8321916294ef4",
+      "byteSize": 3117
+    },
+    {
+      "path": "Code/Sources/PianoCore/Core.swift",
+      "sha256": "0c8ae0aa75bfbc921705598ca3a354089c3dc8fbfacddc29d3e3a5f07918d30c",
+      "byteSize": 1766
+    },
+    {
+      "path": "Code/Sources/PianoCore/CustomKeymap.swift",
+      "sha256": "00a51fbbd0812235b564eba46f1c6d0749c662e7f0798cbe72fc6801ca1c5692",
+      "byteSize": 5321
+    },
+    {
+      "path": "Code/Sources/PianoCore/DockFade.swift",
+      "sha256": "3bed0a97cc6bb587288322c88651ac45665f9fd4dcb21bf14156ac2b1faa643e",
+      "byteSize": 2405
+    },
+    {
+      "path": "Code/Sources/PianoCore/DockOwnership.swift",
+      "sha256": "48089a840d9fecd58cc1b636a9f8cd970957275cc52fea4ebc2dc3aa781d4f87",
+      "byteSize": 1826
+    },
+    {
+      "path": "Code/Sources/PianoCore/FloatingNotes.swift",
+      "sha256": "09b1f77fef49e62684fbc0fa323d8d17b783613f6e6932b321548e755232d4cd",
+      "byteSize": 2573
+    },
+    {
+      "path": "Code/Sources/PianoCore/Geometry.swift",
+      "sha256": "9f8580dae9d6a60f31ed18ac94288ab40dd73a1e835bea3e35cb141966dfb4c2",
+      "byteSize": 2338
+    },
+    {
+      "path": "Code/Sources/PianoCore/Mapping.swift",
+      "sha256": "9576b6ec94cab5a54fe65085b7d895715cbe62a55bf659da269f427782e25c7b",
+      "byteSize": 2542
+    },
+    {
+      "path": "Code/Sources/PianoCore/Policies.swift",
+      "sha256": "34d8610ae34a1562e3d3db6e69849f3f56bdb94eb8fda5c6c96f9c46c49372e2",
+      "byteSize": 1538
+    },
+    {
+      "path": "Code/Sources/PianoCore/StartupFlow.swift",
+      "sha256": "88207d6d827bc7fc799632d9dc885c701b0f71142870f46b162f24e618d534fb",
+      "byteSize": 3175
+    },
+    {
+      "path": "Code/Sources/PianoMac/AdaptiveOverlay.swift",
+      "sha256": "0bd7c5f2b401fa1877cd63a2b56f16d929b15e60f168c1da9c92a8b2dbf4a1ba",
+      "byteSize": 546
+    },
+    {
+      "path": "Code/Sources/PianoMac/AlertVolume.swift",
+      "sha256": "d724febf4f73d92190b1e32e312c031a3f999aae4252887e0e1587d7ff45951b",
+      "byteSize": 8436
+    },
+    {
+      "path": "Code/Sources/PianoMac/CompactMenuEvidence.swift",
+      "sha256": "0567361843431b5a8bae728acd994b7b906d9870d957d7415bfe5da1f66ad793",
+      "byteSize": 6768
+    },
+    {
+      "path": "Code/Sources/PianoMac/ContinuousTrialStart.swift",
+      "sha256": "35596b489f7537b4d8a9eb32e0ad933b3f62e4aea06bf8e179a72d8359b3b67d",
+      "byteSize": 1034
+    },
+    {
+      "path": "Code/Sources/PianoMac/ControlPanel.swift",
+      "sha256": "623bd55a6f59a79ee8afe64717838d60f584979bad621542c29aecec85c801b3",
+      "byteSize": 4734
+    },
+    {
+      "path": "Code/Sources/PianoMac/ControlPanelEvidence.swift",
+      "sha256": "2bc231d5af04d1386b62b522c4c36d6fdc25f1ed5559bd3b679921fd89afb55c",
+      "byteSize": 2189
+    },
+    {
+      "path": "Code/Sources/PianoMac/CrystalEvidence.swift",
+      "sha256": "13889b30f32dbbe2e66caef10795a44f7c87071fb364fcbdf02c945683472814",
+      "byteSize": 5923
+    },
+    {
+      "path": "Code/Sources/PianoMac/DockAdapter.swift",
+      "sha256": "422860f7af10cb90c2eef5d8efc92e760d98bb8695e9b61605f64fb8a6f019b8",
+      "byteSize": 8833
+    },
+    {
+      "path": "Code/Sources/PianoMac/DockWindowVisibility.swift",
+      "sha256": "a8329a3997e325ef2cebd3e1b8082a96d7608685126ad8101962284a80df8d75",
+      "byteSize": 4095
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputEventQueue.swift",
+      "sha256": "15473a2d562951388bfaf038a872d9f92f200a7fea885d577b057bf301da862d",
+      "byteSize": 1091
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputMonitor.swift",
+      "sha256": "116b5172bdf7d09833ae5f99ab003e15a464ea6524e82f38dcb653593bc2f50d",
+      "byteSize": 7091
+    },
+    {
+      "path": "Code/Sources/PianoMac/InputNormalizer.swift",
+      "sha256": "6e479581e0f9a68120f1526657eaff69477c356d467c33866aa360cd9270d9e9",
+      "byteSize": 1480
+    },
+    {
+      "path": "Code/Sources/PianoMac/KeymapEditor.swift",
+      "sha256": "72d51a340f17c2dec8e4484039d032e4fecb99d08d156498c204f5b2d9721ca6",
+      "byteSize": 17786
+    },
+    {
+      "path": "Code/Sources/PianoMac/Module.swift",
+      "sha256": "dda9b75f64b106eb544de201f599122d75abc483c5b156bba6c05c0f956dbc3c",
+      "byteSize": 18
+    },
+    {
+      "path": "Code/Sources/PianoMac/NativeDockStorage.swift",
+      "sha256": "29ac849206f39c1d2a1695ec6eda85951ca2b6d0cae5ce164e1f574b6adf30b3",
+      "byteSize": 2687
+    },
+    {
+      "path": "Code/Sources/PianoMac/OverlayWindowEvidence.swift",
+      "sha256": "d9cdb728306bfa4aa49532264266335298d2c0310be51aeff9f681c806982f9e",
+      "byteSize": 5288
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "sha256": "da7312300268b69da5954dc05ece2f5f2a9f9d21942e35af104905a4cce2b682",
+      "byteSize": 26550
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "sha256": "282ebbf182c9ef578e4aba4f7fda2ba19d948f54fc929f598027326b2fdb7d7e",
+      "byteSize": 59071
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "sha256": "7aa15ef86634baae6b9e04cf3b1c590cf4557aeb5f7f9362ba9a8f11bd7d7606",
+      "byteSize": 20988
+    },
+    {
+      "path": "Code/Sources/PianoMac/QuietIvoryProvenance.swift",
+      "sha256": "f8ae75087c178a4857c734760a3315e0150ec5bd37ebf159f687bf13d227c43b",
+      "byteSize": 2409
+    },
+    {
+      "path": "Code/Sources/PianoMac/RenderBenchmark.swift",
+      "sha256": "8ff36eb9c54b9d8b799bb99d35ba1bc3de53aa3bba5d3496559395075474fd2b",
+      "byteSize": 2467
+    },
+    {
+      "path": "Code/Sources/PianoMac/SDKKeys.swift",
+      "sha256": "cb27a802b588d29248b16a8aa9691f5a36f369d8bc598d88fb746160742aa97f",
+      "byteSize": 3507
+    },
+    {
+      "path": "Code/Sources/PianoMac/SingleInstance.swift",
+      "sha256": "c82b8555486374a3d1b059ad25cffee35f18b810b4b326c01a1d0ec8b33c1b27",
+      "byteSize": 4048
+    },
+    {
+      "path": "Code/Sources/PianoMac/TransparencyEvidence.swift",
+      "sha256": "9d718c104ba6ad917885ac7bbaa431be2c32c9ae381e3712f8453f39da605885",
+      "byteSize": 3493
+    },
+    {
+      "path": "Code/Sources/PianoProbe/main.swift",
+      "sha256": "7011c8025e30d1f674546b1945829c68cb37e89ebaa404e177b0afef980677f9",
+      "byteSize": 19293
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/AudioSelectionTests.swift",
+      "sha256": "0eb2b12be98749c735f0d0fbb8e8e53c8d8c2e854ae0c007b7a0b8ca172cd6c9",
+      "byteSize": 4060
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/CandidateBankTests.swift",
+      "sha256": "2dd9daba3bd4a8e14f81add70db301ce96808406b03fa065a5f51d961a0b4287",
+      "byteSize": 24334
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/RuntimeDiagnosticsTests.swift",
+      "sha256": "c6efcf62f76d11f6854877181c8995e012e7ec0f6b6d3fb6db3283be778b5d3e",
+      "byteSize": 2481
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/SamplerAudioTests.swift",
+      "sha256": "e55c561834ccbfee804cb99386f52d4c968c97f1e3aaaf4ec9514cb490c3a4c7",
+      "byteSize": 8568
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/TrialBankTests.swift",
+      "sha256": "5b9455bc4f0669add001e4acb30e77f669d6b6018721554b9c215ca9b9f7a4d1",
+      "byteSize": 9159
+    },
+    {
+      "path": "Code/Tests/PianoAudioTests/TrialGainTests.swift",
+      "sha256": "869beb1c2a011bd117ad9c8d9297eb6c8cc8f2d483fb1355f4013868a417a6d4",
+      "byteSize": 1430
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/AppPreferencesTests.swift",
+      "sha256": "279e87ea929fcc7b62133565be6b3c626d1503e8bc1fb85465671c916e1e37bc",
+      "byteSize": 1297
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/CoordinatorTests.swift",
+      "sha256": "af8cb39647934b82025f72868965508bc45471eafe63092eef5cc01b9cc705c4",
+      "byteSize": 4468
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/CustomKeymapTests.swift",
+      "sha256": "6235f3a762ea684cd5928d7be7a8d705d3b2311aa093f8fc24fbb5140fa56294",
+      "byteSize": 4539
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/DockFadeTests.swift",
+      "sha256": "a37e67b3cf70dc0e83a72a05ab353b0040d0f3d03c36410c3111e72de8af5a17",
+      "byteSize": 2873
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/FloatingNoteTests.swift",
+      "sha256": "a597c3894f568e5d41d2214d58ec49968d96fd94fd2384244d8fbd7ce45d151a",
+      "byteSize": 3215
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/GeometryAndDockTests.swift",
+      "sha256": "7f2e77062597a534d603e6f5e381c776edd277c59ec4223ae1ea42f9dad8bd1e",
+      "byteSize": 3842
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/HeightPreferencesTests.swift",
+      "sha256": "5b4296e72ec2acbd7c4c14aa1381c097000a1867725d20f4ced32962e6c0d2e7",
+      "byteSize": 1152
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/MappingTests.swift",
+      "sha256": "57eb988e4373a66318317fda17044e44837792d9cc86b0e037e1bd6e63af5753",
+      "byteSize": 2149
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift",
+      "sha256": "42d176b98dff30d81a31fc303bd341e39de80cc257f096789aa7438abe922a03",
+      "byteSize": 2884
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/ReducerTests.swift",
+      "sha256": "3149fe9b4dce176443f417267772ff0cad957356eff96a978ffc61767cd4cd0d",
+      "byteSize": 2308
+    },
+    {
+      "path": "Code/Tests/PianoCoreTests/StartupFlowTests.swift",
+      "sha256": "7aea7cd71769d8daed080d4c32e59ada1306ef7c1b03190753e9ee487fcf2eb2",
+      "byteSize": 6676
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift",
+      "sha256": "0121ce8b8246bc73f6916fe7af00508bfef1d27348c896c612c04136cf00ed86",
+      "byteSize": 2145
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/AlertVolumeTests.swift",
+      "sha256": "7abcfc7aaf5d87d22ff9108c8b0ada805d41a733a3820ebad1080ff9fd58a1ea",
+      "byteSize": 5894
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/CompactMenuTests.swift",
+      "sha256": "8d13ee61dd0c1b9218e913fc4cdc142471555f15b08706b9dddd171ecb5ea15a",
+      "byteSize": 7184
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/ControlPanelTests.swift",
+      "sha256": "897d0e70796a3bad268c14eda476a8d94b50879e45aca2ecc3d43f2b458ab4ee",
+      "byteSize": 8876
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/ControllerIntegrationTests.swift",
+      "sha256": "3dc08e66c3fdc224eb9f9659a49190e524e5bb76f205831b33a3730efe1ebd25",
+      "byteSize": 6088
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/CrystalRenderingTests.swift",
+      "sha256": "ef19867a3d803fcaed1c3f00c861197fcd19542cc4046d52e8bae4c622d103c3",
+      "byteSize": 3694
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/DockAdapterTests.swift",
+      "sha256": "3d76a57f3e84c50be803cf4966c4b2ec1ca4898c87e8cd1a50cf67bf59794d08",
+      "byteSize": 6454
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift",
+      "sha256": "72012c9fec9f18412ae3dc343c0191dc057652cda85144a1afb25b01a482db74",
+      "byteSize": 2263
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/GlossyBlackTests.swift",
+      "sha256": "c9d0954e1b2dad8375520d5e52401f9165f7d181e1617583036f09a963a27809",
+      "byteSize": 3512
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/HeightIntegrationTests.swift",
+      "sha256": "4bbe1e18d2cd60b5fc9ff5a05ba98750289674077d046059853b404f85ea0ef9",
+      "byteSize": 11183
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/InputNormalizerTests.swift",
+      "sha256": "7b16931c8e664723761a280aa64752f9c1b042bda69a9cd3302d9fb7ff46e71f",
+      "byteSize": 2265
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/IntegrationTests.swift",
+      "sha256": "db74109087976b3bb182d64f066e790c52d956771f243b11686d9c0fab3a9717",
+      "byteSize": 5718
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/KeymapEditorTests.swift",
+      "sha256": "48c064c68b6d3cea0de4af771481cc705c81cbf0466251b86352c7857f078369",
+      "byteSize": 3839
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/LocalTrialStartTests.swift",
+      "sha256": "e808d6a5ed1f220606b71f1e7959aa6138f59239d1154d2295f73e79a05e40d7",
+      "byteSize": 2576
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/MenuIntegrationTests.swift",
+      "sha256": "37d3e0fb7d75fc84f28a21b2c83dafbd35e5c083a636c33f69d82fe7c4eafcee",
+      "byteSize": 2302
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/ModuleTests.swift",
+      "sha256": "e6b1c631bf72196d2cc05bc2089393a4a383b0d614d53c2618f66c9baa6ab842",
+      "byteSize": 40
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/NativeDockStorageTests.swift",
+      "sha256": "489eaa7394b066475bf1d0a64e682fc00eca9388cb8115edddb2108596a5c354",
+      "byteSize": 2453
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/OverlayVisibilityTests.swift",
+      "sha256": "ab82f376b4b3aeb7ac7bde234e14704bf38c84bd0687d76fbf20f9b0ed8a133a",
+      "byteSize": 12035
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/OverlayWindowStackTests.swift",
+      "sha256": "34d89e36f92a085e3b7f35fd17f89d41dad44961d1cfd0b0430428d9d1df33f6",
+      "byteSize": 1060
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/SingleInstanceTests.swift",
+      "sha256": "535b525f0e9cb41720dc2101ef268092fcacc15fd0c9cf43da764815a8679478",
+      "byteSize": 2866
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/StartupEntryTests.swift",
+      "sha256": "d9f16088bcf6a5e34e98519dee3ac47bfcfa6a0288dc05f43083f846249fb664",
+      "byteSize": 2979
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/TransparencyTests.swift",
+      "sha256": "930a90d4cffe2cd4d2b14de77b21f32f658c4b364e8cd33d8a8765c8702101b3",
+      "byteSize": 7386
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/TrialSessionTests.swift",
+      "sha256": "ada93c3cb3fc1e35f4d194f471b45c1fabf963fe94ce664806f6a11ceb9b045a",
+      "byteSize": 3314
+    },
+    {
+      "path": "Design/UI/U-031/MATERIAL_RECIPE.md",
+      "sha256": "e1ebedbd90db1da6ef73ed3d84455bd22bf946cbfc73cd2380da32b33d7eff8b",
+      "byteSize": 2562
+    },
+    {
+      "path": "Design/UI/U-031/reference.json",
+      "sha256": "af135ac20b05c1ac7cd8200765f8cfcc1b257ec16a22a892652ed50e6ccfbdca",
+      "byteSize": 4769
+    },
+    {
+      "path": "contracts/custom-keymap.schema.json",
+      "sha256": "b0fd6989fa977567fd14909868349b1cdf43534bddaefd691fffe47b8d646dbb",
+      "byteSize": 8744
+    },
+    {
+      "path": "contracts/keymap.ansi64.playable.v0.2.json",
+      "sha256": "da9646135f51ffb1257fa5b972d8cae2ad5cc6d9f6a0cd1e20e263e828313b83",
+      "byteSize": 29092
+    }
+  ],
+  "freezeRevision": "C034 delivery: session alert original, repeat latch, approved editor copy"
+}

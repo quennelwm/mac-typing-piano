@@ -1,0 +1,53 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/9] Emitting module PianoMac
+[5/9] Compiling PianoMac ProbeController.swift
+[6/9] Compiling PianoMac ProbeMenu.swift
+[7/21] Compiling PianoMacTests TrialSessionTests.swift
+[8/21] Compiling PianoMacTests StartupEntryTests.swift
+[9/21] Compiling PianoMacTests TransparencyTests.swift
+[10/21] Compiling PianoMacTests HeightIntegrationTests.swift
+[11/21] Compiling PianoMacTests ControllerIntegrationTests.swift
+[12/21] Emitting module PianoMacTests
+[13/21] Compiling PianoMacTests CompactMenuTests.swift
+[14/21] Compiling PianoMacTests OverlayVisibilityTests.swift
+[15/21] Compiling PianoProbe main.swift
+[16/21] Emitting module PianoProbe
+[16/21] Write Objects.LinkFileList
+[18/21] Linking TypingPianoProbe
+[19/21] Linking TypingPianoProbePackageTests
+[20/21] Applying TypingPianoProbe
+Build complete! (3.35s)
+Test Suite 'Selected tests' started at 2026-10-29 15:39:28.829.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 15:39:28.832.
+Test Suite 'CompactMenuTests' started at 2026-10-29 15:39:28.832.
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:20: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:20: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:20: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:20: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' failed (0.301 seconds).
+Test Case '-[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:70: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertGreaterThan failed: ("3") is not greater than ("3")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:75: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:82: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("NSControlStateValue(rawValue: 0)") is not equal to ("NSControlStateValue(rawValue: 1)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:85: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:85: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+Test Case '-[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio]' failed (0.970 seconds).
+Test Case '-[PianoMacTests.CompactMenuTests testRootCallbacksSlidersAndTextBounds]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:39: error: -[PianoMacTests.CompactMenuTests testRootCallbacksSlidersAndTextBounds] : XCTAssertEqual failed: ("1") is not equal to ("0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:39: error: -[PianoMacTests.CompactMenuTests testRootCallbacksSlidersAndTextBounds] : XCTAssertEqual failed: ("1") is not equal to ("0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:41: error: -[PianoMacTests.CompactMenuTests testRootCallbacksSlidersAndTextBounds] : XCTAssertEqual failed: ("2") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:41: error: -[PianoMacTests.CompactMenuTests testRootCallbacksSlidersAndTextBounds] : XCTAssertEqual failed: ("2") is not equal to ("1")
+Test Case '-[PianoMacTests.CompactMenuTests testRootCallbacksSlidersAndTextBounds]' failed (0.005 seconds).
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'CompactMenuTests' failed at 2026-10-29 15:39:30.108.
+	 Executed 3 tests, with 13 failures (0 unexpected) in 1.275 (1.276) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 15:39:30.108.
+	 Executed 3 tests, with 13 failures (0 unexpected) in 1.275 (1.276) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 15:39:30.108.
+	 Executed 3 tests, with 13 failures (0 unexpected) in 1.275 (1.278) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

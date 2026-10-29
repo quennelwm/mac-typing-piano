@@ -1,0 +1,7 @@
+{
+  "head": "b74f560f97c64ead47e64fc510c01b7c8e92d371",
+  "includesUncommittedC033": true,
+  "installed": "0.2.10/build13",
+  "published": "0.2.9",
+  "C033UserFeedback": "icon-again and outside-click both FAIL; user requested new layout before fix"
+}

@@ -1,0 +1,9 @@
+{
+  "exitCode": 0,
+  "sourceUnchangedDuringRun": true,
+  "summaries": [
+    "Executed 150 tests, with 3 tests skipped and 0 failures (0 unexpected) in 16.608 (16.622) seconds",
+    "Executed 150 tests, with 3 tests skipped and 0 failures (0 unexpected) in 16.608 (16.625) seconds"
+  ],
+  "failures": []
+}

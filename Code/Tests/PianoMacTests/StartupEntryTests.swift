@@ -28,15 +28,17 @@ final class StartupEntryTests: XCTestCase {
         menu.onStartup = { opens += 1 }; menu.onDownload = { downloads += 1 }
         menu.onMuteAlerts = { muteClicks += 1 }; menu.onSoundSettings = { settingsClicks += 1 }
         for title in ["打开启动窗口…", "下载新版…", "静音系统提示音", "系统声音设置…"] {
-            let item = try XCTUnwrap(menu.menu.items.first { $0.title == title })
+            let items = menu.menu.items + menu.menu.items.compactMap(\.submenu).flatMap(\.items)
+            let item = try XCTUnwrap(items.first { $0.title == title })
             XCTAssertTrue(NSApp.sendAction(try XCTUnwrap(item.action), to: item.target, from: item))
         }
         menu.update(soundEnabled: false, showLabels: true, showOverlay: false, paused: true, sessionStatus: "已暂停：安全输入阻断")
-        XCTAssertEqual(menu.menu.items.first?.title, "已暂停：安全输入阻断")
+        XCTAssertEqual(menu.menu.items.first?.title, "安全输入已暂停")
+        XCTAssertEqual(menu.menu.items.first?.toolTip, "已暂停：安全输入阻断")
         XCTAssertFalse(try XCTUnwrap(menu.menu.items.first).isEnabled)
         XCTAssertEqual(opens, 1); XCTAssertEqual(downloads, 1)
         XCTAssertEqual(muteClicks, 1); XCTAssertEqual(settingsClicks, 1)
         menu.updateAlertVolume(muted: nil, detail: "读取失败，未确认静音")
-        XCTAssertEqual(menu.menu.items.first { $0.title == "静音系统提示音" }?.state, .mixed)
+        XCTAssertEqual(menu.menu.items.compactMap(\.submenu).flatMap(\.items).first { $0.title == "静音系统提示音" }?.state, .mixed)
     }
 }

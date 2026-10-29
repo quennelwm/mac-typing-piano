@@ -1,0 +1,20 @@
+{
+  "sourceFrozenFileCount": 97,
+  "sourceChanges": [],
+  "protectedFileCount": 153,
+  "protectedChanges": [],
+  "installedVersionAtVerification": "0.2.10",
+  "strictSignatureExitCode": 0,
+  "adHoc": true,
+  "zipCorruptMember": null,
+  "zipBinaryMatches": true,
+  "version": "0.2.11",
+  "build": 14,
+  "binarySHA256": "cff5298a4b7fb4e33c19a6e5e7280ca41e1ae926098a9a35d153e3a1260d1125",
+  "zipSHA256": "b4810a31157030cb3416d63789218ad563fb6e7fee4c3144f43c839bc9b9cdd1",
+  "sourceManifestSHA256": "873388910a57dc99eb302b8e2d28bcb04e95b6b6d7cc914db5aaeb8608c920a0",
+  "appPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.11/打字钢琴试用.app",
+  "zipPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.11/打字钢琴试用.zip",
+  "authoritativeBuildLog": "build-frozen.log",
+  "authoritativeTestLog": "full-test-frozen.log"
+}

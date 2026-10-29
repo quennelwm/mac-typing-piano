@@ -25,8 +25,8 @@ final class OverlayVisibilityTests: XCTestCase {
     func testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices() throws {
         let (c, input, engine, _) = try make()
         for _ in 0..<5 {
-            c.toggleOverlay(); XCTAssertEqual(alpha(c), 1); XCTAssertTrue(visible(c))
-            c.stopAll(); XCTAssertEqual(alpha(c), 1); XCTAssertTrue(visible(c))
+            c.toggleOverlay(); XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
+            c.stopAll(); XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
             c.toggleOverlay(); XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
         }
         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared); XCTAssertTrue(engine.downs.isEmpty)
@@ -36,16 +36,17 @@ final class OverlayVisibilityTests: XCTestCase {
         let (c, input, engine, _) = try make(secure: { secure })
         c.toggleOverlay(); XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
         XCTAssertTrue((c.runtimeDiagnostics()["overlayStatus"] as? String ?? "").contains("安全输入"))
-        secure = false; c.dockTick(); XCTAssertEqual(alpha(c), 1)
+        secure = false; c.dockTick(); XCTAssertEqual(alpha(c), 0)
         c.start(global: false); XCTAssertEqual(input.mode, .local)
         secure = true; c.dockTick(); XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(visible(c))
         c.setSessionBlocked(true); secure = false; c.dockTick(); XCTAssertFalse(visible(c))
-        c.setSessionBlocked(false); XCTAssertTrue(visible(c)); XCTAssertEqual(alpha(c), 1)
+        c.setSessionBlocked(false); XCTAssertFalse(visible(c)); XCTAssertEqual(alpha(c), 0)
         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
     }
     func testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices() throws {
         var dock = DockVisibility.visible
         let (c, input, engine, _) = try make(dock: { dock })
+        c.start(global: true)
         c.toggleOverlay(); XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
         dock = .hidden; c.dockTick()
         RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.6))
@@ -58,7 +59,7 @@ final class OverlayVisibilityTests: XCTestCase {
         XCTAssertEqual(alpha(c), 1); XCTAssertTrue(visible(c))
         XCTAssertTrue((c.runtimeDiagnostics()["overlayStatus"] as? String ?? "").contains("未知"))
         c.toggleOverlay(); dock = .hidden; c.dockTick(); XCTAssertFalse(visible(c))
-        XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
+        XCTAssertEqual(input.mode, .global); XCTAssertFalse(engine.prepared)
     }
     func testExistingCustomConfigurationChangesPitchOnRelaunch() throws {
         let (_, _, _, prefs) = try make()
@@ -91,7 +92,7 @@ final class OverlayVisibilityTests: XCTestCase {
             XCTAssertEqual(input.mode, wasMode); XCTAssertEqual(c.integrationState.soundEnabled, wasSound)
             XCTAssertEqual(engine.prepared, wasPrepared); XCTAssertEqual(engine.shutdowns, shutdowns)
             XCTAssertEqual(c.integrationState.activeKeys, 0); XCTAssertEqual(c.integrationState.floatingNotes, 0)
-            XCTAssertEqual(alpha(c), 1); XCTAssertEqual(input.discardedEpochs, 1)
+            XCTAssertEqual(alpha(c), mode == "paused" ? 0 : 1); XCTAssertEqual(input.discardedEpochs, 1)
             let stored = try JSONDecoder().decode(CustomKeymap.self, from: Data(contentsOf: prefs.deletingLastPathComponent().appendingPathComponent("custom-keymap.json")))
             XCTAssertEqual(stored, custom)
             if mode != "paused" {
@@ -139,7 +140,7 @@ final class OverlayVisibilityTests: XCTestCase {
         c.setSessionBlocked(true, reason: "lock"); c.setSessionBlocked(true, reason: "sleep")
         c.setSessionBlocked(false, reason: "sleep"); XCTAssertFalse(visible(c))
         secure = true; c.setSessionBlocked(false, reason: "lock"); XCTAssertFalse(visible(c))
-        secure = false; c.dockTick(); XCTAssertTrue(visible(c)); XCTAssertEqual(input.mode, .stopped)
+        secure = false; c.dockTick(); XCTAssertFalse(visible(c)); XCTAssertEqual(input.mode, .stopped)
     }
     func testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion() throws {
         let mapping = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))

@@ -1,0 +1,36 @@
+{
+  "startAt": "2026-10-29T16:43:55.081580+08:00",
+  "pid": 16328,
+  "binary": "/Users/wuming/Library/Caches/local.typingpiano.trial/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe",
+  "binarySHA256": "c54a5bc3bb4789e045832f0d467aef0d3ee589381cbe0c3731ed7b02eb3957bd",
+  "info": {
+    "CFBundleIdentifier": "local.typingpiano.trial",
+    "CFBundleVersion": "13",
+    "CFBundleShortVersionString": "0.2.10"
+  },
+  "OS": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2\nBuildVersion:\t\t26B123\n",
+  "architecture": "arm64",
+  "memoryBytes": "17179869184",
+  "topCommand": [
+    "top",
+    "-l",
+    "6",
+    "-s",
+    "2",
+    "-pid",
+    "16328",
+    "-stats",
+    "pid,command,cpu,mem,threads,time,state"
+  ],
+  "psCommand": [
+    "ps",
+    "-p",
+    "16328",
+    "-o",
+    "pid=,etime=,time=,%cpu=,rss=,vsz=,stat="
+  ],
+  "endAt": "2026-10-29T16:44:06.825484+08:00",
+  "topExitCode": 0,
+  "topStderr": "",
+  "condition": "Uncontrolled observation; user may be typing. Initial top CPU sample discarded for conclusions."
+}

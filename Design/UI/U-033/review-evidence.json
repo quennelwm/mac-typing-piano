@@ -1,0 +1,117 @@
+{
+  "task": "U-033",
+  "scope": [
+    "CR-010",
+    "CR-011"
+  ],
+  "reviewedAt": "2026-10-29T16:02:04.382845+08:00",
+  "baseline": "b74f560f97c64ead47e64fc510c01b7c8e92d371",
+  "status": "review complete, pending PM acceptance",
+  "blockingFindings": [],
+  "freeze": {
+    "manifest": "docs/evidence/trial-0.2.10/source-hashes.json",
+    "sha256": "212add602c1fee7c2ea32d29e5b25783a5a0c0028e134f512ea3ad7a70be6fc7",
+    "filesVerified": 93,
+    "mismatches": []
+  },
+  "sources": [
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "sha256": "33c14d97e52cfb29b7fa731c01e4d1ce614f83493d2927454e6214ff628fd67c"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "sha256": "a71e891839e6fe13717fccf763f72d0c5db4228e0b14bb508f3037bd337b7283"
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "sha256": "9c3b65dc426bb700a754e4c4388d41560c983d16707f3f8a561c680d4261ff9e"
+    },
+    {
+      "path": "Code/Sources/PianoMac/CompactMenuEvidence.swift",
+      "sha256": "0567361843431b5a8bae728acd994b7b906d9870d957d7415bfe5da1f66ad793"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/CompactMenuTests.swift",
+      "sha256": "8d13ee61dd0c1b9218e913fc4cdc142471555f15b08706b9dddd171ecb5ea15a"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/GlossyBlackTests.swift",
+      "sha256": "c9d0954e1b2dad8375520d5e52401f9165f7d181e1617583036f09a963a27809"
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/TransparencyTests.swift",
+      "sha256": "88824ed40c7cb1dab1e8c5a6d9349c02f314e95000c0ebe9f701222bfd3858fb"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/evidence/trial-0.2.10/source-hashes.json",
+      "sha256": "212add602c1fee7c2ea32d29e5b25783a5a0c0028e134f512ea3ad7a70be6fc7"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/environment.json",
+      "sha256": "6297f3eb28a5dc55b2102234127f6d4023ade1c647f0a41f409652590318ef02"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/menu-before.json",
+      "sha256": "b1c5908b089fe61afdbaa201c50131f8a3bd6afa7d5a2be0b4f46171b6f541fd"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/menu-after.json",
+      "sha256": "421d03f6416ac5119d74864f02d4e57218fb197625a6f9044e92bc6e789f1550"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/black-before.json",
+      "sha256": "e643ad0578fc51913f394450301df388012c3b8b1486d6c15f99d3431726ddf7"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/black-after.json",
+      "sha256": "79f12a8ea9c4c86bcc59a5a8511e23de332f671c395cdfbe3caea598ad386f44"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/targeted-final.log",
+      "sha256": "b5c372d0b23f90df07a76b7390d008e17d24a22fec6b73b1a228d35054325359"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/full-test.log",
+      "sha256": "0383169cf0c886dbf856b3b23f487a520fe140fe95b329a49e45be22f493d79b"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/previews/report.json",
+      "sha256": "e3dd19a3590f5de794424f3f61c2d7a61523e9427a6105407b700fca4a90e4c7"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/previews/menu-layout.png",
+      "sha256": "8569b4d891703ba17f10c7f37a974e5f36a322108d6345d6d29489a2b8679367"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.10/previews/black-opaque-detail.png",
+      "sha256": "a17a1ac7b20d03dcef1cbfa98ee0f5294a8cdd724774910ef7c48ba8ea4d2797"
+    }
+  ],
+  "checks": {
+    "initialWidths": [
+      313,
+      180
+    ],
+    "configuredOldWidth": 352,
+    "configuredNewWidths": [
+      181,
+      181,
+      184,
+      181
+    ],
+    "sliderLabelBounds": true,
+    "blackRowsRecomputed": 12,
+    "whiteSampleArraysEqual": true,
+    "correctedTracksAndKnobsVisuallySeen": true
+  },
+  "method": "Read-only diff/logs/JSON and two existing images. No Swift test rerun, candidate GUI launch or new images.",
+  "notTested": [
+    "real menu open/close/outside click and dragging",
+    "VoiceOver and tooltip in live menu",
+    "signed installation, actual TCC and live sound",
+    "macOS14 runtime"
+  ]
+}

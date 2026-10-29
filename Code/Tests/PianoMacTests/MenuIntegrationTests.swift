@@ -10,7 +10,7 @@ final class MenuIntegrationTests: XCTestCase {
         let sources = try AudioSource.available(root: root, bundled: false)
         let menu = ProbeMenu(volume: 0.5, sources: sources, installStatusItem: false)
         XCTAssertFalse(menu.menu.items.contains { $0.title.contains("C-001") || $0.title.contains("M1") || $0.title.contains("60秒") })
-        let test = try XCTUnwrap(menu.menu.items.first { $0.title == "测试" }?.submenu)
+        let test = try XCTUnwrap(menu.menu.items.first { $0.title == "帮助与测试" }?.submenu)
         let banks = try XCTUnwrap(test.items.first { $0.title == "试听音源" }?.submenu)
         XCTAssertEqual(banks.items.filter { $0.representedObject != nil }.count, 4)
         var selected = ""

@@ -1,15 +1,22 @@
 import Foundation
 /// App-owned presentation/audio preferences; no input history or system settings.
+public enum PianoLayer: String, Codable { case top, bottom }
 public struct AppPreferences: Codable {
+    public var floatingNotesEnabled = true
+    public var soundEnabled = true
+    public var pianoLayer: PianoLayer = .top
     public private(set) var volume: Double = 0.5
     public var showKeyLabels = true
     public private(set) var heightScale: Double = 1
     public private(set) var transparency: Double = 0.15
     public var outputGain: Float { Float(volume * 0.16) }
     public init() {}
-    private enum CodingKeys: String, CodingKey { case volume, showKeyLabels, heightScale, transparency }
+    private enum CodingKeys: String, CodingKey { case volume, showKeyLabels, heightScale, transparency, floatingNotesEnabled, soundEnabled, pianoLayer }
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
+        floatingNotesEnabled = (try? values.decode(Bool.self, forKey: .floatingNotesEnabled)) ?? true
+        soundEnabled = (try? values.decode(Bool.self, forKey: .soundEnabled)) ?? true
+        pianoLayer = (try? values.decode(PianoLayer.self, forKey: .pianoLayer)) ?? .top
         setVolume((try? values.decode(Double.self, forKey: .volume)) ?? 0.5)
         showKeyLabels = (try? values.decode(Bool.self, forKey: .showKeyLabels)) ?? true
         setHeightScale((try? values.decode(Double.self, forKey: .heightScale)) ?? 1)

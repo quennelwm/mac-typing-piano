@@ -1,0 +1,20 @@
+[0/1] Planning build
+Building for debugging...
+[0/9] Write sources
+[3/9] Write swift-version--58304C5D6DBC2206.txt
+[5/14] Compiling PianoMac ControlPanel.swift
+[6/16] Compiling PianoMac ProbeMenu.swift
+[7/16] Emitting module PianoMac
+[8/16] Compiling PianoMac PianoView.swift
+[9/16] Compiling PianoMac ControlPanelEvidence.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/ControlPanelEvidence.swift:9:33: error: cannot force unwrap value of non-optional type 'NSView'
+ 7 |   shell.setTransparency(0.12, reduced: false); shell.setPresentation(floating: true, layer: "top")
+ 8 |   shell.setAlertLevel(40, detail: "合成系统提醒音量"); shell.updatePermission(granted: true)
+ 9 |   let view = shell.controls.view!; view.layoutSubtreeIfNeeded()
+   |                                 `- error: cannot force unwrap value of non-optional type 'NSView'
+10 |   let image = NSImage(size: view.bounds.size)
+11 |   image.lockFocus(); NSColor.windowBackgroundColor.setFill(); view.bounds.fill()
+[10/16] Compiling PianoMac ProbeController.swift
+[11/16] Compiling PianoMac CompactMenuEvidence.swift
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

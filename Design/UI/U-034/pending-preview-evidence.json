@@ -1,0 +1,22 @@
+{
+  "stage": "pending final source-aligned previews",
+  "images": [
+    {
+      "path": "docs/evidence/trial-0.2.11/previews/control-panel.png",
+      "pixelSize": [
+        540,
+        740
+      ],
+      "sha256": "af1f7cbaa684393ead46b0592188e65686a13e7324c91f0982285c16c058bdee"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.11/previews/binding-draft.png",
+      "pixelSize": [
+        800,
+        740
+      ],
+      "sha256": "68fb5fbac484083c522f31ccc9faa467441fa7e5e3405021f7527b6b92bd0663"
+    }
+  ],
+  "sourceManifestSHA256": "155b673f511f7205db8457527c8550d47fa4c5ba38bda7bd7d7073e6c3a26146"
+}

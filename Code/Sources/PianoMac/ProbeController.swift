@@ -16,11 +16,13 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     private let preferencesURL: URL
     private var preferences: AppPreferences
     private var preferencesSaveTimer: Timer?
+    private var alertWriteTimer: Timer?
+    private var pendingAlertVolume: Int?
     private var preferencesDirty = false
     private var preferencesSaveError: String?
     var confirmUnsavedPreferencesExit: ((String) -> Bool)? // Test seam; nil presents the actual native decision.
     private var previewHeightConstraint: NSLayoutConstraint?
-    private var statusMenu: ProbeMenu?
+    private(set) var statusMenu: ProbeMenu?
     private let startupFlow: StartupFlow
     private let startupWindowPresenter: (() -> Void)?
     private var startupPrimary: NSButton?
@@ -53,6 +55,8 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     private var labels = true
     private var showOverlay = false
     private let permissionCheck: () -> Bool
+    private let inputSettingsOpener: () -> Bool
+    private let authorizationRequester: () -> Bool
     private let secureInputCheck: () -> Bool
     private let dockVisibilityCheck: ((CGRect, TimeInterval) -> DockVisibility)?
     private var sessionBlocks = Set<String>()
@@ -78,9 +82,10 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     private var diagnosticsTimer: Timer?
     private let diagnosticsLabel = NSTextField(wrappingLabelWithString: "运行诊断：尚未开始。")
 
-    public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL, input: InputMonitoring? = nil, audioEngine: AuditionEngine = SamplerAudio(), installStatusItem: Bool = true, dockAdapter: DockAdapter? = nil, startupWindowPresenter: (() -> Void)? = nil, alertVolume: AlertVolumeAdapter? = nil, secureInputCheck: @escaping () -> Bool = { InputMonitor.secureInput }, permissionCheck: @escaping () -> Bool = { InputMonitor.hasExistingPermission }, dockVisibilityCheck: ((CGRect, TimeInterval) -> DockVisibility)? = nil) throws {
+    public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL, input: InputMonitoring? = nil, audioEngine: AuditionEngine = SamplerAudio(), installStatusItem: Bool = true, dockAdapter: DockAdapter? = nil, startupWindowPresenter: (() -> Void)? = nil, alertVolume: AlertVolumeAdapter? = nil, secureInputCheck: @escaping () -> Bool = { InputMonitor.secureInput }, permissionCheck: @escaping () -> Bool = { InputMonitor.hasExistingPermission }, authorizationRequester: @escaping () -> Bool = { CGRequestListenEventAccess() }, inputSettingsOpener: @escaping () -> Bool = { NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent")!) }, dockVisibilityCheck: ((CGRect, TimeInterval) -> DockVisibility)? = nil) throws {
         guard let first = sources.first else { throw ProbeError.invalid("没有可用试听音源") }
-        self.permissionCheck = permissionCheck
+        self.permissionCheck = permissionCheck; self.inputSettingsOpener = inputSettingsOpener
+        self.authorizationRequester = authorizationRequester
         self.secureInputCheck = secureInputCheck; self.dockVisibilityCheck = dockVisibilityCheck
         self.defaultMapping = mapping
         customStore = CustomKeymapStore(url: preferencesURL.deletingLastPathComponent().appendingPathComponent("custom-keymap.json"), defaultMapping: mapping)
@@ -112,13 +117,25 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         let menu = ProbeMenu(volume: preferences.volume, heightScale: preferences.heightScale, sources: sources, installStatusItem: installStatusItem)
         menu.setTransparency(preferences.transparency, reduced: NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency)
         menu.onTransparency = { [weak self] in self?.changeTransparency($0) }
+        menu.onFloating = { [weak self] in self?.toggleFloatingNotes() }
+        menu.onLayer = { [weak self] value in self?.changeLayer(value) }
+        menu.onAlertVolume = { [weak self] value in
+            self?.changeAlertVolume(value)
+        }
         menu.onHeight = { [weak self] in self?.changeHeight($0) }
-        menu.onDidClose = { [weak self] in self?.flushPreferences() }
+        menu.onDidClose = { [weak self] in self?.flushPreferences(); DispatchQueue.main.async { [weak self] in self?.flushAlertVolume() } }
         menu.onStartup = { [weak self] in self?.showStartupWindow() }
         menu.onDownload = { [weak self] in self?.downloadNewVersion() }
         menu.onMuteAlerts = { [weak self] in self?.toggleAlertMute() }
         menu.onSoundSettings = { [weak self] in self?.openSoundSettings() }
-        menu.onWillOpen = { [weak self] in self?.alertVolume.refresh(); self?.refreshAlertMenu() }
+        menu.onWillOpen = { [weak self] in
+            guard let self else { return }
+            self.refresh()
+            self.statusMenu?.updatePermission(granted: self.permissionCheck())
+            self.refreshAlertMenu()
+        }
+        menu.onInputPermission = { [weak self] in self?.openInputPermission() }
+        menu.updatePermission(granted: permissionCheck())
         menu.onOpen = { [weak self] in self?.showControlWindow() }
         menu.onPause = { [weak self] in self?.togglePause() }
         menu.onSound = { [weak self] in self?.toggleSound() }
@@ -133,12 +150,24 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         menu.onDockSettings = { [weak self] in self?.openDockSettings() }
         menu.onDockRecovery = { [weak self] in self?.recoverDock() }
         menu.onAbout = { [weak self] in self?.showAbout() }
+        DispatchQueue.main.async { [weak self] in self?.alertVolume.refresh(); self?.refreshAlertMenu() }
         statusMenu = menu
+        changeLayer(preferences.pianoLayer.rawValue)
         dockResult(dock.request(true, confirmedDisable: true)) // GUI injects native storage; tests retain simulation.
         refresh()
         if installStatusItem {
             showStartupWindow()
             if NSApp.isActive { handleStartup(.becameActive) }
+        }
+    }
+    private func openInputPermission() {
+        guard !authorizationRequestInFlight else { return }
+        if permissionCheck() {
+            _ = inputSettingsOpener() // Inspection only: keep input, held notes and audio running.
+        } else {
+            pause("准备输入监控授权")
+            showStartupWindow()
+            handleStartup(.primary) // The explicit menu click is the user's authorization intent.
         }
     }
     private func buildStartupWindow() {
@@ -161,6 +190,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: startupWindow.contentView!.leadingAnchor, constant: 24), stack.trailingAnchor.constraint(equalTo: startupWindow.contentView!.trailingAnchor, constant: -24), stack.topAnchor.constraint(equalTo: startupWindow.contentView!.topAnchor, constant: 20)])
     }
     private func showStartupWindow() {
+        statusMenu?.closePopover()
         if let startupWindowPresenter { startupWindowPresenter(); return }
         updateStartupControls()
         if startupFlow.pendingAuthorization {
@@ -187,6 +217,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         }
     }
     func showControlWindow(activate: Bool = true) {
+        statusMenu?.closePopover()
         if activate { window.makeKeyAndOrderFront(nil); NSApp.activate(ignoringOtherApps: true) }
         else { window.orderFront(nil) }
         refresh()
@@ -194,7 +225,8 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     func changeVolume(_ value: Double) {
         preferences.setVolume(value)
         audio.setVolume(preferences.volume)
-        savePreferences()
+        statusMenu?.setVolume(preferences.volume)
+        preferencesDirty = true; schedulePreferencesSave()
     }
     private func savePreferences() {
         do {
@@ -292,6 +324,8 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     @objc private func startLocal() { start(global: false) }
     @objc private func startGlobal() { start(global: true) }
     func start(global: Bool) {
+        guard keymapEditor?.window?.isVisible != true else { statusMenu?.controls.running.state = .off; statusMenu?.controls.message.stringValue = "请先关闭键位窗口"; return }
+
         lastGlobal = global
         sessionDuration = .test60Seconds
         pause("准备测试")
@@ -323,14 +357,14 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
                 authorizationReturnGate.beginRequest()
                 authorizationRequestInFlight = true
                 updateStartupControls()
-                _ = CGRequestListenEventAccess() // Only this explicit primary-button path can request.
+                _ = authorizationRequester() // Only an explicit primary button or permission-menu action requests.
                 if permissionCheck() && NSApp.isActive {
                     authorizationRequestInFlight = false
                     authorizationReturnGate.reset()
                     handleStartup(.becameActive)
                     return
                 }
-                let opened = NSWorkspace.shared.open(URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_ListenEvent")!)
+                let opened = inputSettingsOpener()
                 if NSWorkspace.shared.frontmostApplication?.bundleIdentifier == "com.apple.systempreferences" { authorizationReturnGate.observedSettings() }
                 authorizationRequestInFlight = false
                 if !opened {
@@ -358,17 +392,21 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     @objc private func quitApp() { NSApp.terminate(nil) }
     @objc func startLocalTrial() { startContinuousTrial(global: false) }
     @objc func startTrial() {
+        guard keymapEditor?.window?.isVisible != true else { statusMenu?.controls.running.state = .off; statusMenu?.controls.message.stringValue = "请先关闭键位窗口"; return }
+
         guard input.mode != .global else { showStartupWindow(); return }
         pause("准备开始")
         showStartupWindow()
         handleStartup(.primary)
     }
     private func startContinuousTrial(global: Bool) {
+        guard keymapEditor?.window?.isVisible != true else { statusMenu?.controls.running.state = .off; statusMenu?.controls.message.stringValue = "请先关闭键位窗口"; return }
+
         pause("准备开始")
         sessionDuration = .continuous; lastGlobal = global
         do {
             try ContinuousTrialStart.run(global: global, input: input, audio: audio) // Preloads outside key callbacks.
-            _ = coordinator.setSoundEnabled(true); coordinator.resume()
+            _ = coordinator.setSoundEnabled(preferences.soundEnabled); if !preferences.soundEnabled { audio.disable() }; coordinator.resume()
             soundButton.title = "关闭声音并清尾音"
             receivedCount = 0
             sessionStatus = global ? "运行中：持续全局打字" : "运行中：本窗口试弹"
@@ -433,7 +471,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         } catch { status.stringValue = "诊断导出失败：\(error.localizedDescription)" }
     }
     private func receive(_ event: NormalizedKeyEvent, source: KeyInputSource = .keyboard) {
-        guard input.mode != .stopped, !overlayBlocked else { return }
+        guard keymapEditor?.window?.isKeyWindow != true, input.mode != .stopped, !overlayBlocked else { return }
         if source == .keyboard && ignoredUntilRelease.contains(event.physicalKeyID) {
             if event.phase == .up { ignoredUntilRelease.remove(event.physicalKeyID) }
             return
@@ -467,15 +505,32 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
             }
         }
     }
+    func toggleFloatingNotes() {
+        preferences.floatingNotesEnabled.toggle()
+        preview?.floatingNotesEnabled = preferences.floatingNotesEnabled; overlayView?.floatingNotesEnabled = preferences.floatingNotesEnabled
+        preferencesDirty = true; schedulePreferencesSave(); refresh()
+    }
+    func changeLayer(_ value: String) {
+        guard let layer = PianoLayer(rawValue: value) else { return }
+        let changed = preferences.pianoLayer != layer
+        preferences.pianoLayer = layer
+        panel?.level = layer == .top ? .floating : NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.desktopIconWindow)) + 1)
+        if changed { preferencesDirty = true; schedulePreferencesSave() }; refresh()
+    }
     private func refresh() {
+        preview?.floatingNotesEnabled = preferences.floatingNotesEnabled; overlayView?.floatingNotesEnabled = preferences.floatingNotesEnabled
+        if statusMenu?.isPopoverShown == true || !installStatusItem {
+        statusMenu?.setPresentation(floating: preferences.floatingNotesEnabled, layer: preferences.pianoLayer.rawValue)
         statusMenu?.update(soundEnabled: coordinator.soundEnabled, showLabels: labels, showOverlay: showOverlay, overlayVisible: !overlayBlocked && !dockFade.dockHidden && targetScreen != nil, overlayStatus: overlayStatus,
             paused: coordinator.paused, dockDesired: dock.observed ?? dock.desired, dockKnown: dock.observed != nil, systemDock: systemDock, sourceID: audio.source.id, sessionStatus: sessionStatus + (!coordinator.paused && !coordinator.soundEnabled ? "（声音关闭）" : ""))
         statusMenu?.updateKeymap(custom: customConfiguration != CustomKeymap(defaultMapping: defaultMapping), warning: keymapWarning)
-        updateStartupControls()
+        }
+        if startupWindow?.isVisible == true { updateStartupControls() }
         preview?.setSceneVisible(window?.isVisible == true && !coordinator.paused)
+        if coordinator.paused { statusMenu?.controls.sound.state = preferences.soundEnabled ? .on : .off; statusMenu?.controls.soundCheck.state = statusMenu?.controls.sound.state ?? .off }
         let keys = Set(coordinator.active.values.map { $0.key.midiNote })
         preview?.activeMIDI = keys
-        let sceneVisible = showOverlay && !overlayBlocked && coordinator.visualEnabled && !dockFade.dockHidden
+        let sceneVisible = !coordinator.paused && showOverlay && !overlayBlocked && coordinator.visualEnabled && !dockFade.dockHidden
         if sceneVisible && !overlaySceneVisible {
             // Restore held-key state while invisible, so no historical down animation or note is replayed.
             overlayView?.setSceneVisible(false); overlayView?.activeMIDI = keys
@@ -502,6 +557,13 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         status.stringValue = reason; refresh(); refreshDiagnostics()
     }
     @objc func toggleSound() {
+        if coordinator.paused {
+            preferences.soundEnabled.toggle(); preferencesDirty = true; schedulePreferencesSave()
+            statusMenu?.controls.sound.state = preferences.soundEnabled ? .on : .off
+            statusMenu?.controls.soundCheck.state = statusMenu?.controls.sound.state ?? .off
+            return
+        }
+        preferences.soundEnabled = !coordinator.soundEnabled; preferencesDirty = true; schedulePreferencesSave()
         if coordinator.soundEnabled {
             apply(coordinator.setSoundEnabled(false)); audio.disable()
             soundButton.title = "启用所选声音"
@@ -548,15 +610,17 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     }
     func dockTick() {
         if overlayBlocked && !coordinator.paused { pause("安全输入或系统会话阻断：已安全暂停") }
-        guard showOverlay else { return }
+        guard showOverlay, !coordinator.paused else { return }
         let now = ProcessInfo.processInfo.systemUptime
+        let prior = lastDockVisibility
+        let priorHidden = dockFade.dockHidden
         lastDockVisibility = observeDock(at: now)
         dockFade.observe(lastDockVisibility, at: now)
         coordinator.dockHidden = dockFade.dockHidden
-        refresh()
+        if prior != lastDockVisibility || priorHidden != dockFade.dockHidden || dockFade.isAnimating(at: now) { refresh() }
     }
     private func updatePanelOpacity() {
-        guard showOverlay, !overlayBlocked, targetScreen != nil, coordinator.visualEnabled else {
+        guard !coordinator.paused, showOverlay, !overlayBlocked, targetScreen != nil, coordinator.visualEnabled else {
             fadeTimer?.invalidate(); fadeTimer = nil; fadeTimerGeneration = nil
             panel?.alphaValue = 0; panel?.orderOut(nil); return
         }
@@ -593,6 +657,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         refresh()
     }
     private func showKeymapEditor() {
+        statusMenu?.closePopover(); pause("正在编辑键位；完成后请主动开始")
         do {
             if keymapEditor?.window?.isVisible != true {
                 keymapEditor = try KeymapEditor(base: defaultMapping, configuration: { [unowned self] in self.customConfiguration }, warning: keymapWarning) { [unowned self] candidate, baseline in
@@ -644,8 +709,23 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         }
         dockResult(dock.request(desired, confirmedDisable: true))
     }
+    func changeAlertVolume(_ value: Double) {
+        guard value.isFinite else { return }
+        pendingAlertVolume = Int((min(1,max(0,value))*100).rounded())
+        statusMenu?.setAlertLevel(pendingAlertVolume, detail: "等待写入系统提醒音量")
+        alertWriteTimer?.invalidate()
+        let timer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { [weak self] _ in self?.flushAlertVolume() }
+        alertWriteTimer = timer; RunLoop.main.add(timer, forMode: .common)
+    }
+    func flushAlertVolume() {
+        alertWriteTimer?.invalidate(); alertWriteTimer = nil
+        guard let value = pendingAlertVolume else { return }; pendingAlertVolume = nil
+        alertVolume.setVolume(value); refreshAlertMenu()
+    }
     private func refreshAlertMenu() {
+        statusMenu?.setAlertLevel(pendingAlertVolume ?? alertVolume.observed, detail: alertVolume.detail)
         statusMenu?.updateAlertVolume(muted: alertVolume.mutedState, detail: alertVolume.detail)
+        if alertVolume.outcome == .failed || alertVolume.outcome == .externalChange { statusMenu?.controls.message.stringValue = "提醒音量未写入"; statusMenu?.controls.message.toolTip = alertVolume.detail }
     }
     private func toggleAlertMute() {
         if alertVolume.hasOwnedChange {
@@ -755,6 +835,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         if input.mode == .local || sessionDuration == .test60Seconds { pause("测试控制台已关闭；测试停止") }
     }
     public func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
+        flushAlertVolume()
         flushPreferences()
         if preferencesDirty, let error = preferencesSaveError {
             let leave = confirmUnsavedPreferencesExit?(error) ?? (alert("钢琴设置尚未保存", "保存失败：\(error)\n取消退出可保留当前运行状态并重试；仍然退出将丢失本次未保存的设置。", buttons: ["取消退出", "仍然退出"]) == .alertSecondButtonReturn)
@@ -768,6 +849,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         return skipAlertRestoreOnExit ? .terminateNow : .terminateCancel
     }
     public func applicationWillTerminate(_ notification: Notification) {
+        flushAlertVolume()
         flushPreferences()
         if !skipAlertRestoreOnExit { _ = alertVolume.restore() }
         keymapEditor?.close()

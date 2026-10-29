@@ -1,0 +1,35 @@
+{
+  "observedAt": "2026-10-29T16:47:19.269916+08:00",
+  "sources": [
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "observedSHA256": "9675654961558cfe9b650f7a97d731c69a7e16f91a80ad870fa151e690e29d7b",
+      "matchesFrozenC033": false
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "observedSHA256": "c38cd9c63a0303b95f1885f906b7fecf057da9c81b4d9def1595b57150a166f2",
+      "matchesFrozenC033": false
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "observedSHA256": "5d003eefd5236b27dfb1dd10c7e48a5daae2a2f075af6f403e317f90edbc0b59",
+      "matchesFrozenC033": false
+    },
+    {
+      "path": "Code/Sources/PianoMac/DockWindowVisibility.swift",
+      "observedSHA256": "a8329a3997e325ef2cebd3e1b8082a96d7608685126ad8101962284a80df8d75",
+      "matchesFrozenC033": true
+    },
+    {
+      "path": "Code/Sources/PianoAudio/SamplerAudio.swift",
+      "observedSHA256": "11131742a6e8a41db3fcee5584958488a25feed68bf64f9efc83330c0c5222c4",
+      "matchesFrozenC033": true
+    },
+    {
+      "path": "Code/Sources/PianoAudio/RuntimeDiagnostics.swift",
+      "observedSHA256": "5dc3c7095eb19d86f781a88a2594ae0d1ed3436a06302a329e87085ec74b7d3c",
+      "matchesFrozenC033": true
+    }
+  ]
+}

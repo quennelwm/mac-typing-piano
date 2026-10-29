@@ -1,0 +1,66 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/10] Compiling PianoMac KeymapEditor.swift
+[5/10] Compiling PianoMac RenderBenchmark.swift
+[6/10] Compiling PianoMac PianoView.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/PianoView.swift:298:21: warning: initialization of immutable value 'path' was never used; consider replacing with assignment to '_' or removing it [#NoUsage]
+296 |                 let offset = keyTravel(key), r = key.shape.rect.offsetBy(dx: 0, dy: offset)
+297 |                 let down = activeMIDI.contains(key.shape.midi) || keyDepression(midi: key.shape.midi, at: sampleTime) > 0
+298 |                 let path = keyFace(key)
+    |                     `- warning: initialization of immutable value 'path' was never used; consider replacing with assignment to '_' or removing it [#NoUsage]
+299 |                 ctx.saveGState()
+300 |                 if !black {
+
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+[7/10] Emitting module PianoMac
+[8/16] Compiling PianoMac CrystalEvidence.swift
+[9/16] Compiling PianoMac TransparencyEvidence.swift
+[10/16] Compiling PianoMac OverlayWindowEvidence.swift
+[11/16] Compiling PianoMac ControlPanelEvidence.swift
+[12/16] Compiling PianoMac CompactMenuEvidence.swift
+[13/16] Compiling PianoMac ProbeController.swift
+[14/28] Compiling PianoMacTests KeymapEditorTests.swift
+[15/29] Emitting module PianoMacTests
+[16/29] Compiling PianoMacTests HeightIntegrationTests.swift
+[17/29] Compiling PianoMacTests OverlayVisibilityTests.swift
+[18/29] Compiling PianoMacTests CrystalRenderingTests.swift
+[19/29] Compiling PianoMacTests IntegrationTests.swift
+[20/29] Compiling PianoMacTests GlossyBlackTests.swift
+[21/29] Compiling PianoMacTests ControlPanelTests.swift
+[22/29] Compiling PianoProbe main.swift
+[23/29] Emitting module PianoProbe
+[23/29] Write Objects.LinkFileList
+[25/29] Compiling PianoMacTests TransparencyTests.swift
+[25/29] Write Objects.LinkFileList
+[26/29] Linking TypingPianoProbe
+[27/29] Applying TypingPianoProbe
+[28/29] Linking TypingPianoProbePackageTests
+Build complete! (4.25s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 17:05:52.740.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 17:05:52.743.
+Test Suite 'ControlPanelTests' started at 2026-10-29 17:05:52.743.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testAllFourTracksReceiveHitsWithinContent]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testAllFourTracksReceiveHitsWithinContent]' passed (0.179 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testCommandShortcutDoesNotBindCommandButStandaloneModifierDoes]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testCommandShortcutDoesNotBindCommandButStandaloneModifierDoes]' passed (0.133 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testDirectBindingIsDraftOnlyAndCancellationDoesNotSave]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testDirectBindingIsDraftOnlyAndCancellationDoesNotSave]' passed (0.033 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testKeyCacheIsBoundedAndFloatingOnlyReusesStaticKeys]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testKeyCacheIsBoundedAndFloatingOnlyReusesStaticKeys]' passed (0.043 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testPausedControlsPersistWithoutStartingAndLayerDoesNotInterruptHeldInput]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testPausedControlsPersistWithoutStartingAndLayerDoesNotInterruptHeldInput]' passed (0.152 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testUnchangedFloatingSettingDoesNotInvalidateOrResetHeldAnimation]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testUnchangedFloatingSettingDoesNotInvalidateOrResetHeldAnimation]' passed (0.003 seconds).
+Test Suite 'ControlPanelTests' passed at 2026-10-29 17:05:53.289.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.545 (0.546) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-29 17:05:53.289.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.545 (0.546) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 17:05:53.289.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.545 (0.549) seconds

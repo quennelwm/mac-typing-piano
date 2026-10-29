@@ -1,0 +1,29 @@
+{
+  "pid": 16328,
+  "version": "0.2.10/build13",
+  "validCPUSamplesPercent": [
+    2.1,
+    2.4,
+    6.5,
+    5.3,
+    4.7
+  ],
+  "meanCPUPercent": 4.2,
+  "cpuMinPercent": 2.1,
+  "cpuMaxPercent": 6.5,
+  "rssBeforeKiB": 107424,
+  "rssAfterKiB": 92080,
+  "physicalFootprintSampleReported": "220.2M",
+  "physicalFootprintPeakSampleReported": "237.2M",
+  "controlledIdle": false,
+  "sourceTreeUnderConcurrentC034Development": true,
+  "sampleCommand": [
+    "sample",
+    "16328",
+    "2",
+    "-file",
+    "docs/evidence/PM-034/performance-baseline/sample-2s.txt"
+  ],
+  "writes": "Evidence files only; no app or user-setting changes",
+  "leakConclusion": "UNKNOWN; short window insufficient"
+}

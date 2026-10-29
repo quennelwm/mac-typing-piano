@@ -1,0 +1,10 @@
+{
+  "observedAt": "2026-10-29T17:34:18.170445+08:00",
+  "candidates": [
+    {
+      "pid": 34381,
+      "command": "/Users/wuming/Library/Caches/local.typingpiano.trial/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe"
+    }
+  ],
+  "condition": "Uncontrolled observation; user may type or interact with menu. No injected keys or runtime-setting changes."
+}

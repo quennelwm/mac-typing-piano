@@ -67,13 +67,13 @@ public final class AlertVolumeAdapter {
     @discardableResult public func refresh() -> Outcome {
         do {
             let value = try read(); observed = value
-            if originalVolume != nil && value != 0 {
+            if originalVolume != nil && value != lastVerified {
                 releaseOwnership()
                 return finish(.externalChange, "检测到外部修改为\(value)%；已放弃恢复，不覆盖系统现状")
             }
             if let originalVolume {
-                return finish(lastVerified == 0 ? .noChange : .failed,
-                    lastVerified == 0 ? "本App已静音；本次原提示音量\(originalVolume)%" : "写后状态未完整核验；原提示音量\(originalVolume)%，请检查系统声音设置")
+                return finish(lastVerified != nil ? .noChange : .failed,
+                    lastVerified != nil ? "本App已调整提示音；本次原提示音量\(originalVolume)%" : "写后状态未完整核验；原提示音量\(originalVolume)%，请检查系统声音设置")
             }
             return finish(.noChange, value == 0 ? "系统原已静音；本会话未改动，不猜测恢复音量" : "系统提示音量\(value)%；本App未改动")
         } catch { observed = nil; return finish(.failed, error.localizedDescription) }
@@ -84,19 +84,38 @@ public final class AlertVolumeAdapter {
         guard current != .failed && current != .externalChange else { return current }
         guard let value = observed else { return finish(.failed, "提示音量未知；保持不动") }
         if value == 0 { return finish(.alreadySilent, originalVolume == nil ? "系统原已静音；不保存虚构的恢复值" : detail) }
-        originalVolume = value; lastVerified = nil
+        if originalVolume == nil { originalVolume = value }; lastVerified = nil
         var writeError: String?
         do { try storage.write(0) } catch { writeError = error.localizedDescription }
         do {
             observed = try read()
             if observed == 0 {
                 lastVerified = 0
-                if let writeError { return finish(.failed, "\(writeError)；读回为0，已保留本次原值\(value)%供关闭时恢复") }
-                return finish(.muted, "本App已静音；本次原提示音量\(value)%")
+                if let writeError { return finish(.failed, "\(writeError)；读回为0，已保留本次原值\(originalVolume ?? value)%供关闭时恢复") }
+                return finish(.muted, "本App已静音；本次原提示音量\(originalVolume ?? value)%")
             }
             releaseOwnership()
             return finish(.failed, writeError ?? "系统未确认静音；未报告成功，保持实际读回状态")
-        } catch { observed = nil; return finish(.failed, "写后核对失败；原提示音量\(value)%，请检查系统声音设置") }
+        } catch { observed = nil; return finish(.failed, "写后核对失败；原提示音量\(originalVolume ?? value)%，请检查系统声音设置") }
+    }
+    @discardableResult public func setVolume(_ value: Int) -> Outcome {
+        guard (0...100).contains(value) else { return finish(.failed, "提醒音量无效") }
+        let checked = refresh()
+        guard checked != .failed && checked != .externalChange, let current = observed else { return checked }
+        if current == value { return .noChange }
+        if originalVolume == nil { originalVolume = current }
+        lastVerified = nil
+        var writeError: String?
+        do { try storage.write(value) } catch { writeError = error.localizedDescription }
+        do {
+            observed = try read()
+            if observed == value {
+                lastVerified = value
+                return finish(writeError == nil ? .noChange : .failed, writeError ?? "本会话提醒音量\(value)%；正常退出恢复原值")
+            }
+            releaseOwnership()
+            return finish(.failed, writeError ?? "提醒音量读回不符，未报告成功")
+        } catch { observed = nil; return finish(.failed, "写后读回失败；请检查系统声音设置") }
     }
     @discardableResult public func restore() -> Outcome {
         guard let original = originalVolume else {
@@ -104,10 +123,11 @@ public final class AlertVolumeAdapter {
         }
         do {
             observed = try read()
-            guard observed == 0 else {
+            if lastVerified == nil && observed == 0 { return finish(.failed, "写后状态未确认；请手动核对系统提醒音量") }
+            guard observed == lastVerified else {
                 releaseOwnership(); return finish(.externalChange, "检测到外部修改；未恢复或覆盖系统现状")
             }
-            guard lastVerified == 0 else {
+            guard lastVerified != nil else {
                 return finish(.failed, "未确认本App写入成功，不能自动恢复；原提示音量\(original)%，请在系统声音设置检查")
             }
             var writeError: String?
@@ -117,7 +137,7 @@ public final class AlertVolumeAdapter {
                 releaseOwnership()
                 return finish(writeError == nil ? .restored : .failed, writeError ?? "已恢复本次原提示音量\(original)%")
             }
-            if observed != 0 { releaseOwnership() }
+            if observed != lastVerified { releaseOwnership() }
             return finish(.failed, writeError ?? "恢复后读回不符；请检查系统声音设置")
         } catch { observed = nil; return finish(.failed, "提示音恢复未完成：\(error.localizedDescription)") }
     }

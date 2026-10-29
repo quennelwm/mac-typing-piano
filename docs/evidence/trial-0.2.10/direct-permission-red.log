@@ -1,0 +1,44 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/8] Compiling PianoMac ProbeController.swift
+[5/8] Emitting module PianoMac
+[6/20] Compiling PianoMacTests StartupEntryTests.swift
+[7/20] Compiling PianoMacTests TransparencyTests.swift
+[8/20] Compiling PianoMacTests ControllerIntegrationTests.swift
+[9/20] Compiling PianoMacTests HeightIntegrationTests.swift
+[10/20] Emitting module PianoMacTests
+[11/20] Compiling PianoMacTests CompactMenuTests.swift
+[12/20] Compiling PianoMacTests TrialSessionTests.swift
+[13/20] Compiling PianoMacTests OverlayVisibilityTests.swift
+[13/20] Write Objects.LinkFileList
+[15/20] Emitting module PianoProbe
+[16/20] Compiling PianoProbe main.swift
+[16/20] Write Objects.LinkFileList
+[17/20] Linking TypingPianoProbe
+[18/20] Linking TypingPianoProbePackageTests
+[19/20] Applying TypingPianoProbe
+Build complete! (3.22s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 15:40:27.318.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 15:40:27.319.
+Test Suite 'CompactMenuTests' started at 2026-10-29 15:40:27.319.
+Test Case '-[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:70: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertGreaterThan failed: ("3") is not greater than ("3")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:75: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:75: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:75: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:82: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("NSControlStateValue(rawValue: 0)") is not equal to ("NSControlStateValue(rawValue: 1)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:85: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("2")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:85: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:85: error: -[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+Test Case '-[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio]' failed (0.830 seconds).
+Test Suite 'CompactMenuTests' failed at 2026-10-29 15:40:28.149.
+	 Executed 1 test, with 8 failures (0 unexpected) in 0.830 (0.830) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 15:40:28.149.
+	 Executed 1 test, with 8 failures (0 unexpected) in 0.830 (0.830) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 15:40:28.149.
+	 Executed 1 test, with 8 failures (0 unexpected) in 0.830 (0.831) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

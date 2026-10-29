@@ -1,0 +1,7 @@
+{
+  "unchanged": true,
+  "combinations": 12,
+  "whiteKeysPerCombination": 38,
+  "totalSamples": 456,
+  "comparison": "exact RGBA equality before/after CR-011; transparency 0/50/100, pressed/rest, reduced transparency on/off"
+}

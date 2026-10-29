@@ -1,0 +1,89 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/5] Emitting module PianoMacTests
+[4/5] Compiling PianoMacTests CompactMenuTests.swift
+[4/6] Write Objects.LinkFileList
+[5/6] Linking TypingPianoProbePackageTests
+Build complete! (1.63s)
+Test Suite 'Selected tests' started at 2026-10-29 15:44:36.444.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 15:44:36.445.
+Test Suite 'CompactMenuTests' started at 2026-10-29 15:44:36.446.
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:34: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:34: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:34: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CompactMenuTests.swift:34: error: -[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates] : XCTAssertLessThanOrEqual failed: ("197.0") is greater than ("195.0")
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' failed (0.219 seconds).
+Test Suite 'CompactMenuTests' failed at 2026-10-29 15:44:36.665.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.219 (0.219) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 15:44:36.665.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.219 (0.219) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 15:44:36.665.
+	 Executed 1 test, with 4 failures (0 unexpected) in 0.219 (0.220) seconds
+WIDTH_ITEM 运行中 state=0 view=0.0 native=71.0
+WIDTH_ITEM 暂停打字钢琴 state=0 view=0.0 native=110.0
+WIDTH_ITEM 声音 state=1 view=0.0 native=72.0
+WIDTH_ITEM 音量 state=0 view=149.0 native=149.0
+WIDTH_ITEM 显示钢琴 state=1 view=0.0 native=98.0
+WIDTH_ITEM 显示按键标签 state=1 view=0.0 native=124.0
+WIDTH_ITEM 钢琴高度 state=0 view=149.0 native=149.0
+WIDTH_ITEM 琴键透明度 state=0 view=149.0 native=149.0
+WIDTH_ITEM 自定义键位… state=0 view=0.0 native=107.0
+WIDTH_ITEM 键位配置读取失败 state=0 view=0.0 native=136.0
+WIDTH_ITEM 输入监控授权… state=0 view=0.0 native=120.0
+WIDTH_ITEM 系统选项 state=0 view=0.0 native=115.0
+WIDTH_ITEM 帮助与测试 state=0 view=0.0 native=128.0
+WIDTH_ITEM 退出打字钢琴 state=0 view=0.0 native=157.0
+WIDTH_WITHOUT_MIN 197.0
+WIDTH_ITEM 需要输入监控 state=0 view=0.0 native=110.0
+WIDTH_ITEM 开始打字钢琴 state=0 view=0.0 native=110.0
+WIDTH_ITEM 声音 state=1 view=0.0 native=72.0
+WIDTH_ITEM 音量 state=0 view=149.0 native=149.0
+WIDTH_ITEM 显示钢琴 state=1 view=0.0 native=98.0
+WIDTH_ITEM 显示按键标签 state=1 view=0.0 native=124.0
+WIDTH_ITEM 钢琴高度 state=0 view=149.0 native=149.0
+WIDTH_ITEM 琴键透明度 state=0 view=149.0 native=149.0
+WIDTH_ITEM 自定义键位… state=0 view=0.0 native=107.0
+WIDTH_ITEM 键位配置读取失败 state=0 view=0.0 native=136.0
+WIDTH_ITEM 输入监控授权… state=0 view=0.0 native=120.0
+WIDTH_ITEM 系统选项 state=0 view=0.0 native=115.0
+WIDTH_ITEM 帮助与测试 state=0 view=0.0 native=128.0
+WIDTH_ITEM 退出打字钢琴 state=0 view=0.0 native=157.0
+WIDTH_WITHOUT_MIN 197.0
+WIDTH_ITEM 安全输入已暂停 state=0 view=0.0 native=123.0
+WIDTH_ITEM 开始打字钢琴 state=0 view=0.0 native=110.0
+WIDTH_ITEM 声音 state=1 view=0.0 native=72.0
+WIDTH_ITEM 音量 state=0 view=149.0 native=149.0
+WIDTH_ITEM 显示钢琴 state=1 view=0.0 native=98.0
+WIDTH_ITEM 显示按键标签 state=1 view=0.0 native=124.0
+WIDTH_ITEM 钢琴高度 state=0 view=149.0 native=149.0
+WIDTH_ITEM 琴键透明度 state=0 view=149.0 native=149.0
+WIDTH_ITEM 减少透明度已启用 state=0 view=0.0 native=136.0
+WIDTH_ITEM 自定义键位… state=0 view=0.0 nawarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+tive=107.0
+WIDTH_ITEM 键位配置读取失败 state=0 view=0.0 native=136.0
+WIDTH_ITEM 输入监控授权… state=0 view=0.0 native=120.0
+WIDTH_ITEM 系统选项 state=0 view=0.0 native=115.0
+WIDTH_ITEM 帮助与测试 state=0 view=0.0 native=128.0
+WIDTH_ITEM 退出打字钢琴 state=0 view=0.0 native=157.0
+WIDTH_WITHOUT_MIN 197.0
+WIDTH_ITEM 启动失败 state=0 view=0.0 native=84.0
+WIDTH_ITEM 开始打字钢琴 state=0 view=0.0 native=110.0
+WIDTH_ITEM 声音 state=1 view=0.0 native=72.0
+WIDTH_ITEM 音量 state=0 view=149.0 native=149.0
+WIDTH_ITEM 显示钢琴 state=1 view=0.0 native=98.0
+WIDTH_ITEM 显示按键标签 state=1 view=0.0 native=124.0
+WIDTH_ITEM 钢琴高度 state=0 view=149.0 native=149.0
+WIDTH_ITEM 琴键透明度 state=0 view=149.0 native=149.0
+WIDTH_ITEM 设置未保存 state=0 view=0.0 native=97.0
+WIDTH_ITEM 自定义键位… state=0 view=0.0 native=107.0
+WIDTH_ITEM 键位配置读取失败 state=0 view=0.0 native=136.0
+WIDTH_ITEM 输入监控授权… state=0 view=0.0 native=120.0
+WIDTH_ITEM 系统选项 state=0 view=0.0 native=115.0
+WIDTH_ITEM 帮助与测试 state=0 view=0.0 native=128.0
+WIDTH_ITEM 退出打字钢琴 state=0 view=0.0 native=157.0
+WIDTH_WITHOUT_MIN 197.0
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

@@ -1,0 +1,12 @@
+{
+  "canvasPt" : [
+    1496,
+    256
+  ],
+  "frames" : 60,
+  "kind" : "offline process CPU milliseconds per production frame, no PNG IO; not hosted frame pacing",
+  "meanCPUms" : 29.248800000000003,
+  "p50CPUms" : 29.25,
+  "p95CPUms" : 30.069000000000013,
+  "scale" : 2
+}

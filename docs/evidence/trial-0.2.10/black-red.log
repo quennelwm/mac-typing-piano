@@ -1,0 +1,55 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[2/7] Write swift-version--58304C5D6DBC2206.txt
+[4/9] Compiling PianoMac ProbeMenu.swift
+[5/9] Emitting module PianoMac
+[6/10] Compiling PianoMac ProbeController.swift
+[7/21] Compiling PianoMacTests MenuIntegrationTests.swift
+[8/21] Compiling PianoMacTests KeymapEditorTests.swift
+[9/21] Compiling PianoMacTests StartupEntryTests.swift
+[10/21] Compiling PianoMacTests TransparencyTests.swift
+[11/21] Compiling PianoMacTests GlossyBlackTests.swift
+[12/21] Compiling PianoMacTests HeightIntegrationTests.swift
+[13/21] Compiling PianoMacTests CompactMenuTests.swift
+[14/21] Emitting module PianoMacTests
+[15/21] Emitting module PianoProbe
+[16/21] Compiling PianoProbe main.swift
+[16/21] Write Objects.LinkFileList
+[18/21] Linking TypingPianoProbe
+[19/21] Linking TypingPianoProbePackageTests
+[20/21] Applying TypingPianoProbe
+Build complete! (4.32s)
+Test Suite 'Selected tests' started at 2026-10-29 15:48:28.798.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 15:48:28.801.
+Test Suite 'CompactMenuTests' started at 2026-10-29 15:48:28.801.
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' started.
+Test Case '-[PianoMacTests.CompactMenuTests testFinalNativeMenuWidthAndRootContentsAcrossStates]' passed (0.231 seconds).
+Test Case '-[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio]' started.
+Test Case '-[PianoMacTests.CompactMenuTests testPermissionMenuOnlyReadsUntilExplicitClickAndPreservesHeldAudio]' passed (1.054 seconds).
+Test Case '-[PianoMacTests.CompactMenuTests testRootCallbacksSlidersAndTextBounds]' started.
+Test Case '-[PianoMacTests.CompactMenuTests testRootCallbacksSlidersAndTextBounds]' passed (0.004 seconds).
+Test Suite 'CompactMenuTests' passed at 2026-10-29 15:48:30.091.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 1.290 (1.290) seconds
+Test Suite 'GlossyBlackTests' started at 2026-10-29 15:48:30.091.
+Test Case '-[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.8442203402519226") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.8415852189064026") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.8212174773216248") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.8212174773216248") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.8212174773216248") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.814635694026947") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.8153887391090393") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.8212174773216248") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqual failed: ("0.8212174773216248") is greater than ("0.005") - black body must remain #000000
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/GlossyBlackTests.swift:42: error: -[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces] : XCTAssertLessThanOrEqualwarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+ failed: ("0.8212174773216248") is greater than ("0.005") - black body must remain #000000
+Test Case '-[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces]' failed (0.498 seconds).
+Test Suite 'GlossyBlackTests' failed at 2026-10-29 15:48:30.589.
+	 Executed 1 test, with 10 failures (0 unexpected) in 0.498 (0.498) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 15:48:30.589.
+	 Executed 4 tests, with 10 failures (0 unexpected) in 1.787 (1.788) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 15:48:30.589.
+	 Executed 4 tests, with 10 failures (0 unexpected) in 1.787 (1.791) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

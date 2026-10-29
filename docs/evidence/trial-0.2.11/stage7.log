@@ -1,0 +1,125 @@
+[0/1] Planning build
+Building for debugging...
+[0/9] Write sources
+[3/9] Write swift-version--58304C5D6DBC2206.txt
+[5/16] Compiling PianoMac KeymapEditor.swift
+[6/16] Compiling PianoMac ProbeMenu.swift
+[7/16] Compiling PianoMac ProbeController.swift
+[8/16] Compiling PianoMac PianoView.swift
+[9/16] Compiling PianoMac RenderBenchmark.swift
+[10/16] Emitting module PianoMac
+[11/16] Compiling PianoMac TransparencyEvidence.swift
+[12/20] Compiling PianoMac CrystalEvidence.swift
+[13/20] Compiling PianoMac ControlPanelEvidence.swift
+[14/20] Compiling PianoMac OverlayWindowEvidence.swift
+[15/20] Compiling PianoMac CompactMenuEvidence.swift
+[16/43] Emitting module PianoMacTests
+[17/45] Compiling PianoMacTests KeymapEditorTests.swift
+[18/45] Compiling PianoMacTests LocalTrialStartTests.swift
+[19/45] Compiling PianoMacTests MenuIntegrationTests.swift
+[20/45] Compiling PianoMacTests DockAdapterTests.swift
+[21/45] Compiling PianoMacTests DockWindowVisibilityTests.swift
+[22/45] Compiling PianoMacTests GlossyBlackTests.swift
+[23/45] Compiling PianoMacTests ControlPanelTests.swift
+[24/45] Compiling PianoMacTests ControllerIntegrationTests.swift
+[25/45] Compiling PianoMacTests CrystalRenderingTests.swift
+[26/45] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[27/45] Compiling PianoMacTests AlertVolumeTests.swift
+[28/45] Compiling PianoMacTests CompactMenuTests.swift
+[29/45] Compiling PianoMacTests NativeDockStorageTests.swift
+[30/45] Compiling PianoMacTests OverlayVisibilityTests.swift
+[31/45] Compiling PianoMacTests OverlayWindowStackTests.swift
+[32/45] Compiling PianoMacTests HeightIntegrationTests.swift
+[33/45] Compiling PianoMacTests InputNormalizerTests.swift
+[34/45] Compiling PianoMacTests IntegrationTests.swift
+[35/45] Compiling PianoMacTests SingleInstanceTests.swift
+[36/45] Compiling PianoMacTests StartupEntryTests.swift
+[37/45] Compiling PianoProbe main.swift
+[38/45] Emitting module PianoProbe
+[38/45] Write Objects.LinkFileList
+[40/45] Compiling PianoMacTests TransparencyTests.swift
+[41/45] Compiling PianoMacTests TrialSessionTests.swift
+[41/45] Write Objects.LinkFileList
+[42/45] Linking TypingPianoProbe
+[43/45] Applying TypingPianoProbe
+[44/45] Linking TypingPianoProbePackageTests
+Build complete! (4.76s)
+Test Suite 'Selected tests' started at 2026-10-29 16:57:04.589.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 16:57:04.592.
+Test Suite 'ControlPanelTests' started at 2026-10-29 16:57:04.592.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testDirectBindingIsDraftOnlyAndCancellationDoesNotSave]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testDirectBindingIsDraftOnlyAndCancellationDoesNotSave]' passed (0.281 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testPausedControlsPersistWithoutStartingAndLayerDoesNotInterruptHeldInput]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testPausedControlsPersistWithoutStartingAndLayerDoesNotInterruptHeldInput]' passed (0.229 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testPreferenceMigrationAndNormalizedHeight]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.ControlPanelTests testUnchangedFloatingSettingDoesNotInvalidateOrResetHeldAnimation]' started.
+Test Case '-[PianoMacTests.ControlPanelTests testUnchangedFloatingSettingDoesNotInvalidateOrResetHeldAnimation]' passed (0.004 seconds).
+Test Suite 'ControlPanelTests' passed at 2026-10-29 16:57:05.108.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.515 (0.516) seconds
+Test Suite 'CrystalRenderingTests' started at 2026-10-29 16:57:05.109.
+Test Case '-[PianoMacTests.CrystalRenderingTests testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback]' started.
+Test Case '-[PianoMacTests.CrystalRenderingTests testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback]' passed (0.255 seconds).
+Test Case '-[PianoMacTests.CrystalRenderingTests testHitTestingUsesPressedRoundedBlackFaceAfterHeightChange]' started.
+Test Case '-[PianoMacTests.CrystalRenderingTests testHitTestingUsesPressedRoundedBlackFaceAfterHeightChange]' passed (0.005 seconds).
+Test Suite 'CrystalRenderingTests' passed at 2026-10-29 16:57:05.369.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.261 (0.261) seconds
+Test Suite 'GlossyBlackTests' started at 2026-10-29 16:57:05.369.
+Test Case '-[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces]' started.
+Test Case '-[PianoMacTests.GlossyBlackTests testBlackBodyGlossAndTransparencyPreserveWhiteFaces]' passed (0.203 seconds).
+Test Suite 'GlossyBlackTests' passed at 2026-10-29 16:57:05.573.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.203 (0.203) seconds
+Test Suite 'KeymapEditorTests' started at 2026-10-29 16:57:05.573.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' passed (0.011 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' passed (0.110 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' passed (0.066 seconds).
+Test Suite 'KeymapEditorTests' passed at 2026-10-29 16:57:05.759.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.187 (0.187) seconds
+Test Suite 'OverlayVisibilityTests' started at 2026-10-29 16:57:05.759.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' passed (0.550 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testClearingSleepDoesNotClearConcurrentLockOrSecureInput]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testClearingSleepDoesNotClearConcurrentLockOrSecureInput]' passed (0.343 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift:53: error: -[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices] : XCTAssertEqual failed: ("0.9331634759230194") is not equal to ("1.0")
+Test Case '-[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices]' failed (4.200 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' passed (0.255 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion]' passed (0.101 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched]' passed (0.243 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices]' passed (0.715 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput]' passed (0.327 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift:95: error: -[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates] : XCTAssertEqual failed: ("0.0") is not equal to ("1.0")
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates]' failed (0.781 seconds).
+Test Suite 'OverlayVisibilityTests' failed at 2026-10-29 16:57:13.276.
+	 Executed 9 tests, with 2 failures (0 unexpected) in 7.515 (7.516) seconds
+Test Suite 'TransparencyTests' started at 2026-10-29 16:57:13.276.
+Test Case '-[PianoMacTests.TransparencyTests testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences]' started.
+Test Case '-[PianoMacTests.TransparencyTests testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences]' passed (0.100 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible]' started.
+Test Case '-[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible]' passed (0.109 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore]' started.
+Test Case '-[PianoMacTests.TransparencyTests testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore]' passed (0.268 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testOldInvalidAndRoundTripPreferences]' started.
+Test Case '-[PianoMacTests.TransparencyTests testOldInvalidAndRoundTripPreferences]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testSliderAndAccessibilityOverridePreserveSetting]' started.
+Test Case '-[PianoMacTests.TransparencyTests testSliderAndAccessibilityOverridePreserveSetting]' passed (0.018 seconds).
+Test Suite 'TransparencyTests' passed at 2026-10-29 16:57:13.772.
+	 Executed 5 tests, with 0 failures (0 uwarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+nexpected) in 0.496 (0.497) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 16:57:13.773.
+	 Executed 25 tests, with 2 failures (0 unexpected) in 9.177 (9.180) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 16:57:13.773.
+	 Executed 25 tests, with 2 failures (0 unexpected) in 9.177 (9.183) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

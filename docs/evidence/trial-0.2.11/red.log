@@ -1,0 +1,302 @@
+Building for debugging...
+[0/16] Write sources
+[3/16] Write TypingPianoProbe-entitlement.plist
+[4/16] Write sources
+[5/16] /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.11/swiftpm/arm64-apple-macosx/debug/TypingPianoProbePackageTests.derived/runner.swift
+[5/16] Write sources
+[10/16] Write swift-version--58304C5D6DBC2206.txt
+[12/31] Compiling PianoCore Mapping.swift
+[13/31] Emitting module PianoCore
+[14/32] Compiling PianoCore Policies.swift
+[15/32] Compiling PianoCore AppPreferences.swift
+[16/32] Compiling PianoCore Coordinator.swift
+[17/32] Compiling PianoCore DockFade.swift
+[18/32] Compiling PianoCore DockOwnership.swift
+[19/32] Compiling PianoCore FloatingNotes.swift
+[20/32] Compiling PianoCore Core.swift
+[21/32] Compiling PianoCore CustomKeymap.swift
+[22/32] Compiling PianoCore Geometry.swift
+[23/32] Compiling PianoCore StartupFlow.swift
+[24/43] Compiling PianoAudio AuditionSession.swift
+[25/43] Emitting module PianoAudio
+[26/43] Compiling PianoAudio SamplerAudio.swift
+[27/43] Compiling PianoAudio RuntimeDiagnostics.swift
+[28/70] Compiling PianoMac QuietIvoryProvenance.swift
+[29/70] Compiling PianoMac SDKKeys.swift
+[30/72] Compiling PianoAudioTests TrialGainTests.swift
+[31/72] Emitting module PianoMac
+[32/72] Compiling PianoCoreTests PreferencesMigrationTests.swift
+[33/73] Emitting module PianoCoreTests
+[34/73] Compiling PianoCoreTests ReducerTests.swift
+[35/73] Compiling PianoMac DockAdapter.swift
+[36/73] Compiling PianoMac AdaptiveOverlay.swift
+[37/73] Compiling PianoMac AlertVolume.swift
+[38/73] Compiling PianoMac CompactMenuEvidence.swift
+[39/73] Compiling PianoCoreTests MappingTests.swift
+[40/73] Compiling PianoCoreTests HeightPreferencesTests.swift
+[41/73] Compiling PianoMac ContinuousTrialStart.swift
+[42/73] Compiling PianoMac CrystalEvidence.swift
+[43/73] Compiling PianoAudioTests TrialBankTests.swift
+[44/73] Compiling PianoAudioTests SamplerAudioTests.swift
+[45/73] Compiling PianoAudioTests RuntimeDiagnosticsTests.swift
+[46/73] Compiling PianoAudioTests AudioSelectionTests.swift
+[47/73] Emitting module PianoAudioTests
+[48/73] Compiling PianoAudioTests CandidateBankTests.swift
+[49/73] Compiling PianoCoreTests StartupFlowTests.swift
+[56/73] Compiling PianoMac InputNormalizer.swift
+[57/73] Compiling PianoMac KeymapEditor.swift
+[58/73] Compiling PianoMac Module.swift
+[59/73] Compiling PianoMac NativeDockStorage.swift
+[60/73] Compiling PianoMac OverlayWindowEvidence.swift
+[61/73] Compiling PianoMac PianoView.swift
+[62/73] Compiling PianoMac DockWindowVisibility.swift
+[63/73] Compiling PianoMac InputEventQueue.swift
+[64/73] Compiling PianoMac InputMonitor.swift
+[65/73] Compiling PianoMac SingleInstance.swift
+[66/73] Compiling PianoMac TransparencyEvidence.swift
+[67/73] Compiling PianoMac ProbeController.swift
+[68/73] Compiling PianoMac ProbeMenu.swift
+[69/97] Emitting module PianoMacTests
+[70/99] Compiling PianoMacTests ControlPanelTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:19: error: value of type 'AppPreferences' has no member 'floatingNotesEnabled'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                   `- error: value of type 'AppPreferences' has no member 'floatingNotesEnabled'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:59: error: value of type 'AppPreferences' has no member 'pianoLayer'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                                                           `- error: value of type 'AppPreferences' has no member 'pianoLayer'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:72: error: type 'Equatable' has no member 'top'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                                                                        `- error: type 'Equatable' has no member 'top'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:9:18: error: cannot find 'ControlPanel' in scope
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+   |                  `- error: cannot find 'ControlPanel' in scope
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+11 |  }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:10:18: error: cannot find 'ControlPanel' in scope
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+   |                  `- error: cannot find 'ControlPanel' in scope
+11 |  }
+12 |  func testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:10:69: error: cannot find 'ControlPanel' in scope
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+   |                                                                     `- error: cannot find 'ControlPanel' in scope
+11 |  }
+12 |  func testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:15:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+13 |   let storage = Storage(); let adapter = AlertVolumeAdapter(storage: storage)
+14 |   adapter.refresh(); XCTAssertEqual(storage.writes, [])
+15 |   adapter.setVolume(45); XCTAssertEqual(adapter.originalVolume, 70)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:16:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+14 |   adapter.refresh(); XCTAssertEqual(storage.writes, [])
+15 |   adapter.setVolume(45); XCTAssertEqual(adapter.originalVolume, 70)
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+18 |   adapter.setVolume(30); storage.value = 60; adapter.restore(); XCTAssertEqual(storage.value, 60)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:18:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+18 |   adapter.setVolume(30); storage.value = 60; adapter.restore(); XCTAssertEqual(storage.value, 60)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+19 |  }
+20 |  final class Storage: AlertVolumeStorage {
+[71/99] Compiling PianoMacTests ControllerIntegrationTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:19: error: value of type 'AppPreferences' has no member 'floatingNotesEnabled'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                   `- error: value of type 'AppPreferences' has no member 'floatingNotesEnabled'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:59: error: value of type 'AppPreferences' has no member 'pianoLayer'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                                                           `- error: value of type 'AppPreferences' has no member 'pianoLayer'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:72: error: type 'Equatable' has no member 'top'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                                                                        `- error: type 'Equatable' has no member 'top'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:9:18: error: cannot find 'ControlPanel' in scope
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+   |                  `- error: cannot find 'ControlPanel' in scope
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+11 |  }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:10:18: error: cannot find 'ControlPanel' in scope
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+   |                  `- error: cannot find 'ControlPanel' in scope
+11 |  }
+12 |  func testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:10:69: error: cannot find 'ControlPanel' in scope
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+   |                                                                     `- error: cannot find 'ControlPanel' in scope
+11 |  }
+12 |  func testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:15:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+13 |   let storage = Storage(); let adapter = AlertVolumeAdapter(storage: storage)
+14 |   adapter.refresh(); XCTAssertEqual(storage.writes, [])
+15 |   adapter.setVolume(45); XCTAssertEqual(adapter.originalVolume, 70)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:16:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+14 |   adapter.refresh(); XCTAssertEqual(storage.writes, [])
+15 |   adapter.setVolume(45); XCTAssertEqual(adapter.originalVolume, 70)
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+18 |   adapter.setVolume(30); storage.value = 60; adapter.restore(); XCTAssertEqual(storage.value, 60)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:18:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+18 |   adapter.setVolume(30); storage.value = 60; adapter.restore(); XCTAssertEqual(storage.value, 60)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+19 |  }
+20 |  final class Storage: AlertVolumeStorage {
+[72/99] Compiling PianoMacTests CrystalRenderingTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:19: error: value of type 'AppPreferences' has no member 'floatingNotesEnabled'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                   `- error: value of type 'AppPreferences' has no member 'floatingNotesEnabled'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:59: error: value of type 'AppPreferences' has no member 'pianoLayer'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                                                           `- error: value of type 'AppPreferences' has no member 'pianoLayer'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:8:72: error: type 'Equatable' has no member 'top'
+ 6 |  func testPreferenceMigrationAndNormalizedHeight() throws {
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+   |                                                                        `- error: type 'Equatable' has no member 'top'
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:9:18: error: cannot find 'ControlPanel' in scope
+ 7 |   let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"heightScale\":1.32}".utf8))
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+   |                  `- error: cannot find 'ControlPanel' in scope
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+11 |  }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:10:18: error: cannot find 'ControlPanel' in scope
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+   |                  `- error: cannot find 'ControlPanel' in scope
+11 |  }
+12 |  func testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:10:69: error: cannot find 'ControlPanel' in scope
+ 8 |   XCTAssertTrue(p.floatingNotesEnabled); XCTAssertEqual(p.pianoLayer, .top)
+ 9 |   XCTAssertEqual(ControlPanel.normalizedHeight(p.heightScale), 0.630769, accuracy: 0.00001)
+10 |   XCTAssertEqual(ControlPanel.actualHeight(0), 0.5); XCTAssertEqual(ControlPanel.actualHeight(1), 1.8)
+   |                                                                     `- error: cannot find 'ControlPanel' in scope
+11 |  }
+12 |  func testAlertSliderOwnsVerifiedValueAndRespectsExternalChanges() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:15:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+13 |   let storage = Storage(); let adapter = AlertVolumeAdapter(storage: storage)
+14 |   adapter.refresh(); XCTAssertEqual(storage.writes, [])
+15 |   adapter.setVolume(45); XCTAssertEqual(adapter.originalVolume, 70)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:16:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+14 |   adapter.refresh(); XCTAssertEqual(storage.writes, [])
+15 |   adapter.setVolume(45); XCTAssertEqual(adapter.originalVolume, 70)
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+18 |   adapter.setVolume(30); storage.value = 60; adapter.restore(); XCTAssertEqual(storage.value, 60)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControlPanelTests.swift:18:11: error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+16 |   adapter.setVolume(20); XCTAssertEqual(adapter.originalVolume, 70)
+17 |   adapter.restore(); XCTAssertEqual(storage.value, 70)
+18 |   adapter.setVolume(30); storage.value = 60; adapter.restore(); XCTAssertEqual(storage.value, 60)
+   |           `- error: value of type 'AlertVolumeAdapter' has no member 'setVolume'
+19 |  }
+20 |  final class Storage: AlertVolumeStorage {
+[73/99] Compiling PianoMacTests OverlayWindowStackTests.swift
+[74/99] Compiling PianoMacTests SingleInstanceTests.swift
+[75/99] Compiling PianoMacTests StartupEntryTests.swift
+[76/99] Compiling PianoMacTests KeymapEditorTests.swift
+[77/99] Compiling PianoMacTests LocalTrialStartTests.swift
+[78/99] Compiling PianoMacTests MenuIntegrationTests.swift
+[79/99] Compiling PianoMacTests DockAdapterTests.swift
+[80/99] Compiling PianoMacTests DockWindowVisibilityTests.swift
+[81/99] Compiling PianoMacTests GlossyBlackTests.swift
+[82/99] Compiling PianoMacTests ModuleTests.swift
+[83/99] Compiling PianoMacTests NativeDockStorageTests.swift
+[84/99] Compiling PianoMacTests OverlayVisibilityTests.swift
+[85/99] Compiling PianoProbe main.swift
+[86/99] Emitting module PianoProbe
+[86/99] Write Objects.LinkFileList
+[88/99] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[89/99] Compiling PianoMacTests AlertVolumeTests.swift
+[90/99] Compiling PianoMacTests CompactMenuTests.swift
+[91/99] Compiling PianoMacTests HeightIntegrationTests.swift
+[92/99] Compiling PianoMacTests InputNormalizerTests.swift
+[93/99] Compiling PianoMacTests IntegrationTests.swift
+[94/99] Compiling PianoMacTests TransparencyTests.swift
+[95/99] Compiling PianoMacTests TrialSessionTests.swift
+error: cancelled
+[95/99] Linking TypingPianoProbe
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

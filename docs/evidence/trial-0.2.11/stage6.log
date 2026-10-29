@@ -1,0 +1,40 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/9] Emitting module PianoMac
+[5/9] Compiling PianoMac KeymapEditor.swift
+[6/9] Compiling PianoMac PianoView.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/PianoView.swift:77:101: error: cannot find 'ctx' in scope
+ 75 |     /// Actual CoreText ink bounds in canvas coordinates, including a conservative halo margin.
+ 76 |     public var floatingInkBounds: [CGRect] {
+ 77 |         if let highlightedMIDI, let key = keys.first(where: { $0.shape.midi == highlightedMIDI }) { ctx.setStrokeColor(NSColor.controlAccentColor.cgColor); ctx.setLineWidth(2.5); ctx.addPath(keyFace(key)); ctx.strokePath() }
+    |                                                                                                     `- error: cannot find 'ctx' in scope
+ 78 |         let ink = CTLineGetBoundsWithOptions(floatingLine, .useGlyphPathBounds)
+ 79 |         return floatingPresentations.compactMap { note in
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/PianoView.swift:77:157: error: cannot find 'ctx' in scope
+ 75 |     /// Actual CoreText ink bounds in canvas coordinates, including a conservative halo margin.
+ 76 |     public var floatingInkBounds: [CGRect] {
+ 77 |         if let highlightedMIDI, let key = keys.first(where: { $0.shape.midi == highlightedMIDI }) { ctx.setStrokeColor(NSColor.controlAccentColor.cgColor); ctx.setLineWidth(2.5); ctx.addPath(keyFace(key)); ctx.strokePath() }
+    |                                                                                                                                                             `- error: cannot find 'ctx' in scope
+ 78 |         let ink = CTLineGetBoundsWithOptions(floatingLine, .useGlyphPathBounds)
+ 79 |         return floatingPresentations.compactMap { note in
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/PianoView.swift:77:180: error: cannot find 'ctx' in scope
+ 75 |     /// Actual CoreText ink bounds in canvas coordinates, including a conservative halo margin.
+ 76 |     public var floatingInkBounds: [CGRect] {
+ 77 |         if let highlightedMIDI, let key = keys.first(where: { $0.shape.midi == highlightedMIDI }) { ctx.setStrokeColor(NSColor.controlAccentColor.cgColor); ctx.setLineWidth(2.5); ctx.addPath(keyFace(key)); ctx.strokePath() }
+    |                                                                                                                                                                                    `- error: cannot find 'ctx' in scope
+ 78 |         let ink = CTLineGetBoundsWithOptions(floatingLine, .useGlyphPathBounds)
+ 79 |         return floatingPresentations.compactMap { note in
+
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoMac/PianoView.swift:77:207: error: cannot find 'ctx' in scope
+ 75 |     /// Actual CoreText ink bounds in canvas coordinates, including a conservative halo margin.
+ 76 |     public var floatingInkBounds: [CGRect] {
+ 77 |         if let highlightedMIDI, let key = keys.first(where: { $0.shape.midi == highlightedMIDI }) { ctx.setStrokeColor(NSColor.controlAccentColor.cgColor); ctx.setLineWidth(2.5); ctx.addPath(keyFace(key)); ctx.strokePath() }
+    |                                                                                                                                                                                                               `- error: cannot find 'ctx' in scope
+ 78 |         let ink = CTLineGetBoundsWithOptions(floatingLine, .useGlyphPathBounds)
+ 79 |         return floatingPresentations.compactMap { note in
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

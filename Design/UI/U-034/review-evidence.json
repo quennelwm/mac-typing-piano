@@ -1,0 +1,87 @@
+{
+  "task": "U-034",
+  "status": "UI review complete, pending PM acceptance",
+  "reviewedAt": "2026-10-29T17:28:45.914956+08:00",
+  "sourceManifestSHA256": "873388910a57dc99eb302b8e2d28bcb04e95b6b6d7cc914db5aaeb8608c920a0",
+  "sourceFilesVerified": 97,
+  "mismatches": [],
+  "blockingFindings": [],
+  "minorFindings": [
+    "normal granted-permission footer repeats row state; nonblocking per PM"
+  ],
+  "images": [
+    {
+      "path": "docs/evidence/trial-0.2.11/previews/control-panel.png",
+      "pixelSize": [
+        540,
+        740
+      ],
+      "sha256": "a67cf320ef4048112fb0512f40b794f2fac8f26fcd62985744d465ea4972c992"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.11/previews/binding-draft.png",
+      "pixelSize": [
+        1520,
+        780
+      ],
+      "sha256": "41926d981ad0ec76c252a67732ffa54ba45165094b7ca86179f0c4d30854a0ed"
+    }
+  ],
+  "sources": [
+    {
+      "path": "Code/Sources/PianoMac/ControlPanel.swift",
+      "sha256": "623bd55a6f59a79ee8afe64717838d60f584979bad621542c29aecec85c801b3"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "sha256": "7aa15ef86634baae6b9e04cf3b1c590cf4557aeb5f7f9362ba9a8f11bd7d7606"
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "sha256": "282ebbf182c9ef578e4aba4f7fda2ba19d948f54fc929f598027326b2fdb7d7e"
+    },
+    {
+      "path": "Code/Sources/PianoMac/KeymapEditor.swift",
+      "sha256": "72d51a340f17c2dec8e4484039d032e4fecb99d08d156498c204f5b2d9721ca6"
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "sha256": "da7312300268b69da5954dc05ece2f5f2a9f9d21942e35af104905a4cce2b682"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/evidence/trial-0.2.11/source-hashes.json",
+      "sha256": "873388910a57dc99eb302b8e2d28bcb04e95b6b6d7cc914db5aaeb8608c920a0"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.11/full-test-frozen.log",
+      "sha256": "96c2c7d77410f25dd3bd216973e77e31ea36cf9df1f3f913356a7a9a23b2a349"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.11/previews/report.json",
+      "sha256": "b96b6d22d9a817a30e631e1b8201732b3f258459e895983a152a4dbfd8847c6e"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.11/CLOSE-INVESTIGATION.md",
+      "sha256": "17fb102a425180b6d7092d96a6214966804ba3fb722d605077a88faf0a240b30"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.11/render-paired-final.json",
+      "sha256": "efca7dd331f0e45d1401eab1266d693775dc025df2630b61edfa84d45bc8e682"
+    }
+  ],
+  "methods": [
+    "read-only source inspection",
+    "view final two offscreen images",
+    "read existing frozen test log; did not rerun tests",
+    "verify frozen source and image hashes"
+  ],
+  "notTested": [
+    "real status-item/outside/Esc/drag interaction",
+    "physical binding and Fn/left-right keys",
+    "real top/bottom window relationships",
+    "live smoothness and CPU/memory",
+    "signed installation/TCC and actual alert volume"
+  ]
+}

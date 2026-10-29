@@ -1,0 +1,12 @@
+{
+  "mode": "sign-copy",
+  "app": "/Users/wuming/Library/Caches/local.typingpiano.trial/github-release-0.2.11/Mac-Typing-Piano-0.2.11-arm64/\u6253\u5b57\u94a2\u7434\u8bd5\u7528.app",
+  "bundleID": "local.typingpiano.trial",
+  "strictSignature": true,
+  "explicitIdentityMatches": true,
+  "designatedRequirementMatches": true,
+  "designatedRequirementSHA256": "593160c3be665fc9c487ccfb706cc9dac40fec1a5ec8bf1d91282bee86b09971",
+  "inputBundlesModified": false,
+  "TCCRetentionTested": false,
+  "unsignedInputBinarySHA256": "cff5298a4b7fb4e33c19a6e5e7280ca41e1ae926098a9a35d153e3a1260d1125"
+}
