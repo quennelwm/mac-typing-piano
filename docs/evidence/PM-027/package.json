@@ -1,0 +1,18 @@
+{
+  "version": "0.2.7",
+  "build": "10",
+  "app": "/Users/wuming/Library/Caches/local.typingpiano.trial/github-release-0.2.7/Mac-Typing-Piano-0.2.7-arm64/打字钢琴试用.app",
+  "binarySHA256": "aa73ef762225ba3e5d54d358cc5235274b3d247542a871b7be4e77032c254ec5",
+  "strictSignature": "PASS",
+  "sameDesignatedRequirementAs026": true,
+  "requirementSHA256": "49d6b770e2c3eb51ba8419f207fde1ad72c08c315d0afc58675c137298f1231c",
+  "sourceManifestSHA256": "10d4d0733429809e6f3c6fcb4834f71a6042dfb0937876faf66f0ebc48e04bc1",
+  "notarized": false,
+  "zip": "/Users/wuming/Library/Caches/local.typingpiano.trial/github-release-0.2.7/Mac-Typing-Piano-0.2.7-arm64.zip",
+  "zipSHA256": "fcf0c418ca6be3b40d26754032b87971ef2de57a76540d9f65fdc196dbe0d467",
+  "zipBytes": 15409827,
+  "roundtripFiles": 43,
+  "roundtripAllHashesMatch": true,
+  "roundtripStrictSignature": "PASS",
+  "zipCRC": "PASS"
+}

@@ -1,0 +1,16 @@
+{
+  "version": "0.2.7",
+  "binarySHA256": "aa73ef762225ba3e5d54d358cc5235274b3d247542a871b7be4e77032c254ec5",
+  "onlyRunningPianoProcess": "73792 /Users/wuming/Library/Caches/local.typingpiano.trial/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe",
+  "permissionPreflight": true,
+  "guiStartButton": "开始打字钢琴",
+  "globalStartClicked": true,
+  "userPhysicalKeys": "A,G",
+  "userResponse": "能听到琴声",
+  "wrongAdHocCandidateNormallyQuit": true,
+  "wrongCandidateLaunchServicesUnregistered": true,
+  "installedAppLaunchServicesRegistered": true,
+  "TCCChangedByUser": true,
+  "TCCChangedByAgent": false,
+  "futureUpgradeAuthorizationRetentionTested": false
+}

@@ -1,0 +1,90 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/11] Emitting module PianoMacTests
+[5/11] Compiling PianoCoreTests FloatingNoteTests.swift
+[6/11] Emitting module PianoCoreTests
+[7/11] Compiling PianoCoreTests MappingTests.swift
+[8/12] Compiling PianoMacTests IntegrationTests.swift
+[9/12] Compiling PianoMacTests ControllerIntegrationTests.swift
+[10/12] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[10/12] Write Objects.LinkFileList
+[11/12] Linking TypingPianoProbePackageTests
+Build complete! (1.87s)
+Test Suite 'Selected tests' started at 2026-10-29 11:17:26.333.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:17:26.335.
+Test Suite 'AdaptiveOverlayTests' started at 2026-10-29 11:17:26.335.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testDockVisualStateNeverClearsHeldNotesOrSound]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testDockVisualStateNeverClearsHeldNotesOrSound]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUserEnabledDockIsNotRestoredToAnOlderFalseValue]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUserEnabledDockIsNotRestoredToAnOlderFalseValue]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift:8: error: -[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen] : XCTAssertEqual failed: ("(8.0, 0.0, 1496.0, 104.0)") is not equal to ("(8.0, 0.0, 1496.0, 208.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift:9: error: -[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen] : XCTAssertEqual failed: ("(-1912.0, -200.0, 1904.0, 104.0)") is not equal to ("(-1912.0, -200.0, 1904.0, 208.0)")
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen]' failed (0.130 seconds).
+Test Suite 'AdaptiveOverlayTests' failed at 2026-10-29 11:17:26.467.
+	 Executed 3 tests, with 2 failures (0 unexpected) in 0.132 (0.132) seconds
+Test Suite 'ControllerIntegrationTests' started at 2026-10-29 11:17:26.467.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' passed (0.725 seconds).
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' passed (0.152 seconds).
+Test Suite 'ControllerIntegrationTests' passed at 2026-10-29 11:17:27.345.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.878 (0.878) seconds
+Test Suite 'FloatingNoteTests' started at 2026-10-29 11:17:27.345.
+Test Case '-[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:55: error: -[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel] : XCTAssertEqual failed: ("0.7") is not equal to ("0.9")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:56: error: -[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel] : XCTAssertEqual failed: ("24.0") is not equal to ("48.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift:57: error: -[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel] : XCTAssertGreaterThan failed: ("0.0") is not greater than ("0.0")
+Test Case '-[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel]' failed (0.002 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' passed (0.001 seconds).
+Test Suite 'FloatingNoteTests' failed at 2026-10-29 11:17:27.350.
+	 Executed 5 tests, with 3 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'IntegrationTests' started at 2026-10-29 11:17:27.350.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' started.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' passed (0.808 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:17: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("50.0") is not equal to ("100.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:18: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("Optional(32.0)") is not equal to ("Optional(64.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:17: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("50.0") is not equal to ("100.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:18: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("Optional(32.0)") is not equal to ("Optional(64.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:17: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("50.0") is not equal to ("100.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:18: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("Optional(32.0)") is not equal to ("Optional(64.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:17: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("50.0") is not equal to ("100.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:18: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("Optional(32.0)") is not equal to ("Optional(64.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:17: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("50.0") is not equal to ("100.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:18: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("Optional(32.0)") is not equal to ("Optional(64.0)")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:17: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("50.0") is not equal to ("100.0")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift:18: error: -[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels] : XCTAssertEqual failed: ("Optional(32.0)") is not equal to ("Optional(64.0)")
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' failed (0.019 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' started.
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' passed (0.003 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay]' started.
+Test Case '-[PianoMacTests.warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay]' passed (0.003 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' started.
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' passed (0.004 seconds).
+Test Suite 'IntegrationTests' failed at 2026-10-29 11:17:28.188.
+	 Executed 5 tests, with 12 failures (0 unexpected) in 0.838 (0.838) seconds
+Test Suite 'MappingTests' started at 2026-10-29 11:17:28.188.
+Test Case '-[PianoCoreTests.MappingTests testPlayableMappingPreservesPhysicalContractAndCoreTwentyNotes]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoCore/Mapping.swift:21: error: -[PianoCoreTests.MappingTests testPlayableMappingPreservesPhysicalContractAndCoreTwentyNotes] : failed: caught error: "Error Domain=NSCocoaErrorDomain Code=260 "未能打开文件“keymap.ansi64.playable.v0.2.json”，因为它不存在。" UserInfo={NSFilePath=/Users/wuming/Desktop/键盘钢琴/contracts/keymap.ansi64.playable.v0.2.json, NSURL=file:///Users/wuming/Desktop/%E9%94%AE%E7%9B%98%E9%92%A2%E7%90%B4/contracts/keymap.ansi64.playable.v0.2.json, NSUnderlyingError=0x76dd7760d0 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}"
+Test Case '-[PianoCoreTests.MappingTests testPlayableMappingPreservesPhysicalContractAndCoreTwentyNotes]' failed (0.003 seconds).
+Test Case '-[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes]' started.
+Test Case '-[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes]' passed (0.003 seconds).
+Test Suite 'MappingTests' failed at 2026-10-29 11:17:28.195.
+	 Executed 2 tests, with 1 failure (1 unexpected) in 0.006 (0.007) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 11:17:28.195.
+	 Executed 17 tests, with 18 failures (1 unexpected) in 1.858 (1.860) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 11:17:28.195.
+	 Executed 17 tests, with 18 failures (1 unexpected) in 1.858 (1.862) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

@@ -1,0 +1,12 @@
+[0/1] Planning build
+Building for production...
+[0/4] Write sources
+[2/4] Write swift-version--58304C5D6DBC2206.txt
+[4/5] Compiling PianoMac AdaptiveOverlay.swift
+[5/7] Compiling PianoProbe main.swift
+[5/7] Write Objects.LinkFileList
+[6/7] Linking TypingPianoProbe
+Build complete! (9.75s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.7/打字钢琴试用.app

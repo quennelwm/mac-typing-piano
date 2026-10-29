@@ -1,0 +1,40 @@
+{
+  "version": "0.2.7",
+  "build": 10,
+  "app": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.7/打字钢琴试用.app",
+  "zip": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.7/打字钢琴试用.zip",
+  "binarySHA256": "f8394ae4997e3124f856eb30ff680801dbf26b8cd70f577612167ad7b02dea0d",
+  "zipSHA256": "74fb579fece7a2c92927b1fde628dc6eed3aef58faeeacd67e14ea0b9486ce4e",
+  "architecture": "arm64",
+  "signing": "ad-hoc; final development signing belongs to PM",
+  "sourceManifestSHA256": "36122adb450b0a3e6139f387f57a72b22e2ee8aaf25f7ec0c34a56760e68b589",
+  "verification": {
+    "version": "0.2.7",
+    "build": 10,
+    "fullSuite": {
+      "selected": 130,
+      "passed": 127,
+      "skipped": 3,
+      "failures": 0
+    },
+    "separateCandidateSuite": {
+      "passed": 3,
+      "failures": 0
+    },
+    "totalDistinctTestsPassed": 130,
+    "nativePianoImages": 36,
+    "animationFrames": 228,
+    "editorImages": 4,
+    "sourceFilesVerified": 80,
+    "protectedFilesUnchanged": 112,
+    "schemasPassed": true,
+    "all64AssignmentsMatchApprovedUIAndAttachment": true,
+    "strictSignaturePassed": true,
+    "zipIntegrityPassed": true,
+    "packagedClassicMappingAbsent": true,
+    "hardwareInputTested": false,
+    "hardwareAudioTested": false,
+    "systemSettingsWritten": false,
+    "sourceFrozen": true
+  }
+}

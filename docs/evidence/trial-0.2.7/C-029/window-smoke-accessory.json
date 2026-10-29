@@ -1,0 +1,76 @@
+{
+  "activationPolicy" : 1,
+  "audioOutputStarted" : false,
+  "belowModalWindow" : true,
+  "dockLevel" : 20,
+  "frontmostPID" : 1342,
+  "frontmostPIDUnchanged" : true,
+  "fullScreenNone" : true,
+  "ignoresMouseEvents" : true,
+  "isKeyWindow" : false,
+  "isMainWindow" : false,
+  "kind" : "real overlapping NSWindows and WindowServer front-to-back order; no cross-app activation or TCC dialog",
+  "listenerStarted" : false,
+  "menuLevel" : 24,
+  "modalLevel" : 8,
+  "occlusionVisible" : false,
+  "onActiveSpace" : true,
+  "passed" : true,
+  "permissionRequested" : false,
+  "samples" : [
+    {
+      "backNormalRank" : 10,
+      "backNormalWindowID" : 8258,
+      "frontNormalRank" : 9,
+      "frontNormalWindowID" : 8257,
+      "overlayLayer" : 3,
+      "overlayRank" : 7,
+      "overlayWindowID" : 8256,
+      "passed" : true,
+      "step" : "A"
+    },
+    {
+      "backNormalRank" : 10,
+      "backNormalWindowID" : 8257,
+      "frontNormalRank" : 9,
+      "frontNormalWindowID" : 8258,
+      "overlayLayer" : 3,
+      "overlayRank" : 7,
+      "overlayWindowID" : 8256,
+      "passed" : true,
+      "step" : "B"
+    },
+    {
+      "backNormalRank" : 10,
+      "backNormalWindowID" : 8258,
+      "frontNormalRank" : 9,
+      "frontNormalWindowID" : 8257,
+      "overlayLayer" : 3,
+      "overlayRank" : 7,
+      "overlayWindowID" : 8256,
+      "passed" : true,
+      "step" : "A-again"
+    }
+  ],
+  "serverPanel" : {
+    "kCGWindowAlpha" : 1,
+    "kCGWindowBounds" : {
+      "Height" : 208,
+      "Width" : 360,
+      "X" : 756,
+      "Y" : 300
+    },
+    "kCGWindowIsOnscreen" : true,
+    "kCGWindowLayer" : 3,
+    "kCGWindowMemoryUsage" : 2432,
+    "kCGWindowName" : "",
+    "kCGWindowNumber" : 8256,
+    "kCGWindowOwnerName" : "打字钢琴试用",
+    "kCGWindowOwnerPID" : 68473,
+    "kCGWindowSharingState" : 1,
+    "kCGWindowStoreType" : 1
+  },
+  "systemSettingsWritten" : false,
+  "visible" : true,
+  "windowLevel" : 3
+}

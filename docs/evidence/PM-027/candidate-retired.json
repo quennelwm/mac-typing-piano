@@ -1,0 +1,9 @@
+{
+  "original": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.7/打字钢琴试用.app",
+  "preservedAt": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.7/打字钢琴试用.app.retired",
+  "binarySHA256": "1c4ed52c7d12a22382a96bcba205e70f45284c7d2a5c8dba3d12ee13e43ed4dd",
+  "releaseGuardRejectsAdHoc": true,
+  "rejection": "release-sign: ad-hoc signatures are not release identities",
+  "candidateZipPreserved": true,
+  "installedAppUntouched": true
+}

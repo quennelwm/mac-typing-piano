@@ -1,0 +1,56 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[1/6] Write swift-version--58304C5D6DBC2206.txt
+[3/7] Compiling PianoMacTests OverlayVisibilityTests.swift
+[4/7] Compiling PianoMacTests KeymapEditorTests.swift
+[5/7] Emitting module PianoMacTests
+[5/7] Write Objects.LinkFileList
+[6/7] Linking TypingPianoProbePackageTests
+Build complete! (2.00s)
+Test Suite 'Selected tests' started at 2026-10-29 11:40:20.768.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:40:20.771.
+Test Suite 'CustomKeymapTests' started at 2026-10-29 11:40:20.771.
+Test Case '-[PianoCoreTests.CustomKeymapTests testImmediateDraftSwapsAccumulateAcrossKeySelectionWithoutChangingBaseline]' started.
+Test Case '-[PianoCoreTests.CustomKeymapTests testImmediateDraftSwapsAccumulateAcrossKeySelectionWithoutChangingBaseline]' passed (0.003 seconds).
+Test Case '-[PianoCoreTests.CustomKeymapTests testInvalidSaveCannotReplaceExistingFileAndWriteErrorIsReported]' started.
+Test Case '-[PianoCoreTests.CustomKeymapTests testInvalidSaveCannotReplaceExistingFileAndWriteErrorIsReported]' passed (0.003 seconds).
+Test Case '-[PianoCoreTests.CustomKeymapTests testMalformedConfigurationsPreserveOriginalBytesAndFallback]' started.
+Test Case '-[PianoCoreTests.CustomKeymapTests testMalformedConfigurationsPreserveOriginalBytesAndFallback]' passed (0.006 seconds).
+Test Case '-[PianoCoreTests.CustomKeymapTests testSaveRelaunchRestoreAndNoFileDefault]' started.
+Test Case '-[PianoCoreTests.CustomKeymapTests testSaveRelaunchRestoreAndNoFileDefault]' passed (0.003 seconds).
+Test Suite 'CustomKeymapTests' passed at 2026-10-29 11:40:20.788.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.016 (0.017) seconds
+Test Suite 'KeymapEditorTests' started at 2026-10-29 11:40:20.788.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' passed (0.222 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' passed (0.174 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' passed (0.045 seconds).
+Test Suite 'KeymapEditorTests' passed at 2026-10-29 11:40:21.229.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.441 (0.441) seconds
+Test Suite 'OverlayVisibilityTests' started at 2026-10-29 11:40:21.230.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testClearingSleepDoesNotClearConcurrentLockOrSecureInput]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testClearingSleepDoesNotClearConcurrentLockOrSecureInput]' passed (0.385 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices]' passed (3.823 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' passed (0.183 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion]' passed (0.068 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched]' passed (0.209 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices]' passed (0.729 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput]' started.
+Test Case '-[PianoMacTests.Overwarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+layVisibilityTests testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput]' passed (0.355 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates]' passed (1.378 seconds).
+Test Suite 'OverlayVisibilityTests' passed at 2026-10-29 11:40:28.361.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 7.130 (7.131) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-29 11:40:28.361.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 7.588 (7.590) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 11:40:28.361.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 7.588 (7.592) seconds

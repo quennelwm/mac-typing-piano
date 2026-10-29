@@ -1,0 +1,60 @@
+Building for debugging...
+[Computing dependencies]
+[1 / 5]
+[2 / 6] PianoMac
+[3 / 7] PianoMac
+[7 / 11] PianoMac
+[10 / 11] PianoMacTests-product
+[13 / 17] TypingPianoProbe-product
+[15 / 19] TypingPianoProbe-product
+[16 / 19] TypingPianoProbe-product
+[18 / 19] TypingPianoProbe-product
+Build complete! (4.68秒)
+Test Suite 'Selected tests' started at 2026-10-29 12:35:04.789.
+Test Suite 'PianoMacTests.xctest' started at 2026-10-29 12:35:04.792.
+Test Suite 'OverlayVisibilityTests' started at 2026-10-29 12:35:04.792.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' passed (1.770 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testClearingSleepDoesNotClearConcurrentLockOrSecureInput]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testClearingSleepDoesNotClearConcurrentLockOrSecureInput]' passed (0.446 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices]' passed (4.024 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' passed (0.212 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion]' passed (0.068 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched]' passed (0.246 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices]' passed (0.908 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput]' passed (0.430 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates]' passed (1.167 seconds).
+Test Suite 'OverlayVisibilityTests' passed at 2026-10-29 12:35:14.065.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 9.272 (9.273) seconds
+Test Suite 'OverlayWindowStackTests' started at 2026-10-29 12:35:14.066.
+Test Case '-[PianoMacTests.OverlayWindowStackTests testOrdinaryWindowsReorderBelowOverlayWhileModalStaysAbove]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayWindowStackTests.swift:13: error: -[PianoMacTests.OverlayWindowStackTests testOrdinaryWindowsReorderBelowOverlayWhileModalStaysAbove] : XCTAssertEqual failed: ("Optional(false)") is not equal to ("Optional(true)")
+Test Case '-[PianoMacTests.OverlayWindowStackTests testOrdinaryWindowsReorderBelowOverlayWhileModalStaysAbove]' failed (0.578 seconds).
+Test Suite 'OverlayWindowStackTests' failed at 2026-10-29 12:35:14.643.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.578 (0.578) seconds
+Test Suite 'PianoMacTests.xctest' failed at 2026-10-29 12:35:14.644.
+	 Executed 10 tests, with 1 failure (0 unexpected) in 9.850 (9.851) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 12:35:14.644.
+	 Executed 10 tests, with 1 failure (0 unexpected) in 9.850 (9.854) seconds
+C029_WINDOW_STACK {"audioOutputStarted":false,"belowModalWindow":false,"dockLevel":20,"frontmostPIDUnchanged":true,"fullScreenNone":true,"ignoresMouseEvents":true,"isKeyWindow":false,"isMainWindow":false,"kind":"real overlapping NSWindows and WindowServer front-to-back order; no cross-app activation or TCC dialog","listenerStarted":false,"menuLevel":24,"modalLevel":8,"passed":false,"permissionRequested":false,"samples":[{"backNormalRank":13,"frontNormalRank":12,"overlayLayer":-1,"overlayRank":-1,"passed":false,"step":"A"},{"backNormalRank":12,"frontNormalRank":11,"overlayLayer":-1,"overlayRank":-1,"passed":false,"step":"B"},{"backNormalRank":13,"frontNormalRank":12,"overlayLayer":-1,"overlayRank":-1,"passed":false,"step":"A-again"}],"systemSettingsWritten":false,"visible":true,"windowLevel":3}
+Test Suite 'Selected tests' started at 2026-10-29 12:35:14.773.
+Test Suite 'PianoCoreTests.xctest' started at 2026-10-29 12:35:14.775.
+Test Suite 'PianoCoreTests.xctest' passed at 2026-10-29 12:35:14.775.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 12:35:14.775.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' started at 2026-10-29 12:35:14.876.
+Test Suite 'PianoAudioTests.xctest' started at 2026-10-29 12:35:14.877.
+Test Suite 'PianoAudioTests.xctest' passed at 2026-10-29 12:35:14.877.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 12:35:14.877.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Note: Some test targets reported failures:
+  - PianoMacTests (XCTest)

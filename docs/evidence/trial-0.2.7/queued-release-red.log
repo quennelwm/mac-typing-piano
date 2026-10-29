@@ -1,0 +1,32 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/8] Compiling PianoMac KeymapEditor.swift
+[5/8] Emitting module PianoMac
+[5/10] Write Objects.LinkFileList
+[6/13] Linking TypingPianoProbe
+[7/13] Applying TypingPianoProbe
+[9/13] Emitting module PianoMacTests
+[10/13] Compiling PianoMacTests ControllerIntegrationTests.swift
+[11/13] Compiling PianoMacTests OverlayVisibilityTests.swift
+[12/14] Compiling PianoMacTests TrialSessionTests.swift
+[12/14] Write Objects.LinkFileList
+[13/14] Linking TypingPianoProbePackageTests
+Build complete! (2.95s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 11:47:48.487.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:47:48.490.
+Test Suite 'OverlayVisibilityTests' started at 2026-10-29 11:47:48.490.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift:118: error: -[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift:119: error: -[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown] : XCTAssertEqual failed: ("Optional(60)") is not equal to ("Optional(53)")
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' failed (0.822 seconds).
+Test Suite 'OverlayVisibilityTests' failed at 2026-10-29 11:47:49.312.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.822 (0.822) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 11:47:49.312.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.822 (0.822) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 11:47:49.312.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.822 (0.825) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

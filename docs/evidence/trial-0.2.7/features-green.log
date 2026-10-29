@@ -1,0 +1,50 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[3/7] Write swift-version--58304C5D6DBC2206.txt
+[5/10] Compiling PianoCore Mapping.swift
+[6/10] Emitting module PianoCore
+[7/10] Compiling PianoCore AppPreferences.swift
+[8/12] Compiling PianoCore Geometry.swift
+[9/12] Compiling PianoCore Coordinator.swift
+[10/35] Compiling PianoCoreTests MappingTests.swift
+[11/35] Compiling PianoCoreTests ReducerTests.swift
+[12/35] Compiling PianoCoreTests GeometryAndDockTests.swift
+[13/36] Compiling PianoCoreTests PreferencesMigrationTests.swift
+[14/36] Compiling PianoMac QuietIvoryProvenance.swift
+[15/37] Compiling PianoCoreTests FloatingNoteTests.swift
+[16/37] Compiling PianoCoreTests DockFadeTests.swift
+[17/37] Emitting module PianoCoreTests
+[18/37] Compiling PianoMac AlertVolume.swift
+[19/37] Compiling PianoMac ContinuousTrialStart.swift
+[20/37] Compiling PianoCoreTests StartupFlowTests.swift
+[21/37] Compiling PianoMac InputMonitor.swift
+[22/37] Compiling PianoMac InputNormalizer.swift
+[25/37] Compiling PianoMac DockAdapter.swift
+[26/37] Compiling PianoMac DockWindowVisibility.swift
+[27/37] Emitting module PianoMac
+[28/37] Compiling PianoMac ProbeMenu.swift
+[29/37] Compiling PianoMac SDKKeys.swift
+[30/37] Compiling PianoMac ProbeController.swift
+[31/37] Compiling PianoMac NativeDockStorage.swift
+[32/37] Compiling PianoMac PianoView.swift
+[33/52] Compiling PianoMacTests StartupEntryTests.swift
+error: emit-module command failed with exit code 1 (use -v to see invocation)
+[34/53] Emitting module PianoProbe
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoProbe/main.swift:81:124: error: cannot convert value of type 'CGFloat' to expected argument type 'Int'
+ 79 |                 for scenario in ["rest", "single", "multi"] {
+ 80 |                     let ids = scenarios[scenario]!
+ 81 |                     let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: AdaptiveOverlay.canvasHeight))
+    |                                                                                                                            `- error: cannot convert value of type 'CGFloat' to expected argument type 'Int'
+ 82 |                     view.appearance = NSAppearance(named: .aqua); view.showLabels = labels
+ 83 |                     view.automaticAnimation = false; view.clock = { 0 }
+[35/53] Compiling PianoProbe main.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Sources/PianoProbe/main.swift:81:124: error: cannot convert value of type 'CGFloat' to expected argument type 'Int'
+ 79 |                 for scenario in ["rest", "single", "multi"] {
+ 80 |                     let ids = scenarios[scenario]!
+ 81 |                     let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: AdaptiveOverlay.canvasHeight))
+    |                                                                                                                            `- error: cannot convert value of type 'CGFloat' to expected argument type 'Int'
+ 82 |                     view.appearance = NSAppearance(named: .aqua); view.showLabels = labels
+ 83 |                     view.automaticAnimation = false; view.clock = { 0 }
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+error: fatalError

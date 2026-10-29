@@ -1,0 +1,16 @@
+setUpClass (__main__.ReleaseSigningTests) ... ERROR
+
+======================================================================
+ERROR: setUpClass (__main__.ReleaseSigningTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-030/test_release_sign.py", line 23, in setUpClass
+    subprocess.run(['/usr/bin/codesign', '-d', '--extract-certificates', prefix, str(OLD)], check=True, capture_output=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/codesign', '-d', '--extract-certificates', '/var/folders/sf/7zxgyq91385b2_l3jfnygrt40000gn/T/typing-piano-cert-vdqgnkvn/cert', '/Users/wuming/Library/Caches/local.typingpiano.trial/github-release-0.2.6/Mac-Typing-Piano-0.2.6-arm64/打字钢琴试用.app']' returned non-zero exit status 1.
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.014s
+
+FAILED (errors=1)

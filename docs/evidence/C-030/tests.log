@@ -1,0 +1,28 @@
+test_01_previous_public_release_verifies (__main__.ReleaseSigningTests.test_01_previous_public_release_verifies) ... ok
+test_02_current_public_release_verifies (__main__.ReleaseSigningTests.test_02_current_public_release_verifies) ... ok
+test_03_adhoc_candidate_rejected (__main__.ReleaseSigningTests.test_03_adhoc_candidate_rejected) ... ok
+test_04_identity_required (__main__.ReleaseSigningTests.test_04_identity_required) ... ok
+test_05_adhoc_identity_not_allowed (__main__.ReleaseSigningTests.test_05_adhoc_identity_not_allowed) ... ok
+test_06_wrong_identity_rejected (__main__.ReleaseSigningTests.test_06_wrong_identity_rejected) ... ok
+test_07_adhoc_reference_rejected (__main__.ReleaseSigningTests.test_07_adhoc_reference_rejected) ... ok
+test_08_wrong_bundle_id_rejected (__main__.ReleaseSigningTests.test_08_wrong_bundle_id_rejected) ... ok
+test_09_broken_resource_seal_rejected (__main__.ReleaseSigningTests.test_09_broken_resource_seal_rejected) ... ok
+test_10_valid_but_different_requirement_rejected (__main__.ReleaseSigningTests.test_10_valid_but_different_requirement_rejected) ... ERROR
+test_11_sign_new_copy_and_verify (__main__.ReleaseSigningTests.test_11_sign_new_copy_and_verify) ... ok
+test_12_existing_output_not_overwritten (__main__.ReleaseSigningTests.test_12_existing_output_not_overwritten) ... ok
+test_13_verify_only_cannot_request_output (__main__.ReleaseSigningTests.test_13_verify_only_cannot_request_output) ... ok
+
+======================================================================
+ERROR: test_10_valid_but_different_requirement_rejected (__main__.ReleaseSigningTests.test_10_valid_but_different_requirement_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/wuming/Desktop/键盘钢琴/docs/evidence/C-030/test_release_sign.py", line 87, in test_10_valid_but_different_requirement_rejected
+    subprocess.run(['/usr/bin/codesign', '--force', '--sign', self.identity, '-r', requirement, str(app)], check=True, capture_output=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/codesign', '--force', '--sign', '[local certificate fingerprint redacted]', '-r', 'designated => identifier "local.typingpiano.trial" and info[CFBundleVersion] = "10"', '/var/folders/sf/7zxgyq91385b2_l3jfnygrt40000gn/T/typing-piano-release-test-3ozwjyqf/input.app']' returned non-zero exit status 1.
+
+----------------------------------------------------------------------
+Ran 13 tests in 2.598s
+
+FAILED (errors=1)

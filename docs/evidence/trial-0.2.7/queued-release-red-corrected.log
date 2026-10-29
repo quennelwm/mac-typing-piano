@@ -1,0 +1,27 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/7] Compiling PianoMac ProbeController.swift
+[4/7] Emitting module PianoMac
+[4/9] Write Objects.LinkFileList
+[6/9] Linking TypingPianoProbe
+[7/9] Linking TypingPianoProbePackageTests
+[8/9] Applying TypingPianoProbe
+Build complete! (2.85s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 11:51:40.154.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:51:40.157.
+Test Suite 'OverlayVisibilityTests' started at 2026-10-29 11:51:40.157.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift:119: error: -[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown] : XCTAssertEqual failed: ("0") is not equal to ("1")
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift:120: error: -[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown] : XCTAssertEqual failed: ("Optional(60)") is not equal to ("Optional(53)")
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' failed (0.909 seconds).
+Test Suite 'OverlayVisibilityTests' failed at 2026-10-29 11:51:41.066.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.909 (0.910) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 11:51:41.067.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.909 (0.910) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 11:51:41.067.
+	 Executed 1 test, with 2 failures (0 unexpected) in 0.909 (0.912) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

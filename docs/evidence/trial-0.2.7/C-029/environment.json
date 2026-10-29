@@ -1,0 +1,7 @@
+{
+  "system": "ProductName:\t\tmacOS\nProductVersion:\t\t27.2\nBuildVersion:\t\t26B123\n",
+  "swift": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)\nTarget: arm64-apple-macosx27.2.0\n",
+  "architecture": "arm64",
+  "baseline": "0.2.7/build10 frozen source manifest 36122adb450b0a3e6139f387f57a72b22e2ee8aaf25f7ec0c34a56760e68b589; no Git operations",
+  "task": "C-029 delegated by PM; task card not present at initial read"
+}

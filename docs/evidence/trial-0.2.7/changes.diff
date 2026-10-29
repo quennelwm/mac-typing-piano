@@ -1,0 +1,3402 @@
+--- before/Code/IMPLEMENTATION.md
++++ after/Code/IMPLEMENTATION.md
+@@ -1,4 +1,4 @@
+-# 当前实现：0.2.6 / build9
++# 当前实现：0.2.7 / build10
+ 
+ 以下为2026-10-28当前状态；后半部分保留各阶段当时的范围和结论，不能将历史“模拟Dock”“固定宽度”“不申请权限”等描述当作当前行为。使用与相对源码构建命令见 [README.md](README.md)。
+ 
+@@ -6,9 +6,9 @@
+ - 菜单可重新打开启动窗口，Finder重开与重复实例通知只负责显示入口；有运行/暂停原因及仅打开GitHub Releases的“下载新版…”。本窗口试弹不需要全局权限，测试子菜单仍保留60秒模式。
+ - 可选“静音系统提示音”仅在用户确认后通过当前进程Standard Additions设置alert volume；原值内存保存，仅核对本会话拥有的0值后恢复，外部不同值不覆盖，初始0不创造恢复值。失败明确显示，异常退出不保证恢复，新进程不接管旧修改；真实效果和权限边界仍待验。
+ - 默认全64音Steinway试用音库、App独立音量/标签保存、16pt槽宽与16×16pt画布的菜单栏单♪（18pt字形按墨迹适配）及同Bundle重复启动保护。
+-- 钢琴按目标screen.frame.width−16自动布局，左右8pt，104pt高度；真实Dock窗口显隐驱动淡变，隐藏不停止声音/输入，不补播旧音符。连续unknown2秒后保守恢复可见。
++- 钢琴按目标screen.frame.width−16自动布局，左右8pt，208pt高度（112pt主体＋96pt透明区）；真实Dock窗口显隐驱动淡变，隐藏不停止声音/输入，不补播旧音符。连续unknown2秒后保守恢复可见。
+ - 生产GUI和恢复路径使用能力检测的NativeDockStorage，只调用HIServices两个autohide私有SPI；写后核对原生状态与偏好，失败引导系统设置。测试注入mock；defaults-only不再作为生产控制后端。原值/外部修改/恢复票据保护保留，用户启动前已开启的true不会被恢复成更早的false。
+-- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.6子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好迁至用户Application Support，当前App旁旧偏好只读迁移一次；已有目标优先。Dock恢复票据位置不变。构建不写用户偏好。
++- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.7子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好迁至用户Application Support，当前App旁旧偏好只读迁移一次；已有目标优先。Dock恢复票据位置不变。构建不写用户偏好。
+ - 现成包为arm64、ad-hoc签名，未公证；macOS14只是编译目标。本机macOS27.2 arm64/Swift6.4验证不覆盖其他Mac/系统或Intel。
+ 
+ ## 当前证据与剩余边界
+@@ -61,3 +61,11 @@
+ ## C-002T用户主动试用
+ 
+ 在C-001C完成并被PM接收后推进持续会话、中文启动卡、全64音Steinway及源独立增益。新版使用local.typingpiano.trial和“打字钢琴试用”名称/version0.2.0，不覆盖旧Reviewed-C001C或PM维护入口。实际Float32测量及交付以docs/handoffs/C-002T.md为准；默认停止，用户点击开始才启用输入/声音。普通区域鼠标点击不再永久锁住隐藏；Dock现场行为仍保留未测。
++
++## C-027增量
++
++显示意图独立于输入/声音暂停，静态面板可反复唤出；安全输入与会话阻断独立叠加，Dock先取样再显示，unknown保留2秒恢复策略。解除视觉阻断不自动开始输入/音频。白/黑键面100/64pt、24pt音符900ms/48pt上移/4pt横漂，减弱动态200ms原地淡出，空闲无动画计时器。新映射经64项显式ID转换和原schema验证；旧contract不动且不再列作运行时选项。0.2.7新增验证在`docs/evidence/trial-0.2.7/`，上面的0.2.4/0.2.6记录只作为历史证据。
++
++## C-028增量
++
++自定义由CustomKeymap/KeymapDraft/CustomKeymapStore校验、草稿编辑、原子持久化；KeymapEditor为560×440原生设置窗口，保存前预览全部差异。InputEventQueue在捕获时更新瞬时held集合，事务丢弃旧队列并返回捕获快照，避免release已排队但尚未归约时误吞下一次press；仍按住的物理键等待释放再重新击发。会话不重建、音量/声音状态保持，安全阻断仍优先。production控件离屏图显式合成windowBackgroundColor，不当作屏幕截图或实际键盘验收。
+--- before/Code/README.md
++++ after/Code/README.md
+@@ -1,8 +1,8 @@
+-# 打字钢琴试用 0.2.6
++# 打字钢琴试用 0.2.7
+ 
+-当前版本为 **0.2.6 / build9**，Bundle ID 为 `local.typingpiano.trial`。默认使用全64音Steinway B试用音库，原生Quiet Ivory琴键、独立灰标签和700ms上升♪。Fn保留，顶部整排（包括Esc）排除。对外下载入口见[仓库根说明](../README.md)。
++当前版本为 **0.2.7 / build10**，Bundle ID 为 `local.typingpiano.trial`。默认使用全64音Steinway B试用音库，原生Quiet Ivory琴键、独立灰标签和24pt、900ms轻漂浮♪。Fn保留，顶部整排（包括Esc）排除。对外下载入口见[仓库根说明](../README.md)。
+ 
+-现成冻结包是 **Apple Silicon（arm64）** 构建，不是Universal包。源码以macOS14为编译目标，但实际仅在本机macOS27.2 arm64、Swift6.4验证；macOS14、其他系统版本和Intel源码构建均未完成兼容验收。包使用本地ad-hoc签名，未做Developer ID签名或公证，下载后的系统安全提示处理见根说明。
++当前候选为 **Apple Silicon（arm64）** 构建，不是Universal包。源码以macOS14为编译目标，但实际仅在本机macOS27.2 arm64、Swift6.4验证；macOS14、其他系统版本和Intel源码构建均未完成兼容验收。包使用本地ad-hoc签名，未做Developer ID签名或公证，下载后的系统安全提示处理见根说明。
+ 
+ ## 用户开始
+ 
+@@ -16,6 +16,16 @@
+ 
+ 同Bundle重复启动会激活已有实例并退出新启动自身，不终止其他软件。旧 `local.typingpiano.probe` 探针不在此控制范围，应自行正常退出。
+ 
++“显示钢琴”与音频/输入启动独立：尚未开始或暂停时也可显示静态琴键，不会申请权限或开启声音。Dock可见时让位，安全输入、锁屏/睡眠时隐藏，并在菜单说明等待原因；恢复画面不会恢复已暂停的声音或监听。未保存自定义时使用新演奏键位（G=C4）；旧映射仅保留历史contract，不再提供运行时选择。
++
++## 自定义键位
++
++从♪菜单打开“自定义键位…”。实体键和音高下拉框只列出现有64键与A1—C7（MIDI33—96），C4为中央C。选择音高立即在草稿交换占用该音高的两个键；累计列表列出保存后的全部变化。可连续修改，取消/关闭全部丢弃；“恢复新表默认”也需保存才生效。
++
++保存先校验并原子写入`~/Library/Application Support/local.typingpiano.trial/custom-keymap.json`，成功后同时替换标签与声音映射。保存清理旧声部、按键/动画和旧输入队列，保留运行/暂停、声音开关、音量和显示意图，不重新申请权限。捕获层记录的松键状态用于切换边界，避免已排队的释放被丢弃后误吞下一次按下。保存失败保留当前运行映射及可重试草稿。
++
++缺少配置使用新表默认；损坏/不兼容配置保留原文件、明确提示并回退新默认，之后显式保存修复时备份原始损坏内容。旧映射不打入运行包，不提供旧表预设入口。此配置只有用户选定的键位设置，不记录真实输入序列。
++
+ ## 音量与音库
+ 
+ 新偏好默认50%，完整音库对应mixer0.375；最大100%为0.75，sampler增益+12dB。已有偏好会继续加载。0%清尾并抑制新音，不停止输入/动画；调高不重播旧音。完整音库覆盖MIDI33—96；64音velocity127和弦的既有离线峰值约0.699767（约3.10dB余量），不代表所有设备、演奏序列或长期听感均已验证。Float32片段和90组测量见 [音频校准证据](../docs/evidence/C-002T/audio-calibration/)。
+@@ -28,7 +38,7 @@
+ 
+ 原生后端通过 `dlsym` 检测HIServices的 `CoreDockGetAutoHideEnabled` / `CoreDockSetAutoHideEnabled`，只操作autohide。它们是**私有SPI**，本机实测即时生效不构成其他macOS版本的兼容保证。缺失、无效读回或写后核对失败会明确报错，可用菜单“系统Dock设置…”直接调整；没有defaults-only假成功、Dock重启、Apple Events或新增权限的自动回退。
+ 
+-钢琴自动使用目标屏幕完整宽度减16pt，左右各留8pt、底缘贴屏幕，高度保持104pt（56pt琴键＋48pt效果区）。默认仍选内置屏优先的一条钢琴，不跟随鼠标跨屏跳，日常不再选900/1000/1100宽度。
++钢琴自动使用目标屏幕完整宽度减16pt，左右各留8pt、底缘贴屏幕，总高208pt（112pt琴键主体＋96pt透明效果区，白键面100pt、黑键面64pt）。默认仍选内置屏优先的一条钢琴，不跟随鼠标跨屏跳，日常不再选900/1000/1100宽度。
+ 
+ Dock显隐依据已配对验证的Dock专属layer20窗口及 `onScreenOnly` 成员关系，不用鼠标靠边热区代替。实际出现时260ms淡出；隐藏稳定120ms后360ms淡入，减少动态为80ms。短暂未知保持当前状态，连续未知2秒后恢复可见并保留未知诊断。隐藏只影响视觉，输入和声音继续；恢复当前按压状态，不补播旧音符。
+ 
+@@ -54,7 +64,7 @@
+ 
+ ```sh
+ mkdir -p "$HOME/Library/Caches/typing-piano-builds"
+-export TYPING_PIANO_BUILD_ROOT="$(mktemp -d "$HOME/Library/Caches/typing-piano-builds/candidate-0.2.6.XXXXXX")"
++export TYPING_PIANO_BUILD_ROOT="$(mktemp -d "$HOME/Library/Caches/typing-piano-builds/candidate-0.2.7.XXXXXX")"
+ bash Code/Scripts/build.sh
+ codesign --verify --strict "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app"
+ "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe" --self-check
+@@ -63,7 +73,7 @@
+ 
+ 输出为该目录下的 `打字钢琴试用.app` 和同名ZIP；脚本验证冻结资源哈希，进行本地ad-hoc签名并检查签名。可通过 `TYPING_PIANO_SIGN_IDENTITY` 由调用方指定签名身份（缺省为 `-`）；脚本不硬编码证书，也不输出签名身份或证书错误详情。不要将身份或私钥写入仓库；本轮CODE只使用ad-hoc，最终稳定开发签名由主对话在独立副本验证。上述自检不启键盘监听或硬件声音，菜单smoke不安装真实状态项。需要试用时再手动打开App；开始前留意其系统Dock默认开启行为。
+ 
+-未指定环境变量时，现有脚本默认输出到 `$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6`。该默认目录重复构建会被更新，所以推荐上面的唯一目录命令。脚本明确拒绝输出到 `$HOME/Library/Caches/local.typingpiano.trial` 根目录，这是已有授权安装的保护规则，不是建议绕过的构建错误。已使用/授权的候选目录也不应再拿来构建。
++未指定环境变量时，现有脚本默认输出到 `$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.7`。该默认目录重复构建会被更新，所以推荐上面的唯一目录命令。脚本明确拒绝输出到 `$HOME/Library/Caches/local.typingpiano.trial` 根目录，这是已有授权安装的保护规则，不是建议绕过的构建错误。已使用/授权的候选目录也不应再拿来构建。
+ 
+ 可选的无窗口回归组（先完成上述构建环境变量设置）：
+ 
+@@ -73,6 +83,6 @@
+   --filter 'PianoCoreTests|NativeDockStorageTests|DockWindowVisibilityTests|AdaptiveOverlayTests|DockAdapterTests|SingleInstanceTests|RuntimeDiagnosticsTests|LocalTrialStartTests|AudioSelectionTests|MenuIntegrationTests|PianoMacTests.IntegrationTests|StartupEntryTests|AlertVolumeTests'
+ ```
+ 
+-本版本上述回归组89项测试通过（0失败），验证记录见 [0.2.6交接](../docs/evidence/trial-0.2.6/HANDOFF.md)；系统Dock和提示音后端使用mock，不操作真实系统设置。无过滤的完整测试还包括窗口联调和会写音频证据的测试，不作为上述构建步骤的默认动作。`--build-system native` 在已验证工具链上会产生弃用提示，当前脚本仍使用它；其他工具链需自行验证，不能据编译目标宣称兼容。
++0.2.6的89项旧回归记录保留于 [历史交接](../docs/evidence/trial-0.2.6/HANDOFF.md)，不可代替本版验证；本版结果记录在 `docs/evidence/trial-0.2.7/`。系统Dock和提示音后端使用mock，不操作真实系统设置。无过滤完整测试包括真实AppKit窗口和离线音频：TrialBankTests写独立临时目录并清理；CandidateBankTests默认明确跳过3项，需显式新输出目录并预检才执行，不再覆写历史证据。`--build-system native` 在已验证工具链上会产生弃用提示，当前脚本仍使用它；其他工具链需自行验证，不能据编译目标宣称兼容。
+ 
+ 完整音库、参数、许可与来源记录打入 `AudioTrial`，原始/中间WAV不打入App；`runtime-bundle-inventory.json`列出实际打包文件。资源与源码改变后应重新验证，不只汇总旧报告。当前实现与验收索引见 [IMPLEMENTATION.md](IMPLEMENTATION.md)。
+--- before/Code/Scripts/build.sh
++++ after/Code/Scripts/build.sh
+@@ -2,13 +2,18 @@
+ set -euo pipefail
+ code_root="$(cd "$(dirname "$0")/.." && pwd)"
+ project_root="$(cd "$code_root/.." && pwd)"
+-build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6}"
++build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.7}"
+ mkdir -p "$build_root"
+ build_root="$(cd "$build_root" && pwd)"
+ if [ "$build_root" = "$HOME/Library/Caches/local.typingpiano.trial" ]; then
+     printf '%s\n' 'Refusing to overwrite the authorized frozen trial. Use an independent candidate directory.' >&2
+     exit 1
+ fi
++case "$build_root" in
++    "$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6")
++        printf '%s\n' 'Refusing to overwrite a frozen historical candidate.' >&2
++        exit 1 ;;
++esac
+ scratch_path="$build_root/swiftpm"
+ # The checked-in original bank is verified below; building does not regenerate source assets.
+ python3 - "$code_root/Assets/placeholder-original.sf2" <<'PY'
+@@ -21,7 +26,7 @@
+ app_path="$build_root/打字钢琴试用.app"
+ mkdir -p "$app_path/Contents/MacOS" "$app_path/Contents/Resources"
+ cp "$binary_dir/TypingPianoProbe" "$app_path/Contents/MacOS/TypingPianoProbe"
+-cp "$project_root/contracts/keymap.ansi64.v0.1.json" "$app_path/Contents/Resources/"
++cp "$project_root/contracts/keymap.ansi64.playable.v0.2.json" "$app_path/Contents/Resources/"
+ cp "$code_root/Assets/placeholder-original.sf2" "$app_path/Contents/Resources/"
+ cp "$code_root/Assets/PLACEHOLDER-LICENSE.txt" "$app_path/Contents/Resources/"
+ cp "$project_root/Design/UI/SOURCE_AND_LICENSE.md" "$app_path/Contents/Resources/UI-SOURCE-AND-LICENSE.md"
+@@ -93,8 +98,8 @@
+ <key>CFBundleExecutable</key><string>TypingPianoProbe</string>
+ <key>CFBundleIdentifier</key><string>local.typingpiano.trial</string>
+ <key>CFBundleName</key><string>打字钢琴试用</string>
+-<key>CFBundleVersion</key><string>9</string>
+-<key>CFBundleShortVersionString</key><string>0.2.6</string>
++<key>CFBundleVersion</key><string>10</string>
++<key>CFBundleShortVersionString</key><string>0.2.7</string>
+ <key>TypingPianoSingleInstanceProtocol</key><integer>1</integer>
+ <key>CFBundlePackageType</key><string>APPL</string>
+ <key>LSMinimumSystemVersion</key><string>14.0</string>
+--- before/Code/Sources/PianoCore/CustomKeymap.swift
++++ after/Code/Sources/PianoCore/CustomKeymap.swift
+@@ -0,0 +1,98 @@
++import Foundation
++
++public struct CustomKeymap: Codable, Equatable {
++    public var schemaVersion: Int = 1
++    public var baseMappingVersion: String
++    public var notes: [String: Int]
++    public init(defaultMapping: KeyMapping) {
++        baseMappingVersion = defaultMapping.mappingVersion
++        notes = Dictionary(uniqueKeysWithValues: defaultMapping.keys.map { ($0.physicalKeyID, $0.midiNote) })
++    }
++    public func validate(against base: KeyMapping) throws {
++        guard schemaVersion == 1, baseMappingVersion == base.mappingVersion,
++              notes.count == 64, Set(notes.keys) == Set(base.keys.map(\.physicalKeyID)),
++              Set(notes.values) == Set(33...96) else {
++            throw ProbeError.invalid("自定义键位无效：必须是当前版本的64个实体键和MIDI33–96的一一对应")
++        }
++    }
++    @discardableResult public mutating func swap(key: String, to midi: Int) throws -> String {
++        guard let old = notes[key], let other = notes.first(where: { $0.value == midi })?.key else {
++            throw ProbeError.invalid("未知实体键或音高超出A1–C7")
++        }
++        notes[key] = midi; notes[other] = old
++        return other
++    }
++    public func mapping(from base: KeyMapping) throws -> KeyMapping {
++        try validate(against: base)
++        let unchanged = self == CustomKeymap(defaultMapping: base)
++        let keys = base.keys.map { key -> KeyMapping.Key in
++            let midi = notes[key.physicalKeyID]!
++            return KeyMapping.Key(physicalKeyID: key.physicalKeyID, physicalRow: key.physicalRow,
++                positionInRow: key.positionInRow, sdkConstantCandidate: key.sdkConstantCandidate,
++                eventSemantics: key.eventSemantics, midiNote: midi,
++                pianoKeyColor: [1,3,6,8,10].contains(midi % 12) ? "black" : "white",
++                displayLabel: key.displayLabel, labelParts: key.labelParts, accessibleName: key.accessibleName, velocity: key.velocity)
++        }
++        let result = KeyMapping(schemaVersion: base.schemaVersion, mappingVersion: unchanged ? base.mappingVersion : "custom.1", keys: keys)
++        try result.validate(); return result
++    }
++    public static func noteName(_ midi: Int) -> String {
++        guard (33...96).contains(midi) else { return "未知" }
++        return ["C","C♯","D","D♯","E","F","F♯","G","G♯","A","A♯","B"][midi % 12] + String(midi / 12 - 1)
++    }
++}
++
++public final class CustomKeymapStore {
++    public struct Loaded {
++        public let configuration: CustomKeymap
++        public let warning: String?
++    }
++    public let url: URL
++    private let base: KeyMapping
++    public init(url: URL, defaultMapping: KeyMapping) { self.url = url; base = defaultMapping }
++    private func read() throws -> CustomKeymap {
++        let data = try Data(contentsOf: url)
++        guard data.count <= 32_768 else { throw ProbeError.invalid("自定义配置过大") }
++        let value = try JSONDecoder().decode(CustomKeymap.self, from: data)
++        try value.validate(against: base)
++        return value
++    }
++    public func load() -> Loaded {
++        guard FileManager.default.fileExists(atPath: url.path) else {
++            return Loaded(configuration: CustomKeymap(defaultMapping: base), warning: nil)
++        }
++        do { return Loaded(configuration: try read(), warning: nil) }
++        catch { return Loaded(configuration: CustomKeymap(defaultMapping: base), warning: "自定义键位读取失败，已使用新默认；原文件保留。\(error.localizedDescription)") }
++    }
++    public func save(_ configuration: CustomKeymap) throws {
++        try configuration.validate(against: base)
++        let data = try JSONEncoder().encode(configuration)
++        try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
++        // Explicit Save may repair a damaged file; retain its original bytes before replacing it.
++        if FileManager.default.fileExists(atPath: url.path), (try? read()) == nil,
++           let original = try? Data(contentsOf: url) {
++            let backup = url.deletingLastPathComponent().appendingPathComponent("custom-keymap-invalid-\(UUID().uuidString).json")
++            try original.write(to: backup, options: .atomic)
++        }
++        try data.write(to: url, options: .atomic)
++    }
++}
++
++public struct KeymapDraft {
++    public let baseline: CustomKeymap
++    public private(set) var working: CustomKeymap
++    public private(set) var selectedKey: String
++    public var targetMIDI: Int { working.notes[selectedKey]! }
++    public init(configuration: CustomKeymap, selectedKey: String) throws {
++        guard configuration.notes[selectedKey] != nil else { throw ProbeError.invalid("未知实体键") }
++        baseline = configuration; working = configuration; self.selectedKey = selectedKey
++    }
++    public var candidate: CustomKeymap { working }
++    public var dirty: Bool { working != baseline }
++    public mutating func selectKey(_ id: String) throws {
++        guard working.notes[id] != nil else { throw ProbeError.invalid("未知实体键") }
++        selectedKey = id
++    }
++    public mutating func selectPitch(_ midi: Int) throws { try working.swap(key: selectedKey, to: midi) }
++    public mutating func restoreDefault(_ mapping: KeyMapping) { working = CustomKeymap(defaultMapping: mapping) }
++}
+--- before/Code/Sources/PianoCore/DockFade.swift
++++ after/Code/Sources/PianoCore/DockFade.swift
+@@ -9,7 +9,9 @@
+     private var unknownSince: TimeInterval?
+     private var from = 1.0, target = 1.0, start = 0.0, duration = 0.0
+     private var reduced = false
+-    public init() {}
++    public init(initialVisibility: DockVisibility = .unknown) {
++        if initialVisibility == .visible { dockHidden = true; from = 0; target = 0 }
++    }
+     public func alpha(at time: TimeInterval) -> Double {
+         guard duration > 0 else { return target }
+         let u = min(1, max(0, (time - start) / duration))
+--- before/Code/Sources/PianoCore/FloatingNotes.swift
++++ after/Code/Sources/PianoCore/FloatingNotes.swift
+@@ -28,7 +28,7 @@
+             instances.removeValue(forKey: oldest.pressID)
+         }
+         instances[event.pressID] = FloatingNote(pressID: event.pressID, midi: event.midiNote, startedAt: time,
+-            duration: reducedMotion ? 0.2 : 0.7, rise: reducedMotion ? 0 : 24)
++            duration: reducedMotion ? 0.2 : 0.9, rise: reducedMotion ? 0 : 48)
+     }
+     public mutating func expire(at time: TimeInterval) {
+         instances = instances.filter { time + 0.000000001 < $0.value.startedAt + $0.value.duration }
+@@ -40,6 +40,7 @@
+     public let midi: Int
+     public let rise: Double
+     public let opacity: Double
++    public let driftX: Double
+ }
+ extension FloatingNotes {
+     public func presentations(at time: TimeInterval) -> [FloatingPresentation] {
+@@ -49,7 +50,8 @@
+             let t = elapsed / note.duration
+             return FloatingPresentation(pressID: note.pressID, midi: note.midi,
+                 rise: note.rise * (1 - pow(1 - t, 3)),
+-                opacity: note.rise == 0 ? 1 - t : max(0, min(1, elapsed / 0.06, (0.7 - elapsed) / 0.4)))
++                opacity: note.rise == 0 ? 1 - t : max(0, min(1, elapsed / 0.08, (note.duration - elapsed) / 0.5)),
++                driftX: note.rise == 0 ? 0 : 4 * (1 - pow(1 - t, 3)))
+         }
+     }
+ }
+--- before/Code/Sources/PianoCore/Geometry.swift
++++ after/Code/Sources/PianoCore/Geometry.swift
+@@ -28,7 +28,7 @@
+ }
+ 
+ extension PianoGeometry {
+-    /// Quiet Ivory approved 56pt body, top-left coordinates; headroom belongs to the view.
++    /// CR-006 Quiet Ivory 112pt body, top-left coordinates; headroom belongs to the view.
+     public static func quietIvory(mapping: KeyMapping, width: Double) -> [PianoKeyRect] {
+         guard width > 4 else { return [] }
+         let slot = (width - 4) / 38
+@@ -38,7 +38,7 @@
+             let x = 2 + Double(white) * slot + (black ? -slot * 0.59 / 2 : 0.35)
+             if !black { white += 1 }
+             return PianoKeyRect(midi: key.midiNote, isBlack: black,
+-                rect: CGRect(x: x, y: 2, width: black ? slot * 0.59 : slot - 0.7, height: black ? 32 : 50))
++                rect: CGRect(x: x, y: 4, width: black ? slot * 0.59 : slot - 0.7, height: black ? 64 : 100))
+         }
+     }
+ }
+--- before/Code/Sources/PianoCore/Mapping.swift
++++ after/Code/Sources/PianoCore/Mapping.swift
+@@ -44,3 +44,8 @@
+     case invalid(String)
+     public var errorDescription: String? { if case let .invalid(message) = self { return message }; return nil }
+ }
++
++extension KeyMapping {
++    public static let defaultFilename = "keymap.ansi64.playable.v0.2.json"
++    public static let defaultMappingVersion = "ansi64-playable.0.2"
++}
+--- before/Code/Sources/PianoMac/AdaptiveOverlay.swift
++++ after/Code/Sources/PianoMac/AdaptiveOverlay.swift
+@@ -1,8 +1,11 @@
+ import Foundation
+ 
+ public enum AdaptiveOverlay {
++    public static let bodyHeight: CGFloat = 112
++    public static let headroom: CGFloat = 96
++    public static let canvasHeight: CGFloat = 208
+     public static func frame(screen: CGRect) -> CGRect {
+         CGRect(x: screen.minX + 8, y: screen.minY,
+-               width: max(1, screen.width - 16), height: 104)
++               width: max(1, screen.width - 16), height: canvasHeight)
+     }
+ }
+--- before/Code/Sources/PianoMac/InputEventQueue.swift
++++ after/Code/Sources/PianoMac/InputEventQueue.swift
+@@ -0,0 +1,27 @@
++import Foundation
++import PianoCore
++
++/// Main-run-loop capture state, updated before asynchronous delivery to the coordinator.
++/// Contains only transient held identities; never persists a typing history.
++final class InputEventQueue {
++    private var epoch: UInt64 = 0
++    private var capturedHeld = Set<String>()
++    func observe(_ event: NormalizedKeyEvent) {
++        switch event.phase {
++        case .down: capturedHeld.insert(event.physicalKeyID)
++        case .up: capturedHeld.remove(event.physicalKeyID)
++        case .pulse: break
++        }
++    }
++    func enqueue(_ event: NormalizedKeyEvent, deliver: @escaping (NormalizedKeyEvent) -> Void) {
++        observe(event)
++        let expected = epoch
++        DispatchQueue.main.async { [weak self] in
++            guard let self, self.epoch == expected else { return }
++            deliver(event)
++        }
++    }
++    /// An already captured up is reflected even if its old queued delivery is discarded.
++    func discardPending() -> Set<String> { epoch &+= 1; return capturedHeld }
++    func reset() { epoch &+= 1; capturedHeld.removeAll() }
++}
+--- before/Code/Sources/PianoMac/InputMonitor.swift
++++ after/Code/Sources/PianoMac/InputMonitor.swift
+@@ -20,12 +20,14 @@
+     var onStop: ((String) -> Void)? { get set }
+     func start(global: Bool, duration: InputSessionDuration) throws
+     func stop()
++    func discardPendingEvents() -> Set<String>
+ }
+ public final class InputMonitor: InputMonitoring {
+     public enum Mode { case stopped, local, global }
+     public private(set) var mode: Mode = .stopped
+     public var onEvent: ((NormalizedKeyEvent) -> Void)?
+     public var onStop: ((String) -> Void)?
++    private let eventQueue = InputEventQueue()
+     private let normalizer: InputNormalizer
+     private var tap: CFMachPort?
+     private var source: CFRunLoopSource?
+@@ -84,11 +86,16 @@
+     }
+     public func stop() {
+         precondition(Thread.isMainThread)
+-        accepting = false; epoch &+= 1; timer?.invalidate(); timer = nil
++        accepting = false; epoch &+= 1; eventQueue.reset(); timer?.invalidate(); timer = nil
+         if let localMonitor { NSEvent.removeMonitor(localMonitor) }; localMonitor = nil
+         if let tap { CGEvent.tapEnable(tap: tap, enable: false); CFMachPortInvalidate(tap) }
+         if let source { CFRunLoopRemoveSource(CFRunLoopGetMain(), source, .commonModes) }
+         tap = nil; source = nil; mode = .stopped
++    }
++    public func discardPendingEvents() -> Set<String> {
++        // Do not invalidate a pending failure's onStop callback.
++        guard accepting else { return [] }
++        return eventQueue.discardPending()
+     }
+     private func receive(type: CGEventType, event: CGEvent) {
+         if type == .tapDisabledByTimeout || type == .tapDisabledByUserInput {
+@@ -105,9 +112,9 @@
+     private func enqueue(_ event: NormalizedKeyEvent?) {
+         guard accepting, let event else { return }
+         let expected = epoch
+-        DispatchQueue.main.async { [weak self] in
++        eventQueue.enqueue(event) { [weak self] captured in
+             guard let self, self.accepting, self.epoch == expected else { return }
+-            self.onEvent?(event)
++            self.onEvent?(captured)
+         }
+     }
+     private func fail(_ reason: String) {
+--- before/Code/Sources/PianoMac/KeymapEditor.swift
++++ after/Code/Sources/PianoMac/KeymapEditor.swift
+@@ -0,0 +1,173 @@
++import AppKit
++import PianoCore
++
++/// A draft-only settings window. Never captures keys or invokes an audio engine.
++final class KeymapEditor: NSWindowController, NSWindowDelegate, NSTableViewDataSource {
++    private let base: KeyMapping
++    private let configuration: () -> CustomKeymap
++    private let save: (CustomKeymap, CustomKeymap) throws -> Void
++    private(set) var draft: KeymapDraft
++    private let current = NSTextField(labelWithString: "")
++    private let dirty = NSTextField(labelWithString: "")
++    private let hint = NSTextField(wrappingLabelWithString: "")
++    private let errorLabel = NSTextField(wrappingLabelWithString: "")
++    let keyPopup = NSPopUpButton(), pitchPopup = NSPopUpButton()
++    let saveButton = NSButton(title: "保存", target: nil, action: nil)
++    private let reloadButton = NSButton(title: "重新载入", target: nil, action: nil)
++    private let table = NSTableView()
++    private var lastSwapSummary: String?
++    private var rows: [KeyMapping.Key] = []
++    init(base: KeyMapping, configuration: @escaping () -> CustomKeymap, warning: String?, save: @escaping (CustomKeymap, CustomKeymap) throws -> Void) throws {
++        self.base = base; self.configuration = configuration; self.save = save
++        draft = try KeymapDraft(configuration: configuration(), selectedKey: "keyG")
++        let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 560, height: 440), styleMask: [.titled, .closable], backing: .buffered, defer: false)
++        super.init(window: window)
++        window.title = "自定义键位"; window.isReleasedWhenClosed = false; window.delegate = self; window.center()
++        let title = NSTextField(labelWithString: "让常用按键对应你熟悉的音高")
++        title.font = .systemFont(ofSize: 18, weight: .semibold)
++        let description = NSTextField(labelWithString: "选择实体键和音高，保存后生效。已占用音高会交换。")
++        description.font = .systemFont(ofSize: 12)
++        for key in base.keys { keyPopup.addItem(withTitle: Self.keyName(key)) }
++        keyPopup.target = self; keyPopup.action = #selector(keyChanged)
++        pitchPopup.target = self; pitchPopup.action = #selector(pitchChanged)
++        keyPopup.setAccessibilityLabel("实体键，仅下方五排64键")
++        pitchPopup.setAccessibilityLabel("目标音高，中央C为C4，MIDI60")
++        let selectors = NSStackView(views: [NSTextField(labelWithString: "实体键"), keyPopup, NSTextField(labelWithString: "目标音高"), pitchPopup])
++        selectors.orientation = .horizontal; selectors.spacing = 8
++        keyPopup.widthAnchor.constraint(equalToConstant: 140).isActive = true
++        pitchPopup.widthAnchor.constraint(equalToConstant: 235).isActive = true
++        for (id, title, width) in [("key", "实体键", 190.0), ("before", "当前音高", 145.0), ("after", "保存后音高", 145.0)] {
++            let column = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(id)); column.title = title; column.width = width; table.addTableColumn(column)
++        }
++        table.rowHeight = 23; table.dataSource = self; table.usesAlternatingRowBackgroundColors = true
++        table.setAccessibilityLabel("保存后全部变更")
++        let scroll = NSScrollView(); scroll.documentView = table; scroll.hasVerticalScroller = true; scroll.borderType = .bezelBorder
++        scroll.heightAnchor.constraint(equalToConstant: 145).isActive = true
++        let restore = NSButton(title: "恢复新表默认", target: self, action: #selector(restoreDefault))
++        let cancel = NSButton(title: "取消", target: self, action: #selector(cancel)); cancel.keyEquivalent = "\u{1b}"
++        saveButton.target = self; saveButton.action = #selector(saveDraft); saveButton.keyEquivalent = "\r"
++        reloadButton.target = self; reloadButton.action = #selector(reloadDraft); reloadButton.isHidden = true
++        for button in [restore, cancel, saveButton, reloadButton] { button.bezelStyle = .rounded }
++        let spacer = NSView(); spacer.setContentHuggingPriority(.defaultLow, for: .horizontal)
++        let buttons = NSStackView(views: [restore, spacer, reloadButton, cancel, saveButton]); buttons.spacing = 8
++        hint.maximumNumberOfLines = 2; hint.preferredMaxLayoutWidth = 512
++        errorLabel.maximumNumberOfLines = 2; errorLabel.preferredMaxLayoutWidth = 512
++        hint.font = .systemFont(ofSize: 11); hint.textColor = .secondaryLabelColor
++        errorLabel.font = .systemFont(ofSize: 11); errorLabel.textColor = .systemRed
++        errorLabel.setAccessibilityLabel("键位保存或载入提示")
++        errorLabel.stringValue = warning ?? ""; errorLabel.isHidden = warning == nil
++        let stack = NSStackView(views: [title, current, dirty, description, selectors, hint, scroll, errorLabel, buttons])
++        stack.orientation = .vertical; stack.alignment = .leading; stack.spacing = 10; stack.translatesAutoresizingMaskIntoConstraints = false
++        window.contentView!.addSubview(stack)
++        NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor, constant: 24), stack.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor, constant: -24), stack.topAnchor.constraint(equalTo: window.contentView!.topAnchor, constant: 20), scroll.widthAnchor.constraint(equalTo: stack.widthAnchor), buttons.widthAnchor.constraint(equalTo: stack.widthAnchor)])
++        window.initialFirstResponder = keyPopup
++        keyPopup.nextKeyView = pitchPopup; pitchPopup.nextKeyView = restore; restore.nextKeyView = cancel; cancel.nextKeyView = saveButton
++        update()
++    }
++    required init?(coder: NSCoder) { fatalError("init(coder:) unavailable") }
++    static func keyName(_ key: KeyMapping.Key) -> String { key.labelParts.main == key.accessibleName ? key.displayLabel : key.labelParts.main + " · " + key.accessibleName }
++    private func update() {
++        let candidate = draft.candidate
++        rows = base.keys.filter { candidate.notes[$0.physicalKeyID] != draft.baseline.notes[$0.physicalKeyID] }
++        current.stringValue = "当前使用：" + (draft.baseline == CustomKeymap(defaultMapping: base) ? "新表默认" : "自定义键位")
++        dirty.stringValue = rows.isEmpty ? "草稿：未修改" : "草稿：待保存 · \(rows.count)项变更"
++        keyPopup.selectItem(at: base.keys.firstIndex { $0.physicalKeyID == draft.selectedKey } ?? 0)
++        pitchPopup.removeAllItems()
++        for midi in 33...96 {
++            let owner = base.keys.first { draft.working.notes[$0.physicalKeyID] == midi }!
++            pitchPopup.addItem(withTitle: "\(CustomKeymap.noteName(midi)) · MIDI \(midi) · \(owner.displayLabel)" + (midi == 60 ? " 中央C" : ""))
++        }
++        pitchPopup.selectItem(at: draft.targetMIDI - 33)
++        hint.stringValue = lastSwapSummary ?? (rows.isEmpty ? "尚无变更。选择目标音高即可交换；关闭或取消不保存。" : "草稿 \(CustomKeymap.noteName(draft.targetMIDI))；下表列出全部待保存变更。")
++        saveButton.isEnabled = draft.dirty
++        table.reloadData()
++    }
++    func numberOfRows(in tableView: NSTableView) -> Int { rows.count }
++    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
++        let key = rows[row]
++        switch tableColumn?.identifier.rawValue {
++        case "key": return Self.keyName(key)
++        case "before": return CustomKeymap.noteName(draft.baseline.notes[key.physicalKeyID]!)
++        default: return CustomKeymap.noteName(draft.candidate.notes[key.physicalKeyID]!)
++        }
++    }
++    @objc func keyChanged() { try? draft.selectKey(base.keys[keyPopup.indexOfSelectedItem].physicalKeyID); update() }
++    @objc func pitchChanged() {
++        let target = pitchPopup.indexOfSelectedItem + 33, old = draft.targetMIDI
++        let key = base.key(draft.selectedKey)!
++        let other = base.keys.first { draft.candidate.notes[$0.physicalKeyID] == target }!
++        try? draft.selectPitch(target)
++        lastSwapSummary = target == old ? "已是此音高；草稿未改变。" : "本次交换：\(key.displayLabel) \(CustomKeymap.noteName(old))→\(CustomKeymap.noteName(target))；\(other.displayLabel) \(CustomKeymap.noteName(target))→\(CustomKeymap.noteName(old))（仅草稿）。"
++        update()
++    }
++    @objc func restoreDefault() { draft.restoreDefault(base); lastSwapSummary = "恢复新表默认（仅草稿）；下表列出全部待保存变更。"; update() }
++    @objc func cancel() { close() }
++    @objc func reloadDraft() {
++        if let fresh = try? KeymapDraft(configuration: configuration(), selectedKey: draft.selectedKey) { draft = fresh }
++        errorLabel.isHidden = true; reloadButton.isHidden = true; lastSwapSummary = nil; update()
++    }
++    @objc func saveDraft() {
++        guard draft.dirty else { return }
++        saveButton.isEnabled = false
++        do {
++            guard configuration() == draft.baseline else { throw ProbeError.invalid("键位已在其他位置更新，请重新载入后调整") }
++            try save(draft.candidate, draft.baseline); close()
++        } catch {
++            errorLabel.stringValue = "保存失败，当前键位未更改。\(error.localizedDescription)"; errorLabel.isHidden = false; errorLabel.toolTip = error.localizedDescription
++            reloadButton.isHidden = configuration() == draft.baseline
++            saveButton.isEnabled = configuration() == draft.baseline
++        }
++    }
++    func savePNG(to url: URL) throws {
++        guard let view = window?.contentView, let bitmap = view.bitmapImageRepForCachingDisplay(in: view.bounds) else { throw ProbeError.invalid("设置窗口渲染失败") }
++        view.layoutSubtreeIfNeeded()
++        guard view.bounds.contains(view.convert(saveButton.bounds, from: saveButton)) else { throw ProbeError.invalid("设置窗口底部按钮超出画布") }
++        view.cacheDisplay(in: view.bounds, to: bitmap)
++        // cacheDisplay captures transparent content, not the NSWindow background.
++        guard let image = bitmap.cgImage,
++              let context = CGContext(data: nil, width: bitmap.pixelsWide, height: bitmap.pixelsHigh,
++                bitsPerComponent: 8, bytesPerRow: bitmap.pixelsWide * 4,
++                space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue) else {
++            throw ProbeError.invalid("设置窗口位图失败")
++        }
++        let rect = CGRect(x: 0, y: 0, width: bitmap.pixelsWide, height: bitmap.pixelsHigh)
++        window?.effectiveAppearance.performAsCurrentDrawingAppearance {
++            context.setFillColor(NSColor.windowBackgroundColor.cgColor); context.fill(rect)
++        }
++        context.draw(image, in: rect)
++        guard let composed = context.makeImage(), let png = NSBitmapImageRep(cgImage: composed).representation(using: .png, properties: [:]) else { throw ProbeError.invalid("设置窗口PNG编码失败") }
++        try png.write(to: url)
++    }
++}
++
++/// Explicit diagnostic entry point: real AppKit controls, in-memory save callback, no user preferences.
++public enum KeymapEditorEvidence {
++    public static func render(base: KeyMapping, directory: URL) throws -> [String: Any] {
++        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
++        var current = CustomKeymap(defaultMapping: base), allowSave = false, writes = 0
++        let editor = try KeymapEditor(base: base, configuration: { current }, warning: nil) { next, _ in
++            guard allowSave else { throw ProbeError.invalid("验证用写入失败；当前键位保持不变") }
++            current = next; writes += 1
++        }
++        defer { editor.close() }
++        editor.window?.orderFront(nil)
++        RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.05))
++        try editor.savePNG(to: directory.appendingPathComponent("editor-default.png"))
++        editor.pitchPopup.selectItem(at: 53 - 33); editor.pitchChanged()
++        try editor.savePNG(to: directory.appendingPathComponent("editor-swap-draft.png"))
++        editor.saveDraft()
++        try editor.savePNG(to: directory.appendingPathComponent("editor-save-failed.png"))
++        guard writes == 0, editor.draft.dirty else { throw ProbeError.invalid("保存失败保护验证失败") }
++        allowSave = true; editor.saveDraft()
++        let restore = try KeymapEditor(base: base, configuration: { current }, warning: nil) { next, _ in current = next; writes += 1 }
++        defer { restore.close() }
++        restore.window?.orderFront(nil); restore.restoreDefault()
++        try restore.savePNG(to: directory.appendingPathComponent("editor-restore-draft.png"))
++        restore.cancel()
++        guard writes == 1, current.notes["keyG"] == 53 else { throw ProbeError.invalid("取消恢复不应写入") }
++        return ["kind": "production NSWindow/NSPopUpButton/NSTableView rendering", "canvasPt": [560,440],
++            "images": 4, "saveFailureRetainedDraft": true, "retryCommittedOnce": true, "cancelDidNotCommitRestore": true,
++            "persistenceCallback": "in-memory simulation; production filesystem is tested separately", "userPreferencesWritten": false,
++            "inputStarted": false, "audioStarted": false, "systemSettingsChanged": false]
++    }
++}
+--- before/Code/Sources/PianoMac/PianoView.swift
++++ after/Code/Sources/PianoMac/PianoView.swift
+@@ -34,7 +34,7 @@
+             return from + (to - from) * (3*u*u*t*0.7 + 3*u*t*t + t*t*t)
+         }
+     }
+-    public let mapping: KeyMapping
++    public private(set) var mapping: KeyMapping
+     public var showLabels = true { didSet { if oldValue != showLabels { needsDisplay = true } } }
+     public var activeMIDI: Set<Int> = [] { didSet { if oldValue != activeMIDI { updateKeys(from: oldValue, at: clock()) } } }
+     public var reducedMotion = false { didSet { if oldValue != reducedMotion { resetEffects(); motions.removeAll(); needsDisplay = true } } }
+@@ -58,6 +58,16 @@
+                 "inkBodyPt": [label.ink.minX, label.ink.minY, label.ink.width, label.ink.height],
+                 "resolvedFonts": label.fonts, "missingGlyphs": label.missing] }]
+     } }
++    /// Actual CoreText ink bounds in canvas coordinates, including a conservative halo margin.
++    public var floatingInkBounds: [CGRect] {
++        let ink = CTLineGetBoundsWithOptions(floatingLine, .useGlyphPathBounds)
++        return floatingPresentations.compactMap { note in
++            guard let shape = keys.first(where: { $0.shape.midi == note.midi })?.shape else { return nil }
++            return CGRect(x: shape.rect.midX - ink.midX + note.driftX + ink.minX,
++                y: AdaptiveOverlay.headroom + shape.rect.minY - 4 - note.rise + ink.minY - ink.maxY,
++                width: ink.width, height: ink.height).insetBy(dx: -4, dy: -4)
++        }
++    }
+     private var keys: [Key] = []
+     private var floating = FloatingNotes()
+     private var sceneVisible = true
+@@ -67,11 +77,12 @@
+     private var sampleTime = 0.0
+     private var animationTimer: Timer?
+     private var mouseKey: String?
++    public static let floatingFontSize: CGFloat = 24
+     private let floatingLine: CTLine
+     public override var isFlipped: Bool { true }
+     public init(mapping: KeyMapping, frame: NSRect) {
+         self.mapping = mapping
+-        floatingLine = Self.line("♪", 12, "626C66")
++        floatingLine = Self.line("♪", Self.floatingFontSize, "626C66")
+         super.init(frame: frame)
+         rebuildKeys()
+         setAccessibilityElement(true)
+@@ -115,6 +126,10 @@
+         }
+         needsDisplay = true
+     }
++    public func setMapping(_ mapping: KeyMapping) {
++        resetEffects(); mouseKey = nil; activeMIDI = []; motions.removeAll()
++        self.mapping = mapping; rebuildKeys()
++    }
+     public func strike(_ event: NoteEvent, at time: Double) {
+         guard sceneVisible else { return }
+         floating.strike(event, time: time, generation: floating.sceneGeneration, reducedMotion: reducedMotion)
+@@ -132,6 +147,7 @@
+         stopTimer(); needsDisplay = true
+     }
+     public func resetEffects() {
++        frozenDepressions = nil
+         floating.setVisible(false); floating.setVisible(sceneVisible)
+         floatingPresentations.removeAll(); motions.removeAll(); downTimes.removeAll(); stopTimer(); needsDisplay = true
+     }
+@@ -183,9 +199,9 @@
+         ctx.textMatrix = .identity; ctx.textPosition = .zero; CTLineDraw(line, ctx); ctx.restoreGState()
+     }
+     private func render(_ ctx: CGContext) {
+-        ctx.saveGState(); ctx.translateBy(x: 0, y: 48)
+-        fill(ctx, CGRect(x: 0, y: 0, width: bounds.width, height: 56), "353638", 3)
+-        fill(ctx, CGRect(x: 1, y: 1, width: bounds.width - 2, height: 53), "71716E", 2)
++        ctx.saveGState(); ctx.translateBy(x: 0, y: AdaptiveOverlay.headroom)
++        fill(ctx, CGRect(x: 0, y: 0, width: bounds.width, height: AdaptiveOverlay.bodyHeight), "353638", 3)
++        fill(ctx, CGRect(x: 1, y: 2, width: bounds.width - 2, height: 106), "71716E", 2)
+         for black in [false, true] {
+             for key in keys where key.shape.isBlack == black {
+                 let midi = key.shape.midi, r = key.shape.rect
+@@ -211,14 +227,14 @@
+         for note in floatingPresentations {
+             guard let shape = keys.first(where: { $0.shape.midi == note.midi })?.shape else { continue }
+             ctx.saveGState(); ctx.setAlpha(note.opacity); ctx.setShadow(offset: .zero, blur: 1.25, color: CGColor(gray: 1, alpha: 0.9))
+-            drawLine(ctx, floatingLine, x: shape.rect.midX - ink.midX, baseline: shape.rect.minY - 4 - note.rise + ink.minY)
++            drawLine(ctx, floatingLine, x: shape.rect.midX - ink.midX + note.driftX, baseline: shape.rect.minY - 4 - note.rise + ink.minY)
+             ctx.restoreGState()
+         }
+         ctx.restoreGState()
+     }
+     public override func draw(_ dirtyRect: NSRect) { if let ctx = NSGraphicsContext.current?.cgContext { render(ctx) } }
+     public override func mouseDown(with event: NSEvent) {
+-        let point = convert(event.locationInWindow, from: nil); let body = CGPoint(x: point.x, y: point.y - 48)
++        let point = convert(event.locationInWindow, from: nil); let body = CGPoint(x: point.x, y: point.y - AdaptiveOverlay.headroom)
+         let key = keys.filter { $0.shape.isBlack }.first { $0.shape.rect.contains(body) } ?? keys.filter { !$0.shape.isBlack }.first { $0.shape.rect.contains(body) }
+         guard let key, let physical = mapping.keys.first(where: { $0.midiNote == key.shape.midi }) else { return }
+         mouseKey = physical.physicalKeyID; onPress?(physical.physicalKeyID)
+--- before/Code/Sources/PianoMac/ProbeController.swift
++++ after/Code/Sources/PianoMac/ProbeController.swift
+@@ -5,7 +5,13 @@
+ 
+ /// Native integrated candidate with explicit bounded test entry points.
+ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDelegate {
+-    private let mapping: KeyMapping
++    private var mapping: KeyMapping
++    private let defaultMapping: KeyMapping
++    private let customStore: CustomKeymapStore
++    private var customConfiguration: CustomKeymap
++    private var keymapWarning: String?
++    private var keymapEditor: KeymapEditor?
++    private var ignoredUntilRelease = Set<String>()
+     private let sources: [AudioSource]
+     private let preferencesURL: URL
+     private var preferences: AppPreferences
+@@ -41,6 +47,20 @@
+     private var soundButton: NSButton!
+     private var labels = true
+     private var showOverlay = false
++    private let permissionCheck: () -> Bool
++    private let secureInputCheck: () -> Bool
++    private let dockVisibilityCheck: ((CGRect, TimeInterval) -> DockVisibility)?
++    private var sessionBlocks = Set<String>()
++    private var sessionBlocked: Bool { !sessionBlocks.isEmpty }
++    private var overlayBlocked: Bool { sessionBlocked || secureInputCheck() }
++    private var overlayStatus: String {
++        if !showOverlay { return "已隐藏" }
++        if sessionBlocked { return "锁屏/睡眠期间隐藏" }
++        if secureInputCheck() { return "安全输入阻断，结束后仅恢复静态显示" }
++        if targetScreen == nil { return "等待可用屏幕" }
++        if dockFade.dockHidden { return lastDockVisibility == .unknown ? "Dock状态未知，短暂等待" : "等待Dock隐藏" }
++        return lastDockVisibility == .unknown ? "已显示（Dock状态未知）" : "已显示"
++    }
+     private var dockFade = DockFade()
+     private let dockObserver = DockWindowVisibilityObserver()
+     private var fadeTimer: Timer?
+@@ -53,9 +73,16 @@
+     private var diagnosticsTimer: Timer?
+     private let diagnosticsLabel = NSTextField(wrappingLabelWithString: "运行诊断：尚未开始。")
+ 
+-    public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL, input: InputMonitoring? = nil, audioEngine: AuditionEngine = SamplerAudio(), installStatusItem: Bool = true, dockAdapter: DockAdapter? = nil, startupWindowPresenter: (() -> Void)? = nil, alertVolume: AlertVolumeAdapter? = nil) throws {
++    public init(mapping: KeyMapping, sources: [AudioSource], preferencesURL: URL, input: InputMonitoring? = nil, audioEngine: AuditionEngine = SamplerAudio(), installStatusItem: Bool = true, dockAdapter: DockAdapter? = nil, startupWindowPresenter: (() -> Void)? = nil, alertVolume: AlertVolumeAdapter? = nil, secureInputCheck: @escaping () -> Bool = { InputMonitor.secureInput }, permissionCheck: @escaping () -> Bool = { InputMonitor.hasExistingPermission }, dockVisibilityCheck: ((CGRect, TimeInterval) -> DockVisibility)? = nil) throws {
+         guard let first = sources.first else { throw ProbeError.invalid("没有可用试听音源") }
+-        self.mapping = mapping; self.sources = sources; self.preferencesURL = preferencesURL
++        self.permissionCheck = permissionCheck
++        self.secureInputCheck = secureInputCheck; self.dockVisibilityCheck = dockVisibilityCheck
++        self.defaultMapping = mapping
++        customStore = CustomKeymapStore(url: preferencesURL.deletingLastPathComponent().appendingPathComponent("custom-keymap.json"), defaultMapping: mapping)
++        let custom = customStore.load()
++        customConfiguration = custom.configuration; keymapWarning = custom.warning
++        let effectiveMapping = try custom.configuration.mapping(from: mapping)
++        self.mapping = effectiveMapping; self.sources = sources; self.preferencesURL = preferencesURL
+         audio = AuditionSession(engine: audioEngine, source: first)
+         self.installStatusItem = installStatusItem
+         if let dockAdapter { self.dock = dockAdapter; self.systemDock = true }
+@@ -63,8 +90,8 @@
+         startupFlow = try StartupFlow(intentURL: preferencesURL.deletingLastPathComponent().appendingPathComponent("authorization-start.json"))
+         self.startupWindowPresenter = startupWindowPresenter
+         self.alertVolume = alertVolume ?? AlertVolumeAdapter(storage: StandardAdditionsAlertVolumeStorage())
+-        coordinator = NoteCoordinator(mapping: mapping)
+-        self.input = try input ?? InputMonitor(mapping: mapping)
++        coordinator = NoteCoordinator(mapping: effectiveMapping)
++        self.input = try input ?? InputMonitor(mapping: effectiveMapping)
+         super.init()
+         _ = coordinator.setSoundEnabled(false)
+         _ = coordinator.panic(paused: true)
+@@ -86,6 +113,7 @@
+         menu.onOpen = { [weak self] in self?.showControlWindow() }
+         menu.onPause = { [weak self] in self?.togglePause() }
+         menu.onSound = { [weak self] in self?.toggleSound() }
++        menu.onCustomize = { [weak self] in self?.showKeymapEditor() }
+         menu.onLabels = { [weak self] in self?.toggleLabels() }
+         menu.onOverlay = { [weak self] in self?.toggleOverlay() }
+         menu.onGlobal = { [weak self] in self?.startGlobal() }
+@@ -106,7 +134,7 @@
+     }
+     private func buildStartupWindow() {
+         startupWindow = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 480, height: 490), styleMask: [.titled, .closable], backing: .buffered, defer: false)
+-        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.6"
++        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.7"
+         startupWindow.delegate = self
+         startupWindow.title = "打字钢琴试用 · \(version)"; startupWindow.center(); startupWindow.isReleasedWhenClosed = false
+         let title = NSTextField(labelWithString: "让打字伴随琴声")
+@@ -129,6 +157,7 @@
+         if startupFlow.pendingAuthorization {
+             startupMessage.stringValue = "存在尚未完成的授权开始请求。本次请求返回App可续接；若已退出重开，请点击主按钮继续，或取消本次开始。"
+         } else { startupMessage.stringValue = sessionStatus }
++        if let keymapWarning { startupMessage.stringValue += "\n" + keymapWarning }
+         startupWindow?.makeKeyAndOrderFront(nil); NSApp.activate(ignoringOtherApps: true)
+     }
+     public func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+@@ -137,7 +166,7 @@
+     }
+     func handleDuplicateLaunch() { showStartupWindow() }
+     private func updateStartupControls() {
+-        startupPrimary?.title = InputMonitor.hasExistingPermission ? "开始打字钢琴" : "授权并开始"
++        startupPrimary?.title = permissionCheck() ? "开始打字钢琴" : "授权并开始"
+         startupPrimary?.isEnabled = input.mode != .global && !authorizationRequestInFlight
+         startupCancel?.isHidden = !startupFlow.pendingAuthorization
+     }
+@@ -164,20 +193,20 @@
+     }
+     private func button(_ title: String, _ action: Selector) -> NSButton { NSButton(title: title, target: self, action: action) }
+     private func buildWindow() {
+-        window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1040, height: 560),
++        window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1040, height: 680),
+             styleMask: [.titled, .closable, .miniaturizable], backing: .buffered, defer: false)
+         window.title = "打字钢琴试用 · 测试控制台"
+         window.delegate = self; window.center(); window.isReleasedWhenClosed = false
+         let title = NSTextField(labelWithString: "本窗口试弹：无需输入监控权限，失焦或关闭窗口即停止；全局打字可后台持续运行。")
+-        let permission = NSTextField(labelWithString: "当前进程输入监控预检：\(InputMonitor.hasExistingPermission ? "已授权（捕获待实按）" : "未授权")；Fn/Caps/双侧均待实按")
++        let permission = NSTextField(labelWithString: "当前进程输入监控预检：\(permissionCheck() ? "已授权（捕获待实按）" : "未授权")；Fn/Caps/双侧均待实按")
+         let first = NSStackView(views: [button("本窗口试弹（无需权限）", #selector(startLocalTrial)), button("本窗口测试60秒", #selector(startLocal)), button("全局观察60秒", #selector(startGlobal)), button("暂停全部", #selector(stopAll)), button("退出", #selector(quitApp))])
+         first.orientation = .horizontal; first.spacing = 8
+         soundButton = button("启用所选声音", #selector(toggleSound))
+         let second = NSStackView(views: [soundButton, button("显示/隐藏钢琴", #selector(toggleOverlay)), button("重新检查Dock状态", #selector(acknowledge)), button("显示/隐藏标签", #selector(toggleLabels))])
+         second.orientation = .horizontal; second.spacing = 8
+-        preview = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
++        preview = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
+         preview.translatesAutoresizingMaskIntoConstraints = false
+-        preview.heightAnchor.constraint(equalToConstant: 104).isActive = true
++        preview.heightAnchor.constraint(equalToConstant: AdaptiveOverlay.canvasHeight).isActive = true
+         preview.widthAnchor.constraint(equalToConstant: 1000).isActive = true
+         preview.onPress = { [weak self] key in
+             guard let self, self.input.mode != .stopped else { return }
+@@ -194,7 +223,7 @@
+         stack.translatesAutoresizingMaskIntoConstraints = false
+         window.contentView!.addSubview(stack)
+         NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor, constant: 20), stack.topAnchor.constraint(equalTo: window.contentView!.topAnchor, constant: 18), stack.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor, constant: -20)])
+-        overlayView = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
++        overlayView = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
+         panel = ProbePanel(content: overlayView)
+         preview.showLabels = labels; overlayView.showLabels = labels
+         positionPanel()
+@@ -207,7 +236,7 @@
+                 return CGDisplayIsBuiltin(id.uint32Value) != 0
+             } ?? NSScreen.main ?? screens.first
+         }
+-        guard let screen = targetScreen else { showOverlay = false; dockTimer?.invalidate(); dockTimer = nil; panel.orderOut(nil); return }
++        guard let screen = targetScreen else { panel.alphaValue = 0; panel.orderOut(nil); return }
+         panel.setFrame(AdaptiveOverlay.frame(screen: screen.frame), display: true)
+     }
+     @objc private func startLocal() { start(global: false) }
+@@ -232,9 +261,9 @@
+     }
+     private func handleStartup(_ event: StartupFlow.Event) {
+         guard !authorizationRequestInFlight else { return }
+-        if event == .becameActive && !authorizationReturnGate.canContinue(permission: InputMonitor.hasExistingPermission) { return }
++        if event == .becameActive && !authorizationReturnGate.canContinue(permission: permissionCheck()) { return }
+         do {
+-            let action = try startupFlow.handle(event, permission: InputMonitor.hasExistingPermission, secureInput: InputMonitor.secureInput)
++            let action = try startupFlow.handle(event, permission: permissionCheck(), secureInput: overlayBlocked)
+             switch action {
+             case .none: break
+             case .start: startContinuousTrial(global: true)
+@@ -245,7 +274,7 @@
+                 authorizationRequestInFlight = true
+                 updateStartupControls()
+                 _ = CGRequestListenEventAccess() // Only this explicit primary-button path can request.
+-                if InputMonitor.hasExistingPermission && NSApp.isActive {
++                if permissionCheck() && NSApp.isActive {
+                     authorizationRequestInFlight = false
+                     authorizationReturnGate.reset()
+                     handleStartup(.becameActive)
+@@ -258,7 +287,7 @@
+                     _ = try startupFlow.handle(.cancel, permission: false, secureInput: false)
+                     startupMessage.stringValue = "未能打开系统设置，本次开始已取消。请手动前往隐私与安全性 → 输入监控允许本App，再点击开始。"
+                     sessionStatus = "已暂停：未能打开输入监控设置"
+-                } else if NSApp.isActive && authorizationReturnGate.canContinue(permission: InputMonitor.hasExistingPermission) {
++                } else if NSApp.isActive && authorizationReturnGate.canContinue(permission: permissionCheck()) {
+                     // A nested Settings activation/return may have occurred while the request was in flight.
+                     handleStartup(.becameActive)
+                     return
+@@ -293,7 +322,7 @@
+             soundButton.title = "关闭声音并清尾音"
+             receivedCount = 0
+             sessionStatus = global ? "运行中：持续全局打字" : "运行中：本窗口试弹"
+-            if global { toggleOverlay() }
++            if global && !showOverlay { toggleOverlay() }
+             startupWindow.orderOut(nil)
+             if !global { showControlWindow(); window.makeFirstResponder(preview) }
+             status.stringValue = global ? "打字钢琴已开始；持续运行，使用 ♪ 菜单暂停或退出。" : "本窗口试弹已开始（无需权限）；可持续打字或点击琴键，失焦、关闭窗口或暂停即停止。"
+@@ -314,7 +343,7 @@
+         var result = audio.runtimeDiagnostics()
+         result["effectiveKeyEvents"] = receivedCount
+         result["inputMode"] = String(describing: input.mode)
+-        result["globalInputPermission"] = InputMonitor.hasExistingPermission
++        result["globalInputPermission"] = permissionCheck()
+         result["secureInput"] = InputMonitor.secureInput
+         result["alertVolumeObserved"] = alertVolume.observed.map { $0 as Any } ?? NSNull()
+         result["alertVolumeOriginalThisSession"] = alertVolume.originalVolume.map { $0 as Any } ?? NSNull()
+@@ -325,6 +354,11 @@
+         result["dockVisibility"] = lastDockVisibility.rawValue
+         result["dockVisibilitySource"] = dockObserver.detail
+         result["overlayAlpha"] = panel?.alphaValue ?? 0
++        result["overlayRequested"] = showOverlay
++        result["overlayVisible"] = panel?.isVisible ?? false
++        result["overlayStatus"] = overlayStatus
++        result["mappingVersion"] = mapping.mappingVersion
++        result["keymapWarning"] = keymapWarning.map { $0 as Any } ?? NSNull()
+         result["privacy"] = "Aggregate counters only; no key identities, sequences, samples, microphone, or other-app audio."
+         return result
+     }
+@@ -343,7 +377,12 @@
+         } catch { status.stringValue = "诊断导出失败：\(error.localizedDescription)" }
+     }
+     private func receive(_ event: NormalizedKeyEvent, source: KeyInputSource = .keyboard) {
+-        guard input.mode != .stopped, !InputMonitor.secureInput, let normalized = reducer.consume(event, source: source) else { return }
++        guard input.mode != .stopped, !overlayBlocked else { return }
++        if source == .keyboard && ignoredUntilRelease.contains(event.physicalKeyID) {
++            if event.phase == .up { ignoredUntilRelease.remove(event.physicalKeyID) }
++            return
++        }
++        guard let normalized = reducer.consume(event, source: source) else { return }
+         receivedCount += 1
+         apply(coordinator.consume(normalized))
+         if let strike = coordinator.lastStrike {
+@@ -373,13 +412,14 @@
+         }
+     }
+     private func refresh() {
+-        statusMenu?.update(soundEnabled: coordinator.soundEnabled, showLabels: labels, showOverlay: showOverlay,
++        statusMenu?.update(soundEnabled: coordinator.soundEnabled, showLabels: labels, showOverlay: showOverlay, overlayVisible: !overlayBlocked && !dockFade.dockHidden && targetScreen != nil, overlayStatus: overlayStatus,
+             paused: coordinator.paused, dockDesired: dock.observed ?? dock.desired, dockKnown: dock.observed != nil, systemDock: systemDock, sourceID: audio.source.id, sessionStatus: sessionStatus + (!coordinator.paused && !coordinator.soundEnabled ? "（声音关闭）" : ""))
++        statusMenu?.updateKeymap(custom: customConfiguration != CustomKeymap(defaultMapping: defaultMapping), warning: keymapWarning)
+         updateStartupControls()
+         preview?.setSceneVisible(window?.isVisible == true && !coordinator.paused)
+         let keys = Set(coordinator.active.values.map { $0.key.midiNote })
+         preview?.activeMIDI = keys
+-        let sceneVisible = showOverlay && coordinator.overlayVisible
++        let sceneVisible = showOverlay && !overlayBlocked && coordinator.visualEnabled && !dockFade.dockHidden
+         if sceneVisible && !overlaySceneVisible {
+             // Restore held-key state while invisible, so no historical down animation or note is replayed.
+             overlayView?.setSceneVisible(false); overlayView?.activeMIDI = keys
+@@ -388,7 +428,7 @@
+         if sceneVisible { overlayView?.activeMIDI = keys }
+         updatePanelOpacity()
+     }
+-    @objc func stopAll() { pause("已暂停：监听、声音、尾音、延迟释放和浮层已清理。") }
++    @objc func stopAll() { pause("已暂停：监听、声音、尾音与动画已清理；钢琴可静态显示。") }
+     private func pause(_ reason: String, preserveAuthorization: Bool = false) {
+         if !preserveAuthorization {
+             authorizationReturnGate.reset()
+@@ -397,12 +437,12 @@
+         }
+         sessionStatus = "已暂停：\(reason)"
+         diagnosticsTimer?.invalidate(); diagnosticsTimer = nil
+-        input.stop(); reducer.reset()
++        input.stop(); reducer.reset(); ignoredUntilRelease.removeAll()
+         for item in pending.values { item.cancel() }; pending.removeAll()
+         apply(coordinator.panic(paused: true))
+         audio.disable(); _ = coordinator.setSoundEnabled(false)
+         soundButton?.title = "启用所选声音"
+-        showOverlay = false; dockTimer?.invalidate(); dockTimer = nil
++        preview?.resetEffects(); overlayView?.resetEffects()
+         status.stringValue = reason; refresh(); refreshDiagnostics()
+     }
+     @objc func toggleSound() {
+@@ -423,18 +463,15 @@
+         preferences.showKeyLabels = labels; savePreferences(); refresh()
+     }
+     @objc func toggleOverlay() {
+-        if !showOverlay {
+-            guard !coordinator.paused, !InputMonitor.secureInput else {
+-                status.stringValue = "当前已暂停或安全输入阻断；显示开关不会解除暂停。请在安全环境重新开启测试。"
+-                showControlWindow()
+-                return
+-            }
+-        }
+         showOverlay.toggle()
+         if showOverlay {
+-            dockFade = DockFade(); coordinator.dockHidden = false; dockObserver.invalidate()
++            dockObserver.invalidate()
+             dockFade.setReducedMotion(NSWorkspace.shared.accessibilityDisplayShouldReduceMotion, at: ProcessInfo.processInfo.systemUptime)
+             positionPanel()
++            lastDockVisibility = observeDock(at: ProcessInfo.processInfo.systemUptime)
++            dockFade = DockFade(initialVisibility: lastDockVisibility)
++            dockFade.setReducedMotion(NSWorkspace.shared.accessibilityDisplayShouldReduceMotion, at: ProcessInfo.processInfo.systemUptime)
++            coordinator.dockHidden = dockFade.dockHidden
+             dockTimer?.invalidate()
+             dockTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in self?.dockTick() }
+             if let dockTimer { RunLoop.main.add(dockTimer, forMode: .common) }
+@@ -442,18 +479,28 @@
+         refresh()
+     }
+     @objc private func acknowledge() { dockObserver.invalidate(); dockTick() }
+-    private func dockTick() {
+-        if InputMonitor.secureInput { pause("安全输入阻断：浮层已隐藏"); return }
+-        guard showOverlay, !coordinator.paused, let screen = targetScreen,
+-              let id = screen.deviceDescription[NSDeviceDescriptionKey("NSScreenNumber")] as? NSNumber else { return }
++    private func observeDock(at time: TimeInterval) -> DockVisibility {
++        guard let screen = targetScreen,
++              let id = screen.deviceDescription[NSDeviceDescriptionKey("NSScreenNumber")] as? NSNumber else { return .unknown }
++        let bounds = CGDisplayBounds(id.uint32Value)
++        return dockVisibilityCheck?(bounds, time) ?? dockObserver.observe(screenBounds: bounds, at: time)
++    }
++    func setSessionBlocked(_ blocked: Bool, reason: String = "session") {
++        if blocked { sessionBlocks.insert(reason) } else { sessionBlocks.remove(reason) }
++        if blocked { pause("系统会话/睡眠阻断：已安全暂停") }
++        else { refresh() } // Never resumes input or audio.
++    }
++    func dockTick() {
++        if overlayBlocked && !coordinator.paused { pause("安全输入或系统会话阻断：已安全暂停") }
++        guard showOverlay else { return }
+         let now = ProcessInfo.processInfo.systemUptime
+-        lastDockVisibility = dockObserver.observe(screenBounds: CGDisplayBounds(id.uint32Value), at: now)
++        lastDockVisibility = observeDock(at: now)
+         dockFade.observe(lastDockVisibility, at: now)
+         coordinator.dockHidden = dockFade.dockHidden
+         refresh()
+     }
+     private func updatePanelOpacity() {
+-        guard showOverlay, !coordinator.paused, coordinator.visualEnabled else {
++        guard showOverlay, !overlayBlocked, targetScreen != nil, coordinator.visualEnabled else {
+             fadeTimer?.invalidate(); fadeTimer = nil; fadeTimerGeneration = nil
+             panel?.alphaValue = 0; panel?.orderOut(nil); return
+         }
+@@ -489,6 +536,34 @@
+         status.stringValue = "已选择\(source.title)。测试与声音已停止，需重新开启测试并启用声音；缺音不会替补。"
+         refresh()
+     }
++    private func showKeymapEditor() {
++        do {
++            if keymapEditor?.window?.isVisible != true {
++                keymapEditor = try KeymapEditor(base: defaultMapping, configuration: { [unowned self] in self.customConfiguration }, warning: keymapWarning) { [unowned self] candidate, baseline in
++                    try self.saveCustomKeymap(candidate, expected: baseline)
++                }
++            }
++            keymapEditor?.showWindow(nil); keymapEditor?.window?.makeKeyAndOrderFront(nil)
++            NSApp.activate(ignoringOtherApps: true)
++        } catch { status.stringValue = "无法打开键位设置：\(error.localizedDescription)" }
++    }
++    func saveCustomKeymap(_ configuration: CustomKeymap, expected: CustomKeymap? = nil) throws {
++        if let expected, expected != customConfiguration { throw ProbeError.invalid("键位已在其他位置更新，请重新载入后调整") }
++        let next = try configuration.mapping(from: defaultMapping)
++        try customStore.save(configuration) // No runtime changes if validation/persistence fails.
++        let paused = coordinator.paused, sound = coordinator.soundEnabled
++        ignoredUntilRelease = input.discardPendingEvents()
++        reducer.reset()
++        for item in pending.values { item.cancel() }; pending.removeAll()
++        apply(coordinator.panic(paused: paused)) // Keep the prepared audio engine and volume.
++        mapping = next; coordinator = NoteCoordinator(mapping: next)
++        _ = coordinator.setSoundEnabled(sound)
++        if paused { _ = coordinator.panic(paused: true) }
++        preview?.setMapping(next); overlayView?.setMapping(next)
++        customConfiguration = configuration; keymapWarning = nil
++        if overlayBlocked { pause("安全输入或系统会话阻断：已安全暂停") }
++        refresh()
++    }
+     private func alert(_ title: String, _ text: String, buttons: [String]) -> NSApplication.ModalResponse {
+         let alert = NSAlert(); alert.messageText = title; alert.informativeText = text
+         for title in buttons { alert.addButton(withTitle: title) }
+@@ -496,7 +571,7 @@
+         return alert.runModal()
+     }
+     private func showAbout() {
+-        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.6"
++        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0.2.7"
+         _ = alert("打字钢琴 · \(version)", "默认停止输入与声音。点击开始打字钢琴后持续运行，可从菜单暂停或退出；测试菜单仍保留60秒模式。全局测试仅在已有输入监控授权时启动；仅在点击授权并开始时申请输入监控，不修改输入。Fn、Caps Lock、双侧修饰、中文输入和系统Dock仍需实按验收。Dock调用系统原生自动隐藏设置，钢琴宽度自动适应屏幕。默认使用全64音试用钢琴；测试子菜单中的局部候选缺音不替补。", buttons: ["知道了"])
+     }
+     private func dockResult(_ outcome: DockAdapter.Outcome) {
+@@ -587,12 +662,18 @@
+             guard let self, self.input.mode == .local else { return }
+             self.pause("本窗口测试失焦，已清理按键和声音；全局测试不受此规则影响")
+         })
++        let distributed = DistributedNotificationCenter.default()
++        notifications.append(distributed.addObserver(forName: Notification.Name("com.apple.screenIsLocked"), object: nil, queue: .main) { [weak self] _ in self?.setSessionBlocked(true, reason: "lock") })
++        notifications.append(distributed.addObserver(forName: Notification.Name("com.apple.screenIsUnlocked"), object: nil, queue: .main) { [weak self] _ in self?.setSessionBlocked(false, reason: "lock") })
+         let workspace = NSWorkspace.shared.notificationCenter
+-        for name in [NSWorkspace.willSleepNotification, NSWorkspace.sessionDidResignActiveNotification] {
+-            notifications.append(workspace.addObserver(forName: name, object: nil, queue: .main) { [weak self] _ in self?.pause("系统会话/睡眠阻断：已安全暂停") })
++        for (name, reason) in [(NSWorkspace.willSleepNotification, "sleep"), (NSWorkspace.sessionDidResignActiveNotification, "inactiveSession")] {
++            notifications.append(workspace.addObserver(forName: name, object: nil, queue: .main) { [weak self] _ in self?.setSessionBlocked(true, reason: reason) })
++        }
++        for (name, reason) in [(NSWorkspace.didWakeNotification, "sleep"), (NSWorkspace.sessionDidBecomeActiveNotification, "inactiveSession")] {
++            notifications.append(workspace.addObserver(forName: name, object: nil, queue: .main) { [weak self] _ in self?.setSessionBlocked(false, reason: reason) })
+         }
+         notifications.append(workspace.addObserver(forName: NSWorkspace.activeSpaceDidChangeNotification, object: nil, queue: .main) { [weak self] _ in
+-            self?.showOverlay = false; self?.dockTimer?.invalidate(); self?.dockTimer = nil; self?.refresh()
++            self?.dockObserver.invalidate(); self?.dockTick()
+         })
+         notifications.append(NotificationCenter.default.addObserver(forName: NSApplication.didChangeScreenParametersNotification, object: nil, queue: .main) { [weak self] _ in
+             self?.targetScreen = nil; self?.positionPanel(); self?.refresh()
+@@ -624,6 +705,8 @@
+     }
+     public func applicationWillTerminate(_ notification: Notification) {
+         if !skipAlertRestoreOnExit { _ = alertVolume.restore() }
++        keymapEditor?.close()
++        showOverlay = false; dockTimer?.invalidate(); dockTimer = nil
+         pause("退出", preserveAuthorization: true); audio.disable(); window?.orderOut(nil); startupWindow?.orderOut(nil)
+         _ = dock.restoreOnExit() // Failure leaves an atomic recovery ticket; no retry loop.
+     }
+--- before/Code/Sources/PianoMac/ProbeMenu.swift
++++ after/Code/Sources/PianoMac/ProbeMenu.swift
+@@ -1,6 +1,7 @@
+ import AppKit
+ import CoreText
+ import PianoAudio
++import PianoCore
+ 
+ /// Native daily menu, with bounded input/audio/system experiments in a separate submenu.
+ public final class ProbeMenu: NSObject, NSMenuDelegate {
+@@ -18,6 +19,7 @@
+     public var onOpen: (() -> Void)?
+     public var onPause: (() -> Void)?
+     public var onSound: (() -> Void)?
++    public var onCustomize: (() -> Void)?
+     public var onLabels: (() -> Void)?
+     public var onOverlay: (() -> Void)?
+     public var onGlobal: (() -> Void)?
+@@ -36,6 +38,8 @@
+     private let alertStatus = NSMenuItem(title: "提示音：默认保持系统现状", action: nil, keyEquivalent: "")
+     private let labels = NSMenuItem(title: "显示按键标签", action: nil, keyEquivalent: "")
+     private let overlay = NSMenuItem(title: "显示钢琴", action: nil, keyEquivalent: "")
++    private let keymapStatus = NSMenuItem(title: "当前：默认键位", action: nil, keyEquivalent: "")
++    private let overlayStatusItem = NSMenuItem(title: "钢琴：已隐藏", action: nil, keyEquivalent: "")
+     private let dock = NSMenuItem(title: "自动隐藏 Dock", action: nil, keyEquivalent: "")
+     private var sourceItems: [NSMenuItem] = []
+     private let mode = NSMenuItem(title: "Dock：模拟模式，不改系统", action: nil, keyEquivalent: "")
+@@ -76,6 +80,9 @@
+         add("系统声音设置…", #selector(openSoundSettings), to: menu)
+         menu.addItem(.separator())
+         wire(overlay, #selector(toggleOverlay), menu); wire(labels, #selector(toggleLabels), menu)
++        overlayStatusItem.isEnabled = false; menu.addItem(overlayStatusItem)
++        add("自定义键位…", #selector(customize), to: menu)
++        keymapStatus.isEnabled = false; menu.addItem(keymapStatus)
+         menu.addItem(.separator()); wire(dock, #selector(toggleDock), menu)
+         add("系统Dock设置…", #selector(openDockSettings), to: menu)
+         let automaticWidth = NSMenuItem(title: "钢琴宽度：自动适应屏幕", action: nil, keyEquivalent: "")
+@@ -111,6 +118,11 @@
+         let item = NSMenuItem(title: title, action: nil, keyEquivalent: ""), submenu = NSMenu(title: title)
+         submenu.autoenablesItems = false; item.submenu = submenu; parent.addItem(item); return submenu
+     }
++    public func updateKeymap(custom: Bool, warning: String?) {
++        keymapStatus.title = warning == nil ? (custom ? "当前：自定义键位" : "当前：默认键位") : "当前：默认键位（配置读取失败）"
++        keymapStatus.toolTip = warning
++    }
++    @objc private func customize() { onCustomize?() }
+     public func menuWillOpen(_ menu: NSMenu) { onWillOpen?() }
+     public func updateAlertVolume(muted: Bool?, detail: String) {
+         alertMute.state = muted.map { $0 ? .on : .off } ?? .mixed
+@@ -118,9 +130,10 @@
+         alertStatus.toolTip = detail; alertMute.toolTip = detail
+     }
+     public func setVolume(_ value: Double) { slider.doubleValue = min(1, max(0, value)); percentage.stringValue = "\(Int((slider.doubleValue * 100).rounded()))%" }
+-    public func update(soundEnabled: Bool, showLabels: Bool, showOverlay: Bool, paused: Bool = false, dockDesired: Bool = true, dockKnown: Bool = true, systemDock: Bool = false, sourceID: String = "synthetic", sessionStatus: String? = nil) {
++    public func update(soundEnabled: Bool, showLabels: Bool, showOverlay: Bool, overlayVisible: Bool = true, overlayStatus: String? = nil, paused: Bool = false, dockDesired: Bool = true, dockKnown: Bool = true, systemDock: Bool = false, sourceID: String = "synthetic", sessionStatus: String? = nil) {
+         session.title = sessionStatus ?? (paused ? "已暂停" : "运行中")
+-        sound.state = soundEnabled ? .on : .off; labels.state = showLabels ? .on : .off; overlay.state = showOverlay ? .on : .off
++        sound.state = soundEnabled ? .on : .off; labels.state = showLabels ? .on : .off; overlay.state = showOverlay ? (overlayVisible ? .on : .mixed) : .off
++        overlayStatusItem.title = "钢琴：" + (overlayStatus ?? (showOverlay ? "已显示" : "已隐藏"))
+         pause.title = paused ? "开始打字钢琴" : "暂停打字钢琴"; dock.state = dockKnown ? (dockDesired ? .on : .off) : .mixed
+         mode.title = systemDock ? "Dock：系统原生自动隐藏" : "Dock：模拟模式，不改系统"
+         for item in sourceItems { item.state = item.representedObject as? String == sourceID ? .on : .off }
+--- before/Code/Sources/PianoMac/QuietIvoryProvenance.swift
++++ after/Code/Sources/PianoMac/QuietIvoryProvenance.swift
+@@ -14,7 +14,7 @@
+         guard themeSHA256 == "1cd6ec885ff33d3cb071300c63b753604d29c5b4b28fbcdccf69812fff0220fb" else {
+             throw ProbeError.invalid("Quiet Ivory主题缺失或与批准候选不符：\(themeURL.path)")
+         }
+-        guard mappingSHA256 == "147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b" else {
++        guard ["147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b", "da9646135f51ffb1257fa5b972d8cae2ad5cc6d9f6a0cd1e20e263e828313b83"].contains(mappingSHA256) else {
+             throw ProbeError.invalid("主题对应映射不符：\(mappingURL.path)，须批准后重新适配")
+         }
+     }
+@@ -22,7 +22,7 @@
+     public var metadata: [String: Any] {
+         let binaryHash = (try? Data(contentsOf: URL(fileURLWithPath: CommandLine.arguments[0]))).map(Self.digest) ?? "unavailable"
+         return ["themeVersion": themeVersion, "themeSHA256": themeSHA256, "mappingSHA256": mappingSHA256,
+-         "artifactState": "design_proposal", "integrationBuild": "C-001C", "executableSHA256": binaryHash, "OS": ProcessInfo.processInfo.operatingSystemVersionString,
++         "artifactState": "design_proposal", "integrationBuild": "C-027", "visualRevision": "CR-006 / U-027", "executableSHA256": binaryHash, "OS": ProcessInfo.processInfo.operatingSystemVersionString,
+          "hardwareInput": false, "hardwareAudio": false, "systemDockWrites": false]
+     }
+ }
+--- before/Code/Sources/PianoProbe/main.swift
++++ after/Code/Sources/PianoProbe/main.swift
+@@ -11,9 +11,10 @@
+ let arguments = CommandLine.arguments
+ let sourceRoot = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+ let resources = Bundle.main.resourceURL ?? sourceRoot
+-let bundleMap = resources.appendingPathComponent("keymap.ansi64.v0.1.json")
++let bundleMap = resources.appendingPathComponent(KeyMapping.defaultFilename)
+ let bundled = FileManager.default.fileExists(atPath: bundleMap.path)
+-let mappingURL = bundled ? bundleMap : sourceRoot.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")
++let mappingFolder = bundled ? resources : sourceRoot.appendingPathComponent("contracts")
++let mappingURL = mappingFolder.appendingPathComponent(KeyMapping.defaultFilename)
+ let themeURL = bundled ? resources.appendingPathComponent("theme.candidate.json") : sourceRoot.appendingPathComponent("Design/UI/theme.candidate.json")
+ do {
+     let mapping = try KeyMapping.load(url: mappingURL)
+@@ -76,7 +77,7 @@
+             for labels in [true, false] {
+                 for scenario in ["rest", "single", "multi"] {
+                     let ids = scenarios[scenario]!
+-                    let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 104))
++                    let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: CGFloat(width), height: AdaptiveOverlay.canvasHeight))
+                     view.appearance = NSAppearance(named: .aqua); view.showLabels = labels
+                     view.automaticAnimation = false; view.clock = { 0 }
+                     view.activeMIDI = Set(ids.compactMap { mapping.key($0)?.midiNote })
+@@ -84,8 +85,8 @@
+                     for scale in [1, 2] {
+                         let filename = "native-\(width)-\(scenario)-labels-\(labels)@\(scale)x.png"
+                         try view.savePNG(to: directory.appendingPathComponent(filename), scale: scale)
+-                        captures.append(["file": filename, "widthPt": width, "canvasHeightPt": 104,
+-                            "bodyOriginPt": [0, 48], "cropOriginPt": [0, 0], "backingScale": scale,
++                        captures.append(["file": filename, "widthPt": width, "canvasHeightPt": AdaptiveOverlay.canvasHeight,
++                            "bodyOriginPt": [0, AdaptiveOverlay.headroom], "cropOriginPt": [0, 0], "backingScale": scale,
+                             "scenario": scenario, "pressedPhysicalIDs": ids, "elapsedMs": 45, "showLabels": labels,
+                             "reducedMotion": false, "hiddenReasons": [], "actualNativeMetrics": view.renderMetrics])
+                     }
+@@ -105,7 +106,7 @@
+         var rows: [[String: Any]] = []
+         for reduced in [false, true] {
+             for labels in [false, true] {
+-                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
++                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
+                 view.automaticAnimation = false; view.reducedMotion = reduced; view.showLabels = labels
+                 view.clock = { 0 }
+                 var coordinator = NoteCoordinator(mapping: mapping)
+@@ -114,7 +115,7 @@
+                     if let strike = coordinator.lastStrike { view.strike(strike, at: 0) }
+                 }
+                 view.activeMIDI = Set(coordinator.active.values.map { $0.key.midiNote })
+-                for ms in Array(Set(Array(stride(from: 0, through: 720, by: 20)) + [350])).sorted() {
++                for ms in Array(Set(Array(stride(from: 0, through: 920, by: 20)) + [350, 450, 899, 900])).sorted() {
+                     let time = Double(ms) / 1000
+                     if ms == 180 {
+                         view.clock = { time }; view.activeMIDI = []
+@@ -123,16 +124,17 @@
+                     view.advanceAnimations(at: time)
+                     try view.savePNG(to: directory.appendingPathComponent("native-reduced-\(reduced)-labels-\(labels)-\(ms)ms.png"))
+                     rows.append(["reducedMotion": reduced, "labels": labels, "timeMs": ms, "instances": view.floatingCount, "timer": view.animationTimerRunning,
+-                        "backingScale": 2, "canvasPt": [1000,104], "bodyOriginPt": [0,48], "hiddenReasons": [],
++                        "backingScale": 2, "canvasPt": [1000,AdaptiveOverlay.canvasHeight], "bodyOriginPt": [0,AdaptiveOverlay.headroom], "hiddenReasons": [],
+                         "pressedPhysicalIDs": coordinator.active.keys.sorted(),
+                         "pressIDs": coordinator.active.values.map { $0.id.uuidString },
+-                        "notes": view.floatingPresentations.map { ["pressID": $0.pressID.uuidString, "midi": $0.midi, "rise": $0.rise, "opacity": $0.opacity] }])
++                        "inkBoundsWithHaloPt": view.floatingInkBounds.map { [$0.minX, $0.minY, $0.width, $0.height] },
++                        "notes": view.floatingPresentations.map { ["pressID": $0.pressID.uuidString, "midi": $0.midi, "rise": $0.rise, "driftX": $0.driftX, "opacity": $0.opacity] }])
+                 }
+             }
+         }
+         // Short-up and mid-return restrike are rendered from the same live transition model.
+         for scenario in ["short-tap", "restrike"] {
+-            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
++            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
+             view.automaticAnimation = false
+             var now = 0.0; view.clock = { now }
+             var coordinator = NoteCoordinator(mapping: mapping)
+@@ -150,10 +152,11 @@
+                 let filename = "native-\(scenario)-\(ms)ms.png"
+                 try view.savePNG(to: directory.appendingPathComponent(filename))
+                 rows.append(["file": filename, "scenario": scenario, "timeMs": ms,
+-                    "backingScale": 2, "canvasPt": [1000,104], "bodyOriginPt": [0,48],
++                    "backingScale": 2, "canvasPt": [1000,AdaptiveOverlay.canvasHeight], "bodyOriginPt": [0,AdaptiveOverlay.headroom],
+                     "syntheticKey": "keyA", "depression": view.keyDepression(midi: midi, at: now),
+                     "instances": view.floatingCount, "timer": view.animationTimerRunning,
+-                    "notes": view.floatingPresentations.map { ["pressID": $0.pressID.uuidString, "midi": $0.midi, "rise": $0.rise, "opacity": $0.opacity] }])
++                    "inkBoundsWithHaloPt": view.floatingInkBounds.map { [$0.minX, $0.minY, $0.width, $0.height] },
++                        "notes": view.floatingPresentations.map { ["pressID": $0.pressID.uuidString, "midi": $0.midi, "rise": $0.rise, "driftX": $0.driftX, "opacity": $0.opacity] }])
+             }
+         }
+         var metadata = provenance.metadata
+@@ -161,11 +164,14 @@
+         metadata["frames"] = rows
+         try JSONSerialization.data(withJSONObject: metadata, options: [.prettyPrinted, .sortedKeys]).write(to: directory.appendingPathComponent("frames.json"))
+         emit(["frames": rows.count, "hardwareInput": false, "audioOutputStarted": false, "outputDirectory": directory.path])
++    } else if let index = arguments.firstIndex(of: "--keymap-editor-snapshot"), arguments.count > index + 1 {
++        _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
++        emit(try KeymapEditorEvidence.render(base: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))
+     } else if arguments.contains("--window-smoke") {
+         _ = NSApplication.shared
+         NSApp.setActivationPolicy(.prohibited)
+         let before = NSWorkspace.shared.frontmostApplication?.processIdentifier ?? -1
+-        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 900, height: 104))
++        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 900, height: AdaptiveOverlay.canvasHeight))
+         let panel = ProbePanel(content: view)
+         if let screen = NSScreen.main { panel.setFrameOrigin(NSPoint(x: screen.visibleFrame.midX - 450, y: screen.visibleFrame.minY + 8)) }
+         panel.orderFrontRegardless()
+--- before/Code/Tests/PianoCoreTests/CustomKeymapTests.swift
++++ after/Code/Tests/PianoCoreTests/CustomKeymapTests.swift
+@@ -0,0 +1,65 @@
++import XCTest
++@testable import PianoCore
++
++final class CustomKeymapTests: XCTestCase {
++    private func base() throws -> KeyMapping {
++        let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
++        return try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++    }
++    private func file() -> URL {
++        let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        addTeardownBlock { try? FileManager.default.removeItem(at: root) }
++        return root.appendingPathComponent("custom-keymap.json")
++    }
++    func testImmediateDraftSwapsAccumulateAcrossKeySelectionWithoutChangingBaseline() throws {
++        let base = try base(), initial = CustomKeymap(defaultMapping: base)
++        var draft = try KeymapDraft(configuration: initial, selectedKey: "keyG")
++        try draft.selectPitch(53)
++        XCTAssertEqual(draft.candidate.notes["keyG"], 53); XCTAssertEqual(draft.candidate.notes["keyA"], 60)
++        try draft.selectKey("keyS"); try draft.selectPitch(60)
++        XCTAssertEqual(draft.candidate.notes["keyS"], 60); XCTAssertEqual(draft.candidate.notes["keyA"], 55)
++        XCTAssertEqual(draft.baseline, initial); XCTAssertTrue(draft.dirty)
++        try draft.candidate.validate(against: base)
++        draft.restoreDefault(base); XCTAssertFalse(draft.dirty); XCTAssertEqual(draft.candidate, initial)
++    }
++    func testSaveRelaunchRestoreAndNoFileDefault() throws {
++        let base = try base(), path = file(), store = CustomKeymapStore(url: path, defaultMapping: base)
++        XCTAssertNil(store.load().warning); XCTAssertFalse(FileManager.default.fileExists(atPath: path.path))
++        var custom = CustomKeymap(defaultMapping: base); try custom.swap(key: "keyG", to: 53)
++        try store.save(custom)
++        XCTAssertEqual(CustomKeymapStore(url: path, defaultMapping: base).load().configuration, custom)
++        let mapping = try custom.mapping(from: base)
++        XCTAssertEqual(mapping.key("keyG")?.midiNote, 53); XCTAssertEqual(mapping.key("keyG")?.labelParts.main, "G")
++        try store.save(CustomKeymap(defaultMapping: base))
++        XCTAssertEqual(store.load().configuration, CustomKeymap(defaultMapping: base))
++    }
++    func testMalformedConfigurationsPreserveOriginalBytesAndFallback() throws {
++        let base = try base(), path = file(), store = CustomKeymapStore(url: path, defaultMapping: base)
++        let valid = CustomKeymap(defaultMapping: base)
++        var duplicate = valid; duplicate.notes["keyG"] = 53
++        var outside = valid; outside.notes["keyG"] = 200
++        var unknown = valid; unknown.notes["escape"] = unknown.notes.removeValue(forKey: "keyG")
++        var version = valid; version.schemaVersion = 0
++        var incompatible = valid; incompatible.baseMappingVersion = "old"
++        try FileManager.default.createDirectory(at: path.deletingLastPathComponent(), withIntermediateDirectories: true)
++        for data in try [Data("{broken".utf8)] + [duplicate, outside, unknown, version, incompatible].map({ try JSONEncoder().encode($0) }) {
++            try data.write(to: path)
++            let result = store.load(); XCTAssertNotNil(result.warning); XCTAssertEqual(result.configuration, valid)
++            XCTAssertEqual(try Data(contentsOf: path), data)
++        }
++        let damaged = try Data(contentsOf: path)
++        try store.save(valid)
++        let backups = try FileManager.default.contentsOfDirectory(at: path.deletingLastPathComponent(), includingPropertiesForKeys: nil).filter { $0.lastPathComponent.hasPrefix("custom-keymap-invalid-") }
++        XCTAssertEqual(backups.count, 1); XCTAssertEqual(try Data(contentsOf: backups[0]), damaged)
++    }
++    func testInvalidSaveCannotReplaceExistingFileAndWriteErrorIsReported() throws {
++        let base = try base(), path = file(), store = CustomKeymapStore(url: path, defaultMapping: base)
++        var valid = CustomKeymap(defaultMapping: base); try store.save(valid)
++        let bytes = try Data(contentsOf: path)
++        valid.notes["keyG"] = 900
++        XCTAssertThrowsError(try store.save(valid)); XCTAssertEqual(try Data(contentsOf: path), bytes)
++        try FileManager.default.removeItem(at: path); try FileManager.default.createDirectory(at: path, withIntermediateDirectories: false)
++        XCTAssertThrowsError(try store.save(CustomKeymap(defaultMapping: base)))
++        XCTAssertTrue(FileManager.default.fileExists(atPath: path.path))
++    }
++}
+--- before/Code/Tests/PianoCoreTests/FloatingNoteTests.swift
++++ after/Code/Tests/PianoCoreTests/FloatingNoteTests.swift
+@@ -27,10 +27,10 @@
+         let new = try XCTUnwrap(c.consume(.init("keyA", .down)).first)
+         f.strike(new, time: 0.5, generation: 0)
+         XCTAssertEqual(f.instances.count, 2)
+-        f.expire(at: 0.71)
++        f.expire(at: 0.91)
+         XCTAssertNil(f.instances[old.pressID])
+         XCTAssertNotNil(f.instances[new.pressID])
+-        f.expire(at: 1.21)
++        f.expire(at: 1.41)
+         XCTAssertTrue(f.instances.isEmpty)
+     }
+     func testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay() throws {
+@@ -46,6 +46,18 @@
+         XCTAssertTrue(f.instances.isEmpty)
+         XCTAssertGreaterThan(f.sceneGeneration, 0)
+     }
++    func testApprovedFloatingTimingAndTravel() throws {
++        var c = NoteCoordinator(mapping: try fixtureMapping())
++        var f = FloatingNotes()
++        let event = try XCTUnwrap(c.consume(.init("keyA", .down)).first)
++        f.strike(event, time: 0, generation: 0)
++        let note = try XCTUnwrap(f.instances[event.pressID])
++        XCTAssertEqual(note.duration, 0.9)
++        XCTAssertEqual(note.rise, 48)
++        XCTAssertGreaterThan(f.presentations(at: 0.7).first?.opacity ?? 0, 0)
++        f.expire(at: 0.9)
++        XCTAssertTrue(f.instances.isEmpty)
++    }
+     func testReducedMotionCompletesWithinOneSecondWithoutRise() throws {
+         var c = NoteCoordinator(mapping: try fixtureMapping())
+         var f = FloatingNotes()
+--- before/Code/Tests/PianoCoreTests/MappingTests.swift
++++ after/Code/Tests/PianoCoreTests/MappingTests.swift
+@@ -1,6 +1,23 @@
+ import XCTest
+ @testable import PianoCore
+ final class MappingTests: XCTestCase {
++    func testPlayableMappingPreservesPhysicalContractAndCoreTwentyNotes() throws {
++        let old = try fixtureMapping()
++        let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
++        let new = try KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.playable.v0.2.json"))
++        try new.validate()
++        XCTAssertEqual(new.keys.filter { $0.pianoKeyColor == "white" }.count, 38)
++        for key in old.keys {
++            let other = try XCTUnwrap(new.key(key.physicalKeyID))
++            XCTAssertEqual(other.sdkConstantCandidate, key.sdkConstantCandidate)
++            XCTAssertEqual(other.eventSemantics, key.eventSemantics)
++            XCTAssertEqual(other.labelParts.main, key.labelParts.main)
++        }
++        let white = ["keyA", "keyS", "keyD", "keyF", "keyG", "keyH", "keyJ", "keyK", "keyL", "semicolon", "quote", "return"]
++        XCTAssertEqual(white.compactMap { new.key($0)?.midiNote }, [53,55,57,59,60,62,64,65,67,69,71,72])
++        let black = ["keyW","keyE","keyR","keyY","keyU","keyO","keyP","bracketLeft"]
++        XCTAssertEqual(black.compactMap { new.key($0)?.midiNote }, [54,56,58,61,63,66,68,70])
++    }
+     func testRejectsUnknownSchemaAndDuplicateNotes() throws {
+         let mapping = try fixtureMapping()
+         let data = try JSONEncoder().encode(mapping)
+--- before/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift
++++ after/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift
+@@ -5,8 +5,8 @@
+ 
+ final class AdaptiveOverlayTests: XCTestCase {
+     func testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen() {
+-        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: 0, y: 0, width: 1512, height: 982)), CGRect(x: 8, y: 0, width: 1496, height: 104))
+-        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: -1920, y: -200, width: 1920, height: 1080)), CGRect(x: -1912, y: -200, width: 1904, height: 104))
++        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: 0, y: 0, width: 1512, height: 982)), CGRect(x: 8, y: 0, width: 1496, height: 208))
++        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: -1920, y: -200, width: 1920, height: 1080)), CGRect(x: -1912, y: -200, width: 1904, height: 208))
+     }
+     func testUserEnabledDockIsNotRestoredToAnOlderFalseValue() {
+         let storage = SimulatedDockStorage(value: true), tickets = MemoryDockTicketStore()
+--- before/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift
++++ after/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift
+@@ -7,12 +7,25 @@
+ final class ControllerIntegrationTests: XCTestCase {
+     final class Input: InputMonitoring {
+         var mode: InputMonitor.Mode = .stopped
+-        var onEvent: ((NormalizedKeyEvent) -> Void)?
++        private var handler: ((NormalizedKeyEvent) -> Void)?
++        private let captured = InputEventQueue()
++        var onEvent: ((NormalizedKeyEvent) -> Void)? {
++            get {
++                guard let handler else { return nil }
++                return { [weak self] event in self?.captured.observe(event); handler(event) }
++            }
++            set { handler = newValue }
++        }
+         var onStop: ((String) -> Void)?
+         var fail = false
+         var duration: InputSessionDuration = .test60Seconds
+         func start(global: Bool, duration: InputSessionDuration) throws { if fail { throw ProbeError.invalid("permission test failure") }; self.duration = duration; mode = global ? .global : .local }
+-        func stop() { mode = .stopped }
++        func enqueue(_ event: NormalizedKeyEvent, delivered: (() -> Void)? = nil) {
++            captured.enqueue(event) { [weak self] in self?.handler?($0); delivered?() }
++        }
++        var discardedEpochs = 0
++        func discardPendingEvents() -> Set<String> { discardedEpochs += 1; return captured.discardPending() }
++        func stop() { mode = .stopped; captured.reset() }
+     }
+     final class Engine: AuditionEngine {
+         var downs: [UInt8] = []
+@@ -26,13 +39,28 @@
+         func noteOff(midi: UInt8) {}
+         func panic() {}
+     }
++    func testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio() throws {
++        _ = NSApplication.shared
++        let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
++        let input = Input(), engine = Engine()
++        let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: dir) }
++        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: dir.appendingPathComponent("preferences.json"), input: input, audioEngine: engine, installStatusItem: false, secureInputCheck: { false }, dockVisibilityCheck: { _, _ in .hidden })
++        controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
++        defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
++        controller.toggleOverlay()
++        XCTAssertEqual(controller.runtimeDiagnostics()["overlayAlpha"] as? CGFloat, 1)
++        XCTAssertEqual(input.mode, .stopped)
++        XCTAssertFalse(engine.prepared)
++        XCTAssertTrue(engine.downs.isEmpty)
++    }
+     func testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio() throws {
+         _ = NSApplication.shared
+         let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+         let input = Input(), engine = Engine()
+         let preference = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString).appendingPathComponent("preferences.json")
+         defer { try? FileManager.default.removeItem(at: preference.deletingLastPathComponent()) }
+-        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preference, input: input, audioEngine: engine, installStatusItem: false)
++        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preference, input: input, audioEngine: engine, installStatusItem: false, secureInputCheck: { false }, dockVisibilityCheck: { _, _ in .hidden })
+         controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
+         defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
+         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
+@@ -61,7 +89,7 @@
+         XCTAssertEqual(controller.integrationState.activeKeys, 0)
+         controller.stopAll()
+         XCTAssertEqual(input.mode, .stopped)
+-        controller.start(global: false); controller.toggleOverlay()
++        controller.start(global: false) // Static visibility survives ordinary pause.
+         input.onEvent?(.init("keyA", .down))
+         XCTAssertEqual(controller.integrationState.floatingNotes, 1)
+     }
+--- before/Code/Tests/PianoMacTests/IntegrationTests.swift
++++ after/Code/Tests/PianoMacTests/IntegrationTests.swift
+@@ -14,15 +14,15 @@
+             let keys = PianoGeometry.quietIvory(mapping: mapping, width: width)
+             XCTAssertEqual(keys.count, 64)
+             XCTAssertEqual(keys[0].rect.minX, 2.35, accuracy: 0.001)
+-            XCTAssertEqual(keys[0].rect.height, 50)
+-            XCTAssertEqual(keys.filter(\.isBlack).first?.rect.height, 32)
+-            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 104))
++            XCTAssertEqual(keys[0].rect.height, 100)
++            XCTAssertEqual(keys.filter(\.isBlack).first?.rect.height, 64)
++            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 208))
+             XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && $0.missingGlyphs == 0 && !$0.overlap })
+             XCTAssertEqual(view.labelMetrics.count, 64)
+         }
+     }
+     func testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay() throws {
+-        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1496, height: 104))
++        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1496, height: 208))
+         view.automaticAnimation = false
+         var now = 0.0; view.clock = { now }
+         view.activeMIDI = [60]
+@@ -38,7 +38,7 @@
+     }
+     func testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle() throws {
+         let mapping = try mapping()
+-        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
++        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 208))
+         view.automaticAnimation = false
+         view.showLabels = false
+         var coordinator = NoteCoordinator(mapping: mapping)
+@@ -49,9 +49,9 @@
+         view.strike(strike, at: 10.01)
+         XCTAssertEqual(view.floatingCount, 1)
+         view.advanceAnimations(at: 10.35)
+-        XCTAssertEqual(view.floatingPresentations.first!.rise, 21, accuracy: 0.001)
+-        XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.875, accuracy: 0.001)
+-        view.advanceAnimations(at: 10.7)
++        XCTAssertEqual(view.floatingPresentations.first!.rise, 48 * (1 - pow(1 - 0.35 / 0.9, 3)), accuracy: 0.001)
++        XCTAssertEqual(view.floatingPresentations.first!.opacity, 1, accuracy: 0.001)
++        view.advanceAnimations(at: 10.9)
+         XCTAssertEqual(view.floatingCount, 0)
+         XCTAssertFalse(view.animationTimerRunning)
+         view.setSceneVisible(false)
+@@ -72,7 +72,7 @@
+ 
+ extension IntegrationTests {
+     func testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition() throws {
+-        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
++        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1000, height: 208))
+         view.automaticAnimation = false
+         var now = 0.0; view.clock = { now }
+         view.activeMIDI = [60]
+@@ -89,12 +89,12 @@
+         XCTAssertFalse(view.animationTimerRunning)
+     }
+     func testActualTimerStopsAfterAnimationAndOnHidden() throws {
+-        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
++        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1000, height: 208))
+         var coordinator = NoteCoordinator(mapping: try mapping())
+         _ = coordinator.consume(.init("keyA", .down))
+         view.strike(try XCTUnwrap(coordinator.lastStrike), at: ProcessInfo.processInfo.systemUptime)
+         XCTAssertTrue(view.animationTimerRunning)
+-        RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.8))
++        RunLoop.main.run(until: Date(timeIntervalSinceNow: 1.0))
+         XCTAssertFalse(view.animationTimerRunning); XCTAssertEqual(view.floatingCount, 0)
+         _ = coordinator.consume(.init("keyA", .up)); _ = coordinator.consume(.init("keyA", .down))
+         view.strike(try XCTUnwrap(coordinator.lastStrike), at: ProcessInfo.processInfo.systemUptime)
+--- before/Code/Tests/PianoMacTests/KeymapEditorTests.swift
++++ after/Code/Tests/PianoMacTests/KeymapEditorTests.swift
+@@ -0,0 +1,55 @@
++import XCTest
++import AppKit
++import PianoCore
++@testable import PianoMac
++
++final class KeymapEditorTests: XCTestCase {
++    private func base() throws -> KeyMapping {
++        _ = NSApplication.shared
++        let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
++        return try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++    }
++    func testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave() throws {
++        let base = try base(); var current = CustomKeymap(defaultMapping: base); var writes = 0
++        let editor = try KeymapEditor(base: base, configuration: { current }, warning: nil) { next, baseline in
++            XCTAssertEqual(current, baseline); current = next; writes += 1
++        }
++        editor.pitchPopup.selectItem(at: 53 - 33); editor.pitchChanged()
++        XCTAssertEqual(editor.draft.candidate.notes["keyG"], 53); XCTAssertEqual(writes, 0)
++        editor.keyPopup.selectItem(at: base.keys.firstIndex { $0.physicalKeyID == "keyS" }!); editor.keyChanged()
++        XCTAssertEqual(editor.draft.candidate.notes["keyG"], 53)
++        editor.pitchPopup.selectItem(at: 60 - 33); editor.pitchChanged()
++        editor.saveDraft(); XCTAssertEqual(writes, 1); XCTAssertEqual(current.notes["keyS"], 60)
++        let restore = try KeymapEditor(base: base, configuration: { current }, warning: nil) { next, _ in current = next; writes += 1 }
++        restore.restoreDefault(); XCTAssertTrue(restore.draft.dirty); XCTAssertEqual(writes, 1)
++        restore.cancel(); XCTAssertEqual(current.notes["keyS"], 60); XCTAssertEqual(writes, 1)
++        let savedRestore = try KeymapEditor(base: base, configuration: { current }, warning: nil) { next, _ in current = next; writes += 1 }
++        savedRestore.restoreDefault(); savedRestore.saveDraft()
++        XCTAssertEqual(current, CustomKeymap(defaultMapping: base)); XCTAssertEqual(writes, 2)
++    }
++    func testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload() throws {
++        let base = try base(); var current = CustomKeymap(defaultMapping: base); var fail = true; var writes = 0
++        let editor = try KeymapEditor(base: base, configuration: { current }, warning: nil) { next, _ in
++            if fail { throw ProbeError.invalid("test write error") }
++            current = next; writes += 1
++        }
++        editor.pitchPopup.selectItem(at: 53 - 33); editor.pitchChanged(); editor.saveDraft()
++        XCTAssertEqual(writes, 0); XCTAssertTrue(editor.draft.dirty); XCTAssertTrue(editor.saveButton.isEnabled)
++        fail = false; editor.saveDraft(); XCTAssertEqual(writes, 1)
++        let second = try KeymapEditor(base: base, configuration: { current }, warning: nil) { next, _ in current = next; writes += 1 }
++        second.restoreDefault()
++        try current.swap(key: "keyS", to: 61)
++        second.saveDraft(); XCTAssertEqual(writes, 1); XCTAssertFalse(second.saveButton.isEnabled)
++        second.reloadDraft(); XCTAssertFalse(second.draft.dirty); XCTAssertEqual(second.draft.baseline, current)
++    }
++    func testMenuOnlyExposesCustomEditorAndShowsFallbackReason() throws {
++        _ = NSApplication.shared
++        let menu = ProbeMenu(volume: 0.5, installStatusItem: false)
++        XCTAssertFalse(menu.menu.items.contains { $0.title.contains("预设") || $0.title.contains("旧") })
++        let item = try XCTUnwrap(menu.menu.items.first { $0.title == "自定义键位…" })
++        var calls = 0; menu.onCustomize = { calls += 1 }
++        NSApp.sendAction(try XCTUnwrap(item.action), to: item.target, from: item); XCTAssertEqual(calls, 1)
++        menu.updateKeymap(custom: false, warning: "损坏文件已保留")
++        XCTAssertTrue(menu.menu.items.contains { $0.title.contains("配置读取失败") })
++    }
++}
+--- before/Code/Tests/PianoMacTests/LocalTrialStartTests.swift
++++ after/Code/Tests/PianoMacTests/LocalTrialStartTests.swift
+@@ -14,6 +14,8 @@
+             if global { throw ProbeError.invalid("permission unavailable") }
+             self.duration = duration; mode = .local
+         }
++        var discardedEpochs = 0
++        func discardPendingEvents() -> Set<String> { discardedEpochs += 1; return [] }
+         func stop() { mode = .stopped }
+     }
+     final class Engine: AuditionEngine {
+--- before/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift
++++ after/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift
+@@ -0,0 +1,166 @@
++import XCTest
++import AppKit
++import PianoCore
++import PianoAudio
++@testable import PianoMac
++
++final class OverlayVisibilityTests: XCTestCase {
++    private var root: URL { URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent() }
++    private func make(secure: @escaping () -> Bool = { false }, dock: @escaping () -> DockVisibility = { .hidden }) throws -> (ProbeController, ControllerIntegrationTests.Input, ControllerIntegrationTests.Engine, URL) {
++        _ = NSApplication.shared
++        let input = ControllerIntegrationTests.Input(), engine = ControllerIntegrationTests.Engine()
++        let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        let prefs = dir.appendingPathComponent("preferences.json")
++        let mapping = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++        let controller = try ProbeController(mapping: mapping, sources: AudioSource.available(root: root, bundled: false), preferencesURL: prefs, input: input, audioEngine: engine, installStatusItem: false, secureInputCheck: secure, dockVisibilityCheck: { _, _ in dock() })
++        controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
++        addTeardownBlock {
++            controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification))
++            try? FileManager.default.removeItem(at: dir)
++        }
++        return (controller, input, engine, prefs)
++    }
++    private func alpha(_ c: ProbeController) -> CGFloat { c.runtimeDiagnostics()["overlayAlpha"] as? CGFloat ?? -1 }
++    private func visible(_ c: ProbeController) -> Bool { c.runtimeDiagnostics()["overlayVisible"] as? Bool ?? false }
++    func testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices() throws {
++        let (c, input, engine, _) = try make()
++        for _ in 0..<5 {
++            c.toggleOverlay(); XCTAssertEqual(alpha(c), 1); XCTAssertTrue(visible(c))
++            c.stopAll(); XCTAssertEqual(alpha(c), 1); XCTAssertTrue(visible(c))
++            c.toggleOverlay(); XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
++        }
++        XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared); XCTAssertTrue(engine.downs.isEmpty)
++    }
++    func testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput() throws {
++        var secure = true
++        let (c, input, engine, _) = try make(secure: { secure })
++        c.toggleOverlay(); XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
++        XCTAssertTrue((c.runtimeDiagnostics()["overlayStatus"] as? String ?? "").contains("安全输入"))
++        secure = false; c.dockTick(); XCTAssertEqual(alpha(c), 1)
++        c.start(global: false); XCTAssertEqual(input.mode, .local)
++        secure = true; c.dockTick(); XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(visible(c))
++        c.setSessionBlocked(true); secure = false; c.dockTick(); XCTAssertFalse(visible(c))
++        c.setSessionBlocked(false); XCTAssertTrue(visible(c)); XCTAssertEqual(alpha(c), 1)
++        XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
++    }
++    func testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices() throws {
++        var dock = DockVisibility.visible
++        let (c, input, engine, _) = try make(dock: { dock })
++        c.toggleOverlay(); XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
++        dock = .hidden; c.dockTick()
++        RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.6))
++        XCTAssertEqual(alpha(c), 1); XCTAssertTrue(visible(c))
++        dock = .visible; c.dockTick()
++        RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.35))
++        XCTAssertEqual(alpha(c), 0); XCTAssertFalse(visible(c))
++        dock = .unknown; c.dockTick()
++        RunLoop.main.run(until: Date(timeIntervalSinceNow: 2.5))
++        XCTAssertEqual(alpha(c), 1); XCTAssertTrue(visible(c))
++        XCTAssertTrue((c.runtimeDiagnostics()["overlayStatus"] as? String ?? "").contains("未知"))
++        c.toggleOverlay(); dock = .hidden; c.dockTick(); XCTAssertFalse(visible(c))
++        XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
++    }
++    func testExistingCustomConfigurationChangesPitchOnRelaunch() throws {
++        let (_, _, _, prefs) = try make()
++        let mapping = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++        var notes = Dictionary(uniqueKeysWithValues: mapping.keys.map { ($0.physicalKeyID, $0.midiNote) })
++        notes["keyA"] = 60; notes["keyG"] = 53
++        let object: [String: Any] = ["schemaVersion": 1, "baseMappingVersion": KeyMapping.defaultMappingVersion, "notes": notes]
++        try FileManager.default.createDirectory(at: prefs.deletingLastPathComponent(), withIntermediateDirectories: true)
++        try JSONSerialization.data(withJSONObject: object).write(to: prefs.deletingLastPathComponent().appendingPathComponent("custom-keymap.json"))
++        let input = ControllerIntegrationTests.Input(), engine = ControllerIntegrationTests.Engine()
++        let controller = try ProbeController(mapping: mapping, sources: AudioSource.available(root: root, bundled: false), preferencesURL: prefs, input: input, audioEngine: engine, installStatusItem: false, secureInputCheck: { false }, permissionCheck: { true }, dockVisibilityCheck: { _, _ in .hidden })
++        controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
++        defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
++        controller.start(global: false); controller.toggleSound()
++        input.onEvent?(.init("keyG", .down))
++        XCTAssertEqual(engine.downs.last, 53)
++    }
++    func testSavingCustomMappingPreservesRunningMutedAndPausedStates() throws {
++        for mode in ["running", "muted", "paused"] {
++            let (c, input, engine, prefs) = try make()
++            let mapping = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++            var custom = CustomKeymap(defaultMapping: mapping); try custom.swap(key: "keyG", to: 53)
++            c.toggleOverlay()
++            if mode != "paused" { c.start(global: true) }
++            if mode == "running" { c.toggleSound() }
++            input.onEvent?(.init("keyG", .down)); input.onEvent?(.init("capsLock", .pulse))
++            let wasMode = input.mode, wasSound = c.integrationState.soundEnabled, wasPrepared = engine.prepared
++            let shutdowns = engine.shutdowns
++            try c.saveCustomKeymap(custom)
++            XCTAssertEqual(input.mode, wasMode); XCTAssertEqual(c.integrationState.soundEnabled, wasSound)
++            XCTAssertEqual(engine.prepared, wasPrepared); XCTAssertEqual(engine.shutdowns, shutdowns)
++            XCTAssertEqual(c.integrationState.activeKeys, 0); XCTAssertEqual(c.integrationState.floatingNotes, 0)
++            XCTAssertEqual(alpha(c), 1); XCTAssertEqual(input.discardedEpochs, 1)
++            let stored = try JSONDecoder().decode(CustomKeymap.self, from: Data(contentsOf: prefs.deletingLastPathComponent().appendingPathComponent("custom-keymap.json")))
++            XCTAssertEqual(stored, custom)
++            if mode != "paused" {
++                input.onEvent?(.init("keyG", .down)); XCTAssertEqual(c.integrationState.activeKeys, 0)
++                input.onEvent?(.init("keyG", .up)); input.onEvent?(.init("keyG", .down))
++                XCTAssertEqual(c.integrationState.activeKeys, 1)
++                if mode == "running" { XCTAssertEqual(engine.downs.last, 53) }
++                input.onEvent?(.init("capsLock", .down))
++                RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.12))
++                XCTAssertEqual(c.integrationState.activeKeys, 2) // Old pulse callback cannot release new presses.
++            }
++        }
++    }
++    func testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown() throws {
++        let (c, input, engine, _) = try make()
++        let base = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++        var custom = CustomKeymap(defaultMapping: base); try custom.swap(key: "keyG", to: 53)
++        c.start(global: true); c.toggleSound()
++        input.onEvent?(.init("keyG", .down))
++        input.enqueue(.init("keyG", .up)) // Captured before save, delivery still on the main queue.
++        try c.saveCustomKeymap(custom)
++        let delivered = expectation(description: "new down delivered after mapping transaction")
++        input.enqueue(.init("keyG", .down)) { delivered.fulfill() }
++        wait(for: [delivered], timeout: 2)
++        XCTAssertEqual(c.integrationState.activeKeys, 1)
++        XCTAssertEqual(engine.downs.last, 53)
++    }
++    func testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched() throws {
++        let (c, input, engine, prefs) = try make()
++        let base = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++        var custom = CustomKeymap(defaultMapping: base); try custom.swap(key: "keyG", to: 53)
++        c.start(global: true); c.toggleSound(); input.onEvent?(.init("keyG", .down))
++        let file = prefs.deletingLastPathComponent().appendingPathComponent("custom-keymap.json")
++        try FileManager.default.createDirectory(at: file, withIntermediateDirectories: true)
++        XCTAssertThrowsError(try c.saveCustomKeymap(custom))
++        XCTAssertEqual(c.runtimeDiagnostics()["mappingVersion"] as? String, KeyMapping.defaultMappingVersion)
++        XCTAssertEqual(input.mode, .global); XCTAssertTrue(engine.prepared); XCTAssertEqual(c.integrationState.activeKeys, 1)
++        XCTAssertEqual(input.discardedEpochs, 0)
++        input.onEvent?(.init("keyG", .up)); input.onEvent?(.init("keyG", .down)); XCTAssertEqual(engine.downs.last, 60)
++    }
++    func testClearingSleepDoesNotClearConcurrentLockOrSecureInput() throws {
++        var secure = false
++        let (c, input, _, _) = try make(secure: { secure })
++        c.toggleOverlay()
++        c.setSessionBlocked(true, reason: "lock"); c.setSessionBlocked(true, reason: "sleep")
++        c.setSessionBlocked(false, reason: "sleep"); XCTAssertFalse(visible(c))
++        secure = true; c.setSessionBlocked(false, reason: "lock"); XCTAssertFalse(visible(c))
++        secure = false; c.dockTick(); XCTAssertTrue(visible(c)); XCTAssertEqual(input.mode, .stopped)
++    }
++    func testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion() throws {
++        let mapping = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++        XCTAssertEqual(PianoView.floatingFontSize, 24)
++        for width in [1264.0, 1496, 1904] {
++            for reduced in [false, true] {
++                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 208))
++                view.automaticAnimation = false; view.reducedMotion = reduced
++                XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && $0.missingGlyphs == 0 && !$0.overlap })
++                var coordinator = NoteCoordinator(mapping: mapping)
++                for key in mapping.keys {
++                    _ = coordinator.consume(.init(key.physicalKeyID, .down))
++                    view.strike(try XCTUnwrap(coordinator.lastStrike), at: 0)
++                }
++                for ms in stride(from: 0, through: 900, by: 20) {
++                    view.advanceAnimations(at: Double(ms) / 1000)
++                    XCTAssertTrue(view.floatingInkBounds.allSatisfy { view.bounds.contains($0) })
++                    XCTAssertTrue(view.floatingPresentations.allSatisfy { abs($0.driftX) <= 4 && $0.rise <= 48 })
++                }
++                XCTAssertEqual(view.floatingCount, 0); XCTAssertFalse(view.animationTimerRunning)
++            }
++        }
++    }
++}
+--- before/Code/Tests/PianoMacTests/TrialSessionTests.swift
++++ after/Code/Tests/PianoMacTests/TrialSessionTests.swift
+@@ -17,7 +17,7 @@
+         let input = ControllerIntegrationTests.Input(), engine = ControllerIntegrationTests.Engine()
+         let preferences = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString).appendingPathComponent("preferences.json")
+         defer { try? FileManager.default.removeItem(at: preferences.deletingLastPathComponent()) }
+-        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preferences, input: input, audioEngine: engine, installStatusItem: false)
++        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preferences, input: input, audioEngine: engine, installStatusItem: false, secureInputCheck: { false }, permissionCheck: { true }, dockVisibilityCheck: { _, _ in .hidden })
+         controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
+         defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
+         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
+--- before/contracts/custom-keymap.schema.json
++++ after/contracts/custom-keymap.schema.json
+@@ -0,0 +1,412 @@
++{
++  "$schema": "https://json-schema.org/draft/2020-12/schema",
++  "title": "Typing Piano custom keymap v1",
++  "type": "object",
++  "additionalProperties": false,
++  "required": [
++    "schemaVersion",
++    "baseMappingVersion",
++    "notes"
++  ],
++  "properties": {
++    "schemaVersion": {
++      "const": 1
++    },
++    "baseMappingVersion": {
++      "const": "ansi64-playable.0.2"
++    },
++    "notes": {
++      "type": "object",
++      "additionalProperties": false,
++      "required": [
++        "grave",
++        "digit1",
++        "digit2",
++        "digit3",
++        "digit4",
++        "digit5",
++        "digit6",
++        "digit7",
++        "digit8",
++        "digit9",
++        "digit0",
++        "minus",
++        "equal",
++        "delete",
++        "tab",
++        "keyQ",
++        "keyW",
++        "keyE",
++        "keyR",
++        "keyT",
++        "keyY",
++        "keyU",
++        "keyI",
++        "keyO",
++        "keyP",
++        "bracketLeft",
++        "bracketRight",
++        "backslash",
++        "capsLock",
++        "keyA",
++        "keyS",
++        "keyD",
++        "keyF",
++        "keyG",
++        "keyH",
++        "keyJ",
++        "keyK",
++        "keyL",
++        "semicolon",
++        "quote",
++        "return",
++        "shiftLeft",
++        "keyZ",
++        "keyX",
++        "keyC",
++        "keyV",
++        "keyB",
++        "keyN",
++        "keyM",
++        "comma",
++        "period",
++        "slash",
++        "shiftRight",
++        "fn",
++        "controlLeft",
++        "optionLeft",
++        "commandLeft",
++        "space",
++        "commandRight",
++        "optionRight",
++        "arrowLeft",
++        "arrowDown",
++        "arrowUp",
++        "arrowRight"
++      ],
++      "properties": {
++        "grave": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit1": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit2": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit3": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit4": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit5": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit6": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit7": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit8": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit9": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "digit0": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "minus": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "equal": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "delete": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "tab": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyQ": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyW": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyE": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyR": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyT": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyY": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyU": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyI": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyO": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyP": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "bracketLeft": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "bracketRight": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "backslash": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "capsLock": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyA": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyS": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyD": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyF": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyG": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyH": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyJ": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyK": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyL": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "semicolon": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "quote": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "return": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "shiftLeft": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyZ": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyX": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyC": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyV": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyB": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyN": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "keyM": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "comma": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "period": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "slash": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "shiftRight": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "fn": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "controlLeft": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "optionLeft": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "commandLeft": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "space": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "commandRight": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "optionRight": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "arrowLeft": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "arrowDown": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "arrowUp": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        },
++        "arrowRight": {
++          "type": "integer",
++          "minimum": 33,
++          "maximum": 96
++        }
++      },
++      "description": "Runtime additionally requires all 64 values unique, exactly MIDI33 through96."
++    }
++  }
++}
+--- before/contracts/keymap.ansi64.playable.v0.2.json
++++ after/contracts/keymap.ansi64.playable.v0.2.json
+@@ -0,0 +1,1166 @@
++{
++  "schemaVersion": "1.0.0",
++  "mappingVersion": "ansi64-playable.0.2",
++  "artifactState": "integration_draft",
++  "layout": "macbook-ansi-lower-five-rows",
++  "noteNaming": "C4=MIDI60",
++  "midiNoteRange": {
++    "min": 33,
++    "max": 96
++  },
++  "statusNote": "CR-006/CR-007 approved default note assignment; physical capture remains subject to hardware validation. Historical classic mapping is not a runtime option.",
++  "keys": [
++    {
++      "physicalKeyID": "grave",
++      "physicalRow": 1,
++      "positionInRow": 1,
++      "sdkConstantCandidate": "kVK_ANSI_Grave",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 46,
++      "noteName": "A#2",
++      "pianoKeyColor": "black",
++      "displayLabel": "`",
++      "labelParts": {
++        "main": "`",
++        "side": null
++      },
++      "accessibleName": "反引号",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit1",
++      "physicalRow": 1,
++      "positionInRow": 2,
++      "sdkConstantCandidate": "kVK_ANSI_1",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 48,
++      "noteName": "C3",
++      "pianoKeyColor": "white",
++      "displayLabel": "1",
++      "labelParts": {
++        "main": "1",
++        "side": null
++      },
++      "accessibleName": "1",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit2",
++      "physicalRow": 1,
++      "positionInRow": 3,
++      "sdkConstantCandidate": "kVK_ANSI_2",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 49,
++      "noteName": "C#3",
++      "pianoKeyColor": "black",
++      "displayLabel": "2",
++      "labelParts": {
++        "main": "2",
++        "side": null
++      },
++      "accessibleName": "2",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit3",
++      "physicalRow": 1,
++      "positionInRow": 4,
++      "sdkConstantCandidate": "kVK_ANSI_3",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 47,
++      "noteName": "B2",
++      "pianoKeyColor": "white",
++      "displayLabel": "3",
++      "labelParts": {
++        "main": "3",
++        "side": null
++      },
++      "accessibleName": "3",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit4",
++      "physicalRow": 1,
++      "positionInRow": 5,
++      "sdkConstantCandidate": "kVK_ANSI_4",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 94,
++      "noteName": "A#6",
++      "pianoKeyColor": "black",
++      "displayLabel": "4",
++      "labelParts": {
++        "main": "4",
++        "side": null
++      },
++      "accessibleName": "4",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit5",
++      "physicalRow": 1,
++      "positionInRow": 6,
++      "sdkConstantCandidate": "kVK_ANSI_5",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 93,
++      "noteName": "A6",
++      "pianoKeyColor": "white",
++      "displayLabel": "5",
++      "labelParts": {
++        "main": "5",
++        "side": null
++      },
++      "accessibleName": "5",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit6",
++      "physicalRow": 1,
++      "positionInRow": 7,
++      "sdkConstantCandidate": "kVK_ANSI_6",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 92,
++      "noteName": "G#6",
++      "pianoKeyColor": "black",
++      "displayLabel": "6",
++      "labelParts": {
++        "main": "6",
++        "side": null
++      },
++      "accessibleName": "6",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit7",
++      "physicalRow": 1,
++      "positionInRow": 8,
++      "sdkConstantCandidate": "kVK_ANSI_7",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 91,
++      "noteName": "G6",
++      "pianoKeyColor": "white",
++      "displayLabel": "7",
++      "labelParts": {
++        "main": "7",
++        "side": null
++      },
++      "accessibleName": "7",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit8",
++      "physicalRow": 1,
++      "positionInRow": 9,
++      "sdkConstantCandidate": "kVK_ANSI_8",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 90,
++      "noteName": "F#6",
++      "pianoKeyColor": "black",
++      "displayLabel": "8",
++      "labelParts": {
++        "main": "8",
++        "side": null
++      },
++      "accessibleName": "8",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit9",
++      "physicalRow": 1,
++      "positionInRow": 10,
++      "sdkConstantCandidate": "kVK_ANSI_9",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 89,
++      "noteName": "F6",
++      "pianoKeyColor": "white",
++      "displayLabel": "9",
++      "labelParts": {
++        "main": "9",
++        "side": null
++      },
++      "accessibleName": "9",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "digit0",
++      "physicalRow": 1,
++      "positionInRow": 11,
++      "sdkConstantCandidate": "kVK_ANSI_0",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 82,
++      "noteName": "A#5",
++      "pianoKeyColor": "black",
++      "displayLabel": "0",
++      "labelParts": {
++        "main": "0",
++        "side": null
++      },
++      "accessibleName": "0",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "minus",
++      "physicalRow": 1,
++      "positionInRow": 12,
++      "sdkConstantCandidate": "kVK_ANSI_Minus",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 80,
++      "noteName": "G#5",
++      "pianoKeyColor": "black",
++      "displayLabel": "-",
++      "labelParts": {
++        "main": "-",
++        "side": null
++      },
++      "accessibleName": "减号",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "equal",
++      "physicalRow": 1,
++      "positionInRow": 13,
++      "sdkConstantCandidate": "kVK_ANSI_Equal",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 78,
++      "noteName": "F#5",
++      "pianoKeyColor": "black",
++      "displayLabel": "=",
++      "labelParts": {
++        "main": "=",
++        "side": null
++      },
++      "accessibleName": "等号",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "delete",
++      "physicalRow": 1,
++      "positionInRow": 14,
++      "sdkConstantCandidate": "kVK_Delete",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 75,
++      "noteName": "D#5",
++      "pianoKeyColor": "black",
++      "displayLabel": "⌫",
++      "labelParts": {
++        "main": "⌫",
++        "side": null
++      },
++      "accessibleName": "Delete／向后删除",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "tab",
++      "physicalRow": 2,
++      "positionInRow": 1,
++      "sdkConstantCandidate": "kVK_Tab",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 51,
++      "noteName": "D#3",
++      "pianoKeyColor": "black",
++      "displayLabel": "⇥",
++      "labelParts": {
++        "main": "⇥",
++        "side": null
++      },
++      "accessibleName": "Tab",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyQ",
++      "physicalRow": 2,
++      "positionInRow": 2,
++      "sdkConstantCandidate": "kVK_ANSI_Q",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 50,
++      "noteName": "D3",
++      "pianoKeyColor": "white",
++      "displayLabel": "Q",
++      "labelParts": {
++        "main": "Q",
++        "side": null
++      },
++      "accessibleName": "Q",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyW",
++      "physicalRow": 2,
++      "positionInRow": 3,
++      "sdkConstantCandidate": "kVK_ANSI_W",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 54,
++      "noteName": "F#3",
++      "pianoKeyColor": "black",
++      "displayLabel": "W",
++      "labelParts": {
++        "main": "W",
++        "side": null
++      },
++      "accessibleName": "W",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyE",
++      "physicalRow": 2,
++      "positionInRow": 4,
++      "sdkConstantCandidate": "kVK_ANSI_E",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 56,
++      "noteName": "G#3",
++      "pianoKeyColor": "black",
++      "displayLabel": "E",
++      "labelParts": {
++        "main": "E",
++        "side": null
++      },
++      "accessibleName": "E",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyR",
++      "physicalRow": 2,
++      "positionInRow": 5,
++      "sdkConstantCandidate": "kVK_ANSI_R",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 58,
++      "noteName": "A#3",
++      "pianoKeyColor": "black",
++      "displayLabel": "R",
++      "labelParts": {
++        "main": "R",
++        "side": null
++      },
++      "accessibleName": "R",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyT",
++      "physicalRow": 2,
++      "positionInRow": 6,
++      "sdkConstantCandidate": "kVK_ANSI_T",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 96,
++      "noteName": "C7",
++      "pianoKeyColor": "white",
++      "displayLabel": "T",
++      "labelParts": {
++        "main": "T",
++        "side": null
++      },
++      "accessibleName": "T",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyY",
++      "physicalRow": 2,
++      "positionInRow": 7,
++      "sdkConstantCandidate": "kVK_ANSI_Y",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 61,
++      "noteName": "C#4",
++      "pianoKeyColor": "black",
++      "displayLabel": "Y",
++      "labelParts": {
++        "main": "Y",
++        "side": null
++      },
++      "accessibleName": "Y",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyU",
++      "physicalRow": 2,
++      "positionInRow": 8,
++      "sdkConstantCandidate": "kVK_ANSI_U",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 63,
++      "noteName": "D#4",
++      "pianoKeyColor": "black",
++      "displayLabel": "U",
++      "labelParts": {
++        "main": "U",
++        "side": null
++      },
++      "accessibleName": "U",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyI",
++      "physicalRow": 2,
++      "positionInRow": 9,
++      "sdkConstantCandidate": "kVK_ANSI_I",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 95,
++      "noteName": "B6",
++      "pianoKeyColor": "white",
++      "displayLabel": "I",
++      "labelParts": {
++        "main": "I",
++        "side": null
++      },
++      "accessibleName": "I",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyO",
++      "physicalRow": 2,
++      "positionInRow": 10,
++      "sdkConstantCandidate": "kVK_ANSI_O",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 66,
++      "noteName": "F#4",
++      "pianoKeyColor": "black",
++      "displayLabel": "O",
++      "labelParts": {
++        "main": "O",
++        "side": null
++      },
++      "accessibleName": "O",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyP",
++      "physicalRow": 2,
++      "positionInRow": 11,
++      "sdkConstantCandidate": "kVK_ANSI_P",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 68,
++      "noteName": "G#4",
++      "pianoKeyColor": "black",
++      "displayLabel": "P",
++      "labelParts": {
++        "main": "P",
++        "side": null
++      },
++      "accessibleName": "P",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "bracketLeft",
++      "physicalRow": 2,
++      "positionInRow": 12,
++      "sdkConstantCandidate": "kVK_ANSI_LeftBracket",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 70,
++      "noteName": "A#4",
++      "pianoKeyColor": "black",
++      "displayLabel": "[",
++      "labelParts": {
++        "main": "[",
++        "side": null
++      },
++      "accessibleName": "左方括号",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "bracketRight",
++      "physicalRow": 2,
++      "positionInRow": 13,
++      "sdkConstantCandidate": "kVK_ANSI_RightBracket",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 74,
++      "noteName": "D5",
++      "pianoKeyColor": "white",
++      "displayLabel": "]",
++      "labelParts": {
++        "main": "]",
++        "side": null
++      },
++      "accessibleName": "右方括号",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "backslash",
++      "physicalRow": 2,
++      "positionInRow": 14,
++      "sdkConstantCandidate": "kVK_ANSI_Backslash",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 73,
++      "noteName": "C#5",
++      "pianoKeyColor": "black",
++      "displayLabel": "\\",
++      "labelParts": {
++        "main": "\\",
++        "side": null
++      },
++      "accessibleName": "反斜杠",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "capsLock",
++      "physicalRow": 3,
++      "positionInRow": 1,
++      "sdkConstantCandidate": "kVK_CapsLock",
++      "captureStatus": "unverified",
++      "eventSemantics": "toggleCandidate",
++      "midiNote": 52,
++      "noteName": "E3",
++      "pianoKeyColor": "white",
++      "displayLabel": "⇪",
++      "labelParts": {
++        "main": "⇪",
++        "side": null
++      },
++      "accessibleName": "Caps Lock",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyA",
++      "physicalRow": 3,
++      "positionInRow": 2,
++      "sdkConstantCandidate": "kVK_ANSI_A",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 53,
++      "noteName": "F3",
++      "pianoKeyColor": "white",
++      "displayLabel": "A",
++      "labelParts": {
++        "main": "A",
++        "side": null
++      },
++      "accessibleName": "A",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyS",
++      "physicalRow": 3,
++      "positionInRow": 3,
++      "sdkConstantCandidate": "kVK_ANSI_S",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 55,
++      "noteName": "G3",
++      "pianoKeyColor": "white",
++      "displayLabel": "S",
++      "labelParts": {
++        "main": "S",
++        "side": null
++      },
++      "accessibleName": "S",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyD",
++      "physicalRow": 3,
++      "positionInRow": 4,
++      "sdkConstantCandidate": "kVK_ANSI_D",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 57,
++      "noteName": "A3",
++      "pianoKeyColor": "white",
++      "displayLabel": "D",
++      "labelParts": {
++        "main": "D",
++        "side": null
++      },
++      "accessibleName": "D",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyF",
++      "physicalRow": 3,
++      "positionInRow": 5,
++      "sdkConstantCandidate": "kVK_ANSI_F",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 59,
++      "noteName": "B3",
++      "pianoKeyColor": "white",
++      "displayLabel": "F",
++      "labelParts": {
++        "main": "F",
++        "side": null
++      },
++      "accessibleName": "F",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyG",
++      "physicalRow": 3,
++      "positionInRow": 6,
++      "sdkConstantCandidate": "kVK_ANSI_G",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 60,
++      "noteName": "C4",
++      "pianoKeyColor": "white",
++      "displayLabel": "G",
++      "labelParts": {
++        "main": "G",
++        "side": null
++      },
++      "accessibleName": "G",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyH",
++      "physicalRow": 3,
++      "positionInRow": 7,
++      "sdkConstantCandidate": "kVK_ANSI_H",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 62,
++      "noteName": "D4",
++      "pianoKeyColor": "white",
++      "displayLabel": "H",
++      "labelParts": {
++        "main": "H",
++        "side": null
++      },
++      "accessibleName": "H",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyJ",
++      "physicalRow": 3,
++      "positionInRow": 8,
++      "sdkConstantCandidate": "kVK_ANSI_J",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 64,
++      "noteName": "E4",
++      "pianoKeyColor": "white",
++      "displayLabel": "J",
++      "labelParts": {
++        "main": "J",
++        "side": null
++      },
++      "accessibleName": "J",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyK",
++      "physicalRow": 3,
++      "positionInRow": 9,
++      "sdkConstantCandidate": "kVK_ANSI_K",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 65,
++      "noteName": "F4",
++      "pianoKeyColor": "white",
++      "displayLabel": "K",
++      "labelParts": {
++        "main": "K",
++        "side": null
++      },
++      "accessibleName": "K",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyL",
++      "physicalRow": 3,
++      "positionInRow": 10,
++      "sdkConstantCandidate": "kVK_ANSI_L",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 67,
++      "noteName": "G4",
++      "pianoKeyColor": "white",
++      "displayLabel": "L",
++      "labelParts": {
++        "main": "L",
++        "side": null
++      },
++      "accessibleName": "L",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "semicolon",
++      "physicalRow": 3,
++      "positionInRow": 11,
++      "sdkConstantCandidate": "kVK_ANSI_Semicolon",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 69,
++      "noteName": "A4",
++      "pianoKeyColor": "white",
++      "displayLabel": ";",
++      "labelParts": {
++        "main": ";",
++        "side": null
++      },
++      "accessibleName": "分号",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "quote",
++      "physicalRow": 3,
++      "positionInRow": 12,
++      "sdkConstantCandidate": "kVK_ANSI_Quote",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 71,
++      "noteName": "B4",
++      "pianoKeyColor": "white",
++      "displayLabel": "'",
++      "labelParts": {
++        "main": "'",
++        "side": null
++      },
++      "accessibleName": "单引号",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "return",
++      "physicalRow": 3,
++      "positionInRow": 13,
++      "sdkConstantCandidate": "kVK_Return",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 72,
++      "noteName": "C5",
++      "pianoKeyColor": "white",
++      "displayLabel": "↵",
++      "labelParts": {
++        "main": "↵",
++        "side": null
++      },
++      "accessibleName": "Return",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "shiftLeft",
++      "physicalRow": 4,
++      "positionInRow": 1,
++      "sdkConstantCandidate": "kVK_Shift",
++      "captureStatus": "unverified",
++      "eventSemantics": "modifier",
++      "midiNote": 38,
++      "noteName": "D2",
++      "pianoKeyColor": "white",
++      "displayLabel": "⇧L",
++      "labelParts": {
++        "main": "⇧",
++        "side": "L"
++      },
++      "accessibleName": "左 Shift",
++      "velocity": 48
++    },
++    {
++      "physicalKeyID": "keyZ",
++      "physicalRow": 4,
++      "positionInRow": 2,
++      "sdkConstantCandidate": "kVK_ANSI_Z",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 39,
++      "noteName": "D#2",
++      "pianoKeyColor": "black",
++      "displayLabel": "Z",
++      "labelParts": {
++        "main": "Z",
++        "side": null
++      },
++      "accessibleName": "Z",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyX",
++      "physicalRow": 4,
++      "positionInRow": 3,
++      "sdkConstantCandidate": "kVK_ANSI_X",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 40,
++      "noteName": "E2",
++      "pianoKeyColor": "white",
++      "displayLabel": "X",
++      "labelParts": {
++        "main": "X",
++        "side": null
++      },
++      "accessibleName": "X",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyC",
++      "physicalRow": 4,
++      "positionInRow": 4,
++      "sdkConstantCandidate": "kVK_ANSI_C",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 41,
++      "noteName": "F2",
++      "pianoKeyColor": "white",
++      "displayLabel": "C",
++      "labelParts": {
++        "main": "C",
++        "side": null
++      },
++      "accessibleName": "C",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyV",
++      "physicalRow": 4,
++      "positionInRow": 5,
++      "sdkConstantCandidate": "kVK_ANSI_V",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 42,
++      "noteName": "F#2",
++      "pianoKeyColor": "black",
++      "displayLabel": "V",
++      "labelParts": {
++        "main": "V",
++        "side": null
++      },
++      "accessibleName": "V",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyB",
++      "physicalRow": 4,
++      "positionInRow": 6,
++      "sdkConstantCandidate": "kVK_ANSI_B",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 43,
++      "noteName": "G2",
++      "pianoKeyColor": "white",
++      "displayLabel": "B",
++      "labelParts": {
++        "main": "B",
++        "side": null
++      },
++      "accessibleName": "B",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyN",
++      "physicalRow": 4,
++      "positionInRow": 7,
++      "sdkConstantCandidate": "kVK_ANSI_N",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 44,
++      "noteName": "G#2",
++      "pianoKeyColor": "black",
++      "displayLabel": "N",
++      "labelParts": {
++        "main": "N",
++        "side": null
++      },
++      "accessibleName": "N",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "keyM",
++      "physicalRow": 4,
++      "positionInRow": 8,
++      "sdkConstantCandidate": "kVK_ANSI_M",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 45,
++      "noteName": "A2",
++      "pianoKeyColor": "white",
++      "displayLabel": "M",
++      "labelParts": {
++        "main": "M",
++        "side": null
++      },
++      "accessibleName": "M",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "comma",
++      "physicalRow": 4,
++      "positionInRow": 9,
++      "sdkConstantCandidate": "kVK_ANSI_Comma",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 81,
++      "noteName": "A5",
++      "pianoKeyColor": "white",
++      "displayLabel": ",",
++      "labelParts": {
++        "main": ",",
++        "side": null
++      },
++      "accessibleName": "逗号",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "period",
++      "physicalRow": 4,
++      "positionInRow": 10,
++      "sdkConstantCandidate": "kVK_ANSI_Period",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 79,
++      "noteName": "G5",
++      "pianoKeyColor": "white",
++      "displayLabel": ".",
++      "labelParts": {
++        "main": ".",
++        "side": null
++      },
++      "accessibleName": "句点",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "slash",
++      "physicalRow": 4,
++      "positionInRow": 11,
++      "sdkConstantCandidate": "kVK_ANSI_Slash",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 77,
++      "noteName": "F5",
++      "pianoKeyColor": "white",
++      "displayLabel": "/",
++      "labelParts": {
++        "main": "/",
++        "side": null
++      },
++      "accessibleName": "斜杠",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "shiftRight",
++      "physicalRow": 4,
++      "positionInRow": 12,
++      "sdkConstantCandidate": "kVK_RightShift",
++      "captureStatus": "unverified",
++      "eventSemantics": "modifier",
++      "midiNote": 76,
++      "noteName": "E5",
++      "pianoKeyColor": "white",
++      "displayLabel": "⇧R",
++      "labelParts": {
++        "main": "⇧",
++        "side": "R"
++      },
++      "accessibleName": "右 Shift",
++      "velocity": 48
++    },
++    {
++      "physicalKeyID": "fn",
++      "physicalRow": 5,
++      "positionInRow": 1,
++      "sdkConstantCandidate": "kVK_Function",
++      "captureStatus": "unverified",
++      "eventSemantics": "modifier",
++      "midiNote": 33,
++      "noteName": "A1",
++      "pianoKeyColor": "white",
++      "displayLabel": "fn",
++      "labelParts": {
++        "main": "fn",
++        "side": null
++      },
++      "accessibleName": "Fn／地球键",
++      "velocity": 48
++    },
++    {
++      "physicalKeyID": "controlLeft",
++      "physicalRow": 5,
++      "positionInRow": 2,
++      "sdkConstantCandidate": "kVK_Control",
++      "captureStatus": "unverified",
++      "eventSemantics": "modifier",
++      "midiNote": 34,
++      "noteName": "A#1",
++      "pianoKeyColor": "black",
++      "displayLabel": "⌃",
++      "labelParts": {
++        "main": "⌃",
++        "side": null
++      },
++      "accessibleName": "左 Control",
++      "velocity": 48
++    },
++    {
++      "physicalKeyID": "optionLeft",
++      "physicalRow": 5,
++      "positionInRow": 3,
++      "sdkConstantCandidate": "kVK_Option",
++      "captureStatus": "unverified",
++      "eventSemantics": "modifier",
++      "midiNote": 35,
++      "noteName": "B1",
++      "pianoKeyColor": "white",
++      "displayLabel": "⌥L",
++      "labelParts": {
++        "main": "⌥",
++        "side": "L"
++      },
++      "accessibleName": "左 Option",
++      "velocity": 48
++    },
++    {
++      "physicalKeyID": "commandLeft",
++      "physicalRow": 5,
++      "positionInRow": 4,
++      "sdkConstantCandidate": "kVK_Command",
++      "captureStatus": "unverified",
++      "eventSemantics": "modifier",
++      "midiNote": 36,
++      "noteName": "C2",
++      "pianoKeyColor": "white",
++      "displayLabel": "⌘L",
++      "labelParts": {
++        "main": "⌘",
++        "side": "L"
++      },
++      "accessibleName": "左 Command",
++      "velocity": 48
++    },
++    {
++      "physicalKeyID": "space",
++      "physicalRow": 5,
++      "positionInRow": 5,
++      "sdkConstantCandidate": "kVK_Space",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 37,
++      "noteName": "C#2",
++      "pianoKeyColor": "black",
++      "displayLabel": "␣",
++      "labelParts": {
++        "main": "␣",
++        "side": null
++      },
++      "accessibleName": "空格",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "commandRight",
++      "physicalRow": 5,
++      "positionInRow": 6,
++      "sdkConstantCandidate": "kVK_RightCommand",
++      "captureStatus": "unverified",
++      "eventSemantics": "modifier",
++      "midiNote": 88,
++      "noteName": "E6",
++      "pianoKeyColor": "white",
++      "displayLabel": "⌘R",
++      "labelParts": {
++        "main": "⌘",
++        "side": "R"
++      },
++      "accessibleName": "右 Command",
++      "velocity": 48
++    },
++    {
++      "physicalKeyID": "optionRight",
++      "physicalRow": 5,
++      "positionInRow": 7,
++      "sdkConstantCandidate": "kVK_RightOption",
++      "captureStatus": "unverified",
++      "eventSemantics": "modifier",
++      "midiNote": 87,
++      "noteName": "D#6",
++      "pianoKeyColor": "black",
++      "displayLabel": "⌥R",
++      "labelParts": {
++        "main": "⌥",
++        "side": "R"
++      },
++      "accessibleName": "右 Option",
++      "velocity": 48
++    },
++    {
++      "physicalKeyID": "arrowLeft",
++      "physicalRow": 5,
++      "positionInRow": 8,
++      "sdkConstantCandidate": "kVK_LeftArrow",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 86,
++      "noteName": "D6",
++      "pianoKeyColor": "white",
++      "displayLabel": "←",
++      "labelParts": {
++        "main": "←",
++        "side": null
++      },
++      "accessibleName": "左方向",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "arrowDown",
++      "physicalRow": 5,
++      "positionInRow": 9,
++      "sdkConstantCandidate": "kVK_DownArrow",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 85,
++      "noteName": "C#6",
++      "pianoKeyColor": "black",
++      "displayLabel": "↓",
++      "labelParts": {
++        "main": "↓",
++        "side": null
++      },
++      "accessibleName": "下方向",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "arrowUp",
++      "physicalRow": 5,
++      "positionInRow": 10,
++      "sdkConstantCandidate": "kVK_UpArrow",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 84,
++      "noteName": "C6",
++      "pianoKeyColor": "white",
++      "displayLabel": "↑",
++      "labelParts": {
++        "main": "↑",
++        "side": null
++      },
++      "accessibleName": "上方向",
++      "velocity": 64
++    },
++    {
++      "physicalKeyID": "arrowRight",
++      "physicalRow": 5,
++      "positionInRow": 11,
++      "sdkConstantCandidate": "kVK_RightArrow",
++      "captureStatus": "unverified",
++      "eventSemantics": "ordinary",
++      "midiNote": 83,
++      "noteName": "B5",
++      "pianoKeyColor": "white",
++      "displayLabel": "→",
++      "labelParts": {
++        "main": "→",
++        "side": null
++      },
++      "accessibleName": "右方向",
++      "velocity": 64
++    }
++  ]
++}
+--- /dev/null
++++ after/Code/Scripts/import_playable_mapping.py
+@@ -0,0 +1,35 @@
++#!/usr/bin/env python3
++"""Import only the approved note assignment; preserve existing physical input metadata."""
++import copy
++import json
++from pathlib import Path
++import jsonschema
++
++root = Path(__file__).resolve().parents[2]
++original = json.loads((root / 'contracts/keymap.ansi64.v0.1.json').read_text())
++incoming = json.loads((root / 'docs/inputs/playable-v0.2/Mac_Typing_Piano_Playable_Keymap_v0.2_DRAFT.json').read_text())
++ids = {f'Key{x}': f'key{x}' for x in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'}
++ids.update({f'Digit{x}': f'digit{x}' for x in '0123456789'})
++ids.update({'Backquote':'grave','Minus':'minus','Equal':'equal','Backspace':'delete',
++ 'Tab':'tab','BracketLeft':'bracketLeft','BracketRight':'bracketRight','Backslash':'backslash',
++ 'CapsLock':'capsLock','Semicolon':'semicolon','Quote':'quote','Return':'return',
++ 'ShiftLeft':'shiftLeft','ShiftRight':'shiftRight','Comma':'comma','Period':'period','Slash':'slash',
++ 'Fn':'fn','ControlLeft':'controlLeft','AltLeft':'optionLeft','AltRight':'optionRight',
++ 'MetaLeft':'commandLeft','MetaRight':'commandRight','Space':'space',
++ 'ArrowLeft':'arrowLeft','ArrowDown':'arrowDown','ArrowUp':'arrowUp','ArrowRight':'arrowRight'})
++assert len(ids) == 64 and len(set(ids.values())) == 64
++assert set(ids) == {k['physicalKeyID'] for k in incoming['mapping']}
++assert len(incoming['mapping']) == 64
++notes = {ids[k['physicalKeyID']]:k for k in incoming['mapping']}
++assert set(notes) == {k['physicalKeyID'] for k in original['keys']}
++assert {k['midi'] for k in notes.values()} == set(range(33,97))
++result = copy.deepcopy(original)
++result['mappingVersion'] = 'ansi64-playable.0.2'
++result['statusNote'] = 'CR-006/CR-007 approved default note assignment; physical capture remains subject to hardware validation. Historical classic mapping is not a runtime option.'
++for key in result['keys']:
++    item = notes[key['physicalKeyID']]
++    key['midiNote'] = item['midi']; key['noteName'] = item['note']; key['pianoKeyColor'] = item['pianoKeyType']
++jsonschema.validate(result, json.loads((root / 'contracts/keymap.schema.json').read_text()))
++path = root / 'contracts/keymap.ansi64.playable.v0.2.json'
++path.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')
++print(f'Validated 64 explicit ID translations; wrote {path.name}')

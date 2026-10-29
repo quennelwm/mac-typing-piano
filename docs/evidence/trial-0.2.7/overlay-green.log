@@ -1,0 +1,43 @@
+[0/1] Planning build
+Building for debugging...
+[0/7] Write sources
+[3/7] Write swift-version--58304C5D6DBC2206.txt
+[5/9] Emitting module PianoCore
+[6/9] Compiling PianoCore DockFade.swift
+[7/17] Compiling PianoCoreTests DockFadeTests.swift
+[8/17] Emitting module PianoCoreTests
+[9/17] Compiling PianoMac ProbeMenu.swift
+[10/17] Compiling PianoMac PianoView.swift
+[11/17] Emitting module PianoMac
+[12/17] Compiling PianoMac ProbeController.swift
+[13/24] Compiling PianoMacTests TrialSessionTests.swift
+[14/24] Compiling PianoMacTests ControllerIntegrationTests.swift
+[15/24] Emitting module PianoMacTests
+[16/24] Compiling PianoMacTests MenuIntegrationTests.swift
+[17/24] Compiling PianoMacTests StartupEntryTests.swift
+[17/24] Write Objects.LinkFileList
+[19/24] Compiling PianoProbe main.swift
+[20/24] Emitting module PianoProbe
+[20/24] Write Objects.LinkFileList
+[21/24] Linking TypingPianoProbePackageTests
+[22/24] Linking TypingPianoProbe
+[23/24] Applying TypingPianoProbe
+Build complete! (3.59s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 11:16:30.387.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:16:30.389.
+Test Suite 'ControllerIntegrationTests' started at 2026-10-29 11:16:30.389.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:81: error: -[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio] : XCTAssertEqual failed: ("0") is not equal to ("1")
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' failed (0.833 seconds).
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:39: error: -[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(1.0)")
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' failed (0.144 seconds).
+Test Suite 'ControllerIntegrationTests' failed at 2026-10-29 11:16:31.368.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 0.978 (0.978) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 11:16:31.368.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 0.978 (0.978) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 11:16:31.368.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 0.978 (0.981) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

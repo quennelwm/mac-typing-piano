@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "Main independent static data and geometry review, not live UI",
+  "sourceMIDIsMatched": 64,
+  "originalPhysicalLabelsPreserved": 64,
+  "widths": [
+    1264,
+    1496,
+    1904
+  ],
+  "bodyHeight": 112,
+  "whiteHeight": 100,
+  "blackHeight": 64,
+  "frozenOriginalsMatched": 182,
+  "visuallyReviewed": "Design/UI/U-027/previews/overview@1x.png",
+  "productionUI": "PENDING"
+}

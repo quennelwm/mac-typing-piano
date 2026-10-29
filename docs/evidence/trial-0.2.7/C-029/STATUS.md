@@ -1,0 +1,1 @@
+FROZEN / READY FOR PM ACCEPTANCE: C-029 complete, same 0.2.7/build10. Final accessory-policy full suite: 131 selected, 128 pass, 3 explicit skips, 0 fail. Rebuilt ad-hoc candidate, actual window stack / self-check / menu diagnostics and strict signature / ZIP / 82 source hashes verified. Installed and PM-signed App untouched. See HANDOFF.md and delivery.json.

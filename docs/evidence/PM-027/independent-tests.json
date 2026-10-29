@@ -1,0 +1,10 @@
+{
+  "exitCode": 0,
+  "selected": 130,
+  "passed": 127,
+  "skipped": 3,
+  "failed": 0,
+  "scope": "independent Swift package suite, not real keyboard/GUI authorization",
+  "protectedFilesMatched": 112,
+  "testedSourceFiles": 72
+}

@@ -1,0 +1,15 @@
+{
+  "task": "C-030",
+  "testsPassed": 13,
+  "testsFailed": 0,
+  "public026VerifyOnly": "PASS",
+  "public027Against026": "PASS",
+  "adhocRejected": "PASS",
+  "signTemporaryCopy": "PASS",
+  "originalProtectedFilesUnchanged": 1048,
+  "productionRebuilt": false,
+  "appsLaunched": false,
+  "TCCModified": false,
+  "realCrossVersionTCCRetention": "NOT TESTED",
+  "scriptSHA256": "7633e0e77b9be1fc3a9c32865ad7c52ba2dea4a74e9cf22dd16abc5d61bc9604"
+}

@@ -1,0 +1,23 @@
+[0/1] Planning build
+Building for debugging...
+[0/5] Write sources
+[1/5] Write swift-version--58304C5D6DBC2206.txt
+[3/6] Compiling PianoMacTests ControllerIntegrationTests.swift
+[4/6] Emitting module PianoMacTests
+[5/6] Compiling PianoMacTests OverlayVisibilityTests.swift
+[6/7] Compiling PianoMacTests TrialSessionTests.swift
+[6/8] Write Objects.LinkFileList
+[7/8] Linking TypingPianoProbePackageTests
+Build complete! (2.14s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 11:50:30.017.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:50:30.018.
+Test Suite 'OverlayVisibilityTests' started at 2026-10-29 11:50:30.018.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' passed (0.565 seconds).
+Test Suite 'OverlayVisibilityTests' passed at 2026-10-29 11:50:30.583.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.565 (0.566) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-29 11:50:30.584.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.565 (0.566) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 11:50:30.584.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.565 (0.567) seconds

@@ -1,0 +1,6 @@
+[
+  "Code/Sources/PianoMac/OverlayWindowEvidence.swift",
+  "Code/Sources/PianoMac/PianoView.swift",
+  "Code/Sources/PianoProbe/main.swift",
+  "Code/Tests/PianoMacTests/OverlayWindowStackTests.swift"
+]

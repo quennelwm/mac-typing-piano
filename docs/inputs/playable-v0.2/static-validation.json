@@ -1,0 +1,14 @@
+{
+  "sourceSHA256": "a2e759f0de3457df5030154b583d2114ad55ab964b02865915b362e12ddd05f5",
+  "keys": 64,
+  "uniquePhysicalKeys": 64,
+  "continuousMIDI33to96": true,
+  "colorCounts": {
+    "black": 26,
+    "white": 38
+  },
+  "correctNoteNames": true,
+  "coreContiguousF3toC5": true,
+  "runtimePhysicalCapture": "NOT TESTED",
+  "musicalErgonomics": "NOT TESTED"
+}

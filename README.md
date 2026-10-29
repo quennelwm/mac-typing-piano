@@ -2,15 +2,16 @@
 
 在其他应用打字时，键盘触发钢琴音色，屏幕底部显示与按键对应的钢琴。日常控制集中在菜单栏 **♪**，不需要一直打开主窗口。
 
-**当前协作测试版：0.2.6。** [下载可运行的Mac试用包](https://github.com/quennelwm/mac-typing-piano/releases/tag/v0.2.6-trial) · [安装和测试说明](docs/testing/Download-and-Test.md) · [反馈问题](https://github.com/quennelwm/mac-typing-piano/issues)
+**当前协作测试版：0.2.7。** [下载可运行的Mac试用包](https://github.com/quennelwm/mac-typing-piano/releases/tag/v0.2.7-trial) · [安装和测试说明](docs/testing/Download-and-Test.md) · [反馈问题](https://github.com/quennelwm/mac-typing-piano/issues)
 
-现成包面向Apple Silicon Mac。编译目标macOS14+，实机已验证macOS27.2；其他系统仍待测试。下载发布页中的 `Mac-Typing-Piano-0.2.6-arm64.zip`，无需编译。首次启动需要由测试者允许App运行和输入监控，具体步骤见测试说明。这个版本尚未经过Apple公证。
+现成包面向Apple Silicon Mac。编译目标macOS14+，实机已验证macOS27.2；其他系统仍待测试。下载发布页中的 `Mac-Typing-Piano-0.2.7-arm64.zip`，无需编译。首次启动需要由测试者允许App运行和输入监控，具体步骤见测试说明。这个版本尚未经过Apple公证。
 
 ## 功能
 
 - MacBook下方五排的64键，顶部整排包括Esc不参与，Fn保留。
-- 64音Steinway候选采样、多音与自然尾音；每次击键有约700ms上升♪动画。
-- 钢琴自动适应屏幕宽度，每个琴键底部的电脑按键标签可开关。
+- 64音Steinway候选采样、多音与自然尾音；每次击键有24pt、约900ms缓升轻漂的♪动画。
+- 琴键主体加高至112pt，钢琴自动适应屏幕宽度，每个琴键底部的电脑按键标签可开关。
+- 新演奏键位为唯一默认（G为中央C）；♪菜单可自定义64键音高，冲突时交换两键，保存后标签与声音一起生效，可恢复新表默认。
 - ♪菜单内的音量滑块只控制本App。声音、标签和钢琴显示独立控制；“下载新版…”打开GitHub发布页。
 - 使用系统原生Dock自动隐藏；Dock出现时钢琴渐隐，Dock收回后渐现。
 - 可选“静音系统提示音”，缓解无输入框时系统警告声叠加，媒体与琴声音量不变。
@@ -32,7 +33,7 @@
 
 ## 当前验证范围
 
-0.2.6包含16pt菜单栏、同进程授权返回续接、重开后主动继续和持久偏好。菜单与回归检查见 [0.2.6交接](docs/evidence/trial-0.2.6/HANDOFF.md) 和 [独立发布复核](docs/evidence/PM-GH-026/REVIEW.md)。此前0.2.4已完成本机输入监控授权、普通真实按键与音频输出、自适应宽度、底部Dock实际淡出/淡入，用户确认听到琴声；证据和边界见 [PM-004](docs/reviews/PM-004.md)。0.2.6采用固定Apple开发证书签名；从旧ad-hoc版本升级仍需核对权限。两个不同构建的签名要求一致性已验证，但尚未等同跨版本真实授权验收。旧版实按结果不代替新包实按验收。
+0.2.7修复未开始或暂停时无法显示钢琴，放大琴键与漂浮音符，并加入持久化自定义键位。主对话独立回归131项，128通过、3项离线音库条件测试跳过、0失败；证据见 [0.2.7验收](docs/evidence/PM-027/REVIEW.md) 与 [代码交接](docs/evidence/trial-0.2.7/HANDOFF.md)。当前真实键盘/权限的结果以验收记录为准，早先0.2.4的实按确认不替代新包实测。公开包延续0.2.6固定Apple开发证书签名；从旧ad-hoc开发包升级可能仍需一次权限核对，没有Developer ID或Apple公证。
 
 Fn/Caps/左右修饰键完整实按、多屏/侧边Dock、其他macOS版本、真实声学延迟和最终音色仍待协作测试。Dock原生适配使用隔离的私有SPI，能力不可用时引导系统设置；这是试用版，不等于正式发布或全平台兼容。
 

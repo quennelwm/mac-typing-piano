@@ -1,0 +1,6 @@
+{
+  "mode": "original preflight with only Git metadata query suppressed",
+  "gitExecuted": false,
+  "integrityChecksModified": false,
+  "helper": "docs/evidence/C-GH-026-candidate-fixture/prepare_fixture_without_git.py"
+}

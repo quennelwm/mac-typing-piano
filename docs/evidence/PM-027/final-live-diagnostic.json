@@ -1,0 +1,17 @@
+{
+  "inputMode": "stopped",
+  "engineRunning": false,
+  "globalInputPermission": false,
+  "mappingVersion": "ansi64-playable.0.2",
+  "overlayRequested": false,
+  "overlayAlpha": 0,
+  "overlayVisible": false,
+  "overlayStatus": "已隐藏",
+  "dockVisibility": "hidden",
+  "dockVisibilitySource": "hidden：Dock PID1339/window49/layer20，onScreenOnly，orientation=bottom",
+  "secureInput": false,
+  "appVolume": 1,
+  "noteOnAccepted": 1,
+  "outputTapPeak": 0.02824915573000908,
+  "actualStatusItemButtonWidthPt": 16
+}

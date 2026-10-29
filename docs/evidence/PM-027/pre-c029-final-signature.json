@@ -1,0 +1,12 @@
+{
+  "version": "0.2.7",
+  "build": "10",
+  "app": "/Users/wuming/Library/Caches/local.typingpiano.trial/github-release-0.2.7/Mac-Typing-Piano-0.2.7-arm64/打字钢琴试用.app",
+  "binarySHA256": "7c50a40559bde6a9b07bdd57d7d9362aeb68b542543a50225cc7242c5efe452f",
+  "strictSignature": "PASS",
+  "sameDesignatedRequirementAs026": true,
+  "requirementSHA256": "49d6b770e2c3eb51ba8419f207fde1ad72c08c315d0afc58675c137298f1231c",
+  "sourceUnchangedFromTestSnapshot": true,
+  "changedAfterTestLogCreation": [],
+  "notarized": false
+}

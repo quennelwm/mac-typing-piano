@@ -1,0 +1,33 @@
+[0/1] Planning build
+Building for debugging...
+[0/6] Write sources
+[2/6] Write swift-version--58304C5D6DBC2206.txt
+[4/8] Compiling PianoMac ProbeController.swift
+[5/8] Emitting module PianoMac
+[6/16] Compiling PianoMacTests TrialSessionTests.swift
+[7/16] Compiling PianoMacTests StartupEntryTests.swift
+[8/16] Compiling PianoMacTests ControllerIntegrationTests.swift
+[9/16] Emitting module PianoMacTests
+[9/16] Write Objects.LinkFileList
+[11/16] Emitting module PianoProbe
+[12/16] Compiling PianoProbe main.swift
+[12/16] Write Objects.LinkFileList
+[13/16] Linking TypingPianoProbePackageTests
+[14/16] Linking TypingPianoProbe
+[15/16] Applying TypingPianoProbe
+Build complete! (3.03s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 11:18:12.270.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:18:12.271.
+Test Suite 'ControllerIntegrationTests' started at 2026-10-29 11:18:12.271.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:39: error: -[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio] : XCTAssertEqual failed: ("Optional(0.0)") is not equal to ("Optional(1.0)")
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' failed (0.525 seconds).
+Test Suite 'ControllerIntegrationTests' failed at 2026-10-29 11:18:12.796.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.525 (0.525) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 11:18:12.796.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.525 (0.525) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 11:18:12.796.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.525 (0.526) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

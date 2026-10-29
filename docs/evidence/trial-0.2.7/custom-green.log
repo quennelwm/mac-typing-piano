@@ -1,0 +1,60 @@
+[0/1] Planning build
+Building for debugging...
+[0/9] Write sources
+[3/9] Write swift-version--58304C5D6DBC2206.txt
+[5/12] Compiling PianoCore Core.swift
+[6/12] Compiling PianoCore CustomKeymap.swift
+[7/12] Emitting module PianoCore
+[8/32] Compiling PianoCoreTests FloatingNoteTests.swift
+[9/32] Compiling PianoCoreTests ReducerTests.swift
+[10/32] Compiling PianoCoreTests MappingTests.swift
+[11/32] Compiling PianoCoreTests DockFadeTests.swift
+[12/33] Compiling PianoMac NativeDockStorage.swift
+[13/34] Compiling PianoCoreTests GeometryAndDockTests.swift
+[14/34] Compiling PianoCoreTests PreferencesMigrationTests.swift
+[15/34] Emitting module PianoCoreTests
+[16/34] Compiling PianoMac AlertVolume.swift
+[17/34] Compiling PianoMac ContinuousTrialStart.swift
+[18/34] Compiling PianoMac QuietIvoryProvenance.swift
+[19/34] Compiling PianoCoreTests StartupFlowTests.swift
+[22/34] Compiling PianoMac DockAdapter.swift
+[23/34] Compiling PianoMac DockWindowVisibility.swift
+[24/34] Compiling PianoMac InputMonitor.swift
+[25/34] Compiling PianoMac InputNormalizer.swift
+[26/34] Compiling PianoMac SDKKeys.swift
+[27/34] Emitting module PianoMac
+[28/34] Compiling PianoMac PianoView.swift
+[29/34] Compiling PianoMac ProbeController.swift
+[30/48] Emitting module PianoProbe
+[31/48] Compiling PianoMacTests StartupEntryTests.swift
+[32/48] Compiling PianoMacTests IntegrationTests.swift
+[33/48] Compiling PianoMacTests LocalTrialStartTests.swift
+[34/49] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[35/49] Compiling PianoMacTests AlertVolumeTests.swift
+[36/49] Compiling PianoMacTests DockWindowVisibilityTests.swift
+[37/49] Compiling PianoMacTests InputNormalizerTests.swift
+[38/49] Compiling PianoMacTests NativeDockStorageTests.swift
+[39/49] Compiling PianoMacTests ControllerIntegrationTests.swift
+[40/49] Compiling PianoMacTests DockAdapterTests.swift
+[41/49] Compiling PianoMacTests OverlayVisibilityTests.swift
+[42/49] Emitting module PianoMacTests
+[43/49] Compiling PianoProbe main.swift
+[43/49] Write Objects.LinkFileList
+[45/49] Compiling PianoMacTests TrialSessionTests.swift
+[45/49] Write Objects.LinkFileList
+[46/49] Linking TypingPianoProbe
+[47/49] Applying TypingPianoProbe
+[48/49] Linking TypingPianoProbePackageTests
+Build complete! (4.41s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 11:35:06.375.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:35:06.378.
+Test Suite 'OverlayVisibilityTests' started at 2026-10-29 11:35:06.378.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' passed (0.470 seconds).
+Test Suite 'OverlayVisibilityTests' passed at 2026-10-29 11:35:06.848.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.470 (0.470) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-29 11:35:06.848.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.470 (0.470) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 11:35:06.848.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.470 (0.473) seconds

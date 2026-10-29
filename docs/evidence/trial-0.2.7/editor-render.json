@@ -1,0 +1,16 @@
+{
+  "audioStarted" : false,
+  "cancelDidNotCommitRestore" : true,
+  "canvasPt" : [
+    560,
+    440
+  ],
+  "images" : 4,
+  "inputStarted" : false,
+  "kind" : "production NSWindow\/NSPopUpButton\/NSTableView rendering",
+  "persistenceCallback" : "in-memory simulation; production filesystem is tested separately",
+  "retryCommittedOnce" : true,
+  "saveFailureRetainedDraft" : true,
+  "systemSettingsChanged" : false,
+  "userPreferencesWritten" : false
+}

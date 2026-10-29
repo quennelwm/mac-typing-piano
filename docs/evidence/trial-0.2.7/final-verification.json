@@ -1,0 +1,29 @@
+{
+  "version": "0.2.7",
+  "build": 10,
+  "fullSuite": {
+    "selected": 130,
+    "passed": 127,
+    "skipped": 3,
+    "failures": 0
+  },
+  "separateCandidateSuite": {
+    "passed": 3,
+    "failures": 0
+  },
+  "totalDistinctTestsPassed": 130,
+  "nativePianoImages": 36,
+  "animationFrames": 228,
+  "editorImages": 4,
+  "sourceFilesVerified": 80,
+  "protectedFilesUnchanged": 112,
+  "schemasPassed": true,
+  "all64AssignmentsMatchApprovedUIAndAttachment": true,
+  "strictSignaturePassed": true,
+  "zipIntegrityPassed": true,
+  "packagedClassicMappingAbsent": true,
+  "hardwareInputTested": false,
+  "hardwareAudioTested": false,
+  "systemSettingsWritten": false,
+  "sourceFrozen": true
+}

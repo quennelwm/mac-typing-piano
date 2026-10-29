@@ -1,0 +1,668 @@
+{
+  "schemaVersion": 1,
+  "profileID": "performance-piano-v0.2-draft",
+  "status": "draft-pending-hardware-validation-and-user-approval",
+  "description": "MacBook ANSI five lower rows, no top function row. Fully bijective 64-note mapping. Core F3..C5 prioritized for two-hand play. Peripheral notes are accessibility compromises, not a substitute for a real piano keyboard.",
+  "noteNaming": "Middle C=C4=MIDI60",
+  "range": {
+    "low": "A1",
+    "high": "C7",
+    "lowestMIDI": 33,
+    "highestMIDI": 96
+  },
+  "core": {
+    "startMIDI": 53,
+    "endMIDI": 72,
+    "whiteKeys": 12,
+    "blackKeys": 8,
+    "physicalWhiteRow": "home",
+    "physicalBlackRow": "q"
+  },
+  "inputBehavior": {
+    "globalBackground": "Observe only; original input remains unchanged",
+    "performance": "Use an explicitly activated dedicated foreground window to audition/perform; cannot promise system-reserved shortcuts are capturable",
+    "excludedInput": "Esc,F1-F12,Touch ID/power,top-row media keys"
+  },
+  "mapping": [
+    {
+      "physicalKeyID": "Backquote",
+      "row": "digit",
+      "position": 0,
+      "keyLabel": "`",
+      "midi": 46,
+      "note": "A#2",
+      "pianoKeyType": "black",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "Digit1",
+      "row": "digit",
+      "position": 1,
+      "keyLabel": "1",
+      "midi": 48,
+      "note": "C3",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "Digit2",
+      "row": "digit",
+      "position": 2,
+      "keyLabel": "2",
+      "midi": 49,
+      "note": "C#3",
+      "pianoKeyType": "black",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "Digit3",
+      "row": "digit",
+      "position": 3,
+      "keyLabel": "3",
+      "midi": 47,
+      "note": "B2",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "Digit4",
+      "row": "digit",
+      "position": 4,
+      "keyLabel": "4",
+      "midi": 94,
+      "note": "A#6",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Digit5",
+      "row": "digit",
+      "position": 5,
+      "keyLabel": "5",
+      "midi": 93,
+      "note": "A6",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Digit6",
+      "row": "digit",
+      "position": 6,
+      "keyLabel": "6",
+      "midi": 92,
+      "note": "G#6",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Digit7",
+      "row": "digit",
+      "position": 7,
+      "keyLabel": "7",
+      "midi": 91,
+      "note": "G6",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Digit8",
+      "row": "digit",
+      "position": 8,
+      "keyLabel": "8",
+      "midi": 90,
+      "note": "F#6",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Digit9",
+      "row": "digit",
+      "position": 9,
+      "keyLabel": "9",
+      "midi": 89,
+      "note": "F6",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Digit0",
+      "row": "digit",
+      "position": 10,
+      "keyLabel": "0",
+      "midi": 82,
+      "note": "A#5",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Minus",
+      "row": "digit",
+      "position": 11,
+      "keyLabel": "-",
+      "midi": 80,
+      "note": "G#5",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Equal",
+      "row": "digit",
+      "position": 12,
+      "keyLabel": "=",
+      "midi": 78,
+      "note": "F#5",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Backspace",
+      "row": "digit",
+      "position": 13,
+      "keyLabel": "⌫",
+      "midi": 75,
+      "note": "D#5",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Tab",
+      "row": "q",
+      "position": 0,
+      "keyLabel": "Tab",
+      "midi": 51,
+      "note": "D#3",
+      "pianoKeyType": "black",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyQ",
+      "row": "q",
+      "position": 1,
+      "keyLabel": "Q",
+      "midi": 50,
+      "note": "D3",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyW",
+      "row": "q",
+      "position": 2,
+      "keyLabel": "W",
+      "midi": 54,
+      "note": "F#3",
+      "pianoKeyType": "black",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyE",
+      "row": "q",
+      "position": 3,
+      "keyLabel": "E",
+      "midi": 56,
+      "note": "G#3",
+      "pianoKeyType": "black",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyR",
+      "row": "q",
+      "position": 4,
+      "keyLabel": "R",
+      "midi": 58,
+      "note": "A#3",
+      "pianoKeyType": "black",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyT",
+      "row": "q",
+      "position": 5,
+      "keyLabel": "T",
+      "midi": 96,
+      "note": "C7",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "KeyY",
+      "row": "q",
+      "position": 6,
+      "keyLabel": "Y",
+      "midi": 61,
+      "note": "C#4",
+      "pianoKeyType": "black",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyU",
+      "row": "q",
+      "position": 7,
+      "keyLabel": "U",
+      "midi": 63,
+      "note": "D#4",
+      "pianoKeyType": "black",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyI",
+      "row": "q",
+      "position": 8,
+      "keyLabel": "I",
+      "midi": 95,
+      "note": "B6",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "KeyO",
+      "row": "q",
+      "position": 9,
+      "keyLabel": "O",
+      "midi": 66,
+      "note": "F#4",
+      "pianoKeyType": "black",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyP",
+      "row": "q",
+      "position": 10,
+      "keyLabel": "P",
+      "midi": 68,
+      "note": "G#4",
+      "pianoKeyType": "black",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "BracketLeft",
+      "row": "q",
+      "position": 11,
+      "keyLabel": "[",
+      "midi": 70,
+      "note": "A#4",
+      "pianoKeyType": "black",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "BracketRight",
+      "row": "q",
+      "position": 12,
+      "keyLabel": "]",
+      "midi": 74,
+      "note": "D5",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Backslash",
+      "row": "q",
+      "position": 13,
+      "keyLabel": "\\",
+      "midi": 73,
+      "note": "C#5",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "CapsLock",
+      "row": "home",
+      "position": 0,
+      "keyLabel": "Caps",
+      "midi": 52,
+      "note": "E3",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyA",
+      "row": "home",
+      "position": 1,
+      "keyLabel": "A",
+      "midi": 53,
+      "note": "F3",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyS",
+      "row": "home",
+      "position": 2,
+      "keyLabel": "S",
+      "midi": 55,
+      "note": "G3",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyD",
+      "row": "home",
+      "position": 3,
+      "keyLabel": "D",
+      "midi": 57,
+      "note": "A3",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyF",
+      "row": "home",
+      "position": 4,
+      "keyLabel": "F",
+      "midi": 59,
+      "note": "B3",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyG",
+      "row": "home",
+      "position": 5,
+      "keyLabel": "G",
+      "midi": 60,
+      "note": "C4",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyH",
+      "row": "home",
+      "position": 6,
+      "keyLabel": "H",
+      "midi": 62,
+      "note": "D4",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyJ",
+      "row": "home",
+      "position": 7,
+      "keyLabel": "J",
+      "midi": 64,
+      "note": "E4",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyK",
+      "row": "home",
+      "position": 8,
+      "keyLabel": "K",
+      "midi": 65,
+      "note": "F4",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "KeyL",
+      "row": "home",
+      "position": 9,
+      "keyLabel": "L",
+      "midi": 67,
+      "note": "G4",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "Semicolon",
+      "row": "home",
+      "position": 10,
+      "keyLabel": ";",
+      "midi": 69,
+      "note": "A4",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "Quote",
+      "row": "home",
+      "position": 11,
+      "keyLabel": "'",
+      "midi": 71,
+      "note": "B4",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "Return",
+      "row": "home",
+      "position": 12,
+      "keyLabel": "↵",
+      "midi": 72,
+      "note": "C5",
+      "pianoKeyType": "white",
+      "priorityTier": "core"
+    },
+    {
+      "physicalKeyID": "ShiftLeft",
+      "row": "lower",
+      "position": 0,
+      "keyLabel": "⇧L",
+      "midi": 38,
+      "note": "D2",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyZ",
+      "row": "lower",
+      "position": 1,
+      "keyLabel": "Z",
+      "midi": 39,
+      "note": "D#2",
+      "pianoKeyType": "black",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyX",
+      "row": "lower",
+      "position": 2,
+      "keyLabel": "X",
+      "midi": 40,
+      "note": "E2",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyC",
+      "row": "lower",
+      "position": 3,
+      "keyLabel": "C",
+      "midi": 41,
+      "note": "F2",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyV",
+      "row": "lower",
+      "position": 4,
+      "keyLabel": "V",
+      "midi": 42,
+      "note": "F#2",
+      "pianoKeyType": "black",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyB",
+      "row": "lower",
+      "position": 5,
+      "keyLabel": "B",
+      "midi": 43,
+      "note": "G2",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyN",
+      "row": "lower",
+      "position": 6,
+      "keyLabel": "N",
+      "midi": 44,
+      "note": "G#2",
+      "pianoKeyType": "black",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "KeyM",
+      "row": "lower",
+      "position": 7,
+      "keyLabel": "M",
+      "midi": 45,
+      "note": "A2",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "Comma",
+      "row": "lower",
+      "position": 8,
+      "keyLabel": ",",
+      "midi": 81,
+      "note": "A5",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Period",
+      "row": "lower",
+      "position": 9,
+      "keyLabel": ".",
+      "midi": 79,
+      "note": "G5",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Slash",
+      "row": "lower",
+      "position": 10,
+      "keyLabel": "/",
+      "midi": 77,
+      "note": "F5",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "ShiftRight",
+      "row": "lower",
+      "position": 11,
+      "keyLabel": "⇧R",
+      "midi": 76,
+      "note": "E5",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "Fn",
+      "row": "bottom",
+      "position": 0,
+      "keyLabel": "fn",
+      "midi": 33,
+      "note": "A1",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "ControlLeft",
+      "row": "bottom",
+      "position": 1,
+      "keyLabel": "⌃",
+      "midi": 34,
+      "note": "A#1",
+      "pianoKeyType": "black",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "AltLeft",
+      "row": "bottom",
+      "position": 2,
+      "keyLabel": "⌥L",
+      "midi": 35,
+      "note": "B1",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "MetaLeft",
+      "row": "bottom",
+      "position": 3,
+      "keyLabel": "⌘L",
+      "midi": 36,
+      "note": "C2",
+      "pianoKeyType": "white",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "Space",
+      "row": "bottom",
+      "position": 4,
+      "keyLabel": "Space",
+      "midi": 37,
+      "note": "C#2",
+      "pianoKeyType": "black",
+      "priorityTier": "low-extension"
+    },
+    {
+      "physicalKeyID": "MetaRight",
+      "row": "bottom",
+      "position": 5,
+      "keyLabel": "⌘R",
+      "midi": 88,
+      "note": "E6",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "AltRight",
+      "row": "bottom",
+      "position": 6,
+      "keyLabel": "⌥R",
+      "midi": 87,
+      "note": "D#6",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "ArrowLeft",
+      "row": "bottom",
+      "position": 7,
+      "keyLabel": "←",
+      "midi": 86,
+      "note": "D6",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "ArrowDown",
+      "row": "bottom",
+      "position": 8,
+      "keyLabel": "↓",
+      "midi": 85,
+      "note": "C#6",
+      "pianoKeyType": "black",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "ArrowUp",
+      "row": "bottom",
+      "position": 9,
+      "keyLabel": "↑",
+      "midi": 84,
+      "note": "C6",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    },
+    {
+      "physicalKeyID": "ArrowRight",
+      "row": "bottom",
+      "position": 10,
+      "keyLabel": "→",
+      "midi": 83,
+      "note": "B5",
+      "pianoKeyType": "white",
+      "priorityTier": "high-extension"
+    }
+  ]
+}

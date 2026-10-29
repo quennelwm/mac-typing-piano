@@ -615,3 +615,8 @@ Licenses/                           # 实际使用资源的许可与署名
 
 [S13] OpenAI，Run long horizon tasks with Codex：持久状态、反馈循环与 worktree 隔离。
 `https://developers.openai.com/blog/run-long-horizon-tasks-with-codex`
+
+## CR-006（2026-10-29）
+用户要求琴键本体增高至112pt、可靠显示入口、更明显的短时漂浮音符及新演奏键位。最新范围与接口调整以 `changes/CR-006-playable-and-overlay.md` 和ADR-022为准；旧56pt/12pt参数及原按实体行固定分黑白的说明属于旧预设，不能约束新预设。音高、颜色、实体键标签继续同源。
+
+CR-007最新覆盖：新表唯一默认，旧表仅历史参考、不提供切换。自定义在64个现有实体键/MIDI33—96内交换音高，标签和声音同源；设置保存到用户目录。详见CR-007及ADR-023。

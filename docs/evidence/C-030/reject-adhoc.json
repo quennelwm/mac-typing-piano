@@ -1,0 +1,5 @@
+{
+  "exitCode": 1,
+  "report": null,
+  "error": "release-sign: ad-hoc signatures are not release identities"
+}

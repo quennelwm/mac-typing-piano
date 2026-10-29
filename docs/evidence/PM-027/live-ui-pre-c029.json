@@ -1,0 +1,122 @@
+{
+  "stage": "pre-C029 production candidate; window-level correction pending",
+  "localInput": "CUA A/G local trial, four events, two NoteOn requests/accepted",
+  "outputTapPeak": 0.021709453,
+  "acousticHearingVerified": false,
+  "physicalGlobalInputVerified": false,
+  "diagnostic": {
+    "inputMode": "stopped",
+    "engineRunning": false,
+    "globalInputPermission": false,
+    "mappingVersion": "ansi64-playable.0.2",
+    "overlayRequested": true,
+    "overlayAlpha": 0,
+    "overlayVisible": false,
+    "overlayStatus": "等待Dock隐藏",
+    "dockVisibility": "visible",
+    "secureInput": false,
+    "appVolume": 1,
+    "noteOnAccepted": 2
+  },
+  "hiddenWindows": [
+    {
+      "alpha": 1,
+      "bounds": {
+        "Height": 20,
+        "Width": 66,
+        "X": -1474,
+        "Y": 23
+      },
+      "id": 7453,
+      "layer": 0,
+      "onScreen": true
+    },
+    {
+      "alpha": 1,
+      "bounds": {
+        "Height": 522,
+        "Width": 480,
+        "X": -1200,
+        "Y": 64
+      },
+      "id": 7125,
+      "layer": 0,
+      "onScreen": false
+    },
+    {
+      "alpha": 0,
+      "bounds": {
+        "Height": 208,
+        "Width": 1496,
+        "X": 8,
+        "Y": 774
+      },
+      "id": 7124,
+      "layer": 0,
+      "onScreen": false
+    },
+    {
+      "alpha": 1,
+      "bounds": {
+        "Height": 712,
+        "Width": 1040,
+        "X": -1480,
+        "Y": 17
+      },
+      "id": 7123,
+      "layer": 0,
+      "onScreen": true
+    }
+  ],
+  "shownWindows": [
+    {
+      "alpha": 1,
+      "bounds": {
+        "Height": 20,
+        "Width": 66,
+        "X": -1474,
+        "Y": 23
+      },
+      "id": 7453,
+      "layer": 0,
+      "onScreen": true
+    },
+    {
+      "alpha": 1,
+      "bounds": {
+        "Height": 522,
+        "Width": 480,
+        "X": -1200,
+        "Y": 64
+      },
+      "id": 7125,
+      "layer": 0,
+      "onScreen": false
+    },
+    {
+      "alpha": 1,
+      "bounds": {
+        "Height": 208,
+        "Width": 1496,
+        "X": 8,
+        "Y": 774
+      },
+      "id": 7124,
+      "layer": 0,
+      "onScreen": true
+    },
+    {
+      "alpha": 1,
+      "bounds": {
+        "Height": 712,
+        "Width": 1040,
+        "X": -1480,
+        "Y": 17
+      },
+      "id": 7123,
+      "layer": 0,
+      "onScreen": true
+    }
+  ],
+  "statusItemWidthPt": 16
+}

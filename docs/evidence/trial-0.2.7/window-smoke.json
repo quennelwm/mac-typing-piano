@@ -1,0 +1,16 @@
+{
+  "audioOutputStarted" : false,
+  "dockSettingWritten" : false,
+  "existingInputPermissionForThisProcess" : true,
+  "frontmostPIDUnchanged" : true,
+  "ignoresMouseEvents" : true,
+  "isKeyWindow" : false,
+  "isMainWindow" : false,
+  "kind" : "programmatic window smoke, not click\/Dock acceptance",
+  "listenerStarted" : false,
+  "opaque" : false,
+  "passed" : true,
+  "screenCount" : 2,
+  "visible" : true,
+  "windowLevel" : 0
+}

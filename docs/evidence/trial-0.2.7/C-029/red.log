@@ -1,0 +1,100 @@
+Building for debugging...
+[Provisioning 2 / 8]
+[Planning 204 / 211]
+[Planning deferred tasks]
+[62 / 138]
+[64 / 140] PianoCore
+[72 / 184]
+[74 / 184] PianoAudio
+[76 / 220]
+[84 / 220]
+[86 / 220]
+[87 / 220]
+[91 / 220]
+[93 / 220]
+[95 / 220]
+[98 / 220]
+[103 / 220]
+[106 / 220]
+[108 / 220]
+[109 / 220]
+[117 / 220]
+[123 / 220] PianoCore
+[124 / 220]
+[128 / 220] PianoCore
+[134 / 220]
+[135 / 220]
+[136 / 220]
+[137 / 220]
+[138 / 220]
+[138 / 220] PianoCore
+[140 / 220]
+[141 / 220]
+[142 / 220]
+[143 / 220]
+[144 / 220]
+[147 / 220]
+[149 / 220]
+[153 / 221]
+[157 / 221] PianoAudio
+[171 / 248]
+[175 / 248]
+[177 / 248]
+[178 / 257]
+[179 / 257]
+[180 / 257] PianoAudio
+[185 / 258] PianoAudioTests-product
+[185 / 266]
+[186 / 266]
+[195 / 266] PianoMac
+[196 / 266]
+[197 / 266] PianoMac
+[200 / 266] PianoMac
+[207 / 266] PianoCoreTests-product
+[216 / 266] TypingPianoProbe-product
+[222 / 266] PianoCoreTests-product
+[223 / 266] PianoCoreTests-product
+[227 / 266] PianoAudioTests-product
+[229 / 266] PianoAudioTests-product
+[236 / 266]
+[237 / 267]
+[237 / 267] PianoAudioTests-product
+[238 / 267] PianoMac
+[242 / 268] PianoCoreTests-product
+[244 / 268] PianoCoreTests-product
+[246 / 268] TypingPianoProbe-product
+[248 / 270] PianoAudioTests-product
+[257 / 279] TypingPianoProbe-product
+[263 / 279] PianoMacTests-product
+[265 / 279]
+[269 / 279] PianoMacTests-product
+[271 / 279] PianoMacTests-product
+[275 / 279] PianoMacTests-product
+Build complete! (22.60秒)
+Test Suite 'Selected tests' started at 2026-10-29 12:34:15.205.
+Test Suite 'PianoMacTests.xctest' started at 2026-10-29 12:34:15.209.
+Test Suite 'OverlayWindowStackTests' started at 2026-10-29 12:34:15.209.
+Test Case '-[PianoMacTests.OverlayWindowStackTests testOrdinaryWindowsReorderBelowOverlayWhileModalStaysAbove]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayWindowStackTests.swift:13: error: -[PianoMacTests.OverlayWindowStackTests testOrdinaryWindowsReorderBelowOverlayWhileModalStaysAbove] : XCTAssertEqual failed: ("Optional(false)") is not equal to ("Optional(true)")
+Test Case '-[PianoMacTests.OverlayWindowStackTests testOrdinaryWindowsReorderBelowOverlayWhileModalStaysAbove]' failed (1.928 seconds).
+Test Suite 'OverlayWindowStackTests' failed at 2026-10-29 12:34:17.138.
+	 Executed 1 test, with 1 failure (0 unexpected) in 1.928 (1.929) seconds
+Test Suite 'PianoMacTests.xctest' failed at 2026-10-29 12:34:17.138.
+	 Executed 1 test, with 1 failure (0 unexpected) in 1.928 (1.929) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 12:34:17.138.
+	 Executed 1 test, with 1 failure (0 unexpected) in 1.928 (1.933) seconds
+C029_WINDOW_STACK {"audioOutputStarted":false,"belowModalWindow":true,"dockLevel":20,"frontmostPIDUnchanged":true,"fullScreenNone":true,"ignoresMouseEvents":true,"isKeyWindow":false,"isMainWindow":false,"kind":"real overlapping NSWindows and WindowServer front-to-back order; no cross-app activation or TCC dialog","listenerStarted":false,"menuLevel":24,"modalLevel":8,"passed":false,"permissionRequested":false,"samples":[{"backNormalRank":8,"frontNormalRank":7,"overlayLayer":0,"overlayRank":9,"passed":false,"step":"A"},{"backNormalRank":8,"frontNormalRank":7,"overlayLayer":0,"overlayRank":9,"passed":false,"step":"B"},{"backNormalRank":8,"frontNormalRank":7,"overlayLayer":0,"overlayRank":9,"passed":false,"step":"A-again"}],"systemSettingsWritten":false,"visible":true,"windowLevel":0}
+Test Suite 'Selected tests' started at 2026-10-29 12:34:17.255.
+Test Suite 'PianoCoreTests.xctest' started at 2026-10-29 12:34:17.257.
+Test Suite 'PianoCoreTests.xctest' passed at 2026-10-29 12:34:17.257.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 12:34:17.257.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' started at 2026-10-29 12:34:17.360.
+Test Suite 'PianoAudioTests.xctest' started at 2026-10-29 12:34:17.361.
+Test Suite 'PianoAudioTests.xctest' passed at 2026-10-29 12:34:17.361.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 12:34:17.361.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Note: Some test targets reported failures:
+  - PianoMacTests (XCTest)

@@ -1,0 +1,12 @@
+{
+  "HANDOFF.md": "f6c794681a386122c84518961c9c41a9980b963e60b1631ea67541a4cdb5f69b",
+  "source-hashes.json": "36122adb450b0a3e6139f387f57a72b22e2ee8aaf25f7ec0c34a56760e68b589",
+  "delivery.json": "50775af3d7d9346f7c49747a611f3c442f41d73fdda8aef0172f86a14a6fea99",
+  "final-verification.json": "3d1d7b9c0c4d7a27e36e6781f40f9d5098d40397db208a99daf2c833df96a402",
+  "full-tests-final.log": "12b73c14ec4059a5446585529af42d6db540ca14bb4bc6288659731fa38ba436",
+  "candidate-tests.log": "823ae841b0d40e35bddc9392cca2bac8dc03fab1c77b3a50e2868128ab19ebc2",
+  "queued-release-red-corrected.log": "2c2db228cd6a83048a49adbe12bc765a0824e9b6e0046b461a8f54e9a9168c9e",
+  "queued-release-green.log": "570315883c20cc81f498c8eaf8fe30273dd5ed0f715ae33eba5638a9b8f1bc96",
+  "editor-render.json": "85f911afab25efa22ae2e3eb57d66360321e04986adb96bb18756227e8b77089",
+  "window-smoke.json": "e1e1a009ebc02e119b7a515f5d64993ae05ee71a4204ec7fcbbe488bdbcbe362"
+}

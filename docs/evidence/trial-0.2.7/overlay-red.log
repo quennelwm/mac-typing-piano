@@ -1,0 +1,92 @@
+Building for debugging...
+[0/16] Write sources
+[2/16] /Users/wuming/Library/Caches/typing-piano-verification/c027/arm64-apple-macosx/debug/TypingPianoProbePackageTests.derived/runner.swift
+[4/16] Write sources
+[9/16] Write TypingPianoProbe-entitlement.plist
+[10/16] Write swift-version--58304C5D6DBC2206.txt
+[12/30] Compiling PianoCore DockOwnership.swift
+[13/31] Compiling PianoCore Core.swift
+[14/31] Compiling PianoCore DockFade.swift
+[15/31] Compiling PianoCore Policies.swift
+[16/31] Compiling PianoCore FloatingNotes.swift
+[17/31] Compiling PianoCore Mapping.swift
+[18/31] Compiling PianoCore AppPreferences.swift
+[19/31] Compiling PianoCore Coordinator.swift
+[20/31] Emitting module PianoCore
+[21/31] Compiling PianoCore Geometry.swift
+[22/31] Compiling PianoCore StartupFlow.swift
+[23/40] Emitting module PianoAudio
+[24/40] Compiling PianoAudio SamplerAudio.swift
+[25/40] Compiling PianoAudio AuditionSession.swift
+[26/40] Compiling PianoAudio RuntimeDiagnostics.swift
+[27/62] Compiling PianoMac InputNormalizer.swift
+[28/62] Compiling PianoMac Module.swift
+[29/63] Compiling PianoMac QuietIvoryProvenance.swift
+[30/63] Compiling PianoMac SDKKeys.swift
+[31/63] Compiling PianoMac ContinuousTrialStart.swift
+[32/63] Compiling PianoMac DockAdapter.swift
+[33/63] Compiling PianoMac AdaptiveOverlay.swift
+[34/63] Compiling PianoMac AlertVolume.swift
+[35/63] Emitting module PianoMac
+[36/63] Compiling PianoCoreTests PreferencesMigrationTests.swift
+[37/63] Compiling PianoCoreTests MappingTests.swift
+[38/63] Compiling PianoCoreTests ReducerTests.swift
+[39/64] Compiling PianoCoreTests GeometryAndDockTests.swift
+[40/64] Compiling PianoCoreTests FloatingNoteTests.swift
+[41/64] Compiling PianoCoreTests DockFadeTests.swift
+[42/64] Emitting module PianoCoreTests
+[45/64] Compiling PianoAudioTests TrialGainTests.swift
+[46/64] Compiling PianoAudioTests SamplerAudioTests.swift
+[47/64] Compiling PianoAudioTests RuntimeDiagnosticsTests.swift
+[48/64] Compiling PianoAudioTests TrialBankTests.swift
+[49/64] Compiling PianoAudioTests AudioSelectionTests.swift
+[50/64] Emitting module PianoAudioTests
+[51/64] Compiling PianoAudioTests CandidateBankTests.swift
+[52/64] Compiling PianoCoreTests StartupFlowTests.swift
+[53/64] Compiling PianoMac DockWindowVisibility.swift
+[54/64] Compiling PianoMac InputMonitor.swift
+[55/64] Compiling PianoMac SingleInstance.swift
+[56/64] Compiling PianoMac NativeDockStorage.swift
+[57/64] Compiling PianoMac PianoView.swift
+[58/64] Compiling PianoMac ProbeController.swift
+[59/64] Compiling PianoMac ProbeMenu.swift
+[60/80] Emitting module PianoMacTests
+[61/81] Compiling PianoMacTests StartupEntryTests.swift
+[62/81] Compiling PianoMacTests NativeDockStorageTests.swift
+[63/81] Compiling PianoMacTests SingleInstanceTests.swift
+[64/81] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[65/81] Compiling PianoMacTests AlertVolumeTests.swift
+[66/81] Compiling PianoMacTests DockWindowVisibilityTests.swift
+[67/81] Compiling PianoMacTests InputNormalizerTests.swift
+[68/81] Compiling PianoMacTests MenuIntegrationTests.swift
+[69/81] Compiling PianoMacTests ModuleTests.swift
+[70/81] Compiling PianoMacTests IntegrationTests.swift
+[71/81] Compiling PianoMacTests LocalTrialStartTests.swift
+[72/81] Compiling PianoMacTests ControllerIntegrationTests.swift
+[73/81] Compiling PianoMacTests DockAdapterTests.swift
+[74/81] Compiling PianoMacTests TrialSessionTests.swift
+[75/83] Emitting module PianoProbe
+[76/83] Compiling PianoProbe main.swift
+[76/83] Write Objects.LinkFileList
+[77/83] Linking TypingPianoProbe
+[78/83] Applying TypingPianoProbe
+[80/83] Compiling TypingPianoProbePackageTests runner.swift
+[81/83] Emitting module TypingPianoProbePackageTests
+[81/83] Write Objects.LinkFileList
+[82/83] Linking TypingPianoProbePackageTests
+Build complete! (21.79s)
+warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+Test Suite 'Selected tests' started at 2026-10-29 11:15:27.990.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:15:27.993.
+Test Suite 'ControllerIntegrationTests' started at 2026-10-29 11:15:27.993.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift:39: error: -[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio] : XCTAssertEqual failed: ("nil") is not equal to ("Optional(1.0)")
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' failed (0.658 seconds).
+Test Suite 'ControllerIntegrationTests' failed at 2026-10-29 11:15:28.651.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.658 (0.658) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 11:15:28.651.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.658 (0.658) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 11:15:28.651.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.658 (0.661) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

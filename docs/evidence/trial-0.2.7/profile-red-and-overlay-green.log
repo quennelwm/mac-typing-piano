@@ -1,0 +1,94 @@
+[0/1] Planning build
+Building for debugging...
+[0/8] Write sources
+[4/8] Write swift-version--58304C5D6DBC2206.txt
+[6/11] Compiling PianoCore FloatingNotes.swift
+[7/11] Emitting module PianoCore
+[8/11] Compiling PianoCore Geometry.swift
+[9/20] Compiling PianoCoreTests AppPreferencesTests.swift
+[10/20] Emitting module PianoCoreTests
+[11/20] Compiling PianoCoreTests FloatingNoteTests.swift
+[12/20] Emitting module PianoMac
+[13/20] Compiling PianoMac AdaptiveOverlay.swift
+[14/20] Compiling PianoMac ProbeController.swift
+[15/20] Compiling PianoMac PianoView.swift
+[16/28] Compiling PianoMacTests TrialSessionTests.swift
+[17/28] Compiling PianoMacTests StartupEntryTests.swift
+[18/28] Compiling PianoMacTests ControllerIntegrationTests.swift
+[19/28] Emitting module PianoMacTests
+[20/28] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[21/28] Compiling PianoMacTests IntegrationTests.swift
+[21/28] Write Objects.LinkFileList
+[23/28] Emitting module PianoProbe
+[24/28] Compiling PianoProbe main.swift
+[24/28] Write Objects.LinkFileList
+[25/28] Linking TypingPianoProbePackageTests
+[26/28] Linking TypingPianoProbe
+[27/28] Applying TypingPianoProbe
+Build complete! (3.26s)
+Test Suite 'Selected tests' started at 2026-10-29 11:19:28.046.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 11:19:28.049.
+Test Suite 'AdaptiveOverlayTests' started at 2026-10-29 11:19:28.049.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testDockVisualStateNeverClearsHeldNotesOrSound]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testDockVisualStateNeverClearsHeldNotesOrSound]' passed (0.003 seconds).
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUserEnabledDockIsNotRestoredToAnOlderFalseValue]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUserEnabledDockIsNotRestoredToAnOlderFalseValue]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen]' passed (0.000 seconds).
+Test Suite 'AdaptiveOverlayTests' passed at 2026-10-29 11:19:28.053.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.004 (0.004) seconds
+Test Suite 'AppPreferencesTests' started at 2026-10-29 11:19:28.053.
+Test Case '-[PianoCoreTests.AppPreferencesTests testExplicitProfileSurvivesCodingAndLegacyJSONRemainsReadable]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/AppPreferencesTests.swift:8: error: -[PianoCoreTests.AppPreferencesTests testExplicitProfileSurvivesCodingAndLegacyJSONRemainsReadable] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("classic")")
+Test Case '-[PianoCoreTests.AppPreferencesTests testExplicitProfileSurvivesCodingAndLegacyJSONRemainsReadable]' failed (0.108 seconds).
+Test Case '-[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch]' started.
+Test Case '-[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch]' passed (0.002 seconds).
+Test Suite 'AppPreferencesTests' failed at 2026-10-29 11:19:28.163.
+	 Executed 2 tests, with 1 failure (0 unexpected) in 0.110 (0.110) seconds
+Test Suite 'ControllerIntegrationTests' started at 2026-10-29 11:19:28.163.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' passed (0.677 seconds).
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' passed (0.152 seconds).
+Test Suite 'ControllerIntegrationTests' passed at 2026-10-29 11:19:28.993.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.829 (0.829) seconds
+Test Suite 'FloatingNoteTests' started at 2026-10-29 11:19:28.993.
+Test Case '-[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' passed (0.001 seconds).
+Test Suite 'FloatingNoteTests' passewarning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+d at 2026-10-29 11:19:28.997.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.003 (0.004) seconds
+Test Suite 'IntegrationTests' started at 2026-10-29 11:19:28.997.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' started.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' passed (1.009 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' started.
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' passed (0.026 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' started.
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' passed (0.005 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay]' started.
+Test Case '-[PianoMacTests.IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay]' passed (0.005 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' started.
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' passed (0.004 seconds).
+Test Suite 'IntegrationTests' passed at 2026-10-29 11:19:30.045.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 1.048 (1.049) seconds
+Test Suite 'MappingTests' started at 2026-10-29 11:19:30.045.
+Test Case '-[PianoCoreTests.MappingTests testPlayableMappingPreservesPhysicalContractAndCoreTwentyNotes]' started.
+Test Case '-[PianoCoreTests.MappingTests testPlayableMappingPreservesPhysicalContractAndCoreTwentyNotes]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes]' started.
+Test Case '-[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes]' passed (0.003 seconds).
+Test Suite 'MappingTests' passed at 2026-10-29 11:19:30.051.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' failed at 2026-10-29 11:19:30.051.
+	 Executed 19 tests, with 1 failure (0 unexpected) in 2.000 (2.002) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 11:19:30.051.
+	 Executed 19 tests, with 1 failure (0 unexpected) in 2.000 (2.005) seconds
+Note: Some test targets reported failures:
+  - TypingPianoProbePackageTests (XCTest)

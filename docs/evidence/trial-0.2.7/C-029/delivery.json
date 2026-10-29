@@ -1,0 +1,34 @@
+{
+  "task": "C-029",
+  "version": "0.2.7",
+  "build": 10,
+  "app": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.7/打字钢琴试用.app",
+  "zip": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.7/打字钢琴试用.zip",
+  "binarySHA256": "1c4ed52c7d12a22382a96bcba205e70f45284c7d2a5c8dba3d12ee13e43ed4dd",
+  "zipSHA256": "e608ba1b97a5aa56397b8fb3db3ec23108409e7766d351161ca8fd2fb97e489a",
+  "sourceManifestSHA256": "10d4d0733429809e6f3c6fcb4834f71a6042dfb0937876faf66f0ebc48e04bc1",
+  "architecture": "arm64",
+  "signing": "ad-hoc; final development signing and installation belong to PM",
+  "fullSuite": {
+    "selected": 131,
+    "passed": 128,
+    "skipped": 3,
+    "failures": 0
+  },
+  "candidateBankTestsRerunThisTask": false,
+  "sourceFilesVerified": 82,
+  "strictSignaturePassed": true,
+  "zipCRCAndBinaryPassed": true,
+  "windowStackPassed": true,
+  "activationPolicy": "accessory",
+  "protectedFilesUnchanged": 438,
+  "pmEvidenceIndependentlyUpdatedOrRenamed": [
+    "/Users/wuming/Desktop/键盘钢琴/docs/evidence/PM-027/final-signature.json",
+    "/Users/wuming/Desktop/键盘钢琴/docs/evidence/PM-027/installed.json",
+    "/Users/wuming/Desktop/键盘钢琴/docs/evidence/PM-027/REVIEW.md"
+  ],
+  "installedAppUntouched": true,
+  "pmSignedAppUnchanged": true,
+  "realTCCDialogTested": false,
+  "installedCrossApplicationTested": false
+}
