@@ -2,7 +2,7 @@
 set -euo pipefail
 code_root="$(cd "$(dirname "$0")/.." && pwd)"
 project_root="$(cd "$code_root/.." && pwd)"
-build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.8}"
+build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.9}"
 mkdir -p "$build_root"
 build_root="$(cd "$build_root" && pwd)"
 if [ "$build_root" = "$HOME/Library/Caches/local.typingpiano.trial" ]; then
@@ -10,7 +10,7 @@ if [ "$build_root" = "$HOME/Library/Caches/local.typingpiano.trial" ]; then
     exit 1
 fi
 case "$build_root" in
-    "$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.7")
+    "$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.7"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.8")
         printf '%s\n' 'Refusing to overwrite a frozen historical candidate.' >&2
         exit 1 ;;
 esac
@@ -104,8 +104,8 @@ cat > "$app_path/Contents/Info.plist" <<'PLIST'
 <key>CFBundleExecutable</key><string>TypingPianoProbe</string>
 <key>CFBundleIdentifier</key><string>local.typingpiano.trial</string>
 <key>CFBundleName</key><string>打字钢琴试用</string>
-<key>CFBundleVersion</key><string>11</string>
-<key>CFBundleShortVersionString</key><string>0.2.8</string>
+<key>CFBundleVersion</key><string>12</string>
+<key>CFBundleShortVersionString</key><string>0.2.9</string>
 <key>TypingPianoSingleInstanceProtocol</key><integer>1</integer>
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>LSMinimumSystemVersion</key><string>14.0</string>

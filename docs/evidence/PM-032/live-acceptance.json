@@ -1,0 +1,17 @@
+{
+  "versionObservedInStartup": "0.2.9",
+  "startupPrimaryButton": "开始打字钢琴",
+  "primaryButtonClicked": true,
+  "remainingAXWindow": "64-key overlay",
+  "runningInstances": 1,
+  "inputPermissionRetained": true,
+  "permissionPromptShown": false,
+  "preferencesPreserved": {
+    "heightScale": 1.32,
+    "volume": 1,
+    "showKeyLabels": true,
+    "transparency": 0
+  },
+  "realMenuDragTested": false,
+  "physicalKeyHearingTested": false
+}

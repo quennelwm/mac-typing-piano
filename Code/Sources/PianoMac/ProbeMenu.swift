@@ -15,6 +15,10 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     public let heightPercentage = NSTextField(labelWithString: "100%")
     private let preferencesSaveStatus = NSMenuItem(title: "", action: nil, keyEquivalent: "")
     public var onHeight: ((Double) -> Void)?
+    public let transparencySlider = NSSlider(value: 0.15, minValue: 0, maxValue: 1, target: nil, action: nil)
+    public let transparencyPercentage = NSTextField(labelWithString: "15%")
+    private let transparencyStatus = NSMenuItem(title: "系统减少透明度正在生效", action: nil, keyEquivalent: "")
+    public var onTransparency: ((Double) -> Void)?
     public var onDidClose: (() -> Void)?
     public var onStartup: (() -> Void)?
     public var onDownload: (() -> Void)?
@@ -94,6 +98,16 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         heightPercentage.frame = NSRect(x: 229, y: 12, width: 42, height: 18); heightPercentage.alignment = .right
         heightView.addSubview(heightLabel); heightView.addSubview(heightSlider); heightView.addSubview(heightPercentage)
         heightItem.view = heightView; menu.addItem(heightItem)
+        let transparencyItem = NSMenuItem(), transparencyView = NSView(frame: NSRect(x: 0, y: 0, width: 300, height: 42))
+        let transparencyLabel = NSTextField(labelWithString: "琴键透明度")
+        transparencyLabel.frame = NSRect(x: 12, y: 12, width: 82, height: 18)
+        transparencySlider.frame = NSRect(x: 98, y: 10, width: 140, height: 22)
+        transparencySlider.isContinuous = true; transparencySlider.target = self; transparencySlider.action = #selector(transparencyChanged)
+        transparencySlider.setAccessibilityLabel("琴键透明度，0%不透明，100%材质透明；文字和音符保留")
+        transparencyPercentage.frame = NSRect(x: 244, y: 12, width: 44, height: 18); transparencyPercentage.alignment = .right
+        transparencyView.addSubview(transparencyLabel); transparencyView.addSubview(transparencySlider); transparencyView.addSubview(transparencyPercentage)
+        transparencyItem.view = transparencyView; menu.addItem(transparencyItem)
+        transparencyStatus.isEnabled = false; transparencyStatus.isHidden = true; menu.addItem(transparencyStatus)
         preferencesSaveStatus.isEnabled = false; preferencesSaveStatus.isHidden = true; menu.addItem(preferencesSaveStatus)
         overlayStatusItem.isEnabled = false; menu.addItem(overlayStatusItem)
         add("自定义键位…", #selector(customize), to: menu)
@@ -144,6 +158,16 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     public func setHeight(_ value: Double) {
         heightSlider.doubleValue = PianoHeight.normalized(value)
         heightPercentage.stringValue = "\(Int((heightSlider.doubleValue * 100).rounded()))%"
+    }
+    public func setTransparency(_ value: Double, reduced: Bool) {
+        transparencySlider.doubleValue = value.isFinite ? min(1, max(0, value)) : 0.15
+        transparencyPercentage.stringValue = "\(Int((transparencySlider.doubleValue * 100).rounded()))%"
+        transparencySlider.isEnabled = !reduced; transparencyStatus.isHidden = !reduced
+    }
+    @objc private func transparencyChanged() {
+        guard transparencySlider.isEnabled else { return }
+        setTransparency(transparencySlider.doubleValue, reduced: false)
+        onTransparency?(transparencySlider.doubleValue)
     }
     public func setPreferencesSaveError(_ error: String?) {
         preferencesSaveStatus.isHidden = error == nil

@@ -66,6 +66,9 @@ do {
             "secureInputEnabled": InputMonitor.secureInput,
             "listenerStarted": false, "permissionRequested": false, "audioOutputStarted": false,
             "dockSettingWritten": false, "realKeysTested": false])
+    } else if let index = arguments.firstIndex(of: "--transparency-snapshot"), arguments.count > index + 1 {
+        _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
+        emit(try TransparencyEvidence.render(mapping: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))
     } else if let index = arguments.firstIndex(of: "--crystal-snapshot"), arguments.count > index + 1 {
         _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
         emit(try CrystalEvidence.render(mapping: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))

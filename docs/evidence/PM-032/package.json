@@ -1,0 +1,12 @@
+{
+  "version": "0.2.9",
+  "build": 12,
+  "zip": "/Users/wuming/Library/Caches/local.typingpiano.trial/github-release-0.2.9/Mac-Typing-Piano-0.2.9-arm64.zip",
+  "zipBytes": 15441337,
+  "zipSHA256": "d22c7582026500204da6376441cdf70e7461805e5604e6aba515cc7b7bdeae9e",
+  "binarySHA256": "3ac6200b87fb31d37f69dd9e81436f97b2bf8d70ceb1c7b7aee0101790697819",
+  "roundtripFiles": 45,
+  "roundtripHashesAndStrictSignature": true,
+  "zipCRC": true,
+  "notarized": false
+}

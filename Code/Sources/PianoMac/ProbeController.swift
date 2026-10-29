@@ -110,6 +110,8 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         buildStartupWindow()
         installSafetyHooks()
         let menu = ProbeMenu(volume: preferences.volume, heightScale: preferences.heightScale, sources: sources, installStatusItem: installStatusItem)
+        menu.setTransparency(preferences.transparency, reduced: NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency)
+        menu.onTransparency = { [weak self] in self?.changeTransparency($0) }
         menu.onHeight = { [weak self] in self?.changeHeight($0) }
         menu.onDidClose = { [weak self] in self?.flushPreferences() }
         menu.onStartup = { [weak self] in self?.showStartupWindow() }
@@ -212,6 +214,20 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         // Grow the existing console to fit its native view; do not show or activate it.
         window?.setContentSize(NSSize(width: 1040, height: 680 + AdaptiveOverlay.height(scale: preferences.heightScale) - 208))
         positionPanel(); statusMenu?.setHeight(preferences.heightScale)
+        schedulePreferencesSave()
+    }
+    func changeTransparency(_ value: Double) {
+        guard value.isFinite else { return }
+        preferences.setTransparency(value); preferencesDirty = true
+        preview?.setTransparency(preferences.transparency); overlayView?.setTransparency(preferences.transparency)
+        statusMenu?.setTransparency(preferences.transparency, reduced: overlayView?.reducedTransparency ?? false)
+        schedulePreferencesSave()
+    }
+    func applyTransparencyAccessibility(_ reduced: Bool) {
+        preview?.reducedTransparency = reduced; overlayView?.reducedTransparency = reduced
+        statusMenu?.setTransparency(preferences.transparency, reduced: reduced)
+    }
+    private func schedulePreferencesSave() {
         preferencesSaveTimer?.invalidate()
         let timer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { [weak self] _ in self?.flushPreferences() }
         preferencesSaveTimer = timer; RunLoop.main.add(timer, forMode: .common)
@@ -256,6 +272,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor, constant: 20), stack.topAnchor.constraint(equalTo: window.contentView!.topAnchor, constant: 18), stack.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor, constant: -20)])
         overlayView = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
         overlayView.setHeightScale(preferences.heightScale)
+        preview.setTransparency(preferences.transparency); overlayView.setTransparency(preferences.transparency)
         panel = ProbePanel(content: overlayView)
         preview.showLabels = labels; overlayView.showLabels = labels
         positionPanel()
@@ -393,6 +410,8 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         result["mappingVersion"] = mapping.mappingVersion
         result["keymapWarning"] = keymapWarning.map { $0 as Any } ?? NSNull()
         result["heightScale"] = preferences.heightScale
+        result["transparency"] = preferences.transparency
+        result["effectiveMaterialOpacity"] = overlayView?.effectiveMaterialOpacity ?? 1
         result["preferencesSavePending"] = preferencesDirty
         result["preferencesSaveError"] = preferencesSaveError.map { $0 as Any } ?? NSNull()
         result["overlayCanvasHeight"] = panel?.frame.height ?? 0
@@ -690,15 +709,13 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         notifications.append(access.addObserver(forName: NSWorkspace.accessibilityDisplayOptionsDidChangeNotification, object: nil, queue: .main) { [weak self] _ in
             let reduced = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
             self?.preview.reducedMotion = reduced; self?.overlayView.reducedMotion = reduced
-            self?.preview.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
-            self?.overlayView.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
+            self?.applyTransparencyAccessibility(NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency)
             self?.dockFade.setReducedMotion(reduced, at: ProcessInfo.processInfo.systemUptime)
             self?.refresh()
         })
         preview.reducedMotion = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
         overlayView.reducedMotion = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
-        preview.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
-        overlayView.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
+        applyTransparencyAccessibility(NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency)
         notifications.append(NotificationCenter.default.addObserver(forName: NSApplication.didResignActiveNotification, object: nil, queue: .main) { [weak self] _ in
             guard let self, self.input.mode == .local else { return }
             self.pause("本窗口测试失焦，已清理按键和声音；全局测试不受此规则影响")

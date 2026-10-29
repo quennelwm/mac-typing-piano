@@ -1,0 +1,76 @@
+{
+  "task": "C-032",
+  "status": "COMPLETE_AWAITING_PM_ACCEPTANCE",
+  "version": "0.2.9",
+  "build": 12,
+  "sourceFrozen": true,
+  "timestamp": "2026-10-29T15:18:08.425479+08:00",
+  "verification": {
+    "sourceFrozenFileCount": 90,
+    "sourceChanges": [],
+    "protectedFileCount": 153,
+    "protectedChanges": [],
+    "strictSignatureExitCode": 0,
+    "adHoc": true,
+    "zipCorruptMember": null,
+    "zipBinaryMatches": true,
+    "version": "0.2.9",
+    "build": "12",
+    "binarySHA256": "72a7f947cbb0d73300e57c41880714e273feae8eebe4b8ef394b7fa4884e34cc",
+    "zipSHA256": "86a8bff441df46345ece852bccebc2ef2139949edf5aee4f2996abd33e52db71",
+    "sourceManifestSHA256": "6767f535bfc3ef1c1a11b6672f75be885ac727bed0acaaa07f560fec805fb8cc",
+    "appPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/打字钢琴试用.app",
+    "zipPath": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/打字钢琴试用.zip"
+  },
+  "changedSourceFiles": [
+    "Code/IMPLEMENTATION.md",
+    "Code/README.md",
+    "Code/Scripts/build.sh",
+    "Code/Sources/PianoCore/AppPreferences.swift",
+    "Code/Sources/PianoMac/PianoView.swift",
+    "Code/Sources/PianoMac/ProbeController.swift",
+    "Code/Sources/PianoMac/ProbeMenu.swift",
+    "Code/Sources/PianoMac/QuietIvoryProvenance.swift",
+    "Code/Sources/PianoMac/TransparencyEvidence.swift",
+    "Code/Sources/PianoProbe/main.swift",
+    "Code/Tests/PianoMacTests/TransparencyTests.swift"
+  ],
+  "tests": {
+    "targetedPassed": 5,
+    "fullSuiteRuns": 1,
+    "total": 146,
+    "passed": 143,
+    "skipped": 3,
+    "failed": 0,
+    "skipReason": "CandidateBankTests opt-in offline evidence replay; unchanged historical condition"
+  },
+  "cli": {
+    "selfCheck": "PASS",
+    "menuSmoke": "PASS",
+    "transparencySnapshot": "PASS"
+  },
+  "previews": {
+    "count": 3,
+    "report": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/trial-0.2.9/previews/report.json",
+    "values": [
+      0,
+      50,
+      100
+    ],
+    "numericValues": [
+      0,
+      15,
+      50,
+      100
+    ]
+  },
+  "visualInspection": "3 production offscreen images inspected: 0 opaque faces, 50 faded material, 100 no material with gray labels and note visible; synthetic color background",
+  "notRun": [
+    "candidate GUI / real menu drag",
+    "real OS Reduce Transparency toggle",
+    "live Dock fade / global input and playback on 0.2.9",
+    "fixed-identity signing / TCC continuity / install / publish"
+  ],
+  "authority": "Only Code and trial-0.2.9; no Git; no production user preferences or system settings written; installed 0.2.8 protected bytes unchanged",
+  "handoff": "/Users/wuming/Desktop/键盘钢琴/docs/evidence/trial-0.2.9/HANDOFF.md"
+}

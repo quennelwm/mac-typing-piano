@@ -1,0 +1,45 @@
+Building for debugging...
+[Provisioning 3 / 8]
+[Planning deferred tasks]
+[1 / 6]
+[4 / 9] PianoMac
+[5 / 10] PianoMac
+[13 / 18] PianoMac
+[16 / 18] PianoMacTests-product
+[25 / 27] PianoMacTests-product
+[30 / 31] PianoMacTests-product
+[34 / 36] TypingPianoProbe-product
+[36 / 38] TypingPianoProbe-product
+[38 / 38] TypingPianoProbe-product
+Build complete! (5.56秒)
+Test Suite 'Selected tests' started at 2026-10-29 15:12:36.156.
+Test Suite 'PianoMacTests.xctest' started at 2026-10-29 15:12:36.159.
+Test Suite 'TransparencyTests' started at 2026-10-29 15:12:36.159.
+Test Case '-[PianoMacTests.TransparencyTests testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences]' started.
+Test Case '-[PianoMacTests.TransparencyTests testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences]' passed (0.573 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible]' started.
+Test Case '-[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible]' passed (0.151 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore]' started.
+Test Case '-[PianoMacTests.TransparencyTests testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore]' passed (0.299 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testOldInvalidAndRoundTripPreferences]' started.
+Test Case '-[PianoMacTests.TransparencyTests testOldInvalidAndRoundTripPreferences]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testSliderAndAccessibilityOverridePreserveSetting]' started.
+Test Case '-[PianoMacTests.TransparencyTests testSliderAndAccessibilityOverridePreserveSetting]' passed (0.003 seconds).
+Test Suite 'TransparencyTests' passed at 2026-10-29 15:12:37.185.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 1.026 (1.027) seconds
+Test Suite 'PianoMacTests.xctest' passed at 2026-10-29 15:12:37.185.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 1.026 (1.027) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 15:12:37.186.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 1.026 (1.029) seconds
+Test Suite 'Selected tests' started at 2026-10-29 15:12:37.329.
+Test Suite 'PianoCoreTests.xctest' started at 2026-10-29 15:12:37.330.
+Test Suite 'PianoCoreTests.xctest' passed at 2026-10-29 15:12:37.330.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 15:12:37.330.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' started at 2026-10-29 15:12:37.425.
+Test Suite 'PianoAudioTests.xctest' started at 2026-10-29 15:12:37.427.
+Test Suite 'PianoAudioTests.xctest' passed at 2026-10-29 15:12:37.427.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 15:12:37.427.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds

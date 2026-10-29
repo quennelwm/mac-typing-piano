@@ -1,0 +1,328 @@
+Building for debugging...
+[Constructing description]
+[Planning deferred tasks]
+[62 / 138]
+[64 / 140] PianoCore
+[72 / 184]
+[74 / 220]
+[80 / 220]
+[85 / 220]
+[87 / 220]
+[92 / 220]
+[94 / 220]
+[97 / 220]
+[103 / 220]
+[106 / 220]
+[108 / 220]
+[109 / 220]
+[118 / 220] PianoCore
+[124 / 220]
+[127 / 220] PianoCore
+[132 / 220] PianoCore
+[135 / 220]
+[137 / 220]
+[139 / 220]
+[140 / 220] PianoCoreTests-product
+[143 / 220]
+[144 / 220]
+[147 / 220]
+[150 / 220]
+[153 / 221]
+[157 / 221] PianoAudio
+[166 / 222] PianoCoreTests-product
+[171 / 248]
+[174 / 248]
+[176 / 248]
+[178 / 248]
+[178 / 257]
+[185 / 258]
+[185 / 258] PianoAudioTests-product
+[185 / 266]
+[186 / 266]
+[195 / 266] PianoMac
+[196 / 266]
+[197 / 266] PianoMac
+[200 / 266] PianoMac
+[207 / 266] PianoCoreTests-product
+[213 / 266] PianoAudioTests-product
+[223 / 266] PianoCoreTests-product
+[226 / 266] PianoAudioTests-product
+[228 / 266] PianoAudioTests-product
+[230 / 266]
+[236 / 266]
+[237 / 267] PianoAudioTests-product
+[237 / 267] PianoCoreTests-product
+[239 / 267] PianoCoreTests-product
+[248 / 268] TypingPianoProbe-product
+[250 / 270] PianoAudioTests-product
+[255 / 270] TypingPianoProbe-product
+[265 / 279] PianoMacTests-product
+error: SwiftCompile normal arm64 /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift failed with a nonzero exit code. Command line:     cd /Users/wuming/Desktop/键盘钢琴
+    builtin-SwiftPerFileCompile TransparencyTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:13:30: error: value of type 'AppPreferences' has no member 'transparency'
+11 |         for extra in ["", ",\"transparency\":null", ",\"transparency\":\"bad\""] {
+12 |             let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"volume\":0.7,\"heightScale\":1.8,\"showKeyLabels\":false\(extra)}".utf8))
+13 |             XCTAssertEqual(p.transparency, 0.15); XCTAssertEqual(p.volume, 0.7); XCTAssertEqual(p.heightScale, 1.8); XCTAssertFalse(p.showKeyLabels)
+   |                              `- error: value of type 'AppPreferences' has no member 'transparency'
+14 |         }
+15 |         var p = AppPreferences(); p.setTransparency(-4); XCTAssertEqual(p.transparency, 0)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:15:37: error: value of type 'AppPreferences' has no member 'setTransparency'
+13 |             XCTAssertEqual(p.transparency, 0.15); XCTAssertEqual(p.volume, 0.7); XCTAssertEqual(p.heightScale, 1.8); XCTAssertFalse(p.showKeyLabels)
+14 |         }
+15 |         var p = AppPreferences(); p.setTransparency(-4); XCTAssertEqual(p.transparency, 0)
+   |                                     `- error: value of type 'AppPreferences' has no member 'setTransparency'
+16 |         p.setTransparency(4); XCTAssertEqual(p.transparency, 1)
+17 |         p.setTransparency(0.546); p.setTransparency(.nan); p.setTransparency(.infinity)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:15:75: error: value of type 'AppPreferences' has no member 'transparency'
+13 |             XCTAssertEqual(p.transparency, 0.15); XCTAssertEqual(p.volume, 0.7); XCTAssertEqual(p.heightScale, 1.8); XCTAssertFalse(p.showKeyLabels)
+14 |         }
+15 |         var p = AppPreferences(); p.setTransparency(-4); XCTAssertEqual(p.transparency, 0)
+   |                                                                           `- error: value of type 'AppPreferences' has no member 'transparency'
+16 |         p.setTransparency(4); XCTAssertEqual(p.transparency, 1)
+17 |         p.setTransparency(0.546); p.setTransparency(.nan); p.setTransparency(.infinity)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:16:11: error: value of type 'AppPreferences' has no member 'setTransparency'
+14 |         }
+15 |         var p = AppPreferences(); p.setTransparency(-4); XCTAssertEqual(p.transparency, 0)
+16 |         p.setTransparency(4); XCTAssertEqual(p.transparency, 1)
+   |           `- error: value of type 'AppPreferences' has no member 'setTransparency'
+17 |         p.setTransparency(0.546); p.setTransparency(.nan); p.setTransparency(.infinity)
+18 |         let saved = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:16:48: error: value of type 'AppPreferences' has no member 'transparency'
+14 |         }
+15 |         var p = AppPreferences(); p.setTransparency(-4); XCTAssertEqual(p.transparency, 0)
+16 |         p.setTransparency(4); XCTAssertEqual(p.transparency, 1)
+   |                                                `- error: value of type 'AppPreferences' has no member 'transparency'
+17 |         p.setTransparency(0.546); p.setTransparency(.nan); p.setTransparency(.infinity)
+18 |         let saved = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:17:11: error: value of type 'AppPreferences' has no member 'setTransparency'
+15 |         var p = AppPreferences(); p.setTransparency(-4); XCTAssertEqual(p.transparency, 0)
+16 |         p.setTransparency(4); XCTAssertEqual(p.transparency, 1)
+17 |         p.setTransparency(0.546); p.setTransparency(.nan); p.setTransparency(.infinity)
+   |           `- error: value of type 'AppPreferences' has no member 'setTransparency'
+18 |         let saved = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+19 |         XCTAssertEqual(saved.transparency, 0.55)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:17:37: error: value of type 'AppPreferences' has no member 'setTransparency'
+15 |         var p = AppPreferences(); p.setTransparency(-4); XCTAssertEqual(p.transparency, 0)
+16 |         p.setTransparency(4); XCTAssertEqual(p.transparency, 1)
+17 |         p.setTransparency(0.546); p.setTransparency(.nan); p.setTransparency(.infinity)
+   |                                     `- error: value of type 'AppPreferences' has no member 'setTransparency'
+18 |         let saved = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+19 |         XCTAssertEqual(saved.transparency, 0.55)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:17:62: error: value of type 'AppPreferences' has no member 'setTransparency'
+15 |         var p = AppPreferences(); p.setTransparency(-4); XCTAssertEqual(p.transparency, 0)
+16 |         p.setTransparency(4); XCTAssertEqual(p.transparency, 1)
+17 |         p.setTransparency(0.546); p.setTransparency(.nan); p.setTransparency(.infinity)
+   |                                                              `- error: value of type 'AppPreferences' has no member 'setTransparency'
+18 |         let saved = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+19 |         XCTAssertEqual(saved.transparency, 0.55)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:19:30: error: value of type 'AppPreferences' has no member 'transparency'
+17 |         p.setTransparency(0.546); p.setTransparency(.nan); p.setTransparency(.infinity)
+18 |         let saved = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+19 |         XCTAssertEqual(saved.transparency, 0.55)
+   |                              `- error: value of type 'AppPreferences' has no member 'transparency'
+20 |     }
+21 |     func testSliderAndAccessibilityOverridePreserveSetting() {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:24:41: error: value of type 'ProbeMenu' has no member 'onTransparency'
+22 |         _ = NSApplication.shared
+23 |         let menu = ProbeMenu(volume: 0.7, installStatusItem: false)
+24 |         var values: [Double] = []; menu.onTransparency = { values.append($0) }
+   |                                         `- error: value of type 'ProbeMenu' has no member 'onTransparency'
+25 |         menu.transparencySlider.doubleValue = 0.5
+26 |         XCTAssertTrue(menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target))
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:25:14: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+23 |         let menu = ProbeMenu(volume: 0.7, installStatusItem: false)
+24 |         var values: [Double] = []; menu.onTransparency = { values.append($0) }
+25 |         menu.transparencySlider.doubleValue = 0.5
+   |              `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+26 |         XCTAssertTrue(menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target))
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:26:28: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+24 |         var values: [Double] = []; menu.onTransparency = { values.append($0) }
+25 |         menu.transparencySlider.doubleValue = 0.5
+26 |         XCTAssertTrue(menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target))
+   |                            `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:26:63: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+24 |         var values: [Double] = []; menu.onTransparency = { values.append($0) }
+25 |         menu.transparencySlider.doubleValue = 0.5
+26 |         XCTAssertTrue(menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target))
+   |                                                               `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:26:99: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+24 |         var values: [Double] = []; menu.onTransparency = { values.append($0) }
+25 |         menu.transparencySlider.doubleValue = 0.5
+26 |         XCTAssertTrue(menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target))
+   |                                                                                                   `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:27:60: error: value of type 'ProbeMenu' has no member 'transparencyPercentage'
+25 |         menu.transparencySlider.doubleValue = 0.5
+26 |         XCTAssertTrue(menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target))
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+   |                                                            `- error: value of type 'ProbeMenu' has no member 'transparencyPercentage'
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+29 |         _ = menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:28:14: error: value of type 'ProbeMenu' has no member 'setTransparency'
+26 |         XCTAssertTrue(menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target))
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+   |              `- error: value of type 'ProbeMenu' has no member 'setTransparency'
+29 |         _ = menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target)
+30 |         XCTAssertEqual(values, [0.5])
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:28:71: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+26 |         XCTAssertTrue(menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target))
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+   |                                                                       `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+29 |         _ = menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target)
+30 |         XCTAssertEqual(values, [0.5])
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:29:18: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+29 |         _ = menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target)
+   |                  `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+30 |         XCTAssertEqual(values, [0.5])
+31 |         menu.setTransparency(0.5, reduced: false); XCTAssertTrue(menu.transparencySlider.isEnabled)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:29:53: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+29 |         _ = menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target)
+   |                                                     `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+30 |         XCTAssertEqual(values, [0.5])
+31 |         menu.setTransparency(0.5, reduced: false); XCTAssertTrue(menu.transparencySlider.isEnabled)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:29:89: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+27 |         XCTAssertEqual(values, [0.5]); XCTAssertEqual(menu.transparencyPercentage.stringValue, "50%")
+28 |         menu.setTransparency(0.5, reduced: true); XCTAssertFalse(menu.transparencySlider.isEnabled)
+29 |         _ = menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target)
+   |                                                                                         `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+30 |         XCTAssertEqual(values, [0.5])
+31 |         menu.setTransparency(0.5, reduced: false); XCTAssertTrue(menu.transparencySlider.isEnabled)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:31:14: error: value of type 'ProbeMenu' has no member 'setTransparency'
+29 |         _ = menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target)
+30 |         XCTAssertEqual(values, [0.5])
+31 |         menu.setTransparency(0.5, reduced: false); XCTAssertTrue(menu.transparencySlider.isEnabled)
+   |              `- error: value of type 'ProbeMenu' has no member 'setTransparency'
+32 |         XCTAssertEqual(menu.transparencySlider.doubleValue, 0.5); XCTAssertEqual(menu.slider.doubleValue, 0.7)
+33 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:31:71: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+29 |         _ = menu.transparencySlider.sendAction(menu.transparencySlider.action, to: menu.transparencySlider.target)
+30 |         XCTAssertEqual(values, [0.5])
+31 |         menu.setTransparency(0.5, reduced: false); XCTAssertTrue(menu.transparencySlider.isEnabled)
+   |                                                                       `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+32 |         XCTAssertEqual(menu.transparencySlider.doubleValue, 0.5); XCTAssertEqual(menu.slider.doubleValue, 0.7)
+33 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:32:29: error: value of type 'ProbeMenu' has no member 'transparencySlider'
+30 |         XCTAssertEqual(values, [0.5])
+31 |         menu.setTransparency(0.5, reduced: false); XCTAssertTrue(menu.transparencySlider.isEnabled)
+32 |         XCTAssertEqual(menu.transparencySlider.doubleValue, 0.5); XCTAssertEqual(menu.slider.doubleValue, 0.7)
+   |                             `- error: value of type 'ProbeMenu' has no member 'transparencySlider'
+33 |     }
+34 |     func testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:39:18: error: value of type 'PianoView' has no member 'setTransparency'
+37 |         view.showLabels = false; view.automaticAnimation = false
+38 |         for value in [0.0, 0.15, 0.5, 1] {
+39 |             view.setTransparency(value)
+   |                  `- error: value of type 'PianoView' has no member 'setTransparency'
+40 |             let bitmap = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
+41 |             for key in PianoGeometry.quietIvory(mapping: mapping, width: 1264) {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:51:29: error: value of type 'PianoView' has no member 'transparency'
+49 |         }
+50 |         view.reducedTransparency = true
+51 |         XCTAssertEqual(view.transparency, 1); XCTAssertEqual(view.effectiveMaterialOpacity, 1)
+   |                             `- error: value of type 'PianoView' has no member 'transparency'
+52 |         let bitmap = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
+53 |         XCTAssertEqual(bitmap.colorAt(x: 30, y: 450)?.alphaComponent, 1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:51:67: error: value of type 'PianoView' has no member 'effectiveMaterialOpacity'
+49 |         }
+50 |         view.reducedTransparency = true
+51 |         XCTAssertEqual(view.transparency, 1); XCTAssertEqual(view.effectiveMaterialOpacity, 1)
+   |                                                                   `- error: value of type 'PianoView' has no member 'effectiveMaterialOpacity'
+52 |         let bitmap = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
+53 |         XCTAssertEqual(bitmap.colorAt(x: 30, y: 450)?.alphaComponent, 1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:54:63: error: value of type 'PianoView' has no member 'effectiveMaterialOpacity'
+52 |         let bitmap = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
+53 |         XCTAssertEqual(bitmap.colorAt(x: 30, y: 450)?.alphaComponent, 1)
+54 |         view.reducedTransparency = false; XCTAssertEqual(view.effectiveMaterialOpacity, 0)
+   |                                                               `- error: value of type 'PianoView' has no member 'effectiveMaterialOpacity'
+55 |     }
+56 |     func testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible() throws {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:62:14: error: value of type 'PianoView' has no member 'setTransparency'
+60 |         var c = NoteCoordinator(mapping: mapping); _ = c.consume(.init("keyG", .down))
+61 |         view.strike(try XCTUnwrap(c.lastStrike), at: 0); view.advanceAnimations(at: 0.475)
+62 |         view.setTransparency(0)
+   |              `- error: value of type 'PianoView' has no member 'setTransparency'
+63 |         let opaque = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
+64 |         view.setTransparency(1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:64:14: error: value of type 'PianoView' has no member 'setTransparency'
+62 |         view.setTransparency(0)
+63 |         let opaque = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
+64 |         view.setTransparency(1)
+   |              `- error: value of type 'PianoView' has no member 'setTransparency'
+65 |         let clear = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
+66 |         let count = opaque.bytesPerRow * 280 // Headroom only; contains floating note, no material.
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:88:11: error: value of type 'ProbeController' has no member 'changeTransparency'
+86 |         c.start(global: true); c.toggleSound(); input.onEvent?(.init("keyG", .down))
+87 |         let panics = engine.panics, shutdowns = engine.shutdowns, downs = engine.downs.count
+88 |         c.changeTransparency(0.5); c.applyTransparencyAccessibility(true)
+   |           `- error: value of type 'ProbeController' has no member 'changeTransparency'
+89 |         XCTAssertEqual(c.runtimeDiagnostics()["transparency"] as? Double, 0.5)
+90 |         XCTAssertEqual(c.runtimeDiagnostics()["effectiveMaterialOpacity"] as? Double, 1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:88:38: error: value of type 'ProbeController' has no member 'applyTransparencyAccessibility'
+86 |         c.start(global: true); c.toggleSound(); input.onEvent?(.init("keyG", .down))
+87 |         let panics = engine.panics, shutdowns = engine.shutdowns, downs = engine.downs.count
+88 |         c.changeTransparency(0.5); c.applyTransparencyAccessibility(true)
+   |                                      `- error: value of type 'ProbeController' has no member 'applyTransparencyAccessibility'
+89 |         XCTAssertEqual(c.runtimeDiagnostics()["transparency"] as? Double, 0.5)
+90 |         XCTAssertEqual(c.runtimeDiagnostics()["effectiveMaterialOpacity"] as? Double, 1)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:91:11: error: value of type 'ProbeController' has no member 'applyTransparencyAccessibility'
+89 |         XCTAssertEqual(c.runtimeDiagnostics()["transparency"] as? Double, 0.5)
+90 |         XCTAssertEqual(c.runtimeDiagnostics()["effectiveMaterialOpacity"] as? Double, 1)
+91 |         c.applyTransparencyAccessibility(false); c.flushPreferences()
+   |           `- error: value of type 'ProbeController' has no member 'applyTransparencyAccessibility'
+92 |         let saved = try AppPreferences.load(from: url)
+93 |         XCTAssertEqual(saved.transparency, 0.5); XCTAssertEqual(saved.heightScale, 1.8); XCTAssertEqual(saved.volume, 0.73); XCTAssertFalse(saved.showKeyLabels)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:93:30: error: value of type 'AppPreferences' has no member 'transparency'
+91 |         c.applyTransparencyAccessibility(false); c.flushPreferences()
+92 |         let saved = try AppPreferences.load(from: url)
+93 |         XCTAssertEqual(saved.transparency, 0.5); XCTAssertEqual(saved.heightScale, 1.8); XCTAssertEqual(saved.volume, 0.73); XCTAssertFalse(saved.showKeyLabels)
+   |                              `- error: value of type 'AppPreferences' has no member 'transparency'
+94 |         XCTAssertEqual(input.mode, .global); XCTAssertTrue(engine.prepared); XCTAssertEqual(c.integrationState.activeKeys, 1)
+95 |         XCTAssertEqual(engine.panics, panics); XCTAssertEqual(engine.shutdowns, shutdowns); XCTAssertEqual(engine.downs.count, downs)
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/DerivedSources/test_entry_point.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/AlertVolumeTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/CrystalRenderingTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockAdapterTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/DockWindowVisibilityTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/HeightIntegrationTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/InputNormalizerTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/IntegrationTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/KeymapEditorTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/LocalTrialStartTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/MenuIntegrationTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/ModuleTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/NativeDockStorageTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/OverlayWindowStackTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/SingleInstanceTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/StartupEntryTests.swift -primary-file /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift -primary-file /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TrialSessionTests.swift -emit-dependencies-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TransparencyTests.d -emit-const-values-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TransparencyTests.swiftconstvalues -emit-reference-dependencies-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TransparencyTests.swiftdeps -serialize-diagnostics-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TransparencyTests.dia -emit-dependencies-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TrialSessionTests.d -emit-const-values-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TrialSessionTests.swiftconstvalues -emit-reference-dependencies-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TrialSessionTests.swiftdeps -serialize-diagnostics-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TrialSessionTests.dia -target arm64-apple-macos14.0 -module-can-import-version Testing 2084 0 -module-can-import-version XCTest 25229 0 -disable-cross-import-overlay-search -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/AppKit.swiftoverlay -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/CoreGraphics.swiftoverlay -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/CoreImage.swiftoverlay -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/CoreTransferable.swiftoverlay -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/Foundation.swiftoverlay -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing/libTestingMacros.dylib\#\#TestingMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/PianoMacTests-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -I /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Products/Debug/PackageFrameworks -F /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -module-cache-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -swift-version 5 -Onone -D SWIFT_PACKAGE -D DEBUG -D Xcode -serialize-debugging-options -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/wuming/Desktop/键盘钢琴 -enable-anonymous-context-mangled-names -file-compilation-dir /Users/wuming/Desktop/键盘钢琴 -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/SDKStatCaches.noindex/macosx27.0-26A425-a0facfad118c1a7a18f0aad9463f65497231f6df4def33e022ae2eb8f782df1a.sdkstatcache -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -Xcc -I/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Products/Debug/include -Xcc -I/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/DerivedSources-normal/arm64 -Xcc -I/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/DerivedSources/arm64 -Xcc -I/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name PianoMacTests -package-name code -const-gather-protocols-file /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/PianoMacTests_const_extract_protocols.json -disable-clang-spi -clang-target arm64-apple-macos27.0 -target-sdk-version 27.0 -target-sdk-name macosx27.0 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -parse-as-library -o /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TransparencyTests.o -o /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TrialSessionTests.o -debug-module-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/PianoMacTests.swiftmodule -index-unit-output-path /TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TransparencyTests.o -index-unit-output-path /TypingPianoProbe.build/Debug/PianoMacTests-p.build/Objects-normal/arm64/TrialSessionTests.o -index-store-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.9/swiftpm/out -index-system-modules
+error: Build failed
+error: fatalError

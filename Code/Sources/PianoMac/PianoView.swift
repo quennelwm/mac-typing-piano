@@ -36,6 +36,12 @@ public final class PianoView: NSView {
     }
     public private(set) var mapping: KeyMapping
     public private(set) var heightScale: Double = 1
+    public private(set) var transparency: Double = 0.15
+    public var effectiveMaterialOpacity: Double { reducedTransparency ? 1 : 1 - transparency }
+    public func setTransparency(_ value: Double) {
+        transparency = value.isFinite ? min(1, max(0, value)) : 0.15
+        needsDisplay = true
+    }
     public var reducedTransparency = false { didSet { if oldValue != reducedTransparency { needsDisplay = true } } }
     public func setHeightScale(_ value: Double) {
         heightScale = PianoHeight.normalized(value)
@@ -217,6 +223,8 @@ public final class PianoView: NSView {
     }
     private func render(_ ctx: CGContext) {
         ctx.saveGState(); ctx.translateBy(x: 0, y: AdaptiveOverlay.headroom)
+        // Composite material once, so face alpha is exactly 1-transparency, not accumulated layers.
+        ctx.saveGState(); ctx.setAlpha(effectiveMaterialOpacity); ctx.beginTransparencyLayer(auxiliaryInfo: nil)
         // U-031: a translucent underlay, never the old opaque full-width backing.
         let body = CGRect(x: 0, y: 0, width: bounds.width, height: PianoHeight.body(heightScale))
         ctx.setFillColor(Self.color("526174", alpha: 0.10))
@@ -244,11 +252,11 @@ public final class PianoView: NSView {
                 if reducedTransparency {
                     colors = (black ? ["AFBECE", "8494A7"] : ["F4F7FA", "DFE7EF"]).map { Self.color($0) }
                 } else if black {
-                    colors = down ? [Self.color("ACBDCF", alpha: 0.82), Self.color("73859A", alpha: 0.90)]
-                                  : [Self.color("BAC8D8", alpha: 0.78), Self.color("8191A3", alpha: 0.88)]
+                    colors = down ? [Self.color("ACBDCF"), Self.color("73859A")]
+                                  : [Self.color("BAC8D8"), Self.color("8191A3")]
                 } else {
-                    colors = down ? [Self.color("E9F0F7", alpha: 0.90), Self.color("CDD9E6", alpha: 0.85)]
-                                  : [Self.color("FFFFFF", alpha: 0.88), Self.color("E4ECF4", alpha: 0.82)]
+                    colors = down ? [Self.color("E9F0F7"), Self.color("CDD9E6")]
+                                  : [Self.color("FFFFFF"), Self.color("E4ECF4")]
                 }
                 let gradient = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB), colors: colors as CFArray, locations: [0, 1])!
                 ctx.drawLinearGradient(gradient, start: CGPoint(x: r.midX, y: r.minY), end: CGPoint(x: r.midX, y: r.maxY), options: [])
@@ -257,7 +265,20 @@ public final class PianoView: NSView {
                 ctx.setStrokeColor(Self.color(black ? "334357" : "788BA2", alpha: black ? 0.30 : 0.22)); ctx.setLineWidth(1)
                 ctx.move(to: CGPoint(x: r.minX + 2.5, y: r.maxY - 1)); ctx.addLine(to: CGPoint(x: r.maxX - 2.5, y: r.maxY - 1)); ctx.strokePath()
                 ctx.restoreGState()
-                if showLabels { for label in key.labels { drawLine(ctx, label.line, x: label.x, baseline: label.baseline + offset) } }
+                ctx.restoreGState()
+            }
+        }
+        ctx.endTransparencyLayer(); ctx.restoreGState()
+        // Labels stay independent of material opacity, including at 100% transparency.
+        if showLabels {
+            for key in keys {
+                ctx.saveGState()
+                if !key.shape.isBlack {
+                    ctx.addRect(body.insetBy(dx: -4, dy: -4))
+                    for face in blackFaces { ctx.addPath(face) }
+                    ctx.clip(using: .evenOdd)
+                }
+                for label in key.labels { drawLine(ctx, label.line, x: label.x, baseline: label.baseline + keyTravel(key)) }
                 ctx.restoreGState()
             }
         }

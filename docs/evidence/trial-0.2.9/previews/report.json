@@ -1,0 +1,95 @@
+{
+  "audioOutputStarted" : false,
+  "images" : [
+    "transparency-0.png",
+    "transparency-50.png",
+    "transparency-100.png"
+  ],
+  "kind" : "offscreen production rendering on synthetic backgrounds; no App GUI",
+  "labelPolicy" : "independent white #969FA9\/0.86 and black #414B55\/0.84",
+  "listenerStarted" : false,
+  "passed" : true,
+  "samples" : [
+    {
+      "effectiveOpacity" : 1,
+      "maxFaceAlpha" : 1,
+      "minFaceAlpha" : 1,
+      "reducedTransparency" : false,
+      "sampleCount" : 64,
+      "storedViewSetting" : 0,
+      "transparency" : 0,
+      "wholeMaterialBitmapClear" : false
+    },
+    {
+      "effectiveOpacity" : 1,
+      "maxFaceAlpha" : 1,
+      "minFaceAlpha" : 1,
+      "reducedTransparency" : true,
+      "sampleCount" : 64,
+      "storedViewSetting" : 0,
+      "transparency" : 0,
+      "wholeMaterialBitmapClear" : false
+    },
+    {
+      "effectiveOpacity" : 0.84999999999999998,
+      "maxFaceAlpha" : 0.85098039215686272,
+      "minFaceAlpha" : 0.85098039215686272,
+      "reducedTransparency" : false,
+      "sampleCount" : 64,
+      "storedViewSetting" : 0.14999999999999999,
+      "transparency" : 0.14999999999999999,
+      "wholeMaterialBitmapClear" : false
+    },
+    {
+      "effectiveOpacity" : 1,
+      "maxFaceAlpha" : 1,
+      "minFaceAlpha" : 1,
+      "reducedTransparency" : true,
+      "sampleCount" : 64,
+      "storedViewSetting" : 0.14999999999999999,
+      "transparency" : 0.14999999999999999,
+      "wholeMaterialBitmapClear" : false
+    },
+    {
+      "effectiveOpacity" : 0.5,
+      "maxFaceAlpha" : 0.50196078431372548,
+      "minFaceAlpha" : 0.50196078431372548,
+      "reducedTransparency" : false,
+      "sampleCount" : 64,
+      "storedViewSetting" : 0.5,
+      "transparency" : 0.5,
+      "wholeMaterialBitmapClear" : false
+    },
+    {
+      "effectiveOpacity" : 1,
+      "maxFaceAlpha" : 1,
+      "minFaceAlpha" : 1,
+      "reducedTransparency" : true,
+      "sampleCount" : 64,
+      "storedViewSetting" : 0.5,
+      "transparency" : 0.5,
+      "wholeMaterialBitmapClear" : false
+    },
+    {
+      "effectiveOpacity" : 0,
+      "maxFaceAlpha" : 0,
+      "minFaceAlpha" : 0,
+      "reducedTransparency" : false,
+      "sampleCount" : 64,
+      "storedViewSetting" : 1,
+      "transparency" : 1,
+      "wholeMaterialBitmapClear" : true
+    },
+    {
+      "effectiveOpacity" : 1,
+      "maxFaceAlpha" : 1,
+      "minFaceAlpha" : 1,
+      "reducedTransparency" : true,
+      "sampleCount" : 64,
+      "storedViewSetting" : 1,
+      "transparency" : 1,
+      "wholeMaterialBitmapClear" : false
+    }
+  ],
+  "systemSettingsWritten" : false
+}

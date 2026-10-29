@@ -1,0 +1,79 @@
+{
+  "task": "U-032",
+  "reviewedAt": "2026-10-29T15:17:17.139737+08:00",
+  "baseline": "fe4c65d6d75233a3eb8f690eab6440b28b693738",
+  "environment": "macOS 27.2 (26B123), arm64",
+  "reviewMethod": "Read-only source diff, existing C-032 logs and three production offscreen images; UI did not rerun Swift tests or launch candidate GUI",
+  "blockingFindings": [],
+  "sources": [
+    {
+      "path": "Code/Sources/PianoCore/AppPreferences.swift",
+      "sha256": "07a1c1673eca346f31e66425aaee14cd8df8e372be778468a6334ac4fdb0d2bf",
+      "matchesCodeEvidence": true
+    },
+    {
+      "path": "Code/Sources/PianoMac/PianoView.swift",
+      "sha256": "80f9dd07f94e5f02ce4601bed810fa586486e34d654a805da624d0c5f993af45",
+      "matchesCodeEvidence": true
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeController.swift",
+      "sha256": "c5539b2f3da61b7dc8f3a6aa961d96b9196dfc03024d58e04ff4756598419d3b",
+      "matchesCodeEvidence": true
+    },
+    {
+      "path": "Code/Sources/PianoMac/ProbeMenu.swift",
+      "sha256": "f653daa0b4121ff59bbb25d93c1297bea649ddea09dc5b7e1cbed8fb24ee2d50",
+      "matchesCodeEvidence": true
+    },
+    {
+      "path": "Code/Sources/PianoMac/TransparencyEvidence.swift",
+      "sha256": "89efa61b78daa7a2877998b96aa6295c2745d96108ed72a77351a00d73fd0741",
+      "matchesCodeEvidence": true
+    },
+    {
+      "path": "Code/Tests/PianoMacTests/TransparencyTests.swift",
+      "sha256": "88824ed40c7cb1dab1e8c5a6d9349c02f314e95000c0ebe9f701222bfd3858fb",
+      "matchesCodeEvidence": true
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/evidence/trial-0.2.9/targeted-final.log",
+      "sha256": "b055396ab21431e7a102667c949e00479b3304935e9e66aa7efb2c0f6a25b43e"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.9/full-test.log",
+      "sha256": "4db54d14689e912c1adfe2c53316d35aabd8b468360a02f0f503e5543eef235f"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.9/environment.json",
+      "sha256": "cc8102629158fe0fde758bba832fda5edde2e9b1e2ef5b99b3f80ecb3fe013c9"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.9/previews/report.json",
+      "sha256": "07e62433498c8866ef26d946c9b9fa4efc4193940762bfb136afbf024e963ac1"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.9/previews/transparency-0.png",
+      "sha256": "30011768a9f8a6dc1bcc1c54b4e6c5c7fcccc55d1d834aefa0f49cc60780cda9"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.9/previews/transparency-50.png",
+      "sha256": "9e22499d09376161d5424c982d53bd19622188b51a8252ab42d774a1f5b5909f"
+    },
+    {
+      "path": "docs/evidence/trial-0.2.9/previews/transparency-100.png",
+      "sha256": "685aa8b3e678ee5ce6ee4a8c673392bd2302b4b29ea67b4d1e4cc4187cca166d"
+    }
+  ],
+  "numericReportRecomputed": true,
+  "rowsChecked": 8,
+  "keyCenterSamplesChecked": 512,
+  "notRun": [
+    "Real desktop menu dragging and relaunch persistence",
+    "Real system Reduce Transparency toggle",
+    "Installed signed 0.2.9 acceptance",
+    "macOS 14 runtime"
+  ]
+}

@@ -1,0 +1,514 @@
+Building for debugging...
+[0/16] Write sources
+[1/16] /Users/wuming/Library/Caches/local.typingpiano.trial/pm-verify-0.2.9/swiftpm/arm64-apple-macosx/debug/TypingPianoProbePackageTests.derived/runner.swift
+[1/16] Write sources
+[9/16] Write TypingPianoProbe-entitlement.plist
+[10/16] Write swift-version--58304C5D6DBC2206.txt
+[12/31] Emitting module PianoCore
+[13/32] Compiling PianoCore Policies.swift
+[14/32] Compiling PianoCore AppPreferences.swift
+[15/32] Compiling PianoCore Coordinator.swift
+[16/32] Compiling PianoCore Core.swift
+[17/32] Compiling PianoCore CustomKeymap.swift
+[18/32] Compiling PianoCore StartupFlow.swift
+[19/32] Compiling PianoCore Geometry.swift
+[20/32] Compiling PianoCore Mapping.swift
+[21/32] Compiling PianoCore FloatingNotes.swift
+[22/32] Compiling PianoCore DockFade.swift
+[23/32] Compiling PianoCore DockOwnership.swift
+[24/43] Compiling PianoAudio RuntimeDiagnostics.swift
+[25/43] Compiling PianoAudio SamplerAudio.swift
+[26/43] Emitting module PianoAudio
+[27/43] Compiling PianoAudio AuditionSession.swift
+[28/69] Compiling PianoMac AdaptiveOverlay.swift
+[29/69] Compiling PianoMac AlertVolume.swift
+[30/69] Compiling PianoMac ContinuousTrialStart.swift
+[31/71] Emitting module PianoMac
+[32/71] Compiling PianoAudioTests TrialGainTests.swift
+[33/71] Compiling PianoCoreTests PreferencesMigrationTests.swift
+[34/71] Compiling PianoMac InputMonitor.swift
+[35/71] Compiling PianoMac InputNormalizer.swift
+[36/71] Compiling PianoCoreTests MappingTests.swift
+[37/71] Emitting module PianoCoreTests
+[38/71] Compiling PianoCoreTests ReducerTests.swift
+[41/72] Compiling PianoCoreTests HeightPreferencesTests.swift
+[43/72] Compiling PianoMac InputEventQueue.swift
+[44/72] Compiling PianoAudioTests AudioSelectionTests.swift
+[45/72] Compiling PianoAudioTests RuntimeDiagnosticsTests.swift
+[46/72] Compiling PianoAudioTests SamplerAudioTests.swift
+[47/72] Compiling PianoAudioTests TrialBankTests.swift
+[48/72] Compiling PianoCoreTests StartupFlowTests.swift
+[49/72] Emitting module PianoAudioTests
+[50/72] Compiling PianoAudioTests CandidateBankTests.swift
+[51/72] Compiling PianoMac KeymapEditor.swift
+[52/72] Compiling PianoMac Module.swift
+[53/72] Compiling PianoMac NativeDockStorage.swift
+[54/72] Compiling PianoMac SingleInstance.swift
+[55/72] Compiling PianoMac TransparencyEvidence.swift
+[56/72] Compiling PianoMac QuietIvoryProvenance.swift
+[57/72] Compiling PianoMac SDKKeys.swift
+[58/72] Compiling PianoMac CrystalEvidence.swift
+[59/72] Compiling PianoMac DockAdapter.swift
+[60/72] Compiling PianoMac DockWindowVisibility.swift
+[61/72] Compiling PianoMac OverlayWindowEvidence.swift
+[62/72] Compiling PianoMac PianoView.swift
+[66/72] Compiling PianoMac ProbeController.swift
+[67/72] Compiling PianoMac ProbeMenu.swift
+[68/93] Compiling PianoMacTests ModuleTests.swift
+[69/93] Compiling PianoMacTests NativeDockStorageTests.swift
+[70/95] Emitting module PianoMacTests
+[71/95] Compiling PianoMacTests SingleInstanceTests.swift
+[72/95] Compiling PianoMacTests StartupEntryTests.swift
+[73/95] Compiling PianoMacTests KeymapEditorTests.swift
+[74/95] Compiling PianoMacTests LocalTrialStartTests.swift
+[75/95] Compiling PianoMacTests MenuIntegrationTests.swift
+[76/95] Emitting module PianoProbe
+[77/95] Compiling PianoProbe main.swift
+[78/95] Compiling PianoMacTests CrystalRenderingTests.swift
+[79/95] Compiling PianoMacTests DockAdapterTests.swift
+[80/95] Compiling PianoMacTests DockWindowVisibilityTests.swift
+[81/95] Compiling PianoMacTests OverlayVisibilityTests.swift
+[82/95] Compiling PianoMacTests OverlayWindowStackTests.swift
+[82/95] Write Objects.LinkFileList
+[84/95] Compiling PianoMacTests AdaptiveOverlayTests.swift
+[85/95] Compiling PianoMacTests AlertVolumeTests.swift
+[86/95] Compiling PianoMacTests ControllerIntegrationTests.swift
+[87/95] Compiling PianoMacTests HeightIntegrationTests.swift
+[88/95] Compiling PianoMacTests InputNormalizerTests.swift
+[89/95] Compiling PianoMacTests IntegrationTests.swift
+[90/95] Compiling PianoMacTests TransparencyTests.swift
+[91/95] Compiling PianoMacTests TrialSessionTests.swift
+[91/95] Linking TypingPianoProbe
+[92/97] Applying TypingPianoProbe
+[94/97] Emitting module TypingPianoProbePackageTests
+[95/97] Compiling TypingPianoProbePackageTests runner.swift
+[95/97] Write Objects.LinkFileList
+[96/97] Linking TypingPianoProbePackageTests
+Build complete! (23.87s)
+Test Suite 'All tests' started at 2026-10-29 15:15:20.794.
+Test Suite 'TypingPianoProbePackageTests.xctest' started at 2026-10-29 15:15:20.797.
+Test Suite 'AdaptiveOverlayTests' started at 2026-10-29 15:15:20.797.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testDockVisualStateNeverClearsHeldNotesOrSound]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testDockVisualStateNeverClearsHeldNotesOrSound]' passed (0.004 seconds).
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUserEnabledDockIsNotRestoredToAnOlderFalseValue]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUserEnabledDockIsNotRestoredToAnOlderFalseValue]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen]' passed (0.000 seconds).
+Test Suite 'AdaptiveOverlayTests' passed at 2026-10-29 15:15:20.802.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.005 (0.005) seconds
+Test Suite 'AlertVolumeTests' started at 2026-10-29 15:15:20.802.
+Test Case '-[PianoMacTests.AlertVolumeTests testAlreadyZeroHasNoInventedRestoreValue]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testAlreadyZeroHasNoInventedRestoreValue]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testDefaultAndCancellationDoNotReadOrWriteSystem]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testDefaultAndCancellationDoNotReadOrWriteSystem]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testExternalChangeDropsOwnershipAndIsNeverOverwrittenOnExit]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testExternalChangeDropsOwnershipAndIsNeverOverwrittenOnExit]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testFailedOrIgnoredWritesDoNotReportSuccess]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testFailedOrIgnoredWritesDoNotReportSuccess]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testMuteAndCloseOrExitRestoreOnlyOriginalOwnedValue]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testMuteAndCloseOrExitRestoreOnlyOriginalOwnedValue]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testReadFailurePreventsWritesAndFailedRestoreCanBeRetried]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testReadFailurePreventsWritesAndFailedRestoreCanBeRetried]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testStandardAdditionsBackendOnlyUsesAlertParameterAndRejectsInvalidReadback]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testStandardAdditionsBackendOnlyUsesAlertParameterAndRejectsInvalidReadback]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testUnverifiedWriteRequiresManualRecoveryAndDoesNotInventOwnership]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testUnverifiedWriteRequiresManualRecoveryAndDoesNotInventOwnership]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AlertVolumeTests testWriteErrorAfterActualChangeRetainsRestorableOwnership]' started.
+Test Case '-[PianoMacTests.AlertVolumeTests testWriteErrorAfterActualChangeRetainsRestorableOwnership]' passed (0.000 seconds).
+Test Suite 'AlertVolumeTests' passed at 2026-10-29 15:15:20.805.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'AppPreferencesTests' started at 2026-10-29 15:15:20.805.
+Test Case '-[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch]' started.
+Test Case '-[PianoCoreTests.AppPreferencesTests testVolumeClampsPersistsAndDoesNotControlSoundSwitch]' passed (0.002 seconds).
+Test Suite 'AppPreferencesTests' passed at 2026-10-29 15:15:20.807.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'AudioSelectionTests' started at 2026-10-29 15:15:20.807.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testCandidateCoverageExactAndBundlePaths]' passed (0.013 seconds).
+Test Case '-[PianoAudioTests.AudioSelectionTests testDefaultSilentExplicitEnableSwitchStopsAndNoFallback]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testDefaultSilentExplicitEnableSwitchStopsAndNoFallback]' passed (0.000 seconds).
+Test Case '-[PianoAudioTests.AudioSelectionTests testMissingOrChangedFullBankCannotSilentlyFallBack]' started.
+Test Case '-[PianoAudioTests.AudioSelectionTests testMissingOrChangedFullBankCannotSilentlyFallBack]' passed (0.011 seconds).
+Test Suite 'AudioSelectionTests' passed at 2026-10-29 15:15:20.832.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.024 (0.025) seconds
+Test Suite 'CandidateBankTests' started at 2026-10-29 15:15:20.832.
+Test Case '-[PianoAudioTests.CandidateBankTests test00PitchEstimatorAgainstKnownSyntheticFrequencies]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/CandidateBankTests.swift:21: -[PianoAudioTests.CandidateBankTests test00PitchEstimatorAgainstKnownSyntheticFrequencies] : Test skipped - Offline evidence replay is opt-in: set TYPING_PIANO_EVIDENCE_DIR to a new directory and run verify_candidate_banks.py preflight first. Frozen C-001B evidence is not a live fixture.
+Test Case '-[PianoAudioTests.CandidateBankTests test00PitchEstimatorAgainstKnownSyntheticFrequencies]' skipped (0.002 seconds).
+Test Case '-[PianoAudioTests.CandidateBankTests testKawaiCandidateOffline]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/CandidateBankTests.swift:21: -[PianoAudioTests.CandidateBankTests testKawaiCandidateOffline] : Test skipped - Offline evidence replay is opt-in: set TYPING_PIANO_EVIDENCE_DIR to a new directory and run verify_candidate_banks.py preflight first. Frozen C-001B evidence is not a live fixture.
+Test Case '-[PianoAudioTests.CandidateBankTests testKawaiCandidateOffline]' skipped (0.001 seconds).
+Test Case '-[PianoAudioTests.CandidateBankTests testSteinwayCandidateOffline]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoAudioTests/CandidateBankTests.swift:21: -[PianoAudioTests.CandidateBankTests testSteinwayCandidateOffline] : Test skipped - Offline evidence replay is opt-in: set TYPING_PIANO_EVIDENCE_DIR to a new directory and run verify_candidate_banks.py preflight first. Frozen C-001B evidence is not a live fixture.
+Test Case '-[PianoAudioTests.CandidateBankTests testSteinwayCandidateOffline]' skipped (0.000 seconds).
+Test Suite 'CandidateBankTests' passed at 2026-10-29 15:15:20.836.
+	 Executed 3 tests, with 3 tests skipped and 0 failures (0 unexpected) in 0.003 (0.004) seconds
+Test Suite 'ControllerIntegrationTests' started at 2026-10-29 15:15:20.836.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio]' passed (1.066 seconds).
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' started.
+Test Case '-[PianoMacTests.ControllerIntegrationTests testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio]' passed (0.234 seconds).
+Test Suite 'ControllerIntegrationTests' passed at 2026-10-29 15:15:22.137.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 1.300 (1.301) seconds
+Test Suite 'CoordinatorTests' started at 2026-10-29 15:15:22.137.
+Test Case '-[PianoCoreTests.CoordinatorTests testDockAndVisualHidingDoNotProduceAudioStop]' started.
+Test Case '-[PianoCoreTests.CoordinatorTests testDockAndVisualHidingDoNotProduceAudioStop]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.CoordinatorTests testMappingAndUnknownKey]' started.
+Test Case '-[PianoCoreTests.CoordinatorTests testMappingAndUnknownKey]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.CoordinatorTests testMuteClearsAudioButKeepsPhysicalVisualStateAndDoesNotRearticulateHeldKey]' started.
+Test Case '-[PianoCoreTests.CoordinatorTests testMuteClearsAudioButKeepsPhysicalVisualStateAndDoesNotRearticulateHeldKey]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.CoordinatorTests testOldReleaseCannotStopRetriggerIncludingPulse]' started.
+Test Case '-[PianoCoreTests.CoordinatorTests testOldReleaseCannotStopRetriggerIncludingPulse]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.CoordinatorTests testPanicClearsPressesAndBumpsGenerationAndPauseRejectsNewEvents]' started.
+Test Case '-[PianoCoreTests.CoordinatorTests testPanicClearsPressesAndBumpsGenerationAndPauseRejectsNewEvents]' passed (0.001 seconds).
+Test Suite 'CoordinatorTests' passed at 2026-10-29 15:15:22.141.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'CrystalRenderingTests' started at 2026-10-29 15:15:22.141.
+Test Case '-[PianoMacTests.CrystalRenderingTests testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback]' started.
+Test Case '-[PianoMacTests.CrystalRenderingTests testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback]' passed (0.462 seconds).
+Test Case '-[PianoMacTests.CrystalRenderingTests testHitTestingUsesPressedRoundedBlackFaceAfterHeightChange]' started.
+Test Case '-[PianoMacTests.CrystalRenderingTests testHitTestingUsesPressedRoundedBlackFaceAfterHeightChange]' passed (0.006 seconds).
+Test Suite 'CrystalRenderingTests' passed at 2026-10-29 15:15:22.609.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.468 (0.468) seconds
+Test Suite 'CustomKeymapTests' started at 2026-10-29 15:15:22.610.
+Test Case '-[PianoCoreTests.CustomKeymapTests testImmediateDraftSwapsAccumulateAcrossKeySelectionWithoutChangingBaseline]' started.
+Test Case '-[PianoCoreTests.CustomKeymapTests testImmediateDraftSwapsAccumulateAcrossKeySelectionWithoutChangingBaseline]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.CustomKeymapTests testInvalidSaveCannotReplaceExistingFileAndWriteErrorIsReported]' started.
+Test Case '-[PianoCoreTests.CustomKeymapTests testInvalidSaveCannotReplaceExistingFileAndWriteErrorIsReported]' passed (0.003 seconds).
+Test Case '-[PianoCoreTests.CustomKeymapTests testMalformedConfigurationsPreserveOriginalBytesAndFallback]' started.
+Test Case '-[PianoCoreTests.CustomKeymapTests testMalformedConfigurationsPreserveOriginalBytesAndFallback]' passed (0.010 seconds).
+Test Case '-[PianoCoreTests.CustomKeymapTests testSaveRelaunchRestoreAndNoFileDefault]' started.
+Test Case '-[PianoCoreTests.CustomKeymapTests testSaveRelaunchRestoreAndNoFileDefault]' passed (0.006 seconds).
+Test Suite 'CustomKeymapTests' passed at 2026-10-29 15:15:22.630.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.020 (0.021) seconds
+Test Suite 'DockAdapterTests' started at 2026-10-29 15:15:22.630.
+Test Case '-[PianoMacTests.DockAdapterTests testAtomicFileTicketRoundTripAndRestoreFailureRetainsTicket]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testAtomicFileTicketRoundTripAndRestoreFailureRetainsTicket]' passed (0.004 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testCancelZeroWritesAndReadbackNotVisual]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testCancelZeroWritesAndReadbackNotVisual]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testCrashTicketNeedsExplicitRecoveryAndMatchingReadback]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testCrashTicketNeedsExplicitRecoveryAndMatchingReadback]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testExternalChangeIsRespectedAndWriteFailureKeepsPriorOwnership]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testExternalChangeIsRespectedAndWriteFailureKeepsPriorOwnership]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testFixedSystemCommandArgumentsOnlyAutohide]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testFixedSystemCommandArgumentsOnlyAutohide]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownAndThrowingReadbackBlockSecondWriteAndPreserveOriginalTicket]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownReadbackPreservesRecoveryTicketAndCannotClaimSuccess]' started.
+Test Case '-[PianoMacTests.DockAdapterTests testUnknownReadbackPreservesRecoveryTicketAndCannotClaimSuccess]' passed (0.000 seconds).
+Test Suite 'DockAdapterTests' passed at 2026-10-29 15:15:22.636.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'DockFadeTests' started at 2026-10-29 15:15:22.636.
+Test Case '-[PianoCoreTests.DockFadeTests testReducedMotionIsLinearAndRetargetsCurrentAlpha]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testReducedMotionIsLinearAndRetargetsCurrentAlpha]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.DockFadeTests testReversalIsContinuousAndUsesRemainingDistance]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testReversalIsContinuousAndUsesRemainingDistance]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.DockFadeTests testSustainedUnknownRecoversAfterTwoSecondsWithoutRestartingTheFade]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testSustainedUnknownRecoversAfterTwoSecondsWithoutRestartingTheFade]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.DockFadeTests testUnknownCancelsPendingRestoreAndRepeatedSignalsDoNotRestart]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testUnknownCancelsPendingRestoreAndRepeatedSignalsDoNotRestart]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.DockFadeTests testUnknownStartsVisibleAndHiddenMustStabilizeBeforeRestore]' started.
+Test Case '-[PianoCoreTests.DockFadeTests testUnknownStartsVisibleAndHiddenMustStabilizeBeforeRestore]' passed (0.000 seconds).
+Test Suite 'DockFadeTests' passed at 2026-10-29 15:15:22.637.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'DockWindowVisibilityTests' started at 2026-10-29 15:15:22.637.
+Test Case '-[PianoMacTests.DockWindowVisibilityTests testOtherLayerOtherOwnerOtherDisplayAndAmbiguityAreNotCandidates]' started.
+Test Case '-[PianoMacTests.DockWindowVisibilityTests testOtherLayerOtherOwnerOtherDisplayAndAmbiguityAreNotCandidates]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockWindowVisibilityTests testPairedHostObservationUsesMembershipNotFullScreenBoundsOrMissingFlag]' started.
+Test Case '-[PianoMacTests.DockWindowVisibilityTests testPairedHostObservationUsesMembershipNotFullScreenBoundsOrMissingFlag]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.DockWindowVisibilityTests testUnknownQueryAndReusedWindowIDRemainUnknownAndSideDockDoesNotHide]' started.
+Test Case '-[PianoMacTests.DockWindowVisibilityTests testUnknownQueryAndReusedWindowIDRemainUnknownAndSideDockDoesNotHide]' passed (0.000 seconds).
+Test Suite 'DockWindowVisibilityTests' passed at 2026-10-29 15:15:22.638.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'FloatingNoteTests' started at 2026-10-29 15:15:22.638.
+Test Case '-[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' passed (0.001 seconds).
+Test Suite 'FloatingNoteTests' passed at 2026-10-29 15:15:22.642.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.004 (0.004) seconds
+Test Suite 'GeometryAndDockTests' started at 2026-10-29 15:15:22.642.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testContinuousPianoGeometryAtAllProbeWidths]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockReadbackFailureNeverClaimsOwnership]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testDockRestoreOnlyOwnVerifiedChangeAndRespectExternalValue]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testExternalDockChangeStopsAutomaticPlansUntilNewTransaction]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testFailedSecondDockWritePreservesVerifiedRestorationResponsibility]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease]' started.
+Test Case '-[PianoCoreTests.GeometryAndDockTests testNormalClickOutsideDockNeverHidesAndDockDragRestoresAfterRelease]' passed (0.000 seconds).
+Test Suite 'GeometryAndDockTests' passed at 2026-10-29 15:15:22.644.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'HeightIntegrationTests' started at 2026-10-29 15:15:22.644.
+Test Case '-[PianoMacTests.HeightIntegrationTests testDebounceFailureRetryExitFlushAndRelaunch]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testDebounceFailureRetryExitFlushAndRelaunch]' passed (0.613 seconds).
+Test Case '-[PianoMacTests.HeightIntegrationTests testFailedFinalSaveCanCancelExitWithoutStoppingOrRestoringState]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testFailedFinalSaveCanCancelExitWithoutStoppingOrRestoringState]' passed (0.114 seconds).
+Test Case '-[PianoMacTests.HeightIntegrationTests testGeometryLabelsAndFloatingBoundsAtAllHeightsIncludingNarrowPreview]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testGeometryLabelsAndFloatingBoundsAtAllHeightsIncludingNarrowPreview]' passed (0.161 seconds).
+Test Case '-[PianoMacTests.HeightIntegrationTests testMenuActualSliderActionAndPercent]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testMenuActualSliderActionAndPercent]' passed (0.003 seconds).
+Test Case '-[PianoMacTests.HeightIntegrationTests testResizeKeepsHeldReleaseAudioAndCustomMappingInAllModes]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testResizeKeepsHeldReleaseAudioAndCustomMappingInAllModes]' passed (0.559 seconds).
+Test Case '-[PianoMacTests.HeightIntegrationTests testVolumeAndLabelsOnlySaveFailureRemainsDirtyAndRetries]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testVolumeAndLabelsOnlySaveFailureRemainsDirtyAndRetries]' passed (0.135 seconds).
+Test Suite 'HeightIntegrationTests' passed at 2026-10-29 15:15:24.229.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 1.584 (1.584) seconds
+Test Suite 'HeightPreferencesTests' started at 2026-10-29 15:15:24.229.
+Test Case '-[PianoCoreTests.HeightPreferencesTests testHeightRoundTripAndNonfiniteIgnored]' started.
+Test Case '-[PianoCoreTests.HeightPreferencesTests testHeightRoundTripAndNonfiniteIgnored]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.HeightPreferencesTests testOldAndInvalidHeightJSONRetainOtherSettings]' started.
+Test Case '-[PianoCoreTests.HeightPreferencesTests testOldAndInvalidHeightJSONRetainOtherSettings]' passed (0.001 seconds).
+Test Suite 'HeightPreferencesTests' passed at 2026-10-29 15:15:24.231.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+Test Suite 'InputNormalizerTests' started at 2026-10-29 15:15:24.231.
+Test Case '-[PianoMacTests.InputNormalizerTests testFiltersAutoRepeatAndUnexpectedKinds]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testFiltersAutoRepeatAndUnexpectedKinds]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testFnAndCapsSemanticsRemainUnverifiedAndPulseOnlyCandidate]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testSDKResolvesAll64UniqueCodesExcludesTopRow]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testSDKResolvesAll64UniqueCodesExcludesTopRow]' passed (0.001 seconds).
+Test Case '-[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag]' started.
+Test Case '-[PianoMacTests.InputNormalizerTests testSidedModifierUsesDeviceBitsNotCombinedShiftFlag]' passed (0.001 seconds).
+Test Suite 'InputNormalizerTests' passed at 2026-10-29 15:15:24.237.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'IntegrationTests' started at 2026-10-29 15:15:24.237.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' started.
+Test Case '-[PianoMacTests.IntegrationTests testActualTimerStopsAfterAnimationAndOnHidden]' passed (1.014 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' started.
+Test Case '-[PianoMacTests.IntegrationTests testApprovedGeometryAndNativeLabels]' passed (0.018 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' started.
+Test Case '-[PianoMacTests.IntegrationTests testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle]' passed (0.004 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay]' started.
+Test Case '-[PianoMacTests.IntegrationTests testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay]' passed (0.004 seconds).
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' started.
+Test Case '-[PianoMacTests.IntegrationTests testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition]' passed (0.004 seconds).
+Test Suite 'IntegrationTests' passed at 2026-10-29 15:15:25.281.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 1.043 (1.044) seconds
+Test Suite 'KeymapEditorTests' started at 2026-10-29 15:15:25.281.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testMenuOnlyExposesCustomEditorAndShowsFallbackReason]' passed (0.005 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testNativeSelectorsDraftCancelAndRestoreDoNotWriteUntilSave]' passed (0.114 seconds).
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' started.
+Test Case '-[PianoMacTests.KeymapEditorTests testSaveFailureRetainsRetryableDraftAndConcurrentChangeRequiresReload]' passed (0.054 seconds).
+Test Suite 'KeymapEditorTests' passed at 2026-10-29 15:15:25.454.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.173 (0.173) seconds
+Test Suite 'LocalTrialStartTests' started at 2026-10-29 15:15:25.454.
+Test Case '-[PianoMacTests.LocalTrialStartTests testGlobalFailureDoesNotBlockLocalContinuousExplicitStartAndCleanup]' started.
+Test Case '-[PianoMacTests.LocalTrialStartTests testGlobalFailureDoesNotBlockLocalContinuousExplicitStartAndCleanup]' passed (0.000 seconds).
+Test Suite 'LocalTrialStartTests' passed at 2026-10-29 15:15:25.455.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'MappingTests' started at 2026-10-29 15:15:25.455.
+Test Case '-[PianoCoreTests.MappingTests testPlayableMappingPreservesPhysicalContractAndCoreTwentyNotes]' started.
+Test Case '-[PianoCoreTests.MappingTests testPlayableMappingPreservesPhysicalContractAndCoreTwentyNotes]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes]' started.
+Test Case '-[PianoCoreTests.MappingTests testRejectsUnknownSchemaAndDuplicateNotes]' passed (0.003 seconds).
+Test Suite 'MappingTests' passed at 2026-10-29 15:15:25.460.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.005) seconds
+Test Suite 'MenuIntegrationTests' started at 2026-10-29 15:15:25.460.
+Test Case '-[PianoMacTests.MenuIntegrationTests testDailyMenuAndTestSourceCallbacksStaySeparated]' started.
+Test Case '-[PianoMacTests.MenuIntegrationTests testDailyMenuAndTestSourceCallbacksStaySeparated]' passed (0.015 seconds).
+Test Case '-[PianoMacTests.MenuIntegrationTests testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme]' started.
+Test Case '-[PianoMacTests.MenuIntegrationTests testQuietIvoryProvenanceIsPinnedToApprovedMappingAndTheme]' passed (0.002 seconds).
+Test Suite 'MenuIntegrationTests' passed at 2026-10-29 15:15:25.477.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.017 (0.017) seconds
+Test Suite 'NativeDockStorageTests' started at 2026-10-29 15:15:25.477.
+Test Case '-[PianoMacTests.NativeDockStorageTests testNativeWriteVerifiesRuntimeAndPreferenceWithoutDefaultsWrite]' started.
+Test Case '-[PianoMacTests.NativeDockStorageTests testNativeWriteVerifiesRuntimeAndPreferenceWithoutDefaultsWrite]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.NativeDockStorageTests testPreferenceMismatchFailsAndAdapterPreservesOwnershipForRestoration]' started.
+Test Case '-[PianoMacTests.NativeDockStorageTests testPreferenceMismatchFailsAndAdapterPreservesOwnershipForRestoration]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.NativeDockStorageTests testUnavailableInvalidOrIgnoredCallsCannotClaimSuccess]' started.
+Test Case '-[PianoMacTests.NativeDockStorageTests testUnavailableInvalidOrIgnoredCallsCannotClaimSuccess]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.NativeDockStorageTests testUserEnabledNativeBaselineDoesNotWriteOrRestoreFalse]' started.
+Test Case '-[PianoMacTests.NativeDockStorageTests testUserEnabledNativeBaselineDoesNotWriteOrRestoreFalse]' passed (0.000 seconds).
+Test Suite 'NativeDockStorageTests' passed at 2026-10-29 15:15:25.478.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'OverlayVisibilityTests' started at 2026-10-29 15:15:25.478.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testCapturedQueuedReleaseBeforeSaveDoesNotSwallowNextRealDown]' passed (0.732 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testClearingSleepDoesNotClearConcurrentLockOrSecureInput]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testClearingSleepDoesNotClearConcurrentLockOrSecureInput]' passed (0.322 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testDockSuppressesImmediatelyThenHiddenAndUnknownRecoverWithoutServices]' passed (3.864 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testExistingCustomConfigurationChangesPitchOnRelaunch]' passed (0.291 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testPlayableLabelsAndFloatingInkFitAllWidthsAndReducedMotion]' passed (0.074 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRealWriteFailureLeavesRunningMappingAndHeldStateUntouched]' passed (0.304 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testRepeatedStaticShowHideAndOrdinaryPauseNeverStartServices]' passed (0.863 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSafetyReasonsBlockStaticDisplayAndClearWithoutRestartingInput]' passed (0.444 seconds).
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates]' started.
+Test Case '-[PianoMacTests.OverlayVisibilityTests testSavingCustomMappingPreservesRunningMutedAndPausedStates]' passed (1.327 seconds).
+Test Suite 'OverlayVisibilityTests' passed at 2026-10-29 15:15:33.699.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 8.220 (8.221) seconds
+Test Suite 'OverlayWindowStackTests' started at 2026-10-29 15:15:33.699.
+Test Case '-[PianoMacTests.OverlayWindowStackTests testOrdinaryWindowsReorderBelowOverlayWhileModalStaysAbove]' started.
+Test Case '-[PianoMacTests.OverlayWindowStackTests testOrdinaryWindowsReorderBelowOverlayWhileModalStaysAbove]' passed (0.202 seconds).
+Test Suite 'OverlayWindowStackTests' passed at 2026-10-29 15:15:33.901.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.202 (0.202) seconds
+Test Suite 'PolicyTests' started at 2026-10-29 15:15:33.901.
+Test Case '-[PianoCoreTests.PolicyTests testCR001DefaultLabelsAndExplicitDockConfirmation]' started.
+Test Case '-[PianoCoreTests.PolicyTests testCR001DefaultLabelsAndExplicitDockConfirmation]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch]' started.
+Test Case '-[PianoCoreTests.PolicyTests testDockHysteresisAndDragLatch]' passed (0.000 seconds).
+Test Suite 'PolicyTests' passed at 2026-10-29 15:15:33.902.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'PreferencesMigrationTests' started at 2026-10-29 15:15:33.902.
+Test Case '-[PianoCoreTests.PreferencesMigrationTests testExistingPreferencesWinEvenIfLegacyIsInvalid]' started.
+Test Case '-[PianoCoreTests.PreferencesMigrationTests testExistingPreferencesWinEvenIfLegacyIsInvalid]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.PreferencesMigrationTests testInvalidExistingDataIsNotSilentlyReplaced]' started.
+Test Case '-[PianoCoreTests.PreferencesMigrationTests testInvalidExistingDataIsNotSilentlyReplaced]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.PreferencesMigrationTests testLegacyIsCopiedOnceAndOriginalRemainsUntouched]' started.
+Test Case '-[PianoCoreTests.PreferencesMigrationTests testLegacyIsCopiedOnceAndOriginalRemainsUntouched]' passed (0.003 seconds).
+Test Case '-[PianoCoreTests.PreferencesMigrationTests testMissingLegacyCreatesDefaultsAndDoesNotImportLater]' started.
+Test Case '-[PianoCoreTests.PreferencesMigrationTests testMissingLegacyCreatesDefaultsAndDoesNotImportLater]' passed (0.002 seconds).
+Test Suite 'PreferencesMigrationTests' passed at 2026-10-29 15:15:33.911.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.009 (0.010) seconds
+Test Suite 'ReducerTests' started at 2026-10-29 15:15:33.911.
+Test Case '-[PianoCoreTests.ReducerTests testModifierSidesStayIndependentInInterleavedRelease]' started.
+Test Case '-[PianoCoreTests.ReducerTests testModifierSidesStayIndependentInInterleavedRelease]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa]' started.
+Test Case '-[PianoCoreTests.ReducerTests testPreviewReleaseCannotReleaseHeldHardwareKeyAndViceVersa]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.ReducerTests testPulseDoesNotLatchAndLongHoldHasNoExpiry]' started.
+Test Case '-[PianoCoreTests.ReducerTests testPulseDoesNotLatchAndLongHoldHasNoExpiry]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.ReducerTests testSingleStrikeIgnoresRepeatAndDuplicateDown]' started.
+Test Case '-[PianoCoreTests.ReducerTests testSingleStrikeIgnoresRepeatAndDuplicateDown]' passed (0.000 seconds).
+Test Suite 'ReducerTests' passed at 2026-10-29 15:15:33.913.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.001 (0.002) seconds
+Test Suite 'RuntimeDiagnosticsTests' started at 2026-10-29 15:15:33.913.
+Test Case '-[PianoAudioTests.RuntimeDiagnosticsTests testIdentityRejectsUnrelatedAndRetiredEngines]' started.
+Test Case '-[PianoAudioTests.RuntimeDiagnosticsTests testIdentityRejectsUnrelatedAndRetiredEngines]' passed (0.000 seconds).
+Test Case '-[PianoAudioTests.RuntimeDiagnosticsTests testMeterMeasuresOnlyProvidedBufferAndRetainsAggregates]' started.
+Test Case '-[PianoAudioTests.RuntimeDiagnosticsTests testMeterMeasuresOnlyProvidedBufferAndRetainsAggregates]' passed (0.009 seconds).
+Test Case '-[PianoAudioTests.RuntimeDiagnosticsTests testMockDiagnosticsStayUnknown]' started.
+Test Case '-[PianoAudioTests.RuntimeDiagnosticsTests testMockDiagnosticsStayUnknown]' passed (0.000 seconds).
+Test Case '-[PianoAudioTests.RuntimeDiagnosticsTests testUnpreparedEngineDoesNotPretendToHaveOutput]' started.
+Test Case '-[PianoAudioTests.RuntimeDiagnosticsTests testUnpreparedEngineDoesNotPretendToHaveOutput]' passed (0.001 seconds).
+Test Suite 'RuntimeDiagnosticsTests' passed at 2026-10-29 15:15:33.923.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.010 (0.010) seconds
+Test Suite 'SamplerAudioTests' started at 2026-10-29 15:15:33.923.
+Test Case '-[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests test64NoteChordHasHeadroom]' passed (0.177 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testAll64PitchesRenderNonzeroFiniteOutput]' passed (0.303 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testAppGainZeroAndMaximumWithoutChangingVoiceLifecycle]' passed (0.069 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testNoteOffHasTailThenSilence]' passed (0.037 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testPanicClearsTailsAndAllowsNextStrike]' passed (0.039 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testRejectsMissingMisnamedAndInvalidBanks]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testRejectsMissingMisnamedAndInvalidBanks]' passed (0.003 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testShutdownAndReprepare]' passed (0.037 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenHertzRetriggerRemainsBounded]' passed (0.268 seconds).
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout]' started.
+Test Case '-[PianoAudioTests.SamplerAudioTests testTenSecondHoldNaturallyDecaysWithoutTimeout]' passed (0.153 seconds).
+Test Suite 'SamplerAudioTests' passed at 2026-10-29 15:15:35.011.
+	 Executed 9 tests, with 0 failures (0 unexpected) in 1.086 (1.088) seconds
+Test Suite 'SingleInstanceTests' started at 2026-10-29 15:15:35.011.
+Test Case '-[PianoMacTests.SingleInstanceTests testLockContentionReleaseAndStaleFileRecovery]' started.
+Test Case '-[PianoMacTests.SingleInstanceTests testLockContentionReleaseAndStaleFileRecovery]' passed (0.001 seconds).
+Test Case '-[PianoMacTests.SingleInstanceTests testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps]' started.
+Test Case '-[PianoMacTests.SingleInstanceTests testLockWinnerIgnoresCooperatingContendersButYieldsToOldApps]' passed (0.001 seconds).
+Test Case '-[PianoMacTests.SingleInstanceTests testRecognizesOnlyTrialWithoutMatchingOldProbeOrOtherSoftware]' started.
+Test Case '-[PianoMacTests.SingleInstanceTests testRecognizesOnlyTrialWithoutMatchingOldProbeOrOtherSoftware]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.SingleInstanceTests testSymlinkIsRejectedWithoutTouchingTarget]' started.
+Test Case '-[PianoMacTests.SingleInstanceTests testSymlinkIsRejectedWithoutTouchingTarget]' passed (0.002 seconds).
+Test Suite 'SingleInstanceTests' passed at 2026-10-29 15:15:35.016.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'StartupEntryTests' started at 2026-10-29 15:15:35.016.
+Test Case '-[PianoMacTests.StartupEntryTests testMenuEntryDownloadAndPausedReasonUseNativeActions]' started.
+Test Case '-[PianoMacTests.StartupEntryTests testMenuEntryDownloadAndPausedReasonUseNativeActions]' passed (0.005 seconds).
+Test Case '-[PianoMacTests.StartupEntryTests testReopenAndDuplicateLaunchRevealEntryWithoutStartingInput]' started.
+Test Case '-[PianoMacTests.StartupEntryTests testReopenAndDuplicateLaunchRevealEntryWithoutStartingInput]' passed (0.002 seconds).
+Test Suite 'StartupEntryTests' passed at 2026-10-29 15:15:35.023.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+Test Suite 'StartupFlowTests' started at 2026-10-29 15:15:35.023.
+Test Case '-[PianoCoreTests.StartupFlowTests testCancelCleanupFailureCannotRestartOnActivationOrRelaunch]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testCancelCleanupFailureCannotRestartOnActivationOrRelaunch]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testConsumeCleanupFailureCannotRestartOnActivationOrRelaunch]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testConsumeCleanupFailureCannotRestartOnActivationOrRelaunch]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testExplicitAuthorizationSurvivesRelaunchButRequiresNewClick]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testExplicitAuthorizationSurvivesRelaunchButRequiresNewClick]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testFailedPersistencePreventsAuthorizationRequest]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testFailedPersistencePreventsAuthorizationRequest]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testImmediatePermissionSuccessAndRelaunchDoNotRequireSettingsVisit]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testImmediatePermissionSuccessAndRelaunchDoNotRequireSettingsVisit]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testIntermediateActivationDoesNotConsumePendingIntentBeforeSettingsVisit]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testIntermediateActivationDoesNotConsumePendingIntentBeforeSettingsVisit]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testPlainLaunchActivationAndPauseNeverStartOrRequestPermission]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testPlainLaunchActivationAndPauseNeverStartOrRequestPermission]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testReturnWithoutPermissionConsumesIntentAndDoesNotRequestAgain]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testReturnWithoutPermissionConsumesIntentAndDoesNotRequestAgain]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testSecureInputCleanupFailureCannotRestartOnActivationOrRelaunch]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testSecureInputCleanupFailureCannotRestartOnActivationOrRelaunch]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.StartupFlowTests testSecureInputConsumesPendingIntentAndRequiresNewClick]' started.
+Test Case '-[PianoCoreTests.StartupFlowTests testSecureInputConsumesPendingIntentAndRequiresNewClick]' passed (0.001 seconds).
+Test Suite 'StartupFlowTests' passed at 2026-10-29 15:15:35.036.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.012 (0.013) seconds
+Test Suite 'TransparencyTests' started at 2026-10-29 15:15:35.036.
+Test Case '-[PianoMacTests.TransparencyTests testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences]' started.
+Test Case '-[PianoMacTests.TransparencyTests testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences]' passed (0.102 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible]' started.
+Test Case '-[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible]' passed (0.273 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore]' started.
+Test Case '-[PianoMacTests.TransparencyTests testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore]' passed (0.292 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testOldInvalidAndRoundTripPreferences]' started.
+Test Case '-[PianoMacTests.TransparencyTests testOldInvalidAndRoundTripPreferences]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testSliderAndAccessibilityOverridePreserveSetting]' started.
+Test Case '-[PianoMacTests.TransparencyTests testSliderAndAccessibilityOverridePreserveSetting]' passed (0.003 seconds).
+Test Suite 'TransparencyTests' passed at 2026-10-29 15:15:35.706.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.670 (0.670) seconds
+Test Suite 'TrialBankTests' started at 2026-10-29 15:15:35.706.
+Test Case '-[PianoAudioTests.TrialBankTests testTrialBankCalibrationCoverageAndLifecycle]' started.
+Test Case '-[PianoAudioTests.TrialBankTests testTrialBankCalibrationCoverageAndLifecycle]' passed (2.951 seconds).
+Test Suite 'TrialBankTests' passed at 2026-10-29 15:15:38.657.
+	 Executed 1 test, with 0 failures (0 unexpected) in 2.951 (2.951) seconds
+Test Suite 'TrialGainTests' started at 2026-10-29 15:15:38.657.
+Test Case '-[PianoAudioTests.TrialGainTests testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp]' started.
+Test Case '-[PianoAudioTests.TrialGainTests testSourceCalibrationCanUseUnityMixerAndSamplerGainWithoutLegacyClamp]' passed (0.000 seconds).
+Test Case '-[PianoAudioTests.TrialGainTests testStereoOfflineRenderingReturnsBothChannelsAndFrameCount]' started.
+Test Case '-[PianoAudioTests.TrialGainTests testStereoOfflineRenderingReturnsBothChannelsAndFrameCount]' passed (0.018 seconds).
+Test Suite 'TrialGainTests' passed at 2026-10-29 15:15:38.676.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.018 (0.019) seconds
+Test Suite 'TrialSessionTests' started at 2026-10-29 15:15:38.676.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testContinuousSessionHasNoTimeoutButRetainsSafetyStops]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' started.
+Test Case '-[PianoMacTests.TrialSessionTests testStartTrialEnablesAudioOverlayAndPauseFullyCleans]' passed (0.125 seconds).
+Test Suite 'TrialSessionTests' passed at 2026-10-29 15:15:38.801.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.126 (0.126) seconds
+Test Suite 'TypingPianoProbePackageTests.xctest' passed at 2026-10-29 15:15:38.801.
+	 Executed 146 tests, with 3 tests skipped and 0 failures (0 unexpected) in 17.986 (18.004) seconds
+Test Suite 'All tests' passed at 2026-10-29 15:15:38.802.
+	 Executed 146 tests, with 3 tests skipped and 0 failures (0 unexpected) in 17.986 (18.008) seconds
+C029_WINDOW_STACK {"activationPolicy":1,"audioOutputStarted":false,"belowModalWindow":true,"dockLevel":20,"frontmostPID":3343,"frontmostPIDUnchanged":true,"fullScreenNone":true,"ignoresMouseEvents":true,"isKeyWindow":false,"isMainWindow":false,"kind":"real overlapping NSWindows and WindowServer front-to-back order; no cross-app activation or TCC dialog","listenerStarted":false,"menuLevel":24,"modalLevel":8,"occlusionVisible":false,"onActiveSpace":true,"passed":true,"permissionRequested":false,"samples":[{"backNormalRank":11,"backNormalWindowID":10048,"frontNormalRank":10,"frontNormalWindowID":10047,"overlayLayer"warning: '--build-system native' has been deprecated and will be removed in a future release; please report an issue at https://github.com/swiftlang/swift-package-manager/issues if you are unable to adopt the default build system.
+:3,"overlayRank":8,"overlayWindowID":10046,"passed":true,"step":"A"},{"backNormalRank":11,"backNormalWindowID":10047,"frontNormalRank":10,"frontNormalWindowID":10048,"overlayLayer":3,"overlayRank":8,"overlayWindowID":10046,"passed":true,"step":"B"},{"backNormalRank":11,"backNormalWindowID":10048,"frontNormalRank":10,"frontNormalWindowID":10047,"overlayLayer":3,"overlayRank":8,"overlayWindowID":10046,"passed":true,"step":"A-again"}],"serverPanel":{"kCGWindowAlpha":1,"kCGWindowBounds":{"Height":256,"Width":360,"X":-960,"Y":201},"kCGWindowIsOnscreen":true,"kCGWindowLayer":3,"kCGWindowMemoryUsage":2432,"kCGWindowName":"","kCGWindowNumber":10046,"kCGWindowOwnerName":"xctest","kCGWindowOwnerPID":1143,"kCGWindowSharingState":1,"kCGWindowStoreType":1},"systemSettingsWritten":false,"visible":true,"windowLevel":3}
+AUDIO_METRIC chord_note_commands=64 velocity=127 gain=0.08 peak=0.1382335 rms=0.02630807394645784
+AUDIO_METRIC coverage=64 minimum_peak=0.0024267696 maximum_peak=0.0024737462
+AUDIO_DIAGNOSTIC zero_gain_last_nonzero_seconds=0.0 late_peak=0.0
+AUDIO_METRIC max_slider_gain=0.16 chord_peak=0.276467
+AUDIO_METRIC release_early_peak=0.0019017064 release_after_800ms_peak=0.0 last_frame_above_1e-7_seconds=0.3595
+AUDIO_METRIC panic_post_render_silent=true next_strike_nonzero=true
+AUDIO_METRIC retrigger_hz=10 strikes=100 max_peak=0.0027894115
+AUDIO_METRIC hold_seconds=10 early_peak=0.0024724924 final_peak=0.0
+TRIAL_CALIBRATION rows=90 largest_peak=0.69976664 temporary_output=/var/folders/sf/7zxgyq91385b2_l3jfnygrt40000gn/T/typing-piano-calibration-C50C3B0E-5F88-419E-BC61-0AD4FC7C045B
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

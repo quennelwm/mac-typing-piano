@@ -1,0 +1,53 @@
+Building for debugging...
+[Using on-disk description]
+[1 / 35] PianoAudioTests-product
+[2 / 35] PianoCore
+[4 / 37] PianoCore
+[12 / 43] PianoCoreTests-product
+[20 / 51] PianoCoreTests-product
+[24 / 51] PianoMac
+[31 / 51] PianoCoreTests-product
+[31 / 51] TypingPianoProbe-product
+[35 / 55] TypingPianoProbe-product
+[36 / 55] PianoMac
+[39 / 54] TypingPianoProbe-product
+[41 / 54] PianoMacTests-product
+[49 / 63] PianoMacTests-product
+[49 / 63] TypingPianoProbe-product
+[57 / 63] PianoMacTests-product
+[59 / 63] PianoMacTests-product
+Build complete! (4.29秒)
+Test Suite 'Selected tests' started at 2026-10-29 15:09:15.478.
+Test Suite 'PianoMacTests.xctest' started at 2026-10-29 15:09:15.481.
+Test Suite 'TransparencyTests' started at 2026-10-29 15:09:15.481.
+Test Case '-[PianoMacTests.TransparencyTests testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences]' started.
+Test Case '-[PianoMacTests.TransparencyTests testControllerPersistenceKeepsHeldInputAudioAndOtherPreferences]' passed (0.470 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible]' started.
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoMacTests/TransparencyTests.swift:73: error: -[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible] : XCTAssertEqualWithAccuracy failed: ("0.7490196078431373") is not equal to ("0.84") +/- ("0.02")
+Test Case '-[PianoMacTests.TransparencyTests testLabelsAndFloatingNotesRemainWhenMaterialIsInvisible]' failed (0.300 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore]' started.
+Test Case '-[PianoMacTests.TransparencyTests testMaterialAlphaEndpointsAllKeysAndReducedTransparencyRestore]' passed (0.297 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testOldInvalidAndRoundTripPreferences]' started.
+Test Case '-[PianoMacTests.TransparencyTests testOldInvalidAndRoundTripPreferences]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.TransparencyTests testSliderAndAccessibilityOverridePreserveSetting]' started.
+Test Case '-[PianoMacTests.TransparencyTests testSliderAndAccessibilityOverridePreserveSetting]' passed (0.003 seconds).
+Test Suite 'TransparencyTests' failed at 2026-10-29 15:09:16.552.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 1.070 (1.071) seconds
+Test Suite 'PianoMacTests.xctest' failed at 2026-10-29 15:09:16.552.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 1.070 (1.071) seconds
+Test Suite 'Selected tests' failed at 2026-10-29 15:09:16.552.
+	 Executed 5 tests, with 1 failure (0 unexpected) in 1.070 (1.073) seconds
+Test Suite 'Selected tests' started at 2026-10-29 15:09:16.673.
+Test Suite 'PianoCoreTests.xctest' started at 2026-10-29 15:09:16.674.
+Test Suite 'PianoCoreTests.xctest' passed at 2026-10-29 15:09:16.674.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 15:09:16.674.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'Selected tests' started at 2026-10-29 15:09:16.770.
+Test Suite 'PianoAudioTests.xctest' started at 2026-10-29 15:09:16.771.
+Test Suite 'PianoAudioTests.xctest' passed at 2026-10-29 15:09:16.771.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 15:09:16.771.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Note: Some test targets reported failures:
+  - PianoMacTests (XCTest)
