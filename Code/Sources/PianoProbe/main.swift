@@ -11,9 +11,10 @@ func emit(_ object: [String: Any]) {
 let arguments = CommandLine.arguments
 let sourceRoot = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
 let resources = Bundle.main.resourceURL ?? sourceRoot
-let bundleMap = resources.appendingPathComponent("keymap.ansi64.v0.1.json")
+let bundleMap = resources.appendingPathComponent(KeyMapping.defaultFilename)
 let bundled = FileManager.default.fileExists(atPath: bundleMap.path)
-let mappingURL = bundled ? bundleMap : sourceRoot.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")
+let mappingFolder = bundled ? resources : sourceRoot.appendingPathComponent("contracts")
+let mappingURL = mappingFolder.appendingPathComponent(KeyMapping.defaultFilename)
 let themeURL = bundled ? resources.appendingPathComponent("theme.candidate.json") : sourceRoot.appendingPathComponent("Design/UI/theme.candidate.json")
 do {
     let mapping = try KeyMapping.load(url: mappingURL)
@@ -76,7 +77,7 @@ do {
             for labels in [true, false] {
                 for scenario in ["rest", "single", "multi"] {
                     let ids = scenarios[scenario]!
-                    let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 104))
+                    let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: CGFloat(width), height: AdaptiveOverlay.canvasHeight))
                     view.appearance = NSAppearance(named: .aqua); view.showLabels = labels
                     view.automaticAnimation = false; view.clock = { 0 }
                     view.activeMIDI = Set(ids.compactMap { mapping.key($0)?.midiNote })
@@ -84,8 +85,8 @@ do {
                     for scale in [1, 2] {
                         let filename = "native-\(width)-\(scenario)-labels-\(labels)@\(scale)x.png"
                         try view.savePNG(to: directory.appendingPathComponent(filename), scale: scale)
-                        captures.append(["file": filename, "widthPt": width, "canvasHeightPt": 104,
-                            "bodyOriginPt": [0, 48], "cropOriginPt": [0, 0], "backingScale": scale,
+                        captures.append(["file": filename, "widthPt": width, "canvasHeightPt": AdaptiveOverlay.canvasHeight,
+                            "bodyOriginPt": [0, AdaptiveOverlay.headroom], "cropOriginPt": [0, 0], "backingScale": scale,
                             "scenario": scenario, "pressedPhysicalIDs": ids, "elapsedMs": 45, "showLabels": labels,
                             "reducedMotion": false, "hiddenReasons": [], "actualNativeMetrics": view.renderMetrics])
                     }
@@ -105,7 +106,7 @@ do {
         var rows: [[String: Any]] = []
         for reduced in [false, true] {
             for labels in [false, true] {
-                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
+                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
                 view.automaticAnimation = false; view.reducedMotion = reduced; view.showLabels = labels
                 view.clock = { 0 }
                 var coordinator = NoteCoordinator(mapping: mapping)
@@ -114,7 +115,7 @@ do {
                     if let strike = coordinator.lastStrike { view.strike(strike, at: 0) }
                 }
                 view.activeMIDI = Set(coordinator.active.values.map { $0.key.midiNote })
-                for ms in Array(Set(Array(stride(from: 0, through: 720, by: 20)) + [350])).sorted() {
+                for ms in Array(Set(Array(stride(from: 0, through: 920, by: 20)) + [350, 450, 899, 900])).sorted() {
                     let time = Double(ms) / 1000
                     if ms == 180 {
                         view.clock = { time }; view.activeMIDI = []
@@ -123,16 +124,17 @@ do {
                     view.advanceAnimations(at: time)
                     try view.savePNG(to: directory.appendingPathComponent("native-reduced-\(reduced)-labels-\(labels)-\(ms)ms.png"))
                     rows.append(["reducedMotion": reduced, "labels": labels, "timeMs": ms, "instances": view.floatingCount, "timer": view.animationTimerRunning,
-                        "backingScale": 2, "canvasPt": [1000,104], "bodyOriginPt": [0,48], "hiddenReasons": [],
+                        "backingScale": 2, "canvasPt": [1000,AdaptiveOverlay.canvasHeight], "bodyOriginPt": [0,AdaptiveOverlay.headroom], "hiddenReasons": [],
                         "pressedPhysicalIDs": coordinator.active.keys.sorted(),
                         "pressIDs": coordinator.active.values.map { $0.id.uuidString },
-                        "notes": view.floatingPresentations.map { ["pressID": $0.pressID.uuidString, "midi": $0.midi, "rise": $0.rise, "opacity": $0.opacity] }])
+                        "inkBoundsWithHaloPt": view.floatingInkBounds.map { [$0.minX, $0.minY, $0.width, $0.height] },
+                        "notes": view.floatingPresentations.map { ["pressID": $0.pressID.uuidString, "midi": $0.midi, "rise": $0.rise, "driftX": $0.driftX, "opacity": $0.opacity] }])
                 }
             }
         }
         // Short-up and mid-return restrike are rendered from the same live transition model.
         for scenario in ["short-tap", "restrike"] {
-            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
+            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
             view.automaticAnimation = false
             var now = 0.0; view.clock = { now }
             var coordinator = NoteCoordinator(mapping: mapping)
@@ -150,10 +152,11 @@ do {
                 let filename = "native-\(scenario)-\(ms)ms.png"
                 try view.savePNG(to: directory.appendingPathComponent(filename))
                 rows.append(["file": filename, "scenario": scenario, "timeMs": ms,
-                    "backingScale": 2, "canvasPt": [1000,104], "bodyOriginPt": [0,48],
+                    "backingScale": 2, "canvasPt": [1000,AdaptiveOverlay.canvasHeight], "bodyOriginPt": [0,AdaptiveOverlay.headroom],
                     "syntheticKey": "keyA", "depression": view.keyDepression(midi: midi, at: now),
                     "instances": view.floatingCount, "timer": view.animationTimerRunning,
-                    "notes": view.floatingPresentations.map { ["pressID": $0.pressID.uuidString, "midi": $0.midi, "rise": $0.rise, "opacity": $0.opacity] }])
+                    "inkBoundsWithHaloPt": view.floatingInkBounds.map { [$0.minX, $0.minY, $0.width, $0.height] },
+                        "notes": view.floatingPresentations.map { ["pressID": $0.pressID.uuidString, "midi": $0.midi, "rise": $0.rise, "driftX": $0.driftX, "opacity": $0.opacity] }])
             }
         }
         var metadata = provenance.metadata
@@ -161,25 +164,15 @@ do {
         metadata["frames"] = rows
         try JSONSerialization.data(withJSONObject: metadata, options: [.prettyPrinted, .sortedKeys]).write(to: directory.appendingPathComponent("frames.json"))
         emit(["frames": rows.count, "hardwareInput": false, "audioOutputStarted": false, "outputDirectory": directory.path])
+    } else if let index = arguments.firstIndex(of: "--keymap-editor-snapshot"), arguments.count > index + 1 {
+        _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
+        emit(try KeymapEditorEvidence.render(base: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))
     } else if arguments.contains("--window-smoke") {
         _ = NSApplication.shared
-        NSApp.setActivationPolicy(.prohibited)
-        let before = NSWorkspace.shared.frontmostApplication?.processIdentifier ?? -1
-        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 900, height: 104))
-        let panel = ProbePanel(content: view)
-        if let screen = NSScreen.main { panel.setFrameOrigin(NSPoint(x: screen.visibleFrame.midX - 450, y: screen.visibleFrame.minY + 8)) }
-        panel.orderFrontRegardless()
-        RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.25))
-        let after = NSWorkspace.shared.frontmostApplication?.processIdentifier ?? -2
-        let passed = before == after && !panel.isKeyWindow && !panel.isMainWindow && panel.ignoresMouseEvents && panel.level == .normal && panel.isVisible
-        emit(["kind": "programmatic window smoke, not click/Dock acceptance", "passed": passed,
-            "frontmostPIDUnchanged": before == after, "isKeyWindow": panel.isKeyWindow, "isMainWindow": panel.isMainWindow,
-            "ignoresMouseEvents": panel.ignoresMouseEvents, "windowLevel": panel.level.rawValue,
-            "visible": panel.isVisible, "opaque": panel.isOpaque, "screenCount": NSScreen.screens.count,
-            "existingInputPermissionForThisProcess": InputMonitor.hasExistingPermission,
-            "listenerStarted": false, "audioOutputStarted": false, "dockSettingWritten": false])
-        panel.orderOut(nil); panel.close()
-        if !passed { exit(2) }
+        NSApp.setActivationPolicy(.accessory) // Match production without activating or taking focus.
+        let report = OverlayWindowEvidence.run(mapping: mapping)
+        emit(report)
+        if report["passed"] as? Bool != true { exit(2) }
     } else if arguments.contains("--menu-smoke") {
         _ = NSApplication.shared
         NSApp.setActivationPolicy(.prohibited)

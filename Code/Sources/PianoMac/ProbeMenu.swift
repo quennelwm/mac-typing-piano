@@ -1,6 +1,7 @@
 import AppKit
 import CoreText
 import PianoAudio
+import PianoCore
 
 /// Native daily menu, with bounded input/audio/system experiments in a separate submenu.
 public final class ProbeMenu: NSObject, NSMenuDelegate {
@@ -18,6 +19,7 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     public var onOpen: (() -> Void)?
     public var onPause: (() -> Void)?
     public var onSound: (() -> Void)?
+    public var onCustomize: (() -> Void)?
     public var onLabels: (() -> Void)?
     public var onOverlay: (() -> Void)?
     public var onGlobal: (() -> Void)?
@@ -36,6 +38,8 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     private let alertStatus = NSMenuItem(title: "提示音：默认保持系统现状", action: nil, keyEquivalent: "")
     private let labels = NSMenuItem(title: "显示按键标签", action: nil, keyEquivalent: "")
     private let overlay = NSMenuItem(title: "显示钢琴", action: nil, keyEquivalent: "")
+    private let keymapStatus = NSMenuItem(title: "当前：默认键位", action: nil, keyEquivalent: "")
+    private let overlayStatusItem = NSMenuItem(title: "钢琴：已隐藏", action: nil, keyEquivalent: "")
     private let dock = NSMenuItem(title: "自动隐藏 Dock", action: nil, keyEquivalent: "")
     private var sourceItems: [NSMenuItem] = []
     private let mode = NSMenuItem(title: "Dock：模拟模式，不改系统", action: nil, keyEquivalent: "")
@@ -76,6 +80,9 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         add("系统声音设置…", #selector(openSoundSettings), to: menu)
         menu.addItem(.separator())
         wire(overlay, #selector(toggleOverlay), menu); wire(labels, #selector(toggleLabels), menu)
+        overlayStatusItem.isEnabled = false; menu.addItem(overlayStatusItem)
+        add("自定义键位…", #selector(customize), to: menu)
+        keymapStatus.isEnabled = false; menu.addItem(keymapStatus)
         menu.addItem(.separator()); wire(dock, #selector(toggleDock), menu)
         add("系统Dock设置…", #selector(openDockSettings), to: menu)
         let automaticWidth = NSMenuItem(title: "钢琴宽度：自动适应屏幕", action: nil, keyEquivalent: "")
@@ -111,6 +118,11 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         let item = NSMenuItem(title: title, action: nil, keyEquivalent: ""), submenu = NSMenu(title: title)
         submenu.autoenablesItems = false; item.submenu = submenu; parent.addItem(item); return submenu
     }
+    public func updateKeymap(custom: Bool, warning: String?) {
+        keymapStatus.title = warning == nil ? (custom ? "当前：自定义键位" : "当前：默认键位") : "当前：默认键位（配置读取失败）"
+        keymapStatus.toolTip = warning
+    }
+    @objc private func customize() { onCustomize?() }
     public func menuWillOpen(_ menu: NSMenu) { onWillOpen?() }
     public func updateAlertVolume(muted: Bool?, detail: String) {
         alertMute.state = muted.map { $0 ? .on : .off } ?? .mixed
@@ -118,9 +130,10 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         alertStatus.toolTip = detail; alertMute.toolTip = detail
     }
     public func setVolume(_ value: Double) { slider.doubleValue = min(1, max(0, value)); percentage.stringValue = "\(Int((slider.doubleValue * 100).rounded()))%" }
-    public func update(soundEnabled: Bool, showLabels: Bool, showOverlay: Bool, paused: Bool = false, dockDesired: Bool = true, dockKnown: Bool = true, systemDock: Bool = false, sourceID: String = "synthetic", sessionStatus: String? = nil) {
+    public func update(soundEnabled: Bool, showLabels: Bool, showOverlay: Bool, overlayVisible: Bool = true, overlayStatus: String? = nil, paused: Bool = false, dockDesired: Bool = true, dockKnown: Bool = true, systemDock: Bool = false, sourceID: String = "synthetic", sessionStatus: String? = nil) {
         session.title = sessionStatus ?? (paused ? "已暂停" : "运行中")
-        sound.state = soundEnabled ? .on : .off; labels.state = showLabels ? .on : .off; overlay.state = showOverlay ? .on : .off
+        sound.state = soundEnabled ? .on : .off; labels.state = showLabels ? .on : .off; overlay.state = showOverlay ? (overlayVisible ? .on : .mixed) : .off
+        overlayStatusItem.title = "钢琴：" + (overlayStatus ?? (showOverlay ? "已显示" : "已隐藏"))
         pause.title = paused ? "开始打字钢琴" : "暂停打字钢琴"; dock.state = dockKnown ? (dockDesired ? .on : .off) : .mixed
         mode.title = systemDock ? "Dock：系统原生自动隐藏" : "Dock：模拟模式，不改系统"
         for item in sourceItems { item.state = item.representedObject as? String == sourceID ? .on : .off }

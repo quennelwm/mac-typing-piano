@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "date": "2026-10-29 Asia/Shanghai",
+  "physicalKeyOptions": 64,
+  "pitchOptions": 64,
+  "swapModelCases": 4096,
+  "restoreExampleChanges": 2,
+  "scope": "Design options and exchange arithmetic only; native controls, focus, accessibility, persistence/audio reset not tested.",
+  "multiEditExample": {
+    "changes": [
+      {
+        "key": "keyA",
+        "from": 53,
+        "to": 62
+      },
+      {
+        "key": "keyG",
+        "from": 60,
+        "to": 53
+      },
+      {
+        "key": "keyH",
+        "from": 62,
+        "to": 60
+      }
+    ],
+    "baselineUnchanged": true,
+    "resetTargetMatchesNewDefault": true
+  },
+  "previewImagesVerified": 2,
+  "previewLogicalSizePt": [
+    560,
+    440
+  ],
+  "previewScale": 2,
+  "singleDraft": true,
+  "noContinueOrApplyButton": true,
+  "U027FilesVerifiedUnchanged": 166,
+  "referenceSHA256": "17b1ed6b41abd666aa98b6010a5a705fdab1c2e9554240b647e2ad9458098c09"
+}

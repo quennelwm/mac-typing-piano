@@ -1,0 +1,1312 @@
+{
+  "version": "u028.2",
+  "artifactState": "design_proposal",
+  "sourceSHA256": "fb40db4b954c94f4f3e2faf6a3a3c5c96d1be53feb2c853f2ab3ed2d933e8696",
+  "sourcePath": "Design/UI/U-027/mapping.preview.json",
+  "menuEntry": "自定义键位…",
+  "legacyPresetEntry": false,
+  "windowSizePt": [
+    560,
+    440
+  ],
+  "buttons": [
+    "恢复新表默认",
+    "取消",
+    "保存"
+  ],
+  "physicalKeyOptions": [
+    {
+      "physicalKeyID": "grave",
+      "displayName": "`",
+      "physicalRow": 1,
+      "positionInRow": 1,
+      "defaultMIDI": 46,
+      "defaultPitch": "A#2"
+    },
+    {
+      "physicalKeyID": "digit1",
+      "displayName": "1",
+      "physicalRow": 1,
+      "positionInRow": 2,
+      "defaultMIDI": 48,
+      "defaultPitch": "C3"
+    },
+    {
+      "physicalKeyID": "digit2",
+      "displayName": "2",
+      "physicalRow": 1,
+      "positionInRow": 3,
+      "defaultMIDI": 49,
+      "defaultPitch": "C#3"
+    },
+    {
+      "physicalKeyID": "digit3",
+      "displayName": "3",
+      "physicalRow": 1,
+      "positionInRow": 4,
+      "defaultMIDI": 47,
+      "defaultPitch": "B2"
+    },
+    {
+      "physicalKeyID": "digit4",
+      "displayName": "4",
+      "physicalRow": 1,
+      "positionInRow": 5,
+      "defaultMIDI": 94,
+      "defaultPitch": "A#6"
+    },
+    {
+      "physicalKeyID": "digit5",
+      "displayName": "5",
+      "physicalRow": 1,
+      "positionInRow": 6,
+      "defaultMIDI": 93,
+      "defaultPitch": "A6"
+    },
+    {
+      "physicalKeyID": "digit6",
+      "displayName": "6",
+      "physicalRow": 1,
+      "positionInRow": 7,
+      "defaultMIDI": 92,
+      "defaultPitch": "G#6"
+    },
+    {
+      "physicalKeyID": "digit7",
+      "displayName": "7",
+      "physicalRow": 1,
+      "positionInRow": 8,
+      "defaultMIDI": 91,
+      "defaultPitch": "G6"
+    },
+    {
+      "physicalKeyID": "digit8",
+      "displayName": "8",
+      "physicalRow": 1,
+      "positionInRow": 9,
+      "defaultMIDI": 90,
+      "defaultPitch": "F#6"
+    },
+    {
+      "physicalKeyID": "digit9",
+      "displayName": "9",
+      "physicalRow": 1,
+      "positionInRow": 10,
+      "defaultMIDI": 89,
+      "defaultPitch": "F6"
+    },
+    {
+      "physicalKeyID": "digit0",
+      "displayName": "0",
+      "physicalRow": 1,
+      "positionInRow": 11,
+      "defaultMIDI": 82,
+      "defaultPitch": "A#5"
+    },
+    {
+      "physicalKeyID": "minus",
+      "displayName": "-",
+      "physicalRow": 1,
+      "positionInRow": 12,
+      "defaultMIDI": 80,
+      "defaultPitch": "G#5"
+    },
+    {
+      "physicalKeyID": "equal",
+      "displayName": "=",
+      "physicalRow": 1,
+      "positionInRow": 13,
+      "defaultMIDI": 78,
+      "defaultPitch": "F#5"
+    },
+    {
+      "physicalKeyID": "delete",
+      "displayName": "Delete（⌫）",
+      "physicalRow": 1,
+      "positionInRow": 14,
+      "defaultMIDI": 75,
+      "defaultPitch": "D#5"
+    },
+    {
+      "physicalKeyID": "tab",
+      "displayName": "Tab（⇥）",
+      "physicalRow": 2,
+      "positionInRow": 1,
+      "defaultMIDI": 51,
+      "defaultPitch": "D#3"
+    },
+    {
+      "physicalKeyID": "keyQ",
+      "displayName": "Q",
+      "physicalRow": 2,
+      "positionInRow": 2,
+      "defaultMIDI": 50,
+      "defaultPitch": "D3"
+    },
+    {
+      "physicalKeyID": "keyW",
+      "displayName": "W",
+      "physicalRow": 2,
+      "positionInRow": 3,
+      "defaultMIDI": 54,
+      "defaultPitch": "F#3"
+    },
+    {
+      "physicalKeyID": "keyE",
+      "displayName": "E",
+      "physicalRow": 2,
+      "positionInRow": 4,
+      "defaultMIDI": 56,
+      "defaultPitch": "G#3"
+    },
+    {
+      "physicalKeyID": "keyR",
+      "displayName": "R",
+      "physicalRow": 2,
+      "positionInRow": 5,
+      "defaultMIDI": 58,
+      "defaultPitch": "A#3"
+    },
+    {
+      "physicalKeyID": "keyT",
+      "displayName": "T",
+      "physicalRow": 2,
+      "positionInRow": 6,
+      "defaultMIDI": 96,
+      "defaultPitch": "C7"
+    },
+    {
+      "physicalKeyID": "keyY",
+      "displayName": "Y",
+      "physicalRow": 2,
+      "positionInRow": 7,
+      "defaultMIDI": 61,
+      "defaultPitch": "C#4"
+    },
+    {
+      "physicalKeyID": "keyU",
+      "displayName": "U",
+      "physicalRow": 2,
+      "positionInRow": 8,
+      "defaultMIDI": 63,
+      "defaultPitch": "D#4"
+    },
+    {
+      "physicalKeyID": "keyI",
+      "displayName": "I",
+      "physicalRow": 2,
+      "positionInRow": 9,
+      "defaultMIDI": 95,
+      "defaultPitch": "B6"
+    },
+    {
+      "physicalKeyID": "keyO",
+      "displayName": "O",
+      "physicalRow": 2,
+      "positionInRow": 10,
+      "defaultMIDI": 66,
+      "defaultPitch": "F#4"
+    },
+    {
+      "physicalKeyID": "keyP",
+      "displayName": "P",
+      "physicalRow": 2,
+      "positionInRow": 11,
+      "defaultMIDI": 68,
+      "defaultPitch": "G#4"
+    },
+    {
+      "physicalKeyID": "bracketLeft",
+      "displayName": "[",
+      "physicalRow": 2,
+      "positionInRow": 12,
+      "defaultMIDI": 70,
+      "defaultPitch": "A#4"
+    },
+    {
+      "physicalKeyID": "bracketRight",
+      "displayName": "]",
+      "physicalRow": 2,
+      "positionInRow": 13,
+      "defaultMIDI": 74,
+      "defaultPitch": "D5"
+    },
+    {
+      "physicalKeyID": "backslash",
+      "displayName": "\\",
+      "physicalRow": 2,
+      "positionInRow": 14,
+      "defaultMIDI": 73,
+      "defaultPitch": "C#5"
+    },
+    {
+      "physicalKeyID": "capsLock",
+      "displayName": "Caps Lock（⇪）",
+      "physicalRow": 3,
+      "positionInRow": 1,
+      "defaultMIDI": 52,
+      "defaultPitch": "E3"
+    },
+    {
+      "physicalKeyID": "keyA",
+      "displayName": "A",
+      "physicalRow": 3,
+      "positionInRow": 2,
+      "defaultMIDI": 53,
+      "defaultPitch": "F3"
+    },
+    {
+      "physicalKeyID": "keyS",
+      "displayName": "S",
+      "physicalRow": 3,
+      "positionInRow": 3,
+      "defaultMIDI": 55,
+      "defaultPitch": "G3"
+    },
+    {
+      "physicalKeyID": "keyD",
+      "displayName": "D",
+      "physicalRow": 3,
+      "positionInRow": 4,
+      "defaultMIDI": 57,
+      "defaultPitch": "A3"
+    },
+    {
+      "physicalKeyID": "keyF",
+      "displayName": "F",
+      "physicalRow": 3,
+      "positionInRow": 5,
+      "defaultMIDI": 59,
+      "defaultPitch": "B3"
+    },
+    {
+      "physicalKeyID": "keyG",
+      "displayName": "G",
+      "physicalRow": 3,
+      "positionInRow": 6,
+      "defaultMIDI": 60,
+      "defaultPitch": "C4"
+    },
+    {
+      "physicalKeyID": "keyH",
+      "displayName": "H",
+      "physicalRow": 3,
+      "positionInRow": 7,
+      "defaultMIDI": 62,
+      "defaultPitch": "D4"
+    },
+    {
+      "physicalKeyID": "keyJ",
+      "displayName": "J",
+      "physicalRow": 3,
+      "positionInRow": 8,
+      "defaultMIDI": 64,
+      "defaultPitch": "E4"
+    },
+    {
+      "physicalKeyID": "keyK",
+      "displayName": "K",
+      "physicalRow": 3,
+      "positionInRow": 9,
+      "defaultMIDI": 65,
+      "defaultPitch": "F4"
+    },
+    {
+      "physicalKeyID": "keyL",
+      "displayName": "L",
+      "physicalRow": 3,
+      "positionInRow": 10,
+      "defaultMIDI": 67,
+      "defaultPitch": "G4"
+    },
+    {
+      "physicalKeyID": "semicolon",
+      "displayName": ";",
+      "physicalRow": 3,
+      "positionInRow": 11,
+      "defaultMIDI": 69,
+      "defaultPitch": "A4"
+    },
+    {
+      "physicalKeyID": "quote",
+      "displayName": "'",
+      "physicalRow": 3,
+      "positionInRow": 12,
+      "defaultMIDI": 71,
+      "defaultPitch": "B4"
+    },
+    {
+      "physicalKeyID": "return",
+      "displayName": "Return（↵）",
+      "physicalRow": 3,
+      "positionInRow": 13,
+      "defaultMIDI": 72,
+      "defaultPitch": "C5"
+    },
+    {
+      "physicalKeyID": "shiftLeft",
+      "displayName": "左 Shift（⇧）",
+      "physicalRow": 4,
+      "positionInRow": 1,
+      "defaultMIDI": 38,
+      "defaultPitch": "D2"
+    },
+    {
+      "physicalKeyID": "keyZ",
+      "displayName": "Z",
+      "physicalRow": 4,
+      "positionInRow": 2,
+      "defaultMIDI": 39,
+      "defaultPitch": "D#2"
+    },
+    {
+      "physicalKeyID": "keyX",
+      "displayName": "X",
+      "physicalRow": 4,
+      "positionInRow": 3,
+      "defaultMIDI": 40,
+      "defaultPitch": "E2"
+    },
+    {
+      "physicalKeyID": "keyC",
+      "displayName": "C",
+      "physicalRow": 4,
+      "positionInRow": 4,
+      "defaultMIDI": 41,
+      "defaultPitch": "F2"
+    },
+    {
+      "physicalKeyID": "keyV",
+      "displayName": "V",
+      "physicalRow": 4,
+      "positionInRow": 5,
+      "defaultMIDI": 42,
+      "defaultPitch": "F#2"
+    },
+    {
+      "physicalKeyID": "keyB",
+      "displayName": "B",
+      "physicalRow": 4,
+      "positionInRow": 6,
+      "defaultMIDI": 43,
+      "defaultPitch": "G2"
+    },
+    {
+      "physicalKeyID": "keyN",
+      "displayName": "N",
+      "physicalRow": 4,
+      "positionInRow": 7,
+      "defaultMIDI": 44,
+      "defaultPitch": "G#2"
+    },
+    {
+      "physicalKeyID": "keyM",
+      "displayName": "M",
+      "physicalRow": 4,
+      "positionInRow": 8,
+      "defaultMIDI": 45,
+      "defaultPitch": "A2"
+    },
+    {
+      "physicalKeyID": "comma",
+      "displayName": ",",
+      "physicalRow": 4,
+      "positionInRow": 9,
+      "defaultMIDI": 81,
+      "defaultPitch": "A5"
+    },
+    {
+      "physicalKeyID": "period",
+      "displayName": ".",
+      "physicalRow": 4,
+      "positionInRow": 10,
+      "defaultMIDI": 79,
+      "defaultPitch": "G5"
+    },
+    {
+      "physicalKeyID": "slash",
+      "displayName": "/",
+      "physicalRow": 4,
+      "positionInRow": 11,
+      "defaultMIDI": 77,
+      "defaultPitch": "F5"
+    },
+    {
+      "physicalKeyID": "shiftRight",
+      "displayName": "右 Shift（⇧）",
+      "physicalRow": 4,
+      "positionInRow": 12,
+      "defaultMIDI": 76,
+      "defaultPitch": "E5"
+    },
+    {
+      "physicalKeyID": "fn",
+      "displayName": "Fn／地球键",
+      "physicalRow": 5,
+      "positionInRow": 1,
+      "defaultMIDI": 33,
+      "defaultPitch": "A1"
+    },
+    {
+      "physicalKeyID": "controlLeft",
+      "displayName": "左 Control（⌃）",
+      "physicalRow": 5,
+      "positionInRow": 2,
+      "defaultMIDI": 34,
+      "defaultPitch": "A#1"
+    },
+    {
+      "physicalKeyID": "optionLeft",
+      "displayName": "左 Option（⌥）",
+      "physicalRow": 5,
+      "positionInRow": 3,
+      "defaultMIDI": 35,
+      "defaultPitch": "B1"
+    },
+    {
+      "physicalKeyID": "commandLeft",
+      "displayName": "左 Command（⌘）",
+      "physicalRow": 5,
+      "positionInRow": 4,
+      "defaultMIDI": 36,
+      "defaultPitch": "C2"
+    },
+    {
+      "physicalKeyID": "space",
+      "displayName": "空格",
+      "physicalRow": 5,
+      "positionInRow": 5,
+      "defaultMIDI": 37,
+      "defaultPitch": "C#2"
+    },
+    {
+      "physicalKeyID": "commandRight",
+      "displayName": "右 Command（⌘）",
+      "physicalRow": 5,
+      "positionInRow": 6,
+      "defaultMIDI": 88,
+      "defaultPitch": "E6"
+    },
+    {
+      "physicalKeyID": "optionRight",
+      "displayName": "右 Option（⌥）",
+      "physicalRow": 5,
+      "positionInRow": 7,
+      "defaultMIDI": 87,
+      "defaultPitch": "D#6"
+    },
+    {
+      "physicalKeyID": "arrowLeft",
+      "displayName": "←",
+      "physicalRow": 5,
+      "positionInRow": 8,
+      "defaultMIDI": 86,
+      "defaultPitch": "D6"
+    },
+    {
+      "physicalKeyID": "arrowDown",
+      "displayName": "↓",
+      "physicalRow": 5,
+      "positionInRow": 9,
+      "defaultMIDI": 85,
+      "defaultPitch": "C#6"
+    },
+    {
+      "physicalKeyID": "arrowUp",
+      "displayName": "↑",
+      "physicalRow": 5,
+      "positionInRow": 10,
+      "defaultMIDI": 84,
+      "defaultPitch": "C6"
+    },
+    {
+      "physicalKeyID": "arrowRight",
+      "displayName": "→",
+      "physicalRow": 5,
+      "positionInRow": 11,
+      "defaultMIDI": 83,
+      "defaultPitch": "B5"
+    }
+  ],
+  "pitchOptions": [
+    {
+      "midi": 33,
+      "displayPitch": "A1",
+      "defaultOwnerPhysicalKeyID": "fn",
+      "isMiddleC": false
+    },
+    {
+      "midi": 34,
+      "displayPitch": "A♯1",
+      "defaultOwnerPhysicalKeyID": "controlLeft",
+      "isMiddleC": false
+    },
+    {
+      "midi": 35,
+      "displayPitch": "B1",
+      "defaultOwnerPhysicalKeyID": "optionLeft",
+      "isMiddleC": false
+    },
+    {
+      "midi": 36,
+      "displayPitch": "C2",
+      "defaultOwnerPhysicalKeyID": "commandLeft",
+      "isMiddleC": false
+    },
+    {
+      "midi": 37,
+      "displayPitch": "C♯2",
+      "defaultOwnerPhysicalKeyID": "space",
+      "isMiddleC": false
+    },
+    {
+      "midi": 38,
+      "displayPitch": "D2",
+      "defaultOwnerPhysicalKeyID": "shiftLeft",
+      "isMiddleC": false
+    },
+    {
+      "midi": 39,
+      "displayPitch": "D♯2",
+      "defaultOwnerPhysicalKeyID": "keyZ",
+      "isMiddleC": false
+    },
+    {
+      "midi": 40,
+      "displayPitch": "E2",
+      "defaultOwnerPhysicalKeyID": "keyX",
+      "isMiddleC": false
+    },
+    {
+      "midi": 41,
+      "displayPitch": "F2",
+      "defaultOwnerPhysicalKeyID": "keyC",
+      "isMiddleC": false
+    },
+    {
+      "midi": 42,
+      "displayPitch": "F♯2",
+      "defaultOwnerPhysicalKeyID": "keyV",
+      "isMiddleC": false
+    },
+    {
+      "midi": 43,
+      "displayPitch": "G2",
+      "defaultOwnerPhysicalKeyID": "keyB",
+      "isMiddleC": false
+    },
+    {
+      "midi": 44,
+      "displayPitch": "G♯2",
+      "defaultOwnerPhysicalKeyID": "keyN",
+      "isMiddleC": false
+    },
+    {
+      "midi": 45,
+      "displayPitch": "A2",
+      "defaultOwnerPhysicalKeyID": "keyM",
+      "isMiddleC": false
+    },
+    {
+      "midi": 46,
+      "displayPitch": "A♯2",
+      "defaultOwnerPhysicalKeyID": "grave",
+      "isMiddleC": false
+    },
+    {
+      "midi": 47,
+      "displayPitch": "B2",
+      "defaultOwnerPhysicalKeyID": "digit3",
+      "isMiddleC": false
+    },
+    {
+      "midi": 48,
+      "displayPitch": "C3",
+      "defaultOwnerPhysicalKeyID": "digit1",
+      "isMiddleC": false
+    },
+    {
+      "midi": 49,
+      "displayPitch": "C♯3",
+      "defaultOwnerPhysicalKeyID": "digit2",
+      "isMiddleC": false
+    },
+    {
+      "midi": 50,
+      "displayPitch": "D3",
+      "defaultOwnerPhysicalKeyID": "keyQ",
+      "isMiddleC": false
+    },
+    {
+      "midi": 51,
+      "displayPitch": "D♯3",
+      "defaultOwnerPhysicalKeyID": "tab",
+      "isMiddleC": false
+    },
+    {
+      "midi": 52,
+      "displayPitch": "E3",
+      "defaultOwnerPhysicalKeyID": "capsLock",
+      "isMiddleC": false
+    },
+    {
+      "midi": 53,
+      "displayPitch": "F3",
+      "defaultOwnerPhysicalKeyID": "keyA",
+      "isMiddleC": false
+    },
+    {
+      "midi": 54,
+      "displayPitch": "F♯3",
+      "defaultOwnerPhysicalKeyID": "keyW",
+      "isMiddleC": false
+    },
+    {
+      "midi": 55,
+      "displayPitch": "G3",
+      "defaultOwnerPhysicalKeyID": "keyS",
+      "isMiddleC": false
+    },
+    {
+      "midi": 56,
+      "displayPitch": "G♯3",
+      "defaultOwnerPhysicalKeyID": "keyE",
+      "isMiddleC": false
+    },
+    {
+      "midi": 57,
+      "displayPitch": "A3",
+      "defaultOwnerPhysicalKeyID": "keyD",
+      "isMiddleC": false
+    },
+    {
+      "midi": 58,
+      "displayPitch": "A♯3",
+      "defaultOwnerPhysicalKeyID": "keyR",
+      "isMiddleC": false
+    },
+    {
+      "midi": 59,
+      "displayPitch": "B3",
+      "defaultOwnerPhysicalKeyID": "keyF",
+      "isMiddleC": false
+    },
+    {
+      "midi": 60,
+      "displayPitch": "C4",
+      "defaultOwnerPhysicalKeyID": "keyG",
+      "isMiddleC": true
+    },
+    {
+      "midi": 61,
+      "displayPitch": "C♯4",
+      "defaultOwnerPhysicalKeyID": "keyY",
+      "isMiddleC": false
+    },
+    {
+      "midi": 62,
+      "displayPitch": "D4",
+      "defaultOwnerPhysicalKeyID": "keyH",
+      "isMiddleC": false
+    },
+    {
+      "midi": 63,
+      "displayPitch": "D♯4",
+      "defaultOwnerPhysicalKeyID": "keyU",
+      "isMiddleC": false
+    },
+    {
+      "midi": 64,
+      "displayPitch": "E4",
+      "defaultOwnerPhysicalKeyID": "keyJ",
+      "isMiddleC": false
+    },
+    {
+      "midi": 65,
+      "displayPitch": "F4",
+      "defaultOwnerPhysicalKeyID": "keyK",
+      "isMiddleC": false
+    },
+    {
+      "midi": 66,
+      "displayPitch": "F♯4",
+      "defaultOwnerPhysicalKeyID": "keyO",
+      "isMiddleC": false
+    },
+    {
+      "midi": 67,
+      "displayPitch": "G4",
+      "defaultOwnerPhysicalKeyID": "keyL",
+      "isMiddleC": false
+    },
+    {
+      "midi": 68,
+      "displayPitch": "G♯4",
+      "defaultOwnerPhysicalKeyID": "keyP",
+      "isMiddleC": false
+    },
+    {
+      "midi": 69,
+      "displayPitch": "A4",
+      "defaultOwnerPhysicalKeyID": "semicolon",
+      "isMiddleC": false
+    },
+    {
+      "midi": 70,
+      "displayPitch": "A♯4",
+      "defaultOwnerPhysicalKeyID": "bracketLeft",
+      "isMiddleC": false
+    },
+    {
+      "midi": 71,
+      "displayPitch": "B4",
+      "defaultOwnerPhysicalKeyID": "quote",
+      "isMiddleC": false
+    },
+    {
+      "midi": 72,
+      "displayPitch": "C5",
+      "defaultOwnerPhysicalKeyID": "return",
+      "isMiddleC": false
+    },
+    {
+      "midi": 73,
+      "displayPitch": "C♯5",
+      "defaultOwnerPhysicalKeyID": "backslash",
+      "isMiddleC": false
+    },
+    {
+      "midi": 74,
+      "displayPitch": "D5",
+      "defaultOwnerPhysicalKeyID": "bracketRight",
+      "isMiddleC": false
+    },
+    {
+      "midi": 75,
+      "displayPitch": "D♯5",
+      "defaultOwnerPhysicalKeyID": "delete",
+      "isMiddleC": false
+    },
+    {
+      "midi": 76,
+      "displayPitch": "E5",
+      "defaultOwnerPhysicalKeyID": "shiftRight",
+      "isMiddleC": false
+    },
+    {
+      "midi": 77,
+      "displayPitch": "F5",
+      "defaultOwnerPhysicalKeyID": "slash",
+      "isMiddleC": false
+    },
+    {
+      "midi": 78,
+      "displayPitch": "F♯5",
+      "defaultOwnerPhysicalKeyID": "equal",
+      "isMiddleC": false
+    },
+    {
+      "midi": 79,
+      "displayPitch": "G5",
+      "defaultOwnerPhysicalKeyID": "period",
+      "isMiddleC": false
+    },
+    {
+      "midi": 80,
+      "displayPitch": "G♯5",
+      "defaultOwnerPhysicalKeyID": "minus",
+      "isMiddleC": false
+    },
+    {
+      "midi": 81,
+      "displayPitch": "A5",
+      "defaultOwnerPhysicalKeyID": "comma",
+      "isMiddleC": false
+    },
+    {
+      "midi": 82,
+      "displayPitch": "A♯5",
+      "defaultOwnerPhysicalKeyID": "digit0",
+      "isMiddleC": false
+    },
+    {
+      "midi": 83,
+      "displayPitch": "B5",
+      "defaultOwnerPhysicalKeyID": "arrowRight",
+      "isMiddleC": false
+    },
+    {
+      "midi": 84,
+      "displayPitch": "C6",
+      "defaultOwnerPhysicalKeyID": "arrowUp",
+      "isMiddleC": false
+    },
+    {
+      "midi": 85,
+      "displayPitch": "C♯6",
+      "defaultOwnerPhysicalKeyID": "arrowDown",
+      "isMiddleC": false
+    },
+    {
+      "midi": 86,
+      "displayPitch": "D6",
+      "defaultOwnerPhysicalKeyID": "arrowLeft",
+      "isMiddleC": false
+    },
+    {
+      "midi": 87,
+      "displayPitch": "D♯6",
+      "defaultOwnerPhysicalKeyID": "optionRight",
+      "isMiddleC": false
+    },
+    {
+      "midi": 88,
+      "displayPitch": "E6",
+      "defaultOwnerPhysicalKeyID": "commandRight",
+      "isMiddleC": false
+    },
+    {
+      "midi": 89,
+      "displayPitch": "F6",
+      "defaultOwnerPhysicalKeyID": "digit9",
+      "isMiddleC": false
+    },
+    {
+      "midi": 90,
+      "displayPitch": "F♯6",
+      "defaultOwnerPhysicalKeyID": "digit8",
+      "isMiddleC": false
+    },
+    {
+      "midi": 91,
+      "displayPitch": "G6",
+      "defaultOwnerPhysicalKeyID": "digit7",
+      "isMiddleC": false
+    },
+    {
+      "midi": 92,
+      "displayPitch": "G♯6",
+      "defaultOwnerPhysicalKeyID": "digit6",
+      "isMiddleC": false
+    },
+    {
+      "midi": 93,
+      "displayPitch": "A6",
+      "defaultOwnerPhysicalKeyID": "digit5",
+      "isMiddleC": false
+    },
+    {
+      "midi": 94,
+      "displayPitch": "A♯6",
+      "defaultOwnerPhysicalKeyID": "digit4",
+      "isMiddleC": false
+    },
+    {
+      "midi": 95,
+      "displayPitch": "B6",
+      "defaultOwnerPhysicalKeyID": "keyI",
+      "isMiddleC": false
+    },
+    {
+      "midi": 96,
+      "displayPitch": "C7",
+      "defaultOwnerPhysicalKeyID": "keyT",
+      "isMiddleC": false
+    }
+  ],
+  "swapExamples": [
+    {
+      "selectedKey": "keyG",
+      "targetMIDI": 53,
+      "changes": [
+        {
+          "physicalKeyID": "keyA",
+          "fromMIDI": 53,
+          "toMIDI": 60
+        },
+        {
+          "physicalKeyID": "keyG",
+          "fromMIDI": 60,
+          "toMIDI": 53
+        }
+      ],
+      "saveEnabled": true,
+      "candidate": {
+        "grave": 46,
+        "digit1": 48,
+        "digit2": 49,
+        "digit3": 47,
+        "digit4": 94,
+        "digit5": 93,
+        "digit6": 92,
+        "digit7": 91,
+        "digit8": 90,
+        "digit9": 89,
+        "digit0": 82,
+        "minus": 80,
+        "equal": 78,
+        "delete": 75,
+        "tab": 51,
+        "keyQ": 50,
+        "keyW": 54,
+        "keyE": 56,
+        "keyR": 58,
+        "keyT": 96,
+        "keyY": 61,
+        "keyU": 63,
+        "keyI": 95,
+        "keyO": 66,
+        "keyP": 68,
+        "bracketLeft": 70,
+        "bracketRight": 74,
+        "backslash": 73,
+        "capsLock": 52,
+        "keyA": 60,
+        "keyS": 55,
+        "keyD": 57,
+        "keyF": 59,
+        "keyG": 53,
+        "keyH": 62,
+        "keyJ": 64,
+        "keyK": 65,
+        "keyL": 67,
+        "semicolon": 69,
+        "quote": 71,
+        "return": 72,
+        "shiftLeft": 38,
+        "keyZ": 39,
+        "keyX": 40,
+        "keyC": 41,
+        "keyV": 42,
+        "keyB": 43,
+        "keyN": 44,
+        "keyM": 45,
+        "comma": 81,
+        "period": 79,
+        "slash": 77,
+        "shiftRight": 76,
+        "fn": 33,
+        "controlLeft": 34,
+        "optionLeft": 35,
+        "commandLeft": 36,
+        "space": 37,
+        "commandRight": 88,
+        "optionRight": 87,
+        "arrowLeft": 86,
+        "arrowDown": 85,
+        "arrowUp": 84,
+        "arrowRight": 83
+      }
+    },
+    {
+      "selectedKey": "fn",
+      "targetMIDI": 96,
+      "changes": [
+        {
+          "physicalKeyID": "keyT",
+          "fromMIDI": 96,
+          "toMIDI": 33
+        },
+        {
+          "physicalKeyID": "fn",
+          "fromMIDI": 33,
+          "toMIDI": 96
+        }
+      ],
+      "saveEnabled": true,
+      "candidate": {
+        "grave": 46,
+        "digit1": 48,
+        "digit2": 49,
+        "digit3": 47,
+        "digit4": 94,
+        "digit5": 93,
+        "digit6": 92,
+        "digit7": 91,
+        "digit8": 90,
+        "digit9": 89,
+        "digit0": 82,
+        "minus": 80,
+        "equal": 78,
+        "delete": 75,
+        "tab": 51,
+        "keyQ": 50,
+        "keyW": 54,
+        "keyE": 56,
+        "keyR": 58,
+        "keyT": 33,
+        "keyY": 61,
+        "keyU": 63,
+        "keyI": 95,
+        "keyO": 66,
+        "keyP": 68,
+        "bracketLeft": 70,
+        "bracketRight": 74,
+        "backslash": 73,
+        "capsLock": 52,
+        "keyA": 53,
+        "keyS": 55,
+        "keyD": 57,
+        "keyF": 59,
+        "keyG": 60,
+        "keyH": 62,
+        "keyJ": 64,
+        "keyK": 65,
+        "keyL": 67,
+        "semicolon": 69,
+        "quote": 71,
+        "return": 72,
+        "shiftLeft": 38,
+        "keyZ": 39,
+        "keyX": 40,
+        "keyC": 41,
+        "keyV": 42,
+        "keyB": 43,
+        "keyN": 44,
+        "keyM": 45,
+        "comma": 81,
+        "period": 79,
+        "slash": 77,
+        "shiftRight": 76,
+        "fn": 96,
+        "controlLeft": 34,
+        "optionLeft": 35,
+        "commandLeft": 36,
+        "space": 37,
+        "commandRight": 88,
+        "optionRight": 87,
+        "arrowLeft": 86,
+        "arrowDown": 85,
+        "arrowUp": 84,
+        "arrowRight": 83
+      }
+    },
+    {
+      "selectedKey": "keyG",
+      "targetMIDI": 60,
+      "changes": [],
+      "saveEnabled": false,
+      "candidate": {
+        "grave": 46,
+        "digit1": 48,
+        "digit2": 49,
+        "digit3": 47,
+        "digit4": 94,
+        "digit5": 93,
+        "digit6": 92,
+        "digit7": 91,
+        "digit8": 90,
+        "digit9": 89,
+        "digit0": 82,
+        "minus": 80,
+        "equal": 78,
+        "delete": 75,
+        "tab": 51,
+        "keyQ": 50,
+        "keyW": 54,
+        "keyE": 56,
+        "keyR": 58,
+        "keyT": 96,
+        "keyY": 61,
+        "keyU": 63,
+        "keyI": 95,
+        "keyO": 66,
+        "keyP": 68,
+        "bracketLeft": 70,
+        "bracketRight": 74,
+        "backslash": 73,
+        "capsLock": 52,
+        "keyA": 53,
+        "keyS": 55,
+        "keyD": 57,
+        "keyF": 59,
+        "keyG": 60,
+        "keyH": 62,
+        "keyJ": 64,
+        "keyK": 65,
+        "keyL": 67,
+        "semicolon": 69,
+        "quote": 71,
+        "return": 72,
+        "shiftLeft": 38,
+        "keyZ": 39,
+        "keyX": 40,
+        "keyC": 41,
+        "keyV": 42,
+        "keyB": 43,
+        "keyN": 44,
+        "keyM": 45,
+        "comma": 81,
+        "period": 79,
+        "slash": 77,
+        "shiftRight": 76,
+        "fn": 33,
+        "controlLeft": 34,
+        "optionLeft": 35,
+        "commandLeft": 36,
+        "space": 37,
+        "commandRight": 88,
+        "optionRight": 87,
+        "arrowLeft": 86,
+        "arrowDown": 85,
+        "arrowUp": 84,
+        "arrowRight": 83
+      }
+    }
+  ],
+  "restoreExample": {
+    "changes": [
+      {
+        "physicalKeyID": "keyA",
+        "fromMIDI": 60,
+        "toMIDI": 53
+      },
+      {
+        "physicalKeyID": "keyG",
+        "fromMIDI": 53,
+        "toMIDI": 60
+      }
+    ],
+    "target": {
+      "grave": 46,
+      "digit1": 48,
+      "digit2": 49,
+      "digit3": 47,
+      "digit4": 94,
+      "digit5": 93,
+      "digit6": 92,
+      "digit7": 91,
+      "digit8": 90,
+      "digit9": 89,
+      "digit0": 82,
+      "minus": 80,
+      "equal": 78,
+      "delete": 75,
+      "tab": 51,
+      "keyQ": 50,
+      "keyW": 54,
+      "keyE": 56,
+      "keyR": 58,
+      "keyT": 96,
+      "keyY": 61,
+      "keyU": 63,
+      "keyI": 95,
+      "keyO": 66,
+      "keyP": 68,
+      "bracketLeft": 70,
+      "bracketRight": 74,
+      "backslash": 73,
+      "capsLock": 52,
+      "keyA": 53,
+      "keyS": 55,
+      "keyD": 57,
+      "keyF": 59,
+      "keyG": 60,
+      "keyH": 62,
+      "keyJ": 64,
+      "keyK": 65,
+      "keyL": 67,
+      "semicolon": 69,
+      "quote": 71,
+      "return": 72,
+      "shiftLeft": 38,
+      "keyZ": 39,
+      "keyX": 40,
+      "keyC": 41,
+      "keyV": 42,
+      "keyB": 43,
+      "keyN": 44,
+      "keyM": 45,
+      "comma": 81,
+      "period": 79,
+      "slash": 77,
+      "shiftRight": 76,
+      "fn": 33,
+      "controlLeft": 34,
+      "optionLeft": 35,
+      "commandLeft": 36,
+      "space": 37,
+      "commandRight": 88,
+      "optionRight": 87,
+      "arrowLeft": 86,
+      "arrowDown": 85,
+      "arrowUp": 84,
+      "arrowRight": 83
+    }
+  },
+  "semantics": {
+    "selectionMutatesRuntime": false,
+    "targetSelectionSwapsSingleDraftImmediately": true,
+    "switchKeyPreservesAllDraftEdits": true,
+    "saveCommitsEntireDraft": true,
+    "runtimeStatusAndDraftStatusSeparate": true,
+    "cancelMutatesRuntime": false,
+    "resetRequiresSave": true,
+    "occupiedPitchAction": "swap_two_assignments",
+    "saveMayEnableAudioOrInput": false,
+    "needsKeyCaptureOrExtraPermission": false
+  },
+  "states": [
+    {
+      "id": "clean",
+      "runtimeLabel": "当前使用：新表默认／自定义键位",
+      "draftLabel": "草稿：未修改",
+      "saveEnabled": false
+    },
+    {
+      "id": "dirty",
+      "draftLabel": "草稿：N项待保存",
+      "preview": "All differences between active mapping and single editable draft",
+      "saveEnabled": true
+    },
+    {
+      "id": "restore",
+      "draftLabel": "草稿：恢复新表默认 · N项待保存",
+      "immediateRuntimeChange": false
+    },
+    {
+      "id": "writeFailed",
+      "message": "保存失败，当前键位未更改。",
+      "retainEntireDraft": true,
+      "retryAllowed": true
+    },
+    {
+      "id": "staleSnapshot",
+      "message": "键位已在其他位置更新，请重新载入后调整。",
+      "saveEnabled": false,
+      "reloadAction": "Explicitly discard draft and fetch active snapshot"
+    },
+    {
+      "id": "loadFailed",
+      "message": "自定义配置无法载入，当前使用新表默认；原文件已保留。",
+      "runtimeLabel": "默认键位",
+      "preserveOriginalConfig": true
+    }
+  ],
+  "multiEditExample": {
+    "changes": [
+      {
+        "key": "keyA",
+        "from": 53,
+        "to": 62
+      },
+      {
+        "key": "keyG",
+        "from": 60,
+        "to": 53
+      },
+      {
+        "key": "keyH",
+        "from": 62,
+        "to": 60
+      }
+    ],
+    "baselineUnchanged": true,
+    "resetTargetMatchesNewDefault": true
+  },
+  "decisionSources": [
+    "docs/changes/CR-007-custom-keymap.md",
+    "docs/tasks/U-028.md",
+    "PM review: single draft, no continue/apply button"
+  ]
+}

@@ -34,7 +34,7 @@ public final class PianoView: NSView {
             return from + (to - from) * (3*u*u*t*0.7 + 3*u*t*t + t*t*t)
         }
     }
-    public let mapping: KeyMapping
+    public private(set) var mapping: KeyMapping
     public var showLabels = true { didSet { if oldValue != showLabels { needsDisplay = true } } }
     public var activeMIDI: Set<Int> = [] { didSet { if oldValue != activeMIDI { updateKeys(from: oldValue, at: clock()) } } }
     public var reducedMotion = false { didSet { if oldValue != reducedMotion { resetEffects(); motions.removeAll(); needsDisplay = true } } }
@@ -58,6 +58,16 @@ public final class PianoView: NSView {
                 "inkBodyPt": [label.ink.minX, label.ink.minY, label.ink.width, label.ink.height],
                 "resolvedFonts": label.fonts, "missingGlyphs": label.missing] }]
     } }
+    /// Actual CoreText ink bounds in canvas coordinates, including a conservative halo margin.
+    public var floatingInkBounds: [CGRect] {
+        let ink = CTLineGetBoundsWithOptions(floatingLine, .useGlyphPathBounds)
+        return floatingPresentations.compactMap { note in
+            guard let shape = keys.first(where: { $0.shape.midi == note.midi })?.shape else { return nil }
+            return CGRect(x: shape.rect.midX - ink.midX + note.driftX + ink.minX,
+                y: AdaptiveOverlay.headroom + shape.rect.minY - 4 - note.rise + ink.minY - ink.maxY,
+                width: ink.width, height: ink.height).insetBy(dx: -4, dy: -4)
+        }
+    }
     private var keys: [Key] = []
     private var floating = FloatingNotes()
     private var sceneVisible = true
@@ -67,11 +77,12 @@ public final class PianoView: NSView {
     private var sampleTime = 0.0
     private var animationTimer: Timer?
     private var mouseKey: String?
+    public static let floatingFontSize: CGFloat = 24
     private let floatingLine: CTLine
     public override var isFlipped: Bool { true }
     public init(mapping: KeyMapping, frame: NSRect) {
         self.mapping = mapping
-        floatingLine = Self.line("♪", 12, "626C66")
+        floatingLine = Self.line("♪", Self.floatingFontSize, "626C66")
         super.init(frame: frame)
         rebuildKeys()
         setAccessibilityElement(true)
@@ -115,6 +126,10 @@ public final class PianoView: NSView {
         }
         needsDisplay = true
     }
+    public func setMapping(_ mapping: KeyMapping) {
+        resetEffects(); mouseKey = nil; activeMIDI = []; motions.removeAll()
+        self.mapping = mapping; rebuildKeys()
+    }
     public func strike(_ event: NoteEvent, at time: Double) {
         guard sceneVisible else { return }
         floating.strike(event, time: time, generation: floating.sceneGeneration, reducedMotion: reducedMotion)
@@ -132,6 +147,7 @@ public final class PianoView: NSView {
         stopTimer(); needsDisplay = true
     }
     public func resetEffects() {
+        frozenDepressions = nil
         floating.setVisible(false); floating.setVisible(sceneVisible)
         floatingPresentations.removeAll(); motions.removeAll(); downTimes.removeAll(); stopTimer(); needsDisplay = true
     }
@@ -183,9 +199,9 @@ public final class PianoView: NSView {
         ctx.textMatrix = .identity; ctx.textPosition = .zero; CTLineDraw(line, ctx); ctx.restoreGState()
     }
     private func render(_ ctx: CGContext) {
-        ctx.saveGState(); ctx.translateBy(x: 0, y: 48)
-        fill(ctx, CGRect(x: 0, y: 0, width: bounds.width, height: 56), "353638", 3)
-        fill(ctx, CGRect(x: 1, y: 1, width: bounds.width - 2, height: 53), "71716E", 2)
+        ctx.saveGState(); ctx.translateBy(x: 0, y: AdaptiveOverlay.headroom)
+        fill(ctx, CGRect(x: 0, y: 0, width: bounds.width, height: AdaptiveOverlay.bodyHeight), "353638", 3)
+        fill(ctx, CGRect(x: 1, y: 2, width: bounds.width - 2, height: 106), "71716E", 2)
         for black in [false, true] {
             for key in keys where key.shape.isBlack == black {
                 let midi = key.shape.midi, r = key.shape.rect
@@ -211,14 +227,14 @@ public final class PianoView: NSView {
         for note in floatingPresentations {
             guard let shape = keys.first(where: { $0.shape.midi == note.midi })?.shape else { continue }
             ctx.saveGState(); ctx.setAlpha(note.opacity); ctx.setShadow(offset: .zero, blur: 1.25, color: CGColor(gray: 1, alpha: 0.9))
-            drawLine(ctx, floatingLine, x: shape.rect.midX - ink.midX, baseline: shape.rect.minY - 4 - note.rise + ink.minY)
+            drawLine(ctx, floatingLine, x: shape.rect.midX - ink.midX + note.driftX, baseline: shape.rect.minY - 4 - note.rise + ink.minY)
             ctx.restoreGState()
         }
         ctx.restoreGState()
     }
     public override func draw(_ dirtyRect: NSRect) { if let ctx = NSGraphicsContext.current?.cgContext { render(ctx) } }
     public override func mouseDown(with event: NSEvent) {
-        let point = convert(event.locationInWindow, from: nil); let body = CGPoint(x: point.x, y: point.y - 48)
+        let point = convert(event.locationInWindow, from: nil); let body = CGPoint(x: point.x, y: point.y - AdaptiveOverlay.headroom)
         let key = keys.filter { $0.shape.isBlack }.first { $0.shape.rect.contains(body) } ?? keys.filter { !$0.shape.isBlack }.first { $0.shape.rect.contains(body) }
         guard let key, let physical = mapping.keys.first(where: { $0.midiNote == key.shape.midi }) else { return }
         mouseKey = physical.physicalKeyID; onPress?(physical.physicalKeyID)
@@ -239,7 +255,8 @@ public final class ProbePanel: NSPanel {
     public init(content: PianoView) {
         super.init(contentRect: content.frame, styleMask: [.borderless, .nonactivatingPanel], backing: .buffered, defer: false)
         backgroundColor = .clear; isOpaque = false; hasShadow = false
-        level = .normal; ignoresMouseEvents = true; hidesOnDeactivate = false
+        // Stay above ordinary work windows without competing with Dock, menus or modal panels.
+        level = .floating; ignoresMouseEvents = true; hidesOnDeactivate = false
         collectionBehavior = [.canJoinAllSpaces, .ignoresCycle, .fullScreenNone]
         isReleasedWhenClosed = false; contentView = content
     }

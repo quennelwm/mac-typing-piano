@@ -1,0 +1,48 @@
+{
+  "version": "u028.2",
+  "artifactState": "design_proposal",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "254df698c4f70bc7574a9bba8a28469fca530f911434293fd24f8764ddeb0294",
+      "byteSize": 1119
+    },
+    {
+      "path": "SPEC.md",
+      "sha256": "c9d000c20c292a24d75d7b18c36cc8292f10725194c957f90f74f6449f14f35e",
+      "byteSize": 5873
+    },
+    {
+      "path": "previews/restore.png",
+      "sha256": "a745a21c00d48fed202f41fc87f4ef98b0201a3f2607b6574c4a50b3924516aa",
+      "byteSize": 96681
+    },
+    {
+      "path": "previews/swap.png",
+      "sha256": "06b75d5cdaaad1394f48d092a249175d453834b59eac3fd22c983f13b514982d",
+      "byteSize": 87392
+    },
+    {
+      "path": "reference.json",
+      "sha256": "17b1ed6b41abd666aa98b6010a5a705fdab1c2e9554240b647e2ad9458098c09",
+      "byteSize": 28869
+    },
+    {
+      "path": "tools/build_reference.py",
+      "sha256": "17add266a2712e8a7297cb475cbaf727b938a53fa7ba7e9d108b3f011719a333",
+      "byteSize": 5669
+    },
+    {
+      "path": "tools/render.swift",
+      "sha256": "9bc2a8221f10540c00f3fe2e8da0b0ea969a3465fc041667b0cc1a2ba49e2900",
+      "byteSize": 3352
+    },
+    {
+      "path": "validation.json",
+      "sha256": "c727a34163ca8a04ecd196333277c58bdc3108e3ed5d2b72f6689bb6946e1901",
+      "byteSize": 941
+    }
+  ],
+  "fileCount": 8,
+  "byteSize": 229896
+}

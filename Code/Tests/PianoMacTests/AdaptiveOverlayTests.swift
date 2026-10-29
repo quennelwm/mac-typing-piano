@@ -5,8 +5,8 @@ import PianoCore
 
 final class AdaptiveOverlayTests: XCTestCase {
     func testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen() {
-        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: 0, y: 0, width: 1512, height: 982)), CGRect(x: 8, y: 0, width: 1496, height: 104))
-        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: -1920, y: -200, width: 1920, height: 1080)), CGRect(x: -1912, y: -200, width: 1904, height: 104))
+        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: 0, y: 0, width: 1512, height: 982)), CGRect(x: 8, y: 0, width: 1496, height: 208))
+        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: -1920, y: -200, width: 1920, height: 1080)), CGRect(x: -1912, y: -200, width: 1904, height: 208))
     }
     func testUserEnabledDockIsNotRestoredToAnOlderFalseValue() {
         let storage = SimulatedDockStorage(value: true), tickets = MemoryDockTicketStore()

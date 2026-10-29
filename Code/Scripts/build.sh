@@ -2,13 +2,18 @@
 set -euo pipefail
 code_root="$(cd "$(dirname "$0")/.." && pwd)"
 project_root="$(cd "$code_root/.." && pwd)"
-build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6}"
+build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.7}"
 mkdir -p "$build_root"
 build_root="$(cd "$build_root" && pwd)"
 if [ "$build_root" = "$HOME/Library/Caches/local.typingpiano.trial" ]; then
     printf '%s\n' 'Refusing to overwrite the authorized frozen trial. Use an independent candidate directory.' >&2
     exit 1
 fi
+case "$build_root" in
+    "$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6")
+        printf '%s\n' 'Refusing to overwrite a frozen historical candidate.' >&2
+        exit 1 ;;
+esac
 scratch_path="$build_root/swiftpm"
 # The checked-in original bank is verified below; building does not regenerate source assets.
 python3 - "$code_root/Assets/placeholder-original.sf2" <<'PY'
@@ -21,7 +26,7 @@ binary_dir="$(swift build --build-system native --package-path "$code_root" --sc
 app_path="$build_root/打字钢琴试用.app"
 mkdir -p "$app_path/Contents/MacOS" "$app_path/Contents/Resources"
 cp "$binary_dir/TypingPianoProbe" "$app_path/Contents/MacOS/TypingPianoProbe"
-cp "$project_root/contracts/keymap.ansi64.v0.1.json" "$app_path/Contents/Resources/"
+cp "$project_root/contracts/keymap.ansi64.playable.v0.2.json" "$app_path/Contents/Resources/"
 cp "$code_root/Assets/placeholder-original.sf2" "$app_path/Contents/Resources/"
 cp "$code_root/Assets/PLACEHOLDER-LICENSE.txt" "$app_path/Contents/Resources/"
 cp "$project_root/Design/UI/SOURCE_AND_LICENSE.md" "$app_path/Contents/Resources/UI-SOURCE-AND-LICENSE.md"
@@ -93,8 +98,8 @@ cat > "$app_path/Contents/Info.plist" <<'PLIST'
 <key>CFBundleExecutable</key><string>TypingPianoProbe</string>
 <key>CFBundleIdentifier</key><string>local.typingpiano.trial</string>
 <key>CFBundleName</key><string>打字钢琴试用</string>
-<key>CFBundleVersion</key><string>9</string>
-<key>CFBundleShortVersionString</key><string>0.2.6</string>
+<key>CFBundleVersion</key><string>10</string>
+<key>CFBundleShortVersionString</key><string>0.2.7</string>
 <key>TypingPianoSingleInstanceProtocol</key><integer>1</integer>
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>LSMinimumSystemVersion</key><string>14.0</string>

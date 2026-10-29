@@ -14,6 +14,8 @@ final class LocalTrialStartTests: XCTestCase {
             if global { throw ProbeError.invalid("permission unavailable") }
             self.duration = duration; mode = .local
         }
+        var discardedEpochs = 0
+        func discardPendingEvents() -> Set<String> { discardedEpochs += 1; return [] }
         func stop() { mode = .stopped }
     }
     final class Engine: AuditionEngine {

@@ -20,12 +20,14 @@ public protocol InputMonitoring: AnyObject {
     var onStop: ((String) -> Void)? { get set }
     func start(global: Bool, duration: InputSessionDuration) throws
     func stop()
+    func discardPendingEvents() -> Set<String>
 }
 public final class InputMonitor: InputMonitoring {
     public enum Mode { case stopped, local, global }
     public private(set) var mode: Mode = .stopped
     public var onEvent: ((NormalizedKeyEvent) -> Void)?
     public var onStop: ((String) -> Void)?
+    private let eventQueue = InputEventQueue()
     private let normalizer: InputNormalizer
     private var tap: CFMachPort?
     private var source: CFRunLoopSource?
@@ -84,11 +86,16 @@ public final class InputMonitor: InputMonitoring {
     }
     public func stop() {
         precondition(Thread.isMainThread)
-        accepting = false; epoch &+= 1; timer?.invalidate(); timer = nil
+        accepting = false; epoch &+= 1; eventQueue.reset(); timer?.invalidate(); timer = nil
         if let localMonitor { NSEvent.removeMonitor(localMonitor) }; localMonitor = nil
         if let tap { CGEvent.tapEnable(tap: tap, enable: false); CFMachPortInvalidate(tap) }
         if let source { CFRunLoopRemoveSource(CFRunLoopGetMain(), source, .commonModes) }
         tap = nil; source = nil; mode = .stopped
+    }
+    public func discardPendingEvents() -> Set<String> {
+        // Do not invalidate a pending failure's onStop callback.
+        guard accepting else { return [] }
+        return eventQueue.discardPending()
     }
     private func receive(type: CGEventType, event: CGEvent) {
         if type == .tapDisabledByTimeout || type == .tapDisabledByUserInput {
@@ -105,9 +112,9 @@ public final class InputMonitor: InputMonitoring {
     private func enqueue(_ event: NormalizedKeyEvent?) {
         guard accepting, let event else { return }
         let expected = epoch
-        DispatchQueue.main.async { [weak self] in
+        eventQueue.enqueue(event) { [weak self] captured in
             guard let self, self.accepting, self.epoch == expected else { return }
-            self.onEvent?(event)
+            self.onEvent?(captured)
         }
     }
     private func fail(_ reason: String) {

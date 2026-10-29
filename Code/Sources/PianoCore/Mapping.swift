@@ -44,3 +44,8 @@ public enum ProbeError: Error, LocalizedError {
     case invalid(String)
     public var errorDescription: String? { if case let .invalid(message) = self { return message }; return nil }
 }
+
+extension KeyMapping {
+    public static let defaultFilename = "keymap.ansi64.playable.v0.2.json"
+    public static let defaultMappingVersion = "ansi64-playable.0.2"
+}

@@ -1,0 +1,261 @@
+{
+  "purpose": "Explicit source DOM ID to existing physicalKeyID, UI preview only",
+  "pairs": [
+    {
+      "source": "KeyA",
+      "target": "keyA"
+    },
+    {
+      "source": "KeyB",
+      "target": "keyB"
+    },
+    {
+      "source": "KeyC",
+      "target": "keyC"
+    },
+    {
+      "source": "KeyD",
+      "target": "keyD"
+    },
+    {
+      "source": "KeyE",
+      "target": "keyE"
+    },
+    {
+      "source": "KeyF",
+      "target": "keyF"
+    },
+    {
+      "source": "KeyG",
+      "target": "keyG"
+    },
+    {
+      "source": "KeyH",
+      "target": "keyH"
+    },
+    {
+      "source": "KeyI",
+      "target": "keyI"
+    },
+    {
+      "source": "KeyJ",
+      "target": "keyJ"
+    },
+    {
+      "source": "KeyK",
+      "target": "keyK"
+    },
+    {
+      "source": "KeyL",
+      "target": "keyL"
+    },
+    {
+      "source": "KeyM",
+      "target": "keyM"
+    },
+    {
+      "source": "KeyN",
+      "target": "keyN"
+    },
+    {
+      "source": "KeyO",
+      "target": "keyO"
+    },
+    {
+      "source": "KeyP",
+      "target": "keyP"
+    },
+    {
+      "source": "KeyQ",
+      "target": "keyQ"
+    },
+    {
+      "source": "KeyR",
+      "target": "keyR"
+    },
+    {
+      "source": "KeyS",
+      "target": "keyS"
+    },
+    {
+      "source": "KeyT",
+      "target": "keyT"
+    },
+    {
+      "source": "KeyU",
+      "target": "keyU"
+    },
+    {
+      "source": "KeyV",
+      "target": "keyV"
+    },
+    {
+      "source": "KeyW",
+      "target": "keyW"
+    },
+    {
+      "source": "KeyX",
+      "target": "keyX"
+    },
+    {
+      "source": "KeyY",
+      "target": "keyY"
+    },
+    {
+      "source": "KeyZ",
+      "target": "keyZ"
+    },
+    {
+      "source": "Digit0",
+      "target": "digit0"
+    },
+    {
+      "source": "Digit1",
+      "target": "digit1"
+    },
+    {
+      "source": "Digit2",
+      "target": "digit2"
+    },
+    {
+      "source": "Digit3",
+      "target": "digit3"
+    },
+    {
+      "source": "Digit4",
+      "target": "digit4"
+    },
+    {
+      "source": "Digit5",
+      "target": "digit5"
+    },
+    {
+      "source": "Digit6",
+      "target": "digit6"
+    },
+    {
+      "source": "Digit7",
+      "target": "digit7"
+    },
+    {
+      "source": "Digit8",
+      "target": "digit8"
+    },
+    {
+      "source": "Digit9",
+      "target": "digit9"
+    },
+    {
+      "source": "Backquote",
+      "target": "grave"
+    },
+    {
+      "source": "Minus",
+      "target": "minus"
+    },
+    {
+      "source": "Equal",
+      "target": "equal"
+    },
+    {
+      "source": "Backspace",
+      "target": "delete"
+    },
+    {
+      "source": "Tab",
+      "target": "tab"
+    },
+    {
+      "source": "BracketLeft",
+      "target": "bracketLeft"
+    },
+    {
+      "source": "BracketRight",
+      "target": "bracketRight"
+    },
+    {
+      "source": "Backslash",
+      "target": "backslash"
+    },
+    {
+      "source": "CapsLock",
+      "target": "capsLock"
+    },
+    {
+      "source": "Semicolon",
+      "target": "semicolon"
+    },
+    {
+      "source": "Quote",
+      "target": "quote"
+    },
+    {
+      "source": "Return",
+      "target": "return"
+    },
+    {
+      "source": "ShiftLeft",
+      "target": "shiftLeft"
+    },
+    {
+      "source": "ShiftRight",
+      "target": "shiftRight"
+    },
+    {
+      "source": "Comma",
+      "target": "comma"
+    },
+    {
+      "source": "Period",
+      "target": "period"
+    },
+    {
+      "source": "Slash",
+      "target": "slash"
+    },
+    {
+      "source": "Fn",
+      "target": "fn"
+    },
+    {
+      "source": "ControlLeft",
+      "target": "controlLeft"
+    },
+    {
+      "source": "AltLeft",
+      "target": "optionLeft"
+    },
+    {
+      "source": "AltRight",
+      "target": "optionRight"
+    },
+    {
+      "source": "MetaLeft",
+      "target": "commandLeft"
+    },
+    {
+      "source": "MetaRight",
+      "target": "commandRight"
+    },
+    {
+      "source": "Space",
+      "target": "space"
+    },
+    {
+      "source": "ArrowLeft",
+      "target": "arrowLeft"
+    },
+    {
+      "source": "ArrowDown",
+      "target": "arrowDown"
+    },
+    {
+      "source": "ArrowUp",
+      "target": "arrowUp"
+    },
+    {
+      "source": "ArrowRight",
+      "target": "arrowRight"
+    }
+  ]
+}

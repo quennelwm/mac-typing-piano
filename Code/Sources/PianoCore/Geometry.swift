@@ -28,7 +28,7 @@ public enum PianoGeometry {
 }
 
 extension PianoGeometry {
-    /// Quiet Ivory approved 56pt body, top-left coordinates; headroom belongs to the view.
+    /// CR-006 Quiet Ivory 112pt body, top-left coordinates; headroom belongs to the view.
     public static func quietIvory(mapping: KeyMapping, width: Double) -> [PianoKeyRect] {
         guard width > 4 else { return [] }
         let slot = (width - 4) / 38
@@ -38,7 +38,7 @@ extension PianoGeometry {
             let x = 2 + Double(white) * slot + (black ? -slot * 0.59 / 2 : 0.35)
             if !black { white += 1 }
             return PianoKeyRect(midi: key.midiNote, isBlack: black,
-                rect: CGRect(x: x, y: 2, width: black ? slot * 0.59 : slot - 0.7, height: black ? 32 : 50))
+                rect: CGRect(x: x, y: 4, width: black ? slot * 0.59 : slot - 0.7, height: black ? 64 : 100))
         }
     }
 }

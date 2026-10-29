@@ -7,12 +7,25 @@ import PianoAudio
 final class ControllerIntegrationTests: XCTestCase {
     final class Input: InputMonitoring {
         var mode: InputMonitor.Mode = .stopped
-        var onEvent: ((NormalizedKeyEvent) -> Void)?
+        private var handler: ((NormalizedKeyEvent) -> Void)?
+        private let captured = InputEventQueue()
+        var onEvent: ((NormalizedKeyEvent) -> Void)? {
+            get {
+                guard let handler else { return nil }
+                return { [weak self] event in self?.captured.observe(event); handler(event) }
+            }
+            set { handler = newValue }
+        }
         var onStop: ((String) -> Void)?
         var fail = false
         var duration: InputSessionDuration = .test60Seconds
         func start(global: Bool, duration: InputSessionDuration) throws { if fail { throw ProbeError.invalid("permission test failure") }; self.duration = duration; mode = global ? .global : .local }
-        func stop() { mode = .stopped }
+        func enqueue(_ event: NormalizedKeyEvent, delivered: (() -> Void)? = nil) {
+            captured.enqueue(event) { [weak self] in self?.handler?($0); delivered?() }
+        }
+        var discardedEpochs = 0
+        func discardPendingEvents() -> Set<String> { discardedEpochs += 1; return captured.discardPending() }
+        func stop() { mode = .stopped; captured.reset() }
     }
     final class Engine: AuditionEngine {
         var downs: [UInt8] = []
@@ -26,13 +39,28 @@ final class ControllerIntegrationTests: XCTestCase {
         func noteOff(midi: UInt8) {}
         func panic() {}
     }
+    func testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio() throws {
+        _ = NSApplication.shared
+        let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+        let input = Input(), engine = Engine()
+        let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: dir) }
+        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: dir.appendingPathComponent("preferences.json"), input: input, audioEngine: engine, installStatusItem: false, secureInputCheck: { false }, dockVisibilityCheck: { _, _ in .hidden })
+        controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
+        defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
+        controller.toggleOverlay()
+        XCTAssertEqual(controller.runtimeDiagnostics()["overlayAlpha"] as? CGFloat, 1)
+        XCTAssertEqual(input.mode, .stopped)
+        XCTAssertFalse(engine.prepared)
+        XCTAssertTrue(engine.downs.isEmpty)
+    }
     func testFirstStrikeAfterStartRendersAndSwitchClearsWithoutStartingAudio() throws {
         _ = NSApplication.shared
         let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
         let input = Input(), engine = Engine()
         let preference = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString).appendingPathComponent("preferences.json")
         defer { try? FileManager.default.removeItem(at: preference.deletingLastPathComponent()) }
-        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preference, input: input, audioEngine: engine, installStatusItem: false)
+        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preference, input: input, audioEngine: engine, installStatusItem: false, secureInputCheck: { false }, dockVisibilityCheck: { _, _ in .hidden })
         controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
         defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
@@ -61,7 +89,7 @@ final class ControllerIntegrationTests: XCTestCase {
         XCTAssertEqual(controller.integrationState.activeKeys, 0)
         controller.stopAll()
         XCTAssertEqual(input.mode, .stopped)
-        controller.start(global: false); controller.toggleOverlay()
+        controller.start(global: false) // Static visibility survives ordinary pause.
         input.onEvent?(.init("keyA", .down))
         XCTAssertEqual(controller.integrationState.floatingNotes, 1)
     }

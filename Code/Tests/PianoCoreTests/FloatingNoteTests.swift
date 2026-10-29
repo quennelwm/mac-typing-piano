@@ -27,10 +27,10 @@ final class FloatingNoteTests: XCTestCase {
         let new = try XCTUnwrap(c.consume(.init("keyA", .down)).first)
         f.strike(new, time: 0.5, generation: 0)
         XCTAssertEqual(f.instances.count, 2)
-        f.expire(at: 0.71)
+        f.expire(at: 0.91)
         XCTAssertNil(f.instances[old.pressID])
         XCTAssertNotNil(f.instances[new.pressID])
-        f.expire(at: 1.21)
+        f.expire(at: 1.41)
         XCTAssertTrue(f.instances.isEmpty)
     }
     func testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay() throws {
@@ -45,6 +45,18 @@ final class FloatingNoteTests: XCTestCase {
         f.strike(event, time: 0.2, generation: 0)
         XCTAssertTrue(f.instances.isEmpty)
         XCTAssertGreaterThan(f.sceneGeneration, 0)
+    }
+    func testApprovedFloatingTimingAndTravel() throws {
+        var c = NoteCoordinator(mapping: try fixtureMapping())
+        var f = FloatingNotes()
+        let event = try XCTUnwrap(c.consume(.init("keyA", .down)).first)
+        f.strike(event, time: 0, generation: 0)
+        let note = try XCTUnwrap(f.instances[event.pressID])
+        XCTAssertEqual(note.duration, 0.9)
+        XCTAssertEqual(note.rise, 48)
+        XCTAssertGreaterThan(f.presentations(at: 0.7).first?.opacity ?? 0, 0)
+        f.expire(at: 0.9)
+        XCTAssertTrue(f.instances.isEmpty)
     }
     func testReducedMotionCompletesWithinOneSecondWithoutRise() throws {
         var c = NoteCoordinator(mapping: try fixtureMapping())

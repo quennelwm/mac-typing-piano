@@ -1,0 +1,7539 @@
+{
+  "status": "pass",
+  "proof": "For t in[0,1], e=1-(1-t)^3 monotonically spans[0,1]. Whole-life glyph+4pt halo envelope covers every time, not only sampled keyframes; includes900ms limit. Reduced mode stationary200ms. Based on current native CoreText ink metrics.",
+  "records": [
+    {
+      "widthPt": 1264,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        8.185595567867034,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 8.185595567867034,
+        "right": 1231.027700831025,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        8.185595567867034,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 8.185595567867034,
+        "right": 1235.027700831025,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 34,
+      "physicalKeyID": "controlLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        24.764542936288088,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 24.764542936288088,
+        "right": 1214.448753462604,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 34,
+      "physicalKeyID": "controlLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        24.764542936288088,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 24.764542936288088,
+        "right": 1218.448753462604,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 35,
+      "physicalKeyID": "optionLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        41.343490304709135,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 41.343490304709135,
+        "right": 1197.8698060941829,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 35,
+      "physicalKeyID": "optionLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        41.343490304709135,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 41.343490304709135,
+        "right": 1201.8698060941829,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 36,
+      "physicalKeyID": "commandLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        74.50138504155123,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 74.50138504155123,
+        "right": 1164.7119113573408,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 36,
+      "physicalKeyID": "commandLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        74.50138504155123,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 74.50138504155123,
+        "right": 1168.7119113573408,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 37,
+      "physicalKeyID": "space",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        91.08033240997229,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 91.08033240997229,
+        "right": 1148.1329639889198,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 37,
+      "physicalKeyID": "space",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        91.08033240997229,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 91.08033240997229,
+        "right": 1152.1329639889198,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 38,
+      "physicalKeyID": "shiftLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        107.65927977839333,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 107.65927977839333,
+        "right": 1131.5540166204987,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 38,
+      "physicalKeyID": "shiftLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        107.65927977839333,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 107.65927977839333,
+        "right": 1135.5540166204987,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 39,
+      "physicalKeyID": "keyZ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        124.23822714681438,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 124.23822714681438,
+        "right": 1114.9750692520777,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 39,
+      "physicalKeyID": "keyZ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        124.23822714681438,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 124.23822714681438,
+        "right": 1118.9750692520777,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 40,
+      "physicalKeyID": "keyX",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        140.81717451523542,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 140.81717451523542,
+        "right": 1098.3961218836566,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 40,
+      "physicalKeyID": "keyX",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        140.81717451523542,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 140.81717451523542,
+        "right": 1102.3961218836566,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 41,
+      "physicalKeyID": "keyC",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        173.97506925207753,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 173.97506925207753,
+        "right": 1065.2382271468146,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 41,
+      "physicalKeyID": "keyC",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        173.97506925207753,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 173.97506925207753,
+        "right": 1069.2382271468146,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 42,
+      "physicalKeyID": "keyV",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        190.55401662049857,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 190.55401662049857,
+        "right": 1048.6592797783935,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 42,
+      "physicalKeyID": "keyV",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        190.55401662049857,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 190.55401662049857,
+        "right": 1052.6592797783935,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 43,
+      "physicalKeyID": "keyB",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        207.1329639889196,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 207.1329639889196,
+        "right": 1032.0803324099725,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 43,
+      "physicalKeyID": "keyB",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        207.1329639889196,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 207.1329639889196,
+        "right": 1036.0803324099725,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 44,
+      "physicalKeyID": "keyN",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        223.71191135734068,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 223.71191135734068,
+        "right": 1015.5013850415512,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 44,
+      "physicalKeyID": "keyN",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        223.71191135734068,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 223.71191135734068,
+        "right": 1019.5013850415512,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 45,
+      "physicalKeyID": "keyM",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        240.29085872576172,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 240.29085872576172,
+        "right": 998.9224376731303,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 45,
+      "physicalKeyID": "keyM",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        240.29085872576172,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 240.29085872576172,
+        "right": 1002.9224376731303,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 46,
+      "physicalKeyID": "grave",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        256.8698060941828,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 256.8698060941828,
+        "right": 982.3434903047091,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 46,
+      "physicalKeyID": "grave",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        256.8698060941828,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 256.8698060941828,
+        "right": 986.3434903047091,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 47,
+      "physicalKeyID": "digit3",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        273.4487534626039,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 273.4487534626039,
+        "right": 965.7645429362881,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 47,
+      "physicalKeyID": "digit3",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        273.4487534626039,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 273.4487534626039,
+        "right": 969.7645429362881,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 48,
+      "physicalKeyID": "digit1",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        306.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 306.606648199446,
+        "right": 932.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 48,
+      "physicalKeyID": "digit1",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        306.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 306.606648199446,
+        "right": 936.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 49,
+      "physicalKeyID": "digit2",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        323.18559556786704,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 323.18559556786704,
+        "right": 916.027700831025,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 49,
+      "physicalKeyID": "digit2",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        323.18559556786704,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 323.18559556786704,
+        "right": 920.027700831025,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 50,
+      "physicalKeyID": "keyQ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        339.76454293628814,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 339.76454293628814,
+        "right": 899.4487534626039,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 50,
+      "physicalKeyID": "keyQ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        339.76454293628814,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 339.76454293628814,
+        "right": 903.4487534626039,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 51,
+      "physicalKeyID": "tab",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        356.3434903047091,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 356.3434903047091,
+        "right": 882.8698060941829,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 51,
+      "physicalKeyID": "tab",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        356.3434903047091,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 356.3434903047091,
+        "right": 886.8698060941829,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 52,
+      "physicalKeyID": "capsLock",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        372.9224376731302,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 372.9224376731302,
+        "right": 866.2908587257618,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 52,
+      "physicalKeyID": "capsLock",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        372.9224376731302,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 372.9224376731302,
+        "right": 870.2908587257618,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 53,
+      "physicalKeyID": "keyA",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        406.0803324099723,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 406.0803324099723,
+        "right": 833.1329639889198,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 53,
+      "physicalKeyID": "keyA",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        406.0803324099723,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 406.0803324099723,
+        "right": 837.1329639889198,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 54,
+      "physicalKeyID": "keyW",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        422.65927977839334,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 422.65927977839334,
+        "right": 816.5540166204987,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 54,
+      "physicalKeyID": "keyW",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        422.65927977839334,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 422.65927977839334,
+        "right": 820.5540166204987,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 55,
+      "physicalKeyID": "keyS",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        439.23822714681444,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 439.23822714681444,
+        "right": 799.9750692520776,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 55,
+      "physicalKeyID": "keyS",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        439.23822714681444,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 439.23822714681444,
+        "right": 803.9750692520776,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 56,
+      "physicalKeyID": "keyE",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        455.8171745152354,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 455.8171745152354,
+        "right": 783.3961218836566,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 56,
+      "physicalKeyID": "keyE",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        455.8171745152354,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 455.8171745152354,
+        "right": 787.3961218836566,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 57,
+      "physicalKeyID": "keyD",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        472.3961218836565,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 472.3961218836565,
+        "right": 766.8171745152355,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 57,
+      "physicalKeyID": "keyD",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        472.3961218836565,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 472.3961218836565,
+        "right": 770.8171745152355,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 58,
+      "physicalKeyID": "keyR",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        488.97506925207756,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 488.97506925207756,
+        "right": 750.2382271468144,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 58,
+      "physicalKeyID": "keyR",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        488.97506925207756,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 488.97506925207756,
+        "right": 754.2382271468144,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 59,
+      "physicalKeyID": "keyF",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        505.5540166204986,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 505.5540166204986,
+        "right": 733.6592797783934,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 59,
+      "physicalKeyID": "keyF",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        505.5540166204986,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 505.5540166204986,
+        "right": 737.6592797783934,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 60,
+      "physicalKeyID": "keyG",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        538.7119113573407,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 538.7119113573407,
+        "right": 700.5013850415513,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 60,
+      "physicalKeyID": "keyG",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        538.7119113573407,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 538.7119113573407,
+        "right": 704.5013850415513,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 61,
+      "physicalKeyID": "keyY",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        555.2908587257617,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 555.2908587257617,
+        "right": 683.9224376731303,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 61,
+      "physicalKeyID": "keyY",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        555.2908587257617,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 555.2908587257617,
+        "right": 687.9224376731303,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 62,
+      "physicalKeyID": "keyH",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        571.8698060941828,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 571.8698060941828,
+        "right": 667.3434903047092,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 62,
+      "physicalKeyID": "keyH",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        571.8698060941828,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 571.8698060941828,
+        "right": 671.3434903047092,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 63,
+      "physicalKeyID": "keyU",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        588.4487534626038,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 588.4487534626038,
+        "right": 650.7645429362882,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 63,
+      "physicalKeyID": "keyU",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        588.4487534626038,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 588.4487534626038,
+        "right": 654.7645429362882,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 64,
+      "physicalKeyID": "keyJ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        605.0277008310248,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 605.0277008310248,
+        "right": 634.1855955678672,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 64,
+      "physicalKeyID": "keyJ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        605.0277008310248,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 605.0277008310248,
+        "right": 638.1855955678672,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 65,
+      "physicalKeyID": "keyK",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        638.185595567867,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 638.185595567867,
+        "right": 601.027700831025,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 65,
+      "physicalKeyID": "keyK",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        638.185595567867,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 638.185595567867,
+        "right": 605.027700831025,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 66,
+      "physicalKeyID": "keyO",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        654.7645429362881,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 654.7645429362881,
+        "right": 584.4487534626039,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 66,
+      "physicalKeyID": "keyO",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        654.7645429362881,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 654.7645429362881,
+        "right": 588.4487534626039,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 67,
+      "physicalKeyID": "keyL",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        671.3434903047091,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 671.3434903047091,
+        "right": 567.8698060941829,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 67,
+      "physicalKeyID": "keyL",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        671.3434903047091,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 671.3434903047091,
+        "right": 571.8698060941829,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 68,
+      "physicalKeyID": "keyP",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        687.9224376731302,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 687.9224376731302,
+        "right": 551.2908587257618,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 68,
+      "physicalKeyID": "keyP",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        687.9224376731302,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 687.9224376731302,
+        "right": 555.2908587257618,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 69,
+      "physicalKeyID": "semicolon",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        704.5013850415512,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 704.5013850415512,
+        "right": 534.7119113573408,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 69,
+      "physicalKeyID": "semicolon",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        704.5013850415512,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 704.5013850415512,
+        "right": 538.7119113573408,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 70,
+      "physicalKeyID": "bracketLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        721.0803324099722,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 721.0803324099722,
+        "right": 518.1329639889198,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 70,
+      "physicalKeyID": "bracketLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        721.0803324099722,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 721.0803324099722,
+        "right": 522.1329639889198,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 71,
+      "physicalKeyID": "quote",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        737.6592797783933,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 737.6592797783933,
+        "right": 501.55401662049866,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 71,
+      "physicalKeyID": "quote",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        737.6592797783933,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 737.6592797783933,
+        "right": 505.55401662049866,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 72,
+      "physicalKeyID": "return",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        770.8171745152354,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 770.8171745152354,
+        "right": 468.3961218836566,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 72,
+      "physicalKeyID": "return",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        770.8171745152354,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 770.8171745152354,
+        "right": 472.3961218836566,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 73,
+      "physicalKeyID": "backslash",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        787.3961218836564,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 787.3961218836564,
+        "right": 451.81717451523554,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 73,
+      "physicalKeyID": "backslash",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        787.3961218836564,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 787.3961218836564,
+        "right": 455.81717451523554,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 74,
+      "physicalKeyID": "bracketRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        803.9750692520774,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 803.9750692520774,
+        "right": 435.2382271468145,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 74,
+      "physicalKeyID": "bracketRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        803.9750692520774,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 803.9750692520774,
+        "right": 439.2382271468145,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 75,
+      "physicalKeyID": "delete",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        820.5540166204986,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 820.5540166204986,
+        "right": 418.65927977839334,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 75,
+      "physicalKeyID": "delete",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        820.5540166204986,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 820.5540166204986,
+        "right": 422.65927977839334,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 76,
+      "physicalKeyID": "shiftRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        837.1329639889196,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 837.1329639889196,
+        "right": 402.0803324099723,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 76,
+      "physicalKeyID": "shiftRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        837.1329639889196,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 837.1329639889196,
+        "right": 406.0803324099723,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 77,
+      "physicalKeyID": "slash",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        870.2908587257617,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 870.2908587257617,
+        "right": 368.9224376731302,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 77,
+      "physicalKeyID": "slash",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        870.2908587257617,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 870.2908587257617,
+        "right": 372.9224376731302,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 78,
+      "physicalKeyID": "equal",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        886.8698060941828,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 886.8698060941828,
+        "right": 352.3434903047092,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 78,
+      "physicalKeyID": "equal",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        886.8698060941828,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 886.8698060941828,
+        "right": 356.3434903047092,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 79,
+      "physicalKeyID": "period",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        903.4487534626038,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 903.4487534626038,
+        "right": 335.76454293628814,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 79,
+      "physicalKeyID": "period",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        903.4487534626038,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 903.4487534626038,
+        "right": 339.76454293628814,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 80,
+      "physicalKeyID": "minus",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        920.0277008310248,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 920.0277008310248,
+        "right": 319.1855955678671,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 80,
+      "physicalKeyID": "minus",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        920.0277008310248,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 920.0277008310248,
+        "right": 323.1855955678671,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 81,
+      "physicalKeyID": "comma",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        936.6066481994459,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 936.6066481994459,
+        "right": 302.60664819944606,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 81,
+      "physicalKeyID": "comma",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        936.6066481994459,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 936.6066481994459,
+        "right": 306.60664819944606,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 82,
+      "physicalKeyID": "digit0",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        953.1855955678669,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 953.1855955678669,
+        "right": 286.027700831025,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 82,
+      "physicalKeyID": "digit0",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        953.1855955678669,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 953.1855955678669,
+        "right": 290.027700831025,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 83,
+      "physicalKeyID": "arrowRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        969.764542936288,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 969.764542936288,
+        "right": 269.448753462604,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 83,
+      "physicalKeyID": "arrowRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        969.764542936288,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 969.764542936288,
+        "right": 273.448753462604,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 84,
+      "physicalKeyID": "arrowUp",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1002.9224376731302,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1002.9224376731302,
+        "right": 236.2908587257618,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 84,
+      "physicalKeyID": "arrowUp",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1002.9224376731302,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1002.9224376731302,
+        "right": 240.2908587257618,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 85,
+      "physicalKeyID": "arrowDown",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1019.5013850415512,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1019.5013850415512,
+        "right": 219.71191135734077,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 85,
+      "physicalKeyID": "arrowDown",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1019.5013850415512,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1019.5013850415512,
+        "right": 223.71191135734077,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 86,
+      "physicalKeyID": "arrowLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1036.0803324099722,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1036.0803324099722,
+        "right": 203.13296398891973,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 86,
+      "physicalKeyID": "arrowLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1036.0803324099722,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1036.0803324099722,
+        "right": 207.13296398891973,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 87,
+      "physicalKeyID": "optionRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1052.6592797783933,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1052.6592797783933,
+        "right": 186.5540166204987,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 87,
+      "physicalKeyID": "optionRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1052.6592797783933,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1052.6592797783933,
+        "right": 190.5540166204987,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 88,
+      "physicalKeyID": "commandRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1069.2382271468143,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1069.2382271468143,
+        "right": 169.97506925207765,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 88,
+      "physicalKeyID": "commandRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1069.2382271468143,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1069.2382271468143,
+        "right": 173.97506925207765,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 89,
+      "physicalKeyID": "digit9",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1102.3961218836564,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1102.3961218836564,
+        "right": 136.81717451523556,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 89,
+      "physicalKeyID": "digit9",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1102.3961218836564,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1102.3961218836564,
+        "right": 140.81717451523556,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 90,
+      "physicalKeyID": "digit8",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1118.9750692520774,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1118.9750692520774,
+        "right": 120.23822714681452,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 90,
+      "physicalKeyID": "digit8",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1118.9750692520774,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1118.9750692520774,
+        "right": 124.23822714681452,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 91,
+      "physicalKeyID": "digit7",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1135.5540166204985,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1135.5540166204985,
+        "right": 103.65927977839348,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 91,
+      "physicalKeyID": "digit7",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1135.5540166204985,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1135.5540166204985,
+        "right": 107.65927977839348,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 92,
+      "physicalKeyID": "digit6",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1152.1329639889195,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1152.1329639889195,
+        "right": 87.08033240997244,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 92,
+      "physicalKeyID": "digit6",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1152.1329639889195,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1152.1329639889195,
+        "right": 91.08033240997244,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 93,
+      "physicalKeyID": "digit5",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1168.7119113573406,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1168.7119113573406,
+        "right": 70.5013850415514,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 93,
+      "physicalKeyID": "digit5",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1168.7119113573406,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1168.7119113573406,
+        "right": 74.5013850415514,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 94,
+      "physicalKeyID": "digit4",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1185.2908587257616,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1185.2908587257616,
+        "right": 53.92243767313036,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 94,
+      "physicalKeyID": "digit4",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1185.2908587257616,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1185.2908587257616,
+        "right": 57.92243767313036,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 95,
+      "physicalKeyID": "keyI",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1201.8698060941826,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1201.8698060941826,
+        "right": 37.34349030470932,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 95,
+      "physicalKeyID": "keyI",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1201.8698060941826,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1201.8698060941826,
+        "right": 41.34349030470932,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1235.0277008310247,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1235.0277008310247,
+        "right": 4.185595567867235,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1235.0277008310247,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1235.0277008310247,
+        "right": 8.185595567867235,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        11.238227146814404,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 11.238227146814404,
+        "right": 1459.9750692520777,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        11.238227146814404,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 11.238227146814404,
+        "right": 1463.9750692520777,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 34,
+      "physicalKeyID": "controlLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        30.869806094182827,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 30.869806094182827,
+        "right": 1440.3434903047091,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 34,
+      "physicalKeyID": "controlLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        30.869806094182827,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 30.869806094182827,
+        "right": 1444.3434903047091,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 35,
+      "physicalKeyID": "optionLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        50.501385041551245,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 50.501385041551245,
+        "right": 1420.7119113573408,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 35,
+      "physicalKeyID": "optionLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        50.501385041551245,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 50.501385041551245,
+        "right": 1424.7119113573408,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 36,
+      "physicalKeyID": "commandLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        89.76454293628808,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 89.76454293628808,
+        "right": 1381.448753462604,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 36,
+      "physicalKeyID": "commandLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        89.76454293628808,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 89.76454293628808,
+        "right": 1385.448753462604,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 37,
+      "physicalKeyID": "space",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        109.3961218836565,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 109.3961218836565,
+        "right": 1361.8171745152356,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 37,
+      "physicalKeyID": "space",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        109.3961218836565,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 109.3961218836565,
+        "right": 1365.8171745152356,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 38,
+      "physicalKeyID": "shiftLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        129.0277008310249,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 129.0277008310249,
+        "right": 1342.185595567867,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 38,
+      "physicalKeyID": "shiftLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        129.0277008310249,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 129.0277008310249,
+        "right": 1346.185595567867,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 39,
+      "physicalKeyID": "keyZ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        148.65927977839334,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 148.65927977839334,
+        "right": 1322.5540166204987,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 39,
+      "physicalKeyID": "keyZ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        148.65927977839334,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 148.65927977839334,
+        "right": 1326.5540166204987,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 40,
+      "physicalKeyID": "keyX",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        168.29085872576175,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 168.29085872576175,
+        "right": 1302.9224376731302,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 40,
+      "physicalKeyID": "keyX",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        168.29085872576175,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 168.29085872576175,
+        "right": 1306.9224376731302,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 41,
+      "physicalKeyID": "keyC",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        207.5540166204986,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 207.5540166204986,
+        "right": 1263.6592797783933,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 41,
+      "physicalKeyID": "keyC",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        207.5540166204986,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 207.5540166204986,
+        "right": 1267.6592797783933,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 42,
+      "physicalKeyID": "keyV",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        227.185595567867,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 227.185595567867,
+        "right": 1244.027700831025,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 42,
+      "physicalKeyID": "keyV",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        227.185595567867,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 227.185595567867,
+        "right": 1248.027700831025,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 43,
+      "physicalKeyID": "keyB",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        246.81717451523545,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 246.81717451523545,
+        "right": 1224.3961218836566,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 43,
+      "physicalKeyID": "keyB",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        246.81717451523545,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 246.81717451523545,
+        "right": 1228.3961218836566,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 44,
+      "physicalKeyID": "keyN",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        266.4487534626039,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 266.4487534626039,
+        "right": 1204.764542936288,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 44,
+      "physicalKeyID": "keyN",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        266.4487534626039,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 266.4487534626039,
+        "right": 1208.764542936288,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 45,
+      "physicalKeyID": "keyM",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        286.08033240997236,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 286.08033240997236,
+        "right": 1185.1329639889195,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 45,
+      "physicalKeyID": "keyM",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        286.08033240997236,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 286.08033240997236,
+        "right": 1189.1329639889195,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 46,
+      "physicalKeyID": "grave",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        305.71191135734074,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 305.71191135734074,
+        "right": 1165.5013850415512,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 46,
+      "physicalKeyID": "grave",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        305.71191135734074,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 305.71191135734074,
+        "right": 1169.5013850415512,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 47,
+      "physicalKeyID": "digit3",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        325.3434903047092,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 325.3434903047092,
+        "right": 1145.8698060941829,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 47,
+      "physicalKeyID": "digit3",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        325.3434903047092,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 325.3434903047092,
+        "right": 1149.8698060941829,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 48,
+      "physicalKeyID": "digit1",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        364.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 364.606648199446,
+        "right": 1106.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 48,
+      "physicalKeyID": "digit1",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        364.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 364.606648199446,
+        "right": 1110.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 49,
+      "physicalKeyID": "digit2",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        384.23822714681444,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 384.23822714681444,
+        "right": 1086.9750692520774,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 49,
+      "physicalKeyID": "digit2",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        384.23822714681444,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 384.23822714681444,
+        "right": 1090.9750692520774,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 50,
+      "physicalKeyID": "keyQ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        403.8698060941829,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 403.8698060941829,
+        "right": 1067.3434903047091,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 50,
+      "physicalKeyID": "keyQ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        403.8698060941829,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 403.8698060941829,
+        "right": 1071.3434903047091,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 51,
+      "physicalKeyID": "tab",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        423.50138504155126,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 423.50138504155126,
+        "right": 1047.7119113573408,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 51,
+      "physicalKeyID": "tab",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        423.50138504155126,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 423.50138504155126,
+        "right": 1051.7119113573408,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 52,
+      "physicalKeyID": "capsLock",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        443.1329639889197,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 443.1329639889197,
+        "right": 1028.0803324099722,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 52,
+      "physicalKeyID": "capsLock",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        443.1329639889197,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 443.1329639889197,
+        "right": 1032.0803324099722,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 53,
+      "physicalKeyID": "keyA",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        482.3961218836565,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 482.3961218836565,
+        "right": 988.8171745152355,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 53,
+      "physicalKeyID": "keyA",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        482.3961218836565,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 482.3961218836565,
+        "right": 992.8171745152355,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 54,
+      "physicalKeyID": "keyW",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        502.02770083102496,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 502.02770083102496,
+        "right": 969.185595567867,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 54,
+      "physicalKeyID": "keyW",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        502.02770083102496,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 502.02770083102496,
+        "right": 973.185595567867,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 55,
+      "physicalKeyID": "keyS",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        521.6592797783934,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 521.6592797783934,
+        "right": 949.5540166204986,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 55,
+      "physicalKeyID": "keyS",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        521.6592797783934,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 521.6592797783934,
+        "right": 953.5540166204986,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 56,
+      "physicalKeyID": "keyE",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        541.2908587257618,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 541.2908587257618,
+        "right": 929.9224376731302,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 56,
+      "physicalKeyID": "keyE",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        541.2908587257618,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 541.2908587257618,
+        "right": 933.9224376731302,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 57,
+      "physicalKeyID": "keyD",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        560.9224376731303,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 560.9224376731303,
+        "right": 910.2908587257617,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 57,
+      "physicalKeyID": "keyD",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        560.9224376731303,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 560.9224376731303,
+        "right": 914.2908587257617,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 58,
+      "physicalKeyID": "keyR",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        580.5540166204986,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 580.5540166204986,
+        "right": 890.6592797783934,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 58,
+      "physicalKeyID": "keyR",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        580.5540166204986,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 580.5540166204986,
+        "right": 894.6592797783934,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 59,
+      "physicalKeyID": "keyF",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        600.185595567867,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 600.185595567867,
+        "right": 871.027700831025,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 59,
+      "physicalKeyID": "keyF",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        600.185595567867,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 600.185595567867,
+        "right": 875.027700831025,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 60,
+      "physicalKeyID": "keyG",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        639.4487534626039,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 639.4487534626039,
+        "right": 831.7645429362881,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 60,
+      "physicalKeyID": "keyG",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        639.4487534626039,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 639.4487534626039,
+        "right": 835.7645429362881,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 61,
+      "physicalKeyID": "keyY",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        659.0803324099724,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 659.0803324099724,
+        "right": 812.1329639889196,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 61,
+      "physicalKeyID": "keyY",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        659.0803324099724,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 659.0803324099724,
+        "right": 816.1329639889196,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 62,
+      "physicalKeyID": "keyH",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        678.7119113573408,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 678.7119113573408,
+        "right": 792.5013850415512,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 62,
+      "physicalKeyID": "keyH",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        678.7119113573408,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 678.7119113573408,
+        "right": 796.5013850415512,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 63,
+      "physicalKeyID": "keyU",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        698.3434903047091,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 698.3434903047091,
+        "right": 772.8698060941829,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 63,
+      "physicalKeyID": "keyU",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        698.3434903047091,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 698.3434903047091,
+        "right": 776.8698060941829,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 64,
+      "physicalKeyID": "keyJ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        717.9750692520776,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 717.9750692520776,
+        "right": 753.2382271468144,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 64,
+      "physicalKeyID": "keyJ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        717.9750692520776,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 717.9750692520776,
+        "right": 757.2382271468144,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 65,
+      "physicalKeyID": "keyK",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        757.2382271468144,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 757.2382271468144,
+        "right": 713.9750692520776,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 65,
+      "physicalKeyID": "keyK",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        757.2382271468144,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 757.2382271468144,
+        "right": 717.9750692520776,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 66,
+      "physicalKeyID": "keyO",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        776.8698060941829,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 776.8698060941829,
+        "right": 694.3434903047091,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 66,
+      "physicalKeyID": "keyO",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        776.8698060941829,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 776.8698060941829,
+        "right": 698.3434903047091,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 67,
+      "physicalKeyID": "keyL",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        796.5013850415513,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 796.5013850415513,
+        "right": 674.7119113573407,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 67,
+      "physicalKeyID": "keyL",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        796.5013850415513,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 796.5013850415513,
+        "right": 678.7119113573407,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 68,
+      "physicalKeyID": "keyP",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        816.1329639889196,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 816.1329639889196,
+        "right": 655.0803324099724,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 68,
+      "physicalKeyID": "keyP",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        816.1329639889196,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 816.1329639889196,
+        "right": 659.0803324099724,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 69,
+      "physicalKeyID": "semicolon",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        835.7645429362881,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 835.7645429362881,
+        "right": 635.4487534626039,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 69,
+      "physicalKeyID": "semicolon",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        835.7645429362881,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 835.7645429362881,
+        "right": 639.4487534626039,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 70,
+      "physicalKeyID": "bracketLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        855.3961218836565,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 855.3961218836565,
+        "right": 615.8171745152355,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 70,
+      "physicalKeyID": "bracketLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        855.3961218836565,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 855.3961218836565,
+        "right": 619.8171745152355,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 71,
+      "physicalKeyID": "quote",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        875.027700831025,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 875.027700831025,
+        "right": 596.185595567867,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 71,
+      "physicalKeyID": "quote",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        875.027700831025,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 875.027700831025,
+        "right": 600.185595567867,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 72,
+      "physicalKeyID": "return",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        914.2908587257618,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 914.2908587257618,
+        "right": 556.9224376731302,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 72,
+      "physicalKeyID": "return",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        914.2908587257618,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 914.2908587257618,
+        "right": 560.9224376731302,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 73,
+      "physicalKeyID": "backslash",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        933.9224376731302,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 933.9224376731302,
+        "right": 537.2908587257618,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 73,
+      "physicalKeyID": "backslash",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        933.9224376731302,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 933.9224376731302,
+        "right": 541.2908587257618,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 74,
+      "physicalKeyID": "bracketRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        953.5540166204986,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 953.5540166204986,
+        "right": 517.6592797783934,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 74,
+      "physicalKeyID": "bracketRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        953.5540166204986,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 953.5540166204986,
+        "right": 521.6592797783934,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 75,
+      "physicalKeyID": "delete",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        973.185595567867,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 973.185595567867,
+        "right": 498.0277008310249,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 75,
+      "physicalKeyID": "delete",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        973.185595567867,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 973.185595567867,
+        "right": 502.0277008310249,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 76,
+      "physicalKeyID": "shiftRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        992.8171745152355,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 992.8171745152355,
+        "right": 478.39612188365646,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 76,
+      "physicalKeyID": "shiftRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        992.8171745152355,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 992.8171745152355,
+        "right": 482.39612188365646,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 77,
+      "physicalKeyID": "slash",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1032.0803324099725,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1032.0803324099725,
+        "right": 439.13296398891947,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 77,
+      "physicalKeyID": "slash",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1032.0803324099725,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1032.0803324099725,
+        "right": 443.13296398891947,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 78,
+      "physicalKeyID": "equal",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1051.7119113573408,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1051.7119113573408,
+        "right": 419.50138504155115,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 78,
+      "physicalKeyID": "equal",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1051.7119113573408,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1051.7119113573408,
+        "right": 423.50138504155115,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 79,
+      "physicalKeyID": "period",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1071.3434903047091,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1071.3434903047091,
+        "right": 399.8698060941828,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 79,
+      "physicalKeyID": "period",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1071.3434903047091,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1071.3434903047091,
+        "right": 403.8698060941828,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 80,
+      "physicalKeyID": "minus",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1090.9750692520777,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1090.9750692520777,
+        "right": 380.23822714681427,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 80,
+      "physicalKeyID": "minus",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1090.9750692520777,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1090.9750692520777,
+        "right": 384.23822714681427,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 81,
+      "physicalKeyID": "comma",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1110.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1110.606648199446,
+        "right": 360.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 81,
+      "physicalKeyID": "comma",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1110.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1110.606648199446,
+        "right": 364.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 82,
+      "physicalKeyID": "digit0",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1130.2382271468143,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1130.2382271468143,
+        "right": 340.9750692520776,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 82,
+      "physicalKeyID": "digit0",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1130.2382271468143,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1130.2382271468143,
+        "right": 344.9750692520776,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 83,
+      "physicalKeyID": "arrowRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1149.8698060941826,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1149.8698060941826,
+        "right": 321.3434903047093,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 83,
+      "physicalKeyID": "arrowRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1149.8698060941826,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1149.8698060941826,
+        "right": 325.3434903047093,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 84,
+      "physicalKeyID": "arrowUp",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1189.1329639889195,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1189.1329639889195,
+        "right": 282.0803324099724,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 84,
+      "physicalKeyID": "arrowUp",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1189.1329639889195,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1189.1329639889195,
+        "right": 286.0803324099724,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 85,
+      "physicalKeyID": "arrowDown",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1208.764542936288,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1208.764542936288,
+        "right": 262.44875346260386,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 85,
+      "physicalKeyID": "arrowDown",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1208.764542936288,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1208.764542936288,
+        "right": 266.44875346260386,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 86,
+      "physicalKeyID": "arrowLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1228.3961218836564,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1228.3961218836564,
+        "right": 242.81717451523556,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 86,
+      "physicalKeyID": "arrowLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1228.3961218836564,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1228.3961218836564,
+        "right": 246.81717451523556,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 87,
+      "physicalKeyID": "optionRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1248.027700831025,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1248.027700831025,
+        "right": 223.185595567867,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 87,
+      "physicalKeyID": "optionRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1248.027700831025,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1248.027700831025,
+        "right": 227.185595567867,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 88,
+      "physicalKeyID": "commandRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1267.6592797783933,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1267.6592797783933,
+        "right": 203.5540166204987,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 88,
+      "physicalKeyID": "commandRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1267.6592797783933,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1267.6592797783933,
+        "right": 207.5540166204987,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 89,
+      "physicalKeyID": "digit9",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1306.9224376731302,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1306.9224376731302,
+        "right": 164.2908587257618,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 89,
+      "physicalKeyID": "digit9",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1306.9224376731302,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1306.9224376731302,
+        "right": 168.2908587257618,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 90,
+      "physicalKeyID": "digit8",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1326.5540166204987,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1326.5540166204987,
+        "right": 144.65927977839326,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 90,
+      "physicalKeyID": "digit8",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1326.5540166204987,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1326.5540166204987,
+        "right": 148.65927977839326,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 91,
+      "physicalKeyID": "digit7",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1346.185595567867,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1346.185595567867,
+        "right": 125.02770083102493,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 91,
+      "physicalKeyID": "digit7",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1346.185595567867,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1346.185595567867,
+        "right": 129.02770083102493,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 92,
+      "physicalKeyID": "digit6",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1365.8171745152356,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1365.8171745152356,
+        "right": 105.39612188365638,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 92,
+      "physicalKeyID": "digit6",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1365.8171745152356,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1365.8171745152356,
+        "right": 109.39612188365638,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 93,
+      "physicalKeyID": "digit5",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1385.448753462604,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1385.448753462604,
+        "right": 85.76454293628805,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 93,
+      "physicalKeyID": "digit5",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1385.448753462604,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1385.448753462604,
+        "right": 89.76454293628805,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 94,
+      "physicalKeyID": "digit4",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1405.0803324099722,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1405.0803324099722,
+        "right": 66.13296398891973,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 94,
+      "physicalKeyID": "digit4",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1405.0803324099722,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1405.0803324099722,
+        "right": 70.13296398891973,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 95,
+      "physicalKeyID": "keyI",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1424.7119113573406,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1424.7119113573406,
+        "right": 46.5013850415514,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 95,
+      "physicalKeyID": "keyI",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1424.7119113573406,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1424.7119113573406,
+        "right": 50.5013850415514,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1463.9750692520774,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1463.9750692520774,
+        "right": 7.23822714681452,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1463.9750692520774,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1463.9750692520774,
+        "right": 11.23822714681452,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        16.606648199445985,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 16.606648199445985,
+        "right": 1862.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        16.606648199445985,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 16.606648199445985,
+        "right": 1866.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 34,
+      "physicalKeyID": "controlLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        41.606648199445985,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 41.606648199445985,
+        "right": 1837.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 34,
+      "physicalKeyID": "controlLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        41.606648199445985,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 41.606648199445985,
+        "right": 1841.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 35,
+      "physicalKeyID": "optionLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        66.60664819944598,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 66.60664819944598,
+        "right": 1812.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 35,
+      "physicalKeyID": "optionLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        66.60664819944598,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 66.60664819944598,
+        "right": 1816.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 36,
+      "physicalKeyID": "commandLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        116.60664819944598,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 116.60664819944598,
+        "right": 1762.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 36,
+      "physicalKeyID": "commandLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        116.60664819944598,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 116.60664819944598,
+        "right": 1766.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 37,
+      "physicalKeyID": "space",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        141.60664819944597,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 141.60664819944597,
+        "right": 1737.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 37,
+      "physicalKeyID": "space",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        141.60664819944597,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 141.60664819944597,
+        "right": 1741.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 38,
+      "physicalKeyID": "shiftLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        166.60664819944597,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 166.60664819944597,
+        "right": 1712.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 38,
+      "physicalKeyID": "shiftLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        166.60664819944597,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 166.60664819944597,
+        "right": 1716.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 39,
+      "physicalKeyID": "keyZ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        191.60664819944597,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 191.60664819944597,
+        "right": 1687.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 39,
+      "physicalKeyID": "keyZ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        191.60664819944597,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 191.60664819944597,
+        "right": 1691.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 40,
+      "physicalKeyID": "keyX",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        216.60664819944597,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 216.60664819944597,
+        "right": 1662.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 40,
+      "physicalKeyID": "keyX",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        216.60664819944597,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 216.60664819944597,
+        "right": 1666.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 41,
+      "physicalKeyID": "keyC",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        266.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 266.606648199446,
+        "right": 1612.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 41,
+      "physicalKeyID": "keyC",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        266.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 266.606648199446,
+        "right": 1616.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 42,
+      "physicalKeyID": "keyV",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        291.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 291.606648199446,
+        "right": 1587.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 42,
+      "physicalKeyID": "keyV",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        291.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 291.606648199446,
+        "right": 1591.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 43,
+      "physicalKeyID": "keyB",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        316.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 316.606648199446,
+        "right": 1562.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 43,
+      "physicalKeyID": "keyB",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        316.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 316.606648199446,
+        "right": 1566.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 44,
+      "physicalKeyID": "keyN",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        341.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 341.606648199446,
+        "right": 1537.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 44,
+      "physicalKeyID": "keyN",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        341.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 341.606648199446,
+        "right": 1541.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 45,
+      "physicalKeyID": "keyM",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        366.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 366.606648199446,
+        "right": 1512.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 45,
+      "physicalKeyID": "keyM",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        366.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 366.606648199446,
+        "right": 1516.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 46,
+      "physicalKeyID": "grave",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        391.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 391.606648199446,
+        "right": 1487.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 46,
+      "physicalKeyID": "grave",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        391.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 391.606648199446,
+        "right": 1491.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 47,
+      "physicalKeyID": "digit3",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        416.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 416.606648199446,
+        "right": 1462.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 47,
+      "physicalKeyID": "digit3",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        416.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 416.606648199446,
+        "right": 1466.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 48,
+      "physicalKeyID": "digit1",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        466.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 466.606648199446,
+        "right": 1412.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 48,
+      "physicalKeyID": "digit1",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        466.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 466.606648199446,
+        "right": 1416.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 49,
+      "physicalKeyID": "digit2",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        491.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 491.606648199446,
+        "right": 1387.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 49,
+      "physicalKeyID": "digit2",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        491.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 491.606648199446,
+        "right": 1391.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 50,
+      "physicalKeyID": "keyQ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        516.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 516.606648199446,
+        "right": 1362.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 50,
+      "physicalKeyID": "keyQ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        516.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 516.606648199446,
+        "right": 1366.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 51,
+      "physicalKeyID": "tab",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        541.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 541.606648199446,
+        "right": 1337.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 51,
+      "physicalKeyID": "tab",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        541.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 541.606648199446,
+        "right": 1341.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 52,
+      "physicalKeyID": "capsLock",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        566.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 566.606648199446,
+        "right": 1312.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 52,
+      "physicalKeyID": "capsLock",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        566.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 566.606648199446,
+        "right": 1316.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 53,
+      "physicalKeyID": "keyA",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        616.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 616.606648199446,
+        "right": 1262.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 53,
+      "physicalKeyID": "keyA",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        616.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 616.606648199446,
+        "right": 1266.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 54,
+      "physicalKeyID": "keyW",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        641.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 641.606648199446,
+        "right": 1237.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 54,
+      "physicalKeyID": "keyW",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        641.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 641.606648199446,
+        "right": 1241.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 55,
+      "physicalKeyID": "keyS",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        666.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 666.606648199446,
+        "right": 1212.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 55,
+      "physicalKeyID": "keyS",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        666.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 666.606648199446,
+        "right": 1216.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 56,
+      "physicalKeyID": "keyE",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        691.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 691.606648199446,
+        "right": 1187.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 56,
+      "physicalKeyID": "keyE",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        691.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 691.606648199446,
+        "right": 1191.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 57,
+      "physicalKeyID": "keyD",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        716.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 716.606648199446,
+        "right": 1162.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 57,
+      "physicalKeyID": "keyD",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        716.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 716.606648199446,
+        "right": 1166.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 58,
+      "physicalKeyID": "keyR",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        741.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 741.606648199446,
+        "right": 1137.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 58,
+      "physicalKeyID": "keyR",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        741.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 741.606648199446,
+        "right": 1141.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 59,
+      "physicalKeyID": "keyF",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        766.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 766.606648199446,
+        "right": 1112.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 59,
+      "physicalKeyID": "keyF",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        766.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 766.606648199446,
+        "right": 1116.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 60,
+      "physicalKeyID": "keyG",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        816.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 816.606648199446,
+        "right": 1062.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 60,
+      "physicalKeyID": "keyG",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        816.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 816.606648199446,
+        "right": 1066.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 61,
+      "physicalKeyID": "keyY",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        841.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 841.606648199446,
+        "right": 1037.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 61,
+      "physicalKeyID": "keyY",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        841.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 841.606648199446,
+        "right": 1041.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 62,
+      "physicalKeyID": "keyH",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        866.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 866.606648199446,
+        "right": 1012.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 62,
+      "physicalKeyID": "keyH",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        866.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 866.606648199446,
+        "right": 1016.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 63,
+      "physicalKeyID": "keyU",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        891.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 891.606648199446,
+        "right": 987.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 63,
+      "physicalKeyID": "keyU",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        891.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 891.606648199446,
+        "right": 991.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 64,
+      "physicalKeyID": "keyJ",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        916.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 916.606648199446,
+        "right": 962.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 64,
+      "physicalKeyID": "keyJ",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        916.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 916.606648199446,
+        "right": 966.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 65,
+      "physicalKeyID": "keyK",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        966.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 966.606648199446,
+        "right": 912.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 65,
+      "physicalKeyID": "keyK",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        966.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 966.606648199446,
+        "right": 916.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 66,
+      "physicalKeyID": "keyO",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        991.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 991.606648199446,
+        "right": 887.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 66,
+      "physicalKeyID": "keyO",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        991.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 991.606648199446,
+        "right": 891.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 67,
+      "physicalKeyID": "keyL",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1016.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1016.606648199446,
+        "right": 862.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 67,
+      "physicalKeyID": "keyL",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1016.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1016.606648199446,
+        "right": 866.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 68,
+      "physicalKeyID": "keyP",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1041.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1041.606648199446,
+        "right": 837.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 68,
+      "physicalKeyID": "keyP",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1041.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1041.606648199446,
+        "right": 841.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 69,
+      "physicalKeyID": "semicolon",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1066.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1066.606648199446,
+        "right": 812.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 69,
+      "physicalKeyID": "semicolon",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1066.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1066.606648199446,
+        "right": 816.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 70,
+      "physicalKeyID": "bracketLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1091.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1091.606648199446,
+        "right": 787.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 70,
+      "physicalKeyID": "bracketLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1091.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1091.606648199446,
+        "right": 791.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 71,
+      "physicalKeyID": "quote",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1116.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1116.606648199446,
+        "right": 762.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 71,
+      "physicalKeyID": "quote",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1116.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1116.606648199446,
+        "right": 766.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 72,
+      "physicalKeyID": "return",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1166.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1166.606648199446,
+        "right": 712.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 72,
+      "physicalKeyID": "return",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1166.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1166.606648199446,
+        "right": 716.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 73,
+      "physicalKeyID": "backslash",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1191.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1191.606648199446,
+        "right": 687.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 73,
+      "physicalKeyID": "backslash",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1191.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1191.606648199446,
+        "right": 691.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 74,
+      "physicalKeyID": "bracketRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1216.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1216.606648199446,
+        "right": 662.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 74,
+      "physicalKeyID": "bracketRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1216.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1216.606648199446,
+        "right": 666.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 75,
+      "physicalKeyID": "delete",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1241.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1241.606648199446,
+        "right": 637.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 75,
+      "physicalKeyID": "delete",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1241.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1241.606648199446,
+        "right": 641.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 76,
+      "physicalKeyID": "shiftRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1266.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1266.606648199446,
+        "right": 612.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 76,
+      "physicalKeyID": "shiftRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1266.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1266.606648199446,
+        "right": 616.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 77,
+      "physicalKeyID": "slash",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1316.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1316.606648199446,
+        "right": 562.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 77,
+      "physicalKeyID": "slash",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1316.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1316.606648199446,
+        "right": 566.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 78,
+      "physicalKeyID": "equal",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1341.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1341.606648199446,
+        "right": 537.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 78,
+      "physicalKeyID": "equal",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1341.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1341.606648199446,
+        "right": 541.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 79,
+      "physicalKeyID": "period",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1366.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1366.606648199446,
+        "right": 512.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 79,
+      "physicalKeyID": "period",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1366.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1366.606648199446,
+        "right": 516.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 80,
+      "physicalKeyID": "minus",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1391.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1391.606648199446,
+        "right": 487.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 80,
+      "physicalKeyID": "minus",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1391.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1391.606648199446,
+        "right": 491.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 81,
+      "physicalKeyID": "comma",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1416.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1416.606648199446,
+        "right": 462.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 81,
+      "physicalKeyID": "comma",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1416.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1416.606648199446,
+        "right": 466.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 82,
+      "physicalKeyID": "digit0",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1441.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1441.606648199446,
+        "right": 437.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 82,
+      "physicalKeyID": "digit0",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1441.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1441.606648199446,
+        "right": 441.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 83,
+      "physicalKeyID": "arrowRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1466.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1466.606648199446,
+        "right": 412.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 83,
+      "physicalKeyID": "arrowRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1466.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1466.606648199446,
+        "right": 416.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 84,
+      "physicalKeyID": "arrowUp",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1516.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1516.606648199446,
+        "right": 362.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 84,
+      "physicalKeyID": "arrowUp",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1516.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1516.606648199446,
+        "right": 366.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 85,
+      "physicalKeyID": "arrowDown",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1541.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1541.606648199446,
+        "right": 337.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 85,
+      "physicalKeyID": "arrowDown",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1541.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1541.606648199446,
+        "right": 341.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 86,
+      "physicalKeyID": "arrowLeft",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1566.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1566.606648199446,
+        "right": 312.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 86,
+      "physicalKeyID": "arrowLeft",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1566.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1566.606648199446,
+        "right": 316.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 87,
+      "physicalKeyID": "optionRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1591.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1591.606648199446,
+        "right": 287.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 87,
+      "physicalKeyID": "optionRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1591.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1591.606648199446,
+        "right": 291.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 88,
+      "physicalKeyID": "commandRight",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1616.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1616.606648199446,
+        "right": 262.60664819944594,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 88,
+      "physicalKeyID": "commandRight",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1616.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1616.606648199446,
+        "right": 266.60664819944594,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 89,
+      "physicalKeyID": "digit9",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1666.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1666.606648199446,
+        "right": 212.60664819944597,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 89,
+      "physicalKeyID": "digit9",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1666.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1666.606648199446,
+        "right": 216.60664819944597,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 90,
+      "physicalKeyID": "digit8",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1691.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1691.606648199446,
+        "right": 187.60664819944597,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 90,
+      "physicalKeyID": "digit8",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1691.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1691.606648199446,
+        "right": 191.60664819944597,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 91,
+      "physicalKeyID": "digit7",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1716.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1716.606648199446,
+        "right": 162.60664819944597,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 91,
+      "physicalKeyID": "digit7",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1716.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1716.606648199446,
+        "right": 166.60664819944597,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 92,
+      "physicalKeyID": "digit6",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1741.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1741.606648199446,
+        "right": 137.60664819944597,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 92,
+      "physicalKeyID": "digit6",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1741.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1741.606648199446,
+        "right": 141.60664819944597,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 93,
+      "physicalKeyID": "digit5",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1766.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1766.606648199446,
+        "right": 112.60664819944597,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 93,
+      "physicalKeyID": "digit5",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1766.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1766.606648199446,
+        "right": 116.60664819944597,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 94,
+      "physicalKeyID": "digit4",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1791.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1791.606648199446,
+        "right": 87.60664819944597,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 94,
+      "physicalKeyID": "digit4",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1791.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1791.606648199446,
+        "right": 91.60664819944597,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 95,
+      "physicalKeyID": "keyI",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1816.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1816.606648199446,
+        "right": 62.60664819944597,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 95,
+      "physicalKeyID": "keyI",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1816.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1816.606648199446,
+        "right": 66.60664819944597,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1866.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1866.606648199446,
+        "right": 12.606648199445967,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1866.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1866.606648199446,
+        "right": 16.606648199445967,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    }
+  ],
+  "edgeKeyRecords": [
+    {
+      "widthPt": 1264,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        8.185595567867034,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 8.185595567867034,
+        "right": 1231.027700831025,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        8.185595567867034,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 8.185595567867034,
+        "right": 1235.027700831025,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1235.0277008310247,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1235.0277008310247,
+        "right": 4.185595567867235,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1264,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1235.0277008310247,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1235.0277008310247,
+        "right": 8.185595567867235,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        11.238227146814404,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 11.238227146814404,
+        "right": 1459.9750692520777,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        11.238227146814404,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 11.238227146814404,
+        "right": 1463.9750692520777,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1463.9750692520774,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1463.9750692520774,
+        "right": 7.23822714681452,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1496,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1463.9750692520774,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1463.9750692520774,
+        "right": 11.23822714681452,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        16.606648199445985,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 16.606648199445985,
+        "right": 1862.606648199446,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 33,
+      "physicalKeyID": "fn",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        16.606648199445985,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 16.606648199445985,
+        "right": 1866.606648199446,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": false,
+      "fullLifetimeBoundsBodyPt": [
+        1866.606648199446,
+        -71.74515235457064,
+        24.786703601108034,
+        75.74515235457064
+      ],
+      "canvasMarginsPt": {
+        "left": 1866.606648199446,
+        "right": 12.606648199445967,
+        "top": 24.254847645429365,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    },
+    {
+      "widthPt": 1904,
+      "midiNote": 96,
+      "physicalKeyID": "keyT",
+      "reduced": true,
+      "fullLifetimeBoundsBodyPt": [
+        1866.606648199446,
+        -23.745152354570635,
+        20.786703601108034,
+        27.745152354570635
+      ],
+      "canvasMarginsPt": {
+        "left": 1866.606648199446,
+        "right": 16.606648199445967,
+        "top": 72.25484764542936,
+        "bottom": 107.99999999999999
+      },
+      "pass": true
+    }
+  ],
+  "minimumCanvasMarginsPt": {
+    "left": 8.185595567867034,
+    "right": 4.185595567867235,
+    "top": 24.254847645429365,
+    "bottom": 107.99999999999999
+  },
+  "scope": "Geometric containment; not wall-clock/runtime integration or other font versions."
+}

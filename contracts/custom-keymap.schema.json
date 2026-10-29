@@ -1,0 +1,412 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Typing Piano custom keymap v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "baseMappingVersion",
+    "notes"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "baseMappingVersion": {
+      "const": "ansi64-playable.0.2"
+    },
+    "notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grave",
+        "digit1",
+        "digit2",
+        "digit3",
+        "digit4",
+        "digit5",
+        "digit6",
+        "digit7",
+        "digit8",
+        "digit9",
+        "digit0",
+        "minus",
+        "equal",
+        "delete",
+        "tab",
+        "keyQ",
+        "keyW",
+        "keyE",
+        "keyR",
+        "keyT",
+        "keyY",
+        "keyU",
+        "keyI",
+        "keyO",
+        "keyP",
+        "bracketLeft",
+        "bracketRight",
+        "backslash",
+        "capsLock",
+        "keyA",
+        "keyS",
+        "keyD",
+        "keyF",
+        "keyG",
+        "keyH",
+        "keyJ",
+        "keyK",
+        "keyL",
+        "semicolon",
+        "quote",
+        "return",
+        "shiftLeft",
+        "keyZ",
+        "keyX",
+        "keyC",
+        "keyV",
+        "keyB",
+        "keyN",
+        "keyM",
+        "comma",
+        "period",
+        "slash",
+        "shiftRight",
+        "fn",
+        "controlLeft",
+        "optionLeft",
+        "commandLeft",
+        "space",
+        "commandRight",
+        "optionRight",
+        "arrowLeft",
+        "arrowDown",
+        "arrowUp",
+        "arrowRight"
+      ],
+      "properties": {
+        "grave": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit1": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit2": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit3": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit4": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit5": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit6": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit7": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit8": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit9": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "digit0": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "minus": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "equal": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "delete": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "tab": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyQ": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyW": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyE": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyR": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyT": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyY": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyU": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyI": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyO": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyP": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "bracketLeft": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "bracketRight": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "backslash": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "capsLock": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyA": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyS": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyD": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyF": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyG": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyH": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyJ": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyK": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyL": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "semicolon": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "quote": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "return": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "shiftLeft": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyZ": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyX": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyC": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyV": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyB": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyN": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "keyM": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "comma": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "period": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "slash": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "shiftRight": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "fn": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "controlLeft": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "optionLeft": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "commandLeft": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "space": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "commandRight": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "optionRight": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "arrowLeft": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "arrowDown": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "arrowUp": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        },
+        "arrowRight": {
+          "type": "integer",
+          "minimum": 33,
+          "maximum": 96
+        }
+      },
+      "description": "Runtime additionally requires all 64 values unique, exactly MIDI33 through96."
+    }
+  }
+}

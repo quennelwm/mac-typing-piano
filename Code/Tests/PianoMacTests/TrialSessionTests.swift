@@ -17,7 +17,7 @@ final class TrialSessionTests: XCTestCase {
         let input = ControllerIntegrationTests.Input(), engine = ControllerIntegrationTests.Engine()
         let preferences = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString).appendingPathComponent("preferences.json")
         defer { try? FileManager.default.removeItem(at: preferences.deletingLastPathComponent()) }
-        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preferences, input: input, audioEngine: engine, installStatusItem: false)
+        let controller = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/keymap.ansi64.v0.1.json")), sources: AudioSource.available(root: root, bundled: false), preferencesURL: preferences, input: input, audioEngine: engine, installStatusItem: false, secureInputCheck: { false }, permissionCheck: { true }, dockVisibilityCheck: { _, _ in .hidden })
         controller.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
         defer { controller.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
         XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)

@@ -28,7 +28,7 @@ public struct FloatingNotes {
             instances.removeValue(forKey: oldest.pressID)
         }
         instances[event.pressID] = FloatingNote(pressID: event.pressID, midi: event.midiNote, startedAt: time,
-            duration: reducedMotion ? 0.2 : 0.7, rise: reducedMotion ? 0 : 24)
+            duration: reducedMotion ? 0.2 : 0.9, rise: reducedMotion ? 0 : 48)
     }
     public mutating func expire(at time: TimeInterval) {
         instances = instances.filter { time + 0.000000001 < $0.value.startedAt + $0.value.duration }
@@ -40,6 +40,7 @@ public struct FloatingPresentation {
     public let midi: Int
     public let rise: Double
     public let opacity: Double
+    public let driftX: Double
 }
 extension FloatingNotes {
     public func presentations(at time: TimeInterval) -> [FloatingPresentation] {
@@ -49,7 +50,8 @@ extension FloatingNotes {
             let t = elapsed / note.duration
             return FloatingPresentation(pressID: note.pressID, midi: note.midi,
                 rise: note.rise * (1 - pow(1 - t, 3)),
-                opacity: note.rise == 0 ? 1 - t : max(0, min(1, elapsed / 0.06, (0.7 - elapsed) / 0.4)))
+                opacity: note.rise == 0 ? 1 - t : max(0, min(1, elapsed / 0.08, (note.duration - elapsed) / 0.5)),
+                driftX: note.rise == 0 ? 0 : 4 * (1 - pow(1 - t, 3)))
         }
     }
 }

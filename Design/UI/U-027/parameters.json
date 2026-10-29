@@ -1,0 +1,57 @@
+{
+  "version": "u027.1",
+  "artifactState": "design_proposal",
+  "bodyHeightPt": 112,
+  "headroomPt": 96,
+  "canvasHeightPt": 208,
+  "screenSideMarginPt": 8,
+  "screenWidthsPt": [
+    1280,
+    1512,
+    1920
+  ],
+  "pianoWidthsPt": [
+    1264,
+    1496,
+    1904
+  ],
+  "whiteFaceHeightPt": 100,
+  "blackFaceHeightPt": 64,
+  "keyTopPt": 4,
+  "whiteTravelPt": 2,
+  "blackTravelPt": 1.5,
+  "labels": {
+    "whiteSizePt": 10,
+    "blackSizePt": 9.5,
+    "sideSizePt": 6.5,
+    "followKeyTransform": true,
+    "visibleByDefault": true,
+    "bakedIntoTexture": false
+  },
+  "floating": {
+    "glyph": "♪",
+    "fontSizePt": 24,
+    "durationMs": 900,
+    "risePt": 48,
+    "driftXPt": 4,
+    "ease": "1-(1-t)^3",
+    "fadeInMs": 80,
+    "fadeOutMs": 500,
+    "haloBlurPt": 1.25,
+    "conservativeBoundsPaddingPt": 4,
+    "reducedDurationMs": 200,
+    "reducedRisePt": 0,
+    "reducedDriftXPt": 0
+  },
+  "panel": {
+    "nonactivating": true,
+    "entireCanvasMousePassThrough": true,
+    "ordinaryPauseMayShowStaticKeys": true,
+    "showDoesNotEnableAudioOrInput": true
+  },
+  "sourceSHA256": {
+    "contracts/keymap.ansi64.v0.1.json": "147ad9041aa7514e70e80c94a476149f47944d36f74367825ae95bd69edf245b",
+    "docs/inputs/playable-v0.2/Mac_Typing_Piano_Playable_Keymap_v0.2_DRAFT.json": "a2e759f0de3457df5030154b583d2114ad55ab964b02865915b362e12ddd05f5",
+    "Design/UI/tools/native_render.swift": "5b1e96056418efd73579943eff42d3211a2a5649d9b5bb223eb13b2f1de0ea7f"
+  }
+}

@@ -14,15 +14,15 @@ final class IntegrationTests: XCTestCase {
             let keys = PianoGeometry.quietIvory(mapping: mapping, width: width)
             XCTAssertEqual(keys.count, 64)
             XCTAssertEqual(keys[0].rect.minX, 2.35, accuracy: 0.001)
-            XCTAssertEqual(keys[0].rect.height, 50)
-            XCTAssertEqual(keys.filter(\.isBlack).first?.rect.height, 32)
-            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 104))
+            XCTAssertEqual(keys[0].rect.height, 100)
+            XCTAssertEqual(keys.filter(\.isBlack).first?.rect.height, 64)
+            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 208))
             XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && $0.missingGlyphs == 0 && !$0.overlap })
             XCTAssertEqual(view.labelMetrics.count, 64)
         }
     }
     func testHiddenSceneFreezesCurrentKeyPoseAndRestoresHeldStateWithoutReplay() throws {
-        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1496, height: 104))
+        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1496, height: 208))
         view.automaticAnimation = false
         var now = 0.0; view.clock = { now }
         view.activeMIDI = [60]
@@ -38,7 +38,7 @@ final class IntegrationTests: XCTestCase {
     }
     func testFloatingRendererLifecycleMutedLabelsOffHiddenAndIdle() throws {
         let mapping = try mapping()
-        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
+        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: 208))
         view.automaticAnimation = false
         view.showLabels = false
         var coordinator = NoteCoordinator(mapping: mapping)
@@ -49,9 +49,9 @@ final class IntegrationTests: XCTestCase {
         view.strike(strike, at: 10.01)
         XCTAssertEqual(view.floatingCount, 1)
         view.advanceAnimations(at: 10.35)
-        XCTAssertEqual(view.floatingPresentations.first!.rise, 21, accuracy: 0.001)
-        XCTAssertEqual(view.floatingPresentations.first!.opacity, 0.875, accuracy: 0.001)
-        view.advanceAnimations(at: 10.7)
+        XCTAssertEqual(view.floatingPresentations.first!.rise, 48 * (1 - pow(1 - 0.35 / 0.9, 3)), accuracy: 0.001)
+        XCTAssertEqual(view.floatingPresentations.first!.opacity, 1, accuracy: 0.001)
+        view.advanceAnimations(at: 10.9)
         XCTAssertEqual(view.floatingCount, 0)
         XCTAssertFalse(view.animationTimerRunning)
         view.setSceneVisible(false)
@@ -72,7 +72,7 @@ final class IntegrationTests: XCTestCase {
 
 extension IntegrationTests {
     func testShortPressContinuesDepressionThenReleasesAndRestrikeUsesCurrentPosition() throws {
-        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
+        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1000, height: 208))
         view.automaticAnimation = false
         var now = 0.0; view.clock = { now }
         view.activeMIDI = [60]
@@ -89,12 +89,12 @@ extension IntegrationTests {
         XCTAssertFalse(view.animationTimerRunning)
     }
     func testActualTimerStopsAfterAnimationAndOnHidden() throws {
-        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1000, height: 104))
+        let view = PianoView(mapping: try mapping(), frame: NSRect(x: 0, y: 0, width: 1000, height: 208))
         var coordinator = NoteCoordinator(mapping: try mapping())
         _ = coordinator.consume(.init("keyA", .down))
         view.strike(try XCTUnwrap(coordinator.lastStrike), at: ProcessInfo.processInfo.systemUptime)
         XCTAssertTrue(view.animationTimerRunning)
-        RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.8))
+        RunLoop.main.run(until: Date(timeIntervalSinceNow: 1.0))
         XCTAssertFalse(view.animationTimerRunning); XCTAssertEqual(view.floatingCount, 0)
         _ = coordinator.consume(.init("keyA", .up)); _ = coordinator.consume(.init("keyA", .down))
         view.strike(try XCTUnwrap(coordinator.lastStrike), at: ProcessInfo.processInfo.systemUptime)

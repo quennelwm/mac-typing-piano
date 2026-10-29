@@ -9,7 +9,9 @@ public struct DockFade {
     private var unknownSince: TimeInterval?
     private var from = 1.0, target = 1.0, start = 0.0, duration = 0.0
     private var reduced = false
-    public init() {}
+    public init(initialVisibility: DockVisibility = .unknown) {
+        if initialVisibility == .visible { dockHidden = true; from = 0; target = 0 }
+    }
     public func alpha(at time: TimeInterval) -> Double {
         guard duration > 0 else { return target }
         let u = min(1, max(0, (time - start) / duration))

@@ -1,0 +1,1223 @@
+{
+  "mappingVersion": "performance-piano-v0.2-ui-preview",
+  "artifactState": "design_proposal",
+  "defaultSelection": "new_profile_provisional_PM_assumption_2026-10-29",
+  "keys": [
+    {
+      "physicalKeyID": "grave",
+      "physicalRow": 1,
+      "positionInRow": 1,
+      "sdkConstantCandidate": "kVK_ANSI_Grave",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 46,
+      "noteName": "A#2",
+      "pianoKeyColor": "black",
+      "displayLabel": "`",
+      "labelParts": {
+        "main": "`",
+        "side": null
+      },
+      "accessibleName": "反引号",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Backquote"
+    },
+    {
+      "physicalKeyID": "digit1",
+      "physicalRow": 1,
+      "positionInRow": 2,
+      "sdkConstantCandidate": "kVK_ANSI_1",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 48,
+      "noteName": "C3",
+      "pianoKeyColor": "white",
+      "displayLabel": "1",
+      "labelParts": {
+        "main": "1",
+        "side": null
+      },
+      "accessibleName": "1",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit1"
+    },
+    {
+      "physicalKeyID": "digit2",
+      "physicalRow": 1,
+      "positionInRow": 3,
+      "sdkConstantCandidate": "kVK_ANSI_2",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 49,
+      "noteName": "C#3",
+      "pianoKeyColor": "black",
+      "displayLabel": "2",
+      "labelParts": {
+        "main": "2",
+        "side": null
+      },
+      "accessibleName": "2",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit2"
+    },
+    {
+      "physicalKeyID": "digit3",
+      "physicalRow": 1,
+      "positionInRow": 4,
+      "sdkConstantCandidate": "kVK_ANSI_3",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 47,
+      "noteName": "B2",
+      "pianoKeyColor": "white",
+      "displayLabel": "3",
+      "labelParts": {
+        "main": "3",
+        "side": null
+      },
+      "accessibleName": "3",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit3"
+    },
+    {
+      "physicalKeyID": "digit4",
+      "physicalRow": 1,
+      "positionInRow": 5,
+      "sdkConstantCandidate": "kVK_ANSI_4",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 94,
+      "noteName": "A#6",
+      "pianoKeyColor": "black",
+      "displayLabel": "4",
+      "labelParts": {
+        "main": "4",
+        "side": null
+      },
+      "accessibleName": "4",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit4"
+    },
+    {
+      "physicalKeyID": "digit5",
+      "physicalRow": 1,
+      "positionInRow": 6,
+      "sdkConstantCandidate": "kVK_ANSI_5",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 93,
+      "noteName": "A6",
+      "pianoKeyColor": "white",
+      "displayLabel": "5",
+      "labelParts": {
+        "main": "5",
+        "side": null
+      },
+      "accessibleName": "5",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit5"
+    },
+    {
+      "physicalKeyID": "digit6",
+      "physicalRow": 1,
+      "positionInRow": 7,
+      "sdkConstantCandidate": "kVK_ANSI_6",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 92,
+      "noteName": "G#6",
+      "pianoKeyColor": "black",
+      "displayLabel": "6",
+      "labelParts": {
+        "main": "6",
+        "side": null
+      },
+      "accessibleName": "6",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit6"
+    },
+    {
+      "physicalKeyID": "digit7",
+      "physicalRow": 1,
+      "positionInRow": 8,
+      "sdkConstantCandidate": "kVK_ANSI_7",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 91,
+      "noteName": "G6",
+      "pianoKeyColor": "white",
+      "displayLabel": "7",
+      "labelParts": {
+        "main": "7",
+        "side": null
+      },
+      "accessibleName": "7",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit7"
+    },
+    {
+      "physicalKeyID": "digit8",
+      "physicalRow": 1,
+      "positionInRow": 9,
+      "sdkConstantCandidate": "kVK_ANSI_8",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 90,
+      "noteName": "F#6",
+      "pianoKeyColor": "black",
+      "displayLabel": "8",
+      "labelParts": {
+        "main": "8",
+        "side": null
+      },
+      "accessibleName": "8",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit8"
+    },
+    {
+      "physicalKeyID": "digit9",
+      "physicalRow": 1,
+      "positionInRow": 10,
+      "sdkConstantCandidate": "kVK_ANSI_9",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 89,
+      "noteName": "F6",
+      "pianoKeyColor": "white",
+      "displayLabel": "9",
+      "labelParts": {
+        "main": "9",
+        "side": null
+      },
+      "accessibleName": "9",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit9"
+    },
+    {
+      "physicalKeyID": "digit0",
+      "physicalRow": 1,
+      "positionInRow": 11,
+      "sdkConstantCandidate": "kVK_ANSI_0",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 82,
+      "noteName": "A#5",
+      "pianoKeyColor": "black",
+      "displayLabel": "0",
+      "labelParts": {
+        "main": "0",
+        "side": null
+      },
+      "accessibleName": "0",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Digit0"
+    },
+    {
+      "physicalKeyID": "minus",
+      "physicalRow": 1,
+      "positionInRow": 12,
+      "sdkConstantCandidate": "kVK_ANSI_Minus",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 80,
+      "noteName": "G#5",
+      "pianoKeyColor": "black",
+      "displayLabel": "-",
+      "labelParts": {
+        "main": "-",
+        "side": null
+      },
+      "accessibleName": "减号",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Minus"
+    },
+    {
+      "physicalKeyID": "equal",
+      "physicalRow": 1,
+      "positionInRow": 13,
+      "sdkConstantCandidate": "kVK_ANSI_Equal",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 78,
+      "noteName": "F#5",
+      "pianoKeyColor": "black",
+      "displayLabel": "=",
+      "labelParts": {
+        "main": "=",
+        "side": null
+      },
+      "accessibleName": "等号",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Equal"
+    },
+    {
+      "physicalKeyID": "delete",
+      "physicalRow": 1,
+      "positionInRow": 14,
+      "sdkConstantCandidate": "kVK_Delete",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 75,
+      "noteName": "D#5",
+      "pianoKeyColor": "black",
+      "displayLabel": "⌫",
+      "labelParts": {
+        "main": "⌫",
+        "side": null
+      },
+      "accessibleName": "Delete／向后删除",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Backspace"
+    },
+    {
+      "physicalKeyID": "tab",
+      "physicalRow": 2,
+      "positionInRow": 1,
+      "sdkConstantCandidate": "kVK_Tab",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 51,
+      "noteName": "D#3",
+      "pianoKeyColor": "black",
+      "displayLabel": "⇥",
+      "labelParts": {
+        "main": "⇥",
+        "side": null
+      },
+      "accessibleName": "Tab",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Tab"
+    },
+    {
+      "physicalKeyID": "keyQ",
+      "physicalRow": 2,
+      "positionInRow": 2,
+      "sdkConstantCandidate": "kVK_ANSI_Q",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 50,
+      "noteName": "D3",
+      "pianoKeyColor": "white",
+      "displayLabel": "Q",
+      "labelParts": {
+        "main": "Q",
+        "side": null
+      },
+      "accessibleName": "Q",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyQ"
+    },
+    {
+      "physicalKeyID": "keyW",
+      "physicalRow": 2,
+      "positionInRow": 3,
+      "sdkConstantCandidate": "kVK_ANSI_W",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 54,
+      "noteName": "F#3",
+      "pianoKeyColor": "black",
+      "displayLabel": "W",
+      "labelParts": {
+        "main": "W",
+        "side": null
+      },
+      "accessibleName": "W",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyW"
+    },
+    {
+      "physicalKeyID": "keyE",
+      "physicalRow": 2,
+      "positionInRow": 4,
+      "sdkConstantCandidate": "kVK_ANSI_E",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 56,
+      "noteName": "G#3",
+      "pianoKeyColor": "black",
+      "displayLabel": "E",
+      "labelParts": {
+        "main": "E",
+        "side": null
+      },
+      "accessibleName": "E",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyE"
+    },
+    {
+      "physicalKeyID": "keyR",
+      "physicalRow": 2,
+      "positionInRow": 5,
+      "sdkConstantCandidate": "kVK_ANSI_R",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 58,
+      "noteName": "A#3",
+      "pianoKeyColor": "black",
+      "displayLabel": "R",
+      "labelParts": {
+        "main": "R",
+        "side": null
+      },
+      "accessibleName": "R",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyR"
+    },
+    {
+      "physicalKeyID": "keyT",
+      "physicalRow": 2,
+      "positionInRow": 6,
+      "sdkConstantCandidate": "kVK_ANSI_T",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 96,
+      "noteName": "C7",
+      "pianoKeyColor": "white",
+      "displayLabel": "T",
+      "labelParts": {
+        "main": "T",
+        "side": null
+      },
+      "accessibleName": "T",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyT"
+    },
+    {
+      "physicalKeyID": "keyY",
+      "physicalRow": 2,
+      "positionInRow": 7,
+      "sdkConstantCandidate": "kVK_ANSI_Y",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 61,
+      "noteName": "C#4",
+      "pianoKeyColor": "black",
+      "displayLabel": "Y",
+      "labelParts": {
+        "main": "Y",
+        "side": null
+      },
+      "accessibleName": "Y",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyY"
+    },
+    {
+      "physicalKeyID": "keyU",
+      "physicalRow": 2,
+      "positionInRow": 8,
+      "sdkConstantCandidate": "kVK_ANSI_U",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 63,
+      "noteName": "D#4",
+      "pianoKeyColor": "black",
+      "displayLabel": "U",
+      "labelParts": {
+        "main": "U",
+        "side": null
+      },
+      "accessibleName": "U",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyU"
+    },
+    {
+      "physicalKeyID": "keyI",
+      "physicalRow": 2,
+      "positionInRow": 9,
+      "sdkConstantCandidate": "kVK_ANSI_I",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 95,
+      "noteName": "B6",
+      "pianoKeyColor": "white",
+      "displayLabel": "I",
+      "labelParts": {
+        "main": "I",
+        "side": null
+      },
+      "accessibleName": "I",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyI"
+    },
+    {
+      "physicalKeyID": "keyO",
+      "physicalRow": 2,
+      "positionInRow": 10,
+      "sdkConstantCandidate": "kVK_ANSI_O",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 66,
+      "noteName": "F#4",
+      "pianoKeyColor": "black",
+      "displayLabel": "O",
+      "labelParts": {
+        "main": "O",
+        "side": null
+      },
+      "accessibleName": "O",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyO"
+    },
+    {
+      "physicalKeyID": "keyP",
+      "physicalRow": 2,
+      "positionInRow": 11,
+      "sdkConstantCandidate": "kVK_ANSI_P",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 68,
+      "noteName": "G#4",
+      "pianoKeyColor": "black",
+      "displayLabel": "P",
+      "labelParts": {
+        "main": "P",
+        "side": null
+      },
+      "accessibleName": "P",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyP"
+    },
+    {
+      "physicalKeyID": "bracketLeft",
+      "physicalRow": 2,
+      "positionInRow": 12,
+      "sdkConstantCandidate": "kVK_ANSI_LeftBracket",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 70,
+      "noteName": "A#4",
+      "pianoKeyColor": "black",
+      "displayLabel": "[",
+      "labelParts": {
+        "main": "[",
+        "side": null
+      },
+      "accessibleName": "左方括号",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "BracketLeft"
+    },
+    {
+      "physicalKeyID": "bracketRight",
+      "physicalRow": 2,
+      "positionInRow": 13,
+      "sdkConstantCandidate": "kVK_ANSI_RightBracket",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 74,
+      "noteName": "D5",
+      "pianoKeyColor": "white",
+      "displayLabel": "]",
+      "labelParts": {
+        "main": "]",
+        "side": null
+      },
+      "accessibleName": "右方括号",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "BracketRight"
+    },
+    {
+      "physicalKeyID": "backslash",
+      "physicalRow": 2,
+      "positionInRow": 14,
+      "sdkConstantCandidate": "kVK_ANSI_Backslash",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 73,
+      "noteName": "C#5",
+      "pianoKeyColor": "black",
+      "displayLabel": "\\",
+      "labelParts": {
+        "main": "\\",
+        "side": null
+      },
+      "accessibleName": "反斜杠",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Backslash"
+    },
+    {
+      "physicalKeyID": "capsLock",
+      "physicalRow": 3,
+      "positionInRow": 1,
+      "sdkConstantCandidate": "kVK_CapsLock",
+      "captureStatus": "unverified",
+      "eventSemantics": "toggleCandidate",
+      "midiNote": 52,
+      "noteName": "E3",
+      "pianoKeyColor": "white",
+      "displayLabel": "⇪",
+      "labelParts": {
+        "main": "⇪",
+        "side": null
+      },
+      "accessibleName": "Caps Lock",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "CapsLock"
+    },
+    {
+      "physicalKeyID": "keyA",
+      "physicalRow": 3,
+      "positionInRow": 2,
+      "sdkConstantCandidate": "kVK_ANSI_A",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 53,
+      "noteName": "F3",
+      "pianoKeyColor": "white",
+      "displayLabel": "A",
+      "labelParts": {
+        "main": "A",
+        "side": null
+      },
+      "accessibleName": "A",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyA"
+    },
+    {
+      "physicalKeyID": "keyS",
+      "physicalRow": 3,
+      "positionInRow": 3,
+      "sdkConstantCandidate": "kVK_ANSI_S",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 55,
+      "noteName": "G3",
+      "pianoKeyColor": "white",
+      "displayLabel": "S",
+      "labelParts": {
+        "main": "S",
+        "side": null
+      },
+      "accessibleName": "S",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyS"
+    },
+    {
+      "physicalKeyID": "keyD",
+      "physicalRow": 3,
+      "positionInRow": 4,
+      "sdkConstantCandidate": "kVK_ANSI_D",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 57,
+      "noteName": "A3",
+      "pianoKeyColor": "white",
+      "displayLabel": "D",
+      "labelParts": {
+        "main": "D",
+        "side": null
+      },
+      "accessibleName": "D",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyD"
+    },
+    {
+      "physicalKeyID": "keyF",
+      "physicalRow": 3,
+      "positionInRow": 5,
+      "sdkConstantCandidate": "kVK_ANSI_F",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 59,
+      "noteName": "B3",
+      "pianoKeyColor": "white",
+      "displayLabel": "F",
+      "labelParts": {
+        "main": "F",
+        "side": null
+      },
+      "accessibleName": "F",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyF"
+    },
+    {
+      "physicalKeyID": "keyG",
+      "physicalRow": 3,
+      "positionInRow": 6,
+      "sdkConstantCandidate": "kVK_ANSI_G",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 60,
+      "noteName": "C4",
+      "pianoKeyColor": "white",
+      "displayLabel": "G",
+      "labelParts": {
+        "main": "G",
+        "side": null
+      },
+      "accessibleName": "G",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyG"
+    },
+    {
+      "physicalKeyID": "keyH",
+      "physicalRow": 3,
+      "positionInRow": 7,
+      "sdkConstantCandidate": "kVK_ANSI_H",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 62,
+      "noteName": "D4",
+      "pianoKeyColor": "white",
+      "displayLabel": "H",
+      "labelParts": {
+        "main": "H",
+        "side": null
+      },
+      "accessibleName": "H",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyH"
+    },
+    {
+      "physicalKeyID": "keyJ",
+      "physicalRow": 3,
+      "positionInRow": 8,
+      "sdkConstantCandidate": "kVK_ANSI_J",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 64,
+      "noteName": "E4",
+      "pianoKeyColor": "white",
+      "displayLabel": "J",
+      "labelParts": {
+        "main": "J",
+        "side": null
+      },
+      "accessibleName": "J",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyJ"
+    },
+    {
+      "physicalKeyID": "keyK",
+      "physicalRow": 3,
+      "positionInRow": 9,
+      "sdkConstantCandidate": "kVK_ANSI_K",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 65,
+      "noteName": "F4",
+      "pianoKeyColor": "white",
+      "displayLabel": "K",
+      "labelParts": {
+        "main": "K",
+        "side": null
+      },
+      "accessibleName": "K",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyK"
+    },
+    {
+      "physicalKeyID": "keyL",
+      "physicalRow": 3,
+      "positionInRow": 10,
+      "sdkConstantCandidate": "kVK_ANSI_L",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 67,
+      "noteName": "G4",
+      "pianoKeyColor": "white",
+      "displayLabel": "L",
+      "labelParts": {
+        "main": "L",
+        "side": null
+      },
+      "accessibleName": "L",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyL"
+    },
+    {
+      "physicalKeyID": "semicolon",
+      "physicalRow": 3,
+      "positionInRow": 11,
+      "sdkConstantCandidate": "kVK_ANSI_Semicolon",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 69,
+      "noteName": "A4",
+      "pianoKeyColor": "white",
+      "displayLabel": ";",
+      "labelParts": {
+        "main": ";",
+        "side": null
+      },
+      "accessibleName": "分号",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Semicolon"
+    },
+    {
+      "physicalKeyID": "quote",
+      "physicalRow": 3,
+      "positionInRow": 12,
+      "sdkConstantCandidate": "kVK_ANSI_Quote",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 71,
+      "noteName": "B4",
+      "pianoKeyColor": "white",
+      "displayLabel": "'",
+      "labelParts": {
+        "main": "'",
+        "side": null
+      },
+      "accessibleName": "单引号",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Quote"
+    },
+    {
+      "physicalKeyID": "return",
+      "physicalRow": 3,
+      "positionInRow": 13,
+      "sdkConstantCandidate": "kVK_Return",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 72,
+      "noteName": "C5",
+      "pianoKeyColor": "white",
+      "displayLabel": "↵",
+      "labelParts": {
+        "main": "↵",
+        "side": null
+      },
+      "accessibleName": "Return",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Return"
+    },
+    {
+      "physicalKeyID": "shiftLeft",
+      "physicalRow": 4,
+      "positionInRow": 1,
+      "sdkConstantCandidate": "kVK_Shift",
+      "captureStatus": "unverified",
+      "eventSemantics": "modifier",
+      "midiNote": 38,
+      "noteName": "D2",
+      "pianoKeyColor": "white",
+      "displayLabel": "⇧L",
+      "labelParts": {
+        "main": "⇧",
+        "side": "L"
+      },
+      "accessibleName": "左 Shift",
+      "velocity": 48,
+      "sourceDOMPhysicalKeyID": "ShiftLeft"
+    },
+    {
+      "physicalKeyID": "keyZ",
+      "physicalRow": 4,
+      "positionInRow": 2,
+      "sdkConstantCandidate": "kVK_ANSI_Z",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 39,
+      "noteName": "D#2",
+      "pianoKeyColor": "black",
+      "displayLabel": "Z",
+      "labelParts": {
+        "main": "Z",
+        "side": null
+      },
+      "accessibleName": "Z",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyZ"
+    },
+    {
+      "physicalKeyID": "keyX",
+      "physicalRow": 4,
+      "positionInRow": 3,
+      "sdkConstantCandidate": "kVK_ANSI_X",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 40,
+      "noteName": "E2",
+      "pianoKeyColor": "white",
+      "displayLabel": "X",
+      "labelParts": {
+        "main": "X",
+        "side": null
+      },
+      "accessibleName": "X",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyX"
+    },
+    {
+      "physicalKeyID": "keyC",
+      "physicalRow": 4,
+      "positionInRow": 4,
+      "sdkConstantCandidate": "kVK_ANSI_C",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 41,
+      "noteName": "F2",
+      "pianoKeyColor": "white",
+      "displayLabel": "C",
+      "labelParts": {
+        "main": "C",
+        "side": null
+      },
+      "accessibleName": "C",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyC"
+    },
+    {
+      "physicalKeyID": "keyV",
+      "physicalRow": 4,
+      "positionInRow": 5,
+      "sdkConstantCandidate": "kVK_ANSI_V",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 42,
+      "noteName": "F#2",
+      "pianoKeyColor": "black",
+      "displayLabel": "V",
+      "labelParts": {
+        "main": "V",
+        "side": null
+      },
+      "accessibleName": "V",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyV"
+    },
+    {
+      "physicalKeyID": "keyB",
+      "physicalRow": 4,
+      "positionInRow": 6,
+      "sdkConstantCandidate": "kVK_ANSI_B",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 43,
+      "noteName": "G2",
+      "pianoKeyColor": "white",
+      "displayLabel": "B",
+      "labelParts": {
+        "main": "B",
+        "side": null
+      },
+      "accessibleName": "B",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyB"
+    },
+    {
+      "physicalKeyID": "keyN",
+      "physicalRow": 4,
+      "positionInRow": 7,
+      "sdkConstantCandidate": "kVK_ANSI_N",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 44,
+      "noteName": "G#2",
+      "pianoKeyColor": "black",
+      "displayLabel": "N",
+      "labelParts": {
+        "main": "N",
+        "side": null
+      },
+      "accessibleName": "N",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyN"
+    },
+    {
+      "physicalKeyID": "keyM",
+      "physicalRow": 4,
+      "positionInRow": 8,
+      "sdkConstantCandidate": "kVK_ANSI_M",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 45,
+      "noteName": "A2",
+      "pianoKeyColor": "white",
+      "displayLabel": "M",
+      "labelParts": {
+        "main": "M",
+        "side": null
+      },
+      "accessibleName": "M",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "KeyM"
+    },
+    {
+      "physicalKeyID": "comma",
+      "physicalRow": 4,
+      "positionInRow": 9,
+      "sdkConstantCandidate": "kVK_ANSI_Comma",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 81,
+      "noteName": "A5",
+      "pianoKeyColor": "white",
+      "displayLabel": ",",
+      "labelParts": {
+        "main": ",",
+        "side": null
+      },
+      "accessibleName": "逗号",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Comma"
+    },
+    {
+      "physicalKeyID": "period",
+      "physicalRow": 4,
+      "positionInRow": 10,
+      "sdkConstantCandidate": "kVK_ANSI_Period",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 79,
+      "noteName": "G5",
+      "pianoKeyColor": "white",
+      "displayLabel": ".",
+      "labelParts": {
+        "main": ".",
+        "side": null
+      },
+      "accessibleName": "句点",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Period"
+    },
+    {
+      "physicalKeyID": "slash",
+      "physicalRow": 4,
+      "positionInRow": 11,
+      "sdkConstantCandidate": "kVK_ANSI_Slash",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 77,
+      "noteName": "F5",
+      "pianoKeyColor": "white",
+      "displayLabel": "/",
+      "labelParts": {
+        "main": "/",
+        "side": null
+      },
+      "accessibleName": "斜杠",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Slash"
+    },
+    {
+      "physicalKeyID": "shiftRight",
+      "physicalRow": 4,
+      "positionInRow": 12,
+      "sdkConstantCandidate": "kVK_RightShift",
+      "captureStatus": "unverified",
+      "eventSemantics": "modifier",
+      "midiNote": 76,
+      "noteName": "E5",
+      "pianoKeyColor": "white",
+      "displayLabel": "⇧R",
+      "labelParts": {
+        "main": "⇧",
+        "side": "R"
+      },
+      "accessibleName": "右 Shift",
+      "velocity": 48,
+      "sourceDOMPhysicalKeyID": "ShiftRight"
+    },
+    {
+      "physicalKeyID": "fn",
+      "physicalRow": 5,
+      "positionInRow": 1,
+      "sdkConstantCandidate": "kVK_Function",
+      "captureStatus": "unverified",
+      "eventSemantics": "modifier",
+      "midiNote": 33,
+      "noteName": "A1",
+      "pianoKeyColor": "white",
+      "displayLabel": "fn",
+      "labelParts": {
+        "main": "fn",
+        "side": null
+      },
+      "accessibleName": "Fn／地球键",
+      "velocity": 48,
+      "sourceDOMPhysicalKeyID": "Fn"
+    },
+    {
+      "physicalKeyID": "controlLeft",
+      "physicalRow": 5,
+      "positionInRow": 2,
+      "sdkConstantCandidate": "kVK_Control",
+      "captureStatus": "unverified",
+      "eventSemantics": "modifier",
+      "midiNote": 34,
+      "noteName": "A#1",
+      "pianoKeyColor": "black",
+      "displayLabel": "⌃",
+      "labelParts": {
+        "main": "⌃",
+        "side": null
+      },
+      "accessibleName": "左 Control",
+      "velocity": 48,
+      "sourceDOMPhysicalKeyID": "ControlLeft"
+    },
+    {
+      "physicalKeyID": "optionLeft",
+      "physicalRow": 5,
+      "positionInRow": 3,
+      "sdkConstantCandidate": "kVK_Option",
+      "captureStatus": "unverified",
+      "eventSemantics": "modifier",
+      "midiNote": 35,
+      "noteName": "B1",
+      "pianoKeyColor": "white",
+      "displayLabel": "⌥L",
+      "labelParts": {
+        "main": "⌥",
+        "side": "L"
+      },
+      "accessibleName": "左 Option",
+      "velocity": 48,
+      "sourceDOMPhysicalKeyID": "AltLeft"
+    },
+    {
+      "physicalKeyID": "commandLeft",
+      "physicalRow": 5,
+      "positionInRow": 4,
+      "sdkConstantCandidate": "kVK_Command",
+      "captureStatus": "unverified",
+      "eventSemantics": "modifier",
+      "midiNote": 36,
+      "noteName": "C2",
+      "pianoKeyColor": "white",
+      "displayLabel": "⌘L",
+      "labelParts": {
+        "main": "⌘",
+        "side": "L"
+      },
+      "accessibleName": "左 Command",
+      "velocity": 48,
+      "sourceDOMPhysicalKeyID": "MetaLeft"
+    },
+    {
+      "physicalKeyID": "space",
+      "physicalRow": 5,
+      "positionInRow": 5,
+      "sdkConstantCandidate": "kVK_Space",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 37,
+      "noteName": "C#2",
+      "pianoKeyColor": "black",
+      "displayLabel": "␣",
+      "labelParts": {
+        "main": "␣",
+        "side": null
+      },
+      "accessibleName": "空格",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "Space"
+    },
+    {
+      "physicalKeyID": "commandRight",
+      "physicalRow": 5,
+      "positionInRow": 6,
+      "sdkConstantCandidate": "kVK_RightCommand",
+      "captureStatus": "unverified",
+      "eventSemantics": "modifier",
+      "midiNote": 88,
+      "noteName": "E6",
+      "pianoKeyColor": "white",
+      "displayLabel": "⌘R",
+      "labelParts": {
+        "main": "⌘",
+        "side": "R"
+      },
+      "accessibleName": "右 Command",
+      "velocity": 48,
+      "sourceDOMPhysicalKeyID": "MetaRight"
+    },
+    {
+      "physicalKeyID": "optionRight",
+      "physicalRow": 5,
+      "positionInRow": 7,
+      "sdkConstantCandidate": "kVK_RightOption",
+      "captureStatus": "unverified",
+      "eventSemantics": "modifier",
+      "midiNote": 87,
+      "noteName": "D#6",
+      "pianoKeyColor": "black",
+      "displayLabel": "⌥R",
+      "labelParts": {
+        "main": "⌥",
+        "side": "R"
+      },
+      "accessibleName": "右 Option",
+      "velocity": 48,
+      "sourceDOMPhysicalKeyID": "AltRight"
+    },
+    {
+      "physicalKeyID": "arrowLeft",
+      "physicalRow": 5,
+      "positionInRow": 8,
+      "sdkConstantCandidate": "kVK_LeftArrow",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 86,
+      "noteName": "D6",
+      "pianoKeyColor": "white",
+      "displayLabel": "←",
+      "labelParts": {
+        "main": "←",
+        "side": null
+      },
+      "accessibleName": "左方向",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "ArrowLeft"
+    },
+    {
+      "physicalKeyID": "arrowDown",
+      "physicalRow": 5,
+      "positionInRow": 9,
+      "sdkConstantCandidate": "kVK_DownArrow",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 85,
+      "noteName": "C#6",
+      "pianoKeyColor": "black",
+      "displayLabel": "↓",
+      "labelParts": {
+        "main": "↓",
+        "side": null
+      },
+      "accessibleName": "下方向",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "ArrowDown"
+    },
+    {
+      "physicalKeyID": "arrowUp",
+      "physicalRow": 5,
+      "positionInRow": 10,
+      "sdkConstantCandidate": "kVK_UpArrow",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 84,
+      "noteName": "C6",
+      "pianoKeyColor": "white",
+      "displayLabel": "↑",
+      "labelParts": {
+        "main": "↑",
+        "side": null
+      },
+      "accessibleName": "上方向",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "ArrowUp"
+    },
+    {
+      "physicalKeyID": "arrowRight",
+      "physicalRow": 5,
+      "positionInRow": 11,
+      "sdkConstantCandidate": "kVK_RightArrow",
+      "captureStatus": "unverified",
+      "eventSemantics": "ordinary",
+      "midiNote": 83,
+      "noteName": "B5",
+      "pianoKeyColor": "white",
+      "displayLabel": "→",
+      "labelParts": {
+        "main": "→",
+        "side": null
+      },
+      "accessibleName": "右方向",
+      "velocity": 64,
+      "sourceDOMPhysicalKeyID": "ArrowRight"
+    }
+  ]
+}

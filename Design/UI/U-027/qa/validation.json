@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "date": "2026-10-29 Asia/Shanghai",
+  "environment": "macOS-27.2-arm64-arm-64bit",
+  "checksTotal": 27325,
+  "failed": [],
+  "nativeLabelCount": 192,
+  "floatingBoundsCount": 1536,
+  "continuousLifetimeEnvelopes": 384,
+  "minimumEnvelopeMarginsPt": {
+    "left": 8.185595567867034,
+    "right": 4.185595567867235,
+    "top": 24.254847645429365,
+    "bottom": 107.99999999999999
+  },
+  "contrastCombinations": 1680,
+  "minimumContrast": {
+    "width": 1264,
+    "physicalKeyID": "fn",
+    "label": "fn",
+    "whiteHeld": 1,
+    "blackHeld": 0,
+    "scale": 1,
+    "minimumContrast": 4.822957112687676
+  },
+  "frozenOriginalsVerified": 182,
+  "gifContainerMs": 920,
+  "scope": "Native offscreen vector/CoreText design only; no product window, live focus/pointer/input/audio/900ms wall-clock scheduling tested."
+}
