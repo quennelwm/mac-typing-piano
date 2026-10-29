@@ -8,7 +8,7 @@
   "userConfirmedMenuOpened": true,
   "userConfirmedAnimationsSmoother": true,
   "userConfirmedBlackLabelsVisible": true,
-  "userConfirmedCloseAndSliders": "PASS: user replied 菜单我测试了，没啥问题，美观问题下一个版本再调整",
+  "userConfirmedCloseAndSliders": "FAIL: latest detailed feedback overrides earlier general okay; open/close/ignored-click three-cycle; outside click does not close; sliders still reported problematic, exact slider unspecified",
   "editorManualTested": false,
   "layerVisualTested": false,
   "preferencesAfterUserTesting": {
@@ -19,5 +19,6 @@
     "transparency": 0.3,
     "showKeyLabels": true,
     "volume": 1
-  }
+  },
+  "publishKnownIssuesAuthorized": true
 }

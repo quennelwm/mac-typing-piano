@@ -1,0 +1,14 @@
+{
+  "version": "0.2.11",
+  "tag": "v0.2.11-trial",
+  "releaseURL": "https://github.com/quennelwm/mac-typing-piano/releases/tag/v0.2.11-trial",
+  "sourceCommit": "d3ecaea7be3ab40da9cd1dc112ac48f32e58b51f",
+  "publicDownloadBytes": 15505910,
+  "publicDownloadSHA256": "247d9b93cd8267cef12b3e5c50e6fb2543fa05cbc71b147ec8c9f6039adce9a6",
+  "matchesSignedPackage": true,
+  "zipCRC": true,
+  "downloadUsedAuthentication": false,
+  "knownMenuIssuesDisclosed": true,
+  "userAuthorizedPublishBeforeFix": true,
+  "verifiedAtUTC": "2026-10-29T09:57:58.830736+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "candidateCount" : 1,
+  "detail" : "Reference count = 0",
+  "dockRows" : [
+    {
+      "bounds" : "{{0, 0}, {1512, 982}}",
+      "id" : "49",
+      "layer" : "20"
+    }
+  ],
+  "screenBounds" : "{{0, 0}, {1512, 982}}",
+  "status" : "UNKNOWN"
+}

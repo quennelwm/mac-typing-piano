@@ -1,0 +1,35 @@
+[
+  {
+    "arrayAvailable" : true,
+    "query" : "including",
+    "returnedCount" : 0,
+    "trackedFields" : [
+
+    ],
+    "trackedMatches" : 0
+  },
+  {
+    "arrayAvailable" : true,
+    "query" : "all",
+    "returnedCount" : 357,
+    "trackedFields" : [
+      {
+        "kCGWindowAlpha" : 1,
+        "kCGWindowIsOnscreen" : "missing",
+        "kCGWindowLayer" : 20,
+        "kCGWindowNumber" : 49,
+        "kCGWindowOwnerPID" : 1339
+      }
+    ],
+    "trackedMatches" : 1
+  },
+  {
+    "arrayAvailable" : true,
+    "query" : "onscreen",
+    "returnedCount" : 30,
+    "trackedFields" : [
+
+    ],
+    "trackedMatches" : 0
+  }
+]

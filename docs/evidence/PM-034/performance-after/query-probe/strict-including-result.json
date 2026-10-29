@@ -1,0 +1,110 @@
+{
+  "condition" : "Read-only uncontrolled observation, alternating adjacent queries, no GUI\/input\/setting changes. Per-call CPU\/wall exclude 100ms pacing. Other window descriptions never logged.",
+  "endAt" : "2026-10-29T09:45:11Z",
+  "idCandidateAvailable" : true,
+  "orientation" : "bottom",
+  "OS" : "Version 27.2 (Build 26B123)",
+  "race" : "Two-stage candidate is not an atomic snapshot. Dock visibility may change between ID membership and description. Sequential parity cannot prove equivalence across transitions.",
+  "referenceCount" : 1,
+  "referenceSetupCPUms" : 10.168999999999997,
+  "referenceSetupWallms" : 38.861708337208256,
+  "runs" : [
+    {
+      "fullCPUms" : {
+        "mean" : 0.59007000000000032,
+        "p50" : 0.54799999999999294,
+        "p95" : 1.0140000000000011,
+        "total" : 59.007000000000033
+      },
+      "fullWallms" : {
+        "mean" : 2.0312479157291818,
+        "p50" : 1.5401249984279275,
+        "p95" : 4.8902083217399195,
+        "total" : 203.12479157291818
+      },
+      "idThenOneDescriptionCPUms" : {
+        "mean" : 0.10860999999999986,
+        "p50" : 0.096999999999999864,
+        "p95" : 0.21200000000000385,
+        "total" : 10.860999999999986
+      },
+      "idThenOneDescriptionWallms" : {
+        "mean" : 0.60619916708674282,
+        "p50" : 0.3054583357879892,
+        "p95" : 1.8617500027175993,
+        "total" : 60.619916708674282
+      },
+      "includingCPUms" : {
+        "mean" : 0.1565400000000001,
+        "p50" : 0.12199999999999711,
+        "p95" : 0.36200000000000121,
+        "total" : 15.654000000000011
+      },
+      "includingMismatches" : 100,
+      "includingStatePairs" : {
+        "hidden\/unknown" : 100
+      },
+      "includingWallms" : {
+        "mean" : 1.0644654164207168,
+        "p50" : 0.40187500417232513,
+        "p95" : 4.0708750020712614,
+        "total" : 106.44654164207168
+      },
+      "iterations" : 100,
+      "mismatches" : 0,
+      "statePairs" : {
+        "hidden\/hidden" : 100
+      }
+    },
+    {
+      "fullCPUms" : {
+        "mean" : 0.72358500000000003,
+        "p50" : 0.73100000000003718,
+        "p95" : 1.2829999999999786,
+        "total" : 144.71700000000001
+      },
+      "fullWallms" : {
+        "mean" : 2.480252708264743,
+        "p50" : 1.7435416666558012,
+        "p95" : 5.2994583384133875,
+        "total" : 496.0505416529486
+      },
+      "idThenOneDescriptionCPUms" : {
+        "mean" : 0.13971500000000114,
+        "p50" : 0.12800000000001699,
+        "p95" : 0.25300000000000322,
+        "total" : 27.943000000000229
+      },
+      "idThenOneDescriptionWallms" : {
+        "mean" : 0.97740895820606966,
+        "p50" : 0.45945832971483469,
+        "p95" : 3.8689166685799137,
+        "total" : 195.48179164121393
+      },
+      "includingCPUms" : {
+        "mean" : 0.18539999999999945,
+        "p50" : 0.14900000000001024,
+        "p95" : 0.4659999999999942,
+        "total" : 37.079999999999892
+      },
+      "includingMismatches" : 200,
+      "includingStatePairs" : {
+        "hidden\/unknown" : 200
+      },
+      "includingWallms" : {
+        "mean" : 1.3012075000006007,
+        "p50" : 0.60879166994709522,
+        "p95" : 4.7006249951664358,
+        "total" : 260.24150000012014
+      },
+      "iterations" : 200,
+      "mismatches" : 0,
+      "statePairs" : {
+        "hidden\/hidden" : 200
+      }
+    }
+  ],
+  "startAt" : "2026-10-29T09:44:38Z",
+  "trackedDockPID" : 1339,
+  "trackedDockWindowID" : 49
+}

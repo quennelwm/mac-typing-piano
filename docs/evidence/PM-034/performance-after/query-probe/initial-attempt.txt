@@ -1,0 +1,1 @@
+Initial run returned exit133 at combined candidate/reference precondition before measurement; no results or timing claimed. Replaced ambiguous fatalError with stage-specific UNKNOWN reporting for diagnosis.

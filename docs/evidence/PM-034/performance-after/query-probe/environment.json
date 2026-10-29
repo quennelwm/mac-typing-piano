@@ -1,0 +1,22 @@
+{
+  "sdk": "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk",
+  "compiler": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)\nTarget: arm64-apple-macosx27.2.0\n",
+  "sources": {
+    "main.swift": "df020f9310e0b4b9c237ad89b1ee9bd8ed8dce3a55d31693f3f0e68fe86264f1",
+    "QueryBridge.c": "86f84b057ab2b222b22867c40147156138233a22f2b826398d0313af76dfddef",
+    "QueryBridge.h": "341a1ab2ec2af7722a302d76bbf9baad854238a0d214fe8eb9e69ea01d830c0e",
+    "diagnostic.swift": "4c771a2df21acbe33ff0fbb27eb37deb1ea2da5e831d4a27a5d3ebbbd7ebdf78"
+  },
+  "binarySHA256": "e168d47aa0ce3829d55576b6661a5a7db6c4c0086ff51981c87b3e1f6c3802fa",
+  "buildCommands": [
+    "xcrun clang -O2 -c QueryBridge.c -o QueryBridge.o",
+    "xcrun swiftc -O -import-objc-header QueryBridge.h main.swift QueryBridge.o -o query-probe"
+  ],
+  "runCommand": "query-probe result.json",
+  "scope": "Standalone read-only API timing, no GUI, no keys, no runtime settings; window names/owners except Dock not persisted",
+  "sourceReferences": [
+    "https://developer.apple.com/documentation/coregraphics/cgwindowlistcreate",
+    "https://developer.apple.com/documentation/coregraphics/kcgwindowisonscreen"
+  ],
+  "candidateEmptyArrayPolicy": "Second run only: including-window nil means unknown; empty array is hypothesized hidden and separately validated against onscreen-full dictionary query. Visible/transition equivalence not inferred."
+}
