@@ -46,3 +46,7 @@
 C-030接收：13项真实签名工具测试通过。主独立verify-only确认最终公开包通过，并确认ad-hoc候选被拒。临时候选GUI已正常退出，其.app原字节封存为.app.retired，原ZIP保留，见candidate-retired.json；正式App保持运行与签名不变。以后使用Code/Scripts/release_sign.py明确身份、校验上一公开包DR，缺身份或不一致即失败，无ad-hoc回退。真实跨版本TCC继承仍未测。
 
 Git按功能、发布工具、文档/证据拆分提交。明确路径git add后检查git diff --cached及--check，生产源码与冻结hash一致。Design/UI/U-027/tools/drawing.swift.inc冻结生成文件末尾有额外空行，保留交付hash；证据中的原始diff/log空白保留，不回写历史测试日志。功能提交使用core.whitespace=-blank-at-eof仅放过该已知EOF空行，其他源代码空白检查通过。
+
+## 已公开交付
+
+源码三次原始提交b0a6ac9、4ae9beb、7014311与本地哈希逐一相同，GitHub main及v0.2.7-trial发布完成。常规Git上传遭HTTP408后使用受控分批资源/API传输，未改写原提交或既有历史；传输临时分支已清理。Release ZIP与SHA256SUMS已公开，匿名重新下载SHA256匹配、ZIP CRC通过，见published.json。发布过程未替换、停止或重签用户已获授权的运行App。

@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/quennelwm/mac-typing-piano",
+  "release": "https://github.com/quennelwm/mac-typing-piano/releases/tag/v0.2.7-trial",
+  "sourceCommit": "7014311dc5dec070f6fb4a65c6fbb731570dc89c",
+  "tag": "v0.2.7-trial",
+  "asset": "Mac-Typing-Piano-0.2.7-arm64.zip",
+  "bytes": 15409827,
+  "sha256": "fcf0c418ca6be3b40d26754032b87971ef2de57a76540d9f65fdc196dbe0d467",
+  "anonymousDownload": true,
+  "zipCRC": "PASS",
+  "sameAsLocallyVerifiedPackage": true,
+  "exactOriginalGitCommitIDsPreserved": true,
+  "temporaryTransferBranchDeleted": true,
+  "installedAppUnchangedDuringPublication": true
+}
