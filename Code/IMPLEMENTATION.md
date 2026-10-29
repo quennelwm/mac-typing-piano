@@ -1,4 +1,4 @@
-# 当前实现：0.2.6 / build9
+# 当前实现：0.2.7 / build10
 
 以下为2026-10-28当前状态；后半部分保留各阶段当时的范围和结论，不能将历史“模拟Dock”“固定宽度”“不申请权限”等描述当作当前行为。使用与相对源码构建命令见 [README.md](README.md)。
 
@@ -6,9 +6,9 @@
 - 菜单可重新打开启动窗口，Finder重开与重复实例通知只负责显示入口；有运行/暂停原因及仅打开GitHub Releases的“下载新版…”。本窗口试弹不需要全局权限，测试子菜单仍保留60秒模式。
 - 可选“静音系统提示音”仅在用户确认后通过当前进程Standard Additions设置alert volume；原值内存保存，仅核对本会话拥有的0值后恢复，外部不同值不覆盖，初始0不创造恢复值。失败明确显示，异常退出不保证恢复，新进程不接管旧修改；真实效果和权限边界仍待验。
 - 默认全64音Steinway试用音库、App独立音量/标签保存、16pt槽宽与16×16pt画布的菜单栏单♪（18pt字形按墨迹适配）及同Bundle重复启动保护。
-- 钢琴按目标screen.frame.width−16自动布局，左右8pt，104pt高度；真实Dock窗口显隐驱动淡变，隐藏不停止声音/输入，不补播旧音符。连续unknown2秒后保守恢复可见。
+- 钢琴按目标screen.frame.width−16自动布局，左右8pt，208pt高度（112pt主体＋96pt透明区）；真实Dock窗口显隐驱动淡变，隐藏不停止声音/输入，不补播旧音符。连续unknown2秒后保守恢复可见。
 - 生产GUI和恢复路径使用能力检测的NativeDockStorage，只调用HIServices两个autohide私有SPI；写后核对原生状态与偏好，失败引导系统设置。测试注入mock；defaults-only不再作为生产控制后端。原值/外部修改/恢复票据保护保留，用户启动前已开启的true不会被恢复成更早的false。
-- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.6子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好迁至用户Application Support，当前App旁旧偏好只读迁移一次；已有目标优先。Dock恢复票据位置不变。构建不写用户偏好。
+- `Code/Scripts/build.sh` 默认输出独立candidate-0.2.7子目录并保护既有授权根目录。README提供每次新建候选目录的可移植命令；偏好迁至用户Application Support，当前App旁旧偏好只读迁移一次；已有目标优先。Dock恢复票据位置不变。构建不写用户偏好。
 - 现成包为arm64、ad-hoc签名，未公证；macOS14只是编译目标。本机macOS27.2 arm64/Swift6.4验证不覆盖其他Mac/系统或Intel。
 
 ## 当前证据与剩余边界
@@ -61,3 +61,11 @@ C-001软件/自动部分已写docs/handoffs/C-001.md；35项XCTest、release编�
 ## C-002T用户主动试用
 
 在C-001C完成并被PM接收后推进持续会话、中文启动卡、全64音Steinway及源独立增益。新版使用local.typingpiano.trial和“打字钢琴试用”名称/version0.2.0，不覆盖旧Reviewed-C001C或PM维护入口。实际Float32测量及交付以docs/handoffs/C-002T.md为准；默认停止，用户点击开始才启用输入/声音。普通区域鼠标点击不再永久锁住隐藏；Dock现场行为仍保留未测。
+
+## C-027增量
+
+显示意图独立于输入/声音暂停，静态面板可反复唤出；安全输入与会话阻断独立叠加，Dock先取样再显示，unknown保留2秒恢复策略。解除视觉阻断不自动开始输入/音频。白/黑键面100/64pt、24pt音符900ms/48pt上移/4pt横漂，减弱动态200ms原地淡出，空闲无动画计时器。新映射经64项显式ID转换和原schema验证；旧contract不动且不再列作运行时选项。0.2.7新增验证在`docs/evidence/trial-0.2.7/`，上面的0.2.4/0.2.6记录只作为历史证据。
+
+## C-028增量
+
+自定义由CustomKeymap/KeymapDraft/CustomKeymapStore校验、草稿编辑、原子持久化；KeymapEditor为560×440原生设置窗口，保存前预览全部差异。InputEventQueue在捕获时更新瞬时held集合，事务丢弃旧队列并返回捕获快照，避免release已排队但尚未归约时误吞下一次press；仍按住的物理键等待释放再重新击发。会话不重建、音量/声音状态保持，安全阻断仍优先。production控件离屏图显式合成windowBackgroundColor，不当作屏幕截图或实际键盘验收。
