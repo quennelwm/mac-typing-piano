@@ -19,7 +19,7 @@ CUA原生测试窗口可见水晶键面；本窗口实际引擎输出tap峰值0.
 当前偏好heightScale=1.32；只读系统窗口证据为单实例、layer3、1496×292，1512pt屏幕宽减16pt、底边固定，与ceil(112×1.32+144)一致。此值在现场已出现，主未以自动化拖动高度菜单，也未回写覆盖；音量/标签原值保持。实际菜单拖动未由CUA验证（当前接口只暴露窗口），原生滑块target/action、实时几何、保存/重建已由集成测试覆盖。
 
 ## 发布包与证据
-已签名ZIP 15,432,666字节，45文件往返哈希、ZIP CRC和解压签名验证通过。binary/ZIP摘要见package.json，签名见signature.json，安装见install.json。GitHub上传和匿名下载结果随后单独记录published.json。
+已签名ZIP 15,432,666字节，45文件往返哈希、ZIP CRC和解压签名验证通过。binary/ZIP摘要见package.json，签名见signature.json，安装见install.json。GitHub源码与v0.2.8-trial已发布；匿名重新下载15,432,666字节，SHA256与ZIP CRC一致，见published.json。
 
 关键证据：independent-tests-final.json/.log、final-source-hashes.json、ui-acceptance.json、live-acceptance.json、live-windows.json，以及../trial-0.2.8/HANDOFF.md。初次独立回归后CLI证据出口和一项测试补充改变，最终已对冻结源重新运行；不拿旧结果替代新源。
 
