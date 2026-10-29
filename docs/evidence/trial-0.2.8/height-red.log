@@ -1,0 +1,99 @@
+Building for debugging...
+[Constructing description]
+[Planning deferred tasks]
+[62 / 138]
+[64 / 140] PianoCore
+[72 / 184]
+[76 / 220]
+[84 / 220]
+[86 / 220]
+[87 / 220]
+[92 / 220]
+[94 / 220]
+[97 / 220]
+[103 / 220]
+[106 / 220]
+[108 / 220]
+[109 / 220]
+[118 / 220] PianoCore
+[123 / 220] PianoCore
+[125 / 220] PianoCore
+[132 / 220] PianoCore
+[135 / 220]
+[137 / 220]
+[139 / 220]
+[140 / 220] PianoCoreTests-product
+[142 / 220] PianoCore
+[144 / 220]
+[149 / 220] PianoCore
+[152 / 221]
+[153 / 221] PianoCoreTests-product
+[167 / 247] PianoAudio
+[169 / 247] PianoAudio
+[178 / 248] PianoAudio
+[178 / 248]
+[180 / 257]
+[180 / 257] PianoAudio
+[185 / 258] PianoAudioTests-product
+[185 / 266]
+[186 / 266]
+[195 / 266] PianoMac
+[196 / 266]
+[199 / 266] PianoMac
+[205 / 266] PianoAudioTests-product
+[206 / 266] PianoCoreTests-product
+[208 / 266] PianoCoreTests-product
+error: SwiftCompile normal arm64 /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift failed with a nonzero exit code. Command line:     cd /Users/wuming/Desktop/键盘钢琴
+    builtin-SwiftPerFileCompile HeightPreferencesTests.swift
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift:8:30: error: value of type 'AppPreferences' has no member 'heightScale'
+ 6 |         for field in ["", ",\"heightScale\":\"bad\"", ",\"heightScale\":null"] {
+ 7 |             let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"volume\":0.8,\"showKeyLabels\":false\(field)}".utf8))
+ 8 |             XCTAssertEqual(p.heightScale, 1); XCTAssertEqual(p.volume, 0.8); XCTAssertFalse(p.showKeyLabels)
+   |                              `- error: value of type 'AppPreferences' has no member 'heightScale'
+ 9 |         }
+10 |         for (value, expected) in [(-4.0, 0.5), (4.0, 1.8), (1.35, 1.35)] {
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift:12:30: error: value of type 'AppPreferences' has no member 'heightScale'
+10 |         for (value, expected) in [(-4.0, 0.5), (4.0, 1.8), (1.35, 1.35)] {
+11 |             let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"volume\":0.8,\"showKeyLabels\":false,\"heightScale\":\(value)}".utf8))
+12 |             XCTAssertEqual(p.heightScale, expected)
+   |                              `- error: value of type 'AppPreferences' has no member 'heightScale'
+13 |         }
+14 |     }
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift:16:37: error: value of type 'AppPreferences' has no member 'setHeightScale'
+14 |     }
+15 |     func testHeightRoundTripAndNonfiniteIgnored() throws {
+16 |         var p = AppPreferences(); p.setHeightScale(1.8); p.setHeightScale(.nan); p.setHeightScale(.infinity)
+   |                                     `- error: value of type 'AppPreferences' has no member 'setHeightScale'
+17 |         let restored = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+18 |         XCTAssertEqual(restored.heightScale, 1.8); XCTAssertEqual(restored.volume, 0.5)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift:16:60: error: value of type 'AppPreferences' has no member 'setHeightScale'
+14 |     }
+15 |     func testHeightRoundTripAndNonfiniteIgnored() throws {
+16 |         var p = AppPreferences(); p.setHeightScale(1.8); p.setHeightScale(.nan); p.setHeightScale(.infinity)
+   |                                                            `- error: value of type 'AppPreferences' has no member 'setHeightScale'
+17 |         let restored = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+18 |         XCTAssertEqual(restored.heightScale, 1.8); XCTAssertEqual(restored.volume, 0.5)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift:16:84: error: value of type 'AppPreferences' has no member 'setHeightScale'
+14 |     }
+15 |     func testHeightRoundTripAndNonfiniteIgnored() throws {
+16 |         var p = AppPreferences(); p.setHeightScale(1.8); p.setHeightScale(.nan); p.setHeightScale(.infinity)
+   |                                                                                    `- error: value of type 'AppPreferences' has no member 'setHeightScale'
+17 |         let restored = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+18 |         XCTAssertEqual(restored.heightScale, 1.8); XCTAssertEqual(restored.volume, 0.5)
+
+/Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift:18:33: error: value of type 'AppPreferences' has no member 'heightScale'
+16 |         var p = AppPreferences(); p.setHeightScale(1.8); p.setHeightScale(.nan); p.setHeightScale(.infinity)
+17 |         let restored = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
+18 |         XCTAssertEqual(restored.heightScale, 1.8); XCTAssertEqual(restored.volume, 0.5)
+   |                                 `- error: value of type 'AppPreferences' has no member 'heightScale'
+19 |     }
+20 | }
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/DerivedSources/test_entry_point.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/AppPreferencesTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CoordinatorTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/CustomKeymapTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/DockFadeTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/FloatingNoteTests.swift -primary-file /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/GeometryAndDockTests.swift -primary-file /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/MappingTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/PreferencesMigrationTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/ReducerTests.swift /Users/wuming/Desktop/键盘钢琴/Code/Tests/PianoCoreTests/StartupFlowTests.swift -emit-dependencies-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/GeometryAndDockTests.d -emit-const-values-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/GeometryAndDockTests.swiftconstvalues -emit-reference-dependencies-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/GeometryAndDockTests.swiftdeps -serialize-diagnostics-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/GeometryAndDockTests.dia -emit-dependencies-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/HeightPreferencesTests.d -emit-const-values-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/HeightPreferencesTests.swiftconstvalues -emit-reference-dependencies-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/HeightPreferencesTests.swiftdeps -serialize-diagnostics-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/HeightPreferencesTests.dia -target arm64-apple-macos14.0 -module-can-import-version Testing 2084 0 -module-can-import-version XCTest 25229 0 -disable-cross-import-overlay-search -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/AppKit.swiftoverlay -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/CoreGraphics.swiftoverlay -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/CoreImage.swiftoverlay -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/CoreTransferable.swiftoverlay -swift-module-cross-import Testing /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/Testing.framework/Modules/Testing.swiftcrossimport/Foundation.swiftoverlay -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing/libTestingMacros.dylib\#\#TestingMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/PianoCoreTests-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk -I /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Products/Debug -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Products/Debug/PackageFrameworks -F /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Products/Debug -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -module-cache-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -swift-version 5 -Onone -D SWIFT_PACKAGE -D DEBUG -D Xcode -serialize-debugging-options -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/wuming/Desktop/键盘钢琴 -enable-anonymous-context-mangled-names -file-compilation-dir /Users/wuming/Desktop/键盘钢琴 -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/SDKStatCaches.noindex/macosx27.0-26A425-a0facfad118c1a7a18f0aad9463f65497231f6df4def33e022ae2eb8f782df1a.sdkstatcache -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -Xcc -I/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Products/Debug/include -Xcc -I/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/DerivedSources-normal/arm64 -Xcc -I/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/DerivedSources/arm64 -Xcc -I/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name PianoCoreTests -package-name code -const-gather-protocols-file /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/PianoCoreTests_const_extract_protocols.json -disable-clang-spi -clang-target arm64-apple-macos27.0 -target-sdk-version 27.0 -target-sdk-name macosx27.0 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -parse-as-library -o /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/GeometryAndDockTests.o -o /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/HeightPreferencesTests.o -debug-module-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out/Intermediates.noindex/TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/PianoCoreTests.swiftmodule -index-unit-output-path /TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/GeometryAndDockTests.o -index-unit-output-path /TypingPianoProbe.build/Debug/PianoCoreTests-p.build/Objects-normal/arm64/HeightPreferencesTests.o -index-store-path /Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/swiftpm/out -index-system-modules
+[223 / 266] PianoCoreTests-product
+error: Build failed
+error: fatalError

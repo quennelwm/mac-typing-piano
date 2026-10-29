@@ -1,5 +1,9 @@
 import Foundation
 import CoreGraphics
+public enum PianoHeight {
+    public static func normalized(_ value: Double) -> Double { value.isFinite ? min(1.8, max(0.5, value)) : 1 }
+    public static func body(_ scale: Double) -> Double { 112 * normalized(scale) }
+}
 public struct PianoKeyRect {
     public let midi: Int
     public let isBlack: Bool
@@ -29,16 +33,17 @@ public enum PianoGeometry {
 
 extension PianoGeometry {
     /// CR-006 Quiet Ivory 112pt body, top-left coordinates; headroom belongs to the view.
-    public static func quietIvory(mapping: KeyMapping, width: Double) -> [PianoKeyRect] {
+    public static func quietIvory(mapping: KeyMapping, width: Double, heightScale: Double = 1) -> [PianoKeyRect] {
         guard width > 4 else { return [] }
         let slot = (width - 4) / 38
         var white = 0
+        let scale = PianoHeight.normalized(heightScale)
         return mapping.keys.sorted { $0.midiNote < $1.midiNote }.map { key in
             let black = key.pianoKeyColor == "black"
             let x = 2 + Double(white) * slot + (black ? -slot * 0.59 / 2 : 0.35)
             if !black { white += 1 }
             return PianoKeyRect(midi: key.midiNote, isBlack: black,
-                rect: CGRect(x: x, y: 4, width: black ? slot * 0.59 : slot - 0.7, height: black ? 64 : 100))
+                rect: CGRect(x: x, y: 4 * scale, width: black ? slot * 0.59 : slot - 0.7, height: (black ? 64 : 100) * scale))
         }
     }
 }

@@ -1,0 +1,22 @@
+{
+  "runningInstances" : 1,
+  "scope" : "read-only current application window geometry; no screenshot, input capture, or settings changes",
+  "screenFrames" : [
+    "{{0, 0}, {1512, 982}}",
+    "{{-1920, 0}, {1920, 1080}}"
+  ],
+  "windows" : [
+    {
+      "kCGWindowAlpha" : 1,
+      "kCGWindowBounds" : {
+        "Height" : 292,
+        "Width" : 1496,
+        "X" : 8,
+        "Y" : 690
+      },
+      "kCGWindowIsOnscreen" : true,
+      "kCGWindowLayer" : 3,
+      "kCGWindowOwnerPID" : 93231
+    }
+  ]
+}

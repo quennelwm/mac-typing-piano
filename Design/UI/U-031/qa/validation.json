@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "date": "2026-10-29 Asia/Shanghai",
+  "environment": "macOS-27.2-arm64-arm-64bit",
+  "checkCount": 42649,
+  "failed": [],
+  "layouts": 9,
+  "nativeLabels": 576,
+  "continuousNoteEnvelopes": 1152,
+  "faceCenterSamples": 2304,
+  "centerAlphaRange8bit": {
+    "white": [
+      221,
+      227
+    ],
+    "black": [
+      215,
+      223
+    ]
+  },
+  "labelContrastSamples": 7560,
+  "minimumNominalContrast": {
+    "white": 1.3588058238955758,
+    "black": 1.8393782058378179
+  },
+  "contrastMeaning": "Configured label color/alpha composited on actual surface pixels plus three synthetic backgrounds; not antialias edge contrast or WCAG pass. Subtle labels explicitly requested.",
+  "minimumBackdropRGBDelta": 29.333333333333343,
+  "minimumNoteMarginsPt": [
+    8.185595567867034,
+    0.18559556786726716,
+    18.254847645429365,
+    54
+  ],
+  "frozenOriginalsVerified": 182,
+  "scope": "Offscreen native vector/CoreText and synthetic compositing only. No real desktop backdrop, native Liquid Glass API, live slider/preferences/input/audio/Dock/OS accessibility tested.",
+  "intermediateImages": "Regenerable external cache via TYPING_PIANO_UI_QA_CACHE; not deliverables."
+}

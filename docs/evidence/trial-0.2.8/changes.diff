@@ -1,0 +1,1054 @@
+--- before/Code/Sources/PianoCore/AppPreferences.swift
++++ after/Code/Sources/PianoCore/AppPreferences.swift
+@@ -1,10 +1,22 @@
+ import Foundation
+-/// Only app-owned volume and label visibility; contains no input history or system settings.
++/// App-owned presentation/audio preferences; no input history or system settings.
+ public struct AppPreferences: Codable {
+     public private(set) var volume: Double = 0.5
+     public var showKeyLabels = true
++    public private(set) var heightScale: Double = 1
+     public var outputGain: Float { Float(volume * 0.16) }
+     public init() {}
++    private enum CodingKeys: String, CodingKey { case volume, showKeyLabels, heightScale }
++    public init(from decoder: Decoder) throws {
++        let values = try decoder.container(keyedBy: CodingKeys.self)
++        setVolume((try? values.decode(Double.self, forKey: .volume)) ?? 0.5)
++        showKeyLabels = (try? values.decode(Bool.self, forKey: .showKeyLabels)) ?? true
++        setHeightScale((try? values.decode(Double.self, forKey: .heightScale)) ?? 1)
++    }
++    public mutating func setHeightScale(_ value: Double) {
++        guard value.isFinite else { return }
++        heightScale = (PianoHeight.normalized(value) * 100).rounded() / 100
++    }
+     public mutating func setVolume(_ value: Double) {
+         guard value.isFinite else { return }
+         volume = min(1, max(0, value))
+--- before/Code/Sources/PianoCore/FloatingNotes.swift
++++ after/Code/Sources/PianoCore/FloatingNotes.swift
+@@ -28,7 +28,7 @@
+             instances.removeValue(forKey: oldest.pressID)
+         }
+         instances[event.pressID] = FloatingNote(pressID: event.pressID, midi: event.midiNote, startedAt: time,
+-            duration: reducedMotion ? 0.2 : 0.9, rise: reducedMotion ? 0 : 48)
++            duration: reducedMotion ? 0.2 : 0.95, rise: reducedMotion ? 0 : 100)
+     }
+     public mutating func expire(at time: TimeInterval) {
+         instances = instances.filter { time + 0.000000001 < $0.value.startedAt + $0.value.duration }
+@@ -51,7 +51,7 @@
+             return FloatingPresentation(pressID: note.pressID, midi: note.midi,
+                 rise: note.rise * (1 - pow(1 - t, 3)),
+                 opacity: note.rise == 0 ? 1 - t : max(0, min(1, elapsed / 0.08, (note.duration - elapsed) / 0.5)),
+-                driftX: note.rise == 0 ? 0 : 4 * (1 - pow(1 - t, 3)))
++                driftX: note.rise == 0 ? 0 : 8 * (1 - pow(1 - t, 3)))
+         }
+     }
+ }
+--- before/Code/Sources/PianoCore/Geometry.swift
++++ after/Code/Sources/PianoCore/Geometry.swift
+@@ -1,5 +1,9 @@
+ import Foundation
+ import CoreGraphics
++public enum PianoHeight {
++    public static func normalized(_ value: Double) -> Double { value.isFinite ? min(1.8, max(0.5, value)) : 1 }
++    public static func body(_ scale: Double) -> Double { 112 * normalized(scale) }
++}
+ public struct PianoKeyRect {
+     public let midi: Int
+     public let isBlack: Bool
+@@ -29,16 +33,17 @@
+ 
+ extension PianoGeometry {
+     /// CR-006 Quiet Ivory 112pt body, top-left coordinates; headroom belongs to the view.
+-    public static func quietIvory(mapping: KeyMapping, width: Double) -> [PianoKeyRect] {
++    public static func quietIvory(mapping: KeyMapping, width: Double, heightScale: Double = 1) -> [PianoKeyRect] {
+         guard width > 4 else { return [] }
+         let slot = (width - 4) / 38
+         var white = 0
++        let scale = PianoHeight.normalized(heightScale)
+         return mapping.keys.sorted { $0.midiNote < $1.midiNote }.map { key in
+             let black = key.pianoKeyColor == "black"
+             let x = 2 + Double(white) * slot + (black ? -slot * 0.59 / 2 : 0.35)
+             if !black { white += 1 }
+             return PianoKeyRect(midi: key.midiNote, isBlack: black,
+-                rect: CGRect(x: x, y: 4, width: black ? slot * 0.59 : slot - 0.7, height: black ? 64 : 100))
++                rect: CGRect(x: x, y: 4 * scale, width: black ? slot * 0.59 : slot - 0.7, height: (black ? 64 : 100) * scale))
+         }
+     }
+ }
+--- before/Code/Sources/PianoMac/AdaptiveOverlay.swift
++++ after/Code/Sources/PianoMac/AdaptiveOverlay.swift
+@@ -1,11 +1,13 @@
+ import Foundation
++import PianoCore
+ 
+ public enum AdaptiveOverlay {
+     public static let bodyHeight: CGFloat = 112
+-    public static let headroom: CGFloat = 96
+-    public static let canvasHeight: CGFloat = 208
+-    public static func frame(screen: CGRect) -> CGRect {
++    public static let headroom: CGFloat = 144
++    public static var canvasHeight: CGFloat { height(scale: 1) }
++    public static func height(scale: Double) -> CGFloat { headroom + PianoHeight.body(scale) }
++    public static func frame(screen: CGRect, heightScale: Double = 1) -> CGRect {
+         CGRect(x: screen.minX + 8, y: screen.minY,
+-               width: max(1, screen.width - 16), height: canvasHeight)
++               width: max(1, screen.width - 16), height: height(scale: heightScale))
+     }
+ }
+--- before/Code/Sources/PianoMac/CrystalEvidence.swift
++++ after/Code/Sources/PianoMac/CrystalEvidence.swift
+@@ -0,0 +1,83 @@
++import AppKit
++import PianoCore
++
++/// Bounded production offscreen evidence: seven images, all other combinations use geometry metrics.
++public enum CrystalEvidence {
++    public static func render(mapping: KeyMapping, directory: URL) throws -> [String: Any] {
++        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
++        var layouts: [[String: Any]] = [], motion: [[String: Any]] = [], captures: [[String: Any]] = []
++        for width in [1264.0, 1496, 1904] {
++            for scale in [0.5, 1, 1.8] {
++                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 256))
++                view.automaticAnimation = false; view.clock = { 0 }; view.setHeightScale(scale)
++                let labelsOK = view.labelMetrics.allSatisfy { $0.insideKey && !$0.overlap && $0.missingGlyphs == 0 }
++                var alpha: [[String: Any]] = []
++                for opaque in [false, true] {
++                    view.reducedTransparency = opaque
++                    let bitmap = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
++                    let keys = PianoGeometry.quietIvory(mapping: mapping, width: width, heightScale: scale)
++                    for black in [false, true] {
++                        let values = keys.filter { $0.isBlack == black }.compactMap { shape -> CGFloat? in
++                            let y = 144 + shape.rect.minY + shape.rect.height * (black ? 0.5 : 0.85)
++                            return bitmap.colorAt(x: Int(shape.rect.midX * 2), y: Int(y * 2))?.alphaComponent
++                        }
++                        alpha.append(["black": black, "reducedTransparency": opaque, "count": values.count,
++                                      "minAlpha": values.min() ?? -1, "maxAlpha": values.max() ?? -1])
++                    }
++                }
++                layouts.append(["widthPt": width, "heightScale": scale, "bodyHeightPt": PianoHeight.body(scale),
++                                "canvasHeightPt": view.bounds.height, "headroomPt": 144, "keyCount": view.labelMetrics.count,
++                                "allLabelsInsideNoOverlapNoMissingGlyphs": labelsOK, "faceAlpha": alpha])
++                for reduced in [false, true] {
++                    view.resetEffects(); view.reducedMotion = reduced
++                    var coordinator = NoteCoordinator(mapping: mapping)
++                    for key in mapping.keys {
++                        _ = coordinator.consume(.init(key.physicalKeyID, .down))
++                        if let event = coordinator.lastStrike { view.strike(event, at: 0) }
++                    }
++                    for time in [0.0, 0.475, 0.949, 0.95] {
++                        view.advanceAnimations(at: time)
++                        let boxes = view.floatingInkBounds
++                        motion.append(["widthPt": width, "heightScale": scale, "reducedMotion": reduced,
++                                       "timeMs": Int((time * 1000).rounded()), "instances": view.floatingCount,
++                                       "allInkAndHaloInsideCanvas": boxes.allSatisfy { view.bounds.contains($0) },
++                                       "minX": boxes.map(\.minX).min() ?? 0, "maxX": boxes.map(\.maxX).max() ?? 0,
++                                       "minY": boxes.map(\.minY).min() ?? 0, "maxY": boxes.map(\.maxY).max() ?? 0])
++                    }
++                }
++            }
++        }
++        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1264, height: 256))
++        view.automaticAnimation = false; view.clock = { 0 }
++        func capture(_ name: String, background: String? = nil) throws {
++            try view.savePNG(to: directory.appendingPathComponent(name), scale: 2, syntheticBackground: background)
++            captures.append(["file": name, "heightScale": view.heightScale, "canvasHeightPt": view.bounds.height,
++                             "syntheticBackground": background ?? "transparent", "reducedTransparency": view.reducedTransparency])
++        }
++        for scale in [0.5, 1, 1.8] {
++            view.setHeightScale(scale); try capture("crystal-\(Int(scale * 100)).png")
++        }
++        view.setHeightScale(1)
++        try capture("crystal-white.png", background: "white")
++        try capture("crystal-dark.png", background: "dark")
++        var coordinator = NoteCoordinator(mapping: mapping)
++        for key in ["keyG", "space", "arrowRight"] {
++            _ = coordinator.consume(.init(key, .down))
++            if let event = coordinator.lastStrike { view.strike(event, at: 0) }
++        }
++        view.activeMIDI = Set(coordinator.active.values.map { $0.key.midiNote })
++        view.advanceAnimations(at: 0.475)
++        try capture("crystal-color-pressed-475ms.png", background: "color")
++        view.resetEffects(); view.activeMIDI = []; view.advanceAnimations(at: 1)
++        view.reducedTransparency = true
++        try capture("crystal-reduced-transparency.png")
++        let passed = layouts.allSatisfy { $0["allLabelsInsideNoOverlapNoMissingGlyphs"] as? Bool == true }
++            && motion.allSatisfy { $0["allInkAndHaloInsideCanvas"] as? Bool == true }
++        let report: [String: Any] = ["passed": passed, "kind": "production offscreen vectors; synthetic backgrounds, no desktop capture",
++                                    "materialVersion": "u031.1", "images": captures, "layouts": layouts, "motion": motion,
++                                    "hardwareInput": false, "hardwareAudio": false, "systemSettingsWritten": false]
++        try JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]).write(to: directory.appendingPathComponent("report.json"))
++        return ["passed": passed, "imageCount": captures.count, "layoutCount": layouts.count, "motionSamples": motion.count,
++                "outputDirectory": directory.path, "appGUIStarted": false, "screenCaptured": false]
++    }
++}
+--- before/Code/Sources/PianoMac/OverlayWindowEvidence.swift
++++ after/Code/Sources/PianoMac/OverlayWindowEvidence.swift
+@@ -6,7 +6,7 @@
+     public static func run(mapping: KeyMapping) -> [String: Any] {
+         let before = NSWorkspace.shared.frontmostApplication?.processIdentifier
+         let frame = NSRect(x: NSScreen.main?.visibleFrame.midX ?? 400,
+-                           y: NSScreen.main?.visibleFrame.midY ?? 400, width: 360, height: 208)
++                           y: NSScreen.main?.visibleFrame.midY ?? 400, width: 360, height: AdaptiveOverlay.canvasHeight)
+         let panel = ProbePanel(content: PianoView(mapping: mapping, frame: NSRect(origin: .zero, size: frame.size)))
+         panel.setFrame(frame, display: false)
+         func window(_ level: NSWindow.Level) -> NSWindow {
+--- before/Code/Sources/PianoMac/PianoView.swift
++++ after/Code/Sources/PianoMac/PianoView.swift
+@@ -35,6 +35,13 @@
+         }
+     }
+     public private(set) var mapping: KeyMapping
++    public private(set) var heightScale: Double = 1
++    public var reducedTransparency = false { didSet { if oldValue != reducedTransparency { needsDisplay = true } } }
++    public func setHeightScale(_ value: Double) {
++        heightScale = PianoHeight.normalized(value)
++        setFrameSize(NSSize(width: bounds.width, height: AdaptiveOverlay.height(scale: heightScale)))
++        // Preserve held keys, mouse release ownership and all animation/press IDs.
++    }
+     public var showLabels = true { didSet { if oldValue != showLabels { needsDisplay = true } } }
+     public var activeMIDI: Set<Int> = [] { didSet { if oldValue != activeMIDI { updateKeys(from: oldValue, at: clock()) } } }
+     public var reducedMotion = false { didSet { if oldValue != reducedMotion { resetEffects(); motions.removeAll(); needsDisplay = true } } }
+@@ -63,10 +70,13 @@
+         let ink = CTLineGetBoundsWithOptions(floatingLine, .useGlyphPathBounds)
+         return floatingPresentations.compactMap { note in
+             guard let shape = keys.first(where: { $0.shape.midi == note.midi })?.shape else { return nil }
+-            return CGRect(x: shape.rect.midX - ink.midX + note.driftX + ink.minX,
++            return CGRect(x: floatingX(shape, note, ink) + ink.minX,
+                 y: AdaptiveOverlay.headroom + shape.rect.minY - 4 - note.rise + ink.minY - ink.maxY,
+                 width: ink.width, height: ink.height).insetBy(dx: -4, dy: -4)
+         }
++    }
++    private func floatingX(_ shape: PianoKeyRect, _ note: FloatingPresentation, _ ink: CGRect) -> CGFloat {
++        min(bounds.width - 4 - ink.maxX, max(4 - ink.minX, shape.rect.midX - ink.midX + note.driftX))
+     }
+     private var keys: [Key] = []
+     private var floating = FloatingNotes()
+@@ -90,15 +100,15 @@
+     }
+     required init?(coder: NSCoder) { fatalError("init(coder:) unavailable") }
+     public override func setFrameSize(_ size: NSSize) { super.setFrameSize(size); rebuildKeys() }
+-    private static func color(_ hex: String) -> CGColor {
++    private static func color(_ hex: String, alpha: CGFloat = 1) -> CGColor {
+         let n = UInt32(hex, radix: 16)!
+-        return CGColor(colorSpace: CGColorSpace(name: CGColorSpace.sRGB)!, components: [CGFloat((n >> 16)&255)/255, CGFloat((n >> 8)&255)/255, CGFloat(n&255)/255, 1])!
+-    }
+-    private static func line(_ text: String, _ size: CGFloat, _ color: String) -> CTLine {
+-        CTLineCreateWithAttributedString(NSAttributedString(string: text, attributes: [.font: NSFont.systemFont(ofSize: size, weight: .medium), .foregroundColor: NSColor(cgColor: Self.color(color))!]))
+-    }
+-    private func makeLabel(_ text: String, size: CGFloat, color: String, x: CGFloat, bottom: CGFloat) -> Label {
+-        let line = Self.line(text, size, color), ink = CTLineGetBoundsWithOptions(line, .useGlyphPathBounds)
++        return CGColor(colorSpace: CGColorSpace(name: CGColorSpace.sRGB)!, components: [CGFloat((n >> 16)&255)/255, CGFloat((n >> 8)&255)/255, CGFloat(n&255)/255, alpha])!
++    }
++    private static func line(_ text: String, _ size: CGFloat, _ color: String, alpha: CGFloat = 1) -> CTLine {
++        CTLineCreateWithAttributedString(NSAttributedString(string: text, attributes: [.font: NSFont.systemFont(ofSize: size, weight: .medium), .foregroundColor: NSColor(cgColor: Self.color(color, alpha: alpha))!]))
++    }
++    private func makeLabel(_ text: String, size: CGFloat, color: String, alpha: CGFloat = 1, x: CGFloat, bottom: CGFloat) -> Label {
++        let line = Self.line(text, size, color, alpha: alpha), ink = CTLineGetBoundsWithOptions(line, .useGlyphPathBounds)
+         var missing = 0
+         var fonts: [String] = []
+         for run in CTLineGetGlyphRuns(line) as! [CTRun] {
+@@ -112,15 +122,16 @@
+             ink: CGRect(x: x + ink.minX, y: bottom + ink.minY - ink.maxY, width: ink.width, height: ink.height), missing: missing, fonts: fonts)
+     }
+     private func rebuildKeys() {
+-        keys = PianoGeometry.quietIvory(mapping: mapping, width: bounds.width).map { shape in
++        keys = PianoGeometry.quietIvory(mapping: mapping, width: bounds.width, heightScale: heightScale).map { shape in
+             let key = mapping.keys.first { $0.midiNote == shape.midi }!, r = shape.rect, black = shape.isBlack
+-            let color = black ? "CDCDCD" : "595959", size: CGFloat = black ? 9.5 : 10
++            let color = black ? "414B55" : "969FA9", size: CGFloat = black ? 9.5 : 10
++            let alpha: CGFloat = black ? 0.84 : 0.86
+             let ink = CTLineGetBoundsWithOptions(Self.line(key.labelParts.main, size, color), .useGlyphPathBounds)
+-            let main = makeLabel(key.labelParts.main, size: size, color: color, x: r.midX - ink.midX - (key.labelParts.side == nil ? 0 : 0.6), bottom: r.maxY - (black ? 3 : 4))
++            let main = makeLabel(key.labelParts.main, size: size, color: color, alpha: alpha, x: r.midX - ink.midX - (key.labelParts.side == nil ? 0 : 0.6), bottom: r.maxY - (black ? 3 : 4))
+             var labels = [main]
+             if let side = key.labelParts.side {
+                 let ink = CTLineGetBoundsWithOptions(Self.line(side, 6.5, color), .useGlyphPathBounds)
+-                labels.append(makeLabel(side, size: 6.5, color: color, x: r.maxX - 1.1 - ink.maxX, bottom: main.ink.minY + (black ? -0.6 : 2)))
++                labels.append(makeLabel(side, size: 6.5, color: color, alpha: alpha, x: r.maxX - 1.1 - ink.maxX, bottom: main.ink.minY + (black ? -0.6 : 2)))
+             }
+             return Key(shape: shape, labels: labels)
+         }
+@@ -198,28 +209,55 @@
+         ctx.saveGState(); ctx.translateBy(x: x, y: baseline); ctx.scaleBy(x: 1, y: -1)
+         ctx.textMatrix = .identity; ctx.textPosition = .zero; CTLineDraw(line, ctx); ctx.restoreGState()
+     }
++    private func keyTravel(_ key: Key) -> Double {
++        reducedMotion ? 0 : keyDepression(midi: key.shape.midi, at: sampleTime) * (key.shape.isBlack ? 1.5 : 2) * heightScale
++    }
++    private func keyFace(_ key: Key) -> CGPath {
++        CGPath(roundedRect: key.shape.rect.offsetBy(dx: 0, dy: keyTravel(key)), cornerWidth: 2.5, cornerHeight: 2.5, transform: nil)
++    }
+     private func render(_ ctx: CGContext) {
+         ctx.saveGState(); ctx.translateBy(x: 0, y: AdaptiveOverlay.headroom)
+-        fill(ctx, CGRect(x: 0, y: 0, width: bounds.width, height: AdaptiveOverlay.bodyHeight), "353638", 3)
+-        fill(ctx, CGRect(x: 1, y: 2, width: bounds.width - 2, height: 106), "71716E", 2)
++        // U-031: a translucent underlay, never the old opaque full-width backing.
++        let body = CGRect(x: 0, y: 0, width: bounds.width, height: PianoHeight.body(heightScale))
++        ctx.setFillColor(Self.color("526174", alpha: 0.10))
++        ctx.addPath(CGPath(roundedRect: body, cornerWidth: 4, cornerHeight: 4, transform: nil)); ctx.fillPath()
++        let blackFaces = keys.filter { $0.shape.isBlack }.map { keyFace($0) }
+         for black in [false, true] {
+             for key in keys where key.shape.isBlack == black {
+-                let midi = key.shape.midi, r = key.shape.rect
+-                let amount = keyDepression(midi: midi, at: sampleTime)
+-                let down = activeMIDI.contains(midi) || amount > 0
+-                ctx.saveGState(); ctx.translateBy(x: 0, y: reducedMotion ? 0 : amount * (black ? 1.5 : 2))
+-                if black {
+-                    ctx.saveGState(); ctx.setShadow(offset: CGSize(width: 0, height: down ? 0.5 : 1), blur: down ? 0.5 : 1.5, color: CGColor(gray: 0, alpha: down ? 0.18 : 0.3))
+-                    fill(ctx, r, "242528", 1.2); ctx.restoreGState()
++                let offset = keyTravel(key), r = key.shape.rect.offsetBy(dx: 0, dy: offset)
++                let down = activeMIDI.contains(key.shape.midi) || keyDepression(midi: key.shape.midi, at: sampleTime) > 0
++                let path = keyFace(key)
++                ctx.saveGState()
++                if !black {
++                    // Subtract transformed black faces before painting white, including pressed black keys.
++                    ctx.addRect(body.insetBy(dx: -4, dy: -4))
++                    for face in blackFaces { ctx.addPath(face) }
++                    ctx.clip(using: .evenOdd)
+                 }
+-                ctx.saveGState(); ctx.addPath(CGPath(roundedRect: r, cornerWidth: black ? 1.2 : 1, cornerHeight: black ? 1.2 : 1, transform: nil)); ctx.clip()
+-                let colors = black ? (down ? ["303134", "1B1C1F"] : ["424346", "242528"]) : (down ? ["E7E5DF", "D8D6D1"] : ["FEFDFB", "EEEDE9"])
+-                let gradient = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB), colors: colors.map(Self.color) as CFArray, locations: [0, 1])!
++                // Edge-only shadow; no filled dark duplicate underneath a translucent face.
++                ctx.saveGState()
++                ctx.setShadow(offset: CGSize(width: 0, height: 1), blur: 1.5, color: Self.color("26364A", alpha: down ? 0.10 : 0.16))
++                ctx.setStrokeColor(Self.color("26364A", alpha: down ? 0.10 : 0.16)); ctx.setLineWidth(0.5)
++                ctx.addPath(path); ctx.strokePath(); ctx.restoreGState()
++                ctx.saveGState(); ctx.addPath(path); ctx.clip()
++                let colors: [CGColor]
++                if reducedTransparency {
++                    colors = (black ? ["AFBECE", "8494A7"] : ["F4F7FA", "DFE7EF"]).map { Self.color($0) }
++                } else if black {
++                    colors = down ? [Self.color("ACBDCF", alpha: 0.82), Self.color("73859A", alpha: 0.90)]
++                                  : [Self.color("BAC8D8", alpha: 0.78), Self.color("8191A3", alpha: 0.88)]
++                } else {
++                    colors = down ? [Self.color("E9F0F7", alpha: 0.90), Self.color("CDD9E6", alpha: 0.85)]
++                                  : [Self.color("FFFFFF", alpha: 0.88), Self.color("E4ECF4", alpha: 0.82)]
++                }
++                let gradient = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB), colors: colors as CFArray, locations: [0, 1])!
+                 ctx.drawLinearGradient(gradient, start: CGPoint(x: r.midX, y: r.minY), end: CGPoint(x: r.midX, y: r.maxY), options: [])
+-                fill(ctx, CGRect(x: r.minX, y: r.maxY - (black ? 2 : 2.5), width: r.width, height: black ? 2 : 2.5), black ? (down ? "141518" : "17181B") : (down ? "C3C1BC" : "D5D3CE"))
+-                ctx.setStrokeColor(Self.color(black ? "58595C" : "FFFFFF")); ctx.setLineWidth(0.5)
+-                ctx.move(to: CGPoint(x: r.minX + 1, y: r.minY + 0.5)); ctx.addLine(to: CGPoint(x: r.maxX - 1, y: r.minY + 0.5)); ctx.strokePath(); ctx.restoreGState()
+-                if showLabels { for label in key.labels { drawLine(ctx, label.line, x: label.x, baseline: label.baseline) } }
++                ctx.setStrokeColor(Self.color(black ? "F3F8FF" : "FFFFFF", alpha: black ? 0.55 : 0.72)); ctx.setLineWidth(0.7)
++                ctx.addPath(CGPath(roundedRect: r.insetBy(dx: 0.35, dy: 0.35), cornerWidth: 2.15, cornerHeight: 2.15, transform: nil)); ctx.strokePath()
++                ctx.setStrokeColor(Self.color(black ? "334357" : "788BA2", alpha: black ? 0.30 : 0.22)); ctx.setLineWidth(1)
++                ctx.move(to: CGPoint(x: r.minX + 2.5, y: r.maxY - 1)); ctx.addLine(to: CGPoint(x: r.maxX - 2.5, y: r.maxY - 1)); ctx.strokePath()
++                ctx.restoreGState()
++                if showLabels { for label in key.labels { drawLine(ctx, label.line, x: label.x, baseline: label.baseline + offset) } }
+                 ctx.restoreGState()
+             }
+         }
+@@ -227,24 +265,42 @@
+         for note in floatingPresentations {
+             guard let shape = keys.first(where: { $0.shape.midi == note.midi })?.shape else { continue }
+             ctx.saveGState(); ctx.setAlpha(note.opacity); ctx.setShadow(offset: .zero, blur: 1.25, color: CGColor(gray: 1, alpha: 0.9))
+-            drawLine(ctx, floatingLine, x: shape.rect.midX - ink.midX + note.driftX, baseline: shape.rect.minY - 4 - note.rise + ink.minY)
++            drawLine(ctx, floatingLine, x: floatingX(shape, note, ink), baseline: shape.rect.minY - 4 - note.rise + ink.minY)
+             ctx.restoreGState()
+         }
+         ctx.restoreGState()
+     }
+     public override func draw(_ dirtyRect: NSRect) { if let ctx = NSGraphicsContext.current?.cgContext { render(ctx) } }
+     public override func mouseDown(with event: NSEvent) {
+-        let point = convert(event.locationInWindow, from: nil); let body = CGPoint(x: point.x, y: point.y - AdaptiveOverlay.headroom)
+-        let key = keys.filter { $0.shape.isBlack }.first { $0.shape.rect.contains(body) } ?? keys.filter { !$0.shape.isBlack }.first { $0.shape.rect.contains(body) }
+-        guard let key, let physical = mapping.keys.first(where: { $0.midiNote == key.shape.midi }) else { return }
+-        mouseKey = physical.physicalKeyID; onPress?(physical.physicalKeyID)
++        let point = convert(event.locationInWindow, from: nil)
++        guard let physical = physicalKey(atCanvasPoint: point) else { return }
++        mouseKey = physical; onPress?(physical)
++    }
++    func physicalKey(atCanvasPoint point: CGPoint) -> String? {
++        let body = CGPoint(x: point.x, y: point.y - AdaptiveOverlay.headroom)
++        let key = keys.filter { $0.shape.isBlack }.first { keyFace($0).contains(body) } ?? keys.filter { !$0.shape.isBlack }.first { keyFace($0).contains(body) }
++        guard let key else { return nil }
++        return mapping.keys.first(where: { $0.midiNote == key.shape.midi })?.physicalKeyID
+     }
+     public override func mouseUp(with event: NSEvent) { if let mouseKey { onRelease?(mouseKey) }; mouseKey = nil }
+-    public func savePNG(to url: URL, scale: Int = 2) throws {
+-        let w = Int(bounds.width) * scale, h = Int(bounds.height) * scale
++    public func renderedImage(scale: Int = 2, syntheticBackground: String? = nil) throws -> CGImage {
++        guard (1...2).contains(scale) else { throw ProbeError.invalid("预览倍率必须为1或2") }
++        let w = Int(ceil(bounds.width * CGFloat(scale))), h = Int(ceil(bounds.height * CGFloat(scale)))
+         guard let ctx = CGContext(data: nil, width: w, height: h, bitsPerComponent: 8, bytesPerRow: w * 4, space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue) else { throw ProbeError.invalid("无法建立预览位图") }
+-        ctx.scaleBy(x: CGFloat(scale), y: CGFloat(scale)); ctx.translateBy(x: 0, y: bounds.height); ctx.scaleBy(x: 1, y: -1); render(ctx)
+-        guard let image = ctx.makeImage(), let png = NSBitmapImageRep(cgImage: image).representation(using: .png, properties: [:]) else { throw ProbeError.invalid("无法编码预览PNG") }
++        ctx.scaleBy(x: CGFloat(scale), y: CGFloat(scale)); ctx.translateBy(x: 0, y: bounds.height); ctx.scaleBy(x: 1, y: -1)
++        if let syntheticBackground {
++            let colors = syntheticBackground == "color" ? ["B9D9DC", "D8BBD0", "D7DDBA"] : [syntheticBackground == "dark" ? "202733" : "FFFFFF"]
++            for (i, color) in colors.enumerated() {
++                fill(ctx, CGRect(x: CGFloat(i) * bounds.width / CGFloat(colors.count), y: 0, width: bounds.width / CGFloat(colors.count), height: bounds.height), color)
++            }
++        }
++        render(ctx)
++        guard let image = ctx.makeImage() else { throw ProbeError.invalid("无法建立预览图像") }
++        return image
++    }
++    public func savePNG(to url: URL, scale: Int = 2, syntheticBackground: String? = nil) throws {
++        let image = try renderedImage(scale: scale, syntheticBackground: syntheticBackground)
++        guard let png = NSBitmapImageRep(cgImage: image).representation(using: .png, properties: [:]) else { throw ProbeError.invalid("无法编码预览PNG") }
+         try png.write(to: url)
+     }
+     deinit { animationTimer?.invalidate() }
+--- before/Code/Sources/PianoMac/ProbeController.swift
++++ after/Code/Sources/PianoMac/ProbeController.swift
+@@ -15,6 +15,11 @@
+     private let sources: [AudioSource]
+     private let preferencesURL: URL
+     private var preferences: AppPreferences
++    private var preferencesSaveTimer: Timer?
++    private var preferencesDirty = false
++    private var preferencesSaveError: String?
++    var confirmUnsavedPreferencesExit: ((String) -> Bool)? // Test seam; nil presents the actual native decision.
++    private var previewHeightConstraint: NSLayoutConstraint?
+     private var statusMenu: ProbeMenu?
+     private let startupFlow: StartupFlow
+     private let startupWindowPresenter: (() -> Void)?
+@@ -104,7 +109,9 @@
+         buildWindow()
+         buildStartupWindow()
+         installSafetyHooks()
+-        let menu = ProbeMenu(volume: preferences.volume, sources: sources, installStatusItem: installStatusItem)
++        let menu = ProbeMenu(volume: preferences.volume, heightScale: preferences.heightScale, sources: sources, installStatusItem: installStatusItem)
++        menu.onHeight = { [weak self] in self?.changeHeight($0) }
++        menu.onDidClose = { [weak self] in self?.flushPreferences() }
+         menu.onStartup = { [weak self] in self?.showStartupWindow() }
+         menu.onDownload = { [weak self] in self?.downloadNewVersion() }
+         menu.onMuteAlerts = { [weak self] in self?.toggleAlertMute() }
+@@ -182,14 +189,36 @@
+         else { window.orderFront(nil) }
+         refresh()
+     }
+-    private func changeVolume(_ value: Double) {
++    func changeVolume(_ value: Double) {
+         preferences.setVolume(value)
+         audio.setVolume(preferences.volume)
+         savePreferences()
+     }
+     private func savePreferences() {
+-        do { try preferences.save(to: preferencesURL) }
+-        catch { status.stringValue = "偏好保存失败：\(error.localizedDescription)"; showControlWindow() }
++        do {
++            try preferences.save(to: preferencesURL)
++            preferencesDirty = false; preferencesSaveError = nil; statusMenu?.setPreferencesSaveError(nil)
++        } catch {
++            preferencesDirty = true; preferencesSaveError = error.localizedDescription
++            status.stringValue = "偏好保存失败：\(error.localizedDescription)"
++            statusMenu?.setPreferencesSaveError(preferencesSaveError)
++        }
++    }
++    func changeHeight(_ value: Double) {
++        guard value.isFinite else { return }
++        preferences.setHeightScale(value); preferencesDirty = true
++        preview?.setHeightScale(preferences.heightScale); overlayView?.setHeightScale(preferences.heightScale)
++        previewHeightConstraint?.constant = AdaptiveOverlay.height(scale: preferences.heightScale)
++        // Grow the existing console to fit its native view; do not show or activate it.
++        window?.setContentSize(NSSize(width: 1040, height: 680 + AdaptiveOverlay.height(scale: preferences.heightScale) - 208))
++        positionPanel(); statusMenu?.setHeight(preferences.heightScale)
++        preferencesSaveTimer?.invalidate()
++        let timer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { [weak self] _ in self?.flushPreferences() }
++        preferencesSaveTimer = timer; RunLoop.main.add(timer, forMode: .common)
++    }
++    func flushPreferences() {
++        preferencesSaveTimer?.invalidate(); preferencesSaveTimer = nil
++        if preferencesDirty { savePreferences() }
+     }
+     private func button(_ title: String, _ action: Selector) -> NSButton { NSButton(title: title, target: self, action: action) }
+     private func buildWindow() {
+@@ -206,7 +235,9 @@
+         second.orientation = .horizontal; second.spacing = 8
+         preview = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
+         preview.translatesAutoresizingMaskIntoConstraints = false
+-        preview.heightAnchor.constraint(equalToConstant: AdaptiveOverlay.canvasHeight).isActive = true
++        preview.setHeightScale(preferences.heightScale)
++        previewHeightConstraint = preview.heightAnchor.constraint(equalToConstant: AdaptiveOverlay.height(scale: preferences.heightScale))
++        previewHeightConstraint?.isActive = true
+         preview.widthAnchor.constraint(equalToConstant: 1000).isActive = true
+         preview.onPress = { [weak self] key in
+             guard let self, self.input.mode != .stopped else { return }
+@@ -224,9 +255,11 @@
+         window.contentView!.addSubview(stack)
+         NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor, constant: 20), stack.topAnchor.constraint(equalTo: window.contentView!.topAnchor, constant: 18), stack.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor, constant: -20)])
+         overlayView = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
++        overlayView.setHeightScale(preferences.heightScale)
+         panel = ProbePanel(content: overlayView)
+         preview.showLabels = labels; overlayView.showLabels = labels
+         positionPanel()
++        window.setContentSize(NSSize(width: 1040, height: 680 + AdaptiveOverlay.height(scale: preferences.heightScale) - 208))
+     }
+     private func positionPanel() {
+         let screens = NSScreen.screens
+@@ -237,7 +270,7 @@
+             } ?? NSScreen.main ?? screens.first
+         }
+         guard let screen = targetScreen else { panel.alphaValue = 0; panel.orderOut(nil); return }
+-        panel.setFrame(AdaptiveOverlay.frame(screen: screen.frame), display: true)
++        panel.setFrame(AdaptiveOverlay.frame(screen: screen.frame, heightScale: preferences.heightScale), display: true)
+     }
+     @objc private func startLocal() { start(global: false) }
+     @objc private func startGlobal() { start(global: true) }
+@@ -359,6 +392,10 @@
+         result["overlayStatus"] = overlayStatus
+         result["mappingVersion"] = mapping.mappingVersion
+         result["keymapWarning"] = keymapWarning.map { $0 as Any } ?? NSNull()
++        result["heightScale"] = preferences.heightScale
++        result["preferencesSavePending"] = preferencesDirty
++        result["preferencesSaveError"] = preferencesSaveError.map { $0 as Any } ?? NSNull()
++        result["overlayCanvasHeight"] = panel?.frame.height ?? 0
+         result["privacy"] = "Aggregate counters only; no key identities, sequences, samples, microphone, or other-app audio."
+         return result
+     }
+@@ -458,7 +495,7 @@
+         }
+         refresh()
+     }
+-    @objc private func toggleLabels() {
++    @objc func toggleLabels() {
+         labels.toggle(); preview.showLabels = labels; overlayView.showLabels = labels
+         preferences.showKeyLabels = labels; savePreferences(); refresh()
+     }
+@@ -653,11 +690,15 @@
+         notifications.append(access.addObserver(forName: NSWorkspace.accessibilityDisplayOptionsDidChangeNotification, object: nil, queue: .main) { [weak self] _ in
+             let reduced = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
+             self?.preview.reducedMotion = reduced; self?.overlayView.reducedMotion = reduced
++            self?.preview.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
++            self?.overlayView.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
+             self?.dockFade.setReducedMotion(reduced, at: ProcessInfo.processInfo.systemUptime)
+             self?.refresh()
+         })
+         preview.reducedMotion = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
+         overlayView.reducedMotion = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
++        preview.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
++        overlayView.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
+         notifications.append(NotificationCenter.default.addObserver(forName: NSApplication.didResignActiveNotification, object: nil, queue: .main) { [weak self] _ in
+             guard let self, self.input.mode == .local else { return }
+             self.pause("本窗口测试失焦，已清理按键和声音；全局测试不受此规则影响")
+@@ -697,6 +738,12 @@
+         if input.mode == .local || sessionDuration == .test60Seconds { pause("测试控制台已关闭；测试停止") }
+     }
+     public func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
++        flushPreferences()
++        if preferencesDirty, let error = preferencesSaveError {
++            let leave = confirmUnsavedPreferencesExit?(error) ?? (alert("钢琴设置尚未保存", "保存失败：\(error)\n取消退出可保留当前运行状态并重试；仍然退出将丢失本次未保存的设置。", buttons: ["取消退出", "仍然退出"]) == .alertSecondButtonReturn)
++            if !leave { return .terminateCancel }
++        }
++        // Only after accepting pending preference loss may exit restore system state.
+         let result = alertVolume.restore()
+         guard result == .failed else { return .terminateNow }
+         let response = alert("提示音恢复未完成", alertVolume.detail + "\n取消退出可重试或打开系统声音设置；仍然退出可能保留当前提示音设置。", buttons: ["取消退出", "仍然退出"])
+@@ -704,6 +751,7 @@
+         return skipAlertRestoreOnExit ? .terminateNow : .terminateCancel
+     }
+     public func applicationWillTerminate(_ notification: Notification) {
++        flushPreferences()
+         if !skipAlertRestoreOnExit { _ = alertVolume.restore() }
+         keymapEditor?.close()
+         showOverlay = false; dockTimer?.invalidate(); dockTimer = nil
+--- before/Code/Sources/PianoMac/ProbeMenu.swift
++++ after/Code/Sources/PianoMac/ProbeMenu.swift
+@@ -11,6 +11,11 @@
+     public let percentage = NSTextField(labelWithString: "50%")
+     public let icon: NSImage
+     public var onVolume: ((Double) -> Void)?
++    public let heightSlider = NSSlider(value: 1, minValue: 0.5, maxValue: 1.8, target: nil, action: nil)
++    public let heightPercentage = NSTextField(labelWithString: "100%")
++    private let preferencesSaveStatus = NSMenuItem(title: "", action: nil, keyEquivalent: "")
++    public var onHeight: ((Double) -> Void)?
++    public var onDidClose: (() -> Void)?
+     public var onStartup: (() -> Void)?
+     public var onDownload: (() -> Void)?
+     public var onMuteAlerts: (() -> Void)?
+@@ -43,7 +48,7 @@
+     private let dock = NSMenuItem(title: "自动隐藏 Dock", action: nil, keyEquivalent: "")
+     private var sourceItems: [NSMenuItem] = []
+     private let mode = NSMenuItem(title: "Dock：模拟模式，不改系统", action: nil, keyEquivalent: "")
+-    public init(volume: Double, sources: [AudioSource] = [], installStatusItem: Bool = true) {
++    public init(volume: Double, heightScale: Double = 1, sources: [AudioSource] = [], installStatusItem: Bool = true) {
+         slider = NSSlider(value: volume, minValue: 0, maxValue: 1, target: nil, action: nil)
+         icon = NSImage(size: NSSize(width: Self.statusItemWidth, height: Self.statusItemWidth), flipped: false) { rect in
+             guard let ctx = NSGraphicsContext.current?.cgContext else { return false }
+@@ -80,6 +85,16 @@
+         add("系统声音设置…", #selector(openSoundSettings), to: menu)
+         menu.addItem(.separator())
+         wire(overlay, #selector(toggleOverlay), menu); wire(labels, #selector(toggleLabels), menu)
++        let heightItem = NSMenuItem(), heightView = NSView(frame: NSRect(x: 0, y: 0, width: 280, height: 42))
++        let heightLabel = NSTextField(labelWithString: "钢琴高度")
++        heightLabel.frame = NSRect(x: 12, y: 12, width: 62, height: 18)
++        heightSlider.frame = NSRect(x: 78, y: 10, width: 145, height: 22)
++        heightSlider.isContinuous = true; heightSlider.target = self; heightSlider.action = #selector(heightChanged)
++        heightSlider.setAccessibilityLabel("钢琴高度，50%至180%，100%为112点")
++        heightPercentage.frame = NSRect(x: 229, y: 12, width: 42, height: 18); heightPercentage.alignment = .right
++        heightView.addSubview(heightLabel); heightView.addSubview(heightSlider); heightView.addSubview(heightPercentage)
++        heightItem.view = heightView; menu.addItem(heightItem)
++        preferencesSaveStatus.isEnabled = false; preferencesSaveStatus.isHidden = true; menu.addItem(preferencesSaveStatus)
+         overlayStatusItem.isEnabled = false; menu.addItem(overlayStatusItem)
+         add("自定义键位…", #selector(customize), to: menu)
+         keymapStatus.isEnabled = false; menu.addItem(keymapStatus)
+@@ -104,6 +119,7 @@
+         add("检查上次 Dock 恢复票据…", #selector(dockRecovery), to: test)
+         menu.addItem(.separator()); add("退出打字钢琴", #selector(quit), to: menu).keyEquivalent = "q"
+         setVolume(volume)
++        setHeight(heightScale)
+         if installStatusItem {
+             let item = NSStatusBar.system.statusItem(withLength: Self.statusItemWidth)
+             item.button?.image = icon; item.button?.setAccessibilityLabel("打字钢琴"); item.button?.toolTip = "打字钢琴"
+@@ -124,6 +140,17 @@
+     }
+     @objc private func customize() { onCustomize?() }
+     public func menuWillOpen(_ menu: NSMenu) { onWillOpen?() }
++    public func menuDidClose(_ menu: NSMenu) { onDidClose?() }
++    public func setHeight(_ value: Double) {
++        heightSlider.doubleValue = PianoHeight.normalized(value)
++        heightPercentage.stringValue = "\(Int((heightSlider.doubleValue * 100).rounded()))%"
++    }
++    public func setPreferencesSaveError(_ error: String?) {
++        preferencesSaveStatus.isHidden = error == nil
++        preferencesSaveStatus.title = error == nil ? "" : "设置尚未保存；关闭菜单或退出时重试"
++        preferencesSaveStatus.toolTip = error
++    }
++    @objc private func heightChanged() { setHeight(heightSlider.doubleValue); onHeight?(heightSlider.doubleValue) }
+     public func updateAlertVolume(muted: Bool?, detail: String) {
+         alertMute.state = muted.map { $0 ? .on : .off } ?? .mixed
+         alertStatus.title = "提示音：" + String(detail.prefix(30)) + (detail.count > 30 ? "…" : "")
+--- before/Code/Sources/PianoMac/QuietIvoryProvenance.swift
++++ after/Code/Sources/PianoMac/QuietIvoryProvenance.swift
+@@ -8,7 +8,12 @@
+     public let themeVersion = "quiet-ivory-u001.0.3"
+     public let themeSHA256: String
+     public let mappingSHA256: String
+-    public init(themeURL: URL, mappingURL: URL) throws {
++    public let crystalRecipeSHA256: String?
++    public init(themeURL: URL, mappingURL: URL, crystalURL: URL? = nil) throws {
++        crystalRecipeSHA256 = try crystalURL.map { Self.digest(try Data(contentsOf: $0)) }
++        if let crystalRecipeSHA256, crystalRecipeSHA256 != "af135ac20b05c1ac7cd8200765f8cfcc1b257ec16a22a892652ed50e6ccfbdca" {
++            throw ProbeError.invalid("水晶材质配方与已集成U-031版本不符")
++        }
+         themeSHA256 = Self.digest(try Data(contentsOf: themeURL))
+         mappingSHA256 = Self.digest(try Data(contentsOf: mappingURL))
+         guard themeSHA256 == "1cd6ec885ff33d3cb071300c63b753604d29c5b4b28fbcdccf69812fff0220fb" else {
+@@ -22,7 +27,8 @@
+     public var metadata: [String: Any] {
+         let binaryHash = (try? Data(contentsOf: URL(fileURLWithPath: CommandLine.arguments[0]))).map(Self.digest) ?? "unavailable"
+         return ["themeVersion": themeVersion, "themeSHA256": themeSHA256, "mappingSHA256": mappingSHA256,
+-         "artifactState": "design_proposal", "integrationBuild": "C-027", "visualRevision": "CR-006 / U-027", "executableSHA256": binaryHash, "OS": ProcessInfo.processInfo.operatingSystemVersionString,
++         "materialVersion": "u031.1", "crystalRecipeSHA256": crystalRecipeSHA256.map { $0 as Any } ?? NSNull(),
++         "artifactState": "design_proposal", "integrationBuild": "C-031", "visualRevision": "CR-008 / U-031; Quiet Ivory base geometry provenance retained", "executableSHA256": binaryHash, "OS": ProcessInfo.processInfo.operatingSystemVersionString,
+          "hardwareInput": false, "hardwareAudio": false, "systemDockWrites": false]
+     }
+ }
+--- before/Code/Sources/PianoProbe/main.swift
++++ after/Code/Sources/PianoProbe/main.swift
+@@ -18,7 +18,8 @@
+ let themeURL = bundled ? resources.appendingPathComponent("theme.candidate.json") : sourceRoot.appendingPathComponent("Design/UI/theme.candidate.json")
+ do {
+     let mapping = try KeyMapping.load(url: mappingURL)
+-    let provenance = try QuietIvoryProvenance(themeURL: themeURL, mappingURL: mappingURL)
++    let crystalURL = bundled ? resources.appendingPathComponent("crystal-reference.json") : sourceRoot.appendingPathComponent("Design/UI/U-031/reference.json")
++    let provenance = try QuietIvoryProvenance(themeURL: themeURL, mappingURL: mappingURL, crystalURL: crystalURL)
+     _ = try SDKKeys.resolve(mapping)
+     if let index = arguments.firstIndex(of: "--live-audio-smoke") {
+         guard arguments.count > index + 1, let seconds = Double(arguments[index + 1]), seconds.isFinite, (2...30).contains(seconds) else {
+@@ -65,6 +66,9 @@
+             "secureInputEnabled": InputMonitor.secureInput,
+             "listenerStarted": false, "permissionRequested": false, "audioOutputStarted": false,
+             "dockSettingWritten": false, "realKeysTested": false])
++    } else if let index = arguments.firstIndex(of: "--crystal-snapshot"), arguments.count > index + 1 {
++        _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
++        emit(try CrystalEvidence.render(mapping: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))
+     } else if let index = (arguments.firstIndex(of: "--snapshot") ?? arguments.firstIndex(of: "--adaptive-snapshot")), arguments.count > index + 1 {
+         _ = NSApplication.shared
+         NSApp.setActivationPolicy(.prohibited)
+@@ -115,7 +119,7 @@
+                     if let strike = coordinator.lastStrike { view.strike(strike, at: 0) }
+                 }
+                 view.activeMIDI = Set(coordinator.active.values.map { $0.key.midiNote })
+-                for ms in Array(Set(Array(stride(from: 0, through: 920, by: 20)) + [350, 450, 899, 900])).sorted() {
++                for ms in Array(Set(Array(stride(from: 0, through: 960, by: 20)) + [475, 949, 950])).sorted() {
+                     let time = Double(ms) / 1000
+                     if ms == 180 {
+                         view.clock = { time }; view.activeMIDI = []
+--- before/Code/Tests/PianoCoreTests/FloatingNoteTests.swift
++++ after/Code/Tests/PianoCoreTests/FloatingNoteTests.swift
+@@ -27,10 +27,10 @@
+         let new = try XCTUnwrap(c.consume(.init("keyA", .down)).first)
+         f.strike(new, time: 0.5, generation: 0)
+         XCTAssertEqual(f.instances.count, 2)
+-        f.expire(at: 0.91)
++        f.expire(at: 0.96)
+         XCTAssertNil(f.instances[old.pressID])
+         XCTAssertNotNil(f.instances[new.pressID])
+-        f.expire(at: 1.41)
++        f.expire(at: 1.46)
+         XCTAssertTrue(f.instances.isEmpty)
+     }
+     func testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay() throws {
+@@ -52,10 +52,10 @@
+         let event = try XCTUnwrap(c.consume(.init("keyA", .down)).first)
+         f.strike(event, time: 0, generation: 0)
+         let note = try XCTUnwrap(f.instances[event.pressID])
+-        XCTAssertEqual(note.duration, 0.9)
+-        XCTAssertEqual(note.rise, 48)
++        XCTAssertEqual(note.duration, 0.95)
++        XCTAssertEqual(note.rise, 100)
+         XCTAssertGreaterThan(f.presentations(at: 0.7).first?.opacity ?? 0, 0)
+-        f.expire(at: 0.9)
++        f.expire(at: 0.95)
+         XCTAssertTrue(f.instances.isEmpty)
+     }
+     func testReducedMotionCompletesWithinOneSecondWithoutRise() throws {
+--- before/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift
++++ after/Code/Tests/PianoCoreTests/HeightPreferencesTests.swift
+@@ -0,0 +1,20 @@
++import XCTest
++@testable import PianoCore
++
++final class HeightPreferencesTests: XCTestCase {
++    func testOldAndInvalidHeightJSONRetainOtherSettings() throws {
++        for field in ["", ",\"heightScale\":\"bad\"", ",\"heightScale\":null"] {
++            let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"volume\":0.8,\"showKeyLabels\":false\(field)}".utf8))
++            XCTAssertEqual(p.heightScale, 1); XCTAssertEqual(p.volume, 0.8); XCTAssertFalse(p.showKeyLabels)
++        }
++        for (value, expected) in [(-4.0, 0.5), (4.0, 1.8), (1.35, 1.35)] {
++            let p = try JSONDecoder().decode(AppPreferences.self, from: Data("{\"volume\":0.8,\"showKeyLabels\":false,\"heightScale\":\(value)}".utf8))
++            XCTAssertEqual(p.heightScale, expected)
++        }
++    }
++    func testHeightRoundTripAndNonfiniteIgnored() throws {
++        var p = AppPreferences(); p.setHeightScale(1.8); p.setHeightScale(.nan); p.setHeightScale(.infinity)
++        let restored = try JSONDecoder().decode(AppPreferences.self, from: JSONEncoder().encode(p))
++        XCTAssertEqual(restored.heightScale, 1.8); XCTAssertEqual(restored.volume, 0.5)
++    }
++}
+--- before/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift
++++ after/Code/Tests/PianoMacTests/AdaptiveOverlayTests.swift
+@@ -5,8 +5,8 @@
+ 
+ final class AdaptiveOverlayTests: XCTestCase {
+     func testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen() {
+-        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: 0, y: 0, width: 1512, height: 982)), CGRect(x: 8, y: 0, width: 1496, height: 208))
+-        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: -1920, y: -200, width: 1920, height: 1080)), CGRect(x: -1912, y: -200, width: 1904, height: 208))
++        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: 0, y: 0, width: 1512, height: 982)), CGRect(x: 8, y: 0, width: 1496, height: 256))
++        XCTAssertEqual(AdaptiveOverlay.frame(screen: CGRect(x: -1920, y: -200, width: 1920, height: 1080)), CGRect(x: -1912, y: -200, width: 1904, height: 256))
+     }
+     func testUserEnabledDockIsNotRestoredToAnOlderFalseValue() {
+         let storage = SimulatedDockStorage(value: true), tickets = MemoryDockTicketStore()
+--- before/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift
++++ after/Code/Tests/PianoMacTests/ControllerIntegrationTests.swift
+@@ -30,14 +30,16 @@
+     final class Engine: AuditionEngine {
+         var downs: [UInt8] = []
+         var shutdowns = 0
++        var panics = 0
++        var offs: [UInt8] = []
+         var prepared = false
+         var failPrepare = false
+         func prepare(bankURL: URL, offline: Bool) throws { prepared = true; if failPrepare { throw ProbeError.invalid("audio failure") } }
+         func shutdown() { shutdowns += 1; prepared = false }
+         func setGain(_ gain: Float) {}
+         func noteOn(midi: UInt8, velocity: UInt8) { downs.append(midi) }
+-        func noteOff(midi: UInt8) {}
+-        func panic() {}
++        func noteOff(midi: UInt8) { offs.append(midi) }
++        func panic() { panics += 1 }
+     }
+     func testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio() throws {
+         _ = NSApplication.shared
+--- before/Code/Tests/PianoMacTests/CrystalRenderingTests.swift
++++ after/Code/Tests/PianoMacTests/CrystalRenderingTests.swift
+@@ -0,0 +1,53 @@
++import XCTest
++import AppKit
++import PianoCore
++@testable import PianoMac
++
++final class CrystalRenderingTests: XCTestCase {
++    private var root: URL { URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent() }
++    func testHitTestingUsesPressedRoundedBlackFaceAfterHeightChange() throws {
++        let mapping = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++        let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1264, height: 256))
++        view.automaticAnimation = false; view.clock = { 0 }
++        let key = try XCTUnwrap(mapping.keys.first { $0.midiNote == 61 })
++        view.activeMIDI = [61]; view.advanceAnimations(at: 0.1); view.setHeightScale(1.8)
++        let shape = try XCTUnwrap(PianoGeometry.quietIvory(mapping: mapping, width: 1264, heightScale: 1.8).first { $0.midi == 61 })
++        let point = CGPoint(x: shape.rect.midX + 2, y: 144 + shape.rect.maxY + 1)
++        XCTAssertEqual(view.physicalKey(atCanvasPoint: point), key.physicalKeyID)
++        XCTAssertNotEqual(view.physicalKey(atCanvasPoint: CGPoint(x: shape.rect.minX + 0.01, y: 144 + shape.rect.minY + 2.7 + 0.01)), key.physicalKeyID)
++        view.activeMIDI = []; view.advanceAnimations(at: 1)
++        XCTAssertNotEqual(view.physicalKey(atCanvasPoint: point), key.physicalKeyID)
++    }
++    func testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback() throws {
++        let mapping = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++        for scale in [0.5, 1, 1.8] {
++            let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1264, height: 256))
++            view.automaticAnimation = false; view.setHeightScale(scale); view.showLabels = false
++            let shapes = PianoGeometry.quietIvory(mapping: mapping, width: 1264, heightScale: scale)
++            for pressed in [false, true] {
++                view.activeMIDI = pressed ? Set(33...96) : []; view.advanceAnimations(at: ProcessInfo.processInfo.systemUptime + 1)
++                for opaque in [false, true] {
++                    view.reducedTransparency = opaque
++                    let image = NSBitmapImageRep(cgImage: try view.renderedImage(scale: 2))
++                    XCTAssertEqual(image.pixelsHigh, Int(ceil((144 + 112 * scale) * 2)))
++                    XCTAssertEqual(image.colorAt(x: 100, y: 100)?.alphaComponent, 0)
++                    for shape in shapes {
++                        let travel = pressed ? (shape.isBlack ? 1.5 : 2) * scale : 0
++                        let y = 144 + shape.rect.minY + travel + shape.rect.height * (shape.isBlack ? 0.5 : 0.85)
++                        let color = try XCTUnwrap(image.colorAt(x: Int(shape.rect.midX * 2), y: Int(y * 2)))
++                        if opaque { XCTAssertEqual(color.alphaComponent, 1, accuracy: 0.005) }
++                        else {
++                            XCTAssertGreaterThan(color.alphaComponent, 0.75)
++                            XCTAssertLessThan(color.alphaComponent, 0.94, "white under black would accumulate near-opaque alpha")
++                        }
++                    }
++                }
++            }
++            for shape in shapes {
++                let point = CGPoint(x: shape.rect.midX, y: 144 + shape.rect.minY + shape.rect.height * (shape.isBlack ? 0.5 : 0.85))
++                XCTAssertEqual(view.physicalKey(atCanvasPoint: point), mapping.keys.first { $0.midiNote == shape.midi }?.physicalKeyID)
++            }
++            XCTAssertNil(view.physicalKey(atCanvasPoint: CGPoint(x: 100, y: 100)))
++        }
++    }
++}
+--- before/Code/Tests/PianoMacTests/HeightIntegrationTests.swift
++++ after/Code/Tests/PianoMacTests/HeightIntegrationTests.swift
+@@ -0,0 +1,155 @@
++import XCTest
++import AppKit
++import PianoCore
++import PianoAudio
++@testable import PianoMac
++
++final class HeightIntegrationTests: XCTestCase {
++    private var root: URL { URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent() }
++    private func make(_ url: URL, alertVolume: AlertVolumeAdapter? = nil) throws -> (ProbeController, ControllerIntegrationTests.Input, ControllerIntegrationTests.Engine) {
++        _ = NSApplication.shared
++        let input = ControllerIntegrationTests.Input(), engine = ControllerIntegrationTests.Engine()
++        let c = try ProbeController(mapping: KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename)), sources: AudioSource.available(root: root, bundled: false), preferencesURL: url, input: input, audioEngine: engine, installStatusItem: false, alertVolume: alertVolume, secureInputCheck: { false }, permissionCheck: { true }, dockVisibilityCheck: { _, _ in .hidden })
++        c.applicationDidFinishLaunching(Notification(name: NSApplication.didFinishLaunchingNotification))
++        return (c, input, engine)
++    }
++    func testResizeKeepsHeldReleaseAudioAndCustomMappingInAllModes() throws {
++        for mode in ["running", "muted", "paused"] {
++            let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++            defer { try? FileManager.default.removeItem(at: dir) }
++            let (c, input, engine) = try make(dir.appendingPathComponent("prefs.json"))
++            defer { c.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification)) }
++            let base = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++            var custom = CustomKeymap(defaultMapping: base); try custom.swap(key: "keyG", to: 53)
++            try c.saveCustomKeymap(custom)
++            if mode != "paused" { c.start(global: true) }
++            if mode == "running" { c.toggleSound() }
++            c.toggleOverlay(); input.onEvent?(.init("keyG", .down))
++            let active = c.integrationState.activeKeys, panics = engine.panics, offs = engine.offs.count
++            let modeBefore = input.mode, prepared = engine.prepared, downs = engine.downs.count, shutdowns = engine.shutdowns
++            let version = c.runtimeDiagnostics()["mappingVersion"] as? String
++            for value in [0.5, 1, 1.8, 1.23] { c.changeHeight(value) }
++            XCTAssertEqual(input.mode, modeBefore); XCTAssertEqual(engine.prepared, prepared)
++            XCTAssertEqual(engine.panics, panics); XCTAssertEqual(engine.offs.count, offs)
++            XCTAssertEqual(engine.shutdowns, shutdowns); XCTAssertEqual(engine.downs.count, downs)
++            XCTAssertEqual(c.integrationState.activeKeys, active)
++            XCTAssertEqual(c.runtimeDiagnostics()["mappingVersion"] as? String, version)
++            XCTAssertEqual(c.runtimeDiagnostics()["overlayRequested"] as? Bool, true)
++            c.flushPreferences()
++            XCTAssertEqual(try AppPreferences.load(from: dir.appendingPathComponent("prefs.json")).heightScale, 1.23)
++            input.onEvent?(.init("keyG", .up)); XCTAssertEqual(c.integrationState.activeKeys, 0)
++            if mode == "running" { XCTAssertEqual(engine.offs.last, 53) }
++        }
++    }
++    func testDebounceFailureRetryExitFlushAndRelaunch() throws {
++        let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: dir) }
++        let url = dir.appendingPathComponent("prefs.json")
++        var initial = AppPreferences(); initial.setVolume(0.77); initial.showKeyLabels = false; try initial.save(to: url)
++        let (c, _, _) = try make(url)
++        c.changeHeight(0.5); c.changeHeight(1.8)
++        XCTAssertEqual(try AppPreferences.load(from: url).heightScale, 1) // No per-drag synchronous write.
++        RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.35))
++        XCTAssertEqual(try AppPreferences.load(from: url).heightScale, 1.8)
++        try FileManager.default.removeItem(at: url); try FileManager.default.createDirectory(at: url, withIntermediateDirectories: false)
++        c.changeHeight(0.7); c.flushPreferences()
++        XCTAssertEqual(c.runtimeDiagnostics()["preferencesSavePending"] as? Bool, true)
++        XCTAssertNotNil(c.runtimeDiagnostics()["preferencesSaveError"] as? String)
++        XCTAssertEqual(c.runtimeDiagnostics()["heightScale"] as? Double, 0.7)
++        try FileManager.default.removeItem(at: url)
++        c.changeHeight(1.37); c.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification))
++        let saved = try AppPreferences.load(from: url)
++        XCTAssertEqual(saved.heightScale, 1.37); XCTAssertEqual(saved.volume, 0.77); XCTAssertFalse(saved.showKeyLabels)
++        let (reopened, input, engine) = try make(url)
++        XCTAssertEqual(reopened.runtimeDiagnostics()["heightScale"] as? Double, 1.37)
++        XCTAssertEqual(input.mode, .stopped); XCTAssertFalse(engine.prepared)
++        reopened.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification))
++    }
++    func testMenuActualSliderActionAndPercent() {
++        _ = NSApplication.shared
++        let menu = ProbeMenu(volume: 0.7, installStatusItem: false)
++        var height = 0.0, closed = false
++        menu.onHeight = { height = $0 }; menu.onDidClose = { closed = true }
++        menu.heightSlider.doubleValue = 1.8
++        XCTAssertTrue(menu.heightSlider.sendAction(menu.heightSlider.action, to: menu.heightSlider.target))
++        XCTAssertEqual(height, 1.8); XCTAssertEqual(menu.heightPercentage.stringValue, "180%")
++        XCTAssertEqual(menu.slider.doubleValue, 0.7)
++        menu.menuDidClose(menu.menu); XCTAssertTrue(closed)
++    }
++    func testFailedFinalSaveCanCancelExitWithoutStoppingOrRestoringState() throws {
++        let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: dir) }
++        let url = dir.appendingPathComponent("prefs.json")
++        var original = AppPreferences(); original.setVolume(0.67); try original.save(to: url)
++        let originalBytes = try Data(contentsOf: url)
++        let alertStorage = AlertVolumeTests.Storage()
++        let alerts = AlertVolumeAdapter(storage: alertStorage)
++        XCTAssertEqual(alerts.mute(confirmed: true), .muted)
++        let (c, input, engine) = try make(url, alertVolume: alerts)
++        c.start(global: true); c.toggleSound(); input.onEvent?(.init("keyG", .down))
++        let backup = dir.appendingPathComponent("original.json")
++        try FileManager.default.moveItem(at: url, to: backup)
++        try FileManager.default.createDirectory(at: url, withIntermediateDirectories: false)
++        c.changeHeight(1.8)
++        let panics = engine.panics, shutdowns = engine.shutdowns
++        var prompts = 0
++        c.confirmUnsavedPreferencesExit = { _ in prompts += 1; return false }
++        XCTAssertEqual(c.applicationShouldTerminate(NSApp), .terminateCancel)
++        XCTAssertEqual(prompts, 1); XCTAssertEqual(input.mode, .global); XCTAssertTrue(engine.prepared)
++        XCTAssertEqual(alertStorage.writes, [0]); XCTAssertEqual(alertStorage.value, 0)
++        XCTAssertEqual(c.integrationState.activeKeys, 1); XCTAssertEqual(engine.panics, panics); XCTAssertEqual(engine.shutdowns, shutdowns)
++        XCTAssertEqual(try Data(contentsOf: backup), originalBytes)
++        c.confirmUnsavedPreferencesExit = { _ in prompts += 1; return true }
++        XCTAssertEqual(c.applicationShouldTerminate(NSApp), .terminateNow)
++        XCTAssertEqual(input.mode, .global) // Teardown belongs only to the actual willTerminate.
++        try FileManager.default.removeItem(at: url); try FileManager.default.moveItem(at: backup, to: url)
++        c.confirmUnsavedPreferencesExit = { _ in XCTFail("Successful save must not prompt"); return false }
++        XCTAssertEqual(c.applicationShouldTerminate(NSApp), .terminateNow)
++        XCTAssertEqual(try AppPreferences.load(from: url).heightScale, 1.8)
++        XCTAssertEqual(try AppPreferences.load(from: url).volume, 0.67)
++        c.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification))
++    }
++    func testVolumeAndLabelsOnlySaveFailureRemainsDirtyAndRetries() throws {
++        let dir = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
++        defer { try? FileManager.default.removeItem(at: dir) }
++        let url = dir.appendingPathComponent("prefs.json")
++        let (c, _, _) = try make(url)
++        try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true)
++        c.changeVolume(0.9); c.toggleLabels()
++        XCTAssertEqual(c.runtimeDiagnostics()["heightScale"] as? Double, 1)
++        XCTAssertEqual(c.runtimeDiagnostics()["preferencesSavePending"] as? Bool, true)
++        c.confirmUnsavedPreferencesExit = { _ in false }
++        XCTAssertEqual(c.applicationShouldTerminate(NSApp), .terminateCancel)
++        try FileManager.default.removeItem(at: url)
++        c.flushPreferences() // The same operation is wired to menuDidClose.
++        XCTAssertEqual(c.runtimeDiagnostics()["preferencesSavePending"] as? Bool, false)
++        let saved = try AppPreferences.load(from: url)
++        XCTAssertEqual(saved.volume, 0.9); XCTAssertFalse(saved.showKeyLabels); XCTAssertEqual(saved.heightScale, 1)
++        c.applicationWillTerminate(Notification(name: NSApplication.willTerminateNotification))
++    }
++    func testGeometryLabelsAndFloatingBoundsAtAllHeightsIncludingNarrowPreview() throws {
++        let mapping = try KeyMapping.load(url: root.appendingPathComponent("contracts/" + KeyMapping.defaultFilename))
++        for width in [900.0, 1000, 1264, 1496, 1904] {
++            for scale in [0.5, 1, 1.8] {
++                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 256))
++                view.automaticAnimation = false; view.setHeightScale(scale)
++                XCTAssertEqual(view.frame.height, 144 + 112 * scale)
++                XCTAssertEqual(view.labelMetrics.count, 64)
++                XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && !$0.overlap && $0.missingGlyphs == 0 })
++                for reduced in [false, true] {
++                    view.resetEffects(); view.reducedMotion = reduced
++                    var coordinator = NoteCoordinator(mapping: mapping)
++                    for key in mapping.keys {
++                        _ = coordinator.consume(.init(key.physicalKeyID, .down))
++                        view.strike(try XCTUnwrap(coordinator.lastStrike), at: 0)
++                    }
++                    for time in [0.0, 0.1, 0.199, 0.2, 0.475, 0.949, 0.95] {
++                        view.advanceAnimations(at: time)
++                        XCTAssertTrue(view.floatingInkBounds.allSatisfy { view.bounds.contains($0) }, "width=\(width) scale=\(scale) t=\(time)")
++                        if time >= (reduced ? 0.2 : 0.95) { XCTAssertEqual(view.floatingCount, 0) }
++                    }
++                }
++            }
++        }
++    }
++}
+--- before/Code/Tests/PianoMacTests/IntegrationTests.swift
++++ after/Code/Tests/PianoMacTests/IntegrationTests.swift
+@@ -49,9 +49,9 @@
+         view.strike(strike, at: 10.01)
+         XCTAssertEqual(view.floatingCount, 1)
+         view.advanceAnimations(at: 10.35)
+-        XCTAssertEqual(view.floatingPresentations.first!.rise, 48 * (1 - pow(1 - 0.35 / 0.9, 3)), accuracy: 0.001)
++        XCTAssertEqual(view.floatingPresentations.first!.rise, 100 * (1 - pow(1 - 0.35 / 0.95, 3)), accuracy: 0.001)
+         XCTAssertEqual(view.floatingPresentations.first!.opacity, 1, accuracy: 0.001)
+-        view.advanceAnimations(at: 10.9)
++        view.advanceAnimations(at: 10.95)
+         XCTAssertEqual(view.floatingCount, 0)
+         XCTAssertFalse(view.animationTimerRunning)
+         view.setSceneVisible(false)
+--- before/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift
++++ after/Code/Tests/PianoMacTests/OverlayVisibilityTests.swift
+@@ -146,7 +146,7 @@
+         XCTAssertEqual(PianoView.floatingFontSize, 24)
+         for width in [1264.0, 1496, 1904] {
+             for reduced in [false, true] {
+-                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 208))
++                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: AdaptiveOverlay.canvasHeight))
+                 view.automaticAnimation = false; view.reducedMotion = reduced
+                 XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && $0.missingGlyphs == 0 && !$0.overlap })
+                 var coordinator = NoteCoordinator(mapping: mapping)
+@@ -154,10 +154,10 @@
+                     _ = coordinator.consume(.init(key.physicalKeyID, .down))
+                     view.strike(try XCTUnwrap(coordinator.lastStrike), at: 0)
+                 }
+-                for ms in stride(from: 0, through: 900, by: 20) {
++                for ms in stride(from: 0, through: 960, by: 20) {
+                     view.advanceAnimations(at: Double(ms) / 1000)
+                     XCTAssertTrue(view.floatingInkBounds.allSatisfy { view.bounds.contains($0) })
+-                    XCTAssertTrue(view.floatingPresentations.allSatisfy { abs($0.driftX) <= 4 && $0.rise <= 48 })
++                    XCTAssertTrue(view.floatingPresentations.allSatisfy { abs($0.driftX) <= 8 && $0.rise <= 100 })
+                 }
+                 XCTAssertEqual(view.floatingCount, 0); XCTAssertFalse(view.animationTimerRunning)
+             }
+--- before/Code/Scripts/build.sh
++++ after/Code/Scripts/build.sh
+@@ -2,7 +2,7 @@
+ set -euo pipefail
+ code_root="$(cd "$(dirname "$0")/.." && pwd)"
+ project_root="$(cd "$code_root/.." && pwd)"
+-build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.7}"
++build_root="${TYPING_PIANO_BUILD_ROOT:-$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.8}"
+ mkdir -p "$build_root"
+ build_root="$(cd "$build_root" && pwd)"
+ if [ "$build_root" = "$HOME/Library/Caches/local.typingpiano.trial" ]; then
+@@ -10,7 +10,7 @@
+     exit 1
+ fi
+ case "$build_root" in
+-    "$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6")
++    "$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.4"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.5"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.6"|"$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.7")
+         printf '%s\n' 'Refusing to overwrite a frozen historical candidate.' >&2
+         exit 1 ;;
+ esac
+@@ -42,6 +42,12 @@
+     assert hashlib.sha256(path.read_bytes()).hexdigest() == item['sha256']
+ PYUI
+ cp "$project_root/Design/UI/theme.candidate.json" "$app_path/Contents/Resources/"
++python3 - "$project_root/Design/UI/U-031/reference.json" <<'PYCRYSTAL'
++import hashlib, pathlib, sys
++assert hashlib.sha256(pathlib.Path(sys.argv[1]).read_bytes()).hexdigest() == "af135ac20b05c1ac7cd8200765f8cfcc1b257ec16a22a892652ed50e6ccfbdca"
++PYCRYSTAL
++cp "$project_root/Design/UI/U-031/reference.json" "$app_path/Contents/Resources/crystal-reference.json"
++cp "$project_root/Design/UI/U-031/MATERIAL_RECIPE.md" "$app_path/Contents/Resources/CRYSTAL-MATERIAL-RECIPE.md"
+ python3 - "$project_root/Design/Audio/probes/A-001B" <<'PYVERIFY'
+ import hashlib, json, pathlib, sys
+ root = pathlib.Path(sys.argv[1])
+@@ -98,8 +104,8 @@
+ <key>CFBundleExecutable</key><string>TypingPianoProbe</string>
+ <key>CFBundleIdentifier</key><string>local.typingpiano.trial</string>
+ <key>CFBundleName</key><string>打字钢琴试用</string>
+-<key>CFBundleVersion</key><string>10</string>
+-<key>CFBundleShortVersionString</key><string>0.2.7</string>
++<key>CFBundleVersion</key><string>11</string>
++<key>CFBundleShortVersionString</key><string>0.2.8</string>
+ <key>TypingPianoSingleInstanceProtocol</key><integer>1</integer>
+ <key>CFBundlePackageType</key><string>APPL</string>
+ <key>LSMinimumSystemVersion</key><string>14.0</string>

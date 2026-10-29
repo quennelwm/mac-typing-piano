@@ -1,0 +1,204 @@
+{
+  "version": "u031.1",
+  "artifactState": "design_proposal",
+  "baseCommit": "8142d59",
+  "sourceDecision": "docs/changes/CR-008-crystal-height.md",
+  "height": {
+    "rangePercent": [
+      50,
+      180
+    ],
+    "defaultPercent": 100,
+    "defaultBodyPt": 112,
+    "bodyPt": "112*percent/100",
+    "heightScale": "percent/100",
+    "roundStoredPercent": true,
+    "screenWidthsPt": [
+      1280,
+      1512,
+      1920
+    ],
+    "pianoWidthsPt": [
+      1264,
+      1496,
+      1904
+    ],
+    "screenSideMarginPt": 8,
+    "whiteSlotPt": "(W-4)/38",
+    "whiteRectBodyPt": [
+      "2+i*S+0.35",
+      "4*h",
+      "S-0.7",
+      "100*h"
+    ],
+    "blackRectBodyPt": [
+      "2+n*S-0.59*S/2",
+      "4*h",
+      "0.59*S",
+      "64*h"
+    ],
+    "whiteTravelPt": "2*h",
+    "blackTravelPt": "1.5*h",
+    "heightAffectsFonts": false,
+    "headroomPt": 144,
+    "canvasHeightPt": "112*h+144",
+    "roundRasterHeight": "ceil(canvasHeightPt*backingScale); retain exact point geometry",
+    "bottomAnchored": true
+  },
+  "labels": {
+    "whiteFontPt": 10,
+    "blackFontPt": 9.5,
+    "sideFontPt": 6.5,
+    "weight": "medium",
+    "whiteInkBottomInsetPt": 4,
+    "blackInkBottomInsetPt": 3,
+    "sideRightInsetPt": 1.1,
+    "mainSideCompensationPt": 0.6,
+    "sideBottomFromMainInkTopPt": {
+      "white": 2,
+      "black": -0.6
+    },
+    "followKeyTransform": true,
+    "visibleByDefault": true,
+    "baked": false,
+    "contrastPolicy": "Intentional subtle labels per CR-008; no legacy4.5 claim. White LIGHT gray, black DARK gray. Quantify visibility on synthetic backgrounds."
+  },
+  "floatingNote": {
+    "glyph": "♪",
+    "fontSizePt": 24,
+    "durationMs": 950,
+    "risePt": 100,
+    "driftXPt": 8,
+    "ease": "1-(1-t)^3",
+    "fadeInMs": 80,
+    "fadeOutMs": 500,
+    "headroomPt": 144,
+    "anchorBottomAboveRestKeyTopPt": 4,
+    "haloBlurPt": 1.25,
+    "conservativeBoundsPaddingPt": 4,
+    "reducedDurationMs": 200,
+    "reducedRisePt": 0,
+    "reducedDriftPt": 0,
+    "clearOnHiddenOrMappingReset": true,
+    "noReplay": true
+  },
+  "menuHeightSlider": {
+    "label": "钢琴高度",
+    "percentLabel": "100%",
+    "range": [
+      50,
+      180
+    ],
+    "livePreview": true,
+    "persistOnDragEndOrDebouncedMs": 250,
+    "flushLatestOnExit": true,
+    "invalidValueFallbackPercent": 100,
+    "finiteOutOfRange": "clamp50...180",
+    "noInputAudioOrMappingMutation": true
+  },
+  "material": {
+    "rendering": "programmatic_per_key_vector_alpha_not_system_Liquid_Glass",
+    "windowAlpha": 1,
+    "keyUnderlayPolicy": "No opaque full-width backing. Clip white surfaces against CURRENT transformed black faces so translucent black does not accumulate opaque white beneath. Draw each visible face once.",
+    "base": {
+      "fillHex": "#526174",
+      "alpha": 0.1,
+      "radiusPt": 4
+    },
+    "white": {
+      "restGradient": [
+        {
+          "hex": "#FFFFFF",
+          "alpha": 0.88
+        },
+        {
+          "hex": "#E4ECF4",
+          "alpha": 0.82
+        }
+      ],
+      "pressedGradient": [
+        {
+          "hex": "#E9F0F7",
+          "alpha": 0.9
+        },
+        {
+          "hex": "#CDD9E6",
+          "alpha": 0.85
+        }
+      ],
+      "edgeLight": {
+        "hex": "#FFFFFF",
+        "alpha": 0.72,
+        "widthPt": 0.7
+      },
+      "innerBottom": {
+        "hex": "#788BA2",
+        "alpha": 0.22,
+        "widthPt": 1
+      },
+      "radiusPt": 2.5,
+      "labelHex": "#969FA9",
+      "labelAlpha": 0.86,
+      "opaqueFallback": [
+        "#F4F7FA",
+        "#DFE7EF"
+      ]
+    },
+    "black": {
+      "restGradient": [
+        {
+          "hex": "#BAC8D8",
+          "alpha": 0.78
+        },
+        {
+          "hex": "#8191A3",
+          "alpha": 0.88
+        }
+      ],
+      "pressedGradient": [
+        {
+          "hex": "#ACBDCF",
+          "alpha": 0.82
+        },
+        {
+          "hex": "#73859A",
+          "alpha": 0.9
+        }
+      ],
+      "edgeLight": {
+        "hex": "#F3F8FF",
+        "alpha": 0.55,
+        "widthPt": 0.7
+      },
+      "innerBottom": {
+        "hex": "#334357",
+        "alpha": 0.3,
+        "widthPt": 1
+      },
+      "radiusPt": 2.5,
+      "labelHex": "#414B55",
+      "labelAlpha": 0.84,
+      "opaqueFallback": [
+        "#AFBECE",
+        "#8494A7"
+      ]
+    },
+    "shadow": {
+      "hex": "#26364A",
+      "alpha": 0.16,
+      "offsetPt": [
+        0,
+        1
+      ],
+      "blurPt": 1.5,
+      "pressedAlpha": 0.1
+    },
+    "reducedTransparency": {
+      "gradientAlpha": 1,
+      "useOpaqueFallback": true,
+      "labelColorsUnchanged": true,
+      "noBackdropSampling": true
+    }
+  },
+  "compatibility": "Portable vector design. No actual native Liquid Glass API or desktop capture. App integration and macOS14+ validation belong to C-031."
+}

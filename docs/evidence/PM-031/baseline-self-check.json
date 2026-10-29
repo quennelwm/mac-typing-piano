@@ -1,0 +1,11 @@
+{
+  "keyCount": 64,
+  "mappingVersion": "ansi64-playable.0.2",
+  "existingInputPermissionForThisProcess": true,
+  "secureInputEnabled": false,
+  "listenerStarted": false,
+  "permissionRequested": false,
+  "audioOutputStarted": false,
+  "dockSettingWritten": false,
+  "realKeysTested": false
+}

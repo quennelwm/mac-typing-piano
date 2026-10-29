@@ -18,7 +18,8 @@ let mappingURL = mappingFolder.appendingPathComponent(KeyMapping.defaultFilename
 let themeURL = bundled ? resources.appendingPathComponent("theme.candidate.json") : sourceRoot.appendingPathComponent("Design/UI/theme.candidate.json")
 do {
     let mapping = try KeyMapping.load(url: mappingURL)
-    let provenance = try QuietIvoryProvenance(themeURL: themeURL, mappingURL: mappingURL)
+    let crystalURL = bundled ? resources.appendingPathComponent("crystal-reference.json") : sourceRoot.appendingPathComponent("Design/UI/U-031/reference.json")
+    let provenance = try QuietIvoryProvenance(themeURL: themeURL, mappingURL: mappingURL, crystalURL: crystalURL)
     _ = try SDKKeys.resolve(mapping)
     if let index = arguments.firstIndex(of: "--live-audio-smoke") {
         guard arguments.count > index + 1, let seconds = Double(arguments[index + 1]), seconds.isFinite, (2...30).contains(seconds) else {
@@ -65,6 +66,9 @@ do {
             "secureInputEnabled": InputMonitor.secureInput,
             "listenerStarted": false, "permissionRequested": false, "audioOutputStarted": false,
             "dockSettingWritten": false, "realKeysTested": false])
+    } else if let index = arguments.firstIndex(of: "--crystal-snapshot"), arguments.count > index + 1 {
+        _ = NSApplication.shared; NSApp.setActivationPolicy(.prohibited)
+        emit(try CrystalEvidence.render(mapping: mapping, directory: URL(fileURLWithPath: arguments[index + 1], isDirectory: true)))
     } else if let index = (arguments.firstIndex(of: "--snapshot") ?? arguments.firstIndex(of: "--adaptive-snapshot")), arguments.count > index + 1 {
         _ = NSApplication.shared
         NSApp.setActivationPolicy(.prohibited)
@@ -115,7 +119,7 @@ do {
                     if let strike = coordinator.lastStrike { view.strike(strike, at: 0) }
                 }
                 view.activeMIDI = Set(coordinator.active.values.map { $0.key.midiNote })
-                for ms in Array(Set(Array(stride(from: 0, through: 920, by: 20)) + [350, 450, 899, 900])).sorted() {
+                for ms in Array(Set(Array(stride(from: 0, through: 960, by: 20)) + [475, 949, 950])).sorted() {
                     let time = Double(ms) / 1000
                     if ms == 180 {
                         view.clock = { time }; view.activeMIDI = []

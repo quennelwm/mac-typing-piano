@@ -1,0 +1,4616 @@
+{
+  "checks" : [
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 50,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 100,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1264
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1496
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "fn",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "controlLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "space",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyZ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyX",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyC",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyV",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyB",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyN",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyM",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "grave",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit3",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit1",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit2",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyQ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "tab",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "capsLock",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyA",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyW",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyS",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyE",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyD",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyR",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyF",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyG",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyY",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyH",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyU",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyJ",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyK",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyO",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyL",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyP",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "semicolon",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "quote",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "return",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "backslash",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "bracketRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "delete",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "shiftRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "slash",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "equal",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "period",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "minus",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "comma",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit0",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowUp",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowDown",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "arrowLeft",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "optionRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "commandRight",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit9",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit8",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit7",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit6",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit5",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "digit4",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyI",
+      "widthPt" : 1904
+    },
+    {
+      "heightPercent" : 180,
+      "insideOwnFace" : true,
+      "labelOverlap" : false,
+      "missingGlyphs" : 0,
+      "physicalKeyID" : "keyT",
+      "widthPt" : 1904
+    }
+  ],
+  "failed" : [
+
+  ],
+  "status" : "pass"
+}

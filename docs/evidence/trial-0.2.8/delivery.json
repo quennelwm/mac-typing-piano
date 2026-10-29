@@ -1,0 +1,32 @@
+{
+  "task": "C-031",
+  "version": "0.2.8",
+  "build": 11,
+  "app": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/打字钢琴试用.app",
+  "zip": "/Users/wuming/Library/Caches/local.typingpiano.trial/candidate-0.2.8/打字钢琴试用.zip",
+  "binarySHA256": "f8cb2d89c3842cab6fbaa01c51b0a06b9387e3fe7e1e8a829bf5df9db95f43f2",
+  "zipSHA256": "7597e7ae3485974ced30887903ab4ebd45df1a40caedb007a3f296216a40d7be",
+  "sourceManifestSHA256": "c81565ff0f063507f6caba771d962fc9f6c3c9c21c031a75efc1ea6fbbcc68b7",
+  "architecture": "arm64",
+  "signing": "ad-hoc candidate, never GUI-started; final fixed identity signing belongs to PM",
+  "fullSuite": {
+    "selected": 141,
+    "passed": 138,
+    "skipped": 3,
+    "failures": 0
+  },
+  "conditionalAudioReplay": "3 explicitly skipped, not rerun in C-031",
+  "sourceFilesVerified": 88,
+  "protectedFilesUnchanged": 217,
+  "strictSignaturePassed": true,
+  "zipIntegrityPassed": true,
+  "nativeImages": 7,
+  "layouts": 9,
+  "motionSamples": 72,
+  "alphaAndBoundsPassed": true,
+  "audioResourcesMatchInstalled027": true,
+  "realDesktopAndSliderAcceptance": "NOT TESTED",
+  "hardwareInputAudio": "NOT TESTED",
+  "newTCCRetention": "NOT TESTED",
+  "systemSettingsWritten": false
+}

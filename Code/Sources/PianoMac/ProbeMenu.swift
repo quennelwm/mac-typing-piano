@@ -11,6 +11,11 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     public let percentage = NSTextField(labelWithString: "50%")
     public let icon: NSImage
     public var onVolume: ((Double) -> Void)?
+    public let heightSlider = NSSlider(value: 1, minValue: 0.5, maxValue: 1.8, target: nil, action: nil)
+    public let heightPercentage = NSTextField(labelWithString: "100%")
+    private let preferencesSaveStatus = NSMenuItem(title: "", action: nil, keyEquivalent: "")
+    public var onHeight: ((Double) -> Void)?
+    public var onDidClose: (() -> Void)?
     public var onStartup: (() -> Void)?
     public var onDownload: (() -> Void)?
     public var onMuteAlerts: (() -> Void)?
@@ -43,7 +48,7 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     private let dock = NSMenuItem(title: "自动隐藏 Dock", action: nil, keyEquivalent: "")
     private var sourceItems: [NSMenuItem] = []
     private let mode = NSMenuItem(title: "Dock：模拟模式，不改系统", action: nil, keyEquivalent: "")
-    public init(volume: Double, sources: [AudioSource] = [], installStatusItem: Bool = true) {
+    public init(volume: Double, heightScale: Double = 1, sources: [AudioSource] = [], installStatusItem: Bool = true) {
         slider = NSSlider(value: volume, minValue: 0, maxValue: 1, target: nil, action: nil)
         icon = NSImage(size: NSSize(width: Self.statusItemWidth, height: Self.statusItemWidth), flipped: false) { rect in
             guard let ctx = NSGraphicsContext.current?.cgContext else { return false }
@@ -80,6 +85,16 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         add("系统声音设置…", #selector(openSoundSettings), to: menu)
         menu.addItem(.separator())
         wire(overlay, #selector(toggleOverlay), menu); wire(labels, #selector(toggleLabels), menu)
+        let heightItem = NSMenuItem(), heightView = NSView(frame: NSRect(x: 0, y: 0, width: 280, height: 42))
+        let heightLabel = NSTextField(labelWithString: "钢琴高度")
+        heightLabel.frame = NSRect(x: 12, y: 12, width: 62, height: 18)
+        heightSlider.frame = NSRect(x: 78, y: 10, width: 145, height: 22)
+        heightSlider.isContinuous = true; heightSlider.target = self; heightSlider.action = #selector(heightChanged)
+        heightSlider.setAccessibilityLabel("钢琴高度，50%至180%，100%为112点")
+        heightPercentage.frame = NSRect(x: 229, y: 12, width: 42, height: 18); heightPercentage.alignment = .right
+        heightView.addSubview(heightLabel); heightView.addSubview(heightSlider); heightView.addSubview(heightPercentage)
+        heightItem.view = heightView; menu.addItem(heightItem)
+        preferencesSaveStatus.isEnabled = false; preferencesSaveStatus.isHidden = true; menu.addItem(preferencesSaveStatus)
         overlayStatusItem.isEnabled = false; menu.addItem(overlayStatusItem)
         add("自定义键位…", #selector(customize), to: menu)
         keymapStatus.isEnabled = false; menu.addItem(keymapStatus)
@@ -104,6 +119,7 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
         add("检查上次 Dock 恢复票据…", #selector(dockRecovery), to: test)
         menu.addItem(.separator()); add("退出打字钢琴", #selector(quit), to: menu).keyEquivalent = "q"
         setVolume(volume)
+        setHeight(heightScale)
         if installStatusItem {
             let item = NSStatusBar.system.statusItem(withLength: Self.statusItemWidth)
             item.button?.image = icon; item.button?.setAccessibilityLabel("打字钢琴"); item.button?.toolTip = "打字钢琴"
@@ -124,6 +140,17 @@ public final class ProbeMenu: NSObject, NSMenuDelegate {
     }
     @objc private func customize() { onCustomize?() }
     public func menuWillOpen(_ menu: NSMenu) { onWillOpen?() }
+    public func menuDidClose(_ menu: NSMenu) { onDidClose?() }
+    public func setHeight(_ value: Double) {
+        heightSlider.doubleValue = PianoHeight.normalized(value)
+        heightPercentage.stringValue = "\(Int((heightSlider.doubleValue * 100).rounded()))%"
+    }
+    public func setPreferencesSaveError(_ error: String?) {
+        preferencesSaveStatus.isHidden = error == nil
+        preferencesSaveStatus.title = error == nil ? "" : "设置尚未保存；关闭菜单或退出时重试"
+        preferencesSaveStatus.toolTip = error
+    }
+    @objc private func heightChanged() { setHeight(heightSlider.doubleValue); onHeight?(heightSlider.doubleValue) }
     public func updateAlertVolume(muted: Bool?, detail: String) {
         alertMute.state = muted.map { $0 ? .on : .off } ?? .mixed
         alertStatus.title = "提示音：" + String(detail.prefix(30)) + (detail.count > 30 ? "…" : "")

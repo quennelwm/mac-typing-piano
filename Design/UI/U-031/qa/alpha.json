@@ -1,0 +1,869 @@
+{
+  "sampleCount": 2304,
+  "groups": [
+    {
+      "widthPt": 1264,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        222
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        222
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        223
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        223
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 50,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 50,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        221
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        221
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        223,
+        223
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        226,
+        226
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        226,
+        226
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        223,
+        223
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        221
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        221
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        223
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        226,
+        227
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        226,
+        227
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        223
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        221
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        221
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 100,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        226,
+        226
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        226,
+        226
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 100,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        222
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        222
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        223,
+        223
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1264,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        223,
+        223
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        221
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        221,
+        221
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        223
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        226,
+        227
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        226,
+        227
+      ]
+    },
+    {
+      "widthPt": 1496,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        223
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 180,
+      "whiteDown": 0,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 0,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        215,
+        215
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "white",
+      "samples": 38,
+      "alphaRange8bit": [
+        227,
+        227
+      ]
+    },
+    {
+      "widthPt": 1904,
+      "heightPercent": 180,
+      "whiteDown": 1,
+      "blackDown": 1,
+      "color": "black",
+      "samples": 26,
+      "alphaRange8bit": [
+        222,
+        222
+      ]
+    }
+  ]
+}

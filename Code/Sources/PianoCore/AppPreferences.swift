@@ -1,10 +1,22 @@
 import Foundation
-/// Only app-owned volume and label visibility; contains no input history or system settings.
+/// App-owned presentation/audio preferences; no input history or system settings.
 public struct AppPreferences: Codable {
     public private(set) var volume: Double = 0.5
     public var showKeyLabels = true
+    public private(set) var heightScale: Double = 1
     public var outputGain: Float { Float(volume * 0.16) }
     public init() {}
+    private enum CodingKeys: String, CodingKey { case volume, showKeyLabels, heightScale }
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        setVolume((try? values.decode(Double.self, forKey: .volume)) ?? 0.5)
+        showKeyLabels = (try? values.decode(Bool.self, forKey: .showKeyLabels)) ?? true
+        setHeightScale((try? values.decode(Double.self, forKey: .heightScale)) ?? 1)
+    }
+    public mutating func setHeightScale(_ value: Double) {
+        guard value.isFinite else { return }
+        heightScale = (PianoHeight.normalized(value) * 100).rounded() / 100
+    }
     public mutating func setVolume(_ value: Double) {
         guard value.isFinite else { return }
         volume = min(1, max(0, value))

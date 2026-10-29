@@ -1,0 +1,80 @@
+Building for debugging...
+[Constructing description]
+[Planning deferred tasks]
+[1 / 3]
+[2 / 5] PianoAudioTests-product
+[12 / 29] PianoMac
+[16 / 33] PianoMac
+[20 / 33] PianoMac
+[21 / 34] PianoMac
+[25 / 34] PianoMacTests-product
+[31 / 40] PianoMacTests-product
+[35 / 39] PianoMacTests-product
+[37 / 39] PianoMacTests-product
+[40 / 42] TypingPianoProbe-product
+[42 / 44] TypingPianoProbe-product
+[44 / 44] TypingPianoProbe-product
+Build complete! (5.53秒)
+Test Suite 'Selected tests' started at 2026-10-29 14:14:17.844.
+Test Suite 'PianoMacTests.xctest' started at 2026-10-29 14:14:17.845.
+Test Suite 'AdaptiveOverlayTests' started at 2026-10-29 14:14:17.845.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testDockVisualStateNeverClearsHeldNotesOrSound]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testDockVisualStateNeverClearsHeldNotesOrSound]' passed (0.002 seconds).
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUserEnabledDockIsNotRestoredToAnOlderFalseValue]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUserEnabledDockIsNotRestoredToAnOlderFalseValue]' passed (0.000 seconds).
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen]' started.
+Test Case '-[PianoMacTests.AdaptiveOverlayTests testUsesWholeScreenWidthAndSmallMarginsIncludingOffsetScreen]' passed (0.000 seconds).
+Test Suite 'AdaptiveOverlayTests' passed at 2026-10-29 14:14:17.848.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+Test Suite 'CrystalRenderingTests' started at 2026-10-29 14:14:17.848.
+Test Case '-[PianoMacTests.CrystalRenderingTests testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback]' started.
+Test Case '-[PianoMacTests.CrystalRenderingTests testFinalCompositedFacesAreTranslucentWithNoWhiteUnderBlackAndOpaqueFallback]' passed (0.358 seconds).
+Test Suite 'CrystalRenderingTests' passed at 2026-10-29 14:14:18.206.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.358 (0.358) seconds
+Test Suite 'HeightIntegrationTests' started at 2026-10-29 14:14:18.206.
+Test Case '-[PianoMacTests.HeightIntegrationTests testDebounceFailureRetryExitFlushAndRelaunch]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testDebounceFailureRetryExitFlushAndRelaunch]' passed (0.871 seconds).
+Test Case '-[PianoMacTests.HeightIntegrationTests testGeometryLabelsAndFloatingBoundsAtAllHeightsIncludingNarrowPreview]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testGeometryLabelsAndFloatingBoundsAtAllHeightsIncludingNarrowPreview]' passed (0.152 seconds).
+Test Case '-[PianoMacTests.HeightIntegrationTests testMenuActualSliderActionAndPercent]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testMenuActualSliderActionAndPercent]' passed (0.003 seconds).
+Test Case '-[PianoMacTests.HeightIntegrationTests testResizeKeepsHeldReleaseAudioAndCustomMappingInAllModes]' started.
+Test Case '-[PianoMacTests.HeightIntegrationTests testResizeKeepsHeldReleaseAudioAndCustomMappingInAllModes]' passed (0.666 seconds).
+Test Suite 'HeightIntegrationTests' passed at 2026-10-29 14:14:19.899.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 1.692 (1.692) seconds
+Test Suite 'PianoMacTests.xctest' passed at 2026-10-29 14:14:19.899.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 2.052 (2.054) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 14:14:19.899.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 2.052 (2.055) seconds
+Test Suite 'Selected tests' started at 2026-10-29 14:14:20.006.
+Test Suite 'PianoCoreTests.xctest' started at 2026-10-29 14:14:20.007.
+Test Suite 'FloatingNoteTests' started at 2026-10-29 14:14:20.007.
+Test Case '-[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testApprovedFloatingTimingAndTravel]' passed (0.002 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testDedupRetriggerAndOldExpiryCannotDeleteNewInstance]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testHiddenClearsAndRejectsQueuedOldGenerationWithoutReplay]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testMutedStrikeStillFeedsVisualModelIndependentlyOfLabels]' passed (0.001 seconds).
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' started.
+Test Case '-[PianoCoreTests.FloatingNoteTests testReducedMotionCompletesWithinOneSecondWithoutRise]' passed (0.001 seconds).
+Test Suite 'FloatingNoteTests' passed at 2026-10-29 14:14:20.012.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'HeightPreferencesTests' started at 2026-10-29 14:14:20.012.
+Test Case '-[PianoCoreTests.HeightPreferencesTests testHeightRoundTripAndNonfiniteIgnored]' started.
+Test Case '-[PianoCoreTests.HeightPreferencesTests testHeightRoundTripAndNonfiniteIgnored]' passed (0.000 seconds).
+Test Case '-[PianoCoreTests.HeightPreferencesTests testOldAndInvalidHeightJSONRetainOtherSettings]' started.
+Test Case '-[PianoCoreTests.HeightPreferencesTests testOldAndInvalidHeightJSONRetainOtherSettings]' passed (0.000 seconds).
+Test Suite 'HeightPreferencesTests' passed at 2026-10-29 14:14:20.013.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'PianoCoreTests.xctest' passed at 2026-10-29 14:14:20.013.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 14:14:20.013.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+Test Suite 'Selected tests' started at 2026-10-29 14:14:20.108.
+Test Suite 'PianoAudioTests.xctest' started at 2026-10-29 14:14:20.109.
+Test Suite 'PianoAudioTests.xctest' passed at 2026-10-29 14:14:20.109.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'Selected tests' passed at 2026-10-29 14:14:20.109.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds

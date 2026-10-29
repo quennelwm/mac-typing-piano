@@ -1,0 +1,17 @@
+{
+  "version": "0.2.8",
+  "inputPermissionRetainedFrom027": true,
+  "permissionRequested": false,
+  "guiLocalNoteOnAccepted": 1,
+  "guiLocalOutputTapPeak": 0.028249156,
+  "guiGlobalInputMode": "global",
+  "guiGlobalNoteOnAccepted": 3,
+  "guiGlobalOutputTapPeak": 0.03561504,
+  "inputEvidence": "CUA synthetic UI key actions and aggregate counters, not renewed human physical-key listening",
+  "currentHeightScale": 1.32,
+  "currentHeightObservedExternally": "132% persisted and 1496x292 layer3 visible; automation did not operate height slider",
+  "volumeAndLabelsUnchanged": true,
+  "backgroundRestartedWithoutConsole": true,
+  "actualMenuDragByAutomation": "NOT RUN: menu status item not exposed by current CUA window surface; native NSSlider action and persistence tested in suite",
+  "physicalHearingThisVersion": "NOT RUN"
+}

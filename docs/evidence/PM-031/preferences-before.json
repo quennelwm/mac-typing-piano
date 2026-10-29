@@ -1,0 +1,10 @@
+{
+  "probe-preferences.json": {
+    "exists": true,
+    "sha256": "6af1f8555aebccd4eab7a9aa3d716c55a2392501963e54e719b138acbe6d2a90"
+  },
+  "custom-keymap.json": {
+    "exists": false,
+    "sha256": null
+  }
+}

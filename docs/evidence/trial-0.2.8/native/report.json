@@ -1,0 +1,1278 @@
+{
+  "hardwareAudio" : false,
+  "hardwareInput" : false,
+  "images" : [
+    {
+      "canvasHeightPt" : 200,
+      "file" : "crystal-50.png",
+      "heightScale" : 0.5,
+      "reducedTransparency" : false,
+      "syntheticBackground" : "transparent"
+    },
+    {
+      "canvasHeightPt" : 256,
+      "file" : "crystal-100.png",
+      "heightScale" : 1,
+      "reducedTransparency" : false,
+      "syntheticBackground" : "transparent"
+    },
+    {
+      "canvasHeightPt" : 345.60000000000002,
+      "file" : "crystal-180.png",
+      "heightScale" : 1.8,
+      "reducedTransparency" : false,
+      "syntheticBackground" : "transparent"
+    },
+    {
+      "canvasHeightPt" : 256,
+      "file" : "crystal-white.png",
+      "heightScale" : 1,
+      "reducedTransparency" : false,
+      "syntheticBackground" : "white"
+    },
+    {
+      "canvasHeightPt" : 256,
+      "file" : "crystal-dark.png",
+      "heightScale" : 1,
+      "reducedTransparency" : false,
+      "syntheticBackground" : "dark"
+    },
+    {
+      "canvasHeightPt" : 256,
+      "file" : "crystal-color-pressed-475ms.png",
+      "heightScale" : 1,
+      "reducedTransparency" : false,
+      "syntheticBackground" : "color"
+    },
+    {
+      "canvasHeightPt" : 256,
+      "file" : "crystal-reduced-transparency.png",
+      "heightScale" : 1,
+      "reducedTransparency" : true,
+      "syntheticBackground" : "transparent"
+    }
+  ],
+  "kind" : "production offscreen vectors; synthetic backgrounds, no desktop capture",
+  "layouts" : [
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 56,
+      "canvasHeightPt" : 200,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.97647058823529409,
+          "minAlpha" : 0.84313725490196079,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 0.5,
+      "keyCount" : 64,
+      "widthPt" : 1264
+    },
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 112,
+      "canvasHeightPt" : 256,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84313725490196079,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 1,
+      "keyCount" : 64,
+      "widthPt" : 1264
+    },
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 201.59999999999999,
+      "canvasHeightPt" : 345.60000000000002,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.84313725490196079,
+          "minAlpha" : 0.84313725490196079,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 1.8,
+      "keyCount" : 64,
+      "widthPt" : 1264
+    },
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 56,
+      "canvasHeightPt" : 200,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.97647058823529409,
+          "minAlpha" : 0.84313725490196079,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 0.5,
+      "keyCount" : 64,
+      "widthPt" : 1496
+    },
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 112,
+      "canvasHeightPt" : 256,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84313725490196079,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 1,
+      "keyCount" : 64,
+      "widthPt" : 1496
+    },
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 201.59999999999999,
+      "canvasHeightPt" : 345.60000000000002,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84313725490196079,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 1.8,
+      "keyCount" : 64,
+      "widthPt" : 1496
+    },
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 56,
+      "canvasHeightPt" : 200,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.97647058823529409,
+          "minAlpha" : 0.84313725490196079,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 0.5,
+      "keyCount" : 64,
+      "widthPt" : 1904
+    },
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 112,
+      "canvasHeightPt" : 256,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.84313725490196079,
+          "minAlpha" : 0.84313725490196079,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 1,
+      "keyCount" : 64,
+      "widthPt" : 1904
+    },
+    {
+      "allLabelsInsideNoOverlapNoMissingGlyphs" : true,
+      "bodyHeightPt" : 201.59999999999999,
+      "canvasHeightPt" : 345.60000000000002,
+      "faceAlpha" : [
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 0.84705882352941175,
+          "minAlpha" : 0.84705882352941175,
+          "reducedTransparency" : false
+        },
+        {
+          "black" : false,
+          "count" : 38,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        },
+        {
+          "black" : true,
+          "count" : 26,
+          "maxAlpha" : 1,
+          "minAlpha" : 1,
+          "reducedTransparency" : true
+        }
+      ],
+      "headroomPt" : 144,
+      "heightScale" : 1.8,
+      "keyCount" : 64,
+      "widthPt" : 1904
+    }
+  ],
+  "materialVersion" : "u031.1",
+  "motion" : [
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1255.8144044321327,
+      "maxY" : 146,
+      "minX" : 8.1855955678670362,
+      "minY" : 118.25484764542936,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1262.8144044321327,
+      "maxY" : 58.5,
+      "minX" : 15.185595567867036,
+      "minY" : 30.754847645429365,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1263.814404422802,
+      "maxY" : 46.000000116635078,
+      "minX" : 16.185595558536228,
+      "minY" : 18.254847762064443,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1255.8144044321327,
+      "maxY" : 146,
+      "minX" : 8.1855955678670362,
+      "minY" : 118.25484764542936,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1255.8144044321327,
+      "maxY" : 148,
+      "minX" : 8.1855955678670362,
+      "minY" : 120.25484764542936,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1262.8144044321327,
+      "maxY" : 60.5,
+      "minX" : 15.185595567867036,
+      "minY" : 32.754847645429365,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1263.814404422802,
+      "maxY" : 48.000000116635078,
+      "minX" : 16.185595558536228,
+      "minY" : 20.254847762064443,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1255.8144044321327,
+      "maxY" : 148,
+      "minX" : 8.1855955678670362,
+      "minY" : 120.25484764542936,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1255.8144044321327,
+      "maxY" : 151.19999999999999,
+      "minX" : 8.1855955678670362,
+      "minY" : 123.45484764542935,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1262.8144044321327,
+      "maxY" : 63.699999999999989,
+      "minX" : 15.185595567867036,
+      "minY" : 35.954847645429354,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1263.814404422802,
+      "maxY" : 51.200000116635067,
+      "minX" : 16.185595558536228,
+      "minY" : 23.454847762064432,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1255.8144044321327,
+      "maxY" : 151.19999999999999,
+      "minX" : 8.1855955678670362,
+      "minY" : 123.45484764542935,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1264
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1484.7617728531854,
+      "maxY" : 146,
+      "minX" : 11.238227146814406,
+      "minY" : 118.25484764542936,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1491.7617728531854,
+      "maxY" : 58.5,
+      "minX" : 18.238227146814406,
+      "minY" : 30.754847645429365,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1492.7617728438547,
+      "maxY" : 46.000000116635078,
+      "minX" : 19.238227137483602,
+      "minY" : 18.254847762064443,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1484.7617728531854,
+      "maxY" : 146,
+      "minX" : 11.238227146814406,
+      "minY" : 118.25484764542936,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1484.7617728531854,
+      "maxY" : 148,
+      "minX" : 11.238227146814406,
+      "minY" : 120.25484764542936,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1491.7617728531854,
+      "maxY" : 60.5,
+      "minX" : 18.238227146814406,
+      "minY" : 32.754847645429365,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1492.7617728438547,
+      "maxY" : 48.000000116635078,
+      "minX" : 19.238227137483602,
+      "minY" : 20.254847762064443,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1484.7617728531854,
+      "maxY" : 148,
+      "minX" : 11.238227146814406,
+      "minY" : 120.25484764542936,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1484.7617728531854,
+      "maxY" : 151.19999999999999,
+      "minX" : 11.238227146814406,
+      "minY" : 123.45484764542935,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1491.7617728531854,
+      "maxY" : 63.699999999999989,
+      "minX" : 18.238227146814406,
+      "minY" : 35.954847645429354,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1492.7617728438547,
+      "maxY" : 51.200000116635067,
+      "minX" : 19.238227137483602,
+      "minY" : 23.454847762064432,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1484.7617728531854,
+      "maxY" : 151.19999999999999,
+      "minX" : 11.238227146814406,
+      "minY" : 123.45484764542935,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1496
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1887.393351800554,
+      "maxY" : 146,
+      "minX" : 16.606648199445985,
+      "minY" : 118.25484764542936,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1894.393351800554,
+      "maxY" : 58.5,
+      "minX" : 23.606648199445985,
+      "minY" : 30.754847645429365,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1895.3933517912233,
+      "maxY" : 46.000000116635078,
+      "minX" : 24.606648190115177,
+      "minY" : 18.254847762064443,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 64,
+      "maxX" : 1887.393351800554,
+      "maxY" : 146,
+      "minX" : 16.606648199445985,
+      "minY" : 118.25484764542936,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 0.5,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1887.393351800554,
+      "maxY" : 148,
+      "minX" : 16.606648199445985,
+      "minY" : 120.25484764542936,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1894.393351800554,
+      "maxY" : 60.5,
+      "minX" : 23.606648199445985,
+      "minY" : 32.754847645429365,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1895.3933517912233,
+      "maxY" : 48.000000116635078,
+      "minX" : 24.606648190115177,
+      "minY" : 20.254847762064443,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 64,
+      "maxX" : 1887.393351800554,
+      "maxY" : 148,
+      "minX" : 16.606648199445985,
+      "minY" : 120.25484764542936,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1887.393351800554,
+      "maxY" : 151.19999999999999,
+      "minX" : 16.606648199445985,
+      "minY" : 123.45484764542935,
+      "reducedMotion" : false,
+      "timeMs" : 0,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1894.393351800554,
+      "maxY" : 63.699999999999989,
+      "minX" : 23.606648199445985,
+      "minY" : 35.954847645429354,
+      "reducedMotion" : false,
+      "timeMs" : 475,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1895.3933517912233,
+      "maxY" : 51.200000116635067,
+      "minX" : 24.606648190115177,
+      "minY" : 23.454847762064432,
+      "reducedMotion" : false,
+      "timeMs" : 949,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : false,
+      "timeMs" : 950,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 64,
+      "maxX" : 1887.393351800554,
+      "maxY" : 151.19999999999999,
+      "minX" : 16.606648199445985,
+      "minY" : 123.45484764542935,
+      "reducedMotion" : true,
+      "timeMs" : 0,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 475,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 949,
+      "widthPt" : 1904
+    },
+    {
+      "allInkAndHaloInsideCanvas" : true,
+      "heightScale" : 1.8,
+      "instances" : 0,
+      "maxX" : 0,
+      "maxY" : 0,
+      "minX" : 0,
+      "minY" : 0,
+      "reducedMotion" : true,
+      "timeMs" : 950,
+      "widthPt" : 1904
+    }
+  ],
+  "passed" : true,
+  "systemSettingsWritten" : false
+}

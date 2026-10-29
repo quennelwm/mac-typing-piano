@@ -1,6 +1,6 @@
-# 打字钢琴试用 0.2.7
+# 打字钢琴试用 0.2.8
 
-当前版本为 **0.2.7 / build10**，Bundle ID 为 `local.typingpiano.trial`。默认使用全64音Steinway B试用音库，原生Quiet Ivory琴键、独立灰标签和24pt、900ms轻漂浮♪。Fn保留，顶部整排（包括Esc）排除。对外下载入口见[仓库根说明](../README.md)。
+当前版本为 **0.2.8 / build11**，Bundle ID 为 `local.typingpiano.trial`。默认使用全64音Steinway B试用音库，程序化水晶琴键、独立浅/深灰弱标签和24pt、950ms轻漂浮♪。Fn保留，顶部整排（包括Esc）排除。对外下载入口见[仓库根说明](../README.md)。
 
 当前候选为 **Apple Silicon（arm64）** 构建，不是Universal包。源码以macOS14为编译目标，但实际仅在本机macOS27.2 arm64、Swift6.4验证；macOS14、其他系统版本和Intel源码构建均未完成兼容验收。本地构建默认ad-hoc，公开包采用固定Apple Development身份；未做Developer ID签名或公证，下载后的系统安全提示处理见根说明。
 
@@ -17,6 +17,16 @@
 同Bundle重复启动会激活已有实例并退出新启动自身，不终止其他软件。旧 `local.typingpiano.probe` 探针不在此控制范围，应自行正常退出。
 
 “显示钢琴”与音频/输入启动独立：尚未开始或暂停时也可显示静态琴键，不会申请权限或开启声音。Dock可见时让位，安全输入、锁屏/睡眠时隐藏，并在菜单说明等待原因；恢复画面不会恢复已暂停的声音或监听。未保存自定义时使用新演奏键位（G=C4）；旧映射仅保留历史contract，不再提供运行时选择。
+
+## 高度与水晶外观
+
+♪菜单“钢琴高度”滑块为50%—180%，100%主体112pt；上方144pt透明留白固定，总高200—345.6pt。宽度仍自动适屏、底边固定。拖动实时预览，整数百分比持久化，250ms空闲后保存；关闭菜单及退出前补存。旧偏好缺高度或字段非数值时使用100%，有限越界钳制，其余偏好保留。
+
+缩放只重算键面、按压位移和命中轮廓，文字字号不变；不重启输入/声音，不清空按住键，不改变音量或自定义映射。保存失败保留内存设置并在菜单提示“设置尚未保存”；退出前仍失败时可取消退出重试，或明确仍然退出。取消不会先停声音或恢复本次拥有的系统提示音设置。
+
+材质按U-031逐键绘制：薄透明底座，白键乳白、黑键烟灰，白浅灰/黑深灰标签。白键会扣除已按压黑键轮廓，避免透明黑键下叠满白色。减少透明度时仅键面实色，透明留白不填实；减少动态时音符原地200ms淡出。正常♪为950ms、上升100pt、横漂最多8pt，字形与halo在左右边界内收束。效果参考Liquid Glass，不使用系统原生折射，不读取桌面或申请屏幕录制权限。
+
+本版少量离屏预览可用候选可执行文件的`--crystal-snapshot <新目录>`生成7张图及9组布局/72条轨迹指标；它不会打开App GUI、监听键盘或输出声音。白/暗/彩色为合成背景，不能代替实际桌面效果验收。
 
 ## 自定义键位
 
@@ -64,7 +74,7 @@ Dock显隐依据已配对验证的Dock专属layer20窗口及 `onScreenOnly` 成�
 
 ```sh
 mkdir -p "$HOME/Library/Caches/typing-piano-builds"
-export TYPING_PIANO_BUILD_ROOT="$(mktemp -d "$HOME/Library/Caches/typing-piano-builds/candidate-0.2.7.XXXXXX")"
+export TYPING_PIANO_BUILD_ROOT="$(mktemp -d "$HOME/Library/Caches/typing-piano-builds/candidate-0.2.8.XXXXXX")"
 bash Code/Scripts/build.sh
 codesign --verify --strict "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app"
 "$TYPING_PIANO_BUILD_ROOT/打字钢琴试用.app/Contents/MacOS/TypingPianoProbe" --self-check
@@ -97,7 +107,7 @@ python3 Code/Scripts/release_sign.py \
 
 每次更新二进制仍须重新签名；固定身份、Bundle ID、designated requirement和安装路径旨在保持身份连续性，但**不保证macOS永不提示授权**。0.2.6/0.2.7签名检查通过不等于真实跨版本TCC继承已经验证。首次从ad-hoc迁移、用户删除权限记录或系统策略变化仍可能需要用户确认。
 
-未指定环境变量时，现有脚本默认输出到 `$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.7`。该默认目录重复构建会被更新，所以推荐上面的唯一目录命令。脚本明确拒绝输出到 `$HOME/Library/Caches/local.typingpiano.trial` 根目录，这是已有授权安装的保护规则，不是建议绕过的构建错误。已使用/授权的候选目录也不应再拿来构建。
+未指定环境变量时，现有脚本默认输出到 `$HOME/Library/Caches/local.typingpiano.trial/candidate-0.2.8`。该默认目录重复构建会被更新，所以推荐上面的唯一目录命令。脚本明确拒绝输出到 `$HOME/Library/Caches/local.typingpiano.trial` 根目录，这是已有授权安装的保护规则，不是建议绕过的构建错误。已使用/授权的候选目录也不应再拿来构建。
 
 可选的无窗口回归组（先完成上述构建环境变量设置）：
 
@@ -107,6 +117,6 @@ swift test --build-system native --package-path Code \
   --filter 'PianoCoreTests|NativeDockStorageTests|DockWindowVisibilityTests|AdaptiveOverlayTests|DockAdapterTests|SingleInstanceTests|RuntimeDiagnosticsTests|LocalTrialStartTests|AudioSelectionTests|MenuIntegrationTests|PianoMacTests.IntegrationTests|StartupEntryTests|AlertVolumeTests'
 ```
 
-0.2.6的89项旧回归记录保留于 [历史交接](../docs/evidence/trial-0.2.6/HANDOFF.md)，不可代替本版验证；本版结果记录在 `docs/evidence/trial-0.2.7/`。系统Dock和提示音后端使用mock，不操作真实系统设置。无过滤完整测试包括真实AppKit窗口和离线音频：TrialBankTests写独立临时目录并清理；CandidateBankTests默认明确跳过3项，需显式新输出目录并预检才执行，不再覆写历史证据。`--build-system native` 在已验证工具链上会产生弃用提示，当前脚本仍使用它；其他工具链需自行验证，不能据编译目标宣称兼容。
+0.2.6的89项旧回归记录保留于 [历史交接](../docs/evidence/trial-0.2.6/HANDOFF.md)，不可代替本版验证；本版结果记录在 `docs/evidence/trial-0.2.8/`。系统Dock和提示音后端使用mock，不操作真实系统设置。无过滤完整测试包括真实AppKit窗口和离线音频：TrialBankTests写独立临时目录并清理；CandidateBankTests默认明确跳过3项，需显式新输出目录并预检才执行，不再覆写历史证据。`--build-system native` 在已验证工具链上会产生弃用提示，当前脚本仍使用它；其他工具链需自行验证，不能据编译目标宣称兼容。
 
 完整音库、参数、许可与来源记录打入 `AudioTrial`，原始/中间WAV不打入App；`runtime-bundle-inventory.json`列出实际打包文件。资源与源码改变后应重新验证，不只汇总旧报告。当前实现与验收索引见 [IMPLEMENTATION.md](IMPLEMENTATION.md)。

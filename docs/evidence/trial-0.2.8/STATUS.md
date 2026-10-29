@@ -1,0 +1,1 @@
+FROZEN / READY FOR PM ACCEPTANCE: C-031 / 0.2.8 build11. 141 tests: 138 pass, 3 explicit conditional audio skips, 0 fail. Seven CLI offscreen PNGs + nine layouts + 72 motion samples passed. 88-source manifest, 217 protected file hashes, strict ad-hoc signature and ZIP verified. No production edits after freeze; see HANDOFF.md and delivery.json.

@@ -8,7 +8,12 @@ public struct QuietIvoryProvenance {
     public let themeVersion = "quiet-ivory-u001.0.3"
     public let themeSHA256: String
     public let mappingSHA256: String
-    public init(themeURL: URL, mappingURL: URL) throws {
+    public let crystalRecipeSHA256: String?
+    public init(themeURL: URL, mappingURL: URL, crystalURL: URL? = nil) throws {
+        crystalRecipeSHA256 = try crystalURL.map { Self.digest(try Data(contentsOf: $0)) }
+        if let crystalRecipeSHA256, crystalRecipeSHA256 != "af135ac20b05c1ac7cd8200765f8cfcc1b257ec16a22a892652ed50e6ccfbdca" {
+            throw ProbeError.invalid("水晶材质配方与已集成U-031版本不符")
+        }
         themeSHA256 = Self.digest(try Data(contentsOf: themeURL))
         mappingSHA256 = Self.digest(try Data(contentsOf: mappingURL))
         guard themeSHA256 == "1cd6ec885ff33d3cb071300c63b753604d29c5b4b28fbcdccf69812fff0220fb" else {
@@ -22,7 +27,8 @@ public struct QuietIvoryProvenance {
     public var metadata: [String: Any] {
         let binaryHash = (try? Data(contentsOf: URL(fileURLWithPath: CommandLine.arguments[0]))).map(Self.digest) ?? "unavailable"
         return ["themeVersion": themeVersion, "themeSHA256": themeSHA256, "mappingSHA256": mappingSHA256,
-         "artifactState": "design_proposal", "integrationBuild": "C-027", "visualRevision": "CR-006 / U-027", "executableSHA256": binaryHash, "OS": ProcessInfo.processInfo.operatingSystemVersionString,
+         "materialVersion": "u031.1", "crystalRecipeSHA256": crystalRecipeSHA256.map { $0 as Any } ?? NSNull(),
+         "artifactState": "design_proposal", "integrationBuild": "C-031", "visualRevision": "CR-008 / U-031; Quiet Ivory base geometry provenance retained", "executableSHA256": binaryHash, "OS": ProcessInfo.processInfo.operatingSystemVersionString,
          "hardwareInput": false, "hardwareAudio": false, "systemDockWrites": false]
     }
 }

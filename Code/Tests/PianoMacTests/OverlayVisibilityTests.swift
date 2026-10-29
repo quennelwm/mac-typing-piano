@@ -146,7 +146,7 @@ final class OverlayVisibilityTests: XCTestCase {
         XCTAssertEqual(PianoView.floatingFontSize, 24)
         for width in [1264.0, 1496, 1904] {
             for reduced in [false, true] {
-                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: 208))
+                let view = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: width, height: AdaptiveOverlay.canvasHeight))
                 view.automaticAnimation = false; view.reducedMotion = reduced
                 XCTAssertTrue(view.labelMetrics.allSatisfy { $0.insideKey && $0.missingGlyphs == 0 && !$0.overlap })
                 var coordinator = NoteCoordinator(mapping: mapping)
@@ -154,10 +154,10 @@ final class OverlayVisibilityTests: XCTestCase {
                     _ = coordinator.consume(.init(key.physicalKeyID, .down))
                     view.strike(try XCTUnwrap(coordinator.lastStrike), at: 0)
                 }
-                for ms in stride(from: 0, through: 900, by: 20) {
+                for ms in stride(from: 0, through: 960, by: 20) {
                     view.advanceAnimations(at: Double(ms) / 1000)
                     XCTAssertTrue(view.floatingInkBounds.allSatisfy { view.bounds.contains($0) })
-                    XCTAssertTrue(view.floatingPresentations.allSatisfy { abs($0.driftX) <= 4 && $0.rise <= 48 })
+                    XCTAssertTrue(view.floatingPresentations.allSatisfy { abs($0.driftX) <= 8 && $0.rise <= 100 })
                 }
                 XCTAssertEqual(view.floatingCount, 0); XCTAssertFalse(view.animationTimerRunning)
             }

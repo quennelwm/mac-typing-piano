@@ -30,14 +30,16 @@ final class ControllerIntegrationTests: XCTestCase {
     final class Engine: AuditionEngine {
         var downs: [UInt8] = []
         var shutdowns = 0
+        var panics = 0
+        var offs: [UInt8] = []
         var prepared = false
         var failPrepare = false
         func prepare(bankURL: URL, offline: Bool) throws { prepared = true; if failPrepare { throw ProbeError.invalid("audio failure") } }
         func shutdown() { shutdowns += 1; prepared = false }
         func setGain(_ gain: Float) {}
         func noteOn(midi: UInt8, velocity: UInt8) { downs.append(midi) }
-        func noteOff(midi: UInt8) {}
-        func panic() {}
+        func noteOff(midi: UInt8) { offs.append(midi) }
+        func panic() { panics += 1 }
     }
     func testShowStaticOverlayBeforeStartDoesNotStartInputOrAudio() throws {
         _ = NSApplication.shared

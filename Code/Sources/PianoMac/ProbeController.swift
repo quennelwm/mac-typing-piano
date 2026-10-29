@@ -15,6 +15,11 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
     private let sources: [AudioSource]
     private let preferencesURL: URL
     private var preferences: AppPreferences
+    private var preferencesSaveTimer: Timer?
+    private var preferencesDirty = false
+    private var preferencesSaveError: String?
+    var confirmUnsavedPreferencesExit: ((String) -> Bool)? // Test seam; nil presents the actual native decision.
+    private var previewHeightConstraint: NSLayoutConstraint?
     private var statusMenu: ProbeMenu?
     private let startupFlow: StartupFlow
     private let startupWindowPresenter: (() -> Void)?
@@ -104,7 +109,9 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         buildWindow()
         buildStartupWindow()
         installSafetyHooks()
-        let menu = ProbeMenu(volume: preferences.volume, sources: sources, installStatusItem: installStatusItem)
+        let menu = ProbeMenu(volume: preferences.volume, heightScale: preferences.heightScale, sources: sources, installStatusItem: installStatusItem)
+        menu.onHeight = { [weak self] in self?.changeHeight($0) }
+        menu.onDidClose = { [weak self] in self?.flushPreferences() }
         menu.onStartup = { [weak self] in self?.showStartupWindow() }
         menu.onDownload = { [weak self] in self?.downloadNewVersion() }
         menu.onMuteAlerts = { [weak self] in self?.toggleAlertMute() }
@@ -182,14 +189,36 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         else { window.orderFront(nil) }
         refresh()
     }
-    private func changeVolume(_ value: Double) {
+    func changeVolume(_ value: Double) {
         preferences.setVolume(value)
         audio.setVolume(preferences.volume)
         savePreferences()
     }
     private func savePreferences() {
-        do { try preferences.save(to: preferencesURL) }
-        catch { status.stringValue = "偏好保存失败：\(error.localizedDescription)"; showControlWindow() }
+        do {
+            try preferences.save(to: preferencesURL)
+            preferencesDirty = false; preferencesSaveError = nil; statusMenu?.setPreferencesSaveError(nil)
+        } catch {
+            preferencesDirty = true; preferencesSaveError = error.localizedDescription
+            status.stringValue = "偏好保存失败：\(error.localizedDescription)"
+            statusMenu?.setPreferencesSaveError(preferencesSaveError)
+        }
+    }
+    func changeHeight(_ value: Double) {
+        guard value.isFinite else { return }
+        preferences.setHeightScale(value); preferencesDirty = true
+        preview?.setHeightScale(preferences.heightScale); overlayView?.setHeightScale(preferences.heightScale)
+        previewHeightConstraint?.constant = AdaptiveOverlay.height(scale: preferences.heightScale)
+        // Grow the existing console to fit its native view; do not show or activate it.
+        window?.setContentSize(NSSize(width: 1040, height: 680 + AdaptiveOverlay.height(scale: preferences.heightScale) - 208))
+        positionPanel(); statusMenu?.setHeight(preferences.heightScale)
+        preferencesSaveTimer?.invalidate()
+        let timer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { [weak self] _ in self?.flushPreferences() }
+        preferencesSaveTimer = timer; RunLoop.main.add(timer, forMode: .common)
+    }
+    func flushPreferences() {
+        preferencesSaveTimer?.invalidate(); preferencesSaveTimer = nil
+        if preferencesDirty { savePreferences() }
     }
     private func button(_ title: String, _ action: Selector) -> NSButton { NSButton(title: title, target: self, action: action) }
     private func buildWindow() {
@@ -206,7 +235,9 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         second.orientation = .horizontal; second.spacing = 8
         preview = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
         preview.translatesAutoresizingMaskIntoConstraints = false
-        preview.heightAnchor.constraint(equalToConstant: AdaptiveOverlay.canvasHeight).isActive = true
+        preview.setHeightScale(preferences.heightScale)
+        previewHeightConstraint = preview.heightAnchor.constraint(equalToConstant: AdaptiveOverlay.height(scale: preferences.heightScale))
+        previewHeightConstraint?.isActive = true
         preview.widthAnchor.constraint(equalToConstant: 1000).isActive = true
         preview.onPress = { [weak self] key in
             guard let self, self.input.mode != .stopped else { return }
@@ -224,9 +255,11 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         window.contentView!.addSubview(stack)
         NSLayoutConstraint.activate([stack.leadingAnchor.constraint(equalTo: window.contentView!.leadingAnchor, constant: 20), stack.topAnchor.constraint(equalTo: window.contentView!.topAnchor, constant: 18), stack.trailingAnchor.constraint(equalTo: window.contentView!.trailingAnchor, constant: -20)])
         overlayView = PianoView(mapping: mapping, frame: NSRect(x: 0, y: 0, width: 1000, height: AdaptiveOverlay.canvasHeight))
+        overlayView.setHeightScale(preferences.heightScale)
         panel = ProbePanel(content: overlayView)
         preview.showLabels = labels; overlayView.showLabels = labels
         positionPanel()
+        window.setContentSize(NSSize(width: 1040, height: 680 + AdaptiveOverlay.height(scale: preferences.heightScale) - 208))
     }
     private func positionPanel() {
         let screens = NSScreen.screens
@@ -237,7 +270,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
             } ?? NSScreen.main ?? screens.first
         }
         guard let screen = targetScreen else { panel.alphaValue = 0; panel.orderOut(nil); return }
-        panel.setFrame(AdaptiveOverlay.frame(screen: screen.frame), display: true)
+        panel.setFrame(AdaptiveOverlay.frame(screen: screen.frame, heightScale: preferences.heightScale), display: true)
     }
     @objc private func startLocal() { start(global: false) }
     @objc private func startGlobal() { start(global: true) }
@@ -359,6 +392,10 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         result["overlayStatus"] = overlayStatus
         result["mappingVersion"] = mapping.mappingVersion
         result["keymapWarning"] = keymapWarning.map { $0 as Any } ?? NSNull()
+        result["heightScale"] = preferences.heightScale
+        result["preferencesSavePending"] = preferencesDirty
+        result["preferencesSaveError"] = preferencesSaveError.map { $0 as Any } ?? NSNull()
+        result["overlayCanvasHeight"] = panel?.frame.height ?? 0
         result["privacy"] = "Aggregate counters only; no key identities, sequences, samples, microphone, or other-app audio."
         return result
     }
@@ -458,7 +495,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         }
         refresh()
     }
-    @objc private func toggleLabels() {
+    @objc func toggleLabels() {
         labels.toggle(); preview.showLabels = labels; overlayView.showLabels = labels
         preferences.showKeyLabels = labels; savePreferences(); refresh()
     }
@@ -653,11 +690,15 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         notifications.append(access.addObserver(forName: NSWorkspace.accessibilityDisplayOptionsDidChangeNotification, object: nil, queue: .main) { [weak self] _ in
             let reduced = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
             self?.preview.reducedMotion = reduced; self?.overlayView.reducedMotion = reduced
+            self?.preview.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
+            self?.overlayView.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
             self?.dockFade.setReducedMotion(reduced, at: ProcessInfo.processInfo.systemUptime)
             self?.refresh()
         })
         preview.reducedMotion = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
         overlayView.reducedMotion = NSWorkspace.shared.accessibilityDisplayShouldReduceMotion
+        preview.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
+        overlayView.reducedTransparency = NSWorkspace.shared.accessibilityDisplayShouldReduceTransparency
         notifications.append(NotificationCenter.default.addObserver(forName: NSApplication.didResignActiveNotification, object: nil, queue: .main) { [weak self] _ in
             guard let self, self.input.mode == .local else { return }
             self.pause("本窗口测试失焦，已清理按键和声音；全局测试不受此规则影响")
@@ -697,6 +738,12 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         if input.mode == .local || sessionDuration == .test60Seconds { pause("测试控制台已关闭；测试停止") }
     }
     public func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
+        flushPreferences()
+        if preferencesDirty, let error = preferencesSaveError {
+            let leave = confirmUnsavedPreferencesExit?(error) ?? (alert("钢琴设置尚未保存", "保存失败：\(error)\n取消退出可保留当前运行状态并重试；仍然退出将丢失本次未保存的设置。", buttons: ["取消退出", "仍然退出"]) == .alertSecondButtonReturn)
+            if !leave { return .terminateCancel }
+        }
+        // Only after accepting pending preference loss may exit restore system state.
         let result = alertVolume.restore()
         guard result == .failed else { return .terminateNow }
         let response = alert("提示音恢复未完成", alertVolume.detail + "\n取消退出可重试或打开系统声音设置；仍然退出可能保留当前提示音设置。", buttons: ["取消退出", "仍然退出"])
@@ -704,6 +751,7 @@ public final class ProbeController: NSObject, NSApplicationDelegate, NSWindowDel
         return skipAlertRestoreOnExit ? .terminateNow : .terminateCancel
     }
     public func applicationWillTerminate(_ notification: Notification) {
+        flushPreferences()
         if !skipAlertRestoreOnExit { _ = alertVolume.restore() }
         keymapEditor?.close()
         showOverlay = false; dockTimer?.invalidate(); dockTimer = nil

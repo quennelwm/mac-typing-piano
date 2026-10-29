@@ -6,7 +6,7 @@ public enum OverlayWindowEvidence {
     public static func run(mapping: KeyMapping) -> [String: Any] {
         let before = NSWorkspace.shared.frontmostApplication?.processIdentifier
         let frame = NSRect(x: NSScreen.main?.visibleFrame.midX ?? 400,
-                           y: NSScreen.main?.visibleFrame.midY ?? 400, width: 360, height: 208)
+                           y: NSScreen.main?.visibleFrame.midY ?? 400, width: 360, height: AdaptiveOverlay.canvasHeight)
         let panel = ProbePanel(content: PianoView(mapping: mapping, frame: NSRect(origin: .zero, size: frame.size)))
         panel.setFrame(frame, display: false)
         func window(_ level: NSWindow.Level) -> NSWindow {

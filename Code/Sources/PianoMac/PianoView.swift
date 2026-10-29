@@ -35,6 +35,13 @@ public final class PianoView: NSView {
         }
     }
     public private(set) var mapping: KeyMapping
+    public private(set) var heightScale: Double = 1
+    public var reducedTransparency = false { didSet { if oldValue != reducedTransparency { needsDisplay = true } } }
+    public func setHeightScale(_ value: Double) {
+        heightScale = PianoHeight.normalized(value)
+        setFrameSize(NSSize(width: bounds.width, height: AdaptiveOverlay.height(scale: heightScale)))
+        // Preserve held keys, mouse release ownership and all animation/press IDs.
+    }
     public var showLabels = true { didSet { if oldValue != showLabels { needsDisplay = true } } }
     public var activeMIDI: Set<Int> = [] { didSet { if oldValue != activeMIDI { updateKeys(from: oldValue, at: clock()) } } }
     public var reducedMotion = false { didSet { if oldValue != reducedMotion { resetEffects(); motions.removeAll(); needsDisplay = true } } }
@@ -63,10 +70,13 @@ public final class PianoView: NSView {
         let ink = CTLineGetBoundsWithOptions(floatingLine, .useGlyphPathBounds)
         return floatingPresentations.compactMap { note in
             guard let shape = keys.first(where: { $0.shape.midi == note.midi })?.shape else { return nil }
-            return CGRect(x: shape.rect.midX - ink.midX + note.driftX + ink.minX,
+            return CGRect(x: floatingX(shape, note, ink) + ink.minX,
                 y: AdaptiveOverlay.headroom + shape.rect.minY - 4 - note.rise + ink.minY - ink.maxY,
                 width: ink.width, height: ink.height).insetBy(dx: -4, dy: -4)
         }
+    }
+    private func floatingX(_ shape: PianoKeyRect, _ note: FloatingPresentation, _ ink: CGRect) -> CGFloat {
+        min(bounds.width - 4 - ink.maxX, max(4 - ink.minX, shape.rect.midX - ink.midX + note.driftX))
     }
     private var keys: [Key] = []
     private var floating = FloatingNotes()
@@ -90,15 +100,15 @@ public final class PianoView: NSView {
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) unavailable") }
     public override func setFrameSize(_ size: NSSize) { super.setFrameSize(size); rebuildKeys() }
-    private static func color(_ hex: String) -> CGColor {
+    private static func color(_ hex: String, alpha: CGFloat = 1) -> CGColor {
         let n = UInt32(hex, radix: 16)!
-        return CGColor(colorSpace: CGColorSpace(name: CGColorSpace.sRGB)!, components: [CGFloat((n >> 16)&255)/255, CGFloat((n >> 8)&255)/255, CGFloat(n&255)/255, 1])!
+        return CGColor(colorSpace: CGColorSpace(name: CGColorSpace.sRGB)!, components: [CGFloat((n >> 16)&255)/255, CGFloat((n >> 8)&255)/255, CGFloat(n&255)/255, alpha])!
     }
-    private static func line(_ text: String, _ size: CGFloat, _ color: String) -> CTLine {
-        CTLineCreateWithAttributedString(NSAttributedString(string: text, attributes: [.font: NSFont.systemFont(ofSize: size, weight: .medium), .foregroundColor: NSColor(cgColor: Self.color(color))!]))
+    private static func line(_ text: String, _ size: CGFloat, _ color: String, alpha: CGFloat = 1) -> CTLine {
+        CTLineCreateWithAttributedString(NSAttributedString(string: text, attributes: [.font: NSFont.systemFont(ofSize: size, weight: .medium), .foregroundColor: NSColor(cgColor: Self.color(color, alpha: alpha))!]))
     }
-    private func makeLabel(_ text: String, size: CGFloat, color: String, x: CGFloat, bottom: CGFloat) -> Label {
-        let line = Self.line(text, size, color), ink = CTLineGetBoundsWithOptions(line, .useGlyphPathBounds)
+    private func makeLabel(_ text: String, size: CGFloat, color: String, alpha: CGFloat = 1, x: CGFloat, bottom: CGFloat) -> Label {
+        let line = Self.line(text, size, color, alpha: alpha), ink = CTLineGetBoundsWithOptions(line, .useGlyphPathBounds)
         var missing = 0
         var fonts: [String] = []
         for run in CTLineGetGlyphRuns(line) as! [CTRun] {
@@ -112,15 +122,16 @@ public final class PianoView: NSView {
             ink: CGRect(x: x + ink.minX, y: bottom + ink.minY - ink.maxY, width: ink.width, height: ink.height), missing: missing, fonts: fonts)
     }
     private func rebuildKeys() {
-        keys = PianoGeometry.quietIvory(mapping: mapping, width: bounds.width).map { shape in
+        keys = PianoGeometry.quietIvory(mapping: mapping, width: bounds.width, heightScale: heightScale).map { shape in
             let key = mapping.keys.first { $0.midiNote == shape.midi }!, r = shape.rect, black = shape.isBlack
-            let color = black ? "CDCDCD" : "595959", size: CGFloat = black ? 9.5 : 10
+            let color = black ? "414B55" : "969FA9", size: CGFloat = black ? 9.5 : 10
+            let alpha: CGFloat = black ? 0.84 : 0.86
             let ink = CTLineGetBoundsWithOptions(Self.line(key.labelParts.main, size, color), .useGlyphPathBounds)
-            let main = makeLabel(key.labelParts.main, size: size, color: color, x: r.midX - ink.midX - (key.labelParts.side == nil ? 0 : 0.6), bottom: r.maxY - (black ? 3 : 4))
+            let main = makeLabel(key.labelParts.main, size: size, color: color, alpha: alpha, x: r.midX - ink.midX - (key.labelParts.side == nil ? 0 : 0.6), bottom: r.maxY - (black ? 3 : 4))
             var labels = [main]
             if let side = key.labelParts.side {
                 let ink = CTLineGetBoundsWithOptions(Self.line(side, 6.5, color), .useGlyphPathBounds)
-                labels.append(makeLabel(side, size: 6.5, color: color, x: r.maxX - 1.1 - ink.maxX, bottom: main.ink.minY + (black ? -0.6 : 2)))
+                labels.append(makeLabel(side, size: 6.5, color: color, alpha: alpha, x: r.maxX - 1.1 - ink.maxX, bottom: main.ink.minY + (black ? -0.6 : 2)))
             }
             return Key(shape: shape, labels: labels)
         }
@@ -198,28 +209,55 @@ public final class PianoView: NSView {
         ctx.saveGState(); ctx.translateBy(x: x, y: baseline); ctx.scaleBy(x: 1, y: -1)
         ctx.textMatrix = .identity; ctx.textPosition = .zero; CTLineDraw(line, ctx); ctx.restoreGState()
     }
+    private func keyTravel(_ key: Key) -> Double {
+        reducedMotion ? 0 : keyDepression(midi: key.shape.midi, at: sampleTime) * (key.shape.isBlack ? 1.5 : 2) * heightScale
+    }
+    private func keyFace(_ key: Key) -> CGPath {
+        CGPath(roundedRect: key.shape.rect.offsetBy(dx: 0, dy: keyTravel(key)), cornerWidth: 2.5, cornerHeight: 2.5, transform: nil)
+    }
     private func render(_ ctx: CGContext) {
         ctx.saveGState(); ctx.translateBy(x: 0, y: AdaptiveOverlay.headroom)
-        fill(ctx, CGRect(x: 0, y: 0, width: bounds.width, height: AdaptiveOverlay.bodyHeight), "353638", 3)
-        fill(ctx, CGRect(x: 1, y: 2, width: bounds.width - 2, height: 106), "71716E", 2)
+        // U-031: a translucent underlay, never the old opaque full-width backing.
+        let body = CGRect(x: 0, y: 0, width: bounds.width, height: PianoHeight.body(heightScale))
+        ctx.setFillColor(Self.color("526174", alpha: 0.10))
+        ctx.addPath(CGPath(roundedRect: body, cornerWidth: 4, cornerHeight: 4, transform: nil)); ctx.fillPath()
+        let blackFaces = keys.filter { $0.shape.isBlack }.map { keyFace($0) }
         for black in [false, true] {
             for key in keys where key.shape.isBlack == black {
-                let midi = key.shape.midi, r = key.shape.rect
-                let amount = keyDepression(midi: midi, at: sampleTime)
-                let down = activeMIDI.contains(midi) || amount > 0
-                ctx.saveGState(); ctx.translateBy(x: 0, y: reducedMotion ? 0 : amount * (black ? 1.5 : 2))
-                if black {
-                    ctx.saveGState(); ctx.setShadow(offset: CGSize(width: 0, height: down ? 0.5 : 1), blur: down ? 0.5 : 1.5, color: CGColor(gray: 0, alpha: down ? 0.18 : 0.3))
-                    fill(ctx, r, "242528", 1.2); ctx.restoreGState()
+                let offset = keyTravel(key), r = key.shape.rect.offsetBy(dx: 0, dy: offset)
+                let down = activeMIDI.contains(key.shape.midi) || keyDepression(midi: key.shape.midi, at: sampleTime) > 0
+                let path = keyFace(key)
+                ctx.saveGState()
+                if !black {
+                    // Subtract transformed black faces before painting white, including pressed black keys.
+                    ctx.addRect(body.insetBy(dx: -4, dy: -4))
+                    for face in blackFaces { ctx.addPath(face) }
+                    ctx.clip(using: .evenOdd)
                 }
-                ctx.saveGState(); ctx.addPath(CGPath(roundedRect: r, cornerWidth: black ? 1.2 : 1, cornerHeight: black ? 1.2 : 1, transform: nil)); ctx.clip()
-                let colors = black ? (down ? ["303134", "1B1C1F"] : ["424346", "242528"]) : (down ? ["E7E5DF", "D8D6D1"] : ["FEFDFB", "EEEDE9"])
-                let gradient = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB), colors: colors.map(Self.color) as CFArray, locations: [0, 1])!
+                // Edge-only shadow; no filled dark duplicate underneath a translucent face.
+                ctx.saveGState()
+                ctx.setShadow(offset: CGSize(width: 0, height: 1), blur: 1.5, color: Self.color("26364A", alpha: down ? 0.10 : 0.16))
+                ctx.setStrokeColor(Self.color("26364A", alpha: down ? 0.10 : 0.16)); ctx.setLineWidth(0.5)
+                ctx.addPath(path); ctx.strokePath(); ctx.restoreGState()
+                ctx.saveGState(); ctx.addPath(path); ctx.clip()
+                let colors: [CGColor]
+                if reducedTransparency {
+                    colors = (black ? ["AFBECE", "8494A7"] : ["F4F7FA", "DFE7EF"]).map { Self.color($0) }
+                } else if black {
+                    colors = down ? [Self.color("ACBDCF", alpha: 0.82), Self.color("73859A", alpha: 0.90)]
+                                  : [Self.color("BAC8D8", alpha: 0.78), Self.color("8191A3", alpha: 0.88)]
+                } else {
+                    colors = down ? [Self.color("E9F0F7", alpha: 0.90), Self.color("CDD9E6", alpha: 0.85)]
+                                  : [Self.color("FFFFFF", alpha: 0.88), Self.color("E4ECF4", alpha: 0.82)]
+                }
+                let gradient = CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB), colors: colors as CFArray, locations: [0, 1])!
                 ctx.drawLinearGradient(gradient, start: CGPoint(x: r.midX, y: r.minY), end: CGPoint(x: r.midX, y: r.maxY), options: [])
-                fill(ctx, CGRect(x: r.minX, y: r.maxY - (black ? 2 : 2.5), width: r.width, height: black ? 2 : 2.5), black ? (down ? "141518" : "17181B") : (down ? "C3C1BC" : "D5D3CE"))
-                ctx.setStrokeColor(Self.color(black ? "58595C" : "FFFFFF")); ctx.setLineWidth(0.5)
-                ctx.move(to: CGPoint(x: r.minX + 1, y: r.minY + 0.5)); ctx.addLine(to: CGPoint(x: r.maxX - 1, y: r.minY + 0.5)); ctx.strokePath(); ctx.restoreGState()
-                if showLabels { for label in key.labels { drawLine(ctx, label.line, x: label.x, baseline: label.baseline) } }
+                ctx.setStrokeColor(Self.color(black ? "F3F8FF" : "FFFFFF", alpha: black ? 0.55 : 0.72)); ctx.setLineWidth(0.7)
+                ctx.addPath(CGPath(roundedRect: r.insetBy(dx: 0.35, dy: 0.35), cornerWidth: 2.15, cornerHeight: 2.15, transform: nil)); ctx.strokePath()
+                ctx.setStrokeColor(Self.color(black ? "334357" : "788BA2", alpha: black ? 0.30 : 0.22)); ctx.setLineWidth(1)
+                ctx.move(to: CGPoint(x: r.minX + 2.5, y: r.maxY - 1)); ctx.addLine(to: CGPoint(x: r.maxX - 2.5, y: r.maxY - 1)); ctx.strokePath()
+                ctx.restoreGState()
+                if showLabels { for label in key.labels { drawLine(ctx, label.line, x: label.x, baseline: label.baseline + offset) } }
                 ctx.restoreGState()
             }
         }
@@ -227,24 +265,42 @@ public final class PianoView: NSView {
         for note in floatingPresentations {
             guard let shape = keys.first(where: { $0.shape.midi == note.midi })?.shape else { continue }
             ctx.saveGState(); ctx.setAlpha(note.opacity); ctx.setShadow(offset: .zero, blur: 1.25, color: CGColor(gray: 1, alpha: 0.9))
-            drawLine(ctx, floatingLine, x: shape.rect.midX - ink.midX + note.driftX, baseline: shape.rect.minY - 4 - note.rise + ink.minY)
+            drawLine(ctx, floatingLine, x: floatingX(shape, note, ink), baseline: shape.rect.minY - 4 - note.rise + ink.minY)
             ctx.restoreGState()
         }
         ctx.restoreGState()
     }
     public override func draw(_ dirtyRect: NSRect) { if let ctx = NSGraphicsContext.current?.cgContext { render(ctx) } }
     public override func mouseDown(with event: NSEvent) {
-        let point = convert(event.locationInWindow, from: nil); let body = CGPoint(x: point.x, y: point.y - AdaptiveOverlay.headroom)
-        let key = keys.filter { $0.shape.isBlack }.first { $0.shape.rect.contains(body) } ?? keys.filter { !$0.shape.isBlack }.first { $0.shape.rect.contains(body) }
-        guard let key, let physical = mapping.keys.first(where: { $0.midiNote == key.shape.midi }) else { return }
-        mouseKey = physical.physicalKeyID; onPress?(physical.physicalKeyID)
+        let point = convert(event.locationInWindow, from: nil)
+        guard let physical = physicalKey(atCanvasPoint: point) else { return }
+        mouseKey = physical; onPress?(physical)
+    }
+    func physicalKey(atCanvasPoint point: CGPoint) -> String? {
+        let body = CGPoint(x: point.x, y: point.y - AdaptiveOverlay.headroom)
+        let key = keys.filter { $0.shape.isBlack }.first { keyFace($0).contains(body) } ?? keys.filter { !$0.shape.isBlack }.first { keyFace($0).contains(body) }
+        guard let key else { return nil }
+        return mapping.keys.first(where: { $0.midiNote == key.shape.midi })?.physicalKeyID
     }
     public override func mouseUp(with event: NSEvent) { if let mouseKey { onRelease?(mouseKey) }; mouseKey = nil }
-    public func savePNG(to url: URL, scale: Int = 2) throws {
-        let w = Int(bounds.width) * scale, h = Int(bounds.height) * scale
+    public func renderedImage(scale: Int = 2, syntheticBackground: String? = nil) throws -> CGImage {
+        guard (1...2).contains(scale) else { throw ProbeError.invalid("预览倍率必须为1或2") }
+        let w = Int(ceil(bounds.width * CGFloat(scale))), h = Int(ceil(bounds.height * CGFloat(scale)))
         guard let ctx = CGContext(data: nil, width: w, height: h, bitsPerComponent: 8, bytesPerRow: w * 4, space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue) else { throw ProbeError.invalid("无法建立预览位图") }
-        ctx.scaleBy(x: CGFloat(scale), y: CGFloat(scale)); ctx.translateBy(x: 0, y: bounds.height); ctx.scaleBy(x: 1, y: -1); render(ctx)
-        guard let image = ctx.makeImage(), let png = NSBitmapImageRep(cgImage: image).representation(using: .png, properties: [:]) else { throw ProbeError.invalid("无法编码预览PNG") }
+        ctx.scaleBy(x: CGFloat(scale), y: CGFloat(scale)); ctx.translateBy(x: 0, y: bounds.height); ctx.scaleBy(x: 1, y: -1)
+        if let syntheticBackground {
+            let colors = syntheticBackground == "color" ? ["B9D9DC", "D8BBD0", "D7DDBA"] : [syntheticBackground == "dark" ? "202733" : "FFFFFF"]
+            for (i, color) in colors.enumerated() {
+                fill(ctx, CGRect(x: CGFloat(i) * bounds.width / CGFloat(colors.count), y: 0, width: bounds.width / CGFloat(colors.count), height: bounds.height), color)
+            }
+        }
+        render(ctx)
+        guard let image = ctx.makeImage() else { throw ProbeError.invalid("无法建立预览图像") }
+        return image
+    }
+    public func savePNG(to url: URL, scale: Int = 2, syntheticBackground: String? = nil) throws {
+        let image = try renderedImage(scale: scale, syntheticBackground: syntheticBackground)
+        guard let png = NSBitmapImageRep(cgImage: image).representation(using: .png, properties: [:]) else { throw ProbeError.invalid("无法编码预览PNG") }
         try png.write(to: url)
     }
     deinit { animationTimer?.invalidate() }

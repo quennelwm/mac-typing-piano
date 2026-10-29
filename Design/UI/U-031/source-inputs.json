@@ -1,0 +1,21 @@
+{
+  "baseCommit": "8142d59",
+  "files": [
+    {
+      "path": "docs/tasks/U-031.md",
+      "sha256": "d44946504dc108dc79def3f4cde20be0187b32751c684b4d11b24ef86f56bea1"
+    },
+    {
+      "path": "docs/changes/CR-008-crystal-height.md",
+      "sha256": "9d785a49e134f44e1aaaff1e814fa173bc6dd422dcb738ca1b7213ffcaf68112"
+    },
+    {
+      "path": "Design/UI/U-027/mapping.preview.json",
+      "sha256": "fb40db4b954c94f4f3e2faf6a3a3c5c96d1be53feb2c853f2ab3ed2d933e8696"
+    },
+    {
+      "path": "Design/UI/U-027/tools/drawing.swift.inc",
+      "sha256": "288c16f22b7394448eea14f1f006735505028bf0d77acb5da3e2f15d6430bf95"
+    }
+  ]
+}
